@@ -1,0 +1,36 @@
+﻿l_english:
+ conservative:0 "Conservative"
+#####Conservative Sub Ideologies#####
+ christian_democracy:0 "Christian Democracy"
+ enlightened_islamism:0 "Enlightened Islamism"
+ fiscal_conservatism:0 "Fiscal Conservatism"
+ national_conservatism:0 "National Conservatism"
+###social democrat###
+ social_democrat:0 "Social Democrat"
+ unionism:0 "Unionism"
+ liberal_socialism:0 "Liberal Socialism"
+ third_way_socialism:0 "Third Way Socialism"
+ socialism:0 "Socialism"
+###liberal###
+ liberal:0 "Liberal"
+ market_liberalism:0 "Market Liberalism"
+ social_liberalism:0 "Social liberalism"
+###vanguardism###
+ vanguardism:0 "Vanguardism"
+ marxism:0 "Marxism"
+ leninism:0 "Leninism"
+ trotskyism:0 "Trotskyism"
+ anti_revisionism:0 "Anti Revisionism"
+###Anarchist###
+ anarchist:0 "Anarchist"
+ anarcho_communism:0 "Anarcho Communism"
+ anarcho_syndicalism:0 "Anarcho Syndicalism"
+###national populism###
+ national_populism:0 "National Populism"
+ rexism:0 "Rexism"
+###Ultraconservative###
+ultraconservative:0 "Ultraconservative"
+stratocracy:0 "Stratocracy"
+absolutism:0 "Absolutism"
+theocracy:0 "Theocracy"
+falangism:0 "Falangism"

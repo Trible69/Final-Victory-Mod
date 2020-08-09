@@ -1,0 +1,1291 @@
+focus_tree = {
+	id = AMS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AMS
+		}
+	}
+	#Focus for The New Economy
+	focus = {
+		id = AMS_the_new_economy
+		icon = GFX_goal_generic_propaganda
+		x = 5
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_repay_debt_to_japan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ams_ruined_economy
+		}
+	}
+
+	#Focus for Rally the Volunteers
+	focus = {
+		id = AMS_rally_the_volunteers
+		icon = GFX_focus_generic_little_entente
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_address_the_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 1000
+		}
+	}
+
+	#Focus for External Issues
+	focus = {
+		id = AMS_external_issues
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 14
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_begin_to_rebuild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for Address the Nation
+	focus = {
+		id = AMS_address_the_nation
+		icon = GFX_goal_generic_radar
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+            add_war_support= 0.10
+		}
+	}
+
+	#Focus for Secure the New State
+	focus = {
+		id = AMS_secure_the_new_state
+		icon = GFX_goal_generic_forceful_treaty
+		x = 8
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+            add_stability= 0.10
+		}
+	}
+
+	#Focus for Contact Foreign Powers
+	focus = {
+		id = AMS_contact_foreign_powers
+		icon = GFX_goal_generic_dangerous_deal
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.05
+		}
+	}
+
+	#Focus for Request Foreign Equipment
+	focus = {
+		id = AMS_request_foreign_equipment
+		icon = GFX_focus_generic_combined_arms
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_contact_foreign_powers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+                type = infantry_equipment_1
+                amount = 20000
+                producer = JAP
+            }
+		}
+	}
+
+	#Focus for Continue Project A-36
+	focus = {
+		id = AMS_continue_project_a36
+		icon = GFX_goal_generic_air_fighter2
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_develop_light_bombers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 1 
+                category = naval_bomber
+		    }
+	    }
+	}
+
+	#Focus for Develop Light Bombers
+	focus = {
+		id = AMS_develop_light_bombers
+		icon = GFX_goal_generic_air_bomber
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_the_spirit_of_st_louis }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 1
+                category = cat_strategic_bomber
+            }
+		}
+	}
+
+	#Focus for The Spirit of St. Louis.
+	focus = {
+		id = AMS_the_spirit_of_st_louis
+		icon = GFX_goal_generic_air_fighter2
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+			    bonus = 0.5 
+                uses = 1 
+                category = cas_bomber 
+            }
+		}
+	}
+
+	#Focus for Lindbergh's Youth Legions
+	focus = {
+		id = AMS_lindberghs_youth_legions
+		icon = GFX_focus_generic_military_mission
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_hellcat_tank_divisions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_manpower = 20000
+		}
+	}
+
+	#Focus for Traditional Lifestyle
+	focus = {
+		id = AMS_traditional_lifestyle
+		icon = GFX_focus_generic_military_academy
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_emergency_factory_construction }
+		mutually_exclusive = { focus = AMS_industrialize_the_workforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_offsite_building= { type = industrial_complex level = 1 }
+		}
+	} 
+
+	#Focus for Industrialize the Workforce
+	focus = {
+		id = AMS_industrialize_the_workforce
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_emergency_factory_construction }
+		mutually_exclusive = { focus = AMS_traditional_lifestyle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	#Focus for Emergency Factory Construction
+	focus = {
+		id = AMS_emergency_factory_construction
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AMS_request_foreign_equipment 
+		}
+		prerequisite = { 
+			focus = AMS_seize_prewar_arms_stockpiles 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	#Focus for The States' Army
+	focus = {
+		id = AMS_the_states_army
+		icon = GFX_focus_generic_manpower
+		x = 19
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+
+	#Focus for Push on the Vanguardist Front
+	focus = {
+		id = AMS_push_on_the_vanguardist_front
+		icon = GFX_goal_anti_comintern_pact
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	#Focus for A New America
+	focus = {
+		id = AMS_a_new_america
+		icon = GFX_AMS_a_new_america-26724
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AMS_streamline_weapons_production 
+			focus = AMS_makeshift_weapon_making 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for Mobile Death Squads
+	focus = {
+		id = AMS_mobile_death_squads
+		icon = GFX_goal_generic_secret_weapon
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_american_nationalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 10000
+		}
+	}
+
+	#Focus for A Pure State
+	focus = {
+		id = AMS_a_pure_state
+		icon = GFX_goal_support_fascism
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_rally_the_volunteers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10
+		}
+	}
+
+	#Focus for Secure the Mid-Western States
+	focus = {
+		id = AMS_secure_the_midwestern_states
+		icon = GFX_goal_generic_build_tank
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_push_on_the_vanguardist_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+
+	#Focus for Fortify Missouri
+	focus = {
+		id = AMS_fortify_missouri
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_push_on_the_vanguardist_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 4540 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 4449 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 4569
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 1523 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 7607 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 7449 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 10516 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 10333 
+            }
+		}
+	}
+
+	#Focus for Fortify Virginia
+	focus = {
+		id = AMS_fortify_virginia
+		icon = GFX_goal_generic_fortify_city
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_push_on_the_federal_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 873
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 951 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 4569
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 11888 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 6958 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 9923 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 801 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 6850 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 6850 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 801 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 3975 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 10441 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 6971 
+            }
+		}
+	}
+
+	#Focus for American Nationalism
+	focus = {
+		id = AMS_american_nationalism
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_address_the_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+            type = infantry_equipment_1
+            amount = 8000 
+            }
+		}
+	}
+
+	#Focus for Push on the Federal Front
+	focus = {
+		id = AMS_push_on_the_federal_front
+		icon = GFX_AMS_push_on_the_federal_front-26721
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	#Focus for Seize Prewar Arms Stockpiles
+	focus = {
+		id = AMS_seize_prewar_arms_stockpiles
+		icon = GFX_focus_focus_fra_maquis
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_contact_foreign_powers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+                type = infantry_equipment_2 
+                amount = 2000
+            }
+		}
+	}
+
+	#Focus for Hellcat Tank Divisions
+	focus = {
+		id = AMS_hellcat_tank_divisions
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_the_states_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_equipment_to_stockpile= {
+                type = infantry_equipment_1
+                amount = 20000
+            }
+		}
+	}
+
+	#Focus for Naval Supremacy
+	focus = {
+		id = AMS_naval_supremacy
+		icon = GFX_goal_generic_navy_battleship
+		x = 25
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_secure_the_new_state }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 2 
+                category = naval_equipment
+            }
+		}
+	}
+
+	#Focus for Convert Former U.S. Ships
+	focus = {
+		id = AMS_convert_former_us_ships
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_naval_supremacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 2 
+                category = naval_equipment
+            }
+		}
+	}
+
+	#Focus for Reequip the Submarines
+	focus = {
+		id = AMS_reequip_the_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_convert_former_us_ships }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 2 
+                category = naval_equipment
+            }
+		}
+	}
+
+	#Focus for Secure the East Coast
+	focus = {
+		id = AMS_secure_the_east_coast
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_fortify_virginia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = dockyard level = 3 }
+		}
+	}
+
+	#Focus for Makeshift Weapon Making
+	focus = {
+		id = AMS_makeshift_weapon_making
+		icon = GFX_goal_continuous_reduce_training_time
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_rural_production }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+            add_tech_bonus= {
+                bonus = 0.5 
+                uses = 3 
+                category = land_doctrine 
+            }
+		}
+	}
+
+	#Focus for Every Citizen a Worker
+	focus = {
+		id = AMS_every_citizen_a_worker
+		icon = GFX_AMS_every_citizen_a_worker-26718
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_industrialize_the_workforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 3 }
+		}
+	}
+
+	#Focus for Rural Production
+	focus = {
+		id = AMS_rural_production
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_traditional_lifestyle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_offsite_building= { type = industrial_complex level = 3 }
+		}
+	}
+
+	#Focus for Streamline Weapons Production
+	focus = {
+		id = AMS_streamline_weapons_production
+		icon = GFX_goal_generic_army_artillery2
+		x = 7
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_every_citizen_a_worker }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 10000
+            add_tech_bonus= {
+                bonus = 0.5 
+                uses = 1 
+                category = land_doctrine 
+            }
+		}
+	}
+
+	#Focus for Combined Army
+	focus = {
+		id = AMS_combined_army
+		icon = GFX_focus_usa_build_the_pentagon
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AMS_reequip_the_submarines 
+		}
+		prerequisite = { 
+			focus = AMS_continue_project_a36 
+		}
+		prerequisite = { 
+			focus = AMS_lindberghs_youth_legions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+
+	#Focus for Internal Issues
+	focus = {
+		id = AMS_internal_issues
+		icon = GFX_goal_generic_neutrality_focus
+		x = 5
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_begin_to_rebuild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 300
+		}
+	}
+
+	#Focus for Begin to Rebuild
+	focus = {
+		id = AMS_begin_to_rebuild
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 9
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_idea = ams_recover_civil_war
+			has_idea = ams_ruined_economy
+			has_idea = ams_crippled_industry
+			has_idea = ams_shellshocked_populace
+		}
+		prerequisite = { focus = AMS_a_new_america }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.20
+		}
+	}
+
+	#Focus for Begin the New Economy
+	focus = {
+		id = AMS_begin_the_new_economy
+		icon = GFX_goal_generic_construction2
+		x = 5
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_internal_issues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 1 }
+		}
+	}
+
+	#Focus for Citizens come first
+	focus = {
+		id = AMS_citizens_come_first
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_begin_the_new_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 2 }
+		}
+	}
+
+	#Focus for Decrease Military Spending
+	focus = {
+		id = AMS_decrease_military_spending
+		icon = GFX_goal_rhineland
+		x = 5
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_citizens_come_first }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = industrial_complex level = 3 }
+            add_manpower= -40000
+		}
+	}
+
+	#Focus for Repay Debt to Japan
+	focus = {
+		id = AMS_repay_debt_to_japan
+		icon = GFX_focus_mex_privatisation
+		x = 5
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_decrease_military_spending }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			396 = {
+                remove_building= { 
+                type = industrial_complex 
+                level = 1
+				}
+		    }
+        }
+	}
+
+	#Focus for Hold Recovery Speech in Atlanta
+	focus = {
+		id = AMS_hold_recovery_speech_in_atlanta
+		icon = GFX_goal_generic_demand_territory
+		x = 7
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_start_to_help_the_population }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.05
+            add_stability= 0.05
+		}
+	}
+
+	#Focus for Start to Help the Population
+	focus = {
+		id = AMS_start_to_help_the_population
+		icon = GFX_focus_generic_military_academy
+		x = 7
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_internal_issues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+
+	#Focus for Assassinate Active Vangaurdist
+	focus = {
+		id = AMS_assassinate_active_vangaurdist
+		icon = GFX_goal_generic_major_war
+		x = 7
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_help_exmilitary_find_jobs }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+                ideology = vanguardism
+                popularity = -0.05
+            }
+		}
+	}
+
+	#Focus for Help Ex-Military Find jobs
+	focus = {
+		id = AMS_help_exmilitary_find_jobs
+		icon = GFX_focus_generic_military_mission
+		x = 7
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_hold_recovery_speech_in_atlanta }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10
+            add_manpower= -10000
+		}
+	}
+
+	#Focus for Recovered Population
+	focus = {
+		id = AMS_recovered_population
+		icon = GFX_focus_generic_support_the_left_right
+		x = 7
+		y = 14
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_assassinate_active_vangaurdist }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ams_shellshocked_populace
+		}
+	}
+
+	#Focus for Fix the Industry
+	focus = {
+		id = AMS_fix_the_industry
+		icon = GFX_goal_generic_production2
+		x = 3
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_internal_issues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 1 }
+		}
+	}
+
+	#Focus for Better Worker Conditions
+	focus = {
+		id = AMS_better_worker_conditions
+		icon = GFX_goal_generic_small_arms
+		x = 3
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_fix_the_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.05
+		}
+	}
+
+	#Focus for Be ready for the next war
+	focus = {
+		id = AMS_be_ready_for_the_next_war
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_better_worker_conditions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 3 }
+		}
+	}
+
+	#Focus for Rebuild damaged Factories
+	focus = {
+		id = AMS_rebuild_damaged_factories
+		icon = GFX_focus_generic_license_production
+		x = 3
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_be_ready_for_the_next_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building= { type = arms_factory level = 5 }
+		}
+	}
+
+	#Focus for A New Industry
+	focus = {
+		id = AMS_a_new_industry
+		icon = GFX_focus_generic_steel
+		x = 3
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_rebuild_damaged_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ams_crippled_industry
+		}
+	}
+
+	#Focus for The Finished Recovery
+	focus = {
+		id = AMS_the_finished_recovery
+		icon = GFX_goal_generic_territory_or_war
+		x = 5
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AMS_a_new_industry 
+		}
+		prerequisite = { 
+			focus = AMS_recovered_population 
+		}
+		prerequisite = { 
+			focus = AMS_the_new_economy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ams_recover_civil_war
+		}
+	}
+
+	#Focus for Take back the Spanish island
+	focus = {
+		id = AMS_take_back_the_spanish_island
+		icon = GFX_goal_anschluss
+		x = 16
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_try_to_convince_the_populace }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			CUB = {exists = no}
+		}
+		completion_reward = {
+			create_wargoal= { 
+                type = annex_everything 
+                target = CUB
+        	}	
+		}
+	}
+
+	#Focus for Try to convince the populace
+	focus = {
+		id = AMS_try_to_convince_the_populace
+		icon = GFX_goal_generic_propaganda
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_external_issues }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.10
+		}
+	}
+
+	#Focus for Build relations with Quebec
+	focus = {
+		id = AMS_build_relations_with_quebec
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_try_to_convince_the_populace }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+                country = QUE 
+                relation = non_aggression_pact 
+            }
+		}
+	}
+
+	focus = {
+		id = AMS_build_relations_with_the_british
+		icon = GFX_goal_generic_improve_relations
+		x = 12
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_build_relations_with_quebec }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+                country = ENG
+                relation = non_aggression_pact 
+            }
+		}
+	}
+
+	focus = {
+		id = AMS_nagotiate_potential_alliance
+		icon = GFX_goal_generic_major_alliance
+		x = 12
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_build_relations_with_the_british }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = AMS_befriend_canada
+		icon = GFX_focus_generic_support_the_left_right
+		x = 12
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_nagotiate_potential_alliance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+                country = CAN
+                relation = non_aggression_pact 
+            }
+		}
+	}
+
+	focus = {
+		id = AMS_join_the_coalition
+		icon = GFX_goal_generic_alliance
+		x = 12
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_befriend_canada }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_idea = ams_recover_civil_war
+			    has_idea = ams_ruined_economy
+			    has_idea = ams_crippled_industry
+			    has_idea = ams_shellshocked_populace
+			}
+		}
+		completion_reward = {
+			ENG = {
+				add_to_faction = AMS
+			}
+		}
+	}
+
+	focus = {
+		id = AMS_make_cuba_a_state
+		icon = GFX_goal_generic_territory_or_war
+		x = 16
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_take_back_the_spanish_island }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			NOT = {
+				owns_state = 315
+			}
+		}
+		completion_reward = {
+			add_state_core = 315
+		}
+	}
+
+	focus = {
+		id = AMS_claim_puerto_rico
+		icon = GFX_goal_generic_major_war
+		x = 16
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_make_cuba_a_state }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_state_claim = 686
+		}
+	}
+
+#End of focuses 
+ }

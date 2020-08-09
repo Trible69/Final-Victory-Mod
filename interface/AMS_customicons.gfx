@@ -1,0 +1,117 @@
+spriteTypes = { 
+	##Icon For: A New America
+	SpriteType = { 
+		name = "GFX_AMS_a_new_america-26724"
+		texturefile = "gfx/interface/goals/GFX_AMS_a_new_america-26724.dds"
+	}
+
+	##Icon Shine For: A New America
+	SpriteType = { 
+		name = "GFX_AMS_a_new_america-26724_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_a_new_america-26724.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_a_new_america-26724.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_a_new_america-26724.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Push on the Federal Front
+	SpriteType = { 
+		name = "GFX_AMS_push_on_the_federal_front-26721"
+		texturefile = "gfx/interface/goals/GFX_AMS_push_on_the_federal_front-26721.dds"
+	}
+
+	##Icon Shine For: Push on the Federal Front
+	SpriteType = { 
+		name = "GFX_AMS State_push_on_the_federal_front-26721_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_push_on_the_federal_front-26721.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_push_on_the_federal_front-26721.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_push_on_the_federal_front-26721.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Every Citizen a Worker
+	SpriteType = { 
+		name = "GFX_AMS_every_citizen_a_worker-26718"
+		texturefile = "gfx/interface/goals/GFX_AMS_every_citizen_a_worker-26718.dds"
+	}
+
+	##Icon Shine For: Every Citizen a Worker
+	SpriteType = { 
+		name = "GFX_AMS_every_citizen_a_worker-26718_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_every_citizen_a_worker-26718.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_every_citizen_a_worker-26718.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_every_citizen_a_worker-26718.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

@@ -62,33 +62,19 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 19
-		}
-
-		liberal = { 
-			popularity = 6
-		}
-
-		fascism = {
-			popularity = 3
-		}
-		
-		vanguardism = {
-			popularity = 15
-		}
-		
-		ultraconservative = { 
-			popularity = 57
-		}
-	}
-	
-	ruling_party = ultraconservative
-	last_election = "1934.7.1"
-	election_frequency = 72
-	elections_allowed = yes
+    ruling_party = ultraconservative
+    last_election = "1932.11.8"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    national_populism = 3
+    vanguardism = 15
+    ultraconservative = 57
+    anarchist = 0
+    liberal = 6
+    social_democrat = 0
+    conservative = 19
 }
 
 create_country_leader = {

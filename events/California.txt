@@ -1,0 +1,28 @@
+
+add_namespace = california
+
+country_event = {
+    id = california.1
+    title = california.1.t
+    desc = california.1.d
+
+    fire_only_once = yes
+
+    Trigger = {
+        has_war_with = MEX
+        MEX = {
+            surrender_progress > 0.79
+        }
+    }
+
+    option = {
+        name = california.1.a
+        ai_chance = { factor = 100 }
+        MEX = {
+            white_peace = CAF
+        }
+        hidden_effect = {
+			news_event = { hours = 6 id = news.11 }
+		}
+    }
+}

@@ -128,27 +128,19 @@ country_event = {
 		    add_state_core = 797
 		    load_oob = MOR_Revolt
 		}
-		GUA = {
+		CEN = {
 		    transfer_state = 313
 		    add_state_core = 313
 		    load_oob = GUA_Revolt
-		}
-		ELS = {
 		    transfer_state = 314
 		    add_state_core = 314
 		    load_oob = ELS_Revolt
-		}
-		HON = {
 		    transfer_state = 312
 		    add_state_core = 312
 		    load_oob = HON_Revolt
-		}
-		NIC = {
 		    transfer_state = 317
 		    add_state_core = 317
 		    load_oob = NIC_Revolt
-		}
-		COS = {
 		    transfer_state = 316
 		    add_state_core = 316
 		    load_oob = COS_Revolt
@@ -181,23 +173,7 @@ country_event = {
 		    type = annex_everything
 		}
 		declare_war_on = {
-		    target = GUA
-		    type = annex_everything
-		}
-		declare_war_on = {
-		    target = ELS
-		    type = annex_everything
-		}
-		declare_war_on = {
-		    target = HON
-		    type = annex_everything
-		}
-		declare_war_on = {
-		    target = NIC
-		    type = annex_everything
-		}
-		declare_war_on = {
-		    target = COS
+		    target = CEN
 		    type = annex_everything
 		}
 		hidden_effect = {

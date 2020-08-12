@@ -580,3 +580,7 @@ YUC = {
 	color = rgb { 153 51 0 }
 	color_ui = rgb { 153 51 0 }
 }
+CEN = {
+	color = rgb { 166 255 242 }
+	color_ui = rgb { 166 255 242 }
+}

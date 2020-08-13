@@ -115,7 +115,7 @@ country_event = {
 		    add_state_core = 474
 		    load_oob = YUC_Revolt
 		}
-		MOR = {
+		DES = {
 		    transfer_state = 380
 		    add_state_core = 380
 		    transfer_state = 379
@@ -126,24 +126,20 @@ country_event = {
 		    add_state_core = 799
 		    transfer_state = 797
 		    add_state_core = 797
-		    load_oob = MOR_Revolt
+		    load_oob = DES_Revolt
 		}
 		CEN = {
 		    transfer_state = 313
 		    add_state_core = 313
-		    load_oob = GUA_Revolt
+		    load_oob = CEN_Revolt
 		    transfer_state = 314
 		    add_state_core = 314
-		    load_oob = ELS_Revolt
 		    transfer_state = 312
 		    add_state_core = 312
-		    load_oob = HON_Revolt
 		    transfer_state = 317
 		    add_state_core = 317
-		    load_oob = NIC_Revolt
 		    transfer_state = 316
 		    add_state_core = 316
-		    load_oob = COS_Revolt
 		}
 		RIG = {
 		    transfer_state = 480

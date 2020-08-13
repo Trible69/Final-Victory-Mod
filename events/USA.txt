@@ -49,6 +49,9 @@ country_event = {
 			ideology = vanguardism
 			popularity = 0.10
 		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.11 }
+		}
 	}
 	option = {
 		name = USA.2.b
@@ -66,6 +69,9 @@ country_event = {
 		add_popularity = {
 			ideology = fascism
 			popularity = 0.10
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.12 }
 		}
 	}
 }

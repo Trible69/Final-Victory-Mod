@@ -1287,5 +1287,57 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = AMS_take_back_the_stolen_states
+		icon = GFX_focus_secret_rearmament
+		x = 16
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_claim_puerto_rico }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NTC
+			}
+		}
+	}
+
+	focus = {
+		id = AMS_take_the_southern_friend
+		icon = GFX_focus_attack_mexico
+		x = 16
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = ams_recover_civil_war
+			    has_idea = ams_ruined_economy
+			    has_idea = ams_crippled_industry
+			    has_idea = ams_shellshocked_populace
+			}
+		}
+		prerequisite = { focus = AMS_claim_puerto_rico }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MEX
+			}
+		}
+	}
+
 #End of focuses 
  }

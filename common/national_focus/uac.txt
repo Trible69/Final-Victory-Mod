@@ -1,0 +1,291 @@
+focus_tree = {
+	id = UAC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UAC
+		}
+	}
+	#Focus for Fight for our Freedom
+	focus = {
+		id = UAC_fight_for_our_freedom
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	focus = {
+		id = UAC_ask_for_equipment
+		icon = GFX_focus_chi_army_reform
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_fight_for_our_freedom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UAC_recruit_malitia
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_ask_for_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+                type = infantry_equipment_1
+                amount = 20000
+            }
+		}
+	}
+
+	focus = {
+		id = UAC_ask_yucatan_for_equipment
+		icon = GFX_focus_generic_combined_arms
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_ask_for_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+                type = infantry_equipment_1
+                amount = 20000
+            }
+		}
+	}
+
+	focus = {
+		id = UAC_ask_the_chinese
+		icon = GFX_focus_chi_one_china_policy
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_ask_for_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile= {
+                type = infantry_equipment_1
+                amount = 20000
+            }
+		}
+	}
+
+	focus = {
+		id = UAC_focus_on_ohio_front
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_fight_for_our_freedom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UAC_focus_on_illinois_front
+		icon = GFX_goal_generic_demand_territory
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_fight_for_our_freedom}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = UAC_defend_illinois
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_focus_on_illinois_front}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 954 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 7831 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 12305 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 10457 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 12365 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 4590 
+            }
+		}
+	}
+
+	focus = {
+		id = UAC_defend_ohio
+		icon = GFX_goal_generic_defence
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_focus_on_ohio_front}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 9808 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 4442 
+            }
+			add_building_construction = { 
+                type = bunker 
+                level = 2 
+                instant_build = yes
+                province = 882 
+            }
+		}
+	}
+
+	focus = {
+		id = UAC_push_the_national_populist
+		icon = GFX_goal_generic_war_with_comintern
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_defend_illinois}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = UAC_push_the_federals
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_defend_ohio }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = UAC_the_civil_war
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_push_the_national_populist 
+			focus = UAC_push_the_federals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+
+	focus = {
+		id = UAC_begin_to_recover
+		icon = GFX_focus_generic_industry_1
+		x = 5 
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_idea = ams_recover_civil_war
+			has_idea = ams_ruined_economy
+			has_idea = ams_crippled_industry
+			has_idea = ams_shellshocked_populace
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = UAC_Help_the_damaged_idustry
+	}
+#End of focuses 
+ }

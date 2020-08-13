@@ -47,7 +47,9 @@ country_event = {
 	    ideology = marxism
 	    traits = {
 		
-			}
         }
+		hidden_effect = {
+			news_event = { hours = 6 id = news.14 }
+		}
 	}
 }

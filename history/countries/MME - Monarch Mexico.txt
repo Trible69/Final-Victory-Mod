@@ -62,24 +62,20 @@ if = {
 }
 
 set_politics = {
-	ruling_party = ultraconservative
-	last_election = "1934.7.1"
-	election_frequency = 72
-	elections_allowed = no
+    ruling_party = ultraconservative
+    last_election = "1932.11.8"
+    election_frequency = 48
+    elections_allowed = no
 }
-
 set_popularities = {
-    conservative = 0
+    national_populism = 3
+    vanguardism = 15
+    ultraconservative = 57
+    anarchist = 0
+    liberal = 6
     social_democrat = 0
-    liberal = 0
-    vanguardism = 1
-    anarchist = 1
-    national_populism = 2
-    ultraconservative = 96
+    conservative = 19
 }
-
-	
-
 
 create_country_leader = {
 	name = "Agustin IV"
@@ -139,18 +135,7 @@ create_country_leader = { # Trotskyist, led the PCM 1929-1940
 create_country_leader = {
 	name = "Agustin IV"
 	desc = ""
-	picture = "AgustinIVMEX.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Herber J Grant"
-	desc = ""
-	picture = "HeberJGrantDES.dds"
+	picture = "AgustinIVMME.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {

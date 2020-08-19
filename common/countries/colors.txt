@@ -568,7 +568,7 @@ CAF = {
 	color = rgb { 253  41  41 }
 	color_ui = rgb { 253  41  41 }
 }
-MOR = {
+DES = {
 	color = rgb { 255  255  77 }
 	color_ui = rgb { 255  255  77 }
 }
@@ -583,4 +583,12 @@ YUC = {
 CEN = {
 	color = rgb { 166 255 242 }
 	color_ui = rgb { 166 255 242 }
+}
+SAN = {
+	color = rgb { 235 172 0 }
+	color_ui = rgb { 235 172 0 }
+}
+MME = {
+	color = rgb { 104 152 83 }
+	color_ui = rgb { 135 198 108 }
 }

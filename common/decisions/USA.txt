@@ -1,5 +1,5 @@
 USA_a_broken_nation = {
-	USA_spreadUSA_spread_liberalism = {
+	USA_spread_liberalism = {
 
 		icon = generic_democracy
 

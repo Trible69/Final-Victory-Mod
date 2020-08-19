@@ -86,15 +86,11 @@ country_event = {
 		ai_chance = { factor = 100}
 		CAF = {
 		    create_faction = "San Fransico Pact"
-		    add_to_faction = MOR
+		    add_to_faction = DES
 		    add_to_faction = TEX
 		    add_to_faction = RIG
 		    add_to_faction = YUC
-		    add_to_faction = GUA
-		    add_to_faction = ELS
-		    add_to_faction = HON
-		    add_to_faction = NIC
-		    add_to_faction = COS
+		    add_to_faction = CEN
 		    transfer_state = 378
 		    add_state_core = 378
 		    transfer_state = 377
@@ -131,7 +127,6 @@ country_event = {
 		CEN = {
 		    transfer_state = 313
 		    add_state_core = 313
-		    load_oob = CEN_Revolt
 		    transfer_state = 314
 		    add_state_core = 314
 		    transfer_state = 312
@@ -140,6 +135,7 @@ country_event = {
 		    add_state_core = 317
 		    transfer_state = 316
 		    add_state_core = 316
+			load_oob = CEN_Revolt
 		}
 		RIG = {
 		    transfer_state = 480
@@ -157,7 +153,7 @@ country_event = {
 		    type = annex_everything
 		}
 		declare_war_on = {
-		    target = MOR
+		    target = DES
 		    type = annex_everything
 		}
 		declare_war_on = {

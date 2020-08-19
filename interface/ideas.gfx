@@ -4068,5 +4068,21 @@ spriteTypes = {
 		name = "GFX_idea_focus_uac"
 		texturefile = "gfx/interface/ideas/idea_focus_uac.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_100_year_debt_1"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_100_year_debt_2"
+		texturefile = "gfx/interface/ideas/great_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spread_liberal"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spread_conservative"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+	}
 	
 }

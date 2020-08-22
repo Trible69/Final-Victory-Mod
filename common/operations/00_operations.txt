@@ -1051,13 +1051,13 @@ operation_coup_government = { ### 7 1/70
 				limit = {
 					PREV.ROOT = { 
 						OR = {
-							has_government = ultraconservatism
+							has_government = ultraconservative
 							has_government = national_populism
 						}
 					}
 				}
 				OR = {
-					ultraconservatism > 0.2
+					ultraconservative > 0.2
 					national_populism > 0.2
 				}
 			}
@@ -1065,13 +1065,13 @@ operation_coup_government = { ### 7 1/70
 				limit = {
 					PREV.ROOT = { 
 						OR = {
-							has_government = anarchism
+							has_government = anarchist
 							has_government = vanguardism
 						}
 					}
 				}
 				OR = {
-					anarchism > 0.2
+					anarchist > 0.2
 					vanguardism > 0.2
 				}
 			}
@@ -1079,16 +1079,16 @@ operation_coup_government = { ### 7 1/70
 				limit = {
 					PREV.ROOT = { 
 						OR = {
-							has_government = liberalism 
-							has_government = social_democracy 
-							has_government = conservatism 
+							has_government = liberal 
+							has_government = social_democrat 
+							has_government = conservative
 						}
 					}
 				}
 				OR = {
-					liberalism > 0.2
-					social_democracy > 0.2
-					conservatism > 0.2
+					liberal > 0.2
+					social_democrat > 0.2
+					conservative > 0.2
 				}
 			}
 				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }

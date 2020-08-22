@@ -102,7 +102,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.3
-					congress_high_support_trigger = yes
 				}	
 			}
 			on_add = {
@@ -112,7 +111,6 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			
@@ -159,7 +157,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.5
-					congress_high_support_trigger = yes
 				}
 			}
 
@@ -181,7 +178,6 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -228,7 +224,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
-					congress_high_support_trigger = yes
 				}		
 			}
 		
@@ -250,7 +245,6 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -290,7 +284,6 @@ ideas = {
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
-					congress_high_support_trigger = yes
 				}
 			}
 			on_add = {
@@ -300,7 +293,6 @@ ideas = {
 						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
-					USA_congress_large_opposition = yes
 				}
 			}
 			ai_will_do = {
@@ -473,7 +465,9 @@ ideas = {
 			available = {
 				OR = {
 					AND = {
-						has_government = democratic
+						has_government = liberal
+						has_government = conservative
+						has_government = social_democrat
 						has_war = yes
 						any_enemy_country = {
 							ic_ratio = { 
@@ -542,8 +536,9 @@ ideas = {
 			available = {
 				has_war = yes
 				OR = { 
-					has_government = fascism
-					has_government = communism
+					has_government = vanguardism
+					has_government = national_populism
+					has_government = ultraconservative
 				}
 				OR = {
 					has_idea = war_economy

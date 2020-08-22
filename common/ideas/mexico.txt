@@ -33,7 +33,7 @@ ideas = {
 				conservative_drift = 0.2
 			}
 		}
-		100_year_debt_1 = {
+		n100_year_debt_1 = {
 			
 			allowed = {
 				always = no
@@ -53,7 +53,7 @@ ideas = {
 				production_speed_dockyard_factor = -0.5
 			}
 		}
-		100_year_debt_2 = {
+		n100_year_debt_2 = {
 
 			allowed = {
 				always = no
@@ -232,7 +232,6 @@ ideas = {
 			traits = { war_industrialist }
 
 			modifier = {
-				mobilization_laws_cost_factor = -0.25
 			}
 		}
 		
@@ -361,8 +360,8 @@ ideas = {
 			
 			available = {
 				OR = {
-					has_government = communism
-					has_government = neutrality
+					has_government = vanguardism
+					has_government = ultraconservative
 				}
 				has_global_flag = flag_mexico_invited_trotsky_to_government
 				NOT = { 
@@ -395,7 +394,7 @@ ideas = {
 			available = {
 				has_completed_focus = MEX_focus_support_general_cedillo
 				NOT = {
-					has_government = communism
+					has_government = vanguardism
 				}
 			}
 			

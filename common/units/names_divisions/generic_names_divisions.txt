@@ -46,35 +46,35 @@ BRENGL_INF_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Infantry Division"
+	fallback_name = " Infantry Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Infantry Division" }
-		2 = { "%dnd Infantry Division" }
-		3 = { "%drd Infantry Division" }
-		4 = { "%dth Infantry Division" }
-		5 = { "%dth Infantry Division" }
-		6 = { "%dth Infantry Division" }
-		7 = { "%dth Infantry Division" }
-		8 = { "%dth Infantry Division" }
-		9 = { "%dth Infantry Division" }
-		10 = { "%dth Infantry Division" }
-		11 = { "%dth Infantry Division" }
-		12 = { "%dth Infantry Division" }
-		13 = { "%dth Infantry Division" }
-		14 = { "%dth Infantry Division" }
-		15 = { "%dth Infantry Division" }
-		16 = { "%dth Infantry Division" }
-		17 = { "%dst Infantry Division" }
-		18 = { "%dnd Infantry Division" }
-		19 = { "%drd Infantry Division" }
-		20 = { "%dth Infantry Division" }
-		21 = { "%dst Infantry Division" }
-		22 = { "%dnd Infantry Division" }
-		23 = { "%drd Infantry Division" }
+		1 = { " Infantry Division" }
+		2 = { " Infantry Division" }
+		3 = { " Infantry Division" }
+		4 = { " Infantry Division" }
+		5 = { " Infantry Division" }
+		6 = { " Infantry Division" }
+		7 = { " Infantry Division" }
+		8 = { " Infantry Division" }
+		9 = { " Infantry Division" }
+		10 = { " Infantry Division" }
+		11 = { " Infantry Division" }
+		12 = { " Infantry Division" }
+		13 = { " Infantry Division" }
+		14 = { " Infantry Division" }
+		15 = { " Infantry Division" }
+		16 = { " Infantry Division" }
+		17 = { " Infantry Division" }
+		18 = { " Infantry Division" }
+		19 = { " Infantry Division" }
+		20 = { " Infantry Division" }
+		21 = { " Infantry Division" }
+		22 = { " Infantry Division" }
+		23 = { " Infantry Division" }
 	}
 }
 
@@ -89,35 +89,35 @@ BRENGL_INFB_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Infantry Brigade"
+	fallback_name = " Infantry Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Infantry Brigade" }
-		2 = { "%dnd Infantry Brigade" }
-		3 = { "%drd Infantry Brigade" }
-		4 = { "%dth Infantry Brigade" }
-		5 = { "%dth Infantry Brigade" }
-		6 = { "%dth Infantry Brigade" }
-		7 = { "%dth Infantry Brigade" }
-		8 = { "%dth Infantry Brigade" }
-		9 = { "%dth Infantry Brigade" }
-		10 = { "%dth Infantry Brigade" }
-		11 = { "%dth Infantry Brigade" }
-		12 = { "%dth Infantry Brigade" }
-		13 = { "%dth Infantry Brigade" }
-		14 = { "%dth Infantry Brigade" }
-		15 = { "%dth Infantry Brigade" }
-		16 = { "%dth Infantry Brigade" }
-		17 = { "%dst Infantry Brigade" }
-		18 = { "%dnd Infantry Brigade" }
-		19 = { "%drd Infantry Brigade" }
-		20 = { "%dth Infantry Brigade" }
-		21 = { "%dst Infantry Brigade" }
-		22 = { "%dnd Infantry Brigade" }
-		23 = { "%drd Infantry Brigade" }
+		1 = { "1st Infantry Brigade" }
+		2 = { "2nd Infantry Brigade" }
+		3 = { "3rd Infantry Brigade" }
+		4 = { "4th Infantry Brigade" }
+		5 = { "5th Infantry Brigade" }
+		6 = { "6th Infantry Brigade" }
+		7 = { "7th Infantry Brigade" }
+		8 = { "8th Infantry Brigade" }
+		9 = { "9th Infantry Brigade" }
+		10 = { "10th Infantry Brigade" }
+		11 = { "11th Infantry Brigade" }
+		12 = { "12th Infantry Brigade" }
+		13 = { "13th Infantry Brigade" }
+		14 = { "14th Infantry Brigade" }
+		15 = { "15th Infantry Brigade" }
+		16 = { "16th Infantry Brigade" }
+		17 = { "17th Infantry Brigade" }
+		18 = { "18th Infantry Brigade" }
+		19 = { "19th Infantry Brigade" }
+		20 = { "20th Infantry Brigade" }
+		21 = { "21st Infantry Brigade" }
+		22 = { "22nd Infantry Brigade" }
+		23 = { "23rd Infantry Brigade" }
 	}
 }
 
@@ -132,22 +132,22 @@ BRENGL_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Cavalry Division"
+	fallback_name = " Cavalry Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Cavalry Division" }
-		2 = { "%dnd Cavalry Division" }
-		3 = { "%drd Cavalry Division" }
-		4 = { "%dth Cavalry Division" }
-		5 = { "%dth Cavalry Division" }
-		6 = { "%dth Cavalry Division" }
-		7 = { "%dth Cavalry Division" }
-		8 = { "%dth Cavalry Division" }
-		9 = { "%dth Cavalry Division" }
-		10 = { "%dth Cavalry Division" }
+		1 = { "1st Cavalry Division" }
+		2 = { "2nd Cavalry Division" }
+		3 = { "3nd Cavalry Division" }
+		4 = { "4th Cavalry Division" }
+		5 = { "5th Cavalry Division" }
+		6 = { "6th Cavalry Division" }
+		7 = { "7th Cavalry Division" }
+		8 = { "8th Cavalry Division" }
+		9 = { "9th Cavalry Division" }
+		10 = { "10th Cavalry Division" }
 	}
 }
 
@@ -162,22 +162,22 @@ BRENGL_CAV_02 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Cavalry Brigade"
+	fallback_name = " Cavalry Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Cavalry Brigade" }
-		2 = { "%dnd Cavalry Brigade" }
-		3 = { "%drd Cavalry Brigade" }
-		4 = { "%dth Cavalry Brigade" }
-		5 = { "%dth Cavalry Brigade" }
-		6 = { "%dth Cavalry Brigade" }
-		7 = { "%dth Cavalry Brigade" }
-		8 = { "%dth Cavalry Brigade" }
-		9 = { "%dth Cavalry Brigade" }
-		10 = { "%dth Cavalry Brigade" }
+		1 = { "1st Cavalry Brigade" }
+		2 = { "2nd Cavalry Brigade" }
+		3 = { "3rd Cavalry Brigade" }
+		4 = { "4th Cavalry Brigade" }
+		5 = { "5th Cavalry Brigade" }
+		6 = { "6th Cavalry Brigade" }
+		7 = { "7th Cavalry Brigade" }
+		8 = { "8th Cavalry Brigade" }
+		9 = { "9th Cavalry Brigade" }
+		10 = { "10th Cavalry Brigade" }
 	}
 }
 
@@ -192,22 +192,22 @@ AMENGL_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Motorized Division"
+	fallback_name = " Motorized Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Motorized Division" }
-		2 = { "%dnd Motorized Division" }
-		3 = { "%drd Motorized Division" }
-		4 = { "%dth Motorized Division" }
-		5 = { "%dth Motorized Division" }
-		6 = { "%dth Motorized Division" }
-		7 = { "%dth Motorized Division" }	
-		8 = { "%dth Motorized Division" }
-		9 = { "%dth Motorized Division" }
-		10 = { "%dth Motorized Division" }
+		1 = { "1st Motorized Division" }
+		2 = { "2nd Motorized Division" }
+		3 = { "3rd Motorized Division" }
+		4 = { "4th Motorized Division" }
+		5 = { "5th Motorized Division" }
+		6 = { "6th Motorized Division" }
+		7 = { "7th Motorized Division" }	
+		8 = { "8th Motorized Division" }
+		9 = { "9th Motorized Division" }
+		10 = { "10th Motorized Division" }
 	}
 }
 
@@ -222,22 +222,22 @@ AMENGL_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Mechanized Division"
+	fallback_name = " Mechanized Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Mechanized Division" }
-		2 = { "%dnd Mechanized Division" }
-		3 = { "%drd Mechanized Division" }
-		4 = { "%dth Mechanized Division" }
-		5 = { "%dth Mechanized Division" }
-		6 = { "%dth Mechanized Division" }
-		7 = { "%dth Mechanized Division" }	
-		8 = { "%dth Mechanized Division" }
-		9 = { "%dth Mechanized Division" }
-		10 = { "%dth Mechanized Division" }
+		1 = { "1st Mechanized Division" }
+		2 = { "2nd Mechanized Division" }
+		3 = { "3rd Mechanized Division" }
+		4 = { "4th Mechanized Division" }
+		5 = { "5th Mechanized Division" }
+		6 = { "6th Mechanized Division" }
+		7 = { "7th Mechanized Division" }	
+		8 = { "8th Mechanized Division" }
+		9 = { "9th Mechanized Division" }
+		10 = { "10th Mechanized Division" }
 	}
 }
 
@@ -252,22 +252,22 @@ AMENGL_ARM_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Armored Division"
+	fallback_name = " Armored Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Armored Division" }
-		2 = { "%dnd Armored Division" }
-		3 = { "%drd Armored Division" }
-		4 = { "%dth Armored Division" }
-		5 = { "%dth Armored Division" }
-		6 = { "%dth Armored Division" }
-		7 = { "%dth Armored Division" }
-		8 = { "%dth Armored Division" }
-		9 = { "%dth Armored Division" }
-		10 = { "%dth Armored Division" }
+		1 = { "1st Armored Division" }
+		2 = { "2nd Armored Division" }
+		3 = { "3rd Armored Division" }
+		4 = { "4th Armored Division" }
+		5 = { "5th Armored Division" }
+		6 = { "6th Armored Division" }
+		7 = { "7th Armored Division" }
+		8 = { "8th Armored Division" }
+		9 = { "9th Armored Division" }
+		10 = { "10th Armored Division" }
 	}
 }
 
@@ -282,22 +282,22 @@ BRENGL_ARM_02 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Tank Brigade"
+	fallback_name = " Tank Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Tank Brigade" }
-		2 = { "%dnd Tank Brigade" }
-		3 = { "%drd Tank Brigade" }
-		4 = { "%dth Tank Brigade" }
-		5 = { "%dth Tank Brigade" }
-		6 = { "%dth Tank Brigade" }
-		7 = { "%dth Tank Brigade" }
-		8 = { "%dth Tank Brigade" }
-		9 = { "%dth Tank Brigade" }
-		10 = { "%dth Tank Brigade" }
+		1 = { "1st Tank Brigade" }
+		2 = { "2nd Tank Brigade" }
+		3 = { "3rd Tank Brigade" }
+		4 = { "4th Tank Brigade" }
+		5 = { "5th Tank Brigade" }
+		6 = { "6th Tank Brigade" }
+		7 = { "7th Tank Brigade" }
+		8 = { "8th Tank Brigade" }
+		9 = { "9th Tank Brigade" }
+		10 = { "10th Tank Brigade" }
 	}
 }
 
@@ -312,22 +312,22 @@ BRENGL_PAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Airborne Division"
+	fallback_name = " Airborne Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Airborne Division" }
-		2 = { "%dnd Airborne Division" }	
-		3 = { "%drd Airborne Division" }
-		4 = { "%dth Airborne Division" }
-		5 = { "%dth Airborne Division" }
-		6 = { "%dth Airborne Division" }
-		7 = { "%dth Airborne Division" }	
-		8 = { "%dth Airborne Division" }
-		9 = { "%dth Airborne Division" }
-		10 = { "%dth Airborne Division" }
+		1 = { "1st Airborne Division" }
+		2 = { "2nd Airborne Division" }	
+		3 = { "3rd Airborne Division" }
+		4 = { "4th Airborne Division" }
+		5 = { "5th Airborne Division" }
+		6 = { "6th Airborne Division" }
+		7 = { "7th Airborne Division" }	
+		8 = { "8th Airborne Division" }
+		9 = { "9th Airborne Division" }
+		10 = { "10th Airborne Division" }
 	}
 }
 
@@ -342,22 +342,22 @@ BRENGL_MAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Marine Division"
+	fallback_name = " Marine Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Marine Division" }
-		2 = { "%dnd Marine Division" }
-		3 = { "%drd Marine Division" }
-		4 = { "%dth Marine Division" }
-		5 = { "%dth Marine Division" }
-		6 = { "%dth Marine Division" }
-		7 = { "%dth Marine Division" }
-		8 = { "%dth Marine Division" }
-		9 = { "%dth Marine Division" }
-		10 = { "%dth Marine Division" }
+		1 = { "1st Marine Division" }
+		2 = { "2nd Marine Division" }
+		3 = { "3rd Marine Division" }
+		4 = { "4th Marine Division" }
+		5 = { "5th Marine Division" }
+		6 = { "6th Marine Division" }
+		7 = { "7th Marine Division" }
+		8 = { "8th Marine Division" }
+		9 = { "9th Marine Division" }
+		10 = { "10th Marine Division" }
 	}
 }
 
@@ -372,22 +372,22 @@ BRENGL_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Mountain Division"
+	fallback_name = " Mountain Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Mountain Division" }
-		2 = { "%dnd Mountain Division" }
-		3 = { "%drd Mountain Division" }
-		4 = { "%dth Mountain Division" }
-		5 = { "%dth Mountain Division" }
-		6 = { "%dth Mountain Division" }
-		7 = { "%dth Mountain Division" }
-		8 = { "%dth Mountain Division" }
-		9 = { "%dth Mountain Division" }
-		10 = { "%dth Mountain Division" }
+		1 = { "1st Mountain Division" }
+		2 = { "2nd Mountain Division" }
+		3 = { "3rd Mountain Division" }
+		4 = { "4th Mountain Division" }
+		5 = { "5th Mountain Division" }
+		6 = { "6th Mountain Division" }
+		7 = { "7th Mountain Division" }
+		8 = { "8th Mountain Division" }
+		9 = { "9th Mountain Division" }
+		10 = { "10th Mountain Division" }
 	}
 }
 
@@ -402,21 +402,21 @@ BRENGL_GAR_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BRENGL_INF_01 }
 
-	fallback_name = "%dth Garrison Division"
+	fallback_name = " Garrison Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Garrison Division" }
-		2 = { "%dnd Garrison Division" }
-		3 = { "%drd Garrison Division" }
-		4 = { "%dth Garrison Division" }
-		5 = { "%dth Garrison Division" }
-		6 = { "%dth Garrison Division" }
-		7 = { "%dth Garrison Division" }
-		8 = { "%dth Garrison Division" }
-		9 = { "%dth Garrison Division" }
-		10 = { "%dth Garrison Division" }
+		1 = { "1st Garrison Division" }
+		2 = { "2nd Garrison Division" }
+		3 = { "3rd Garrison Division" }
+		4 = { "4th Garrison Division" }
+		5 = { "5th Garrison Division" }
+		6 = { "6th Garrison Division" }
+		7 = { "7th Garrison Division" }
+		8 = { "8th Garrison Division" }
+		9 = { "9th Garrison Division" }
+		10 = { "10th Garrison Division" }
 	}
 }

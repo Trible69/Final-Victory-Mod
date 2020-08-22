@@ -4,12 +4,12 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "USA"
 		default = yes
 
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberal
 			ideas = {
 				broken_nation
 				minor_depression
@@ -24,6 +24,32 @@ bookmarks = {
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"MEX"={
+			minor = yes
+			history = ""
+			ideology = ultraconservative
+			ideas = {
+				
+			}
+			focuses = {
+				MEX_a_new_idea
+				MEX_take_a_democratic_route
+				MEX_absolute_powe
+			}
+		}
+
+		"QUE"={
+			minor = yes
+			history = ""
+			ideology = ultraconservative
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
 		}
 		
 		effect = {

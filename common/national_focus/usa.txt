@@ -522,8 +522,8 @@ focus_tree = {
 		available = {
 			has_war = no
 			OR = {
-			    democratic > 0.8
-			    neutrality > 0.8
+			    liberal > 0.8
+			    conservative > 0.8
 			}
 		}
 		ai_will_do = {
@@ -1266,7 +1266,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		available = {
-			has_government = neutrality
+			has_government = conservative
 		}
 		prerequisite = { focus = USA_rebuild_the_country }
 		mutually_exclusive = { focus = USA_forgive_the_wrongdoing }
@@ -1347,7 +1347,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_popularity = {
-                ideology = democratic
+                ideology = liberal
                 popularity = 0.05
             }
             add_stability = 0.05
@@ -1367,7 +1367,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_popularity = {
-                ideology = democratic
+                ideology = liberal
                 popularity = 0.05
             }
             add_stability = 0.05
@@ -1387,7 +1387,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-                ideology = neutrality
+                ideology = conservative
                 popularity = -0.05
             }
 		}
@@ -1406,7 +1406,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-                ideology = democratic
+                ideology = liberal
                 popularity = 0.1
             }
 		}
@@ -1425,7 +1425,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_popularity = {
-                ideology = democratic
+                ideology = liberal
                 popularity = 0.05
             }
             add_popularity = {
@@ -1449,7 +1449,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_popularity = {
-                ideology = neutrality
+                ideology = conservative
                 popularity = 0.05
             }
             add_stability = 0.05
@@ -1464,7 +1464,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		available = {
-			has_government = democratic
+			has_government = liberal
 		}
 		prerequisite = { focus = USA_rebuild_the_country }
 		mutually_exclusive = { focus = USA_root_out_the_traitors }
@@ -1506,7 +1506,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-                ideology = democratic
+                ideology = liberal
                 popularity = -0.05
             }
 		}
@@ -1540,7 +1540,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_popularity = {
-                ideology = neutrality
+                ideology = conservative
                 popularity = 0.1
             }
         }
@@ -1559,7 +1559,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_popularity = {
-                ideology = neutrality
+                ideology = conservative
                 popularity = 0.15
             }
         }

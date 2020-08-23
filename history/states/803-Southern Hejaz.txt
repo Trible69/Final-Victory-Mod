@@ -1,0 +1,19 @@
+
+state={
+	id=803
+	name="STATE_803"
+	history={
+		owner = NEJ
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = NEJ
+
+	}
+	provinces={
+		1923 2090 5006 5037 8030 8060 8073 10786 10870 12883 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

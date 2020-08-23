@@ -592,3 +592,7 @@ MME = {
 	color = rgb { 104 152 83 }
 	color_ui = rgb { 135 198 108 }
 }
+NEJ = {
+	color = rgb { 243 241 165 }
+	color_ui = rgb { 243 241 165 }
+}

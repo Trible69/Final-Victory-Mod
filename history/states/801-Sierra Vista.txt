@@ -4,6 +4,16 @@ state={
 	provinces={
 		3834 7920 10783 
 	}
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = MEX
+	}
 	manpower=42665
 	state_category = rural
 	buildings_max_level_factor=1.000

@@ -1,4 +1,4 @@
-﻿capital = 288
+﻿capital = 805
 
 #	BASIC VALUES
 OOB = "generic_1936"

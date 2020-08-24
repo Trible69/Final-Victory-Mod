@@ -10,6 +10,7 @@ state={
 	}
 
 	history={
+		add_core_of = RAJ
 		owner = RAJ
 		buildings = {
 			infrastructure = 1

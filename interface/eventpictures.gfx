@@ -2104,5 +2104,10 @@ spriteTypes = {
 		name = "GFX_report_event_USACharlesSpeech"
 		texturefile = "gfx/event_pictures/report_event_USACharlesSpeech.dds"
 	}
+
+	spriteType = {
+		name = "GFX_news_event_haywood_assassination"
+		texturefile = "gfx/event_pictures/news_event_haywood_assassination.dds"
+	}
 	
 }

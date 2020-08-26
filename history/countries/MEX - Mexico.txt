@@ -42,7 +42,6 @@ if = {
 	}
 }
 
-set_country_flag = monroe_doctrine
 
 set_convoys = 45
 set_stability = 0.2
@@ -53,18 +52,14 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	add_ideas = {
-		MEX_callistas
-		MEX_church_power_2
-		MEX_oil_concessions
-		MEX_politicised_army
-		MEX_cedillo_tension_2
+		n100_year_debt_1
 	}
 }
 
 set_politics = {
 	ruling_party = ultraconservative
-	last_election = ""
-	election_frequency = never
+	last_election = "1933.3.5"
+	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
@@ -80,13 +75,14 @@ set_popularities = {
 create_country_leader = { 
 	name = "Agustin IV"
 	desc = ""
-	picture = "AgustinIVMEX"
+	picture = "AgustinIVMEX.dds"
 	expire = "1965.1.1"
-	ideology = absolutism
+	ideology = absolutism 
 	traits = {
 		
 	}
 }
+
 
 create_field_marshal = {
 	name = "Lázaro Cárdenas"

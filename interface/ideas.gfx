@@ -4084,5 +4084,13 @@ spriteTypes = {
 		name = "GFX_idea_spread_conservative"
 		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_n100_year_debt_1"
+		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills_payment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_n100_year_debt_2"
+		texturefile = "gfx/interface/ideas/idea_ger_mefo_bills_payment.dds"
+	}
 	
 }

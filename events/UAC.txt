@@ -40,14 +40,12 @@ country_event = {
 	    name = UAC.2.a
 	    ai_chance = { factor = 100 }
 	    create_country_leader = {
-	    name = "Norman Thomas"
-	    desc = "POLITICS_EARL_BROWDER_DESC"
-	    picture = "NormanThomasUAC.dds"
-	    expire = "1965.1.1"
-	    ideology = marxism
-	    traits = {
-		
-        }
+	        name = "Norman Thomas"
+	        desc = "POLITICS_EARL_BROWDER_DESC"
+	        picture = "NormanThomasUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.14 }
 		}

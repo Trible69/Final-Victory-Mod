@@ -17,7 +17,7 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-
+	agricultural_economy
 }
 
 ###	POLITICS

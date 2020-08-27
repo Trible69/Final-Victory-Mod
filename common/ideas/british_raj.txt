@@ -5,6 +5,26 @@ ideas = {
 	}
 
 	country = {	
+		agricultural_economy = {
+
+			picture = generic_agrarian_society
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.2
+				conscription_factor = -0.6
+
+			}
+		}
 		
 	}
 

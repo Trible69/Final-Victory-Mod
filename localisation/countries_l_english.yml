@@ -46,4 +46,13 @@
  YUC_vanguardism_ADJ:0 "Yucatan"
  CEN_social_democrat:0 "United Provinces of Central America"
  CEN_social_democrat_DEF:0 "United Provinces of Central America"
+<<<<<<< HEAD
  CEN_social_democrat_ADJ:0 "Central American"
+=======
+ CEN_social_democrat_ADJ:0 "Central American"
+ MME_ultraconservative:0 "Mexican Empire"
+ MME_ultraconservative_DEF:0 "the Mexican Empire"
+ MME_ultraconservative_ADJ:0 "Mexican"
+ RAJ_conservative_DEF:0 "French Raj"
+ RAJ_conservative_ADJ:0 "French Raj"
+>>>>>>> 08a69058e99bb4417f5b5dd3f8d00cef40867390

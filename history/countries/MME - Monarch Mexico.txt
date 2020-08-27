@@ -78,9 +78,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Agustin IV"
+	name = "Augustin IV"
 	desc = ""
-	picture = "gfx/leaders/MEX/Agustin_IV.png"
+	picture = "gfx/leaders/MEX/Augustin_IV.png"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -133,9 +133,9 @@ create_country_leader = { # Trotskyist, led the PCM 1929-1940
 }
 
 create_country_leader = {
-	name = "Agustin IV"
+	name = "Augustin IV"
 	desc = ""
-	picture = "AgustinIVMME.dds"
+	picture = "AugustinIVMME.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {

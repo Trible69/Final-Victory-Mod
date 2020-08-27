@@ -1,0 +1,17 @@
+l_english:
+ QUE_conservative:0 "Republic Of Quebec"
+ QUE_social_democrat:0 "Republic Of Quebec"
+ QUE_liberal:0 "Republic Of Quebec"
+ QUE_liberal_DEF:0 "Quebec"
+ QUE_liberal_ADJ:0 "Quebec"
+ QUE_social_democrat_DEF:0 "Quebec"
+ QUE_social_democrat_ADJ:0 "Quebec"
+ QUE_conservative_DEF:0 "Quebec"
+ QUE_conservative_ADJ:0 "Quebec"
+ QUE_ultraconservative:0 "Kingdom of Quebec"
+ QUE_ultraconservative_DEF:0 "Quebec"
+ QUE_ultraconservative_ADJ:0 "Quebec"
+ ###########FOCUS##############
+ ###########IDEA###############
+ ##########PARTiES############
+

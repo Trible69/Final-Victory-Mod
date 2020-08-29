@@ -18,22 +18,42 @@ set_technology = {
 ###	IDEAS
 add_ideas = {
 	agricultural_economy
+	risk_of_famine
+	council_of_princes
+	ghandhi's_swaraj
 }
 
 ###	POLITICS
 set_politics = {
-	ruling_party = liberalism
-	last_election = "1934.1.1"
+	ruling_party = conservative
+	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
-set_popularities = { 
-	vanguardism = 5 anarchism = 5 social_democracy = 25 liberalism = 30 conservatism = 25 ultraconservatism = 5 national_populism = 5
+set_popularities = {
+	ultraconservative = 20
+	national_populism = 2
+	vanguardism = 4
+	anarchist = 0
+	liberal = 10
+	conservative = 59
+	social_democrat = 5
 }
 
 ###	OPINION & TRADE MODIFIERS
 
 ###	POLITICIANS
+
+create_country_leader = { 
+	name = "Alfred Albert Martineau"
+	desc = ""
+	picture = "AugustinIVMEX.dds"
+	expire = "1965.1.1"
+	ideology = national_conservatism 
+	traits = {
+		
+	}
+}
 
 ###	GENERALS
 

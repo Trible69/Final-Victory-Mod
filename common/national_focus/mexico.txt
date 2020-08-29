@@ -611,5 +611,41 @@ focus_tree = {
 		prerequisite = {
 			focus = MEX_a_new_idea
 		}
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = MEX_anarchism
+		icon = GFX_ 
+		x = 17
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		prerequisite = {
+			focus = MEX_rally_the_workers
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = MEX_vanguardism
+		icon = GFX_ 
+		x = 15
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		prerequisite = {
+			focus = MEX_rally_the_workers
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.1
+		}
 	}
 }

@@ -1,4 +1,19 @@
 ﻿l_english: 
+ AMS_national_populism:0 "American State"
+ AMS_national_populism_DEF:0 "The American State"
+ AMS_national_populism_ADJ:0 "American"
+########IDEAS###########
+ ams_fire_of_revolution:0 "Embers of Revolution"
+ ams_fire_of_revolution_desc:0 ""
+ ams_recover_civil_war:0 "Recovery from the Civil War"
+ ams_recover_civil_war_desc:0 ""
+ ams_ruined_economy:0 "Ruined Economy"
+ ams_ruined_economy_desc:0 ""
+ ams_crippled_industry:0 "Crippled Industry"
+ ams_crippled_industry_desc:0 ""
+ ams_shellshocked_populace:0 "Shellshocked Populace"
+ ams_shellshocked_populace_desc:0 ""
+########FOCUSES#########
 AMS_the_new_economy:0 "The New Economy"
 AMS_the_new_economy_desc:0 ""
 AMS_rally_the_volunteers:0 "Rally the Volunteers"
@@ -121,3 +136,4 @@ AMS_nagotiate_potential_alliance:0 "Nagotiate Potential Alliance"
 AMS_nagotiate_potential_alliance_desc:0 ""
 AMS_build_relations_with_the_british:0 "Build Relation with the British"
 AMS_build_relations_with_the_british_desc:0 ""
+########political parties###########

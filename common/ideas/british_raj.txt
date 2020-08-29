@@ -25,7 +25,67 @@ ideas = {
 
 			}
 		}
-		
+		risk_of_famine = {
+
+			picture = raj_risk_of_famine
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.1
+
+			}
+		}
+		council_of_princes = {
+
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.2
+				consumer_goods_factor = 0.1
+				ultraconservative_drift = 0.05
+
+			}
+		}
+		ghandhi's_swaraj = {
+
+			picture = prc_the_long_march
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				autonomy_gain = 0.1
+
+
+			}
+		}
 	}
 
 

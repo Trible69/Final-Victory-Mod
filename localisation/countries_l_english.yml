@@ -48,6 +48,7 @@
  CEN_social_democrat_DEF:0 "United Provinces of Central America"
  CEN_social_democrat_ADJ:0 "Central American"
  CEN_social_democrat_ADJ:0 "Central American"
+ CEN_social_democrat_ADJ:0 "Central American"
  MME_ultraconservative:0 "Mexican Empire"
  MME_ultraconservative_DEF:0 "the Mexican Empire"
  MME_ultraconservative_ADJ:0 "Mexican"
@@ -57,5 +58,3 @@
  PER_ultraconservative:0 "Persian Empire"
  PER_ultraconservative_DEF:0 "the Persian Empire"
  PER_ultraconservative_ADJ:0 "Persian"
-
-

@@ -43,6 +43,42 @@ ideas = {
 				military_leader_cost_factor = +1.0
 			}
 		}
+		stagnating_economy = {
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		ineffective_adminstration = {
+
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
 	}
 	
 	# MILITARY

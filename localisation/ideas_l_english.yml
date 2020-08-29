@@ -139,3 +139,7 @@
  unstable_monarchy_desc:0 "The Shah remains in power through his military. This has been the case for decades and through massive military crackdowns on any revolts in the country. The most recent Shah has started to introduce reforms to fix the stagnating economy and improve public morale, but opinion towards the monarchy is still very low."
  corrupt_military:0 "Corrupt Military"
  corrupt_military_desc:0 "The Persian military holds a great deal of power in the government with their role of protecting the Shah’s power. To further preserve his power, the Shah promoted increasing corrupt officials who are loyal to the Shah to higher offices. This has led to a poor general staff and increasingly lower quality and production of any equipment. Furthermore, any means to reform the military will face massive backlash by the corrupt generals in power."
+ stagnating_economy:0 "Stagnating Economy"
+ stagnating_economy_desc:0 "wheeeee"
+ ineffective_adminstration:0 "Ineffective Adminstration"
+ ineffective_adminstration_desc:0 "Ineffective Adminstration"

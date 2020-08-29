@@ -19,6 +19,8 @@ set_technology = {
 add_ideas = {
 	unstable_monarchy
 	corrupt_military
+	stagnating_economy
+	ineffective_administration
 }
 
 ###	POLITICS

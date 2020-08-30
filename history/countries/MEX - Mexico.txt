@@ -53,6 +53,10 @@ if = {
 	}
 	add_ideas = {
 		n100_year_debt_1
+		revolt_plot
+		outdated_military
+		autonomy_discontent
+		inefficient_discontent
 	}
 }
 

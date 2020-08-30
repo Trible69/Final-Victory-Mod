@@ -8,12 +8,18 @@
  ############IDEAS#############
  spread_liberal:0 "Spread Liberalism"
  spread_conservative:0 "Spread Conservatism"
- n100_year_debt_1:0 "100 year debt"
+ n100_year_debt_1:0 "100 Year Debt"
  n100_year_debt_1_desc:0 "Our already bankrupt treasury had to resort to borrowing French money to address the cost of the past war. The great price in war equipment and fortifications has created an immense amount of debt to the French state which needs to be repaid as soon as possible. The presence of such debt will make economic recovery long-winded and difficult, possibly causing economic depression for decades to come. If this pattern of economic failure continues, our position as a regional economic power will hang in the balance."
  n100_year_debt_2:0 "Paying Off The Debt"
  n100_year_debt_2_desc:0 "The finance minister and the Banco Central de Mexico have both agreed that the best course of action to deal with the financial crisis is to begin repaying our debt to France. Although this will require us to print money en masse, the loss of our currency’s value will be made good by our eventual economic recovery and debt repayment. After all, when has printing money ever gone wrong?"
- revolt_plot:0 ""
+ revolt_plot:0 "Revolt Plot?"
  revolt_plot_desc:0 ""
+ outdated_military:0 "Outdated Military"
+ outdated_military_desc:0 ""
+ autonomy_discontent:0 "Autonomy Discontent"
+ autonomy_discontent_desc:0 ""
+ inefficient_government:0 "Inefficient Government"
+ inefficient_government_desc:0 ""
  ###########FOCUS##############
  ###########EVENTS###############
  mexico.1.t:0 "Charles Lindergh arrives in Mexico"

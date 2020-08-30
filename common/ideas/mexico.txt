@@ -73,10 +73,69 @@ ideas = {
 				production_speed_dockyard_factor = -0.25
 			}
 		}
-		revolt_plot ={
+		revolt_plot = {
 
 			allowed = {
 				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		outdated_military = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.1
+			}
+		}
+		autonomy_discontent = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+		inefficient_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 1.0
 			}
 		}
 	}

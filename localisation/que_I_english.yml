@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  QUE_conservative:0 "Republic Of Quebec"
  QUE_social_democrat:0 "Republic Of Quebec"
  QUE_liberal:0 "Republic Of Quebec"
@@ -12,6 +12,4 @@ l_english:
  QUE_ultraconservative_DEF:0 "Quebec"
  QUE_ultraconservative_ADJ:0 "Quebec"
  ###########FOCUS##############
- ###########IDEA###############
- ##########PARTiES############
 

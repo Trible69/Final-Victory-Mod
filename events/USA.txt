@@ -808,3 +808,39 @@ country_event = {
 		tag = USA
 	}
 }
+##########Bill Haywood getting power in congress#########
+country_event = {
+	id = USA.22
+	title = USA.22.t
+	desc = USA.22.d 
+	picture = GFX_ 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = USA.22.a 
+		add_popularity = {
+			ideology = vanguardism
+			popularity = 0.05
+		}
+	}
+}
+###Charles getting power####
+country_event = {
+	id = USA.23
+	title = USA.23.t
+	desc = USA.23.d
+	picture = GFX_report_event_USACharlesSpeech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = USA.23.a 
+		add_popularity = {
+			ideology = national_populism
+			popularity = 0.05
+		}
+	}
+}

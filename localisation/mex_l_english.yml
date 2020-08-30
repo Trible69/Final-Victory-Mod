@@ -1,0 +1,32 @@
+﻿l_english:
+ MEX_ultraconservative:0 "Mexican Empire"
+ MEX_ultraconservative_DEF:0 "the Mexican Empire"
+ MEX_ultraconservative_ADJ:0 "Mexican"
+ MME_ultraconservative:0 "Mexican Empire"
+ MME_ultraconservative_DEF:0 "the Mexican Empire"
+ MME_ultraconservative_ADJ:0 "Mexican"
+ ############IDEAS#############
+ spread_liberal:0 "Spread Liberalism"
+ spread_conservative:0 "Spread Conservatism"
+ n100_year_debt_1:0 "100 year debt"
+ n100_year_debt_1_desc:0 "Our already bankrupt treasury had to resort to borrowing French money to address the cost of the past war. The great price in war equipment and fortifications has created an immense amount of debt to the French state which needs to be repaid as soon as possible. The presence of such debt will make economic recovery long-winded and difficult, possibly causing economic depression for decades to come. If this pattern of economic failure continues, our position as a regional economic power will hang in the balance."
+ n100_year_debt_2:0 "Paying Off The Debt"
+ n100_year_debt_2_desc:0 "The finance minister and the Banco Central de Mexico have both agreed that the best course of action to deal with the financial crisis is to begin repaying our debt to France. Although this will require us to print money en masse, the loss of our currency’s value will be made good by our eventual economic recovery and debt repayment. After all, when has printing money ever gone wrong?"
+ revolt_plot:0 ""
+ revolt_plot_desc:0 ""
+ ###########FOCUS##############
+ ###########EVENTS###############
+ mexico.1.t:0 "Charles Lindergh arrives in Mexico"
+ mexico.1.d:0 ""
+ mexico.1.a:0 "We welcome him!"
+ mexico.1.b:0 "We don't want him, send him to Brazil!"
+ american_civil_war_begun:0 "The American Civil War has Begun"
+ mexico.2.t:0 "The Second Texas Revolution"
+ mexico.2.d:0 ""
+ mexico.2.a:0 "Off with their heads!"
+ mexico.3.t:0 "Our Territories Revolt!"
+ mexico.3.d:0 "Across our beloved nation, many provinces took it upon themselves to declare independence. Unsurprisingly, the first one to revolt was Texas, led by Texan Governor James V. Allred. Allred has declared independence for the 3rd Republic of Texas. Despite being called a Republic, the Texan militias are imprisoning political opposition. Many Tejanos (Texan Mexicans) across Texas are under threat from the dominant Anglo-American populace. The second to revolt are the dominant Mormon-American populace of Utah who have declared independence and proclaimed the President of their nation to be Heber J. Grant, the head of the Mormon religion. Hearing of the Texan Rebellion many Anglo-Americans in California have taken arms and declared themselves as the Californian Republic. California has always been a progressive province and opposed to the Mexican Emperor. Worse news has come and states that the Central Americans have taken the opportunity to declare their provinces independent, including Yucatan. The winner of the biggest conflict our country has seen since our independence war with Spain is still up in the air."
+ mexico.3.a:0 "The End is Near.."
+ ###########PARTIES##############
+
+

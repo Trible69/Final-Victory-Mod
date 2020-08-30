@@ -137,3 +137,8 @@ AMS_nagotiate_potential_alliance_desc:0 ""
 AMS_build_relations_with_the_british:0 "Build Relation with the British"
 AMS_build_relations_with_the_british_desc:0 ""
 ########political parties###########
+#########EVENTS#####################
+ AMS.1.t:0 "The End of the Civil War"
+ AMS.1.d:0 "The bloody conflict has finally ended with thousands of lives lost to the brutal battle. Now is the time for healing, and to prevent this from ever happening again."
+ AMS.1.a:0 "Recovery is important"
+##########Decisions###########

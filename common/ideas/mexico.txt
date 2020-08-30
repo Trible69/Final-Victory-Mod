@@ -73,6 +73,12 @@ ideas = {
 				production_speed_dockyard_factor = -0.25
 			}
 		}
+		revolt_plot ={
+
+			allowed = {
+				always = no
+			}
+		}
 	}
 
 	political_advisor = {

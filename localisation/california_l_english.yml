@@ -1,0 +1,13 @@
+﻿l_english:
+ CAF_social_democrat:0 "California"
+ CAF_social_democrat_DEF:0 "California"
+ CAF_social_democrat_ADJ:0 "Californian"
+ ############IDEAS#############
+ ###########FOCUS##############
+ ###########EVENTS###############
+ california.1.t:0 "Mexico has Surrendered!"
+ california.1.d:0 "After many months of battle, we have driven the Mexican armies to Ciudad del Mexico (Mexico City) and forced their general surrender. Victory celebrations are already being organized in Los Angeles, Sacramento, and San Francisco where citizens will be given triple rations and beautiful shows of fireworks and performances. Although this battle is won, a new enemy arises. Texas hopes to increase its influence in the area and challenge our hegemony over the West Coast. We will need to address this threat by clever diplomatic maneuvering and even possibly military conflict. Through such action, it will be possible to preserve and strengthen our new state."
+ california.1.a:0 "Excelsior! To the future ahead!"
+ ###########PARTIES##############
+
+

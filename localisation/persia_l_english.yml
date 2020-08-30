@@ -8,9 +8,9 @@
  corrupt_military:0 "Corrupt Military"
  corrupt_military_desc:0 "The Persian military holds a great deal of power in the government with their role of protecting the Shah’s power. To further preserve his power, the Shah promoted increasing corrupt officials who are loyal to the Shah to higher offices. This has led to a poor general staff and increasingly lower quality and production of any equipment. Furthermore, any means to reform the military will face massive backlash by the corrupt generals in power."
  stagnating_economy:0 "Stagnating Economy"
- stagnating_economy_desc:0 "wheeeee"
- ineffective_adminstration:0 "Ineffective Adminstration"
- ineffective_adminstration_desc:0 "Ineffective Adminstration"
+ stagnating_economy_desc:0 "Persia’s economy has been stagnating for decades due to poor economic policies and massive inefficiency and corruption in the government. "
+ ineffective_administration:0 "Ineffective Adminstration"
+ ineffective_administration_desc:0 "Persia’s government is filled with people from higher classes of society regardless of their skill and competence. This practice has continued for over 50 years due to nepotism, and left the government overburdened and unpopular. Most government funding is unaccounted for which has led to ineffectual policy making and massive increases of corruption in the country."
  ###########FOCUS##############
  ###########EVENTS###############
  ###########PARTIES##############

@@ -1,6 +1,6 @@
 ideas = {
 	
-	#FOCUS
+	#focus
 
 	country = {
 		unstable_monarchy = {
@@ -45,7 +45,7 @@ ideas = {
 		}
 		stagnating_economy = {
 
-			picture = chi_incompetent_officers
+			picture = stagnating_economy
 			
 			allowed = {
 				always = no
@@ -58,12 +58,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				consumer_goods_factor = 0.2
 			}
 		}
-		ineffective_adminstration = {
+		ineffective_administration = {
 
-			picture = chi_incompetent_officers
+			picture = prc_low_popular_support3
 			
 			allowed = {
 				always = no
@@ -76,7 +76,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				political_power_cost = 0.4
+				high_command_cost_factor = 1.25
 			}
 		}
 	}

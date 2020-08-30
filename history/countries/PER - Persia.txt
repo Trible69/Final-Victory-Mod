@@ -17,18 +17,38 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-
+	unstable_monarchy
+	corrupt_military
+	stagnating_economy
+	ineffective_administration
 }
 
 ###	POLITICS
 set_politics = {
-	ruling_party = liberalism
-	last_election = "1934.1.1"
+	ruling_party = ultraconservative
+	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
-set_popularities = { 
-	vanguardism = 5 anarchism = 5 social_democracy = 25 liberalism = 30 conservatism = 25 ultraconservatism = 5 national_populism = 5
+set_popularities = {
+	ultraconservative = 50
+	national_populism = 15
+	vanguardism = 2
+	anarchist = 0
+	liberal = 13
+	conservative = 12
+	social_democrat = 8 
+}
+
+create_country_leader = { 
+	name = "Ahmad Shah"
+	desc = ""
+	picture = "AugustinIVMEX.dds"
+	expire = "1965.1.1"
+	ideology = absolutism 
+	traits = {
+		
+	}
 }
 
 ###	OPINION & TRADE MODIFIERS

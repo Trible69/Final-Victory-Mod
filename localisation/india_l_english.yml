@@ -5,6 +5,12 @@
  ############IDEAS#############
  agricultural_economy:0 "Agricultural Economy"
  agricultural_economy_desc:0 "Introduction of Industrialization in the colony at first seemed successful. Factories were popping up left and right but constant famines and food shortages have left most of the populace to work in farms. European techniques have failed increasingly in improving production and agriculture. This has led the colonial administration to direct most production and populace for maintaining the colony, which has led to lower manpower and production for military matters."
+ risk_of_famine:0 "Risk of Famine"
+ risk_of_famine_desc:0 "The colony has depleted its food reserves. Crop failures, bad weather, poorly planned reforms and failed monsoons have exacerbated the situation to an unbelievable extent. If more food isn’t secured soon, there is going to be another famine, and this time there is no cushion to rely upon. Furthermore, Gandhi’s Swaraj moment will take advantage and exploit the situation if the famine strikes."
+ council_of_princes:0 "Council of Princes"
+ council_of_princes_desc:0 "The colony consists of many princely states that have tremendous power in the government and the colony as a whole. These states are ruled by the council of princes which directly reports to the French colonial government. Due to the power held by the states, administration and economic control proves to be a difficult task to establish nation-wide. The council of princes uses their states’ power to further push their own agenda to remove the French from power."
+ ghandhi's_swaraj:0 "Ghandhi's Swaraj"
+ ghandhi's_swaraj_desc:0 "Initially beginning as a violent protest under Bagha Jatin, the organisation reorganized itself under Gandhi after Jatin’s death. Their method of nonviolent protests had led to widespread condemnation of military crackdown by the colonial government. Gandhi plans to use the populace’s unrest regarding military overuse and famines to push the French out and establish a democractic India."
  ###########FOCUS##############
  ###########EVENTS###############
  ###########PARTIES##############

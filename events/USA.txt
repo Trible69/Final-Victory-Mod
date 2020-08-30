@@ -12,6 +12,7 @@ country_event = {
 	option = {
 		name = USA.1.a
 		ai_chance = { factor = 100}
+		country_event = {id = USA.24}
 	}
 }
 #########1936 election####################
@@ -842,5 +843,18 @@ country_event = {
 			ideology = national_populism
 			popularity = 0.05
 		}
+	}
+}
+country_event = {
+	id = USA.24
+	title = USA.24.t
+	desc = USA.24.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+
+	option = {
+		name = USA.24.a
+		ai_chance = { factor = 100}
 	}
 }

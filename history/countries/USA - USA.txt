@@ -101,40 +101,16 @@ if = {
 
 set_convoys = 400
 
-
+set_popularities = {
+	ultraconservative = 1
+	national_populism = 18
+	vanguardism = 18
+	anarchist = 3
+	liberal = 28
+	conservative = 25
+	social_democrat = 7 
+}
 set_politics = {
-
-	parties = {
-		national_populism = { 
-			popularity = 18
-		}
-
-		vanguardism = {
-			popularity = 18
-		}
-		
-		ultraconservative = {
-			popularity = 5
-			#banned = no #default is no
-		}
-
-		anarchist = {
-			popularity = 3
-		}
-
-		liberal = {
-			popularity = 28
-		}
-
-		social_democrat = {
-			popularity = 7
-		}
-		
-		conservative = {
-			popularity = 21
-		}
-	}
-	
 	ruling_party = liberal
 	last_election = "1932.11.8"
 	election_frequency = 48
@@ -159,7 +135,6 @@ create_country_leader = {
 	expire = "1947.1.1"
 	ideology = market_liberalism
 	traits = {
-		dislikes_germany
 	}
 }
 

@@ -1,0 +1,611 @@
+spriteTypes = { 
+	##Icon For: Increase French Immigration
+	SpriteType = { 
+		name = "GFX_CAN_increase_french_immigration-30853"
+		texturefile = "gfx/interface/goals/GFX_CAN_increase_french_immigration-30853.dds"
+	}
+
+	##Icon Shine For: Increase French Immigration
+	SpriteType = { 
+		name = "GFX_CAN_increase_french_immigration-30853_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_increase_french_immigration-30853.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_increase_french_immigration-30853.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_increase_french_immigration-30853.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Québécois Diplomacy
+	SpriteType = { 
+		name = "GFX_CAN_qubcois_diplomacy-30841"
+		texturefile = "gfx/interface/goals/GFX_CAN_qubcois_diplomacy-30841.dds"
+	}
+
+	##Icon Shine For: Québécois Diplomacy
+	SpriteType = { 
+		name = "GFX_CAN_qubcois_diplomacy-30841_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_qubcois_diplomacy-30841.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_qubcois_diplomacy-30841.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_qubcois_diplomacy-30841.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Industrialization Effort
+	SpriteType = { 
+		name = "GFX_CAN_industrialization_effort-32156"
+		texturefile = "gfx/interface/goals/GFX_CAN_industrialization_effort-32156.dds"
+	}
+
+	##Icon Shine For: Industrialization Effort
+	SpriteType = { 
+		name = "GFX_CAN_industrialization_effort-32156_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_industrialization_effort-32156.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_industrialization_effort-32156.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_industrialization_effort-32156.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Industrial Solution
+	SpriteType = { 
+		name = "GFX_CAN_industrial_solution-32151"
+		texturefile = "gfx/interface/goals/GFX_CAN_industrial_solution-32151.dds"
+	}
+
+	##Icon Shine For: Industrial Solution
+	SpriteType = { 
+		name = "GFX_CAN_industrial_solution-32151_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_industrial_solution-32151.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_industrial_solution-32151.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_industrial_solution-32151.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Agrarian Solution
+	SpriteType = { 
+		name = "GFX_CAN_agrarian_solution-32152"
+		texturefile = "gfx/interface/goals/GFX_CAN_agrarian_solution-32152.dds"
+	}
+
+	##Icon Shine For: Agrarian Solution
+	SpriteType = { 
+		name = "GFX_CAN_agrarian_solution-32152_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_agrarian_solution-32152.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_agrarian_solution-32152.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_agrarian_solution-32152.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Legitimate Kingdom
+	SpriteType = { 
+		name = "GFX_CAN_the_legitimate_kingdom-30396"
+		texturefile = "gfx/interface/goals/GFX_CAN_the_legitimate_kingdom-30396.dds"
+	}
+
+	##Icon Shine For: The Legitimate Kingdom
+	SpriteType = { 
+		name = "GFX_CAN_the_legitimate_kingdom-30396_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_the_legitimate_kingdom-30396.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_the_legitimate_kingdom-30396.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_the_legitimate_kingdom-30396.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Prussian Discipline
+	SpriteType = { 
+		name = "GFX_CAN_prussian_discipline-30837"
+		texturefile = "gfx/interface/goals/GFX_CAN_prussian_discipline-30837.dds"
+	}
+
+	##Icon Shine For: Prussian Discipline
+	SpriteType = { 
+		name = "GFX_CAN_prussian_discipline-30837_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_prussian_discipline-30837.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_prussian_discipline-30837.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_prussian_discipline-30837.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: American Army Officers
+	SpriteType = { 
+		name = "GFX_CAN_american_army_officers-30984"
+		texturefile = "gfx/interface/goals/GFX_CAN_american_army_officers-30984.dds"
+	}
+
+	##Icon Shine For: American Army Officers
+	SpriteType = { 
+		name = "GFX_CAN_american_army_officers-30984_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_american_army_officers-30984.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_american_army_officers-30984.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_american_army_officers-30984.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Expand the Aluminum Mines
+	SpriteType = { 
+		name = "GFX_CAN_expand_the_aluminum_mines-32162"
+		texturefile = "gfx/interface/goals/GFX_CAN_expand_the_aluminum_mines-32162.dds"
+	}
+
+	##Icon Shine For: Expand the Aluminum Mines
+	SpriteType = { 
+		name = "GFX_CAN_expand_the_aluminum_mines-32162_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_expand_the_aluminum_mines-32162.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_expand_the_aluminum_mines-32162.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_expand_the_aluminum_mines-32162.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Obliterate the Revolution
+	SpriteType = { 
+		name = "GFX_CAN_obliterate_the_revolution-30399"
+		texturefile = "gfx/interface/goals/GFX_CAN_obliterate_the_revolution-30399.dds"
+	}
+
+	##Icon Shine For: Obliterate the Revolution
+	SpriteType = { 
+		name = "GFX_CAN_obliterate_the_revolution-30399_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_obliterate_the_revolution-30399.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_obliterate_the_revolution-30399.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_obliterate_the_revolution-30399.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Force Convert the Anglos
+	SpriteType = { 
+		name = "GFX_CAN_force_convert_the_anglos-30845"
+		texturefile = "gfx/interface/goals/GFX_CAN_force_convert_the_anglos-30845.dds"
+	}
+
+	##Icon Shine For: Force Convert the Anglos
+	SpriteType = { 
+		name = "GFX_CAN_force_convert_the_anglos-30845_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_force_convert_the_anglos-30845.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_force_convert_the_anglos-30845.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_force_convert_the_anglos-30845.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The King's Plan
+	SpriteType = { 
+		name = "GFX_CAN_the_kings_plan-31005"
+		texturefile = "gfx/interface/goals/GFX_CAN_the_kings_plan-31005.dds"
+	}
+
+	##Icon Shine For: The King's Plan
+	SpriteType = { 
+		name = "GFX_CAN_the_kings_plan-31005_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_the_kings_plan-31005.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_the_kings_plan-31005.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_the_kings_plan-31005.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Further Recruitment
+	SpriteType = { 
+		name = "GFX_CAN_further_recruitment-32136"
+		texturefile = "gfx/interface/goals/GFX_CAN_further_recruitment-32136.dds"
+	}
+
+	##Icon Shine For: Further Recruitment
+	SpriteType = { 
+		name = "GFX_CAN_further_recruitment-32136_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_further_recruitment-32136.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_further_recruitment-32136.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_further_recruitment-32136.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Onwards, Quebec
+	SpriteType = { 
+		name = "GFX_CAN_onwards_quebec-32147"
+		texturefile = "gfx/interface/goals/GFX_CAN_onwards_quebec-32147.dds"
+	}
+
+	##Icon Shine For: Onwards, Quebec
+	SpriteType = { 
+		name = "GFX_CAN_onwards_quebec-32147_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_onwards_quebec-32147.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_onwards_quebec-32147.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_onwards_quebec-32147.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: British Naval Officers
+	SpriteType = { 
+		name = "GFX_CAN_british_naval_officers-32133"
+		texturefile = "gfx/interface/goals/GFX_CAN_british_naval_officers-32133.dds"
+	}
+
+	##Icon Shine For: British Naval Officers
+	SpriteType = { 
+		name = "GFX_CAN_british_naval_officers-32133_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_british_naval_officers-32133.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_british_naval_officers-32133.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_british_naval_officers-32133.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: British Air Force Reforms
+	SpriteType = { 
+		name = "GFX_CAN_british_air_force_reforms-32134"
+		texturefile = "gfx/interface/goals/GFX_CAN_british_air_force_reforms-32134.dds"
+	}
+
+	##Icon Shine For: British Air Force Reforms
+	SpriteType = { 
+		name = "GFX_CAN_british_air_force_reforms-32134_shine"
+		texturefile = "gfx/interface/goals/GFX_CAN_british_air_force_reforms-32134.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_british_air_force_reforms-32134.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_CAN_british_air_force_reforms-32134.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

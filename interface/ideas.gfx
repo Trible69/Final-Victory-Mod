@@ -4637,7 +4637,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_stagnating_economy
+		name = "GFX_idea_stagnating_economy"
 		texturefile = "gfx/interface/ideas/idea_per_stagnating_economy.dds"
 	}
 	

@@ -79,15 +79,11 @@ if = {
 
 set_convoys = 20
 
+set_popularities = {
+	ultraconservative = 100
+}
 
 set_politics = {
-
-	parties = {
-		ultraconservative = { 
-			popularity = 100
-		}
-	}
-	
 	ruling_party = ultraconservative
 	last_election = "1932.11.8"
 	election_frequency = 48

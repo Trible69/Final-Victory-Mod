@@ -3,7 +3,62 @@ ideas = {
 	#focus
 
 	country = {
-		
+		suez_canal_profits = {
+
+			picture = generic_economic_increase
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		focus_on_navy = {
+
+			picture = generic_coastal_defence_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		muhammad_ali_dynasty = {
+
+			picture = generic_monarchist_uprising
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = +0.15
+				political_power_gain = 0.1
+			}
+		}
 	}
 	
 	# MILITARY

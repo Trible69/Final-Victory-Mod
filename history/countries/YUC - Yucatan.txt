@@ -1,4 +1,4 @@
-capital = 277
+capital = 474
 
 if = {
 	limit = { has_dlc = "Man the Guns" }

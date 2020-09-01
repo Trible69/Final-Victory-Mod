@@ -16,6 +16,7 @@ country_event = {
 		NOT = {
 			country_exist = AMS
 		}
+		tag = MEX
 		has_global_flag = american_civil_war_begun
 	}
 		
@@ -48,6 +49,7 @@ country_event = {
 	
 	trigger = {
 		DATE > 1937.1.1
+		tag = MEX
 	}
 		
 	option = {
@@ -79,6 +81,7 @@ country_event = {
 	
 	trigger = {
 		DATE > 1938.5.13
+		tag = MEX
 	}
 		
 	option = {

@@ -795,6 +795,7 @@ country_event = {
 		    owns_state = 381
 		}
 		has_global_flag = american_civil_war_begun
+		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
 

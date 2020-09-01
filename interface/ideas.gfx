@@ -4640,5 +4640,9 @@ spriteTypes = {
 		name = "GFX_idea_stagnating_economy"
 		texturefile = "gfx/interface/ideas/idea_per_stagnating_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_bill_haywood"
+		texturefile = "gfx/interface/ideas/idea_political_advisor_bill_haywood.dds"
+	}
 	
 }

@@ -405,6 +405,7 @@ focus_tree = {
             }
 			add_country_leader_trait = a_ceremonial_monarch
 			set_country_flag = ceremonial_monarch
+			add_ideas = jacques_ii
 		}
 	}
 

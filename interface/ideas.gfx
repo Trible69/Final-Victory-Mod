@@ -4644,5 +4644,13 @@ spriteTypes = {
 		name = "GFX_idea_bill_haywood"
 		texturefile = "gfx/interface/ideas/idea_political_advisor_bill_haywood.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_jacques_ii"
+		texturefile = "gfx/interface/ideas/idea_jacques_ii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_an_open_hand"
+		texturefile = "gfx/interface/ideas/idea_quebec_hand.dds"
+	}
 	
 }

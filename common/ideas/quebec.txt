@@ -19,6 +19,7 @@ ideas = {
 		}
 
 		parlements_restored = {
+			picture = idea_hun_hungarian_monarchy_democratic
 			
 			allowed = {
 				always = no
@@ -37,6 +38,7 @@ ideas = {
 		}
 
 		royal_gendarmerie = {
+			picture = idea_bra_monarchist_uprising
 			
 			allowed = {
 				always = no
@@ -55,6 +57,7 @@ ideas = {
 		}
 
 		civil_unrest = {
+			picture = spa_recovering_from_the_civil_war
 			
 			allowed = {
 				always = no
@@ -73,6 +76,7 @@ ideas = {
 		}
 
 		quebec_reforged = {
+			picture = idea_man_five_year_plan_industry
 
 			allowed = {
 				always = no
@@ -93,6 +97,7 @@ ideas = {
 		}
 
 		capetian_irredentism = {
+			picture = spa_recovering_from_the_civil_war
 
 		    allowed = {
 			    always = no
@@ -111,6 +116,7 @@ ideas = {
 		}
 
 		france_divided = {
+			picture = fra_political_violence
 
 			allowed = {
 				always = no
@@ -129,6 +135,7 @@ ideas = {
 		}
 
 		recovery_effort = {
+			picture = idea_ams_crippled_industry
 
 			allowed = {
 				always = no
@@ -162,6 +169,7 @@ ideas = {
 			}
 		}
 		a_new_and_better_france = {
+			picture = fra_undividable
 
 			allowed = {
 				always = no
@@ -179,6 +187,7 @@ ideas = {
 			}
 		}
 		a_closed_fist = {
+			picture = officers_purged
 
 			allowed  = {
 				always = no
@@ -196,6 +205,7 @@ ideas = {
 			}
 		}
 		indoctrinate_armed_forces = {
+			picture = idea_chi_forced_conscription
 
 			allowed = {
 				always = no
@@ -213,6 +223,7 @@ ideas = {
 			}
 		}
 		a_france_of_iron = {
+			picture = FRA_national_mobilization_focus
 
 			allowed = {
 				always = no

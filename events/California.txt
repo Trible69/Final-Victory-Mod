@@ -47,5 +47,9 @@ country_event = {
             add_state_core = 377
             load_oob = SAN_californiarevolt
         }
+        declare_war_on = {
+		    target = SAN
+		    type = annex_everything
+		}
     }
 }

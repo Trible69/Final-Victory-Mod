@@ -19,6 +19,7 @@ ideas = {
 		}
 
 		parlements_restored = {
+			picture = idea_hun_hungarian_monarchy_democratic
 			
 			allowed = {
 				always = no
@@ -31,13 +32,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				liberal_drift = 0.05
 				stability_factor = 0.15
 				political_power_gain = 0.05
 			}
 		}
 
 		royal_gendarmerie = {
+			picture = idea_bra_monarchist_uprising
 			
 			allowed = {
 				always = no
@@ -56,6 +57,7 @@ ideas = {
 		}
 
 		civil_unrest = {
+			picture = spa_recovering_from_the_civil_war
 			
 			allowed = {
 				always = no
@@ -70,6 +72,172 @@ ideas = {
 			modifier = {
 				vanguardism_drift = 0.10
 				stability_factor = -0.25
+			}
+		}
+
+		quebec_reforged = {
+			picture = idea_man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				war_support_factor = 0.15
+				stability_factor = 0.10
+			}
+		}
+
+		capetian_irredentism = {
+			picture = spa_recovering_from_the_civil_war
+
+		    allowed = {
+			    always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+
+		france_divided = {
+			picture = fra_political_violence
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.35
+			}
+		}
+
+		recovery_effort = {
+			picture = idea_ams_crippled_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industry_repair_factor = 0.5
+			}
+		}
+		an_open_hand = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				political_power_gain = 0.35
+			}
+		}
+		a_new_and_better_france = {
+			picture = fra_undividable
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		a_closed_fist = {
+			picture = officers_purged
+
+			allowed  = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = 0.45
+			}
+		}
+		indoctrinate_armed_forces = {
+			picture = idea_chi_forced_conscription
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.10
+				army_org_factor = 0.10
+			}
+		}
+		a_france_of_iron = {
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.10
 			}
 		}
 	}

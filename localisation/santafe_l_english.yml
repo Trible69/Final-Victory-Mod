@@ -1,0 +1,8 @@
+﻿l_english:
+ SAN_liberal:0 "Santa Fe"
+ SAN_liberal_DEF:0 "Santa Fe"
+ SAN_liberal_ADJ:0 "Santa Fe"
+ #######EVENTS######
+ santafe.1.t:0 "California Surrenders!"
+ santafe.1.d:0 "The Long Battle between us and the Californians is finally over! We have gained our independence and will live on!"
+ santafe.1.a:0 "At last, Peace"

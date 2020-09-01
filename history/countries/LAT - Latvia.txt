@@ -20,15 +20,20 @@ add_ideas = {
 
 }
 
-###	POLITICS
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberal
 	last_election = "1934.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = { 
-	vanguardism = 5 anarchism = 5 social_democracy = 25 liberalism = 30 conservatism = 25 ultraconservatism = 5 national_populism = 5
+	vanguardism = 5 
+	anarchist = 5 
+	social_democrat = 25 
+	liberal = 30 
+	conservative = 25 
+	ultraconservatism = 5 
+	national_populism = 5
 }
 
 ###	OPINION & TRADE MODIFIERS

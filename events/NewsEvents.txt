@@ -527,30 +527,34 @@ news_event = {
 	}
 }
 news_event = {
-	id = news.15
-	title = news.15.t
-	desc = news.15.d
-	picture = GFX_news_event_polish_resistance_warsaw
+	id = news.16
+	title = news.16.t
+	desc = news.16.d
+	picture = GFX_news_event_election_vote
 	
 	major = yes
 	fire_only_once = yes
-	
-	trigger = {
-		DATE = 1936.5.6
-	}
+	is_triggered_only = yes
 	
 	option = {
-		name = news.15.a
+		name = news.16.a
 		trigger = {
 			NOT = {
-				tag = USA
+				tag = CAF
+				tag = SAN
 			}
 		}
 	}
 	option = {
-		name = news.15.b
+		name = news.16.b
 		trigger = {
-			tag = USA
+			tag = SAN
+		}
+	}
+	option = {
+		name = news.16.c 
+		trigger = {
+			tag = CAF
 		}
 	}
 }

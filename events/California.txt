@@ -27,3 +27,29 @@ country_event = {
 		}
     }
 }
+country_event = {
+    id = california.2
+    title = california.2.t
+    desc = california.2.d
+
+    fire_only_once = yes
+
+    Trigger = {
+        DATE = 1939.2.6
+        tag = CAF
+    }
+
+    option = {
+        name = california.2.a
+        ai_chance = { factor = 100 }
+        SAN = {
+            transfer_state = 377
+            add_state_core = 377
+            load_oob = SAN_californiarevolt
+        }
+        declare_war_on = {
+		    target = SAN
+		    type = annex_everything
+		}
+    }
+}

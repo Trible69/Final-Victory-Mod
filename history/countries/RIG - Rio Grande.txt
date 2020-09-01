@@ -1,4 +1,4 @@
-capital = 277
+capital = 480
 
 oob = "MEX_1936"
 if = {

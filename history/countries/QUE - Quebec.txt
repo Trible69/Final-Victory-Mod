@@ -60,75 +60,21 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 }
 
+set_popularities = {
+	ultraconservative = 42
+	national_populism = 0
+	vanguardism = 8
+	anarchist = 0
+	liberal = 10
+	conservative = 20
+	social_democrat = 20 
+}
+
 set_politics = {
-
-	parties = {
-		liberal = { 
-			popularity = 4
-		}
-
-		social_democrat = {
-			popularity = 2
-		}
-		
-		conservative = {
-			popularity = 2
-			#banned = no #default is no
-		}
-		
-		ultraconservative = { 
-			popularity = 92
-		}
-	}
-	
 	ruling_party = ultraconservative
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Mackenzie King"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Adrien Arcand"
-	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Tim Buck"
-	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {

@@ -68,7 +68,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = national_populism
 			popularity = 0.10
 		}
 		hidden_effect = {
@@ -108,7 +108,7 @@ country_event = {
 		add_war_support = 0.20
 		remove_ideas = broken_nation
 		load_oob = USA_CivilWar
-		delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes #will refund equipment and manpower }
+		delete_unit_template_and_units = {division_template = "Infantry Division" disband = yes}
 		add_ideas = eyes_seen_glory
 ########American State generals 6##############
 		remove_unit_leader = 809
@@ -795,6 +795,7 @@ country_event = {
 		    owns_state = 381
 		}
 		has_global_flag = american_civil_war_begun
+		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
 
@@ -814,7 +815,7 @@ country_event = {
 	id = USA.22
 	title = USA.22.t
 	desc = USA.22.d 
-	picture = GFX_ 
+	picture = GFX_report_event_communists_cheer
 
 	is_triggered_only = yes
 	fire_only_once = yes

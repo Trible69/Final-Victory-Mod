@@ -59,6 +59,14 @@ if = {
 if = {
 	limit = { has_dlc = "Together for Victory" }
 }
+set_popularities = {
+	ultraconservative = 45
+	national_populism = 14
+	vanguardism = 23
+	liberal = 8
+	conservative = 5
+	social_democrat = 5 
+}
 
 set_politics = {
 

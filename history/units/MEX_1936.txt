@@ -240,6 +240,142 @@ units = {
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
+	########
+	##########
+	##########
+	division = {
+		location = 3960
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 3960
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 3960
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 10337
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 12782
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 12782
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 1562
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 1562
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 12461
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9814
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9814
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9814
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9671
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9671
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9671
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 9713
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 12823
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 12878
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
+	division = {
+		location = 12878
+		division_template = "Brigada Agrarista"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+	}
 }
 
 air_wings = {

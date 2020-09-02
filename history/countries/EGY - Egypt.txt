@@ -17,14 +17,36 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-
+	suez_canal_profits
+	focus_on_navy
+	muhammad_ali_dynasty
 }
 
 set_politics = {
-	ruling_party = liberal
-	last_election = "1934.1.1"
+	ruling_party = ultraconservative
+	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+}
+set_popularities = {
+	ultraconservative = 80
+	national_populism = 5
+	vanguardism = 0
+	anarchist = 0
+	liberal = 5
+	conservative = 5
+	social_democrat = 5
+}
+
+create_country_leader = { 
+	name = "Abbas II"
+	desc = ""
+	picture = "AugustinIVMEX.dds"
+	expire = "1965.1.1"
+	ideology = absolutism 
+	traits = {
+		
+	}
 }
 set_popularities = { 
 	vanguardism = 5 

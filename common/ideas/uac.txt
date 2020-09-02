@@ -96,4 +96,16 @@ ideas = {
 			}
 		}	
 	}
+
+
+	political_advisor = {
+		earl_browder = {
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
 }

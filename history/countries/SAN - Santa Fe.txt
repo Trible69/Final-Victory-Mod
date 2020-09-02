@@ -79,9 +79,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Upton Sinclair"
+	name = "Clyde Tingley"
 	desc = ""
-	picture = "UptonSinclairCAF.dds"
+	picture = "SANClydeTingley.dds"
 	expire = "1965.1.1"
 	ideology = unionism
 	traits = {

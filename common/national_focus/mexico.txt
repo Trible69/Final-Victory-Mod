@@ -22,15 +22,15 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 	}
+	##########Revolution path
 	focus = {
-		id = MEX_the_empire
-		icon = GFX_focus_mex_redeem_aztlan
-		x = 8
-		y = 0
+		id = MEX_a_state_of_emergancy
+		icon = GFX_goal_demand_sudetenland
+		x = 3
+		y = 10
 		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		mutually_exclusive = { focus = MEX_a_new_idea }
 		ai_will_do = {
 			factor = 1
 		}
@@ -39,613 +39,140 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = MEX_a_new_idea
-		icon = GFX_focus_generic_soviet_politics
-		x = 15
-		y = 0
+		id = MEX_rally_the_core
+		icon = GFX_goal_generic_military_deal
+		x = 2
+		y = 11
 		cost = 10
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		mutually_exclusive = { focus = MEX_the_empire }
+		prerequisite = { 
+			focus = MEX_a_state_of_emergancy 
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_popularity = {
-			    ideology = vanguardism
-			    popularity = 0.10
-			}
-			add_stability = -0.03
+			add_manpower = 100000
 		}
 	}
 	focus = {
-		id = MEX_the_future_of_mexico
-		icon = GFX_goal_generic_demand_territory
-		x = 8
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_the_empire
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = MEX_take_a_democratic_route
-		icon = GFX_focus_generic_little_entente
-		x = 4
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		mutually_exclusive = { focus = MEX_absolute_power }
-		prerequisite = {
-			focus = MEX_the_future_of_mexico
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = liberal
-				popularity = 0.02
-			}
-			add_popularity = {
-				ideology = conservative
-				popularity = 0.02
-			}
-			add_stability = -0.02
-		}
-	}
-	focus = {
-		id = MEX_liberalism
-		icon = GFX_goal_continuous_boost_freedom
-		x = 3
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		mutually_exclusive = { focus = MEX_conservatism }
-		prerequisite = {
-			focus = MEX_take_a_democratic_route
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = liberal
-				popularity = 0.1
-			}
-		}
-	}
-	focus = {
-		id = MEX_conservatism
-		icon = GFX_focus_generic_self_management
-		x = 5
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		mutually_exclusive = { focus = MEX_liberalism }
-		prerequisite = {
-			focus = MEX_take_a_democratic_route
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = conservative
-				popularity = 0.1
-			}
-		}
-	}
-	focus = {
-		id = MEX_continue_to_spread_liberalism
-		icon = GFX_goal_generic_forceful_treaty
-		x = 3
-		y = 5
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_liberalism
-		}
-		completion_reward = {
-			add_ideas = spread_liberal
-		}
-	}
-	focus = {
-		id = MEX_continue_to_spread_conservatism
-		icon = GFX_focus_generic_military_academy
-		x = 5
-		y = 5
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_conservatism
-		}
-		completion_reward = {
-			add_ideas = spread_conservative
-		}
-	}
-	focus = {
-		id = MEX_make_a_liberal_constitution
-		icon = GFX_goal_generic_national_unity
-		x = 3
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		available = {
-			liberal > 0.39
-		}
-		prerequisite = {
-			focus = MEX_continue_to_spread_liberalism
-		}
-		completion_reward = {
-			set_politics = {
-                ruling_party = liberal
-            }
-		}
-	}
-	focus = {
-		id = MEX_write_a_conservative_constitution
-		icon = GFX_goal_generic_forceful_treaty
-		x = 5
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		available = {
-			conservative > 0.39
-		}
-		prerequisite = {
-			focus = MEX_continue_to_spread_conservatism
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = conservative
-			}
-		}
-	}
-	focus = {
-		id = MEX_a_new_mexico
-		icon = GFX_goal_generic_demand_territory
-		x = 4
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_make_a_liberal_constitution
-			focus = MEX_write_a_conservative_constitution
-		}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = MEX_absolute_power
-		icon = GFX_focus_generic_treaty
-		x = 8
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = MEX_take_a_democratic_route }
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {focus = MEX_the_future_of_mexico}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = MEX_give_the_monarch_more_power
-		icon = GFX_focus_eng_god_save_the_king
-		x = 9
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		mutually_exclusive = { focus = MEX_give_the_miltary_more_power }
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_absolute_power
-		}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = MEX_a_powerful_monarch
-		icon =  GFX_focus_generic_support_the_left_right
-		x = 9
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
-		prerequisite = {
-			focus = MEX_give_the_monarch_more_power
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.05
-		}
-	}
-	focus = {
-		id = MEX_purge_political_enemies
-		icon = GFX_focus_generic_home_defense
-		x = 9
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_a_powerful_monarch
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = ultraconservative
-				popularity = 0.2
-			}
-		}
-	}
-	focus = {
-		id = MEX_give_the_miltary_more_power
+		id = MEX_the_veterans_march
 		icon = GFX_focus_generic_military_mission
-		x = 7
-		y = 4
-		cost = 5
+		x = 2
+		y = 12
+		cost = 10
 		available_if_capitulated = yes
-		mutually_exclusive = { focus = MEX_give_the_monarch_more_power }
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
-		prerequisite = {
-			focus = MEX_absolute_power
+		prerequisite = {focus = MEX_rally_the_core}
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
 			add_war_support = 0.1
 		}
 	}
 	focus = {
-		id = MEX_disarm_the_populace
-		icon = GFX_focus_generic_manpower
-		x = 7
-		y = 5
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_give_the_miltary_more_power
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = -0.05
-		}
-	}
-	focus = {
-		id = MEX_begin_to_plan_the_coup
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 7
-		y = 6
+		id = MEX_focus_on_the_north
+		icon = GFX_goal_generic_demand_territory
+		x = 4
+		y = 11
 		cost = 10
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_disarm_the_populace
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		prerequisite = {focus = MEX_a_state_of_emergancy}
+		mutually_exclusive = { focus = MEX_push_the_south }
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_war_support = 0.1
 		}
 	}
 	focus = {
-		id = MEX_the_coup
-		icon = GFX_focus_ger_oppose_hitler
-		x = 7
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		available = {
-			DATE > 1938.12.1
-		}
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_begin_to_plan_the_coup
-		}
-		completion_reward = {
-			set_cosmetic_tag = MEX_military_junta
-		    MME = {
-			    transfer_state = 483
-		        add_state_core = 483
-			    transfer_state = 484
-		        add_state_core = 484
-			    transfer_state = 482
-		        add_state_core = 482
-			    transfer_state = 481
-		        add_state_core = 481
-			    load_oob = MME_Civilwar
-			    declare_war_on = {
-		            target = MEX
-		            type = annex_everything
-			    }
-		    }
-	    }
-	}
-	focus = {
-		id = MEX_decision
-		icon = GFX_focus_generic_self_management
-		x = 6
-		y = 10
-		cost = 1
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_the_coup
-			focus = MEX_purge_political_enemies
-			focus = MEX_a_new_mexico
-		}
-		completion_reward = {add_political_power = 100}
-	}
-	focus = {
-		id = MEX_allign_to_the_british
-		icon = GFX_focus_eng_the_sun_never_sets
-		x = 7
-		y = 11	
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_decision
-		}
-		mutually_exclusive = {focus = MEX_allign_to_the_french}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = MEX_non_aggression_with_the_british
-		icon = GFX_goal_generic_dangerous_deal
-		x = 7
-		y = 12
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_allign_to_the_british
-		}
-		completion_reward = {
-			diplomatic_relation = {
-				country = ENG
-				relation = non_aggression_pact
-			}
-		}
-	}
-	focus = {
-		id = MEX_allign_to_the_french
-		icon = GFX_focus_fra_french_union
+		id = MEX_push_the_south
+		icon = GFX_goal_unknown
 		x = 5
 		y = 11
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
-		prerequisite = {
-			focus = MEX_decision
-		}
-		mutually_exclusive = {focus = MEX_allign_to_the_british}
-		completion_reward = {add_war_support = 0.1}
-	}
-	focus = {
-		id = MEX_join_the_coalition
-		icon = GFX_focus_chi_british_cooperation
-		x = 7
-		y = 13
 		cost = 10
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_non_aggression_with_the_british
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		prerequisite = {focus = MEX_a_state_of_emergancy}
+		mutually_exclusive = { focus = MEX_focus_on_the_north }
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			ENG = {
-				add_to_faction = MEX 
-			}
-		}
-	}
-	focus = {
-		id = MEX_non_aggression_with_the_french
-		icon = GFX_goal_generic_major_alliance
-		x = 5
-		y = 12
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {focus = MEX_allign_to_the_french}
-		completion_reward = {
-			diplomatic_relation = {
-				country = FRA 
-				relation = non_aggression_pact
-			}
-		}
-	}
-	focus = {
-		id = MEX_join_the_french
-		icon = GFX_focus_chi_reach_out_to_france
-		x = 5
-		y = 13
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_non_aggression_with_the_french
-		}
-		completion_reward = {
-			FRA = {add_to_faction = MEX}
-		}
-	}
-	focus = {
-		id = MEX_pay_attention_to_the_economy
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 12
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_the_empire
-			focus = MEX_a_new_idea
-		}
-		completion_reward = {add_stability = 0.1}
-	}
-	focus = {
-		id = MEX_try_to_pass_reforms
-		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 12
-		y = 2
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		prerequisite = {
-			focus = MEX_pay_attention_to_the_economy
-		}
-		completion_reward = {
-			random_owned_controlled_state={
-                limit = {
-                    free_building_slots = {
-                        building = industrial_complex
-                        size > 0
-                        include_locked = yes
-                    }
-                }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }
-
-            set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
-            }
-		}
-	}
-	focus = {
-		id = MEX_continue_reforms
-		icon = GFX_goal_demand_sudetenland
-		x = 12
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		prerequisite = {
-			focus = MEX_try_to_pass_reforms
-		}
-		completion_reward = {
-			random_owned_controlled_state={
-                limit = {
-                    free_building_slots = {
-                        building = industrial_complex
-                        size > 0
-                        include_locked = yes
-                    }
-                }
-            add_extra_state_shared_building_slots = 3
-            add_building_construction = {
-                type = industrial_complex
-                level = 3
-                instant_build = yes
-            }
-
-            set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
-            }
-		}
-	}
-	focus = {
-		id = MEX_begin_to_repay_the_100_year_debt
-		icon = GFX_focus_mex_privatisation
-		x = 12
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		available = {
-			num_of_civilian_factories > 75
-		}
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		prerequisite = {
-			focus = MEX_continue_reforms
-		}
-		completion_reward = {
-			add_stability = 0.05
-			remove_ideas = n100_year_debt_1
-			add_ideas = n100_year_debt_2
-		}
-	}
-	focus = {
-		id = MEX_a_great_economy
-		icon = GFX_goal_anschluss
-		x = 12
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		available = {
-			num_of_civilian_factories > 100
-		}
-		search_filters = {FOCUS_FILTER_STABILITY}
-		prerequisite = {
-			focus = MEX_begin_to_repay_the_100_year_debt
-		}
-		completion_reward = {
-			remove_ideas = n100_year_debt_2
 			add_stability = 0.1
 		}
 	}
 	focus = {
-		id = MEX_rally_the_workers
-		icon = GFX_ 
-		x = 15
-		y = 1
-		cost = 5
+		id = MEX_push_the_south
+		icon = GFX_goal_generic_territory_or_war
+		x = 5
+		y = 11
+		cost = 10
 		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_a_new_idea
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		prerequisite = {focus = MEX_a_state_of_emergancy}
+		mutually_exclusive = { focus = MEX_focus_on_the_north }
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.1
+			add_stability = 0.1
 		}
 	}
 	focus = {
-		id = MEX_anarchism
-		icon = GFX_ 
-		x = 17
-		y = 3
-		cost = 5
+		id = MEX_the_rio_grande
+		icon = GFX_goal_generic_military_sphere
+		x = 4
+		y = 12
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_rally_the_workers
+		prerequisite = {focus = MEX_focus_on_the_north}
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.1
+			add_ideas = focus_rio_grande
 		}
 	}
 	focus = {
-		id = MEX_vanguardism
-		icon = GFX_ 
-		x = 15
-		y = 3
-		cost = 5
+		id = MEX_central_america
+		icon = GFX_goal_generic_army_doctrines
+		x = 5
+		y = 12
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = {
-			focus = MEX_rally_the_workers
+		prerequisite = {focus = MEX_push_the_south}
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.1
+			add_ideas = push_central_america
+		}
+	}
+	focus = {
+		id = MEX_sign_the_peace
+		icon = GFX_goal_generic_forceful_treaty
+		x = 3
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		prerequisite = {focus = MEX_the_veterans_march}
+		prerequisite = {
+			focus = MEX_the_rio_grande
+			focus = MEX_central_america
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = push_central_america
 		}
 	}
 }

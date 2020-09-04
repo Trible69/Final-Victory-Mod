@@ -240,5 +240,20 @@ ideas = {
 				political_power_gain = 0.10
 			}
 		}
+		que_great_depression = {
+			picture = minor_depression
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.20
+				production_speed_arms_factory_factor = -0.20
+				consumer_goods_factor = 0.10
+			}
+		}
 	}
 }

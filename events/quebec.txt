@@ -1,0 +1,121 @@
+add_namespace = quebec
+
+########quebec lore
+country_event = {
+	id = quebec.1
+	title = quebec.1.t
+	desc = quebec.1.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+		name = quebec.1.a
+		ai_chance = { factor = 100}
+	}
+}
+#####An Evening Before the Palace
+country_event = {
+	id = quebec.2
+	title = quebec.2.t
+	desc = quebec.2.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+		name = quebec.2.a
+		ai_chance = { factor = 100}
+	}
+}
+#####The Bonapartist Filth
+country_event = {
+	id = quebec.3
+	title = quebec.3.t
+	desc = quebec.3.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+		name = quebec.3.a
+		ai_chance = { factor = 100}
+	}
+}
+########Hold Public elections
+country_event = {
+	id = quebec.4
+	title = quebec.4.t
+	desc = quebec.4.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+		name = quebec.4.a
+		ai_chance = { factor = 100}
+        set_politics = {
+	        ruling_party = conservative
+	        last_election = "1935.10.14"
+	        election_frequency = 60
+	        elections_allowed = no
+        }
+	}
+    option = {
+		name = quebec.4.b
+		ai_chance = { factor = 100}
+        set_politics = {
+	        ruling_party = social_democrat
+	        last_election = "1935.10.14"
+	        election_frequency = 60
+	        elections_allowed = no
+        }
+	}
+}
+#########pass the military reform bill
+country_event = {
+	id = quebec.5
+	title = quebec.5.t
+	desc = quebec.5.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+		name = quebec.5.a
+		ai_chance = { factor = 100}
+        add_ideas = extensive_conscription
+        hidden_effect = {
+            set_country_flag = manpower_bill_passed
+        }
+	}
+    option = {
+		name = quebec.5.b
+		ai_chance = { factor = 100}
+		random_owned_controlled_state={
+            limit = {
+                free_building_slots = {
+                    building = arms_factory
+                    size > 0
+                }
+                include_locked = yes
+            }
+
+            add_extra_state_shared_building_slots = 10
+
+            add_building_construction = {
+                type = arms_factory
+                level = 10
+                instant_build = yes
+            }
+        }
+        hidden_effect = {
+            set_country_flag = construction_bill_passed
+        }
+	}
+}

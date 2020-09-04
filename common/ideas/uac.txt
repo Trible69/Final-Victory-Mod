@@ -102,7 +102,7 @@ ideas = {
 		earl_browder = {
 			
 			allowed = {
-				original_tag = USA
+				original_tag = UAC
 			}
 			
 			traits = { silent_workhorse }

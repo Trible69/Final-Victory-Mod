@@ -407,7 +407,7 @@ ideas = {
 				}
 			}
 			
-			traits = { democratic_reformer }
+			traits = { liberal_reformer }
 	
 			do_effect = {
 				NOT = {

@@ -8,6 +8,7 @@ country_event = {
 	picture = GFX_event_test
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = USA.1.a
@@ -24,9 +25,8 @@ country_event = {
 
 	fire_only_once = yes
 
-	Trigger = {
-		DATE > 1936.11.2
-		tag = USA
+	trigger = {
+		date = 1936.11.1
 	}
 	mean_time_to_happen = {
 	    days = 1
@@ -817,7 +817,9 @@ country_event = {
 	desc = USA.22.d 
 	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes
+	trigger = {
+		has_idea = bill_haywood
+	}
 	fire_only_once = yes
 
 	option = {
@@ -835,7 +837,9 @@ country_event = {
 	desc = USA.23.d
 	picture = GFX_report_event_USACharlesSpeech
 
-	is_triggered_only = yes
+	trigger = {
+		has_idea = charles_lindbergh
+	}
 	fire_only_once = yes
 
 	option = {
@@ -853,6 +857,24 @@ country_event = {
 	picture = GFX_event_test
 
 	fire_only_once = yes
+
+	option = {
+		name = USA.24.a
+		ai_chance = { factor = 100}
+	}
+}
+#########election trouble#########
+country_event = {
+	id = USA.25
+	title = USA.25.t
+	desc = USA.25.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		DATE = 1936.11.1
+	}
 
 	option = {
 		name = USA.24.a

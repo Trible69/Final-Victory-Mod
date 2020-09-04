@@ -24,7 +24,7 @@ focus_tree = {
 	#Focus for American Designs
 	focus = {
 		id = QUE_american_designs
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 32
 		y = 3
 		cost = 10
@@ -33,6 +33,9 @@ focus_tree = {
 		mutually_exclusive = { focus = QUE_our_own_design }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.15
 		}
 	}
 
@@ -48,6 +51,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = -0.2
+		}
 	}
 
 	#Focus for Québécois Diplomacy
@@ -61,12 +67,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 
 	#Focus for Economic Development Plan
 	focus = {
 		id = QUE_economic_development_plan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_treaty
 		x = 31
 		y = 7
 		cost = 10
@@ -74,12 +83,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 5
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 5
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Economic Boom
 	focus = {
 		id = QUE_economic_boom
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		x = 31
 		y = 13
 		cost = 10
@@ -87,6 +115,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_growing_economy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = que_great_depression
 		}
 	}
 
@@ -102,12 +133,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Growing Economy
 	focus = {
 		id = QUE_growing_economy
-		icon = GFX_goal_unknown
+		icon = GFX_USA_building_the_economy-28338
 		x = 31
 		y = 12
 		cost = 10
@@ -119,12 +169,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Pass the Land Tax Law
 	focus = {
 		id = QUE_pass_the_land_tax_law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction
 		x = 33
 		y = 10
 		cost = 10
@@ -132,6 +201,25 @@ focus_tree = {
 		prerequisite = { focus = QUE_new_farming_technics }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 6
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 6
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -148,6 +236,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Agrarian Solution
@@ -163,12 +270,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Pass the Union Law
 	focus = {
 		id = QUE_pass_the_union_law
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_1.dds
 		x = 29
 		y = 10
 		cost = 10
@@ -177,12 +303,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 6
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 6
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for A Modern Army
 	focus = {
 		id = QUE_a_modern_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		x = 27
 		y = 5
 		cost = 10
@@ -199,12 +344,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower = 100000
+		}
 	}
 
 	#Focus for A Traditional Army
 	focus = {
 		id = QUE_a_traditional_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 19
 		y = 5
 		cost = 10
@@ -221,12 +369,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 5
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 5
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Second Staff Office Plan
 	focus = {
 		id = QUE_second_staff_office_plan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		x = 21
 		y = 4
 		cost = 10
@@ -235,12 +402,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.50
+            	uses = 2 
+            	category = support_tech
+        	}
+		}
 	}
 
 	#Focus for Tankette's
 	focus = {
 		id = QUE_tankettes
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_army_tanks2
 		x = 19
 		y = 4
 		cost = 10
@@ -249,12 +423,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus= {
+        	    bonus = 0.5 
+    	        uses = 1
+	            category = cat_light_armor
+        	}
+		}
 	}
 
 	#Focus for Usine D'armes de Montréal
 	focus = {
 		id = QUE_usine_darmes_de_montral
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_2
 		x = 17
 		y = 4
 		cost = 10
@@ -262,6 +443,25 @@ focus_tree = {
 		prerequisite = { focus = QUE_fund_the_national_arms }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -285,7 +485,7 @@ focus_tree = {
 	#Focus for Air Exercises
 	focus = {
 		id = QUE_air_exercises
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		x = 33
 		y = 2
 		cost = 10
@@ -301,6 +501,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			air_experience = 100
 		}
 	}
 
@@ -494,20 +697,25 @@ focus_tree = {
 	#Focus for First Staff Office Plan
 	focus = {
 		id = QUE_first_staff_office_plan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		x = 19
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_country_flag = construction_bill_passed
+		}
 		prerequisite = { focus = QUE_begin_the_reform }
 		mutually_exclusive = { focus = QUE_study_foreign_tactics }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-			}
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 2 
+                category = industry 
+            }
 		}
 	}
 
@@ -523,12 +731,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.1
+		}
 	}
 
 	#Focus for Compagnie de Chars
 	focus = {
 		id = QUE_compagnie_de_chars
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		x = 27
 		y = 3
 		cost = 10
@@ -537,12 +749,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.4 
+    	        uses = 1
+        	    category = cat_medium_armor
+	        }
+		}
 	}
 
 	#Focus for Modernize Our Equipment
 	focus = {
 		id = QUE_modernize_our_equipment
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		x = 25
 		y = 3
 		cost = 10
@@ -551,12 +770,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.5 
+        	    uses = 1
+    	        category = infantry_tech
+	        }
+		}
 	}
 
 	#Focus for Contact with Mauser
 	focus = {
 		id = QUE_contact_with_mauser
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		x = 25
 		y = 4
 		cost = 10
@@ -565,12 +791,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.5 
+        	    uses = 2 
+    	        category = infantry_tech
+	        }
+		}
 	}
 
 	#Focus for Hotchkiss-H36
 	focus = {
 		id = QUE_hotchkissh36
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tank_production
 		x = 27
 		y = 4
 		cost = 10
@@ -578,6 +811,13 @@ focus_tree = {
 		prerequisite = { focus = QUE_compagnie_de_chars }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.25 
+        	    uses = 1
+    	        category = cat_heavy_armor
+	        }
 		}
 	}
 
@@ -593,12 +833,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_opinion_modifier = { target = USA modifier = american_officer }
+		}
 	}
 
 	#Focus for Lessons From The Great War
 	focus = {
 		id = QUE_lessons_from_the_great_war
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		x = 19
 		y = 3
 		cost = 10
@@ -607,12 +850,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.5 
+        	    uses = 2 
+    	        category = land_doctrine
+	        }
+		}
 	}
 
 	#Focus for Trench Warfare
 	focus = {
 		id = QUE_trench_warfare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		x = 21
 		y = 3
 		cost = 10
@@ -620,6 +870,13 @@ focus_tree = {
 		prerequisite = { focus = QUE_first_staff_office_plan }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.25
+            	uses = 2 
+            	category = support_tech
+        	}
 		}
 	}
 
@@ -657,7 +914,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Oaths of Loyalty %
+	#Focus for Oaths of Loyalty 
 	focus = {
 		id = QUE_oaths_of_loyalty
 		icon = GFX_focus_spr_masters_of_our_own_fate
@@ -677,9 +934,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = {id = quebec.2}
+		}
 	}
 
-	#Focus for Public Elections %
+	#Focus for Public Elections 
 	focus = {
 		id = QUE_public_elections
 		icon = GFX_goal_support_democracy
@@ -690,6 +950,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_a_ceremonial_monarch }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = quebec.4}
 		}
 	}
 
@@ -733,22 +996,28 @@ focus_tree = {
 	#Focus for Study Foreign Tactics
 	focus = {
 		id = QUE_study_foreign_tactics
-		icon = GFX_goal_unknown
+		icon = GFX_focus_usa_honor_the_confederacy
 		x = 27
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_country_flag = manpower_bill_passed
+		}
 		prerequisite = { focus = QUE_begin_the_reform }
 		mutually_exclusive = { focus = QUE_first_staff_office_plan }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
 		}
 	}
 
 	#Focus for Fund The National Arms
 	focus = {
 		id = QUE_fund_the_national_arms
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		x = 17
 		y = 3
 		cost = 10
@@ -757,12 +1026,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
-	#Focus for Begin The Reform %
+	#Focus for Begin The Reform 
 	focus = {
 		id = QUE_begin_the_reform
-		icon = GFX_goal_unknown
+		icon = GFX_focus_renounce_the_treaty_of_triannon
 		x = 23
 		y = 1
 		cost = 10
@@ -772,7 +1060,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = {id = quebec.5}
 		}
 	}
 
@@ -900,20 +1188,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Expand the Aluminum Mines
-	focus = {
-		id = QUE_expand_the_aluminum_mines
-		icon = GFX_CAN_expand_the_aluminum_mines-32162
-		x = 31
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = QUE_economic_development_plan }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Merging Our Parties
 	focus = {
 		id = QUE_merging_our_parties
@@ -1015,7 +1289,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Obliterate the Revolution %
+	#Focus for Obliterate the Revolution 
 	focus = {
 		id = QUE_obliterate_the_revolution
 		icon = GFX_CAN_obliterate_the_revolution-30399
@@ -1026,6 +1300,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_royal_vengeance }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = quebec.3}
 		}
 	}
 
@@ -1111,12 +1388,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = -0.1
+			add_manpower = 10000
+		}
 	}
 
 	#Focus for Creating an Airforce
 	focus = {
 		id = QUE_creating_an_airforce
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		x = 35
 		y = 1
 		cost = 10
@@ -1125,12 +1406,31 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Louis XVI Flight School
 	focus = {
 		id = QUE_louis_xvi_flight_school
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		x = 31
 		y = 1
 		cost = 10
@@ -1139,12 +1439,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			air_experience = 50
+		}
 	}
 
 	#Focus for Royal Airforce
 	focus = {
 		id = QUE_royal_airforce
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		x = 33
 		y = 0
 		cost = 10
@@ -1152,12 +1455,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			air_experience = 50
+		}
 	}
 
 	#Focus for Montreal to Washington Airway
 	focus = {
 		id = QUE_montreal_to_washington_airway
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		x = 33
 		y = 1
 		cost = 10
@@ -1165,6 +1471,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_royal_airforce }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
@@ -1179,6 +1488,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_qubcois_diplomacy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
 		}
 	}
 
@@ -1197,12 +1509,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 
 	#Focus for Our Own Design
 	focus = {
 		id = QUE_our_own_design
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		x = 34
 		y = 3
 		cost = 10
@@ -1212,12 +1527,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
 	}
 
 	#Focus for New Farming Technics
 	focus = {
 		id = QUE_new_farming_technics
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		x = 33
 		y = 9
 		cost = 10
@@ -1225,6 +1543,25 @@ focus_tree = {
 		prerequisite = { focus = QUE_agrarian_solution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1244,6 +1581,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower = 50000
+		}
 	}
 
 	#Focus for Increase Naval Capability
@@ -1261,6 +1601,25 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = dockyard
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 5
+
+            	add_building_construction = {
+                	type = dockyard
+                	level = 5
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1280,6 +1639,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = medium_air
+    			amount = 300
+			}
+		}
 	}
 
 	#Focus for Onwards, Quebec
@@ -1298,6 +1663,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.05
+			add_political_power = 50
+		}
 	}
 
 	#Focus for Elite Divisions
@@ -1311,6 +1681,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_planning_deluge }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
 		}
 	}
 
@@ -1326,6 +1699,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			navy_experience = 50
+		}
 	}
 
 	#Focus for British Air Force Reforms
@@ -1339,6 +1715,9 @@ focus_tree = {
 		prerequisite = { focus = QUE_planning_deluge }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
 		}
 	}
 

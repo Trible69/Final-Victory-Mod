@@ -1020,7 +1020,7 @@ country event= {
         option = {
 			name = USA.27.b
 			create_country_leader = {
-				name = "Douglas MacArthur
+				name = "Douglas MacArthur"
 				ai_chance = { factor = 50 }
 				desc = ""
 				picture = "DouglasMacArtthurUSA.dds"

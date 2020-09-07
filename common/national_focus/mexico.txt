@@ -30,6 +30,14 @@ focus_tree = {
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_war_with = CAF 
+			has_war_with = TEX
+			has_war_with = DES 
+			has_war_with = RIG 
+			has_war_with = CEN 
+			has_war_with = YUC
+		}
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		ai_will_do = {
 			factor = 1
@@ -155,7 +163,43 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = push_central_america
+			add_war_support = -0.05
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = MEX_sensational_victory
+		icon = GFX_goal_unknown
+		x = 5
+		y = 14
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		prerequisite = {focus = MEX_sign_the_peace}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_ideas = the_northern_revolts
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = MEX_arrest_the_traitors
+		icon = GFX_goal_unknown
+		x = 4
+		y = 15
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		prerequisite = {focus = MEX_sensational_victory}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
 		}
 	}
 }

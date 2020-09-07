@@ -193,6 +193,24 @@ ideas = {
 				industry_repair_factor = -0.5
 			}
 		}
+		the_northern_revolts_1 = {
+			picture = idea_mex_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				industry_repair_factor = -0.25
+			}
+		}
 		a_divided_country = {
 			picture = idea_cze_divided_nation
 

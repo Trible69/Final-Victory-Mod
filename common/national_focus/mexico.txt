@@ -91,23 +91,6 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_push_the_south
-		icon = GFX_goal_unknown
-		x = 5
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		prerequisite = {focus = MEX_a_state_of_emergancy}
-		mutually_exclusive = { focus = MEX_focus_on_the_north }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = MEX_push_the_south
 		icon = GFX_goal_generic_territory_or_war
 		x = 7
 		y = 11

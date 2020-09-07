@@ -977,6 +977,7 @@ country event= {
     trigger = {
         date > 1940.1.11
         orignal_tag = USA
+		has_government = conservative
     }
 
     fire_only_once = yes

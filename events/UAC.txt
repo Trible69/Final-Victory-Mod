@@ -9,7 +9,7 @@ country_event = {
 	fire_only_once = yes
 
 	Trigger = {
-		DATE > 1937.5.1
+		DATE > 1937.6.1
 		has_war = no
 		tag = UAC
 	}

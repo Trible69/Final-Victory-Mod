@@ -2,20 +2,327 @@
 ##### USA ######
 ################
 
-USA_war_measures = {
-	
-	allowed = {
-		original_tag = USA
-	}
-}
 
 USA_a_broken_nation = {
-	icon = nenfnnfinfinfinui
 	allowed = {
 		original_tag = USA
 	}
 	visible = {
 		original_tag = USA
 		has_idea = broken_nation
+	}
+}
+####AMS STATES
+USA_virginia = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_west_virginia = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_north_carolina = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_south_carolina = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_kentucky = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_tennesse = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_georgia = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_mississipi = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_florida = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_alabama = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_louisiana = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_arkansas = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_kansas = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_nebraska = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_colorado = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+##########UAC STATES
+USA_north_dakota = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_south_dakota = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_minnesota = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_iowa = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_wisconsin = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_illinois = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_michigan = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_indiana = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
+	}
+}
+USA_ohio = {
+	icon = decision_border_war
+	allowed = {
+
+	}
+	visible = {
+		NOT = {
+			has_global_flag = american_civil_war_begun
+		}
+		tag = USA 
+		has_country_flag = civil_unrest
 	}
 }

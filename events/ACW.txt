@@ -1,0 +1,1251 @@
+add_namespace = ACW
+
+###start america
+country_event = {
+	id = ACW.1
+	title = ACW.1.t
+	desc = ACW.1.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        DATE > 1937.4.12
+        has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.1.a
+		ai_chance = { factor = 100}
+		declare_war_on = {
+		    target = UAC
+		    type = annex_everything
+		}
+		declare_war_on = {
+		    target = AMS
+		    type = annex_everything
+		}
+		AMS = {
+		    declare_war_on = {
+		        target = UAC
+		        type = annex_everything
+		    }
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.2 }
+			set_global_flag = american_civil_war
+		}
+	}
+}
+###start UAC
+country_event = {
+	id = ACW.2
+	title = ACW.2.t
+	desc = ACW.2.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		tag = UAC
+        date > 1937.4.12
+	}
+
+	option = {
+		name = ACW.2.a
+		ai_chance = { factor = 100}
+	    USA = {
+        	declare_war_on = {
+		        target = UAC
+		        type = annex_everything
+		    }
+		    declare_war_on = {
+		        target = AMS
+		        type = annex_everything
+		    }
+        }
+		AMS = {
+		    declare_war_on = {
+		        target = UAC
+		        type = annex_everything
+		    }
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.2 }
+			set_global_flag = american_civil_war
+		}
+	}
+}
+###start AMS
+country_event = {
+	id = ACW.3
+	title = ACW.3.t
+	desc = ACW.3.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		tag = AMS
+        date > 1937.4.12
+	}
+
+	option = {
+		name = ACW.3.a
+		ai_chance = { factor = 100}
+	    USA = {
+        	declare_war_on = {
+		        target = UAC
+		        type = annex_everything
+		    }
+		    declare_war_on = {
+		        target = AMS
+		        type = annex_everything
+		    }
+        }
+		declare_war_on = {
+	        target = UAC
+	        type = annex_everything
+	    }
+		hidden_effect = {
+			news_event = { hours = 6 id = news.2 }
+			set_global_flag = american_civil_war
+		}
+	}
+}
+####America virginia
+country_event = {
+	id = ACW.4
+	title = ACW.4.t
+	desc = ACW.4.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_war_with = UAC
+		has_war_with = AMS
+		check_variable = {
+    		var = USA.virginia_loyalty
+    		value = USA.miltia
+    		compare = equals
+        }
+	}
+
+	option = {
+		name = ACW.4.a
+		ai_chance = { factor = 100}
+	    362 = {
+			create_unit = {
+				division = "name = \"Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 10343 }
+			}	
+		}
+	}
+}
+country_event = {
+	id = ACW.5
+	title = ACW.5.t
+	desc = ACW.5.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.virginia_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.5.a
+		ai_chance = { factor = 100} 
+		transfer_state = 362
+	}
+}
+###WV
+country_event = {
+	id = ACW.6
+	title = ACW.6.t
+	desc = ACW.6.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.WV_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.6.a
+		ai_chance = { factor = 100} 
+		transfer_state = 806
+	}
+}
+country_event = {
+	id = ACW.7
+	title = ACW.7.t
+	desc = ACW.7.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.WV_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.7.a
+		ai_chance = { factor = 100} 
+		806 = {
+			create_unit = {
+				division = "name = \"West Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 7588 }
+			}
+		}
+	}
+}
+##Kentucky
+country_event = {
+	id = ACW.8
+	title = ACW.8.t
+	desc = ACW.8.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.kentucky_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.8.a
+		ai_chance = { factor = 100} 
+		369 = {
+			create_unit = {
+				division = "name = \"Kentucky Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 9727 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.9
+	title = ACW.9.t
+	desc = ACW.9.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.kentucky_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.9.a
+		ai_chance = { factor = 100} 
+		transfer_state = 369
+	}
+}
+###Tennessee
+country_event = {
+	id = ACW.10
+	title = ACW.10.t
+	desc = ACW.10.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.tennesse_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.10.a
+		ai_chance = { factor = 100} 
+		368 = {
+			create_unit = {
+				division = "name = \"Tennessee Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 1758 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.11
+	title = ACW.11.t
+	desc = ACW.11.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.tennesse_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.11.a
+		ai_chance = { factor = 100} 
+		transfer_state = 368
+	}
+}
+###North Carolina
+country_event = {
+	id = ACW.12
+	title = ACW.12.t
+	desc = ACW.12.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.NC_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.12.a
+		ai_chance = { factor = 100} 
+		363 = {
+			create_unit = {
+				division = "name = \"North Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 7045 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.13
+	title = ACW.13.t
+	desc = ACW.13.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.NC_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.13.a
+		ai_chance = { factor = 100} 
+		transfer_state = 363
+	}
+}
+###South Carolina
+country_event = {
+	id = ACW.14
+	title = ACW.14.t
+	desc = ACW.14.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.SC_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.14.a
+		ai_chance = { factor = 100} 
+		364 = {
+			create_unit = {
+				division = "name = \"South Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 10029 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.15
+	title = ACW.15.t
+	desc = ACW.15.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.SC_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.15.a
+		ai_chance = { factor = 100} 
+		transfer_state = 364
+	}
+}
+###Georiga
+country_event = {
+	id = ACW.16
+	title = ACW.16.t
+	desc = ACW.16.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.georgia_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.16.a
+		ai_chance = { factor = 100} 
+		365 = {
+			create_unit = {
+				division = "name = \"Georiga Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 7612 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.17
+	title = ACW.17.t
+	desc = ACW.17.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.georgia_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.17.a
+		ai_chance = { factor = 100} 
+		transfer_state = 365
+	}
+}
+###Florida
+country_event = {
+	id = ACW.18
+	title = ACW.18.t
+	desc = ACW.18.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.florida_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.18.a
+		ai_chance = { factor = 100} 
+		366 = {
+			create_unit = {
+				division = "name = \"Florida Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 10489 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.19
+	title = ACW.19.t
+	desc = ACW.19.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.florida_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.19.a
+		ai_chance = { factor = 100} 
+		transfer_state = 366
+	}
+}
+###Mississipi
+country_event = {
+	id = ACW.20
+	title = ACW.20.t
+	desc = ACW.20.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.mississipi_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.20.a
+		ai_chance = { factor = 100} 
+		370 = {
+			create_unit = {
+				division = "name = \"Mississipi Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 4565 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.21
+	title = ACW.21.t
+	desc = ACW.21.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.mississipi_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.21.a
+		ai_chance = { factor = 100} 
+		transfer_state = 370
+	}
+}
+###Louisiana
+country_event = {
+	id = ACW.22
+	title = ACW.22.t
+	desc = ACW.22.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.louisiana_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.22.a
+		ai_chance = { factor = 100} 
+		371 = {
+			create_unit = {
+				division = "name = \"Louisiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 1528 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.23
+	title = ACW.23.t
+	desc = ACW.23.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.louisiana_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.23.a
+		ai_chance = { factor = 100} 
+		transfer_state = 371
+	}
+}
+###Arkansas
+country_event = {
+	id = ACW.24
+	title = ACW.24.t
+	desc = ACW.24.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.arkansas_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.24.a
+		ai_chance = { factor = 100} 
+		372 = {
+			create_unit = {
+				division = "name = \"Arkansas Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 7485 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.25
+	title = ACW.25.t
+	desc = ACW.25.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.arkansas_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.25.a
+		ai_chance = { factor = 100} 
+		transfer_state = 372
+	}
+}
+###Kansas
+country_event = {
+	id = ACW.26
+	title = ACW.26.t
+	desc = ACW.26.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.kansas_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.26.a
+		ai_chance = { factor = 100} 
+		383 = {
+			create_unit = {
+				division = "name = \"Kansas Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 4814 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.27
+	title = ACW.27.t
+	desc = ACW.27.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.kansas_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.27.a
+		ai_chance = { factor = 100} 
+		transfer_state = 383
+	}
+}
+###Colorado
+country_event = {
+	id = ACW.28
+	title = ACW.28.t
+	desc = ACW.28.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.kansas_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.28.a
+		ai_chance = { factor = 100} 
+		382 = {
+			create_unit = {
+				division = "name = \"Colorado Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 12642 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.29
+	title = ACW.29.t
+	desc = ACW.29.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.colorado_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.29.a
+		ai_chance = { factor = 100} 
+		transfer_state = 382
+	}
+}
+###Nebraska
+country_event = {
+	id = ACW.30
+	title = ACW.30.t
+	desc = ACW.30.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.nebraska_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.30.a
+		ai_chance = { factor = 100} 
+		384 = {
+			create_unit = {
+				division = "name = \"Nebraska Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 12516 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.31
+	title = ACW.31.t
+	desc = ACW.31.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.nebraska_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.31.a
+		ai_chance = { factor = 100} 
+		transfer_state = 384
+	}
+}
+###South Dakota
+country_event = {
+	id = ACW.32
+	title = ACW.32.t
+	desc = ACW.32.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.SD_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.32.a
+		ai_chance = { factor = 100} 
+		390 = {
+			create_unit = {
+				division = "name = \"South Dakota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 1875 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.33
+	title = ACW.33.t
+	desc = ACW.33.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.SD_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.33.a
+		ai_chance = { factor = 100} 
+		transfer_state = 390
+	}
+}
+###North Dakota
+country_event = {
+	id = ACW.34
+	title = ACW.34.t
+	desc = ACW.34.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.ND_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.34.a
+		ai_chance = { factor = 100} 
+		389 = {
+			create_unit = {
+				division = "name = \"North Dakota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 4759 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.35
+	title = ACW.35.t
+	desc = ACW.35.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.ND_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.35.a
+		ai_chance = { factor = 100} 
+		transfer_state = 389
+	}
+}
+###Minnesota
+country_event = {
+	id = ACW.36
+	title = ACW.36.t
+	desc = ACW.36.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.minnesota_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.36.a
+		ai_chance = { factor = 100} 
+		391 = {
+			create_unit = {
+				division = "name = \"Minnesota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 12693 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.37
+	title = ACW.37.t
+	desc = ACW.37.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.minnesota_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.37.a
+		ai_chance = { factor = 100} 
+		transfer_state = 391
+	}
+}
+###Iowa
+country_event = {
+	id = ACW.38
+	title = ACW.38.t
+	desc = ACW.38.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.iowa_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.38.a
+		ai_chance = { factor = 100} 
+		392 = {
+			create_unit = {
+				division = "name = \"Iowa Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 11971 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.39
+	title = ACW.39.t
+	desc = ACW.39.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.iowa_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.39.a
+		ai_chance = { factor = 100} 
+		transfer_state = 392
+	}
+}
+################################################################
+################################################################
+################################################################
+################################################################
+################################################################
+###Illinois
+country_event = {
+	id = ACW.40
+	title = ACW.40.t
+	desc = ACW.40.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.illinois_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.40.a
+		ai_chance = { factor = 100} 
+		395 = {
+			create_unit = {
+				division = "name = \"Illinois Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 4590 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.41
+	title = ACW.41.t
+	desc = ACW.41.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.illinois_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.41.a
+		ai_chance = { factor = 100} 
+		transfer_state = 395
+	}
+}
+###WIsconsin
+country_event = {
+	id = ACW.42
+	title = ACW.42.t
+	desc = ACW.42.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.wisconsin_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.42.a
+		ai_chance = { factor = 100} 
+		394 = {
+			create_unit = {
+				division = "name = \"Wisconsin Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 703 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.43
+	title = ACW.43.t
+	desc = ACW.43.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.wisconsin_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.43.a
+		ai_chance = { factor = 100} 
+		transfer_state = 394
+	}
+}
+###Michigan
+country_event = {
+	id = ACW.44
+	title = ACW.44.t
+	desc = ACW.44.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.michigan_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.44.a
+		ai_chance = { factor = 100} 
+		393 = {
+			create_unit = {
+				division = "name = \"Michigan Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 6782 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.45
+	title = ACW.45.t
+	desc = ACW.45.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.michigan_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.45.a
+		ai_chance = { factor = 100} 
+		transfer_state = 393
+	}
+}
+###Indiana
+country_event = {
+	id = ACW.46
+	title = ACW.46.t
+	desc = ACW.46.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.Indiana_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.46.a
+		ai_chance = { factor = 100} 
+		396 = {
+			create_unit = {
+				division = "name = \"Indiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 9653 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.47
+	title = ACW.47.t
+	desc = ACW.47.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.Indiana_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.47.a
+		ai_chance = { factor = 100} 
+		transfer_state = 396
+	}
+}
+###Ohio
+country_event = {
+	id = ACW.48
+	title = ACW.48.t
+	desc = ACW.48.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.ND_loyalty = USA.miltia }
+		has_global_flag = american_civil_war_begun
+		has_war_with = AMS
+		has_war_with = UAC
+	}
+
+	option = {
+		name = ACW.48.a
+		ai_chance = { factor = 100} 
+		261 = {
+			create_unit = {
+				division = "name = \"Ohio Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				owner = USA
+				prioritize_location = { 9760 }
+			}
+		}
+	}
+}
+country_event = {
+	id = ACW.49
+	title = ACW.49.t
+	desc = ACW.49.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+        check_variable = { USA.ND_loyalty = USA.secede }
+		has_global_flag = american_civil_war_begun
+	}
+
+	option = {
+		name = ACW.49.a
+		ai_chance = { factor = 100} 
+		transfer_state = 261
+	}
+}

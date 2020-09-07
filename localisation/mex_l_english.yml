@@ -24,6 +24,11 @@
  focus_rio_grande_desc:0 ""
  push_central_america:0 "Push Central America"
  push_central_america_desc:0 ""
+ the_northern_revolts:0 "The Northern Revolts"
+ a_divided_country:0 "A Divided Country"
+ starving_populace:0 "Starving Populace"
+ broken_industry:0 "Broken Industry"
+ broke_economy:0 "Broke Economy"
  ###########FOCUS##############
  MEX_a_state_of_emergancy:0 "A State of Emergancy"
  MEX_rally_the_core:0 "Rally the Core"
@@ -58,6 +63,10 @@
  mexico.5.b:0 "United Provinces of Central America"
  mexico.5.c:0 "Rio Grande"
  mexico.5.e:0 "None"
+ #############Country flags
+ mexican_revolution_is_over_mexican_defeat:0 "Mexico lost The Revolution"
+ mexican_revolution_is_over_mexican_victory:0 "Mexico won The Revolution"
+ mexican_revolution_has_happened:0 "The Revolution has begun"
  ###########PARTIES##############
 
 

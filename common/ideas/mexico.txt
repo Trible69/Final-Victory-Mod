@@ -176,7 +176,7 @@ ideas = {
 			}
 		}
 		the_northern_revolts = {
-			picture = 
+			picture = idea_mex_revolutionary_army
 
 			allowed = {
 				always = no
@@ -189,7 +189,85 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				
+				stability_factor = -0.2
+				industry_repair_factor = -0.5
+			}
+		}
+		a_divided_country = {
+			picture = idea_cze_divided_nation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+			}
+		}
+		starving_populace = {
+			picture = idea_prc_low_popular_support2
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.5
+				stability_factor = -0.2
+				war_support_factor = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+		broken_industry = {
+			picture = idea_man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		broke_economy = {
+			picture = idea_usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
 			}
 		}
 	}

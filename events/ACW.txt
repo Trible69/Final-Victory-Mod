@@ -13,6 +13,7 @@ country_event = {
 		tag = USA
         DATE > 1937.4.12
         has_global_flag = american_civil_war_begun
+		is_ai = no
 	}
 
 	option = {
@@ -50,6 +51,7 @@ country_event = {
 	Trigger = {
 		tag = UAC
         date > 1937.4.12
+		is_ai = no
 	}
 
 	option = {
@@ -89,6 +91,7 @@ country_event = {
 	Trigger = {
 		tag = AMS
         date > 1937.4.12
+		is_ai = no
 	}
 
 	option = {

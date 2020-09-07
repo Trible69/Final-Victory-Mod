@@ -103,6 +103,7 @@ ideas = {
 
 			modifier = {
 				war_support_factor = -0.1
+				army_speed_factor = -0.1
 			}
 		}
 		autonomy_discontent = {
@@ -172,6 +173,23 @@ ideas = {
 			targeted_modifier = {
 				tag = CEN
 				attack_bonus_against = 0.10
+			}
+		}
+		the_northern_revolts = {
+			picture = 
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
 			}
 		}
 	}

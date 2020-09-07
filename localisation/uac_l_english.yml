@@ -1,4 +1,7 @@
 ﻿l_english: 
+ UAC_vanguardism:0 "Union of American Communes"
+ UAC_vanguardism_DEF:0 "The Union of American Communes"
+ UAC_vanguardism_ADJ:0 "American"
 #############Focus########
 UAC_fight_for_our_freedom:0 "Fight for our Freedom"
 UAC_fight_for_our_freedom_desc:0 ""

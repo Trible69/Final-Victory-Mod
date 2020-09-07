@@ -21,6 +21,7 @@ country_event = {
         ai_chance = { factor = 100 }
         MEX = {
             white_peace = CAF
+            add_ideas =
         }
         hidden_effect = {
 			news_event = { hours = 6 id = news.13 }

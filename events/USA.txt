@@ -1023,7 +1023,7 @@ country event= {
 				name = "Douglas MacArthur"
 				ai_chance = { factor = 50 }
 				desc = ""
-				picture = "DouglasMacArtthurUSA.dds"
+				picture = "DouglasMacArthurUSA.dds"
 				expire = 1965.1.1
 				ideology = national_conservatism
 			}

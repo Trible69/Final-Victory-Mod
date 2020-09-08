@@ -1000,32 +1000,36 @@ country event= {
         ai_chance = { factor = 50 }
     }
 }
-	######Election of 1940 2 Electric Boogaloo#####
-	country_event= {
-		id = USA.27
-		title = USA.27.t
-		desc = USA.27.d
-		trigger = {
-            has_government = liberal
-            date > 1940.1.11
-            tag = USA
-		}
-		fire_only_once = yes
+######Election of 1940 2 Electric Boogaloo#####
+country_event= {
+	id = USA.27
+	title = USA.27.t
+	desc = USA.27.d
+	trigger = {
+        has_government = liberal
+        date > 1940.1.11
+        tag = USA
+	}
+	fire_only_once = yes
 
-		option = {
-			name = USA.27.a
-			ai_chance = { factor = 50 }
-
+	option = {
+		name = USA.27.a
+		ai_chance = { factor = 50 }
+	}
+    option = {
+		name = USA.27.b
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			desc = ""
+			picture = "DouglasMacArthurUSA.dds"
+			expire = 1965.1.1
+			ideology = national_conservatism
 		}
-        option = {
-			name = USA.27.b
-			create_country_leader = {
-				name = "Douglas MacArthur"
-				ai_chance = { factor = 50 }
-				desc = ""
-				picture = "DouglasMacArthurUSA.dds"
-				expire = 1965.1.1
-				ideology = national_conservatism
-			}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
 		}
+	}
+}
 	

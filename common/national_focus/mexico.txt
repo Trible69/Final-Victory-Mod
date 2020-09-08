@@ -22,6 +22,158 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 	}
+	##########Debt removal 
+	focus = {
+		id = MEX_the_debt_limit_act
+		icon = GFX_focus_generic_self_management
+		x = 10
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = debt_limit_act1
+			add_stability = -0.1
+		}
+	}
+	focus = {
+		id = MEX_ditch_the_gold_standard
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 10
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = MEX_the_debt_limit_act}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+    			remove_idea = debt_limit_act1
+	    		add_idea = debt_limit_act2
+			}
+		}
+	}
+	focus = {
+		id = MEX_lower_currency_value
+		icon = GFX_goal_demand_sudetenland
+		x = 11
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = MEX_ditch_the_gold_standard}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = debt_limit_act2
+	    		add_idea = debt_limit_act3
+			}
+		}
+	}
+	focus = {
+		id = MEX_subside_mexican_companies
+		icon = GFX_goal_generic_construction
+		x = 11
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = MEX_lower_currency_value}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+	focus = {
+		id = MEX_liquidate_the_gold_reserves
+		icon = GFX_focus_mex_privatisation
+		x = 9
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = MEX_ditch_the_gold_standard}
+		available = {
+			num_of_civilian_factories > 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = n100_year_debt_1
+	    		add_idea = n100_year_debt_2
+			}
+		}
+	}
+	focus = {
+		id = MEX_negotiate_other_payment_methods
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 9
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		prerequisite = {focus = MEX_liquidate_the_gold_reserves}
+		available = {
+			num_of_civilian_factories > 70
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = n100_year_debt_2
+		}
+	}
+	focus = {
+		id = MEX_mexican_finacial_administration
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+			num_of_civilian_factories > 100
+		}
+		prerequisite = {focus = MEX_negotiate_other_payment_methods}
+		prerequisite = {focus = MEX_subside_mexican_companies}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = debt_limit_act3
+	    		add_idea = debt_limit_act4
+			}
+		}
+	}
 	##########Revolution path
 	focus = {
 		id = MEX_a_state_of_emergancy
@@ -200,8 +352,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = the_northern_revolts_1
-			remove_ideas = the_northern_revolts
+			
 		}
 	}
 	focus = {
@@ -217,8 +368,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.05
+			
 		}
 	}
 	focus = {
@@ -234,7 +384,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas = broken_industry
+			
 		}
 	}
 	focus = {
@@ -246,11 +396,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_funding_by_the_monarch}
+		prerequisite = {focus = MEX_repair_the_infastructure}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas = the_northern_revolts_1
+			
 		}
 	}
 	focus = {
@@ -266,8 +417,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.05
+			
 		}
 	}
 	focus = {
@@ -283,23 +433,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
-            	limit = {
-                	free_building_slots = {
-                    	building = industrial_complex
-                    	size > 0
-                	}
-                	include_locked = yes
-            	}
-
-            	add_extra_state_shared_building_slots = 3
-
-            	add_building_construction = {
-                	type = industrial_complex
-                	level = 3
-                	instant_build = yes
-            	}
-        	}
+			
 		}
 	}
 	focus = {
@@ -315,7 +449,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_ideas = starving_populace
+			
 		}
 	}
+	
 }

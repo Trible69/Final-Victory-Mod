@@ -24,7 +24,6 @@ country_event = {
             add_ideas = a_divided_country
             add_ideas = starving_populace
             add_ideas = broke_economy
-            set_global_flag = mexican_revolution_is_over_mexican_defeat
         }
         hidden_effect = {
 			news_event = { hours = 6 id = news.13 }

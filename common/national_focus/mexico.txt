@@ -306,7 +306,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		x = 3
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_the_veterans_march}
@@ -322,12 +322,13 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
+	#victory
 	focus = {
 		id = MEX_sensational_victory
 		icon = GFX_focus_generic_support_the_left_right
 		x = 5
 		y = 14
-		cost = 7
+		cost = 1
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_sign_the_peace}
@@ -347,7 +348,7 @@ focus_tree = {
 		icon = GFX_focus_usa_voter_registration_act
 		x = 4
 		y = 15
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_sensational_victory}
@@ -366,7 +367,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 4
 		y = 16
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_arrest_the_traitors}
@@ -385,7 +386,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 4
 		y = 17
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_national_recovery_program}
@@ -404,7 +405,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		x = 5
 		y = 18
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
@@ -424,7 +425,7 @@ focus_tree = {
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 6
 		y = 15
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
@@ -443,7 +444,7 @@ focus_tree = {
 		icon = GFX_focus_generic_concessions
 		x = 6
 		y = 16
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		available = {
 			has_ideas = starving_populace_1
@@ -462,7 +463,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 6
 		y = 17
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
@@ -481,7 +482,7 @@ focus_tree = {
 		icon = GFX_focus_rom_royal_dictatorship
 		x = 5
 		y = 19
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
@@ -496,6 +497,206 @@ focus_tree = {
 			add_war_support = 0.2
 			add_political_power = 200
 			add_manpower = 100000
+		}
+	}
+	#defeat 
+	focus = {
+		id = MEX_a_crushing_defeat
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 1
+		y = 14
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+			has_ideas = a_divided_country
+			has_global_flag = mexican_revolution_is_over_mexican_defeat
+		}
+		prerequisite = {focus = MEX_sign_the_peace}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = MEX_a_military_takeover
+		icon = GFX_focus_generic_manpower
+		x = 1
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_a_crushing_defeat}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = national_populism
+				elections_allowed = no
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = MEX_food_distribution
+		icon = GFX_goal_generic_secret_weapon
+		x = 2
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_a_military_takeover}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = starving_populace
+				add_idea = starving_populace_1
+			}
+		}
+	}
+	focus = {
+		id = MEX_head_of_state
+		icon = GFX_focus_CZE_german_puppet
+		x = 2
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_food_distribution}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_dealing_with_protest
+		icon = GFX_focus_prc_infiltration
+		x = 0
+		y = 16
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_a_military_takeover}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_desperate_funding
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_dealing_with_protest}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_the_monarchy_question
+		icon = GFX_focus_eng_god_save_the_king
+		x = 1
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_desperate_funding}
+		prerequisite = {focus = MEX_head_of_state}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_the_fiery_communes
+		icon = GFX_goal_unknown
+		x = -1
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_the_monarchy_question}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_the_grand_junta
+		icon = GFX_goal_generic_territory_or_war
+		x = 1
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_the_monarchy_question}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MEX_new_republic
+		icon = GFX_goal_unknown
+		x = 3
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_the_monarchy_question}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 }

@@ -4652,5 +4652,17 @@ spriteTypes = {
 		name = "GFX_idea_an_open_hand"
 		texturefile = "gfx/interface/ideas/idea_quebec_hand.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_earl_browder"
+		texturefile = "gfx/interface/ideas/idea_political_advisor_earl_browder.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_william_foster"
+		texturefile = "gfx/interface/ideas/idea_political_advisor_william_foster.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jack_reed"
+		texturefile = "gfx/interface/ideas/idea_political_advisor_jack_reed.dds"
+	}
 	
 }

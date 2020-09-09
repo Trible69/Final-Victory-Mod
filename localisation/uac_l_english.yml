@@ -41,6 +41,8 @@ UAC_begin_to_recover_desc:0 ""
  uac_shellshocked_populace:0 "Shellshocked Populace"
  uac_shellshocked_populace_desc:0 ""
  earl_browder:0 "Earl Browder"
+ jack_reed:0 "Jack Reed"
+ william_foster:0 "William Foster"
  #####EVENTS######
  UAC.1.t:0 "The End of the Civil War"
  UAC.1.d:0 "The deadly American conflict has finally ended, with thousands falling victim to the murderous flames of war. Now is the time to reunite our nation, and to prevent such a brutal conflict from ever occurring again."

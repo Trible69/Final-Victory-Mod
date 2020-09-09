@@ -15,7 +15,7 @@ country_event = {
         }
         tag = SAN
     }
-
+    mean_time_to_happen = { days = 1 }
     option = {
         name = santafe.1.a
         ai_chance = { factor = 100 }

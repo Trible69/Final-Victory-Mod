@@ -15,6 +15,7 @@ country_event = {
         }
         tag = CAF
     }
+    mean_time_to_happen = { days = 1 }
 
     option = {
         name = california.1.a
@@ -42,6 +43,7 @@ country_event = {
         DATE = 1939.2.6
         tag = CAF
     }
+    mean_time_to_happen = { days = 1 }
 
     option = {
         name = california.2.a

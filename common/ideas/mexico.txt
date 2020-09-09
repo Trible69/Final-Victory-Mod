@@ -248,6 +248,25 @@ ideas = {
 				consumer_goods_factor = 0.2
 			}
 		}
+		starving_populace_1 = {
+			picture = idea_prc_low_popular_support2
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.25
+				stability_factor = -0.1
+				war_support_factor = -0.25
+				consumer_goods_factor = 0.1
+			}
+		}
 		broken_industry = {
 			picture = idea_man_five_year_plan_industry
 
@@ -266,6 +285,26 @@ ideas = {
 				production_speed_arms_factory_factor = -0.3
 				production_speed_dockyard_factor = -0.3
 				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		broken_industry_1 = {
+			picture = idea_man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
 			}
 		}
 		broke_economy = {

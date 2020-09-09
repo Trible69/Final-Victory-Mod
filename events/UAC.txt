@@ -13,6 +13,7 @@ country_event = {
 		has_war = no
 		tag = UAC
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = UAC.1.a
@@ -22,6 +23,9 @@ country_event = {
 		add_ideas = uac_crippled_industry
 		add_ideas = uac_shellshocked_populace
 		remove_ideas = fire_of_revolution
+		hidden_effect = {
+			country_event = {days = 10 id = UAC.3}
+		}
 	}
 }
 country_event = {
@@ -36,6 +40,7 @@ country_event = {
 	    DATE > 1938.2.12
 	    tag = UAC
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 	    name = UAC.2.a
@@ -49,7 +54,6 @@ country_event = {
 		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.14 }
-			country_event = {hours = 23 id = UAC.3}
 		}
 	}
 }
@@ -82,6 +86,7 @@ country_event = {
 	picture = GFX_report_event_uac_election_norman_emil
 
 	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 
 	trigger = {
 	    DATE = 1939.9.5
@@ -121,6 +126,7 @@ country_event = {
 		tag = UAC
 		has_country_flag = norman_victory1939
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 	    name = UAC.5.a
@@ -153,7 +159,7 @@ country_event = {
 		tag = UAC
 		has_country_flag = emil_victory1939
 	}
-
+	mean_time_to_happen = { days = 1 }
 	option = {
 	    name = UAC.6.a
 	    ai_chance = { factor = 100 }
@@ -186,6 +192,7 @@ country_event = {
 		tag = UAC
 		has_country_flag = norman_victory1942
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 	    name = UAC.7.a
@@ -218,6 +225,7 @@ country_event = {
 		tag = UAC
 		has_country_flag = emil_victory1942 
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 	    name = UAC.8.a
@@ -250,6 +258,7 @@ country_event = {
 		tag = UAC
 		has_country_flag = jack_victory1942
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 	    name = UAC.9.a

@@ -1,5 +1,5 @@
 focus_tree = {
-	id = UAC
+	id = uac_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -7,6 +7,9 @@ focus_tree = {
 			tag = UAC
 		}
 	}
+	
+	default = no 
+
 	#Focus for Fight for our Freedom
 	focus = {
 		id = UAC_fight_for_our_freedom
@@ -264,9 +267,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = UAC_begin_to_recover
+		id = UAC_reform_industry
 		icon = GFX_focus_generic_industry_1
-		x = 5 
+		x = 5
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
@@ -284,8 +287,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = UAC_Help_the_damaged_idustry
+	v = {
+		id = UAC_Reform_the_Industry
 	}
 #End of focuses 
  }

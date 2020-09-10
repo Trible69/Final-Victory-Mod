@@ -102,6 +102,10 @@
  mexico.5.b:0 "United Provinces of Central America"
  mexico.5.c:0 "Rio Grande"
  mexico.5.e:0 "None"
+ mexico.6.t:0 "The End of the Revolt"
+ mexico.6.d:0 ""
+ mexico.6.b:0 "At last"
+ 
  #############Country flags
  mexican_revolution_is_over_mexican_defeat:0 "Mexico lost The Revolution"
  mexican_revolution_is_over_mexican_victory:0 "Mexico won The Revolution"

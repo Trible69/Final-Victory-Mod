@@ -307,15 +307,251 @@ country_event = {
 	id = mexico.7
 	title = mexico.7.t
 	desc = mexico.7.d
-	
 	picture = GFX_report_event_gathering_protest
-	
+
 	fire_only_once = yes
+
 	is_triggered_only = yes
 
 	option = {
-		name = mexico.7.b 
-		ai_chance = { factor = 100 }
+		name = mexico.7.a
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = mexico.7.b
+		add_popularity = {
+			ideology = ultraconservative
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = mexico.7.c 
+		country_event = {id = mexico.8}
+	}
+}
+country_event = {
+	id = mexico.8
+	title = mexico.8.t
+	desc = mexico.8.d
+	picture = GFX_ 
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.8.a
+		ai_chance = {factor = 50}
+		add_popularity = {
+			ideology = vanguardism
+			popularity = 0.10
+		}
+		add_political_power = -100
+	}
+	option = {
+		name = mexico.8.b
+		ai_chance = {factor = 50}
+		add_popularity = {
+			ideology = vanguardism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = ultraconservative
+			popularity = -0.05
+		}	
+		add_stability = -0.1
+	}
+}
+country_event = {
+	id = mexico.9
+	title = mexico.9.t
+	desc = mexico.9.d 
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.9.a 
+		ai_chance = {factor = 50}
+		add_popularity = {
+			ideology = ultraconservative
+			popularity = 0.1
+		}	
+		add_popularity = {
+			ideology = vanguardism 
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = mexico.9.b
+		ai_chance = {factor 50}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.10
+		}
+		remove_ideas = starving_populace
+		add_political_power = -200
+	}
+}
+country_event = {
+	id = mexico.10
+	title = mexico.10.t
+	desc = mexico.10.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.10.a 
+		add_popularity = {
+			ideology = ultraconservative
+			popularity = 0.05
+		}	
+		add_popularity = {
+			ideology = vanguardism 
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = mexico.10.a
+		add_popularity = {
+			ideology = ultraconservative
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = vanguardism 
+			popularity = 0.1
+		}
+	}
+	option = {
+		name = mexico.10.c 
+		add_political_power = 100
+	}
+}
+country_event = {
+	id = mexico.11
+	title = mexico.11.t
+	desc = mexico.11.d 
+	
+	fire_only_once = yes 
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.11.a 
+		#%military guy
+		create_country_leader = {
+			name = ""
+			desc = ""
+			picture = ".dds"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = {
 		
+			}
+		}
+		hidden_effect = {
+			set_country_flag = nulitary_guy_has_taken_power
+		}
+	}
+	option = {
+		name = mexico.11.b
+		#%liberal guy
+		create_country_leader = {
+			name = ""
+			desc = ""
+			picture ".dds"
+			expire = "1965.1.1"
+			ideology = 
+			traits = {
+			
+			}
+		}
+		set_politics = {
+			ruling_party = liberal
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			set_country_flag = liberal_guy_has_taken_power
+		}
+	}
+	option = {
+		name = mexico.11.c
+		#%vanguardist sympathizer 
+		create_country_leader = {
+			name = ""
+			desc = ""
+			picture = ".dds"
+			expire = "1965.1.1"
+			ideology = 
+		}
+		add_popularity = {
+			ideology = vanguardism
+			popularity = 0.1
+		}
+		hidden_effect = {
+			set_country_flag = vanguardist_sympathizer_have_taken_power
+			add_popularity = {
+				ideology = vanguardism
+				popularity = 0.1
+			}
+		}
+	}
+}
+country_event = {
+	id = mexico.12
+	title = mexico.12.t 
+	desc = mexico.12.d 
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.12.a 
+		ai_chance = {factor = 50}
+		add_popularity = {
+			ideology = ultraconservative
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.05
+		}
+		add_ideas = augustin
+	}
+	option = {
+		name = mexico.12.b
+		add_popularity = {
+			ideology = vanguardism
+			popularity = 0.05
+		}
+		hidden_effect = {
+			set_country_flag = seizing_power
+		}
+	}
+}
+country_event = {
+	id = mexico.13
+	title = mexico.13.t 
+	desc = mexico.13.d 
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = seizing_power
+		vanguardism > 0.39
+		has_country_flag = vanguardist_sympathizer_have_taken_power
+	}
+	
+	option = {
+		name = mexico.13.a 
+		ai_chance = {factor = 100}
+		set_politics = {
+			ruling_party = vanguardism
+			elections_allowed = no
+		}
 	}
 }

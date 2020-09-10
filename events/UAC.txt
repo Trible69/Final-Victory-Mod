@@ -89,7 +89,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	trigger = {
-	    DATE = 1939.9.5
+	    DATE > 1939.9.5
 		has_country_flag = elections_allowed
 		tag = UAC
 	}
@@ -104,7 +104,13 @@ country_event = {
 	option = {
 		name = UAC.4.b
 		ai_chance = { factor = 100 }
-		#%emil
+		create_country_leader = {
+	        name = "Emil Seidel"
+	        desc = ""
+	        picture = "EmilSeidelUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			set_country_flag = emil_victory1939
 		}
@@ -138,7 +144,13 @@ country_event = {
 	option = {
 		name = UAC.5.b
 		ai_chance = { factor = 100 }
-		#%jack
+		create_country_leader = {
+	        name = "Jack Reed"
+	        desc = ""
+	        picture = "JackReedUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			set_country_flag = jack_victory1942
 		}
@@ -170,7 +182,13 @@ country_event = {
 	option = {
 		name = UAC.6.b
 		ai_chance = { factor = 100 }
-		#%jack
+		create_country_leader = {
+	        name = "Jack Reed"
+	        desc = ""
+	        picture = "JackReedUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			set_country_flag = jack_victory1942
 		}
@@ -205,7 +223,13 @@ country_event = {
 	option = {
 		name = UAC.7.b
 		ai_chance = { factor = 100 }
-		#%earl
+		create_country_leader = {
+	        name = "Earl Browder"
+	        desc = ""
+	        picture = "EarlBrowderUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			set_country_flag = earl_victory
 		}
@@ -238,7 +262,13 @@ country_event = {
 	option = {
 		name = UAC.8.b
 		ai_chance = { factor = 100 }
-		#%earl
+		create_country_leader = {
+	        name = "Earl Browder"
+	        desc = ""
+	        picture = "EarlBrowderUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			set_country_flag = earl_victory
 		}
@@ -271,7 +301,13 @@ country_event = {
 	option = {
 		name = UAC.9.b
 		ai_chance = { factor = 100 }
-		#%earl
+		create_country_leader = {
+	        name = "Earl Browder"
+	        desc = ""
+	        picture = "EarlBrowderUAC.dds"
+	        expire = "1965.1.1"
+	        ideology = marxism
+		}
 		hidden_effect = {
 			set_country_flag = earl_victory
 		}

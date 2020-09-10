@@ -2109,5 +2109,44 @@ spriteTypes = {
 		name = "GFX_news_event_haywood_assassination"
 		texturefile = "gfx/event_pictures/news_event_haywood_assassination.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_election_emil_earl"
+		texturefile = "gfx/event_pictures/report_event_uac_election_emil_earl.dds"
+	}
 	
+	spriteType = {
+		name = "GFX_report_event_uac_election_norman_earl"
+		texturefile = "gfx/event_pictures/report_event_uac_election_norman_earl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_election_jack_earl"
+		texturefile = "gfx/event_pictures/report_event_uac_election_jack_earl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_election_emil_jack"
+		texturefile = "gfx/event_pictures/report_event_uac_election_emil_jack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_election_norman_jack"
+		texturefile = "gfx/event_pictures/report_event_uac_election_norman_jack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_election_norman_emil"
+		texturefile = "gfx/event_pictures/report_event_uac_election_norman_emil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_should_we_have_elections"
+		texturefile = "gfx/event_pictures/report_event_uac_should_we_have_elections.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_uac_haywood_assassination"
+		texturefile = "gfx/event_pictures/report_event_uac_haywood_assassination.dds"
+	}
 }

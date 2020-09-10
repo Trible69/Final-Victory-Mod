@@ -8,6 +8,7 @@ country_event = {
 	picture = GFX_event_test
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = USA.1.a
@@ -24,13 +25,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	Trigger = {
-		DATE > 1936.11.2
-		tag = USA
-	}
-	mean_time_to_happen = {
-	    days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = USA.2.a
@@ -68,7 +63,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = fascism
+			ideology = national_populism
 			popularity = 0.10
 		}
 		hidden_effect = {
@@ -108,7 +103,7 @@ country_event = {
 		add_war_support = 0.20
 		remove_ideas = broken_nation
 		load_oob = USA_CivilWar
-		delete_unit_template_and_units = { division_template = "Infantry Division" disband = yes #will refund equipment and manpower }
+		delete_unit_template_and_units = {division_template = "Infantry Division" disband = yes}
 		add_ideas = eyes_seen_glory
 ########American State generals 6##############
 		remove_unit_leader = 809
@@ -161,6 +156,8 @@ country_event = {
 		    add_state_core = 384
 			transfer_state = 382
 			add_state_core = 382
+			transfer_state = 806
+			add_state_core = 806
 		    load_oob = AMS_CivilWar
 		    load_oob = AMS_1936_naval_legacy
 		    add_ideas = ams_fire_of_revolution
@@ -196,11 +193,8 @@ country_event = {
 		country_event= {
             id = USA.5
         }
-        hidden_effect = {
-			news_event = { hours = 6 id = news.2 }
-		}
+		set_global_flag = american_civil_war_begun
 	}
-	set_global_flag = american_civil_war_begun
 }
 ###civil war democratic###
 country_event = {
@@ -213,7 +207,7 @@ country_event = {
 
 	Trigger = {
 		has_government = liberal
-		democratic < 0.2
+		liberal < 0.2
 		DATE > 1937.4.1
 		has_idea = broken_nation
 		tag = USA
@@ -287,6 +281,8 @@ country_event = {
 		    add_state_core = 384
 			transfer_state = 382
 			add_state_core = 382
+			transfer_state = 806
+			add_state_core = 806
 		    load_oob = AMS_CivilWar
 		    load_oob = AMS_1936_naval_legacy
 		    add_ideas = ams_fire_of_revolution
@@ -322,11 +318,8 @@ country_event = {
 		country_event= {
             id = USA.5
         }
-        hidden_effect = {
-			news_event = { hours = 6 id = news.2 }
-		}
+		set_global_flag = american_civil_war_begun
 	}
-	set_global_flag = american_civil_war_begun
 }
 ###Change americas###
 country_event = {
@@ -341,38 +334,10 @@ country_event = {
 	option = {
 		name = USA.5.a
 		ai_chance = { factor = 100}
-		declare_war_on = {
-		    target = UAC
-		    type = annex_everything
-		}
-		declare_war_on = {
-		    target = AMS
-		    type = annex_everything
-		}
-		AMS = {
-		    declare_war_on = {
-		        target = UAC
-		        type = annex_everything
-		    }
-		}
 	}
 	option = {
 		name = USA.5.b
 		ai_chance = { factor = 0}
-        declare_war_on = {
-            target = UAC
-            type = annex_everything
-        }
-        declare_war_on = {
-            target = AMS
-            type = annex_everything
-        }
-        AMS = {
-            declare_war_on = {
-                target = UAC
-                type = annex_everything
-            }
-        }
         AMS = {
             change_tag_from = USA
         }
@@ -380,20 +345,6 @@ country_event = {
     option = {
 		name = USA.5.c
 		ai_chance = { factor = 0}
-        declare_war_on = {
-            target = UAC
-            type = annex_everything
-        }
-        declare_war_on = {
-            target = AMS
-            type = annex_everything
-        }
-        AMS = {
-            declare_war_on = {
-                target = UAC
-                type = annex_everything
-            }
-        }
         UAC = {
             change_tag_from = USA
         }
@@ -795,6 +746,7 @@ country_event = {
 		    owns_state = 381
 		}
 		has_global_flag = american_civil_war_begun
+		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
 
@@ -814,10 +766,13 @@ country_event = {
 	id = USA.22
 	title = USA.22.t
 	desc = USA.22.d 
-	picture = GFX_ 
+	picture = GFX_report_event_communists_cheer
 
-	is_triggered_only = yes
+	trigger = {
+		has_idea = bill_haywood
+	}
 	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = USA.22.a 
@@ -834,8 +789,11 @@ country_event = {
 	desc = USA.23.d
 	picture = GFX_report_event_USACharlesSpeech
 
-	is_triggered_only = yes
+	trigger = {
+		has_idea = charles_lindbergh
+	}
 	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = USA.23.a 
@@ -858,3 +816,257 @@ country_event = {
 		ai_chance = { factor = 100}
 	}
 }
+#########election trouble#########
+country_event = {
+	id = USA.25
+	title = USA.25.t
+	desc = USA.25.d
+	picture = GFX_event_test
+
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		DATE = 1936.11.1
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = USA.25.a
+		ai_chance = { factor = 100}
+		country_event = {
+	    	id = USA.2
+		}
+		custom_effect_tooltip = effect_for_election_trouble
+		hidden_effect = {
+			##########Decisions
+			unlock_decision_category_tooltip = USA_virginia
+			unlock_decision_category_tooltip = USA_west_virginia
+			unlock_decision_category_tooltip = USA_north_carolina
+			unlock_decision_category_tooltip = USA_south_carolina
+			unlock_decision_category_tooltip = USA_kentucky
+			unlock_decision_category_tooltip = USA_tennesse
+			unlock_decision_category_tooltip = USA_georgia
+			unlock_decision_category_tooltip = USA_mississipi
+			unlock_decision_category_tooltip = USA_florida
+			unlock_decision_category_tooltip = USA_alabama
+			unlock_decision_category_tooltip = USA_louisiana
+			unlock_decision_category_tooltip = USA_arkansas
+			unlock_decision_category_tooltip = USA_kansas
+			unlock_decision_category_tooltip = USA_nebraska
+			unlock_decision_category_tooltip = USA_colorado
+			unlock_decision_category_tooltip = USA_north_dakota
+			unlock_decision_category_tooltip = USA_south_dakota
+			unlock_decision_category_tooltip = USA_minnesota
+			unlock_decision_category_tooltip = USA_iowa
+			unlock_decision_category_tooltip = USA_wisconsin
+			unlock_decision_category_tooltip = USA_illinois
+			unlock_decision_category_tooltip = USA_michigan
+			unlock_decision_category_tooltip = USA_indiana
+			unlock_decision_category_tooltip = USA_ohio
+			##########Variables
+			set_variable = {
+    			var = USA.virginia_loyalty
+	    		value = 2
+			}
+			set_variable = {
+    			var = USA.WV_loyalty
+	    		value = 4
+			}
+			set_variable = {
+    			var = USA.NC_loyalty
+	    		value = 2
+			}
+			set_variable = {
+    			var = USA.SC_loyalty
+	    		value = 1
+			}
+			set_variable = {
+    			var = USA.kentucky_loyalty
+	    		value = 3
+			}
+			set_variable = {
+				var = USA.tennesse_loyalty
+				value = 2
+			}
+			set_variable = {
+				var = USA.georgia_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.mississipi_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.florida_loyalty
+				value = 2
+			}
+			set_variable = {
+				var = USA.alabama_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.louisiana_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.arkansas_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.kansas_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.nebraska_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.colorado_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.ND_loyalty
+				value = 4
+			}
+			set_variable = {
+				var = USA.SD_loyalty
+				value = 3
+			}
+			set_variable = {
+				var = USA.minnesota_loyalty
+				value = 2
+			}
+			set_variable = {
+				var = USA.iowa_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.wisconsin_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.illinois_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.michigan_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.Indiana_loyalty
+				value = 1
+			}
+			set_variable = {
+				var = USA.ohio_loyalty
+				value = 2
+			}
+			set_variable = {
+				var = USA.miltia
+				value = 5
+			}
+			set_variable = {
+				var = USA.secede
+				value = 8
+			}
+			set_country_flag = civil_unrest
+		}
+	}
+}
+######Election of 1940######
+country event= {
+    id = USA.26
+    title = USA.26.t
+    desc = USA.26.d
+    trigger = {
+        date > 1940.1.11
+        orignal_tag = USA
+		has_government = conservative
+    }
+	mean_time_to_happen = { days = 1 }
+    fire_only_once = yes
+
+    option = {
+        name = USA.26.a
+        create_country_leader = {
+            name = "John Nance Gardner"
+            ai_chance = { factor = 50 }
+            desc = ""
+            picture = "JohnNanceGarnerUSA.dds"
+            expire = 1965.1.1
+            ideology = national_conservatism
+            traits = {}
+
+        }
+    }
+    option = {
+        name = USA.26.b
+        ai_chance = { factor = 50 }
+    }
+}
+######Election of 1940 2 Electric Boogaloo#####
+country_event= {
+	id = USA.27
+	title = USA.27.t
+	desc = USA.27.d
+	trigger = {
+        has_government = liberal
+        date > 1940.1.11
+        tag = USA
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = USA.27.a
+		ai_chance = { factor = 50 }
+	}
+    option = {
+		name = USA.27.b
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			desc = ""
+			picture = "DouglasMacArthurUSA.dds"
+			expire = 1965.1.1
+			ideology = national_conservatism
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+		}
+	}
+}
+########1944 elections
+country_event= {
+	id = USA.28
+	title = USA.28.t
+	desc = USA.28.d
+	trigger = {
+        has_government = liberal
+        date > 1940.1.11
+        tag = USA
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = USA.28.a
+		ai_chance = { factor = 50 }
+	}
+    option = {
+		name = USA.28.b
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			desc = ""
+			picture = "DouglasMacArthurUSA.dds"
+			expire = 1965.1.1
+			ideology = national_conservatism
+		}
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+		}
+	}
+} 
+	

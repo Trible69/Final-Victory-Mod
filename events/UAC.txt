@@ -9,10 +9,11 @@ country_event = {
 	fire_only_once = yes
 
 	Trigger = {
-		DATE > 1937.5.1
+		DATE > 1937.6.1
 		has_war = no
 		tag = UAC
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = UAC.1.a
@@ -22,12 +23,16 @@ country_event = {
 		add_ideas = uac_crippled_industry
 		add_ideas = uac_shellshocked_populace
 		remove_ideas = fire_of_revolution
+		hidden_effect = {
+			country_event = {days = 10 id = UAC.3}
+		}
 	}
 }
 country_event = {
 	id = UAC.2
 	title = UAC.2.t
 	desc = UAC.2.d
+	picture = GFX_report_event_uac_haywood_assassination
 
 	fire_only_once = yes
 
@@ -35,13 +40,14 @@ country_event = {
 	    DATE > 1938.2.12
 	    tag = UAC
 	}
+	mean_time_to_happen = { days = 1 }
 
 	option = {
 	    name = UAC.2.a
 	    ai_chance = { factor = 100 }
 	    create_country_leader = {
 	        name = "Norman Thomas"
-	        desc = "POLITICS_EARL_BROWDER_DESC"
+	        desc = ""
 	        picture = "NormanThomasUAC.dds"
 	        expire = "1965.1.1"
 	        ideology = marxism
@@ -49,5 +55,241 @@ country_event = {
 		hidden_effect = {
 			news_event = { hours = 6 id = news.14 }
 		}
+	}
+}
+###Should we hold elections?
+country_event = {
+	id = UAC.3
+	title = UAC.3.t
+	desc = UAC.3.d
+	picture = GFX_report_event_uac_should_we_have_elections
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.3.a
+	    ai_chance = { factor = 100 }
+		set_country_flag = elections_allowed
+	}
+	option = {
+		name = UAC.3.b 
+		ai_chance = { factor = 100 }
+		add_war_support = -0.05
+	}
+}
+##1939 elections
+country_event = {
+	id = UAC.4
+	title = UAC.4.t
+	desc = UAC.4.d
+	picture = GFX_report_event_uac_election_norman_emil
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+	    DATE = 1939.9.5
+		has_country_flag = elections_allowed
+		tag = UAC
+	}
+
+	option = {
+	    name = UAC.4.a
+	    ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = norman_victory1939
+		}
+	}
+	option = {
+		name = UAC.4.b
+		ai_chance = { factor = 100 }
+		#%emil
+		hidden_effect = {
+			set_country_flag = emil_victory1939
+		}
+	}
+}
+########1942 elections
+###Norman victory
+country_event = {
+	id = UAC.5
+	title = UAC.5.t
+	desc = UAC.5.d
+	picture = GFX_report_event_uac_election_norman_jack
+
+	fire_only_once = yes
+
+	trigger = {
+	    DATE = 1942.9.5
+		has_country_flag = elections_allowed
+		tag = UAC
+		has_country_flag = norman_victory1939
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+	    name = UAC.5.a
+	    ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = norman_victory1942
+		}
+	}
+	option = {
+		name = UAC.5.b
+		ai_chance = { factor = 100 }
+		#%jack
+		hidden_effect = {
+			set_country_flag = jack_victory1942
+		}
+	}
+}
+###Emil victory
+country_event = {
+	id = UAC.6
+	title = UAC.6.t
+	desc = UAC.6.d
+	picture = GFX_report_event_uac_election_emil_jack
+
+	fire_only_once = yes
+
+	trigger = {
+	    DATE = 1942.9.5
+		has_country_flag = elections_allowed
+		tag = UAC
+		has_country_flag = emil_victory1939
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+	    name = UAC.6.a
+	    ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = emil_victory1942
+		}
+	}
+	option = {
+		name = UAC.6.b
+		ai_chance = { factor = 100 }
+		#%jack
+		hidden_effect = {
+			set_country_flag = jack_victory1942
+		}
+	}
+}
+##############1945 elections
+###Norman victory 1942
+country_event = {
+	id = UAC.7
+	title = UAC.7.t
+	desc = UAC.7.d
+	picture = GFX_report_event_uac_election_norman_earl
+
+	fire_only_once = yes
+
+	trigger = {
+	    DATE = 1945.9.5
+		has_country_flag = elections_allowed
+		tag = UAC
+		has_country_flag = norman_victory1942
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+	    name = UAC.7.a
+	    ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = norman_victory1945
+			country_event = {id = UAC.10}
+		}
+	}
+	option = {
+		name = UAC.7.b
+		ai_chance = { factor = 100 }
+		#%earl
+		hidden_effect = {
+			set_country_flag = earl_victory
+		}
+	}
+}
+##Emil victory 1942
+country_event = {
+	id = UAC.8
+	title = UAC.8.t
+	desc = UAC.8.d
+	picture = GFX_report_event_uac_election_emil_earl
+
+	fire_only_once = yes
+
+	trigger = {
+	    DATE = 1945.9.5
+		has_country_flag = elections_allowed
+		tag = UAC
+		has_country_flag = emil_victory1942 
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+	    name = UAC.8.a
+	    ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = norman_victory1945
+		}
+	}
+	option = {
+		name = UAC.8.b
+		ai_chance = { factor = 100 }
+		#%earl
+		hidden_effect = {
+			set_country_flag = earl_victory
+		}
+	}
+}
+#######jack victory 1942
+country_event = {
+	id = UAC.9
+	title = UAC.9.t
+	desc = UAC.9.d
+	picture = GFX_report_event_uac_election_jack_earl
+
+	fire_only_once = yes
+
+	trigger = {
+	    DATE = 1945.9.5
+		has_country_flag = elections_allowed
+		tag = UAC
+		has_country_flag = jack_victory1942
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+	    name = UAC.9.a
+	    ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = jack_victory1945
+		}
+	}
+	option = {
+		name = UAC.9.b
+		ai_chance = { factor = 100 }
+		#%earl
+		hidden_effect = {
+			set_country_flag = earl_victory
+		}
+	}
+}
+country_event = {
+	id = UAC.10
+	title = UAC.10.t
+	desc = UAC.10.d
+	picture = GFX_report_event_uac_election_jack_earl
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.10.a
+	    ai_chance = { factor = 100 }
+		add_political_power = -50
 	}
 }

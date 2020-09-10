@@ -294,7 +294,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = AMS_secure_the_new_state }
+		prerequisite = { focus = AMS_fortify_missouri }
 		ai_will_do = {
 			factor = 1
 		}
@@ -561,7 +561,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = AMS_secure_the_new_state }
+		prerequisite = { focus = AMS_fortify_virginia }
 		ai_will_do = {
 			factor = 1
 		}

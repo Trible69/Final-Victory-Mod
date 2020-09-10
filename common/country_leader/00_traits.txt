@@ -3910,4 +3910,30 @@ leader_traits = {
 			}
 		}
 	}
+	a_ceremonial_monarch = {
+		random = no
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	a_constitutional_monarch = {
+		random = no
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_second_sun_king = {
+		random  = no 
+		political_power_gain = 0.3
+		stability_factor = 0.05
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

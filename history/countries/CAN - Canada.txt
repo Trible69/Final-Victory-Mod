@@ -65,28 +65,17 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
+set_popularities = {
+	liberal = 70
+	conservative = 20
+	social_democrat = 10 
+}
 
 set_politics = {
-
-	parties = {
-		liberal = { 
-			popularity = 70
-		}
-
-		conservative = {
-			popularity = 20
-		}
-		
-		social_democrat = {
-			popularity = 10
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = liberal
 	last_election = "1935.10.14"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -94,40 +83,7 @@ create_country_leader = {
 	desc = "POLITICS_MACKENZIE_KING_DESC"
 	picture = "Portrait_Canada_Mackenzie_King.dds"
 	expire = "1965.1.1"
-	ideology = liberal
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Adrien Arcand"
-	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Tim Buck"
-	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
+	ideology = social_liberalism
 	traits = {
 		#
 	}

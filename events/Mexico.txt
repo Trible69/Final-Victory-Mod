@@ -1,6 +1,24 @@
 ﻿
 add_namespace = mexico
 
+#lore
+country_event = {
+	id = mexico.0
+	title = mexico.0.t
+	desc = mexico.0.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexico.0.a
+		ai_chance = { factor = 100}
+	}
+}
+
 # charles lindberg arrives
 
 country_event = {
@@ -14,10 +32,12 @@ country_event = {
 	
 	trigger = {
 		NOT = {
-			country_exist = AMS
+			country_exists = AMS
 		}
+		tag = MEX
 		has_global_flag = american_civil_war_begun
 	}
+	mean_time_to_happen = { days = 1 }
 		
 	option = {
 		name = mexico.1.a
@@ -48,7 +68,9 @@ country_event = {
 	
 	trigger = {
 		DATE > 1937.1.1
+		tag = MEX
 	}
+	mean_time_to_happen = { days = 1 }
 		
 	option = {
 		name = mexico.2.a
@@ -79,7 +101,9 @@ country_event = {
 	
 	trigger = {
 		DATE > 1938.5.13
+		tag = MEX
 	}
+	mean_time_to_happen = { days = 1 }
 		
 	option = {
 		name = mexico.3.a
@@ -171,5 +195,127 @@ country_event = {
 		hidden_effect = {
 			news_event = { hours = 6 id = news.10 }
 		}
+		country_event = {id = mexico.4}
+		set_global_flag = mexican_revolution_has_happened
+	} 	
+}
+##Switch countries events
+country_event = {
+	id = mexico.4
+	title = mexico.4.t
+	desc = mexico.4.d
+	
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = mexico.4.a
+		ai_chance = { factor = 0}
+		CAF = {
+            change_tag_from = MEX
+        }
+	}
+	option = {
+		name = mexico.4.b 
+		ai_chance = { factor = 0 }
+		TEX = {
+			change_tag_from = MEX
+		}
+	}
+	option = {
+		name = mexico.4.c 
+		ai_chance = { factor = 0 }
+		DES = {
+			change_tag_from = MEX
+		}
+	}
+	option = {
+		name = mexico.4.e 
+		ai_chance = { factor = 0 }
+		country_event = {id = mexico.5}
+	}
+}
+country_event = {
+	id = mexico.5
+	title = mexico.5.t
+	desc = mexico.5.d
+	
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = mexico.5.a
+		ai_chance = { factor = 100}
+		YUC = {
+            change_tag_from = MEX
+        }
+	}
+	option = {
+		name = mexico.5.b 
+		ai_chance = { factor = 100 }
+		CEN = {
+			change_tag_from = MEX
+		}
+	}
+	option = {
+		name = mexico.5.c 
+		ai_chance = { factor = 100 }
+		RIG = {
+			change_tag_from = MEX
+		}
+	}
+	option = {
+		name = mexico.5.e 
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = mexico.6
+	title = mexico.6.t
+	desc = mexico.6.d
+	
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	trigger = {
+		DATE > 1938.6.13
+		tag = MEX
+		has_war = no 
+		NOT = {
+			country_exists = CAF
+		}
+		has_global_flag = mexican_revolution_has_happened
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = mexico.6.b 
+		ai_chance = { factor = 100 }
+		add_ideas = the_northern_revolts
+		add_ideas = starving_populace
+		add_ideas = broken_industry
+		hidden_effect = {
+			set_global_flag = mexican_revolution_is_over_mexican_victory
+		}
+	}
+}
+country_event = {
+	id = mexico.7
+	title = mexico.7.t
+	desc = mexico.7.d
+	
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = mexico.7.b 
+		ai_chance = { factor = 100 }
+		
 	}
 }

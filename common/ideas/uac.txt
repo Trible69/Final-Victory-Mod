@@ -96,4 +96,32 @@ ideas = {
 			}
 		}	
 	}
+
+
+	political_advisor = {
+		earl_browder = {
+			
+			allowed = {
+				original_tag = UAC
+			}
+			
+			traits = { silent_workhorse }
+		}
+		jack_reed = {
+			
+			allowed = {
+				original_tag = UAC
+			}
+			
+			traits = { vanguardist_revolutionary }
+		}
+		william_foster = {
+			
+			allowed = {
+				original_tag = UAC
+			}
+			
+			traits = { backroom_backstabber }
+		}
+	}
 }

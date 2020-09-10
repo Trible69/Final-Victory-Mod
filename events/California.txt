@@ -15,15 +15,50 @@ country_event = {
         }
         tag = CAF
     }
+    mean_time_to_happen = { days = 1 }
 
     option = {
         name = california.1.a
         ai_chance = { factor = 100 }
         MEX = {
             white_peace = CAF
+            add_ideas = a_divided_country
+            add_ideas = starving_populace
+            add_ideas = broke_economy
         }
         hidden_effect = {
 			news_event = { hours = 6 id = news.13 }
+            set_global_flag = mexican_revolution_is_over_mexican_defeat
 		}
+    }
+}
+country_event = {
+    id = california.2
+    title = california.2.t
+    desc = california.2.d
+
+    fire_only_once = yes
+
+    Trigger = {
+        DATE = 1939.2.6
+        tag = CAF
+    }
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = california.2.a
+        ai_chance = { factor = 100 }
+        SAN = {
+            transfer_state = 377
+            add_state_core = 377
+            load_oob = SAN_californiarevolt
+        }
+        declare_war_on = {
+		    target = SAN
+		    type = annex_everything
+		}
+        hidden_effect = {
+            news_event = { hours = 6 id = news.15 }
+        }
     }
 }

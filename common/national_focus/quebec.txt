@@ -1,0 +1,1725 @@
+focus_tree = {
+	id = QUE
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = QUE
+		}
+	}
+	#Focus for Increase French Immigration
+	focus = {
+		id = QUE_increase_french_immigration
+		icon = GFX_CAN_increase_french_immigration-30853
+		x = 22
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_anglo_problem }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for American Designs
+	focus = {
+		id = QUE_american_designs
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_air_exercises }
+		mutually_exclusive = { focus = QUE_our_own_design }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+
+	#Focus for The Anglo Problem
+	focus = {
+		id = QUE_the_anglo_problem
+		icon = GFX_focus_AST_never_gallipoli
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_kings_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.2
+		}
+	}
+
+	#Focus for Québécois Diplomacy
+	focus = {
+		id = QUE_qubcois_diplomacy
+		icon = GFX_CAN_qubcois_diplomacy-30841
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Economic Development Plan
+	focus = {
+		id = QUE_economic_development_plan
+		icon = GFX_focus_generic_treaty
+		x = 31
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 5
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 5
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Economic Boom
+	focus = {
+		id = QUE_economic_boom
+		icon = GFX_goal_generic_consumer_goods
+		x = 31
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_growing_economy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = que_great_depression
+		}
+	}
+
+	#Focus for Industrialization Effort
+	focus = {
+		id = QUE_industrialization_effort
+		icon = GFX_CAN_industrialization_effort-32156
+		x = 29
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_industrial_solution }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Growing Economy
+	focus = {
+		id = QUE_growing_economy
+		icon = GFX_USA_building_the_economy-28338
+		x = 31
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_pass_the_union_law 
+			focus = QUE_pass_the_land_tax_law 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Pass the Land Tax Law
+	focus = {
+		id = QUE_pass_the_land_tax_law
+		icon = GFX_goal_generic_construction
+		x = 33
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_new_farming_technics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 6
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 6
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Industrial Solution
+	focus = {
+		id = QUE_industrial_solution
+		icon = GFX_CAN_industrial_solution-32151
+		x = 29
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_economic_development_plan }
+		mutually_exclusive = { focus = QUE_agrarian_solution }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Agrarian Solution
+	focus = {
+		id = QUE_agrarian_solution
+		icon = GFX_CAN_agrarian_solution-32152
+		x = 33
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_economic_development_plan }
+		mutually_exclusive = { focus = QUE_industrial_solution }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Pass the Union Law
+	focus = {
+		id = QUE_pass_the_union_law
+		icon = GFX_focus_generic_industry_1.dds
+		x = 29
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_industrialization_effort }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 6
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 6
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for A Modern Army
+	focus = {
+		id = QUE_a_modern_army
+		icon = GFX_focus_chi_army_reform
+		x = 27
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_american_army_officers 
+		}
+		prerequisite = { 
+			focus = QUE_hotchkissh36 
+		}
+		prerequisite = { 
+			focus = QUE_contact_with_mauser 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+
+	#Focus for A Traditional Army
+	focus = {
+		id = QUE_a_traditional_army
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_second_staff_office_plan 
+		}
+		prerequisite = { 
+			focus = QUE_tankettes 
+		}
+		prerequisite = { 
+			focus = QUE_usine_darmes_de_montral 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 5
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 5
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Second Staff Office Plan
+	focus = {
+		id = QUE_second_staff_office_plan
+		icon = GFX_focus_generic_support_the_left_right
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_trench_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.50
+            	uses = 2 
+            	category = support_tech
+        	}
+		}
+	}
+
+	#Focus for Tankette's
+	focus = {
+		id = QUE_tankettes
+		icon = GFX_focus_generic_army_tanks2
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_lessons_from_the_great_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+        	    bonus = 0.5 
+    	        uses = 1
+	            category = cat_light_armor
+        	}
+		}
+	}
+
+	#Focus for Usine D'armes de Montréal
+	focus = {
+		id = QUE_usine_darmes_de_montral
+		icon = GFX_focus_generic_industry_2
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_fund_the_national_arms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Cult of Personality
+	focus = {
+		id = QUE_cult_of_personality
+		icon = GFX_focus_generic_monarchy_1
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_clamp_down_on_liberalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_country_leader_trait = the_second_sun_king
+		}
+	}
+
+	#Focus for Air Exercises
+	focus = {
+		id = QUE_air_exercises
+		icon = GFX_goal_generic_air_fighter
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_louis_xvi_flight_school 
+		}
+		prerequisite = { 
+			focus = QUE_creating_an_airforce 
+		}
+		prerequisite = { 
+			focus = QUE_montreal_to_washington_airway 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 100
+		}
+	}
+
+	#Focus for The New Quebec
+	focus = {
+		id = QUE_the_new_quebec
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_public_elections 
+			focus = QUE_the_king_of_the_people 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = quebec_reforged
+		}
+	}
+
+	#Focus for A Constitutional Monarch
+	focus = {
+		id = QUE_a_constitutional_monarch
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 4
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_reestablish_the_parlements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_country_leader_trait = a_constitutional_monarch
+			set_country_flag = constitutional_monarch
+		}
+	}
+
+	#Focus for Re-Establish the Parlements
+	focus = {
+		id = QUE_reestablish_the_parlements
+		icon = GFX_goal_tripartite_pact
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_reform_the_monarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = parlements_restored
+		}
+	}
+
+	#Focus for Clamp Down on Liberalism
+	focus = {
+		id = QUE_clamp_down_on_liberalism
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_restore_the_ancien_rgime }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = { 
+                ideology = conservative 
+                popularity = -0.2 
+            }
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.2
+			}
+		}
+	}
+
+	#Focus for A Ceremonial Monarch
+	focus = {
+		id = QUE_a_ceremonial_monarch
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 2
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_reestablish_the_parlements }
+		mutually_exclusive = { focus = QUE_a_constitutional_monarch }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+	            ruling_party = social_democrat
+	            last_election = "1934.1.1"
+	            election_frequency = 48
+	            elections_allowed = no
+            }
+			add_country_leader_trait = a_ceremonial_monarch
+			set_country_flag = ceremonial_monarch
+			add_ideas = jacques_ii
+		}
+	}
+
+	#Focus for Reform the Monarchy
+	focus = {
+		id = QUE_reform_the_monarchy
+		icon = GFX_focus_rom_handle_king
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_legitimate_kingdom }
+		mutually_exclusive = { focus = QUE_restore_the_ancien_rgime }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = { 
+                ideology = social_democrat 
+                popularity = 0.1 
+            }
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.2
+			}
+			add_political_power = 100
+
+		}
+	}
+
+	#Focus for Restore the Ancien Régime
+	focus = {
+		id = QUE_restore_the_ancien_rgime
+		icon = GFX_focus_generic_monarchy_1
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_legitimate_kingdom }
+		mutually_exclusive = { focus = QUE_reform_the_monarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+                ideology = ultraconservative
+                popularity = 0.25
+            }
+		}
+	}
+
+	#Focus for The Legitimate Kingdom
+	focus = {
+		id = QUE_the_legitimate_kingdom
+		icon = GFX_CAN_the_legitimate_kingdom-30396
+		x = 6
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 300
+            add_stability= 0.30
+		}
+	}
+
+	#Focus for The King's Army
+	focus = {
+		id = QUE_the_kings_army
+		icon = GFX_focus_generic_military_mission
+		x = 23
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	#Focus for First Staff Office Plan
+	focus = {
+		id = QUE_first_staff_office_plan
+		icon = GFX_focus_generic_industry_3
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = construction_bill_passed
+		}
+		prerequisite = { focus = QUE_begin_the_reform }
+		mutually_exclusive = { focus = QUE_study_foreign_tactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+                bonus = 0.5 
+                uses = 2 
+                category = industry 
+            }
+		}
+	}
+
+	#Focus for Prussian Discipline
+	focus = {
+		id = QUE_prussian_discipline
+		icon = GFX_CAN_prussian_discipline-30837
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_study_foreign_tactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.1
+		}
+	}
+
+	#Focus for Compagnie de Chars
+	focus = {
+		id = QUE_compagnie_de_chars
+		icon = GFX_goal_generic_army_tanks
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_study_foreign_tactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.4 
+    	        uses = 1
+        	    category = cat_medium_armor
+	        }
+		}
+	}
+
+	#Focus for Modernize Our Equipment
+	focus = {
+		id = QUE_modernize_our_equipment
+		icon = GFX_focus_generic_military_academy
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_study_foreign_tactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.5 
+        	    uses = 1
+    	        category = infantry_tech
+	        }
+		}
+	}
+
+	#Focus for Contact with Mauser
+	focus = {
+		id = QUE_contact_with_mauser
+		icon = GFX_goal_generic_small_arms
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_modernize_our_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.5 
+        	    uses = 2 
+    	        category = infantry_tech
+	        }
+		}
+	}
+
+	#Focus for Hotchkiss-H36
+	focus = {
+		id = QUE_hotchkissh36
+		icon = GFX_focus_generic_tank_production
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_compagnie_de_chars }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.25 
+        	    uses = 1
+    	        category = cat_heavy_armor
+	        }
+		}
+	}
+
+	#Focus for American Army Officers
+	focus = {
+		id = QUE_american_army_officers
+		icon = GFX_CAN_american_army_officers-30984
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_prussian_discipline }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = USA modifier = american_officer }
+		}
+	}
+
+	#Focus for Lessons From The Great War
+	focus = {
+		id = QUE_lessons_from_the_great_war
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_first_staff_office_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.5 
+        	    uses = 2 
+    	        category = land_doctrine
+	        }
+		}
+	}
+
+	#Focus for Trench Warfare
+	focus = {
+		id = QUE_trench_warfare
+		icon = GFX_goal_generic_construction2
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_first_staff_office_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+            	bonus = 0.25
+            	uses = 2 
+            	category = support_tech
+        	}
+		}
+	}
+
+	#Focus for Reinforced Catholicism
+	focus = {
+		id = QUE_reinforced_catholicism
+		icon = GFX_focus_por_concordat
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_clamp_down_on_liberalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for The Royal Gendarmerie
+	focus = {
+		id = QUE_the_royal_gendarmerie
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_clamp_down_on_liberalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = royal_gendarmerie
+		}
+	}
+
+	#Focus for Oaths of Loyalty 
+	focus = {
+		id = QUE_oaths_of_loyalty
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 9
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_cult_of_personality 
+		}
+		prerequisite = { 
+			focus = QUE_reinforced_catholicism 
+		}
+		prerequisite = { 
+			focus = QUE_the_royal_gendarmerie 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = quebec.2}
+		}
+	}
+
+	#Focus for Public Elections 
+	focus = {
+		id = QUE_public_elections
+		icon = GFX_goal_support_democracy
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_a_ceremonial_monarch }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = quebec.4}
+		}
+	}
+
+	#Focus for The King of the People
+	focus = {
+		id = QUE_the_king_of_the_people
+		icon = GFX_focus_generic_support_the_left_right
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_a_constitutional_monarch }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = ultraconservative
+				popularity = 0.10
+			}
+		}
+	}
+
+	#Focus for Vive l'Roi
+	focus = {
+		id = QUE_vive_lroi
+		icon = GFX_focus_generic_monarchy_2
+		x = 9
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_oaths_of_loyalty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = capetian_irredentism
+		}
+	}
+
+	#Focus for Study Foreign Tactics
+	focus = {
+		id = QUE_study_foreign_tactics
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = manpower_bill_passed
+		}
+		prerequisite = { focus = QUE_begin_the_reform }
+		mutually_exclusive = { focus = QUE_first_staff_office_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+
+	#Focus for Fund The National Arms
+	focus = {
+		id = QUE_fund_the_national_arms
+		icon = GFX_goal_generic_army_doctrines
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_first_staff_office_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Begin The Reform 
+	focus = {
+		id = QUE_begin_the_reform
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_kings_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = quebec.5}
+		}
+	}
+
+	#Focus for The Kingdom Restored
+	focus = {
+		id = QUE_the_kingdom_restored
+		icon = GFX_focus_focus_fra_orleans_restoration
+		x = 6
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_vive_lroi 
+			focus = QUE_the_new_quebec 
+		}
+		available = {
+			NOT = {
+				country_exist = FRA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = france_divided
+		}
+	}
+
+	#Focus for Reconstruction Effort
+	focus = {
+		id = QUE_reconstruction_effort
+		icon = GFX_goal_generic_construction2
+		x = 4
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_kingdom_restored }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = recovery_effort
+		}
+	}
+
+	#Focus for Royalist Propaganda
+	focus = {
+		id = QUE_royalist_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = 8
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_kingdom_restored }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = ultraconservative 
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.15
+			}
+		}
+	}
+
+	#Focus for Political Matters
+	focus = {
+		id = QUE_political_matters
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_royalist_propaganda 
+		}
+		prerequisite = { 
+			focus = QUE_reconstruction_effort 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Reconciliation
+	focus = {
+		id = QUE_reconciliation
+		icon = GFX_goal_generic_major_alliance
+		x = 3
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_political_matters }
+		mutually_exclusive = { focus = QUE_royal_vengeance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = an_open_hand
+		}
+	}
+
+	#Focus for Royal Vengeance
+	focus = {
+		id = QUE_royal_vengeance
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_political_matters }
+		mutually_exclusive = { focus = QUE_reconciliation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = a_closed_fist
+		}
+	}
+
+	#Focus for Merging Our Parties
+	focus = {
+		id = QUE_merging_our_parties
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 3
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_reconciliation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+	            ruling_party = conservative
+	            last_election = "1940.1.1"
+	            election_frequency = 48
+	            elections_allowed = yes
+            }
+		}
+	}
+
+	#Focus for Phase out French Militarism
+	focus = {
+		id = QUE_phase_out_french_militarism
+		icon = GFX_goal_generic_scientific_exchange
+		x = 1
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_reconciliation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = royal_gendarmerie
+		}
+	}
+
+	#Focus for Encourage Political Discourse
+	focus = {
+		id = QUE_encourage_political_discourse
+		icon = GFX_focus_generic_military_academy
+		x = 5
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_reconciliation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.15
+			}
+		}
+	}
+
+	#Focus for State-Sponsored Purges
+	focus = {
+		id = QUE_statesponsored_purges
+		icon = GFX_goal_generic_attack_allies
+		x = 9
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_royal_vengeance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = vanguardism
+				popularity -0.3
+			}
+		}
+	}
+
+	#Focus for Indoctrinate the Army
+	focus = {
+		id = QUE_indoctrinate_the_army
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		x = 7
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_royal_vengeance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = indoctrinate_armed_forces
+		}
+	}
+
+	#Focus for Obliterate the Revolution 
+	focus = {
+		id = QUE_obliterate_the_revolution
+		icon = GFX_CAN_obliterate_the_revolution-30399
+		x = 11
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_royal_vengeance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = quebec.3}
+		}
+	}
+
+	#Focus for Finish Reforms
+	focus = {
+		id = QUE_finish_reforms
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 3
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_phase_out_french_militarism 
+		}
+		prerequisite = { 
+			focus = QUE_encourage_political_discourse 
+		}
+		prerequisite = { 
+			focus = QUE_merging_our_parties 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = a_new_and_better_france
+		}
+	}
+
+	#Focus for Consolidate our Power
+	focus = {
+		id = QUE_consolidate_our_power
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 9
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_statesponsored_purges 
+		}
+		prerequisite = { 
+			focus = QUE_indoctrinate_the_army 
+		}
+		prerequisite = { 
+			focus = QUE_obliterate_the_revolution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = a_france_of_iron
+		}
+	}
+
+	#Focus for The House of Capet Triumphant
+	focus = {
+		id = QUE_the_house_of_capet_triumphant
+		icon = GFX_focus_generic_home_defense
+		x = 6
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_finish_reforms 
+			focus = QUE_consolidate_our_power 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = capetian_irredentism
+		}
+	}
+
+	#Focus for Force Convert the Anglos
+	focus = {
+		id = QUE_force_convert_the_anglos
+		icon = GFX_CAN_force_convert_the_anglos-30845
+		x = 18
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_the_anglo_problem }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_manpower = 10000
+		}
+	}
+
+	#Focus for Creating an Airforce
+	focus = {
+		id = QUE_creating_an_airforce
+		icon = GFX_goal_generic_build_airforce
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_royal_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Louis XVI Flight School
+	focus = {
+		id = QUE_louis_xvi_flight_school
+		icon = GFX_goal_generic_air_bomber
+		x = 31
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_royal_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+
+	#Focus for Royal Airforce
+	focus = {
+		id = QUE_royal_airforce
+		icon = GFX_goal_generic_air_fighter
+		x = 33
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+
+	#Focus for Montreal to Washington Airway
+	focus = {
+		id = QUE_montreal_to_washington_airway
+		icon = GFX_goal_generic_air_fighter2
+		x = 33
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_royal_airforce }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#Focus for The King's Plan
+	focus = {
+		id = QUE_the_kings_plan
+		icon = GFX_CAN_the_kings_plan-31005
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_qubcois_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Planning "Deluge"
+	focus = {
+		id = QUE_planning_deluge
+		icon = GFX_goal_generic_position_armies
+		x = 20
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_increase_french_immigration 
+			focus = QUE_force_convert_the_anglos 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	#Focus for Our Own Design
+	focus = {
+		id = QUE_our_own_design
+		icon = GFX_goal_generic_demand_territory
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_air_exercises }
+		mutually_exclusive = { focus = QUE_american_designs }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+
+	#Focus for New Farming Technics
+	focus = {
+		id = QUE_new_farming_technics
+		icon = GFX_goal_generic_soviet_construction
+		x = 33
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_agrarian_solution }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 4
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 4
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Further Recruitment
+	focus = {
+		id = QUE_further_recruitment
+		icon = GFX_CAN_further_recruitment-32136
+		x = 20
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_british_air_force_reforms 
+			focus = QUE_british_naval_officers 
+			focus = QUE_elite_divisions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+
+	#Focus for Increase Naval Capability
+	focus = {
+		id = QUE_increase_naval_capability
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 22
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_british_air_force_reforms 
+			focus = QUE_british_naval_officers 
+			focus = QUE_elite_divisions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = dockyard
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 5
+
+            	add_building_construction = {
+                	type = dockyard
+                	level = 5
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+
+	#Focus for Buy Foreign Planes
+	focus = {
+		id = QUE_buy_foreign_planes
+		icon = GFX_goal_generic_air_fighter2
+		x = 18
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_british_air_force_reforms 
+			focus = QUE_british_naval_officers 
+			focus = QUE_elite_divisions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = medium_air
+    			amount = 300
+			}
+		}
+	}
+
+	#Focus for Onwards, Quebec
+	focus = {
+		id = QUE_onwards_quebec
+		icon = GFX_CAN_onwards_quebec-32147
+		x = 20
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = QUE_further_recruitment 
+			focus = QUE_increase_naval_capability 
+			focus = QUE_buy_foreign_planes 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Elite Divisions
+	focus = {
+		id = QUE_elite_divisions
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 20
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_planning_deluge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+
+	#Focus for British Naval Officers
+	focus = {
+		id = QUE_british_naval_officers
+		icon = GFX_CAN_british_naval_officers-32133
+		x = 22
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_planning_deluge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+
+	#Focus for British Air Force Reforms
+	focus = {
+		id = QUE_british_air_force_reforms
+		icon = GFX_CAN_british_air_force_reforms-32134
+		x = 18
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = QUE_planning_deluge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+
+#End of focuses 
+ }

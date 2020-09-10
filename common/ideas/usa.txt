@@ -208,43 +208,14 @@ ideas = {
 				original_tag = "USA"
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_suspend_the_presecution
-					not = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
-					not = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
+				NOT = {
+					has_global_flag = american_civil_war_begun
+					has_autonomy_state = autonomy_supervised_state
 				}
 			}
 
 			
 			traits = { vanguardist_revolutionary }
-
-			do_effect = {
-				country_event = {id = USA.22}
-			}
-			
-			ai_will_do = {
-				factor = 10
-				modifier = {
-					is_historical_focus_on = yes
-					has_game_rule = {
-						rule = USA_ai_behavior
-						option = DEFAULT
-					}
-					factor = 0
-				}
-				modifier = {
-					is_historical_focus_on = yes
-					not = { has_dlc = "Man the Guns" }
-					factor = 0
-				}
-			}
 		}	
 		harry_white = {
 			
@@ -401,13 +372,33 @@ ideas = {
 			}
 			
 			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
+				NOT = { has_autonomy_state = autonomy_supervised_state }
+			}
+			
+			traits = { liberal_reformer }
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
 				}
 			}
 			
-			traits = { democratic_reformer }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		harold_ickes = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			available = {	
+				NOT = { has_autonomy_state = autonomy_supervised_state }
+			}
+			
+			traits = { conservative_reformer }
 	
 			do_effect = {
 				NOT = {
@@ -427,45 +418,14 @@ ideas = {
 				original_tag = "USA"
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					not = {
-						has_global_flag = american_civil_war_begun
-					}
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
+				NOT = {
+					has_global_flag = american_civil_war_begun
+					has_autonomy_state = autonomy_supervised_state
 				}
 			}
 
 			
-			traits = { national_populist_demagogue }
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-			
-			ai_will_do = {
-				factor = 10
-				modifier = {
-					is_historical_focus_on = yes
-					has_game_rule = {
-						rule = USA_ai_behavior
-						option = DEFAULT
-					}
-					factor = 0
-				}
-				modifier = {
-					is_historical_focus_on = yes
-					not = { has_dlc = "Man the Guns" }
-					factor = 0
-				}
-			}		
+			traits = { national_populist_demagogue }	
 		}
 
 		USA_robert_taft = {

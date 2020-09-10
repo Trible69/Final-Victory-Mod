@@ -19,6 +19,11 @@ opinion_modifiers = {
 	    min_trust = 10
 	    trade = no
 	}
+	american_officer = {
+	    value = 10
+	    min_trust = 10
+	    trade = no
+	}
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
 	}

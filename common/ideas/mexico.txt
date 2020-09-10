@@ -103,6 +103,7 @@ ideas = {
 
 			modifier = {
 				war_support_factor = -0.1
+				army_speed_factor = -0.1
 			}
 		}
 		autonomy_discontent = {
@@ -136,6 +137,271 @@ ideas = {
 
 			modifier = {
 				political_power_cost = 1.0
+			}
+		}
+		focus_rio_grande = {
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = RIG
+				defense_bonus_against = 0.10
+			}
+		}
+		push_central_america = {
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = CEN
+				attack_bonus_against = 0.10
+			}
+		}
+		the_northern_revolts = {
+			picture = idea_mex_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				industry_repair_factor = -0.5
+			}
+		}
+		the_northern_revolts_1 = {
+			picture = idea_mex_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				industry_repair_factor = -0.25
+			}
+		}
+		a_divided_country = {
+			picture = idea_cze_divided_nation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+			}
+		}
+		starving_populace = {
+			picture = idea_prc_low_popular_support2
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.5
+				stability_factor = -0.2
+				war_support_factor = -0.5
+				consumer_goods_factor = 0.2
+			}
+		}
+		starving_populace_1 = {
+			picture = idea_prc_low_popular_support2
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.25
+				stability_factor = -0.1
+				war_support_factor = -0.25
+				consumer_goods_factor = 0.1
+			}
+		}
+		broken_industry = {
+			picture = idea_man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				production_speed_dockyard_factor = -0.3
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		broken_industry_1 = {
+			picture = idea_man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		broke_economy = {
+			picture = idea_usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+			}
+		}
+		debt_limit_act1 = {
+			picture = idea_usa_great_depression_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+			}
+		}
+		debt_limit_act2 = {
+			picture = idea_usa_great_depression_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		debt_limit_act3 = {
+			picture = idea_usa_great_depression_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+			}
+		}
+		debt_limit_act4 = {
+			picture = idea_usa_great_depression_2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.2
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
 			}
 		}
 	}

@@ -281,7 +281,7 @@ country_event = {
 	id = UAC.10
 	title = UAC.10.t
 	desc = UAC.10.d
-	picture = GFX_report_event_uac_election_jack_earl
+	picture = GFX_report
 
 	fire_only_once = yes
 

@@ -337,7 +337,7 @@ country_event = {
 	id = mexico.8
 	title = mexico.8.t
 	desc = mexico.8.d
-	picture = GFX_ 
+	picture = GFX_report_event_korean_war_march
 	
 	fire_only_once = yes
 	
@@ -394,7 +394,7 @@ country_event = {
 			ideology = liberal
 			popularity = 0.10
 		}
-		remove_ideas = starving_populace
+		remove_ideas = starving_populace_1
 		add_political_power = -200
 	}
 }
@@ -418,7 +418,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = mexico.10.a
+		name = mexico.10.b
 		add_popularity = {
 			ideology = ultraconservative
 			popularity = -0.05

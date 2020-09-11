@@ -345,6 +345,26 @@ ideas = {
 				production_speed_dockyard_factor = -0.5
 			}
 		}
+		broke_economy1 = {
+			picture = idea_usa_great_depression_3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+			}
+		}
 		debt_limit_act1 = {
 			picture = idea_usa_great_depression_2
 

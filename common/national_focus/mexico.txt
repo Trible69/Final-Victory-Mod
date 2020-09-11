@@ -563,6 +563,7 @@ focus_tree = {
 				remove_idea = starving_populace
 				add_idea = starving_populace_1
 			}
+			country_event = {id = mexico.9}
 		}
 	}
 	focus = {
@@ -581,7 +582,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = {id = mexico.}
 		}
 	}
 	focus = {
@@ -623,7 +624,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = broke_economy
+				add_idea = broke_economy1
+			}
+			country_event = {id = mexico.10}
 		}
 	}
 	focus = {

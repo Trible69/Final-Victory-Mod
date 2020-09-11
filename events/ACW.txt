@@ -13,7 +13,6 @@ country_event = {
 		tag = USA
         DATE > 1937.4.12
         has_global_flag = american_civil_war_begun
-		is_ai = no
 	}
 	mean_time_to_happen = { days = 1 }
 
@@ -34,86 +33,6 @@ country_event = {
 		        type = annex_everything
 		    }
 		}
-		hidden_effect = {
-			news_event = { hours = 6 id = news.2 }
-			set_global_flag = american_civil_war
-		}
-	}
-}
-###start UAC
-country_event = {
-	id = ACW.2
-	title = ACW.2.t
-	desc = ACW.2.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	fire_only_once = yes
-
-	Trigger = {
-		tag = UAC
-        date > 1937.4.12
-		is_ai = no
-	}
-	mean_time_to_happen = { days = 1 }
-
-	option = {
-		name = ACW.2.a
-		ai_chance = { factor = 100}
-	    USA = {
-        	declare_war_on = {
-		        target = UAC
-		        type = annex_everything
-		    }
-		    declare_war_on = {
-		        target = AMS
-		        type = annex_everything
-		    }
-        }
-		AMS = {
-		    declare_war_on = {
-		        target = UAC
-		        type = annex_everything
-		    }
-		}
-		hidden_effect = {
-			news_event = { hours = 6 id = news.2 }
-			set_global_flag = american_civil_war
-		}
-	}
-}
-###start AMS
-country_event = {
-	id = ACW.3
-	title = ACW.3.t
-	desc = ACW.3.d
-	picture = GFX_report_event_soviet_soldiers_tank
-
-	fire_only_once = yes
-
-	Trigger = {
-		tag = AMS
-        date > 1937.4.12
-		is_ai = no
-	}
-	mean_time_to_happen = { days = 1 }
-
-	option = {
-		name = ACW.3.a
-		ai_chance = { factor = 100}
-	    USA = {
-        	declare_war_on = {
-		        target = UAC
-		        type = annex_everything
-		    }
-		    declare_war_on = {
-		        target = AMS
-		        type = annex_everything
-		    }
-        }
-		declare_war_on = {
-	        target = UAC
-	        type = annex_everything
-	    }
 		hidden_effect = {
 			news_event = { hours = 6 id = news.2 }
 			set_global_flag = american_civil_war

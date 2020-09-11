@@ -634,6 +634,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}	
 	
+	spriteType = {
+        name = "GFX_QUE_congress_dots"
+        texturefile = "gfx/interface/QUE_congress/QUE_congress_dots.dds"
+        noOfFrames = 4
+    }
+	
 	frameAnimatedSpriteType = {
 		name = "GFX_tutorial_politics_icon_glow"
 		texturefile = "gfx//interface//tutorial//politics_icon_glow.dds"

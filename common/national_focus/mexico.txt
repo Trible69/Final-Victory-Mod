@@ -600,7 +600,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = a_divided_country
+				add_idea = a_divided_country1
+			}
+			country_event = {id = mexico.7}
 		}
 	}
 	focus = {

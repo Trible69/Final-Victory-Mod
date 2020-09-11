@@ -330,6 +330,7 @@ country_event = {
 	option = {
 		name = mexico.7.c 
 		country_event = {id = mexico.8}
+		remove_ideas = a_divided_country1
 	}
 }
 country_event = {

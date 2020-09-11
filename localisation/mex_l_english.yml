@@ -105,6 +105,13 @@
  mexico.6.t:0 "The End of the Revolt"
  mexico.6.d:0 ""
  mexico.6.b:0 "At last"
+ mexico.7.t:0 "Policy Towards Protests"
+ mexico.7.d:0 "After the defeat, many political groups are trying to assert themselves as the true head of Mexico. This has led to increasing violent protests against the military government and is leading Mexico into a civil war. We have to decide how to deal with the problem."
+ mexico.7.a:0 "Peaceful negotiations"
+ mexico.7.b:0 "Small Appeasement"
+ mexico.7.c:0 "Brutal Oppression"
+ mexico.8.t:0 "The Shootings"
+ mexico.8.d:0 "With our choice of brutally oppression protests, we seemingly had resolved most of the violence on the streets, but one day a soldier that was continuously harassed shot his harassers. These events have led to a large gain in popularity of the Vanguardist Faction, and if they get too powerful, we might fall."
  
  #############Country flags
  mexican_revolution_is_over_mexican_defeat:0 "Mexico lost The Revolution"

@@ -454,6 +454,10 @@ country_event = {
 		
 			}
 		}
+		set_politics = {
+			ruling_party = ultraconservative
+			elections_allowed = no
+		}
 		hidden_effect = {
 			set_country_flag = military_guy_has_taken_power
 		}

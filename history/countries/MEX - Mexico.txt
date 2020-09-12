@@ -86,6 +86,16 @@ create_country_leader = {
 		
 	}
 }
+create_country_leader = {
+	name = "Saturnino Cedillo"
+	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
+	picture = "GFX_portrait_mex_saturnino_cedillo"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		
+	}
+}
 
 
 create_field_marshal = {

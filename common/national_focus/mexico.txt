@@ -582,7 +582,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event = {id = mexico.}
+			country_event = {id = mexico.11}
 		}
 	}
 	focus = {
@@ -648,26 +648,37 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			country_event = {id = mexico.12}
 		}
 	}
 	focus = {
 		id = MEX_the_fiery_communes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_communism
 		x = -1
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
-
+			has_country_flag = vanguardist_sympathizer_have_taken_power
+			has_government = vanguardism
 		}
 		prerequisite = {focus = MEX_the_monarchy_question}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = vanguardism
+				popularity = 0.3
+			}
+			add_stability = 0.2
+			remove_ideas = a_divided_country
+			remove_ideas = a_divided_country1
+			remove_ideas = starving_populace
+			remove_ideas = starving_populace_1
+			remove_ideas = broken_industry
+			remove_ideas = broken_industry_1
 		}
 	}
 	focus = {
@@ -679,33 +690,53 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
-
+			has_country_flag = military_guy_has_taken_power
 		}
 		prerequisite = {focus = MEX_the_monarchy_question}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = ultraconservative
+				popularity = 0.3
+			}
+			add_stability = 0.2
+			remove_ideas = a_divided_country
+			remove_ideas = a_divided_country1
+			remove_ideas = starving_populace
+			remove_ideas = starving_populace_1
+			remove_ideas = broken_industry
+			remove_ideas = broken_industry_1
 		}
 	}
 	focus = {
 		id = MEX_new_republic
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_democracy
 		x = 3
 		y = 19
 		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
-
+			has_country_flag = liberal_guy_has_taken_power
 		}
 		prerequisite = {focus = MEX_the_monarchy_question}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.3
+			}
+			add_stability = 0.2
+			remove_ideas = a_divided_country
+			remove_ideas = a_divided_country1
+			remove_ideas = starving_populace
+			remove_ideas = starving_populace_1
+			remove_ideas = broken_industry
+			remove_ideas = broken_industry_1
 		}
 	}
 }

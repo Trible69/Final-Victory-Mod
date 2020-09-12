@@ -1,0 +1,9 @@
+QUE_parliament = {
+	allowed = {
+		original_tag = QUE 
+	}
+	scripted_gui = QUE_congress_seats	
+	visible = {
+		original_tag = QUE
+	}
+}

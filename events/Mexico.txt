@@ -455,7 +455,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_country_flag = nulitary_guy_has_taken_power
+			set_country_flag = military_guy_has_taken_power
 		}
 	}
 	option = {

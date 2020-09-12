@@ -141,6 +141,9 @@
  mexican_revolution_is_over_mexican_defeat:0 "Mexico lost The Revolution"
  mexican_revolution_is_over_mexican_victory:0 "Mexico won The Revolution"
  mexican_revolution_has_happened:0 "The Revolution has begun"
+ military_guy_has_taken_power:0 "The Military has taken power"
+ liberal_guy_has_taken_power:0 "The Liberals have taken power"
+ vanguardist_sympathizer_have_taken_power:0 "Vanguardist Sympathizer has taken power"
  ###########PARTIES##############
 
 

@@ -1,0 +1,10 @@
+CAF_power_struggle_against_texas = {
+	allowed = {
+		original_tag = CAF 
+	}
+
+	visible = {
+		original_tag = CAF
+		has_global_flag = mexican_revolution_is_over_mexican_defeat
+	}
+}

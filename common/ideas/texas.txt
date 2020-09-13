@@ -1,0 +1,46 @@
+ideas = {
+	
+	country = {
+		tex_win = {
+			picture = generic_victors_of_ww1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+				industry_repair_factor = 0.1
+				stability_factor = 0.2
+			}
+		}
+		tex_lose = {
+			picture = spa_recovering_from_the_civil_war
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+				industry_repair_factor = -0.1
+				stability_factor = -0.2
+			}
+		}
+	}
+}

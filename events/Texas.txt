@@ -1,0 +1,54 @@
+
+add_namespace = texas
+
+country_event = {
+    id = texas.1
+    title = texas.1.t
+    desc = texas.1.d
+
+    fire_only_once = yes
+
+    trigger = {
+        OR = {
+            check_variable = { TEX.rio_grande_oil_influence = TEX.victory_oil }
+            check_variable = { TEX.rio_grande_oil_influence > TEX.victory_oil }
+        }
+        check_variable = { TEX.rio_grande_oil_influence > CAF.rio_grande_oil_influence }
+    }
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = texas.1.a
+        ai_chance = { factor = 100 }
+        add_resource = {
+            type = oil
+            amount = 50
+            state = 378
+        }
+    }
+}
+country_event = {
+    id = texas.2
+    title = texas.2.t
+    desc = texas.2.d
+
+    fire_only_once = yes
+
+    trigger = {
+        OR = {
+            check_variable = { TEX.sphere_of_influence = TEX.victory }
+            check_variable = { TEX.sphere_of_influence > TEX.victory }
+        }
+        check_variable = { TEX.sphere_of_influence > CAF.sphere_of_influence }
+    }
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = texas.2.a
+        ai_chance = { factor = 100 }
+        add_ideas = tex_win
+        CAF = {
+            add_ideas = caf_lose
+        }
+    }
+}

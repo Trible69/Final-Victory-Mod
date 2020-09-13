@@ -1,0 +1,10 @@
+TEX_power_struggle_against_california = {
+	allowed = {
+		original_tag = TEX 
+	}
+	
+	visible = {
+		original_tag = TEX
+		has_global_flag = mexican_revolution_is_over_mexican_defeat
+	}
+}

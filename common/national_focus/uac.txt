@@ -269,8 +269,8 @@ focus_tree = {
 	focus = {
 		id = UAC_reform_industry
 		icon = GFX_focus_generic_industry_1
-		x = 5
-		y = 7
+		x = 20
+		y = 0
 		cost = 5
 		available_if_capitulated = yes
 		available = {
@@ -286,9 +286,168 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
+	##Post recovery tree
+	focus = {
+		id = UAC_a_communal_victory
+		icon = GFX_focus_generic_join_comintern
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+        available = {
+            NOT = {
+                has_ideas = uac_recover_civil_war
+                has_ideas = uac_ruined_economy
+                has_ideas = uac_crippled_industry
+                has_ideas = uac_shellshocked_populace
+            }
+        }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+	focus = {
+		id = UAC_department_of_foreign_relations
+		icon = GFX_focus_generic_self_management
+		x = 11
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = UAC_a_communal_victory}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = UAC_spread_the_communal_system
+		icon = GFX_focus_generic_support_the_left_right
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = UAC_department_of_foreign_relations}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = UAC_connect_the_workers
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = UAC_spread_the_communal_system}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
 
-	v = {
-		id = UAC_Reform_the_Industry
+            	add_extra_state_shared_building_slots = 1
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 1
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+	focus = {
+		id = UAC_east_to_west
+		icon = GFX_focus_generic_soviet_politics
+		x = 13
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = UAC_connect_the_workers}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+	focus = {
+		id = UAC_north_to_south
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 13
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = UAC_east_to_west}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
+		}
+	}
+	focus = {
+		id = UAC_fellow_comrades
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {focus = UAC_department_of_foreign_relations}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 #End of focuses 
  }

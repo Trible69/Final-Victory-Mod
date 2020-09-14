@@ -11,7 +11,7 @@ country_event = {
     Trigger = {
         has_war_with = MEX
         MEX = {
-            surrender_progress = 0.79
+            surrender_progress > 0.59
         }
         tag = CAF
     }

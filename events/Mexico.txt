@@ -78,6 +78,8 @@ country_event = {
 		TEX = {
 		    transfer_state = 375
 		    add_state_core = 375
+			transfer_state = 807
+		    add_state_core = 807
 		    load_oob = TEX_SoloRevolt
 		}
 		declare_war_on = {
@@ -168,6 +170,7 @@ country_event = {
 		    add_state_core = 480
 		    transfer_state = 479
 		    add_state_core = 479
+			add_state_claim = 807
 		    load_oob = RIG_Revolt
 		}
 		declare_war_on = {

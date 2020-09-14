@@ -312,6 +312,7 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = { has_war = no }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_the_veterans_march}
 		prerequisite = {
@@ -540,6 +541,14 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			country_event = {id = mexico.14}
+			hidden_effect = {
+				set_popularities {
+					liberal = 20
+					national_populism = 30
+					ultraconservative = 40
+					vanguardism = 10
+				}
+			}
 		}
 	}
 	focus = {

@@ -295,7 +295,7 @@ country_event = {
 	}
 
 	option = {
-		name = mexico.6.b 
+		name = mexico.6.b
 		ai_chance = { factor = 100 }
 		add_ideas = the_northern_revolts
 		add_ideas = starving_populace
@@ -551,30 +551,6 @@ country_event = {
 		}
 	}
 }	
-country_event = {
-	id = mexico.14
-	title = mexico.14.t 
-	desc = mexico.14.d 
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = mexico.14.a
-		create_country_leader = {
-			name = "Military Council"
-			desc = ""
-			picture "AugustinIVMEX.dds"
-			expire = "1965.1.1"
-			ideology = stratocracy
-			traits = {
-			
-			}
-		}
-	}
-}
-#Defeat peace
 country_event = {
 	id = mexico.14
 	title = mexico.14.t 

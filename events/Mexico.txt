@@ -128,6 +128,8 @@ country_event = {
 		    add_state_core = 375
 		    transfer_state = 376
 		    add_state_core = 376
+			transfer_state = 807
+		    add_state_core = 807
 		    load_oob = TEX_BigRevolt
 		}
 		YUC = {

@@ -635,8 +635,8 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-        name = "GFX_QUE_congress_dots"
-        texturefile = "gfx/interface/QUE_congress/QUE_congress_dots.dds"
+        name = "GFX_quebec_parliament_seats_strip"
+        texturefile = "gfx/interface/QUE_congress/quebec_parliament_seats_strip.dds"
         noOfFrames = 4
     }
 	

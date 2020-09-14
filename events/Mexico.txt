@@ -283,15 +283,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = {
-			country_exists = CAF
-			country_exists = TEX
-			country_exists = YUC
-			country_exists = CEN
-			country_exists = DES
-			country_exists = RIG
-		}
 		has_global_flag = mexican_revolution_has_happened
+		has_war = no
 	}
 
 	option = {

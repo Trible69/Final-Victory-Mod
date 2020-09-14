@@ -26,7 +26,7 @@ guiTypes = {
 		iconType = {
 			name = "member_icon"
 			spriteType = "GFX_quebec_parliament_seats_strip" # this should be a strip with 5 frames, with each frame representing each unique party (goes in the order Party A-E)
-			position = { x = 0 y = 0 }
+			position = { x = 40 y = 40 }
 		}
     }
 }

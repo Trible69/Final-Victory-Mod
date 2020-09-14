@@ -1,10 +1,10 @@
 # first part is scripted effects lol
 QUE_parliament_seats_initial = {
 	# put simply parliament_seat_array contains seat numbers of each party and parliament_id_array contains the id of the corresponding party
-	add_to_array = { global.parliament_seat_array = 95 } # Party A
-	add_to_array = { global.parliament_seat_array = 15 } # Party B
+	add_to_array = { global.parliament_seat_array = 20 } # Party A
+	add_to_array = { global.parliament_seat_array = 20 } # Party B
 	add_to_array = { global.parliament_seat_array = 20 } # Party C
-	add_to_array = { global.parliament_seat_array = 35 } # Party D
+	add_to_array = { global.parliament_seat_array = 30 } # Party D
 
 	# the loop below just populates the parliament_id_array with values starting from 1 to 5
 	for_loop_effect = {
@@ -18,6 +18,7 @@ QUE_parliament_seats_initial = {
 }
 
 QUE_modify_parliament_seats = {
+	clear_array = global.parliament_main_array
 	for_each_loop = {
 		array = global.parliament_id_array
 

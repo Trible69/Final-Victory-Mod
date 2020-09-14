@@ -264,6 +264,9 @@ ideologies = {
 		
 			rexism = {
 			}
+			
+			military_junta = {
+			}
 		}
 		
 		dynamic_faction_names = {

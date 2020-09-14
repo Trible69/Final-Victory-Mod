@@ -758,6 +758,7 @@ country_event = {
 		add_ideas = ruined_economy
 		add_ideas = crippled_industry
 		add_ideas = shellshocked_populace
+		tag = USA
 	}
 }
 ##########Bill Haywood getting power in congress#########

@@ -18,5 +18,16 @@ on_actions = {
                 QUE_parliament_seats_initial = yes
 			}
 		}
+	}
+	on_capitulation = {
+    	effect = {
+        	if = {
+            	limit = { #ROOT = capitulated country, FROM is winner
+                	ROOT = { tag = CAF }
+                	FROM = { tag = MEX }
+            	}
+            	FROM = { country_event = { id = mexico.6 } } #
+        	}
+    	}
 	}		
 }

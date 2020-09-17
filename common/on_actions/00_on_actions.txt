@@ -10,6 +10,9 @@ on_actions = {
 			QUE = {
 				country_event = {id = quebec.1}
 			}
+			MEX = {
+				country_event = {id = mexico.0}
+			}
 		}
 	}
 	on_startup = { ###Quebec congress goin bonkers

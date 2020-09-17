@@ -2,7 +2,7 @@ QUE_parliament = {
 	allowed = {
 		original_tag = QUE 
 	}
-	scripted_gui = QUE_congress_seats	
+	scripted_gui = QUE_parliament_gui	
 	visible = {
 		original_tag = QUE
 	}

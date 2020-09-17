@@ -1,12 +1,7 @@
-@SENATE_TEXT_X = 16
-@HOUSE_TEXT_X = 212
-@HEADERS_Y = 67
-@STATUS_Y = 52
 guiTypes = {
-
 	containerWindowType = {
-        name = "QUE_congress_seats"
-        position = { x = 40 y = 50 }
+        name = "QUE_parliament_house"
+        position = { x = 100 y = 100 }
 		size = { width = 400 height = 400 }
 
 		# this guy
@@ -25,13 +20,13 @@ guiTypes = {
 	# basically governs what shows up in the grid
 	containerWindowType = {
         name = "parliament_main_entry" # same as what you defined in dynamic_lists
-        position = { x = 50 y = 50 }
+        position = { x = 40 y = 40 }
 		size = { width = 13 height = 13 }
 
 		iconType = {
 			name = "member_icon"
-			spriteType = "QUE_congress_dots" # this should be a strip with 5 frames, with each frame representing each unique party (goes in the order Party A-E)
-			position = { x = 600 y = 333 }
+			spriteType = "GFX_quebec_parliament_seats_strip" # this should be a strip with 5 frames, with each frame representing each unique party (goes in the order Party A-E)
+			position = { x = 40 y = 40 }
 		}
     }
 }

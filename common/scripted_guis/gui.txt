@@ -1,7 +1,8 @@
+# now define a dynamic_lists in the scripted gui file using global.parliament_main_array
 scripted_gui = {
-	parliament_gui = {
-        context_type = decision_category
-        window_name = "QUE_congress_seats"
+	QUE_parliament_gui = {
+		context_type = decision_category
+        window_name = "QUE_parliament_house"
         visible = {
             always = yes
         }

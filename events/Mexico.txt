@@ -78,6 +78,8 @@ country_event = {
 		TEX = {
 		    transfer_state = 375
 		    add_state_core = 375
+			transfer_state = 807
+		    add_state_core = 807
 		    load_oob = TEX_SoloRevolt
 		}
 		declare_war_on = {
@@ -128,6 +130,8 @@ country_event = {
 		    add_state_core = 375
 		    transfer_state = 376
 		    add_state_core = 376
+			transfer_state = 807
+		    add_state_core = 807
 		    load_oob = TEX_BigRevolt
 		}
 		YUC = {
@@ -166,6 +170,7 @@ country_event = {
 		    add_state_core = 480
 		    transfer_state = 479
 		    add_state_core = 479
+			add_state_claim = 807
 		    load_oob = RIG_Revolt
 		}
 		declare_war_on = {
@@ -280,11 +285,16 @@ country_event = {
 	
 	picture = GFX_report_event_gathering_protest
 	
-	fire_only_once = yes
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		has_global_flag = mexican_revolution_has_happened
+		has_war = no
+	}
 
 	option = {
-		name = mexico.6.b 
+		name = mexico.6.b
 		ai_chance = { factor = 100 }
 		add_ideas = the_northern_revolts
 		add_ideas = starving_populace
@@ -314,7 +324,7 @@ country_event = {
 	option = {
 		name = mexico.7.b
 		add_popularity = {
-			ideology = ultraconservative
+			ideology = national_populism
 			popularity = 0.05
 		}
 	}
@@ -351,7 +361,7 @@ country_event = {
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = ultraconservative
+			ideology = national_populism
 			popularity = -0.05
 		}	
 		add_stability = -0.1
@@ -370,7 +380,7 @@ country_event = {
 		name = mexico.9.a 
 		ai_chance = {factor = 50}
 		add_popularity = {
-			ideology = ultraconservative
+			ideology = national_populism
 			popularity = 0.1
 		}	
 		add_popularity = {
@@ -400,7 +410,7 @@ country_event = {
 	option = {
 		name = mexico.10.a 
 		add_popularity = {
-			ideology = ultraconservative
+			ideology = national_populism
 			popularity = 0.05
 		}	
 		add_popularity = {
@@ -411,7 +421,7 @@ country_event = {
 	option = {
 		name = mexico.10.b
 		add_popularity = {
-			ideology = ultraconservative
+			ideology = national_populism
 			popularity = -0.05
 		}
 		add_popularity = {
@@ -436,18 +446,14 @@ country_event = {
 		name = mexico.11.a 
 		#%military guy
 		create_country_leader = {
-			name = ""
-			desc = ""
-			picture = ".dds"
+			name = "Saturnino Cedillo"
+			desc = "POLITICS_SATURNINO_CEDILLO_DESC"
+			picture = "GFX_portrait_mex_saturnino_cedillo"
 			expire = "1965.1.1"
-			ideology = absolutism
+			ideology = stratocracy
 			traits = {
 		
 			}
-		}
-		set_politics = {
-			ruling_party = ultraconservative
-			elections_allowed = no
 		}
 		hidden_effect = {
 			set_country_flag = military_guy_has_taken_power
@@ -457,18 +463,14 @@ country_event = {
 		name = mexico.11.b
 		#%liberal guy
 		create_country_leader = {
-			name = ""
+			name = "Biilly Jones"
 			desc = ""
 			picture ".dds"
 			expire = "1965.1.1"
-			ideology = 
+			ideology = stratocracy
 			traits = {
 			
 			}
-		}
-		set_politics = {
-			ruling_party = liberal
-			elections_allowed = yes
 		}
 		hidden_effect = {
 			set_country_flag = liberal_guy_has_taken_power
@@ -478,15 +480,11 @@ country_event = {
 		name = mexico.11.c
 		#%vanguardist sympathizer 
 		create_country_leader = {
-			name = ""
+			name = "Mexican Stalin"
 			desc = ""
 			picture = ".dds"
 			expire = "1965.1.1"
-			ideology = 
-		}
-		add_popularity = {
-			ideology = vanguardism
-			popularity = 0.1
+			ideology = stratocracy
 		}
 		hidden_effect = {
 			set_country_flag = vanguardist_sympathizer_have_taken_power
@@ -517,7 +515,7 @@ country_event = {
 			ideology = liberal
 			popularity = 0.05
 		}
-		add_ideas = augustin
+		add_ideas = monarchist_compromise
 	}
 	option = {
 		name = mexico.12.b
@@ -525,6 +523,7 @@ country_event = {
 			ideology = vanguardism
 			popularity = 0.05
 		}
+		add_ideas = the_royal_coffers
 		hidden_effect = {
 			set_country_flag = seizing_power
 		}
@@ -548,6 +547,29 @@ country_event = {
 		set_politics = {
 			ruling_party = vanguardism
 			elections_allowed = no
+		}
+	}
+}	
+country_event = {
+	id = mexico.14
+	title = mexico.14.t 
+	desc = mexico.14.d 
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.14.a
+		create_country_leader = {
+			name = "Military Council"
+			desc = ""
+			picture "AugustinIVMEX.dds"
+			expire = "1965.1.1"
+			ideology = stratocracy
+			traits = {
+			
+			}
 		}
 	}
 }

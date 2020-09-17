@@ -91,7 +91,27 @@ create_country_leader = {
 	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
 	picture = "GFX_portrait_mex_saturnino_cedillo"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = military_junta
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Mexican Stalin"
+	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
+	picture = "GFX_portrait_mex_saturnino_cedillo"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Biilly Jones"
+	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
+	picture = "GFX_portrait_mex_saturnino_cedillo"
+	expire = "1965.1.1"
+	ideology = market_liberalism
 	traits = {
 		
 	}

@@ -416,9 +416,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.2
 				production_factory_efficiency_gain_factor = 0.10
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		debt_limit_act4 = {
@@ -435,11 +433,105 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				political_power_gain = -0.2
+				production_factory_efficiency_gain_factor = 0.10
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		debt_limit_act5 = {
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
 				political_power_gain = 0.2
 				production_factory_efficiency_gain_factor = 0.10
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
-				production_speed_dockyard_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		mexican_monarchy_victory = {
+			picture = focus_rom_royal_dictatorship
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				conscription = 0.01
+			}
+		}
+		direccion_federal_de_seguridad = {
+			picture = goal_generic_dangerous_deal
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+				root_out_resistance_effectiveness_factor = 0.25
+			}
+		}
+		the_royal_coffers = {
+			picture = generic_monarchist_uprising
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		monarchist_compromise = {
+			picture = generic_monarchist_uprising
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
 			}
 		}
 	}

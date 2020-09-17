@@ -100,14 +100,18 @@ focus_tree = {
                 	include_locked = yes
             	}
 
-            	add_extra_state_shared_building_slots = 3
+            	add_extra_state_shared_building_slots = 6
 
             	add_building_construction = {
                 	type = industrial_complex
-                	level = 3
+                	level = 6
                 	instant_build = yes
             	}
         	}
+			swap_ideas = {
+    			remove_idea = debt_limit_act3
+	    		add_idea = debt_limit_act4
+			}
 		}
 	}
 	focus = {
@@ -142,7 +146,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = {focus = MEX_liquidate_the_gold_reserves}
 		available = {
-			num_of_civilian_factories > 70
+			num_of_civilian_factories > 50
 		}
 		ai_will_do = {
 			factor = 1
@@ -160,7 +164,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		available = {
-			num_of_civilian_factories > 100
+			num_of_civilian_factories > 70
 		}
 		prerequisite = {focus = MEX_negotiate_other_payment_methods}
 		prerequisite = {focus = MEX_subside_mexican_companies}
@@ -169,8 +173,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = debt_limit_act3
-	    		add_idea = debt_limit_act4
+    			remove_idea = debt_limit_act4
+	    		add_idea = debt_limit_act5
 			}
 		}
 	}
@@ -265,7 +269,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability = 0.1
+			add_ideas = push_central_america
 		}
 	}
 	focus = {
@@ -297,7 +301,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = push_central_america
+			add_stability = 0.1
 		}
 	}
 	######recovery tree
@@ -308,6 +312,7 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		available = { has_war = no }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {focus = MEX_the_veterans_march}
 		prerequisite = {
@@ -418,6 +423,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_intelligence_agency = yes
+			add_ideas = direccion_federal_de_seguridad
 		}
 	}
 	focus = {
@@ -493,10 +499,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability = 0.2
-			add_war_support = 0.2
-			add_political_power = 200
-			add_manpower = 100000
+			add_ideas = mexican_monarchy_victory
 		}
 	}
 	#defeat 
@@ -536,11 +539,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			set_politics = {
-				ruling_party = national_populism
-				elections_allowed = no
-			}
 			add_stability = 0.1
+			country_event = {id = mexico.14}
+			hidden_effect = {
+				set_popularities {
+					liberal = 20
+					national_populism = 30
+					ultraconservative = 40
+					vanguardism = 10
+				}
+			}
 		}
 	}
 	focus = {
@@ -672,13 +680,18 @@ focus_tree = {
 				ideology = vanguardism
 				popularity = 0.3
 			}
+			set_politics = {
+				ruling_party = vanguardism
+			}
 			add_stability = 0.2
-			remove_ideas = a_divided_country
-			remove_ideas = a_divided_country1
-			remove_ideas = starving_populace
-			remove_ideas = starving_populace_1
-			remove_ideas = broken_industry
-			remove_ideas = broken_industry_1
+			hidden_effect = {
+				remove_ideas = a_divided_country
+				remove_ideas = a_divided_country1
+				remove_ideas = starving_populace
+				remove_ideas = starving_populace_1
+				remove_ideas = broke_economy
+				remove_ideas = broke_economy1
+			}
 		}
 	}
 	focus = {
@@ -698,16 +711,21 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = ultraconservative
+				ideology = national_populism
 				popularity = 0.3
 			}
+			set_politics = {
+				ruling_party = national_populism
+			}
 			add_stability = 0.2
-			remove_ideas = a_divided_country
-			remove_ideas = a_divided_country1
-			remove_ideas = starving_populace
-			remove_ideas = starving_populace_1
-			remove_ideas = broken_industry
-			remove_ideas = broken_industry_1
+			hidden_effect = {
+				remove_ideas = a_divided_country
+				remove_ideas = a_divided_country1
+				remove_ideas = starving_populace
+				remove_ideas = starving_populace_1
+				remove_ideas = broke_economy
+				remove_ideas = broke_economy1
+			}
 		}
 	}
 	focus = {
@@ -730,13 +748,18 @@ focus_tree = {
 				ideology = liberal
 				popularity = 0.3
 			}
+			set_politics ={
+				ruling_party = liberal
+			}
 			add_stability = 0.2
-			remove_ideas = a_divided_country
-			remove_ideas = a_divided_country1
-			remove_ideas = starving_populace
-			remove_ideas = starving_populace_1
-			remove_ideas = broken_industry
-			remove_ideas = broken_industry_1
+			hidden_effect = {
+				remove_ideas = a_divided_country
+				remove_ideas = a_divided_country1
+				remove_ideas = starving_populace
+				remove_ideas = starving_populace_1
+				remove_ideas = broke_economy
+				remove_ideas = broke_economy1
+			}
 		}
 	}
 }

@@ -43,7 +43,7 @@ CEN_a_new_constitution = {
 		}
 		modifier = {
 			political_power_gain = -0.50
-			liberal_drift = 0.05
+			liberal_drift = -0.05
 		}
 		remove_effect = {
 			

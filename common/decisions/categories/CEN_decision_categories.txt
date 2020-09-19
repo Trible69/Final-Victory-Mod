@@ -1,0 +1,25 @@
+################
+##### CEN ######
+################
+
+####Stability Increases
+CEN_an_unstable_union = {
+	allowed = {
+		original_tag = CEN
+	}
+    visible = {
+        tag = CEN
+        has_country_flag = regional_discontent
+	}
+}
+
+####Constitution National Spirit
+CEN_a_new_constitution = {
+	allowed = {
+		original_tag = CEN
+	}
+    visible = {
+        tag = CEN
+        has_country_flag = regional_discontent
+	}
+}

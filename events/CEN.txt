@@ -1,0 +1,28 @@
+add_namespace = CEN
+
+country_event = {
+	id = CEN.1
+	title = CEN.1.t
+	desc = CEN.1.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		DATE > 1937.6.1
+		has_war = no
+		tag = CEN
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = CEN.1.a
+		ai_chance = { factor = 100}
+		add_ideas = an_unstable_union
+		hidden_effect = {
+			unlock_decision_category_tooltip = CEN_an_unstable_union
+			unlock_decision_category_tooltip = CEN_a_new_constitution
+			set_country_flag = regional_discontent
+		}
+	}
+}

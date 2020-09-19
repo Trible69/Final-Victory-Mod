@@ -291,6 +291,10 @@ country_event = {
 	trigger = {
 		has_global_flag = mexican_revolution_has_happened
 		has_war = no
+		NOT = {
+			country_exists = CAF
+		}
+		tag = MEX
 	}
 
 	option = {

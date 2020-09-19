@@ -1,0 +1,52 @@
+CEN_an_unstable_union = {
+    CEN_spread_liberalism = {
+
+		icon = generic_democracy
+
+		available = {
+			has_government = social_democrat
+		}
+		visible = {
+			
+		}
+		cost = 50
+		days_remove = 45
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			political_power_gain = -0.50
+			liberal_drift = 0.05
+		}
+		remove_effect = {
+			
+		}
+	}
+}
+CEN_a_new_constitution = {
+    CEN_kill_liberalism = {
+
+		icon = generic_democracy
+
+		available = {
+			has_government = social_democrat
+		}
+		visible = {
+			
+		}
+		cost = 50
+		days_remove = 45
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			political_power_gain = -0.50
+			liberal_drift = 0.05
+		}
+		remove_effect = {
+			
+		}
+	}
+}

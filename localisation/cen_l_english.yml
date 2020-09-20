@@ -13,7 +13,7 @@
  CEN.2.a:0 "It was fun while it lasted."
  ############IDEAS#############
  an_unstable_union:0 "An Unstable Union"
- an_unstable_unuon_desc:0 "Cracks have already started to appear in our newly formed union. People previously united for independence are at the throats of each other. The new constitution must be decided before our great union dissolves!"
+ an_unstable_union_desc:0 "Cracks have already started to appear in our newly formed union. People previously united for independence are at the throats of each other. The new constitution must be decided before our great union dissolves!"
  ############DECISIONS#############
  CEN_an_unstable_union:0 "An Unstable Union"
  CEN_a_new_constitution:0 "Congress for the Constitution"

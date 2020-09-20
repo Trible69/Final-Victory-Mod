@@ -32,10 +32,9 @@ news_event = {
 	option = {
 		name = news.1.c
 		trigger = { TAG = FRA }
-	}
-		
+	}		
 }
-# The second american civil war
+# The american civil war
 news_event = {
 	id = news.2
 	title = news.2.t

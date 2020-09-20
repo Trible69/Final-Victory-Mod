@@ -34,7 +34,7 @@ country_event = {
 		    }
 		}
 		hidden_effect = {
-			news_event = { hours = 6 id = news.2 }
+			news_event = { id = news.2 hours = 6 }
 			set_global_flag = american_civil_war
 		}
 	}

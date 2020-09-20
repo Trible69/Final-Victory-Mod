@@ -215,14 +215,14 @@ ideologies = {
 
 	}
 
-	anarchist = {
+	moderate_socialism = {
 		
 		types = {
 		
-			anarcho_communism = {
+			moderate = {
 			}
 			
-			anarcho_syndicalism = {
+			orthodox_marxism = {
 			}
 		}
 		

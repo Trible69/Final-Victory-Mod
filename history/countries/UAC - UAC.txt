@@ -107,10 +107,10 @@ set_politics = {
     elections_allowed = no
 }
 set_popularities = {
-    national_populism = 10
-    vanguardism = 90
+    national_populism = 4
+    vanguardism = 51
     ultraconservative = 0
-    anarchist = 0
+    moderate_socialism = 45
     liberal = 0
     social_democrat = 0
     conservative = 0

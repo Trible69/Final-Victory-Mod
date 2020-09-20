@@ -19,9 +19,9 @@ country_event = {
 		name = CEN.1.a
 		ai_chance = { factor = 100}
 		add_ideas = an_unstable_union
+		unlock_decision_category_tooltip = CEN_an_unstable_union
+		unlock_decision_category_tooltip = CEN_a_new_constitution
 		hidden_effect = {
-			unlock_decision_category_tooltip = CEN_an_unstable_union
-			unlock_decision_category_tooltip = CEN_a_new_constitution
 			set_country_flag = regional_discontent
 		}
 	}

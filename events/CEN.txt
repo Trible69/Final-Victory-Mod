@@ -30,7 +30,7 @@ country_event = {
 country_event = {
 	id = CEN.2
 	title = CEN.2.t
-	desc = CEN.1.d
+	desc = CEN.2.d
 	picture = GFX_report_event_soviet_soldiers_tank
 
 	fire_only_once = yes

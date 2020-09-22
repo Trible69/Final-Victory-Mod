@@ -23,6 +23,32 @@ CEN_an_unstable_union = {
 			
 		}
 	}
+	CEN_the_end_approches = {
+
+        allowed = { tag = CEN }
+
+        available = {
+            has_stability > 0.2
+        }
+
+        activation = {
+            has_stability < 0.2
+            has_war = no
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 30
+
+        timeout_effect = {
+            country_event = {id = CEN.2}
+        }
+
+        complete_effect = {
+        }
+    }
 }
 CEN_a_new_constitution = {
     CEN_kill_liberalism = {

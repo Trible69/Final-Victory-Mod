@@ -47,7 +47,7 @@
  anti_revisionism_noun:0 "Anti Revisionism"
  vanguardism_drift:0 "Vanguardism Drift"
  vanguardism_desc:0 "Totalitarian Regime"
-###Socialism###
+ ###Socialism###
  moderate_socialism:0 "Moderate Socialism"
  moderate_socialism_noun:0 "Socialist"
  orthodox_marxism_communism:0 "Orthodox Marxism"
@@ -56,6 +56,15 @@
  moderate_noun:0 "Moderate"
  anarchist_drift:0 "Socialism Drift"
  anarchist_desc:0 "Socialist Regime"
+###Anarchist###
+ anarchist:0 "Moderate Socialist"
+ anarchist_noun:0 "Moderate Socialism"
+ anarcho_communism:0 "Moderate"
+ anarcho_communism_noun:0 "Moderatism"
+ anarcho_syndicalism:0 "Orthodox Marxist"
+ anarcho_syndicalism_noun:0 "Orthodox Marxism"
+ anarchist_drift:0 "Anarchist Drift"
+ anarchist_desc:0 "Anarchy Regime"
 ###national populism###
  national_populism:0 "National Populism"
  national_populism_noun:0 "National Populism"

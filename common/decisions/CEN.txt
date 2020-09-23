@@ -1,29 +1,134 @@
 CEN_an_unstable_union = {
-    CEN_spread_liberalism = {
+	CEN_promise_regional_representation = {
 
 		icon = generic_democracy
 
+		fire_only_once = yes
+
 		available = {
-			has_government = social_democrat
+			not = {
+				has_country_flag = compromise_talks
+			}
 		}
 		visible = {
 			
 		}
-		cost = 50
+		cost = 25
+		days_remove = 30
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
+		remove_effect = {
+			add_stability = 0.05
+			hidden_effect = {
+				clr_country_flag = compromise_talks
+			}
+		}
+	}
+	CEN_offer_concessions = {
+
+		icon = generic_democracy
+
+		available = {
+			not = {
+				has_country_flag = compromise_talks
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 30
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
+		remove_effect = {
+			add_stability = 0.05
+			hidden_effect = {
+				clr_country_flag = compromise_talks
+			}
+		}
+	}
+	CEN_regional_investments = {
+
+		icon = generic_democracy
+
+		available = {
+			not = {
+				has_country_flag = compromise_talks
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
 		days_remove = 45
 		fixed_random_seed = yes
 		ai_will_do = {
 			factor = 1
 		}
 		modifier = {
-			political_power_gain = -0.50
-			liberal_drift = 0.05
+			consumer_goods_factor = 0.1
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
 		}
 		remove_effect = {
-			
+			add_stability = 0.1
+			hidden_effect = {
+				clr_country_flag = compromise_talks
+			}
 		}
 	}
-	CEN_the_end_approches = {
+	CEN_workers_safety = {
+
+		icon = generic_democracy
+
+		fire_only_once = yes
+		
+		available = {
+			not = {
+				has_country_flag = compromise_talks
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 45
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+			production_speed_arms_factory_factor = -0.1
+			production_speed_industrial_complex_factor = -0.1
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
+		remove_effect = {
+			add_stability = 0.1
+			hidden_effect = {
+				clr_country_flag = compromise_talks
+			}
+		}
+	}
+	CEN_the_end_approaches = {
 
         allowed = { tag = CEN }
 
@@ -49,14 +154,92 @@ CEN_an_unstable_union = {
         complete_effect = {
         }
     }
+	CEN_End_of_Talks = {
+
+        allowed = { tag = CEN }
+
+        available = {
+            has_stability > 0.5
+        }
+
+        activation = {
+            has_country_flag = regional_discontent
+            has_war = no
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 365
+
+        timeout_effect = {
+            country_event = {id = CEN.2}
+        }
+
+        complete_effect = {
+			country_event = {id = CEN.3}
+        }
+    }
 }
 CEN_a_new_constitution = {
-    CEN_kill_liberalism = {
+    CEN_centralize_education = {
+
+		icon = generic_democracy
+
+		fire_only_once = yes
+		
+		available = {
+
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 30
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+		
+		}
+		remove_effect = {
+			add_stability = -0.08
+			add_ideas = centralized_education
+		}
+	}
+	CEN_central_bank = {
+
+		icon = generic_democracy
+
+		fire_only_once = yes
+		
+		available = {
+
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 60
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+
+		}
+		remove_effect = {
+			add_ideas = central_bank
+		}
+	}
+	CEN_nationalise_industry = {
 
 		icon = generic_democracy
 
 		available = {
-			has_government = social_democrat
+
 		}
 		visible = {
 			
@@ -68,11 +251,11 @@ CEN_a_new_constitution = {
 			factor = 1
 		}
 		modifier = {
-			political_power_gain = -0.50
-			liberal_drift = -0.05
+
 		}
 		remove_effect = {
-			
+			add_stability = -0.1
+			add_offsite_building = { type = industrial_complex level = 2 }
 		}
 	}
 }

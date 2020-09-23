@@ -1069,3 +1069,36 @@ country_event= {
 	}
 } 
 	
+#####1944 Elections Gardner Vicory
+country_event = {
+	id = USA.29
+	title = USA.29.t
+	desc = USA.29.d
+	trigger = {
+		has_government = liberal
+		date > 1944.1.11
+		tag = USA
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = USA.29.a
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = USA.29.b
+		ai_chance = { factor = 50 }
+		create_country_leader = {
+			name = "Nelson Rockefeller"
+			desc = ""
+			picture = "NelsonRockefellerUSA.dds"
+			expire = 1965.1.1
+			idealogy = social_democrat
+		}
+		set_politics = {
+			ruling_party = social_democrat 
+			elections_allowed = yes
+		}
+	}
+}

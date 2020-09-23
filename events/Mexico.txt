@@ -221,6 +221,11 @@ country_event = {
 		CAF = {
             change_tag_from = MEX
         }
+		hidden_effect = {
+			CAF = {
+				country_event = {id = mexlore.1 days = 1}
+			}
+		}
 	}
 	option = {
 		name = mexico.4.b 
@@ -228,12 +233,22 @@ country_event = {
 		TEX = {
 			change_tag_from = MEX
 		}
+		hidden_effect = {
+			TEX = {
+				country_event = {id = mexlore.2 days = 1}
+			}
+		}
 	}
 	option = {
 		name = mexico.4.c 
 		ai_chance = { factor = 0 }
 		DES = {
 			change_tag_from = MEX
+		}
+		hidden_effect = {
+			DES = {
+				country_event = {id = mexlore.3 days = 1}
+			}
 		}
 	}
 	option = {
@@ -258,6 +273,11 @@ country_event = {
 		YUC = {
             change_tag_from = MEX
         }
+		hidden_effect = {
+			YUC = {
+				country_event = {id = mexlore.6 days = 1}
+			}
+		}
 	}
 	option = {
 		name = mexico.5.b 
@@ -265,12 +285,22 @@ country_event = {
 		CEN = {
 			change_tag_from = MEX
 		}
+		hidden_effect = {
+			CEN = {
+				country_event = {id = mexlore.5 days = 1}
+			}
+		}
 	}
 	option = {
 		name = mexico.5.c 
 		ai_chance = { factor = 100 }
 		RIG = {
 			change_tag_from = MEX
+		}
+		hidden_effect = {
+			RIG = {
+				country_event = {id = mexlore.4 days = 1}
+			}
 		}
 	}
 	option = {

@@ -1,0 +1,105 @@
+
+add_namespace = mexlore
+
+####Califronia
+country_event = {
+	id = mexlore.1
+	title = mexlore.1.t
+	desc = mexlore.1.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexlore.1.a
+		ai_chance = { factor = 100}
+	}
+}
+##########Texas
+country_event = {
+	id = mexlore.2
+	title = mexlore.2.t
+	desc = mexlore.2.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexlore.2.a
+		ai_chance = { factor = 100}
+	}
+}
+####################Deseret
+country_event = {
+	id = mexlore.3
+	title = mexlore.3.t
+	desc = mexlore.3.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexlore.3.a
+		ai_chance = { factor = 100}
+	}
+}
+#############Rio Grande
+country_event = {
+	id = mexlore.4
+	title = mexlore.4.t
+	desc = mexlore.4.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexlore.4.a
+		ai_chance = { factor = 100}
+	}
+}
+############UPCA
+country_event = {
+	id = mexlore.5
+	title = mexlore.5.t
+	desc = mexlore.5.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexlore.5.a
+		ai_chance = { factor = 100}
+	}
+}
+###########Yucatan
+country_event = {
+	id = mexlore.6
+	title = mexlore.6.t
+	desc = mexlore.6.d
+	
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mexlore.6.a
+		ai_chance = { factor = 100}
+	}
+}

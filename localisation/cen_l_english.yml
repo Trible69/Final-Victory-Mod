@@ -14,7 +14,7 @@
  CEN.3.t:0 "An Eternal Union"
  CEN.3.d:0 "Through a series of intense negotiations, compromises, and arguements, the constituional congress of Central America has managed to formulate a new constitution. This constitution insures that all the peoples of Central America have their rights ensured, no region is favoured over anothered, and a system of checks and balances to control governmental corruption."
  CEN.3.a:0 "Let us look forward into the future."
- CEN_player_20_warn:0 "\n§RIf Stability falls below 20%, you will 45 days to get it back up!§"
+ CEN_player_20_warn:0 "\n§RIf Stability falls below 20%, you will have 45 days to get it back up!§"
  ############IDEAS#############
  an_unstable_union:0 "An Unstable Union"
  an_unstable_union_desc:0 "Cracks have already started to appear in our newly formed union. People previously united for independence are at the throats of each other. The new constitution must be decided before our great union dissolves!"

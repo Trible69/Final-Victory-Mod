@@ -3,6 +3,12 @@ CEN_an_unstable_union = {
 
 		icon = generic_democracy
 
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
+
 		fire_only_once = yes
 
 		available = {
@@ -35,6 +41,14 @@ CEN_an_unstable_union = {
 
 		icon = generic_democracy
 
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
+
+		days_re_enable = 30
+
 		available = {
 			not = {
 				has_country_flag = compromise_talks
@@ -64,6 +78,14 @@ CEN_an_unstable_union = {
 	CEN_regional_investments = {
 
 		icon = generic_democracy
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
+
+		days_re_enable = 45
 
 		available = {
 			not = {
@@ -97,6 +119,12 @@ CEN_an_unstable_union = {
 		icon = generic_democracy
 
 		fire_only_once = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
 		
 		available = {
 			not = {
@@ -117,9 +145,6 @@ CEN_an_unstable_union = {
 			industrial_capacity_dockyard = -0.1
 			production_speed_arms_factory_factor = -0.1
 			production_speed_industrial_complex_factor = -0.1
-			hidden_effect = {
-				set_country_flag = compromise_talks
-			}
 		}
 		remove_effect = {
 			add_stability = 0.1
@@ -145,7 +170,7 @@ CEN_an_unstable_union = {
 
         selectable_mission = no
 
-        days_mission_timeout = 30
+        days_mission_timeout = 45
 
         timeout_effect = {
             country_event = {id = CEN.2}
@@ -154,7 +179,7 @@ CEN_an_unstable_union = {
         complete_effect = {
         }
     }
-	CEN_End_of_Talks = {
+	CEN_end_of_talks = {
 
         allowed = { tag = CEN }
 
@@ -190,7 +215,7 @@ CEN_a_new_constitution = {
 		fire_only_once = yes
 		
 		available = {
-
+			
 		}
 		visible = {
 			
@@ -205,7 +230,7 @@ CEN_a_new_constitution = {
 		
 		}
 		remove_effect = {
-			add_stability = -0.08
+			add_stability = -0.1
 			add_ideas = centralized_education
 		}
 	}
@@ -231,6 +256,7 @@ CEN_a_new_constitution = {
 
 		}
 		remove_effect = {
+			add_stability = -0.1
 			add_ideas = central_bank
 		}
 	}
@@ -238,8 +264,18 @@ CEN_a_new_constitution = {
 
 		icon = generic_democracy
 
-		available = {
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = compromise_talks
+			}
+		}
 
+		days_re_enable = 60
+
+		available = {
+			not = {
+				has_country_flag = compromise_talks
+			}
 		}
 		visible = {
 			
@@ -254,8 +290,11 @@ CEN_a_new_constitution = {
 
 		}
 		remove_effect = {
-			add_stability = -0.1
+			add_stability = -0.15
 			add_offsite_building = { type = industrial_complex level = 2 }
+			hidden_effect = {
+				clr_country_flag = compromise_talks
+			}
 		}
 	}
 }

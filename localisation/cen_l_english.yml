@@ -6,7 +6,7 @@
  ###########FOCUS##############
  ###########EVENTS#############
  CEN.1.t:0 "A Case for an Union"
- CEN.1.d:0 "Central America is a country united by a single heritage, language and peoples. But the problem is that people of different regions think of a different system of laws and governance. They were silent during our war for independence, but now they are calling for change across the board from all sides. If we do not deal with this issue quickly, we will bring ourselves on the verge of collapse.\n \n     To deal with this crisis the provisional government of Central America has created a council from representative from all the various regions our contry constitues of. This council will be key in creating a new law code and constitution to appease all sides, and bring unity to our nation. But while this council convenes we must keep our stability in check to allow the completion of a new Central America!"
+ CEN.1.d:0 "Central America is a country united by a single heritage, language and peoples. But the problem is that people of different regions think of a different system of laws and governance. They were silent during our war for independence, but now they are calling for change across the board from all sides. If we do not deal with this issue quickly, we will bring ourselves on the verge of collapse.\n \nTo deal with this crisis the provisional government of Central America has created a council from representative from all the various regions our contry constitues of. This council will be key in creating a new law code and constitution to appease all sides, and bring unity to our nation. But while this council convenes we must keep our stability in check to allow the completion of a new Central America!"
  CEN.1.a:0 "May Christ be with us."
  CEN.2.t:0 "The End of the Union"
  CEN.2.d:0 "A United Central America was a grand experiment thought by the leaders of the revolt against Mexico. They invsioned a free and democratic nation where every people live in peace. Sadly, the people disagreeed on too much, and in the end, all talks have failed, and to ensure our country doenst collaspe in a civil war, the regional governments have decided to seperate into individual countries."
@@ -14,6 +14,7 @@
  CEN.3.t:0 "An Eternal Union"
  CEN.3.d:0 "Through a series of intense negotiations, compromises, and arguements, the constituional congress of Central America has managed to formulate a new constitution. This constitution insures that all the peoples of Central America have their rights ensured, no region is favoured over anothered, and a system of checks and balances to control governmental corruption."
  CEN.3.a:0 "Let us look forward into the future."
+ CEN_player_20_warn:0 "\n§RIf Stability falls below 20%, you will 45 days to get it back up!§"
  ############IDEAS#############
  an_unstable_union:0 "An Unstable Union"
  an_unstable_union_desc:0 "Cracks have already started to appear in our newly formed union. People previously united for independence are at the throats of each other. The new constitution must be decided before our great union dissolves!"

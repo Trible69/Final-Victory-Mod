@@ -24,6 +24,7 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = regional_discontent
 		}
+		custom_effect_tooltip = CEN_player_20_warn
 	}
 }
 #The End (Sad Moments for Central America)

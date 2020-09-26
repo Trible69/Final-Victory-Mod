@@ -81,7 +81,7 @@ create_country_leader = {
 	name = "Farabundo Marti"
 	desc = ""
 	picture = "FarabundoMartiCEN.dds"
-	expire = "1965.1.1
+	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
 		#

@@ -1,0 +1,7 @@
+spriteTypes = {
+    SpriteType = {
+		name = "GFX_QUE_quebec_parliament_seats_strip"
+		texturefile = "gfx/interface/quebec_parliament_seats_strip.dds"
+		noOfFrames = 4
+	}
+}

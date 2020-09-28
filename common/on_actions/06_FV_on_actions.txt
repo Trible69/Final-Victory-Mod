@@ -19,6 +19,22 @@ on_actions = {
         effect = {
             QUE = {
                 QUE_parliament_seats_initial = yes
+				set_variable = {
+    				var = QUE.military
+    				value = 10
+				}
+				set_variable = {
+    				var = QUE.monarchist
+    				value = 20
+				}
+				set_variable = {
+    				var = QUE.conservatives
+    				value = 40
+				}
+				set_variable = {
+    				var = QUE.liberals
+    				value = 30
+				}
 			}
 		}
 	}

@@ -148,8 +148,8 @@ USA_a_broken_nation = {
 		}
 	}
 }
-USA_virginia = {
-	USA_place_overseers_in_state_governments_virginia = {
+USA_appalachian_states_loyalty = {
+	USA_virginia_3 = {
 
 		icon = eng_install_government
 
@@ -165,27 +165,31 @@ USA_virginia = {
 		ai_will_do = {
 			factor = 1
 		}
+		days_remove = 10
 		modifier = {
 			
 		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
+				set_country_flag = USA_virginia_3
 			}			
 		}
 	}
-    USA_mandatory_propaganda_virginia = {
+    USA_virginia_4 = {
 
 		icon = eng_propaganda_campaigns
 
 		available = {
+			has_country_flag = USA_virginia_3
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_3
 		}
 		cost = 30
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -195,21 +199,25 @@ USA_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
+				clr_country_flag = USA_virginia_3
+				set_country_flag = USA_virginia_4
 			}		
 		}
 	}
-    USA_infiltrate_the_national_guard_virginia = {
+    USA_virginia_5 = {
 
 		icon = military_operation
 
 		available = {
+			has_country_flag = USA_virginia_4
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_4
 		}
 		cost = 40
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -220,18 +228,20 @@ USA_virginia = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
                 set_country_flag = virginia_militia	
+				clr_country_flag = USA_virginia_4
+				set_country_flag = USA_virginia_5
 			}	
 		}
 	}
-    USA_bribe_officials_virginia = {
+    USA_virginia_6 = {
 
 		icon = hol_attract_foreign_investors
 
 		available = {
-			
+			has_country_flag = USA_virginia_5
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_5
 		}
 		cost = 50
 		fixed_random_seed = yes
@@ -245,22 +255,25 @@ USA_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
+				clr_country_flag = USA_virginia_5
+				set_country_flag = USA_virginia_6
 			}		
 		}
 	}
-    USA_discredit_radicalists_virginia = {
+    USA_virginia_7 = {
 
 		icon = eng_trade_unions_demand
 
 		available = {
-			
+			has_country_flag =USA_virginia_6
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_6
 		}
 		cost = 60
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -270,18 +283,20 @@ USA_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
+				clr_country_flag = USA_virginia_6
+				set_country_flag = USA_virginia_7
 			}		
 		}
 	}
-    USA_tax_cuts_for_the_rich_virginia = {
+    USA_virginia_8 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_virginia_7
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_7
 		}
 		cost = 70
 		fixed_random_seed = yes
@@ -296,22 +311,25 @@ USA_virginia = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
                 set_country_flag = virginia_secede
+				clr_country_flag = USA_virginia_7
+				set_country_flag = USA_virginia_8
 			}		
 		}
 	}
-    USA_offer_incentives_to_companies_virginia = {
+    USA_virginia_9 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_virginia_8
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_8
 		}
 		cost = 80
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -321,22 +339,25 @@ USA_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
+				clr_country_flag = USA_virginia_8
+				set_country_flag = USA_virginia_9
 			}		
 		}
 	}
-    USA_organize_loyalists_virginia = {
+    USA_virginia_10 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_virginia_9
 		}
 		visible = {
-			
+			has_country_flag = USA_virginia_9
 		}
 		cost = 90
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -347,24 +368,23 @@ USA_virginia = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
                 set_country_flag = virginia_both
+				clr_country_flag = USA_virginia_9
 			}		
 		}
 	}
-}
-USA_west_virginia = {
-	USA_infiltrate_the_national_guard_west_virginia = {
+	USA_west_virginia_5 = {
 
 		icon = military_operation
 
 		available = {
-			
 		}
 		visible = {
-			
+
 		}
 		cost = 40
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -375,22 +395,24 @@ USA_west_virginia = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
                 set_country_flag = wv_militia	
+				has_country_flag = USA_west_virginia_5
 			}	
 		}
 	}
-    USA_bribe_officials_west_virginia = {
+    USA_west_virginia_6 = {
 
 		icon = hol_attract_foreign_investors
 
 		available = {
-			
+			has_country_flag = USA_west_virginia_5
 		}
 		visible = {
-			
+			has_country_flag = USA_west_virginia_5
 		}
 		cost = 50
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -400,22 +422,25 @@ USA_west_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
+				clr_country_flag = USA_west_virginia_5
+				set_country_flag = USA_west_virginia_6
 			}		
 		}
 	}
-    USA_discredit_radicalists_west_virginia = {
+    USA_west_virginia_7 = {
 
 		icon = eng_trade_unions_demand
 
 		available = {
-			
+			has_country_flag = USA_west_virginia_6
 		}
 		visible = {
-			
+			has_country_flag = USA_west_virginia_6
 		}
 		cost = 60
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -425,22 +450,25 @@ USA_west_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
+				clr_country_flag = USA_west_virginia_6
+				set_country_flag = USA_west_virginia_7
 			}		
 		}
 	}
-    USA_tax_cuts_for_the_rich_west_virginia = {
+    USA_west_virginia_8 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_west_virginia_7
 		}
 		visible = {
-			
+			has_country_flag = USA_west_virginia_7
 		}
 		cost = 70
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -451,22 +479,25 @@ USA_west_virginia = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
                 set_country_flag = wv_secede
+				clr_country_flag = USA_west_virginia_7
+				set_country_flag = USA_west_virginia_8
 			}		
 		}
 	}
-    USA_offer_incentives_to_companies_west_virginia = {
+    USA_west_virginia_9 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_west_virginia_8
 		}
 		visible = {
-			
+			has_country_flag = USA_west_virginia_8
 		}
 		cost = 80
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -476,22 +507,25 @@ USA_west_virginia = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
+				clr_country_flag = USA_west_virginia_8
+				set_country_flag = USA_west_virginia_9
 			}		
 		}
 	}
-    USA_organize_loyalists_west_virginia = {
+    USA_west_virginia_10 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag =USA_west_virginia_9
 		}
 		visible = {
-			
+			has_country_flag = USA_west_virginia_9
 		}
 		cost = 90
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -502,12 +536,11 @@ USA_west_virginia = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
                 set_country_flag = wv_both
-			}		
+				clr_country_flag = USA_west_virginia_9
+			}	
 		}
 	}
-}
-USA_north_carolina = {
-	USA_place_overseers_in_state_governments_north_carolina = {
+	USA_north_carolina_3 = {
 
 		icon = eng_install_government
 
@@ -523,28 +556,31 @@ USA_north_carolina = {
 		ai_will_do = {
 			factor = 1
 		}
+		days_remove = 10
 		modifier = {
 			
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
-			}
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+				set_country_flag = USA_north_carolina_3
+			}			
 		}
 	}
-    USA_mandatory_propaganda_north_carolina = {
+    USA_north_carolina_4 = {
 
 		icon = eng_propaganda_campaigns
 
 		available = {
-			
+			has_country_flag = USA_north_carolina_3
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_3
 		}
 		cost = 30
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -553,23 +589,26 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+				clr_country_flag = USA_north_carolina_3
+				set_country_flag = USA_north_carolina_4
 			}		
 		}
 	}
-    USA_infiltrate_the_national_guard_north_carolina = {
+    USA_north_carolina_5 = {
 
 		icon = military_operation
 
 		available = {
-			
+			has_country_flag = USA_north_carolina_4
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_4
 		}
 		cost = 40
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -578,20 +617,22 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
-                set_country_flag = nc_militia	
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+                set_country_flag = north_carolina_militia	
+				clr_country_flag = USA_north_carolina_4
+				set_country_flag = USA_north_carolina_5
 			}	
 		}
 	}
-    USA_bribe_officials_north_carolina = {
+    USA_north_carolina_6 = {
 
 		icon = hol_attract_foreign_investors
 
 		available = {
-			
+			has_country_flag = USA_north_carolina_5
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_5
 		}
 		cost = 50
 		fixed_random_seed = yes
@@ -604,23 +645,26 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+				clr_country_flag = USA_north_carolina_5
+				set_country_flag = USA_north_carolina_6
 			}		
 		}
 	}
-    USA_discredit_radicalists_north_carolina = {
+    USA_north_carolina_7 = {
 
 		icon = eng_trade_unions_demand
 
 		available = {
-
+			has_country_flag =USA_north_carolina_6
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_6
 		}
 		cost = 60
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -629,19 +673,21 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+				clr_country_flag = USA_north_carolina_6
+				set_country_flag = USA_north_carolina_7
 			}		
 		}
 	}
-    USA_tax_cuts_for_the_rich_north_carolina = {
+    USA_north_carolina_8 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_north_carolina_7
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_7
 		}
 		cost = 70
 		fixed_random_seed = yes
@@ -654,24 +700,27 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
-                set_country_flag = nc_secede
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+                set_country_flag = north_carolina_secede
+				clr_country_flag = USA_north_carolina_7
+				set_country_flag = USA_north_carolina_8
 			}		
 		}
 	}
-    USA_offer_incentives_to_companies_north_carolina = {
+    USA_north_carolina_9 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_north_carolina_8
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_8
 		}
 		cost = 80
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -680,23 +729,26 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+				clr_country_flag = USA_north_carolina_8
+				set_country_flag = USA_north_carolina_9
 			}		
 		}
 	}
-    USA_organize_loyalists_north_carolina = {
+    USA_north_carolina_10 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_north_carolina_9
 		}
 		visible = {
-			
+			has_country_flag = USA_north_carolina_9
 		}
 		cost = 90
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -705,253 +757,26 @@ USA_north_carolina = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.NC_loyalty = 1 }
-                set_country_flag = nc_both
+				add_to_variable = { USA.north_carolina_loyalty = 1 }
+                set_country_flag = north_carolina_both
+				clr_country_flag = USA_north_carolina_9
 			}		
 		}
 	}
-}
-USA_south_carolina = {
-	USA_disconnect_communications_erratically_south_carolina = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-			}			
-		}
-	}
-	USA_place_overseers_in_state_governments_south_carolina = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_south_carolina = {
+	USA_kentucky_4 = {
 
 		icon = eng_propaganda_campaigns
 
 		available = {
-			
+
 		}
 		visible = {
-			
+
 		}
 		cost = 30
 		fixed_random_seed = yes
         fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_south_carolina = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-                set_country_flag = sc_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_south_carolina = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_south_carolina = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_south_carolina = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-                set_country_flag = SC_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_south_carolina = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_south_carolina = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SC_loyalty = 1 }
-                set_country_flag = sc_both
-			}		
-		}
-	}
-}
-USA_kentucky = {
-	USA_mandatory_propaganda_kentucky = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -961,22 +786,24 @@ USA_kentucky = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
+				set_country_flag = USA_kentucky_4
 			}		
 		}
 	}
-    USA_infiltrate_the_national_guard_kentucky = {
+    USA_kentucky_5 = {
 
 		icon = military_operation
 
 		available = {
-			
+			has_country_flag = USA_kentucky_4
 		}
 		visible = {
-			
+			has_country_flag = USA_kentucky_4
 		}
 		cost = 40
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -987,18 +814,20 @@ USA_kentucky = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
                 set_country_flag = kentucky_militia	
+				clr_country_flag = USA_kentucky_4
+				set_country_flag = USA_kentucky_5
 			}	
 		}
 	}
-    USA_bribe_officials_kentucky = {
+    USA_kentucky_6 = {
 
 		icon = hol_attract_foreign_investors
 
 		available = {
-			
+			has_country_flag = USA_kentucky_5
 		}
 		visible = {
-			
+			has_country_flag = USA_kentucky_5
 		}
 		cost = 50
 		fixed_random_seed = yes
@@ -1012,22 +841,25 @@ USA_kentucky = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
+				clr_country_flag = USA_kentucky_5
+				set_country_flag = USA_kentucky_6
 			}		
 		}
 	}
-    USA_discredit_radicalists_kentucky = {
+    USA_kentucky_7 = {
 
 		icon = eng_trade_unions_demand
 
 		available = {
-			
+			has_country_flag =USA_kentucky_6
 		}
 		visible = {
-			
+			has_country_flag = USA_kentucky_6
 		}
 		cost = 60
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1037,18 +869,20 @@ USA_kentucky = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
+				clr_country_flag = USA_kentucky_6
+				set_country_flag = USA_kentucky_7
 			}		
 		}
 	}
-    USA_tax_cuts_for_the_rich_kentucky = {
+    USA_kentucky_8 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_kentucky_7
 		}
 		visible = {
-			
+			has_country_flag = USA_kentucky_7
 		}
 		cost = 70
 		fixed_random_seed = yes
@@ -1063,22 +897,25 @@ USA_kentucky = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
                 set_country_flag = kentucky_secede
+				clr_country_flag = USA_kentucky_7
+				set_country_flag = USA_kentucky_8
 			}		
 		}
 	}
-    USA_offer_incentives_to_companies_kentucky = {
+    USA_kentucky_9 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_kentucky_8
 		}
 		visible = {
-			
+			has_country_flag = USA_kentucky_8
 		}
 		cost = 80
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1088,22 +925,25 @@ USA_kentucky = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
+				clr_country_flag = USA_kentucky_8
+				set_country_flag = USA_kentucky_9
 			}		
 		}
 	}
-    USA_organize_loyalists_kentucky = {
+    USA_kentucky_10 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_kentucky_9
 		}
 		visible = {
-			
+			has_country_flag = USA_kentucky_9
 		}
 		cost = 90
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1114,12 +954,11 @@ USA_kentucky = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
                 set_country_flag = kentucky_both
+				clr_country_flag = USA_kentucky_9
 			}		
 		}
 	}
-}
-USA_tennesse = {
-	USA_place_overseers_in_state_governments_tennesse = {
+	USA_tennessee_3 = {
 
 		icon = eng_install_government
 
@@ -1135,28 +974,31 @@ USA_tennesse = {
 		ai_will_do = {
 			factor = 1
 		}
+		days_remove = 10
 		modifier = {
 			
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+				set_country_flag = USA_tennessee_3
 			}			
 		}
 	}
-    USA_mandatory_propaganda_tennesse = {
+    USA_tennessee_4 = {
 
 		icon = eng_propaganda_campaigns
 
 		available = {
-
+			has_country_flag = USA_tennessee_3
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_3
 		}
 		cost = 30
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1165,23 +1007,26 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+				clr_country_flag = USA_tennessee_3
+				set_country_flag = USA_tennessee_4
 			}		
 		}
 	}
-    USA_infiltrate_the_national_guard_tennesse = {
+    USA_tennessee_5 = {
 
 		icon = military_operation
 
 		available = {
-			
+			has_country_flag = USA_tennessee_4
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_4
 		}
 		cost = 40
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1190,20 +1035,22 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
-                set_country_flag = tennesse_militia	
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+                set_country_flag = tennessee_militia	
+				clr_country_flag = USA_tennessee_4
+				set_country_flag = USA_tennessee_5
 			}	
 		}
 	}
-    USA_bribe_officials_tennesse = {
+    USA_tennessee_6 = {
 
 		icon = hol_attract_foreign_investors
 
 		available = {
-			
+			has_country_flag = USA_tennessee_5
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_5
 		}
 		cost = 50
 		fixed_random_seed = yes
@@ -1216,23 +1063,26 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+				clr_country_flag = USA_tennessee_5
+				set_country_flag = USA_tennessee_6
 			}		
 		}
 	}
-    USA_discredit_radicalists_tennesse = {
+    USA_tennessee_7 = {
 
 		icon = eng_trade_unions_demand
 
 		available = {
-			
+			has_country_flag =USA_tennessee_6
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_6
 		}
 		cost = 60
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1241,19 +1091,21 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+				clr_country_flag = USA_tennessee_6
+				set_country_flag = USA_tennessee_7
 			}		
 		}
 	}
-    USA_tax_cuts_for_the_rich_tennesse = {
+    USA_tennessee_8 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_tennessee_7
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_7
 		}
 		cost = 70
 		fixed_random_seed = yes
@@ -1266,24 +1118,27 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
-                set_country_flag = tennesse_secede
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+                set_country_flag = tennessee_secede
+				clr_country_flag = USA_tennessee_7
+				set_country_flag = USA_tennessee_8
 			}		
 		}
 	}
-    USA_offer_incentives_to_companies_tennesse = {
+    USA_tennessee_9 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_tennessee_8
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_8
 		}
 		cost = 80
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1292,23 +1147,26 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+				clr_country_flag = USA_tennessee_8
+				set_country_flag = USA_tennessee_9
 			}		
 		}
 	}
-    USA_organize_loyalists_tennesse = {
+    USA_tennessee_10 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_tennessee_9
 		}
 		visible = {
-			
+			has_country_flag = USA_tennessee_9
 		}
 		cost = 90
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1317,36 +1175,15 @@ USA_tennesse = {
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.tennesse_loyalty = 1 }
-                set_country_flag = tennesse_both
+				add_to_variable = { USA.tennessee_loyalty = 1 }
+                set_country_flag = tennessee_both
+				clr_country_flag = USA_tennessee_9
 			}		
 		}
 	}
 }
-USA_georgia = {
-	USA_disconnect_communications_erratically_georgia = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_georgia = {
+USA_corn_belt_states_loyalty = {
+	USA_ohio_3 = {
 
 		icon = eng_install_government
 
@@ -1362,3677 +1199,31 @@ USA_georgia = {
 		ai_will_do = {
 			factor = 1
 		}
+		days_remove = 10
 		modifier = {
 			
 		}
 		remove_effect = {
 		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
+				add_to_variable = { USA.ohio_loyalty = 1 }
+				set_country_flag = USA_ohio_3
 			}			
 		}
 	}
-    USA_mandatory_propaganda_georgia = {
+    USA_ohio_4 = {
 
 		icon = eng_propaganda_campaigns
 
 		available = {
-			
+			has_country_flag = USA_ohio_3
 		}
 		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_georgia = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-                set_country_flag = georgia_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_georgia = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_georgia = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_georgia = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-                set_country_flag = georgia_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_georgia = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_georgia = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.georgia_loyalty = 1 }
-                set_country_flag = georgia_both
-			}		
-		}
-	}
-}
-USA_mississipi = {
-	USA_disconnect_communications_erratically_mississipi = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_mississipi = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_mississipi = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
+			has_country_flag = USA_ohio_3
 		}
 		cost = 30
 		fixed_random_seed = yes
         fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_mississipi = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-                set_country_flag = mississipi_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_mississipi = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_mississipi = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_mississipi = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-                set_country_flag = mississipi_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_mississipi = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_mississipi = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.mississipi_loyalty = 1 }
-                set_country_flag = mississipi_both
-			}		
-		}
-	}
-}
-USA_florida = {
-	USA_place_overseers_in_state_governments_florida = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_florida = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_florida = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-                set_country_flag = florida_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_florida = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_florida = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_florida = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-                set_country_flag = florida_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_florida = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_florida = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.florida_loyalty = 1 }
-                set_country_flag = florida_both
-			}		
-		}
-	}
-}
-USA_alabama = {
-	USA_disconnect_communications_erratically_alabama = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_alabama = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_alabama = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_alabama = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-                set_country_flag = alabama_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_alabama = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_alabama = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_alabama = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-                set_country_flag = alabama_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_alabama = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_alabama = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.alabama_loyalty = 1 }
-                set_country_flag = alabama_both
-			}		
-		}
-	}
-}
-USA_louisiana = {
-	USA_disconnect_communications_erratically_louisiana = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_louisiana = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_louisiana = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_louisiana = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-                set_country_flag = louisiana_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_louisiana = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_louisiana = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_louisiana = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-                set_country_flag = louisiana_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_louisiana = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_louisiana = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.louisiana_loyalty = 1 }
-                set_country_flag = louisiana_both
-			}		
-		}
-	}
-}
-USA_arkansas = {
-	USA_disconnect_communications_erratically_arkansas = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_arkansas = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_arkansas = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_arkansas = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-                set_country_flag = arkansas_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_arkansas = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_arkansas = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_arkansas = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-                set_country_flag = arkansas_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_arkansas = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_arkansas = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.arkansas_loyalty = 1 }
-                set_country_flag = arkansas_both
-			}		
-		}
-	}
-}
-USA_kansas = {
-	USA_disconnect_communications_erratically_kansas = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_kansas = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_kansas = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_kansas = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-                set_country_flag = kansas_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_kansas = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_kansas = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_kansas = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-                set_country_flag = kansas_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_kansas = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_kansas = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.kansas_loyalty = 1 }
-                set_country_flag = kansas_both
-			}		
-		}
-	}
-}
-USA_nebraska = {
-	USA_disconnect_communications_erratically_nebraska = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_nebraska = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_nebraska = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_nebraska = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-                set_country_flag = nebraska_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_nebraska = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_nebraska = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_nebraska = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-                set_country_flag = nebraska_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_nebraska = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_nebraska = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.nebraska_loyalty = 1 }
-                set_country_flag = nebraska_both
-			}		
-		}
-	}
-}
-USA_colorado = {
-	USA_disconnect_communications_erratically_colorado = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_colorado = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_colorado = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_colorado = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-                set_country_flag = colorado_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_colorado = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_colorado = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_colorado = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-                set_country_flag = colorado_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_colorado = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_colorado = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.colorado_loyalty = 1 }
-                set_country_flag = colorado_both
-			}		
-		}
-	}
-}
-USA_north_dakota = {
-	USA_infiltrate_the_national_guard_north_dakota = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ND_loyalty = 1 }
-                set_country_flag = ND_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_north_dakota = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ND_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_north_dakota = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ND_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_north_dakota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ND_loyalty = 1 }
-                set_country_flag = ND_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_north_dakota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ND_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_north_dakota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ND_loyalty = 1 }
-                set_country_flag = ND_both
-			}		
-		}
-	}
-}
-USA_south_dakota = {
-	USA_mandatory_propaganda_south_dakota = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_south_dakota = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-                set_country_flag = SD_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_south_dakota = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_south_dakota = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_south_dakota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-                set_country_flag = SD_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_south_dakota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_south_dakota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.SD_loyalty = 1 }
-                set_country_flag = SD_both
-			}		
-		}
-	}
-}
-USA_minnesota = {
-	USA_place_overseers_in_state_governments_minnesota = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_minnesota = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-                set_country_flag = minnesota_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_minnesota = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_minnesota = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_minnesota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-                set_country_flag = minnesota_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_minnesota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_minnesota = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.minnesota_loyalty = 1 }
-                set_country_flag = minnesota_both
-			}		
-		}
-	}
-}
-USA_iowa = {
-	USA_disconnect_communications_erratically_iowa = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_iowa = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_iowa = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_iowa = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-                set_country_flag = iowa_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_iowa = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_iowa = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_iowa = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-                set_country_flag = iowa_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_iowa = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_iowa = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.iowa_loyalty = 1 }
-                set_country_flag = iowa_both
-			}		
-		}
-	}
-}
-USA_wisconsin = {
-	USA_disconnect_communications_erratically_wisconsin = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_wisconsin = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_wisconsin = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_wisconsin = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-                set_country_flag = wisconsin_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_wisconsin = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_wisconsin = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_wisconsin = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-                set_country_flag = wisconsin_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_wisconsin = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_wisconsin = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.wisconsin_loyalty = 1 }
-                set_country_flag = wisconsin_both
-			}		
-		}
-	}
-}
-USA_illinois = {
-	USA_disconnect_communications_erratically_illinois = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_illinois = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_illinois = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_illinois = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-                set_country_flag = illinois_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_illinois = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_illinois = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_illinois = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-                set_country_flag = illinois_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_illinois = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_illinois = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.illinois_loyalty = 1 }
-                set_country_flag = illinois_both
-			}		
-		}
-	}
-}
-USA_michigan = {
-	USA_disconnect_communications_erratically_michigan = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_michigan = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_michigan = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_michigan = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-                set_country_flag = michigan_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_michigan = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_michigan = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_michigan = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-                set_country_flag = michigan_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_michigan = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_michigan = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.michigan_loyalty = 1 }
-                set_country_flag = michigan_both
-			}		
-		}
-	}
-}
-USA_indiana = {
-	USA_disconnect_communications_erratically_indiana = {
-
-		icon = generic_crisis
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 10
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-        remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-			}			
-		}
-    }
-	USA_place_overseers_in_state_governments_indiana = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_indiana = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_infiltrate_the_national_guard_indiana = {
-
-		icon = military_operation
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 40
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-                set_country_flag = Indiana_militia	
-			}	
-		}
-	}
-    USA_bribe_officials_indiana = {
-
-		icon = hol_attract_foreign_investors
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 50
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_discredit_radicalists_indiana = {
-
-		icon = eng_trade_unions_demand
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 60
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_tax_cuts_for_the_rich_indiana = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 70
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-                set_country_flag = Indiana_secede
-			}		
-		}
-	}
-    USA_offer_incentives_to_companies_indiana = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 80
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-			}		
-		}
-	}
-    USA_organize_loyalists_indiana = {
-
-        icon = ger_mefo_bills
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 90
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.Indiana_loyalty = 1 }
-                set_country_flag = Indiana_both
-			}		
-		}
-	}
-}
-USA_ohio = {
-	USA_place_overseers_in_state_governments_ohio = {
-
-		icon = eng_install_government
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 20
-		fixed_random_seed = yes
-        fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -5042,47 +1233,25 @@ USA_ohio = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
-			}			
-		}
-	}
-    USA_mandatory_propaganda_ohio = {
-
-		icon = eng_propaganda_campaigns
-
-		available = {
-			
-		}
-		visible = {
-			
-		}
-		cost = 30
-		fixed_random_seed = yes
-        fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		modifier = {
-			
-		}
-		remove_effect = {
-		    hidden_effect = {
-				add_to_variable = { USA.ohio_loyalty = 1 }
+				clr_country_flag = USA_ohio_3
+				set_country_flag = USA_ohio_4
 			}		
 		}
 	}
-    USA_infiltrate_the_national_guard_ohio = {
+    USA_ohio_5 = {
 
 		icon = military_operation
 
 		available = {
-			
+			has_country_flag = USA_ohio_4
 		}
 		visible = {
-			
+			has_country_flag = USA_ohio_4
 		}
 		cost = 40
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -5092,19 +1261,21 @@ USA_ohio = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
-                set_country_flag = ohio_militia
+                set_country_flag = ohio_militia	
+				clr_country_flag = USA_ohio_4
+				set_country_flag = USA_ohio_5
 			}	
 		}
 	}
-    USA_bribe_officials_ohio = {
+    USA_ohio_6 = {
 
 		icon = hol_attract_foreign_investors
 
 		available = {
-			
+			has_country_flag = USA_ohio_5
 		}
 		visible = {
-			
+			has_country_flag = USA_ohio_5
 		}
 		cost = 50
 		fixed_random_seed = yes
@@ -5118,22 +1289,25 @@ USA_ohio = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
+				clr_country_flag = USA_ohio_5
+				set_country_flag = USA_ohio_6
 			}		
 		}
 	}
-    USA_discredit_radicalists_ohio = {
+    USA_ohio_7 = {
 
 		icon = eng_trade_unions_demand
 
 		available = {
-			
+			has_country_flag =USA_ohio_6
 		}
 		visible = {
-			
+			has_country_flag = USA_ohio_6
 		}
 		cost = 60
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -5143,18 +1317,20 @@ USA_ohio = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
+				clr_country_flag = USA_ohio_6
+				set_country_flag = USA_ohio_7
 			}		
 		}
 	}
-    USA_tax_cuts_for_the_rich_ohio = {
+    USA_ohio_8 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_ohio_7
 		}
 		visible = {
-			
+			has_country_flag = USA_ohio_7
 		}
 		cost = 70
 		fixed_random_seed = yes
@@ -5169,22 +1345,25 @@ USA_ohio = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
                 set_country_flag = ohio_secede
+				clr_country_flag = USA_ohio_7
+				set_country_flag = USA_ohio_8
 			}		
 		}
 	}
-    USA_offer_incentives_to_companies_ohio = {
+    USA_ohio_9 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_ohio_8
 		}
 		visible = {
-			
+			has_country_flag = USA_ohio_8
 		}
 		cost = 80
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -5194,22 +1373,25 @@ USA_ohio = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
+				clr_country_flag = USA_ohio_8
+				set_country_flag = USA_ohio_9
 			}		
 		}
 	}
-    USA_organize_loyalists_ohio = {
+    USA_ohio_10 = {
 
         icon = ger_mefo_bills
 
 		available = {
-			
+			has_country_flag = USA_ohio_9
 		}
 		visible = {
-			
+			has_country_flag = USA_ohio_9
 		}
 		cost = 90
 		fixed_random_seed = yes
         fire_only_once = yes
+		days_remove = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -5220,6 +1402,4588 @@ USA_ohio = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
                 set_country_flag = ohio_both
+				clr_country_flag = USA_ohio_9
+			}		
+		}
+	}
+	USA_indiana_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+				set_country_flag = USA_indiana_2
+			}			
+		}
+	}
+	USA_indiana_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_indiana_2
+		}
+		visible = {
+			has_country_flag = USA_indiana_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+				clr_country_flag = USA_indiana_2
+				set_country_flag = USA_indiana_3
+			}			
+		}
+	}
+    USA_indiana_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_indiana_3
+		}
+		visible = {
+			has_country_flag = USA_indiana_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+				clr_country_flag = USA_indiana_3
+				set_country_flag = USA_indiana_4
+			}		
+		}
+	}
+    USA_indiana_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_indiana_4
+		}
+		visible = {
+			has_country_flag = USA_indiana_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+                set_country_flag = indiana_militia	
+				clr_country_flag = USA_indiana_4
+				set_country_flag = USA_indiana_5
+			}	
+		}
+	}
+    USA_indiana_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_indiana_5
+		}
+		visible = {
+			has_country_flag = USA_indiana_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+				clr_country_flag = USA_indiana_5
+				set_country_flag = USA_indiana_6
+			}		
+		}
+	}
+    USA_indiana_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_indiana_6
+		}
+		visible = {
+			has_country_flag = USA_indiana_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+				clr_country_flag = USA_indiana_6
+				set_country_flag = USA_indiana_7
+			}		
+		}
+	}
+    USA_indiana_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_indiana_7
+		}
+		visible = {
+			has_country_flag = USA_indiana_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+                set_country_flag = indiana_secede
+				clr_country_flag = USA_indiana_7
+				set_country_flag = USA_indiana_8
+			}		
+		}
+	}
+    USA_indiana_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_indiana_8
+		}
+		visible = {
+			has_country_flag = USA_indiana_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+				clr_country_flag = USA_indiana_8
+				set_country_flag = USA_indiana_9
+			}		
+		}
+	}
+    USA_indiana_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_indiana_9
+		}
+		visible = {
+			has_country_flag = USA_indiana_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.indiana_loyalty = 1 }
+                set_country_flag = indiana_both
+				clr_country_flag = USA_indiana_9
+			}		
+		}
+	}
+	USA_illinois_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+				set_country_flag = USA_illinois_2
+			}			
+		}
+	}
+	USA_illinois_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_illinois_2
+		}
+		visible = {
+			has_country_flag = USA_illinois_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+				clr_country_flag = USA_illinois_2
+				set_country_flag = USA_illinois_3
+			}			
+		}
+	}
+    USA_illinois_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_illinois_3
+		}
+		visible = {
+			has_country_flag = USA_illinois_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+				clr_country_flag = USA_illinois_3
+				set_country_flag = USA_illinois_4
+			}		
+		}
+	}
+    USA_illinois_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_illinois_4
+		}
+		visible = {
+			has_country_flag = USA_illinois_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+                set_country_flag = illinois_militia	
+				clr_country_flag = USA_illinois_4
+				set_country_flag = USA_illinois_5
+			}	
+		}
+	}
+    USA_illinois_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_illinois_5
+		}
+		visible = {
+			has_country_flag = USA_illinois_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+				clr_country_flag = USA_illinois_5
+				set_country_flag = USA_illinois_6
+			}		
+		}
+	}
+    USA_illinois_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_illinois_6
+		}
+		visible = {
+			has_country_flag = USA_illinois_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+				clr_country_flag = USA_illinois_6
+				set_country_flag = USA_illinois_7
+			}		
+		}
+	}
+    USA_illinois_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_illinois_7
+		}
+		visible = {
+			has_country_flag = USA_illinois_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+                set_country_flag = illinois_secede
+				clr_country_flag = USA_illinois_7
+				set_country_flag = USA_illinois_8
+			}		
+		}
+	}
+    USA_illinois_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_illinois_8
+		}
+		visible = {
+			has_country_flag = USA_illinois_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+				clr_country_flag = USA_illinois_8
+				set_country_flag = USA_illinois_9
+			}		
+		}
+	}
+    USA_illinois_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_illinois_9
+		}
+		visible = {
+			has_country_flag = USA_illinois_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.illinois_loyalty = 1 }
+                set_country_flag = illinois_both
+				clr_country_flag = USA_illinois_9
+			}		
+		}
+	}
+	USA_iowa_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+				set_country_flag = USA_iowa_2
+			}			
+		}
+	}
+	USA_iowa_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_iowa_2
+		}
+		visible = {
+			has_country_flag = USA_iowa_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+				clr_country_flag = USA_iowa_2
+				set_country_flag = USA_iowa_3
+			}			
+		}
+	}
+    USA_iowa_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_iowa_3
+		}
+		visible = {
+			has_country_flag = USA_iowa_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+				clr_country_flag = USA_iowa_3
+				set_country_flag = USA_iowa_4
+			}		
+		}
+	}
+    USA_iowa_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_iowa_4
+		}
+		visible = {
+			has_country_flag = USA_iowa_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+                set_country_flag = iowa_militia	
+				clr_country_flag = USA_iowa_4
+				set_country_flag = USA_iowa_5
+			}	
+		}
+	}
+    USA_iowa_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_iowa_5
+		}
+		visible = {
+			has_country_flag = USA_iowa_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+				clr_country_flag = USA_iowa_5
+				set_country_flag = USA_iowa_6
+			}		
+		}
+	}
+    USA_iowa_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_iowa_6
+		}
+		visible = {
+			has_country_flag = USA_iowa_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+				clr_country_flag = USA_iowa_6
+				set_country_flag = USA_iowa_7
+			}		
+		}
+	}
+    USA_iowa_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_iowa_7
+		}
+		visible = {
+			has_country_flag = USA_iowa_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+                set_country_flag = iowa_secede
+				clr_country_flag = USA_iowa_7
+				set_country_flag = USA_iowa_8
+			}		
+		}
+	}
+    USA_iowa_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_iowa_8
+		}
+		visible = {
+			has_country_flag = USA_iowa_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+				clr_country_flag = USA_iowa_8
+				set_country_flag = USA_iowa_9
+			}		
+		}
+	}
+    USA_iowa_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_iowa_9
+		}
+		visible = {
+			has_country_flag = USA_iowa_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.iowa_loyalty = 1 }
+                set_country_flag = iowa_both
+				clr_country_flag = USA_iowa_9
+			}		
+		}
+	}
+	USA_missouri_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+				set_country_flag = USA_missouri_2
+			}			
+		}
+	}
+	USA_missouri_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_missouri_2
+		}
+		visible = {
+			has_country_flag = USA_missouri_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+				clr_country_flag = USA_missouri_2
+				set_country_flag = USA_missouri_3
+			}			
+		}
+	}
+    USA_missouri_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_missouri_3
+		}
+		visible = {
+			has_country_flag = USA_missouri_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+				clr_country_flag = USA_missouri_3
+				set_country_flag = USA_missouri_4
+			}		
+		}
+	}
+    USA_missouri_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_missouri_4
+		}
+		visible = {
+			has_country_flag = USA_missouri_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+                set_country_flag = missouri_militia	
+				clr_country_flag = USA_missouri_4
+				set_country_flag = USA_missouri_5
+			}	
+		}
+	}
+    USA_missouri_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_missouri_5
+		}
+		visible = {
+			has_country_flag = USA_missouri_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+				clr_country_flag = USA_missouri_5
+				set_country_flag = USA_missouri_6
+			}		
+		}
+	}
+    USA_missouri_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_missouri_6
+		}
+		visible = {
+			has_country_flag = USA_missouri_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+				clr_country_flag = USA_missouri_6
+				set_country_flag = USA_missouri_7
+			}		
+		}
+	}
+    USA_missouri_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_missouri_7
+		}
+		visible = {
+			has_country_flag = USA_missouri_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+                set_country_flag = missouri_secede
+				clr_country_flag = USA_missouri_7
+				set_country_flag = USA_missouri_8
+			}		
+		}
+	}
+    USA_missouri_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_missouri_8
+		}
+		visible = {
+			has_country_flag = USA_missouri_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+				clr_country_flag = USA_missouri_8
+				set_country_flag = USA_missouri_9
+			}		
+		}
+	}
+    USA_missouri_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_missouri_9
+		}
+		visible = {
+			has_country_flag = USA_missouri_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.missouri_loyalty = 1 }
+                set_country_flag = missouri_both
+				clr_country_flag = USA_missouri_9
+			}		
+		}
+	}
+}
+USA_lake_states_loyalty = {
+	USA_michigan_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+				set_country_flag = USA_michigan_2
+			}			
+		}
+	}
+	USA_michigan_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_michigan_2
+		}
+		visible = {
+			has_country_flag = USA_michigan_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+				clr_country_flag = USA_michigan_2
+				set_country_flag = USA_michigan_3
+			}			
+		}
+	}
+    USA_michigan_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_michigan_3
+		}
+		visible = {
+			has_country_flag = USA_michigan_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+				clr_country_flag = USA_michigan_3
+				set_country_flag = USA_michigan_4
+			}		
+		}
+	}
+    USA_michigan_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_michigan_4
+		}
+		visible = {
+			has_country_flag = USA_michigan_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+                set_country_flag = michigan_militia	
+				clr_country_flag = USA_michigan_4
+				set_country_flag = USA_michigan_5
+			}	
+		}
+	}
+    USA_michigan_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_michigan_5
+		}
+		visible = {
+			has_country_flag = USA_michigan_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+				clr_country_flag = USA_michigan_5
+				set_country_flag = USA_michigan_6
+			}		
+		}
+	}
+    USA_michigan_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_michigan_6
+		}
+		visible = {
+			has_country_flag = USA_michigan_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+				clr_country_flag = USA_michigan_6
+				set_country_flag = USA_michigan_7
+			}		
+		}
+	}
+    USA_michigan_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_michigan_7
+		}
+		visible = {
+			has_country_flag = USA_michigan_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+                set_country_flag = michigan_secede
+				clr_country_flag = USA_michigan_7
+				set_country_flag = USA_michigan_8
+			}		
+		}
+	}
+    USA_michigan_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_michigan_8
+		}
+		visible = {
+			has_country_flag = USA_michigan_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+				clr_country_flag = USA_michigan_8
+				set_country_flag = USA_michigan_9
+			}		
+		}
+	}
+    USA_michigan_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_michigan_9
+		}
+		visible = {
+			has_country_flag = USA_michigan_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.michigan_loyalty = 1 }
+                set_country_flag = michigan_both
+				clr_country_flag = USA_michigan_9
+			}		
+		}
+	}
+	USA_wisconsin_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+				set_country_flag = USA_wisconsin_2
+			}			
+		}
+	}
+	USA_wisconsin_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_wisconsin_2
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+				clr_country_flag = USA_wisconsin_2
+				set_country_flag = USA_wisconsin_3
+			}			
+		}
+	}
+    USA_wisconsin_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_wisconsin_3
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+				clr_country_flag = USA_wisconsin_3
+				set_country_flag = USA_wisconsin_4
+			}		
+		}
+	}
+    USA_wisconsin_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_wisconsin_4
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+                set_country_flag = wisconsin_militia	
+				clr_country_flag = USA_wisconsin_4
+				set_country_flag = USA_wisconsin_5
+			}	
+		}
+	}
+    USA_wisconsin_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_wisconsin_5
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+				clr_country_flag = USA_wisconsin_5
+				set_country_flag = USA_wisconsin_6
+			}		
+		}
+	}
+    USA_wisconsin_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_wisconsin_6
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+				clr_country_flag = USA_wisconsin_6
+				set_country_flag = USA_wisconsin_7
+			}		
+		}
+	}
+    USA_wisconsin_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_wisconsin_7
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+                set_country_flag = wisconsin_secede
+				clr_country_flag = USA_wisconsin_7
+				set_country_flag = USA_wisconsin_8
+			}		
+		}
+	}
+    USA_wisconsin_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_wisconsin_8
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+				clr_country_flag = USA_wisconsin_8
+				set_country_flag = USA_wisconsin_9
+			}		
+		}
+	}
+    USA_wisconsin_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_wisconsin_9
+		}
+		visible = {
+			has_country_flag = USA_wisconsin_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.wisconsin_loyalty = 1 }
+                set_country_flag = wisconsin_both
+				clr_country_flag = USA_wisconsin_9
+			}		
+		}
+	}
+	USA_minnesota_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+				set_country_flag = USA_minnesota_3
+			}			
+		}
+	}
+    USA_minnesota_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_minnesota_3
+		}
+		visible = {
+			has_country_flag = USA_minnesota_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+				clr_country_flag = USA_minnesota_3
+				set_country_flag = USA_minnesota_4
+			}		
+		}
+	}
+    USA_minnesota_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_minnesota_4
+		}
+		visible = {
+			has_country_flag = USA_minnesota_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+                set_country_flag = minnesota_militia	
+				clr_country_flag = USA_minnesota_4
+				set_country_flag = USA_minnesota_5
+			}	
+		}
+	}
+    USA_minnesota_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_minnesota_5
+		}
+		visible = {
+			has_country_flag = USA_minnesota_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+				clr_country_flag = USA_minnesota_5
+				set_country_flag = USA_minnesota_6
+			}		
+		}
+	}
+    USA_minnesota_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_minnesota_6
+		}
+		visible = {
+			has_country_flag = USA_minnesota_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+				clr_country_flag = USA_minnesota_6
+				set_country_flag = USA_minnesota_7
+			}		
+		}
+	}
+    USA_minnesota_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_minnesota_7
+		}
+		visible = {
+			has_country_flag = USA_minnesota_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+                set_country_flag = minnesota_secede
+				clr_country_flag = USA_minnesota_7
+				set_country_flag = USA_minnesota_8
+			}		
+		}
+	}
+    USA_minnesota_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_minnesota_8
+		}
+		visible = {
+			has_country_flag = USA_minnesota_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+				clr_country_flag = USA_minnesota_8
+				set_country_flag = USA_minnesota_9
+			}		
+		}
+	}
+    USA_minnesota_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_minnesota_9
+		}
+		visible = {
+			has_country_flag = USA_minnesota_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.minnesota_loyalty = 1 }
+                set_country_flag = minnesota_both
+				clr_country_flag = USA_minnesota_9
+			}		
+		}
+	}
+}
+USA_southeast_states_loyalty = {
+	USA_south_carolina_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+				set_country_flag = USA_south_carolina_2
+			}			
+		}
+	}
+	USA_south_carolina_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_south_carolina_2
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+				clr_country_flag = USA_south_carolina_2
+				set_country_flag = USA_south_carolina_3
+			}			
+		}
+	}
+    USA_south_carolina_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_south_carolina_3
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+				clr_country_flag = USA_south_carolina_3
+				set_country_flag = USA_south_carolina_4
+			}		
+		}
+	}
+    USA_south_carolina_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_south_carolina_4
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+                set_country_flag = south_carolina_militia	
+				clr_country_flag = USA_south_carolina_4
+				set_country_flag = USA_south_carolina_5
+			}	
+		}
+	}
+    USA_south_carolina_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_south_carolina_5
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+				clr_country_flag = USA_south_carolina_5
+				set_country_flag = USA_south_carolina_6
+			}		
+		}
+	}
+    USA_south_carolina_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_south_carolina_6
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+				clr_country_flag = USA_south_carolina_6
+				set_country_flag = USA_south_carolina_7
+			}		
+		}
+	}
+    USA_south_carolina_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_south_carolina_7
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+                set_country_flag = south_carolina_secede
+				clr_country_flag = USA_south_carolina_7
+				set_country_flag = USA_south_carolina_8
+			}		
+		}
+	}
+    USA_south_carolina_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_south_carolina_8
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+				clr_country_flag = USA_south_carolina_8
+				set_country_flag = USA_south_carolina_9
+			}		
+		}
+	}
+    USA_south_carolina_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_south_carolina_9
+		}
+		visible = {
+			has_country_flag = USA_south_carolina_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_carolina_loyalty = 1 }
+                set_country_flag = south_carolina_both
+				clr_country_flag = USA_south_carolina_9
+			}		
+		}
+	}
+	USA_georgia_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+				set_country_flag = USA_georgia_2
+			}			
+		}
+	}
+	USA_georgia_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_georgia_2
+		}
+		visible = {
+			has_country_flag = USA_georgia_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+				clr_country_flag = USA_georgia_2
+				set_country_flag = USA_georgia_3
+			}			
+		}
+	}
+    USA_georgia_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_georgia_3
+		}
+		visible = {
+			has_country_flag = USA_georgia_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+				clr_country_flag = USA_georgia_3
+				set_country_flag = USA_georgia_4
+			}		
+		}
+	}
+    USA_georgia_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_georgia_4
+		}
+		visible = {
+			has_country_flag = USA_georgia_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+                set_country_flag = georgia_militia	
+				clr_country_flag = USA_georgia_4
+				set_country_flag = USA_georgia_5
+			}	
+		}
+	}
+    USA_georgia_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_georgia_5
+		}
+		visible = {
+			has_country_flag = USA_georgia_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+				clr_country_flag = USA_georgia_5
+				set_country_flag = USA_georgia_6
+			}		
+		}
+	}
+    USA_georgia_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_georgia_6
+		}
+		visible = {
+			has_country_flag = USA_georgia_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+				clr_country_flag = USA_georgia_6
+				set_country_flag = USA_georgia_7
+			}		
+		}
+	}
+    USA_georgia_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_georgia_7
+		}
+		visible = {
+			has_country_flag = USA_georgia_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+                set_country_flag = georgia_secede
+				clr_country_flag = USA_georgia_7
+				set_country_flag = USA_georgia_8
+			}		
+		}
+	}
+    USA_georgia_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_georgia_8
+		}
+		visible = {
+			has_country_flag = USA_georgia_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+				clr_country_flag = USA_georgia_8
+				set_country_flag = USA_georgia_9
+			}		
+		}
+	}
+    USA_georgia_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_georgia_9
+		}
+		visible = {
+			has_country_flag = USA_georgia_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.georgia_loyalty = 1 }
+                set_country_flag = georgia_both
+				clr_country_flag = USA_georgia_9
+			}		
+		}
+	}
+	USA_mississippi_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+				set_country_flag = USA_mississippi_2
+			}			
+		}
+	}
+	USA_mississippi_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_mississippi_2
+		}
+		visible = {
+			has_country_flag = USA_mississippi_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+				clr_country_flag = USA_mississippi_2
+				set_country_flag = USA_mississippi_3
+			}			
+		}
+	}
+    USA_mississippi_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_mississippi_3
+		}
+		visible = {
+			has_country_flag = USA_mississippi_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+				clr_country_flag = USA_mississippi_3
+				set_country_flag = USA_mississippi_4
+			}		
+		}
+	}
+    USA_mississippi_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_mississippi_4
+		}
+		visible = {
+			has_country_flag = USA_mississippi_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+                set_country_flag = mississippi_militia	
+				clr_country_flag = USA_mississippi_4
+				set_country_flag = USA_mississippi_5
+			}	
+		}
+	}
+    USA_mississippi_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_mississippi_5
+		}
+		visible = {
+			has_country_flag = USA_mississippi_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+				clr_country_flag = USA_mississippi_5
+				set_country_flag = USA_mississippi_6
+			}		
+		}
+	}
+    USA_mississippi_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_mississippi_6
+		}
+		visible = {
+			has_country_flag = USA_mississippi_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+				clr_country_flag = USA_mississippi_6
+				set_country_flag = USA_mississippi_7
+			}		
+		}
+	}
+    USA_mississippi_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_mississippi_7
+		}
+		visible = {
+			has_country_flag = USA_mississippi_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+                set_country_flag = mississippi_secede
+				clr_country_flag = USA_mississippi_7
+				set_country_flag = USA_mississippi_8
+			}		
+		}
+	}
+    USA_mississippi_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_mississippi_8
+		}
+		visible = {
+			has_country_flag = USA_mississippi_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+				clr_country_flag = USA_mississippi_8
+				set_country_flag = USA_mississippi_9
+			}		
+		}
+	}
+    USA_mississippi_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_mississippi_9
+		}
+		visible = {
+			has_country_flag = USA_mississippi_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.mississippi_loyalty = 1 }
+                set_country_flag = mississippi_both
+				clr_country_flag = USA_mississippi_9
+			}		
+		}
+	}
+	USA_florida_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+				set_country_flag = USA_florida_3
+			}			
+		}
+	}
+    USA_florida_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_florida_3
+		}
+		visible = {
+			has_country_flag = USA_florida_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+				clr_country_flag = USA_florida_3
+				set_country_flag = USA_florida_4
+			}		
+		}
+	}
+    USA_florida_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_florida_4
+		}
+		visible = {
+			has_country_flag = USA_florida_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+                set_country_flag = florida_militia	
+				clr_country_flag = USA_florida_4
+				set_country_flag = USA_florida_5
+			}	
+		}
+	}
+    USA_florida_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_florida_5
+		}
+		visible = {
+			has_country_flag = USA_florida_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+				clr_country_flag = USA_florida_5
+				set_country_flag = USA_florida_6
+			}		
+		}
+	}
+    USA_florida_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_florida_6
+		}
+		visible = {
+			has_country_flag = USA_florida_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+				clr_country_flag = USA_florida_6
+				set_country_flag = USA_florida_7
+			}		
+		}
+	}
+    USA_florida_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_florida_7
+		}
+		visible = {
+			has_country_flag = USA_florida_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+                set_country_flag = florida_secede
+				clr_country_flag = USA_florida_7
+				set_country_flag = USA_florida_8
+			}		
+		}
+	}
+    USA_florida_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_florida_8
+		}
+		visible = {
+			has_country_flag = USA_florida_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+				clr_country_flag = USA_florida_8
+				set_country_flag = USA_florida_9
+			}		
+		}
+	}
+    USA_florida_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_florida_9
+		}
+		visible = {
+			has_country_flag = USA_florida_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.florida_loyalty = 1 }
+                set_country_flag = florida_both
+				clr_country_flag = USA_florida_9
+			}		
+		}
+	}
+}
+USA_delta_states_loyalty = {
+	USA_alabama_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+				set_country_flag = USA_alabama_2
+			}			
+		}
+	}
+	USA_alabama_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_alabama_2
+		}
+		visible = {
+			has_country_flag = USA_alabama_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+				clr_country_flag = USA_alabama_2
+				set_country_flag = USA_alabama_3
+			}			
+		}
+	}
+    USA_alabama_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_alabama_3
+		}
+		visible = {
+			has_country_flag = USA_alabama_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+				clr_country_flag = USA_alabama_3
+				set_country_flag = USA_alabama_4
+			}		
+		}
+	}
+    USA_alabama_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_alabama_4
+		}
+		visible = {
+			has_country_flag = USA_alabama_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+                set_country_flag = alabama_militia	
+				clr_country_flag = USA_alabama_4
+				set_country_flag = USA_alabama_5
+			}	
+		}
+	}
+    USA_alabama_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_alabama_5
+		}
+		visible = {
+			has_country_flag = USA_alabama_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+				clr_country_flag = USA_alabama_5
+				set_country_flag = USA_alabama_6
+			}		
+		}
+	}
+    USA_alabama_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_alabama_6
+		}
+		visible = {
+			has_country_flag = USA_alabama_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+				clr_country_flag = USA_alabama_6
+				set_country_flag = USA_alabama_7
+			}		
+		}
+	}
+    USA_alabama_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_alabama_7
+		}
+		visible = {
+			has_country_flag = USA_alabama_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+                set_country_flag = alabama_secede
+				clr_country_flag = USA_alabama_7
+				set_country_flag = USA_alabama_8
+			}		
+		}
+	}
+    USA_alabama_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_alabama_8
+		}
+		visible = {
+			has_country_flag = USA_alabama_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+				clr_country_flag = USA_alabama_8
+				set_country_flag = USA_alabama_9
+			}		
+		}
+	}
+    USA_alabama_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_alabama_9
+		}
+		visible = {
+			has_country_flag = USA_alabama_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.alabama_loyalty = 1 }
+                set_country_flag = alabama_both
+				clr_country_flag = USA_alabama_9
+			}		
+		}
+	}
+	USA_louisiana_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+				set_country_flag = USA_louisiana_2
+			}			
+		}
+	}
+	USA_louisiana_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_louisiana_2
+		}
+		visible = {
+			has_country_flag = USA_louisiana_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+				clr_country_flag = USA_louisiana_2
+				set_country_flag = USA_louisiana_3
+			}			
+		}
+	}
+    USA_louisiana_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_louisiana_3
+		}
+		visible = {
+			has_country_flag = USA_louisiana_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+				clr_country_flag = USA_louisiana_3
+				set_country_flag = USA_louisiana_4
+			}		
+		}
+	}
+    USA_louisiana_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_louisiana_4
+		}
+		visible = {
+			has_country_flag = USA_louisiana_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+                set_country_flag = louisiana_militia	
+				clr_country_flag = USA_louisiana_4
+				set_country_flag = USA_louisiana_5
+			}	
+		}
+	}
+    USA_louisiana_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_louisiana_5
+		}
+		visible = {
+			has_country_flag = USA_louisiana_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+				clr_country_flag = USA_louisiana_5
+				set_country_flag = USA_louisiana_6
+			}		
+		}
+	}
+    USA_louisiana_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_louisiana_6
+		}
+		visible = {
+			has_country_flag = USA_louisiana_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+				clr_country_flag = USA_louisiana_6
+				set_country_flag = USA_louisiana_7
+			}		
+		}
+	}
+    USA_louisiana_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_louisiana_7
+		}
+		visible = {
+			has_country_flag = USA_louisiana_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+                set_country_flag = louisiana_secede
+				clr_country_flag = USA_louisiana_7
+				set_country_flag = USA_louisiana_8
+			}		
+		}
+	}
+    USA_louisiana_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_louisiana_8
+		}
+		visible = {
+			has_country_flag = USA_louisiana_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+				clr_country_flag = USA_louisiana_8
+				set_country_flag = USA_louisiana_9
+			}		
+		}
+	}
+    USA_louisiana_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_louisiana_9
+		}
+		visible = {
+			has_country_flag = USA_louisiana_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.louisiana_loyalty = 1 }
+                set_country_flag = louisiana_both
+				clr_country_flag = USA_louisiana_9
+			}		
+		}
+	}
+	USA_arkansas_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+				set_country_flag = USA_arkansas_2
+			}			
+		}
+	}
+	USA_arkansas_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_arkansas_2
+		}
+		visible = {
+			has_country_flag = USA_arkansas_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+				clr_country_flag = USA_arkansas_2
+				set_country_flag = USA_arkansas_3
+			}			
+		}
+	}
+    USA_arkansas_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_arkansas_3
+		}
+		visible = {
+			has_country_flag = USA_arkansas_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+				clr_country_flag = USA_arkansas_3
+				set_country_flag = USA_arkansas_4
+			}		
+		}
+	}
+    USA_arkansas_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_arkansas_4
+		}
+		visible = {
+			has_country_flag = USA_arkansas_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+                set_country_flag = arkansas_militia	
+				clr_country_flag = USA_arkansas_4
+				set_country_flag = USA_arkansas_5
+			}	
+		}
+	}
+    USA_arkansas_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_arkansas_5
+		}
+		visible = {
+			has_country_flag = USA_arkansas_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+				clr_country_flag = USA_arkansas_5
+				set_country_flag = USA_arkansas_6
+			}		
+		}
+	}
+    USA_arkansas_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_arkansas_6
+		}
+		visible = {
+			has_country_flag = USA_arkansas_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+				clr_country_flag = USA_arkansas_6
+				set_country_flag = USA_arkansas_7
+			}		
+		}
+	}
+    USA_arkansas_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_arkansas_7
+		}
+		visible = {
+			has_country_flag = USA_arkansas_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+                set_country_flag = arkansas_secede
+				clr_country_flag = USA_arkansas_7
+				set_country_flag = USA_arkansas_8
+			}		
+		}
+	}
+    USA_arkansas_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_arkansas_8
+		}
+		visible = {
+			has_country_flag = USA_arkansas_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+				clr_country_flag = USA_arkansas_8
+				set_country_flag = USA_arkansas_9
+			}		
+		}
+	}
+    USA_arkansas_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_arkansas_9
+		}
+		visible = {
+			has_country_flag = USA_arkansas_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.arkansas_loyalty = 1 }
+                set_country_flag = arkansas_both
+				clr_country_flag = USA_arkansas_9
+			}		
+		}
+	}
+}
+USA_north_plains_states_loyalty = {
+	USA_nebraska_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+				set_country_flag = USA_nebraska_2
+			}			
+		}
+	}
+	USA_nebraska_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_nebraska_2
+		}
+		visible = {
+			has_country_flag = USA_nebraska_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+				clr_country_flag = USA_nebraska_2
+				set_country_flag = USA_nebraska_3
+			}			
+		}
+	}
+    USA_nebraska_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_nebraska_3
+		}
+		visible = {
+			has_country_flag = USA_nebraska_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+				clr_country_flag = USA_nebraska_3
+				set_country_flag = USA_nebraska_4
+			}		
+		}
+	}
+    USA_nebraska_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_nebraska_4
+		}
+		visible = {
+			has_country_flag = USA_nebraska_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+                set_country_flag = nebraska_militia	
+				clr_country_flag = USA_nebraska_4
+				set_country_flag = USA_nebraska_5
+			}	
+		}
+	}
+    USA_nebraska_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_nebraska_5
+		}
+		visible = {
+			has_country_flag = USA_nebraska_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+				clr_country_flag = USA_nebraska_5
+				set_country_flag = USA_nebraska_6
+			}		
+		}
+	}
+    USA_nebraska_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_nebraska_6
+		}
+		visible = {
+			has_country_flag = USA_nebraska_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+				clr_country_flag = USA_nebraska_6
+				set_country_flag = USA_nebraska_7
+			}		
+		}
+	}
+    USA_nebraska_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_nebraska_7
+		}
+		visible = {
+			has_country_flag = USA_nebraska_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+                set_country_flag = nebraska_secede
+				clr_country_flag = USA_nebraska_7
+				set_country_flag = USA_nebraska_8
+			}		
+		}
+	}
+    USA_nebraska_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_nebraska_8
+		}
+		visible = {
+			has_country_flag = USA_nebraska_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+				clr_country_flag = USA_nebraska_8
+				set_country_flag = USA_nebraska_9
+			}		
+		}
+	}
+    USA_nebraska_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_nebraska_9
+		}
+		visible = {
+			has_country_flag = USA_nebraska_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.nebraska_loyalty = 1 }
+                set_country_flag = nebraska_both
+				clr_country_flag = USA_nebraska_9
+			}		
+		}
+	}
+	USA_kansas_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+				set_country_flag = USA_kansas_2
+			}			
+		}
+	}
+	USA_kansas_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_kansas_2
+		}
+		visible = {
+			has_country_flag = USA_kansas_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+				clr_country_flag = USA_kansas_2
+				set_country_flag = USA_kansas_3
+			}			
+		}
+	}
+    USA_kansas_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_kansas_3
+		}
+		visible = {
+			has_country_flag = USA_kansas_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+				clr_country_flag = USA_kansas_3
+				set_country_flag = USA_kansas_4
+			}		
+		}
+	}
+    USA_kansas_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_kansas_4
+		}
+		visible = {
+			has_country_flag = USA_kansas_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+                set_country_flag = kansas_militia	
+				clr_country_flag = USA_kansas_4
+				set_country_flag = USA_kansas_5
+			}	
+		}
+	}
+    USA_kansas_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_kansas_5
+		}
+		visible = {
+			has_country_flag = USA_kansas_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+				clr_country_flag = USA_kansas_5
+				set_country_flag = USA_kansas_6
+			}		
+		}
+	}
+    USA_kansas_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_kansas_6
+		}
+		visible = {
+			has_country_flag = USA_kansas_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+				clr_country_flag = USA_kansas_6
+				set_country_flag = USA_kansas_7
+			}		
+		}
+	}
+    USA_kansas_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_kansas_7
+		}
+		visible = {
+			has_country_flag = USA_kansas_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+                set_country_flag = kansas_secede
+				clr_country_flag = USA_kansas_7
+				set_country_flag = USA_kansas_8
+			}		
+		}
+	}
+    USA_kansas_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_kansas_8
+		}
+		visible = {
+			has_country_flag = USA_kansas_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+				clr_country_flag = USA_kansas_8
+				set_country_flag = USA_kansas_9
+			}		
+		}
+	}
+    USA_kansas_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_kansas_9
+		}
+		visible = {
+			has_country_flag = USA_kansas_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.kansas_loyalty = 1 }
+                set_country_flag = kansas_both
+				clr_country_flag = USA_kansas_9
+			}		
+		}
+	}
+	USA_colorado_2 = {
+
+		icon = eng_install_government
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+				set_country_flag = USA_colorado_2
+			}			
+		}
+	}
+	USA_colorado_3 = {
+
+		icon = eng_install_government
+
+		available = {
+			has_country_flag = USA_colorado_2
+		}
+		visible = {
+			has_country_flag = USA_colorado_2
+		}
+		cost = 20
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 10
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+				clr_country_flag = USA_colorado_2
+				set_country_flag = USA_colorado_3
+			}			
+		}
+	}
+    USA_colorado_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = USA_colorado_3
+		}
+		visible = {
+			has_country_flag = USA_colorado_3
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+				clr_country_flag = USA_colorado_3
+				set_country_flag = USA_colorado_4
+			}		
+		}
+	}
+    USA_colorado_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_colorado_4
+		}
+		visible = {
+			has_country_flag = USA_colorado_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+                set_country_flag = colorado_militia	
+				clr_country_flag = USA_colorado_4
+				set_country_flag = USA_colorado_5
+			}	
+		}
+	}
+    USA_colorado_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_colorado_5
+		}
+		visible = {
+			has_country_flag = USA_colorado_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+				clr_country_flag = USA_colorado_5
+				set_country_flag = USA_colorado_6
+			}		
+		}
+	}
+    USA_colorado_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_colorado_6
+		}
+		visible = {
+			has_country_flag = USA_colorado_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+				clr_country_flag = USA_colorado_6
+				set_country_flag = USA_colorado_7
+			}		
+		}
+	}
+    USA_colorado_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_colorado_7
+		}
+		visible = {
+			has_country_flag = USA_colorado_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+                set_country_flag = colorado_secede
+				clr_country_flag = USA_colorado_7
+				set_country_flag = USA_colorado_8
+			}		
+		}
+	}
+    USA_colorado_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_colorado_8
+		}
+		visible = {
+			has_country_flag = USA_colorado_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+				clr_country_flag = USA_colorado_8
+				set_country_flag = USA_colorado_9
+			}		
+		}
+	}
+    USA_colorado_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_colorado_9
+		}
+		visible = {
+			has_country_flag = USA_colorado_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.colorado_loyalty = 1 }
+                set_country_flag = colorado_both
+				clr_country_flag = USA_colorado_9
+			}		
+		}
+	}
+	USA_north_dakota_5 = {
+
+		icon = military_operation
+
+		available = {
+
+		}
+		visible = {
+
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.north_dakota_loyalty = 1 }
+                set_country_flag = north_dakota_militia
+				set_country_flag = USA_north_dakota_5
+			}	
+		}
+	}
+    USA_north_dakota_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_north_dakota_5
+		}
+		visible = {
+			has_country_flag = USA_north_dakota_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.north_dakota_loyalty = 1 }
+				clr_country_flag = USA_north_dakota_5
+				set_country_flag = USA_north_dakota_6
+			}		
+		}
+	}
+    USA_north_dakota_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_north_dakota_6
+		}
+		visible = {
+			has_country_flag = USA_north_dakota_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.north_dakota_loyalty = 1 }
+				clr_country_flag = USA_north_dakota_6
+				set_country_flag = USA_north_dakota_7
+			}		
+		}
+	}
+    USA_north_dakota_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_north_dakota_7
+		}
+		visible = {
+			has_country_flag = USA_north_dakota_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.north_dakota_loyalty = 1 }
+                set_country_flag = north_dakota_secede
+				clr_country_flag = USA_north_dakota_7
+				set_country_flag = USA_north_dakota_8
+			}		
+		}
+	}
+    USA_north_dakota_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_north_dakota_8
+		}
+		visible = {
+			has_country_flag = USA_north_dakota_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.north_dakota_loyalty = 1 }
+				clr_country_flag = USA_north_dakota_8
+				set_country_flag = USA_north_dakota_9
+			}		
+		}
+	}
+    USA_north_dakota_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_north_dakota_9
+		}
+		visible = {
+			has_country_flag = USA_north_dakota_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.north_dakota_loyalty = 1 }
+                set_country_flag = north_dakota_both
+				clr_country_flag = USA_north_dakota_9
+			}		
+		}
+	}
+	USA_south_dakota_4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+
+		}
+		visible = {
+
+		}
+		cost = 30
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+				set_country_flag = USA_south_dakota_4
+			}		
+		}
+	}
+    USA_south_dakota_5 = {
+
+		icon = military_operation
+
+		available = {
+			has_country_flag = USA_south_dakota_4
+		}
+		visible = {
+			has_country_flag = USA_south_dakota_4
+		}
+		cost = 40
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+                set_country_flag = south_dakota_militia	
+				clr_country_flag = USA_south_dakota_4
+				set_country_flag = USA_south_dakota_5
+			}	
+		}
+	}
+    USA_south_dakota_6 = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			has_country_flag = USA_south_dakota_5
+		}
+		visible = {
+			has_country_flag = USA_south_dakota_5
+		}
+		cost = 50
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+				clr_country_flag = USA_south_dakota_5
+				set_country_flag = USA_south_dakota_6
+			}		
+		}
+	}
+    USA_south_dakota_7 = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			has_country_flag =USA_south_dakota_6
+		}
+		visible = {
+			has_country_flag = USA_south_dakota_6
+		}
+		cost = 60
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+				clr_country_flag = USA_south_dakota_6
+				set_country_flag = USA_south_dakota_7
+			}		
+		}
+	}
+    USA_south_dakota_8 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_south_dakota_7
+		}
+		visible = {
+			has_country_flag = USA_south_dakota_7
+		}
+		cost = 70
+		fixed_random_seed = yes
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+                set_country_flag = south_dakota_secede
+				clr_country_flag = USA_south_dakota_7
+				set_country_flag = USA_south_dakota_8
+			}		
+		}
+	}
+    USA_south_dakota_9 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_south_dakota_8
+		}
+		visible = {
+			has_country_flag = USA_south_dakota_8
+		}
+		cost = 80
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+				clr_country_flag = USA_south_dakota_8
+				set_country_flag = USA_south_dakota_9
+			}		
+		}
+	}
+    USA_south_dakota_10 = {
+
+        icon = ger_mefo_bills
+
+		available = {
+			has_country_flag = USA_south_dakota_9
+		}
+		visible = {
+			has_country_flag = USA_south_dakota_9
+		}
+		cost = 90
+		fixed_random_seed = yes
+        fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+		    hidden_effect = {
+				add_to_variable = { USA.south_dakota_loyalty = 1 }
+                set_country_flag = south_dakota_both
+				clr_country_flag = USA_south_dakota_9
 			}		
 		}
 	}

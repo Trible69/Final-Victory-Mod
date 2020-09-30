@@ -840,45 +840,27 @@ country_event = {
 		custom_effect_tooltip = effect_for_election_trouble
 		hidden_effect = {
 			##########Decisions
-			unlock_decision_category_tooltip = USA_virginia
-			unlock_decision_category_tooltip = USA_west_virginia
-			unlock_decision_category_tooltip = USA_north_carolina
-			unlock_decision_category_tooltip = USA_south_carolina
-			unlock_decision_category_tooltip = USA_kentucky
-			unlock_decision_category_tooltip = USA_tennesse
-			unlock_decision_category_tooltip = USA_georgia
-			unlock_decision_category_tooltip = USA_mississipi
-			unlock_decision_category_tooltip = USA_florida
-			unlock_decision_category_tooltip = USA_alabama
-			unlock_decision_category_tooltip = USA_louisiana
-			unlock_decision_category_tooltip = USA_arkansas
-			unlock_decision_category_tooltip = USA_kansas
-			unlock_decision_category_tooltip = USA_nebraska
-			unlock_decision_category_tooltip = USA_colorado
-			unlock_decision_category_tooltip = USA_north_dakota
-			unlock_decision_category_tooltip = USA_south_dakota
-			unlock_decision_category_tooltip = USA_minnesota
-			unlock_decision_category_tooltip = USA_iowa
-			unlock_decision_category_tooltip = USA_wisconsin
-			unlock_decision_category_tooltip = USA_illinois
-			unlock_decision_category_tooltip = USA_michigan
-			unlock_decision_category_tooltip = USA_indiana
-			unlock_decision_category_tooltip = USA_ohio
+			unlock_decision_category_tooltip = USA_appalachian_states_loyalty
+			unlock_decision_category_tooltip = USA_corn_belt_states_loyalty
+			unlock_decision_category_tooltip = USA_lake_states_loyalty
+			unlock_decision_category_tooltip = USA_southeast_states_loyalty
+			unlock_decision_category_tooltip = USA_delta_states_loyalty
+			unlock_decision_category_tooltip = USA_north_plains_states_loyalty
 			##########Variables
 			set_variable = {
     			var = USA.virginia_loyalty
 	    		value = 2
 			}
 			set_variable = {
-    			var = USA.WV_loyalty
+    			var = USA.west_virginia_loyalty
 	    		value = 4
 			}
 			set_variable = {
-    			var = USA.NC_loyalty
+    			var = USA.north_carolina_loyalty
 	    		value = 2
 			}
 			set_variable = {
-    			var = USA.SC_loyalty
+    			var = USA.south_carolina_loyalty
 	    		value = 1
 			}
 			set_variable = {
@@ -926,11 +908,11 @@ country_event = {
 				value = 1
 			}
 			set_variable = {
-				var = USA.ND_loyalty
+				var = USA.north_dakota_loyalty
 				value = 4
 			}
 			set_variable = {
-				var = USA.SD_loyalty
+				var = USA.south_dakota_loyalty
 				value = 3
 			}
 			set_variable = {
@@ -960,6 +942,10 @@ country_event = {
 			set_variable = {
 				var = USA.ohio_loyalty
 				value = 2
+			}
+			set_variable = {
+				var = USA.missouri_loyalty
+				value = 1
 			}
 			set_variable = {
 				var = USA.miltia

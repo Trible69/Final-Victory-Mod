@@ -178,6 +178,221 @@ focus_tree = {
 			}
 		}
 	}
+		focus = {
+		id = MEX_department_of_industry
+		icon = GFX_generic_industry_1
+		x = 7
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+			
+		}
+		prerequisite = {focus = MEX_ditch_the_gold_standard}
+		ai_will_do = {
+			factor = 1
+		}
+        completion_reward = {
+			add_ideas = department_of_industry1
+		}
+	}
+	focus = {
+		id = MEX_the_complex
+		icon = GFX_generic_production
+		x = 7
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_department_of_industry}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_ideas = department_of_industry1
+				add_ideas = department_of_industry2
+			}
+		}
+	}
+    focus = {
+		id = MEX_civilian_research_complex
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_the_complex}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_tech_bonus = {
+				name = MEX_industrial_research
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = MEX_sponsor_new_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 6
+        cost = 7
+        available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_civilian_research_complex}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = MEX_the_military_factor
+		icon = GFX_generic_construct_mil_factory
+		x = 9
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_sponsor_new_industries}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = 3
+			}
+		}
+	}
+	focus = {
+		id = MEX_arms_quotas
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 9
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_the_military_factor}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = MEX_expand_current_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_sponsor_new_industries}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = MEX_recycle_old_equipment
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 7
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_expand_current_factories}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 2
+			    instant_build = yes
+			}	
+		}
+	}
+	focus = {
+		id = MEX_increase_the_complex
+		icon = GFX_goal_generic_construction
+		x = 8
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_recycle_old_equipment}
+		prerequisite = {focus = MEX_arms_quotas}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
 	##########Revolution path
 	focus = {
 		id = MEX_a_state_of_emergancy

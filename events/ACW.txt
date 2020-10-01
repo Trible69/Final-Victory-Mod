@@ -52,11 +52,18 @@ country_event = {
 		tag = USA
 		has_war_with = UAC
 		has_war_with = AMS
-		check_variable = {
-    		var = USA.virginia_loyalty
-    		value = USA.miltia
-    		compare = equals
-        }
+		OR = {	
+			check_variable = {
+    			var = USA.virginia_loyalty
+    			value = USA.miltia
+    			compare = equals
+        	}
+			check_variable = {
+    			var = USA.virginia_loyalty
+    			value = USA.miltia
+    			compare = greater_than
+        	}
+		}
 	}
 	mean_time_to_happen = { days = 1 }
 
@@ -82,7 +89,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.virginia_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.virginia_loyalty = USA.secede }
+			check_variable = { USA.virginia_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -104,7 +114,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.WV_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.WV_loyalty = USA.secede }
+			check_variable = { USA.WV_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -126,7 +139,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.WV_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.WV_loyalty = USA.miltia }
+			check_variable = { USA.WV_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -156,7 +172,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.kentucky_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.kentucky_loyalty = USA.miltia }
+			check_variable = { USA.kentucky_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -186,7 +205,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.kentucky_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.kentucky_loyalty = USA.secede }
+			check_variable = { USA.kentucky_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -208,7 +230,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.tennesse_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.tennesse_loyalty = USA.miltia }
+			check_variable = { USA.tennesse_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -238,7 +263,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.tennesse_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.tennesse_loyalty = USA.secede }
+			check_variable = { USA.tennesse_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -261,7 +289,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.NC_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.NC_loyalty = USA.miltia }
+			check_variable = { USA.NC_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -291,7 +322,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.NC_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.NC_loyalty = USA.secede }
+			check_variable = { USA.NC_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -314,7 +348,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.SC_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.SC_loyalty = USA.miltia }
+			check_variable = { USA.SC_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -344,7 +381,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.SC_loyalty = USA.secede }
+        OR = {	
+			check_variable = { USA.SC_loyalty = USA.secede }
+			check_variable = { USA.SC_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -367,7 +407,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.georgia_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.georgia_loyalty = USA.miltia }
+			check_variable = { USA.georgia_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -397,7 +440,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.georgia_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.georgia_loyalty = USA.secede }
+			check_variable = { USA.georgia_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -419,7 +465,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.florida_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.florida_loyalty = USA.miltia }
+			check_variable = { USA.florida_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -449,7 +498,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.florida_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.florida_loyalty = USA.secede }
+			check_variable = { USA.florida_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -472,7 +524,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.mississipi_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.mississipi_loyalty = USA.miltia }
+			check_variable = { USA.mississipi_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -502,7 +557,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.mississipi_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.mississipi_loyalty = USA.secede }
+			check_variable = { USA.mississipi_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -524,7 +582,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.louisiana_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.louisiana_loyalty = USA.miltia }
+			check_variable = { USA.louisiana_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -553,7 +614,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.louisiana_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.louisiana_loyalty = USA.secede }
+			check_variable = { USA.louisiana_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}	
 	mean_time_to_happen = { days = 1 }
@@ -575,7 +639,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.arkansas_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.arkansas_loyalty = USA.miltia }
+			check_variable = { USA.arkansas_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -604,7 +671,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.arkansas_loyalty = USA.secede }
+		OR = {
+        	check_variable = { USA.arkansas_loyalty = USA.secede }
+			check_variable = { USA.arkansas_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -626,7 +696,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.kansas_loyalty = USA.miltia }
+		OR = {
+        	check_variable = { USA.kansas_loyalty = USA.miltia }
+			check_variable = { USA.kansas_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -655,7 +728,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.kansas_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.kansas_loyalty = USA.secede }
+			check_variable = { USA.kansas_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -677,7 +753,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.kansas_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.kansas_loyalty = USA.miltia }
+			check_variable = { USA.kansas_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -706,7 +785,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.colorado_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.colorado_loyalty = USA.secede }
+			check_variable = { USA.colorado_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -728,7 +810,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.nebraska_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.nebraska_loyalty = USA.miltia }
+			check_variable = { USA.nebraska_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -757,7 +842,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.nebraska_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.nebraska_loyalty = USA.secede }
+			check_variable = { USA.nebraska_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -779,7 +867,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.SD_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.SD_loyalty = USA.miltia }
+			check_variable = { USA.SD_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -808,7 +899,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.SD_loyalty = USA.secede }
+		OR = {
+        	check_variable = { USA.SD_loyalty = USA.secede }
+			check_variable = { USA.SD_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -830,7 +924,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.ND_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.ND_loyalty = USA.miltia }
+			check_variable = { USA.ND_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -860,7 +957,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.ND_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.ND_loyalty = USA.secede }
+			check_variable = { USA.ND_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 
@@ -882,7 +982,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.minnesota_loyalty = USA.miltia }
+        OR = {	
+			check_variable = { USA.minnesota_loyalty = USA.miltia }
+			check_variable = { USA.minnesota_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -911,7 +1014,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.minnesota_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.minnesota_loyalty = USA.secede }
+			check_variable = { USA.minnesota_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -933,7 +1039,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.iowa_loyalty = USA.miltia }
+        OR = {	
+			check_variable = { USA.iowa_loyalty = USA.miltia }
+			check_variable = { USA.iowa_loyalty = USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -962,7 +1071,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.iowa_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.iowa_loyalty = USA.secede }
+			check_variable = { USA.iowa_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 
@@ -989,7 +1101,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.illinois_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.illinois_loyalty = USA.miltia }
+			check_variable = { USA.illinois_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -1018,7 +1133,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.illinois_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.illinois_loyalty = USA.secede }
+			check_variable = { USA.illinois_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -1040,7 +1158,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.wisconsin_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.wisconsin_loyalty = USA.miltia }
+			check_variable = { USA.wisconsin_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -1069,7 +1190,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.wisconsin_loyalty = USA.secede }
+		OR = {
+        	check_variable = { USA.wisconsin_loyalty = USA.secede }
+			check_variable = { USA.wisconsin_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }
@@ -1091,7 +1215,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.michigan_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.michigan_loyalty = USA.miltia }
+			check_variable = { USA.michigan_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -1120,7 +1247,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.michigan_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.michigan_loyalty = USA.secede }
+			check_variable = { USA.michigan_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 
@@ -1142,7 +1272,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.Indiana_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.Indiana_loyalty = USA.miltia }
+			check_variable = { USA.Indiana_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -1171,7 +1304,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.Indiana_loyalty = USA.secede }
+        OR = {
+			check_variable = { USA.Indiana_loyalty = USA.secede }
+			check_variable = { USA.Indiana_loyalty > USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 
@@ -1193,7 +1329,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.ND_loyalty = USA.miltia }
+        OR = {
+			check_variable = { USA.ND_loyalty = USA.miltia }
+			check_variable = { USA.ND_loyalty > USA.miltia }
+		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
 		has_war_with = UAC
@@ -1222,7 +1361,10 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        check_variable = { USA.ND_loyalty = USA.secede }
+        OR = {
+		check_variable = { USA.ND_loyalty > USA.secede }
+		check_variable = { USA.ND_loyalty = USA.secede }
+		}
 		has_global_flag = american_civil_war_begun
 	}
 	mean_time_to_happen = { days = 1 }

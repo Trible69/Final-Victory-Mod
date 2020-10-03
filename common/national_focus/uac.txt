@@ -265,81 +265,309 @@ focus_tree = {
 			add_war_support = 0.2
 		}
 	}
-
+	#######Recovery
+	#Focus for Lower Interest Rates
 	focus = {
-		id = UAC_reform_industry
-		icon = GFX_focus_generic_industry_1
-		x = 20
-		y = 0
+		id = UAC_lower_interest_rates
+		icon = GFX_goal_generic_scientific_exchange
+		x = 15
+		y = 12
 		cost = 5
 		available_if_capitulated = yes
-		available = {
-
-		}
+		prerequisite = { focus = UAC_address_the_economic_situation }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_stability = 0.1
+	}
+
+	#Focus for Address the Economic Situation
+	focus = {
+		id = UAC_address_the_economic_situation
+		icon = GFX_goal_generic_trade
+		x = 15
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_start_the_recovery }
+		ai_will_do = {
+			factor = 1
 		}
 	}
-	#######Recovery + Political 
+
+	#Focus for Start the Recovery
 	focus = {
 		id = UAC_start_the_recovery
-		icon = GFX_
+		icon = GFX_goal_tripartite_pact
 		x = 15
 		y = 10
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
-		available = {
-			has_idea = uac_recover_civil_war
-			has_idea = uac_ruined_economy
-			has_idea = uac_crippled_industry
-			has_idea = uac_shellshocked_populace
-		}
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-		}
 	}
+
+	#Focus for Rebuild the infastructure
 	focus = {
-		id = UAC_renegotiate_foreign_debts
-		icon = GFX_
-		x = 10
+		id = UAC_rebuild_the_infastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = {focus = UAC_start_the_recovery}
-		available = {
-			
-		}
+		prerequisite = { focus = UAC_start_the_recovery }
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_political_power = 150
+	}
+
+	#Focus for Salvage broken manufactories
+	focus = {
+		id = UAC_salvage_broken_manufactories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_subsidise_new_factories }
+		ai_will_do = {
+			factor = 1
 		}
 	}
+
+	#Focus for Every Man a Job
 	focus = {
-		id = UAC_renegotiate_foreign_debts
-		icon = GFX_
-		x = 10
+		id = UAC_every_man_a_job
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 12
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_salvage_broken_manufactories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Complete the Power Grid
+	focus = {
+		id = UAC_complete_the_power_grid
+		icon = GFX_goal_generic_consumer_goods
+		x = 12
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_every_man_a_job }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create Permanent Unions
+	focus = {
+		id = UAC_create_permanent_unions
+		icon = GFX_goal_generic_territory_or_war
+		x = 15
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_lower_interest_rates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Workers' Rights Bill
+	focus = {
+		id = UAC_the_workers_rights_bill
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 15
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_create_permanent_unions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reward the Soldiers
+	focus = {
+		id = UAC_reward_the_soldiers
+		icon = GFX_focus_generic_military_mission
+		x = 9
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_renegotiate_foreign_debts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promises of Stability
+	focus = {
+		id = UAC_promises_of_stability
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_reward_the_soldiers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Normalize Society
+	focus = {
+		id = UAC_normalize_society
+		icon = GFX_goal_generic_neutrality_focus
+		x = 9
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_promises_of_stability }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Relief Programs
+	focus = {
+		id = UAC_relief_programs
+		icon = GFX_goal_generic_national_unity
+		x = 18
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = {focus = UAC_start_the_recovery}
-		available = {
-			
+		prerequisite = { focus = UAC_start_the_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Renegotiate foreign debts
+	focus = {
+		id = UAC_renegotiate_foreign_debts
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 9
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_start_the_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Department of Homeland Security
+	focus = {
+		id = UAC_department_of_homeland_security
+		icon = GFX_focus_eng_crush_the_dream
+		x = 18
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_establish_labor_week }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promote Education Camps
+	focus = {
+		id = UAC_promote_education_camps
+		icon = GFX_focus_generic_support_the_left_right
+		x = 18
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_relief_programs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Draw the Commune Lines
+	focus = {
+		id = UAC_draw_the_commune_lines
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 15
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_the_workers_rights_bill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Subsidise new factories
+	focus = {
+		id = UAC_subsidise_new_factories
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_rebuild_the_infastructure }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establish Labor Week
+	focus = {
+		id = UAC_establish_labor_week
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 18
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_promote_education_camps }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Weed-out Dissenters
+	focus = {
+		id = UAC_weedout_dissenters
+		icon = GFX_goal_demand_sudetenland
+		x = 18
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_department_of_homeland_security }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Instate the Communes
+	focus = {
+		id = UAC_instate_the_communes
+		icon = GFX_goal_generic_soviet_construction
+		x = 15
+		y = 16
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_weedout_dissenters 
+		}
+		prerequisite = { 
+			focus = UAC_draw_the_commune_lines 
+		}
+		prerequisite = { 
+			focus = UAC_complete_the_power_grid 
+		}
+		prerequisite = { 
+			focus = UAC_normalize_society 
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
+	} 
 #End of focuses 
  }

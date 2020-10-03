@@ -1248,5 +1248,317 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	#######Industry
+	#Focus for Build the North
+	focus = {
+		id = UAC_build_the_north
+		icon = GFX_goal_generic_production
+		x = 44
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_finance_new_industries }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Build Up
+	focus = {
+		id = UAC_military_build_up
+		icon = GFX_goal_generic_small_arms
+		x = 42
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_interstate_integration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Industry Integration Act
+	focus = {
+		id = UAC_the_industry_integration_act
+		icon = GFX_goal_generic_soviet_construction
+		x = 39
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_a_ship_a_day_bill 
+		}
+		prerequisite = { 
+			focus = UAC_rapid_ship_building 
+		}
+		prerequisite = { 
+			focus = UAC_the_vanguardists_deal 
+		}
+		prerequisite = { 
+			focus = UAC_a_workers_industry 
+		}
+		prerequisite = { 
+			focus = UAC_a_push_for_integration 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Ship A Day Bill
+	focus = {
+		id = UAC_a_ship_a_day_bill
+		icon = GFX_goal_generic_forceful_treaty
+		x = 34
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_the_naval_base_initiative }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Naval Base Initiative
+	focus = {
+		id = UAC_the_naval_base_initiative
+		icon = GFX_focus_generic_steel
+		x = 36
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_increase_naval_production }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Naval Production
+	focus = {
+		id = UAC_increase_naval_production
+		icon = GFX_goal_generic_production2
+		x = 36
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_the_naval_administration_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Naval Administration Act
+	focus = {
+		id = UAC_the_naval_administration_act
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 36
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_reform_the_industrial_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform the Industrial Administration
+	focus = {
+		id = UAC_reform_the_industrial_administration
+		icon = GFX_goal_generic_construct_civilian
+		x = 38
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rapid Ship Building
+	focus = {
+		id = UAC_rapid_ship_building
+		icon = GFX_goal_generic_navy_battleship
+		x = 36
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_the_naval_base_initiative }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economic Reform
+	focus = {
+		id = UAC_economic_reform
+		icon = GFX_goal_generic_consumer_goods
+		x = 38
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_reform_the_industrial_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Research Investments
+	focus = {
+		id = UAC_research_investments
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 38
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_economic_reform }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Exploit Natural Resources
+	focus = {
+		id = UAC_exploit_natural_resources
+		icon = GFX_goal_generic_oil_refinery
+		x = 38
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_research_investments }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Vanguardists Deal
+	focus = {
+		id = UAC_the_vanguardists_deal
+		icon = GFX_goal_support_fourth_int
+		x = 38
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_exploit_natural_resources }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industry Research
+	focus = {
+		id = UAC_industry_research
+		icon = GFX_focus_research2
+		x = 40
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_reform_the_industrial_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Try to Pass the Worker's bill
+	focus = {
+		id = UAC_try_to_pass_the_workers_bill
+		icon = GFX_goal_generic_war_with_comintern
+		x = 40
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_industry_research }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build more Factories
+	focus = {
+		id = UAC_build_more_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 40
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_try_to_pass_the_workers_bill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Worker's Industry
+	focus = {
+		id = UAC_a_workers_industry
+		icon = GFX_focus_generic_tank_production
+		x = 40
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_build_more_factories }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Interstate Integration
+	focus = {
+		id = UAC_interstate_integration
+		icon = GFX_goal_generic_radar
+		x = 42
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_reform_the_industrial_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Military Bill
+	focus = {
+		id = UAC_the_new_military_bill
+		icon = GFX_goal_anschluss
+		x = 42
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_military_build_up }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Push for Integration
+	focus = {
+		id = UAC_a_push_for_integration
+		icon = GFX_goal_tripartite_pact
+		x = 42
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_the_new_military_bill 
+		}
+		prerequisite = { 
+			focus = UAC_build_the_north 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Finance new industries
+	focus = {
+		id = UAC_finance_new_industries
+		icon = GFX_focus_mex_privatisation
+		x = 44
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_interstate_integration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 #End of focuses 
  }

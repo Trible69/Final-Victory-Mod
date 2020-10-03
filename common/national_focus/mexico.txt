@@ -178,7 +178,7 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = MEX_department_of_industry
 		icon = GFX_generic_industry_1
 		x = 7
@@ -391,6 +391,252 @@ focus_tree = {
 				level = 2
 				instant_build = yes
 			}
+		}
+	}
+	focus = {
+		id = MEX_department_of_land
+		icon = GFX_goal_generic_construction2
+        x = 13
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_ditch_the_gold_standard}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = department_of_land1
+		}
+	} 
+	focus = {
+		id = MEX_oil_expeditions
+		icon = GFX_goal_generic_oil_refinery
+		x = 13
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_department_of_land}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 485
+			}
+		}
+	}
+	focus = {
+		id = MEX_carretera_federal
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_oil_expeditions}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_owned_states = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}  	
+	}
+    focus = {
+		id = MEX_a_healthy_balance
+		icon = GFX_goal_generic_construction 
+		x = 12
+		y = 6
+		cost = 7
+		available_if_capitulated = yes 
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_carretera_federal}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_ideas = department_of_land1
+				add_ideas = department_of_land2
+			}
+		}
+	}
+	focus = {
+		id = MEX_synthetics_research
+		icon = GFX_goal_generic_oil_refinery
+		x = 13
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_a_healthy_balance}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = synth_resources
+			}
+		}
+	}
+	focus = {
+		id = MEX_refineries_of_the_rio
+		icon = GFX_goal_generic_oil_refinery
+		x = 13
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_synthetics_research}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil 
+				amount = 10
+				state = 480
+			}
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 479
+			}
+		}
+	}
+	focus = {
+		id = MEX_total_extraction
+		icon = GFX_goal_generic_construction2
+		x = 11
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_a_healthy_balance}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+	focus = {
+		id = MEX_expand_mining_operations
+		icon = GFX_goal_generic_consumer_goods
+		x = 11
+		y = 8
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_total_extraction}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_ideas = department_of_industry2
+				add_ideas = department_of_industry3
+			}
+		}
+	}
+	focus = {
+		id = MEX_the_global_market
+		icon = GFX_focus_mex_privatisation
+		x = 12
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_expand_mining_operations}
+		prerequisite = {focus = MEX_refineries_of_the_rio}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = export_focus
+		}
+	}
+	focus = {
+		id = MEX_instituto_nacional_de_economia
+		icon = GFX_focus_research
+		x = 10
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_mexican_finacial_administration}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = MEX_the_mexican_miracle
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 10
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		prerequisite = {focus = MEX_the_global_market}
+		prerequisite = {focus = MEX_instituto_nacional_de_economia}
+		prerequisite = {focus = MEX_increase_the_complex}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.20
+			add_war_support = 0.10
 		}
 	}
 	##########Revolution path
@@ -978,3 +1224,5 @@ focus_tree = {
 		}
 	}
 }
+
+	 

@@ -119,7 +119,7 @@ AMS_lindberg_support = {
 
         available = {
             not = {
-                has_country_flag = thurmond_choice
+                has_country_flag = lindberg_choice
             }
         }
 
@@ -320,7 +320,7 @@ AMS_moseley_support = {
 
         available = {
             not = {
-                has_country_flag = thurmond_choice
+                has_country_flag = moseley_choice
             }
         }
 

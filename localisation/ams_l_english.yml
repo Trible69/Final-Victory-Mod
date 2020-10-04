@@ -149,3 +149,7 @@ AMS_take_the_southern_friend_desc:0 ""
  AMS.1.d:0 "The bloody conflict has finally ended with thousands of lives lost to the brutal battle. Now is the time for healing, and to prevent this from ever happening again."
  AMS.1.a:0 "Recovery is important"
 ##########Decisions###########
+ AMS_lindberg_support:0 "Lindbergh's Support"
+ AMS_lindberg_support_desc:0 "Lindbergh's position is slowly strengthening! He has currently [?AMS.lindberg_support|+0] §H influence in the government§! \nMoseley is greatly increasing the influence of the military in America! He has currently [?AMS.moseley_support|+0] §Hinfluence in the government§! \nThurmond's group is breaking down all sides to gain power! He has currently [?AMS.thurmond_support|+0] §H influence in the government§!"
+ AMS_moseley_support:0 "Moseley's Support"
+ AMS_moseley_support_desc:0 "Lindbergh's position is slowly strengthening! He has currently [?AMS.lindberg_support|+0] §H influence in the government§! \nMoseley is greatly increasing the influence of the military in America! He has currently [?AMS.moseley_support|+0] §Hinfluence in the government§! \nThurmond's group is breaking down all sides to gain power! He has currently [?AMS.thurmond_support|+0] §H influence in the government§!"

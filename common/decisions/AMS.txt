@@ -1,0 +1,395 @@
+AMS_lindberg_support = {
+	find_loyalists = {
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 20
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.lindberg_support = 2 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+	incentives_as_bribes = {
+
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 50
+		days_remove = 10
+        days_re_enable = 30
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.lindberg_support = 3 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+    reduce_military_influence = {
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 30
+		days_remove = 30
+        days_re_enable = 40
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.lindberg_support = 2 }
+                subtract_from_variable = { AMS.moseley_support = 1 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+    speeches_for_american_people = {
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 50
+        days_re_enable = 60
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.lindberg_support = 2 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+	AMS_power_struggle = {
+
+        allowed = { tag = AMS }
+
+        available = {
+            has_stability > 1
+        }
+
+        activation = {
+            has_country_flag = lindberg_choice
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 365
+
+        timeout_effect = {
+            clr_country_flag = lindberg_choice
+        }
+
+        complete_effect = {
+			clr_country_flag = lindberg_choice
+        }
+    }
+	moseley_moves = {
+
+        allowed = { tag = AMS }
+
+        available = {
+            not = {
+                has_country_flag = lindberg_choice
+            }
+        }
+
+        activation = {
+            has_country_flag = lindberg_choice
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 20
+
+        timeout_effect = {
+			add_to_variable = { AMS.moseley_support = 2 }
+        }
+
+        complete_effect = {
+			
+        }
+    }
+	thurmond_moves = {
+
+        allowed = { tag = AMS }
+
+        available = {
+            not = {
+                has_country_flag = lindberg_choice
+            }
+        }
+
+        activation = {
+            has_country_flag = lindberg_choice
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 20
+
+        timeout_effect = {
+			add_to_variable = { AMS.thurmond_support = 2 }
+        }
+
+        complete_effect = {
+			
+        }
+    }
+}
+AMS_moseley_support = {
+	gather_military_support = {
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 30
+		days_remove = 30
+		days_re_enable = 40
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.moseley_support = 2 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+	replace_security_guards = {
+
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		days_remove = 20
+        days_re_enable = 30
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.moseley_support = 3 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+    race_restrictions_military = {
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 40
+		days_remove = 40
+        days_re_enable = 45
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.moseley_support = 3 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+    advocate_for_mil_growth = {
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = support_actions
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = support_actions
+			}
+		}
+		visible = {
+			
+		}
+		cost = 30
+		days_remove = 10
+        days_re_enable = 30
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			hidden_effect = {
+                add_to_variable = { AMS.moseley_support = 2 }
+				clr_country_flag = support_actions
+            }
+        }
+	}
+	AMS_power_struggle = {
+
+        allowed = { tag = AMS }
+
+        available = {
+            has_stability > 1
+        }
+
+        activation = {
+            has_country_flag = moseley_choice
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 365
+
+        timeout_effect = {
+            clr_country_flag = moseley_choice
+        }
+
+        complete_effect = {
+			clr_country_flag = moseley_choice
+        }
+    }
+	lindberg_moves = {
+
+        allowed = { tag = AMS }
+
+        available = {
+            not = {
+                has_country_flag = moseley_choice
+            }
+        }
+
+        activation = {
+            has_country_flag = moseley_choice
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 20
+
+        timeout_effect = {
+			add_to_variable = { AMS.lindberg_support = 2 }
+        }
+
+        complete_effect = {
+			
+        }
+    }
+	thurmond_moves = {
+
+        allowed = { tag = AMS }
+
+        available = {
+            not = {
+                has_country_flag = moseley_choice
+            }
+        }
+
+        activation = {
+            has_country_flag = moseley_choice
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 20
+
+        timeout_effect = {
+			add_to_variable = { AMS.thurmond_support = 2 }
+        }
+
+        complete_effect = {
+			
+        }
+    }
+}

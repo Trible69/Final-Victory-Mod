@@ -1,0 +1,32 @@
+################
+##### AMS ######
+################
+
+####AMS Power Struggle
+AMS_lindberg_support = {
+	allowed = {
+		original_tag = AMS
+	}
+    visible = {
+        tag = AMS
+        has_country_flag = lindberg_choice
+	}
+}
+AMS_moseley_support = {
+	allowed = {
+		original_tag = AMS
+	}
+    visible = {
+        tag = AMS
+        has_country_flag = moseley_choice
+	}
+}
+AMS_thurmond_support = {
+	allowed = {
+		original_tag = AMS
+	}
+    visible = {
+        tag = AMS
+        has_country_flag = thurmond_choice
+	}
+}

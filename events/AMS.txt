@@ -23,5 +23,84 @@ country_event = {
 		add_ideas = ams_ruined_economy
 		add_ideas = ams_crippled_industry
 		add_ideas = ams_shellshocked_populace
+		hidden_effect = {
+			country_event = {
+				id = AMS.2
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = AMS.2
+	title = AMS.2.t
+	desc = AMS.2.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS.2.a
+		ai_chance = { factor = 30}
+		unlock_decision_category_tooltip = AMS_lindberg_support
+		set_variable = {
+			var = AMS.lindberg_support
+			value = 0
+		}
+		set_variable = {
+			var = AMS.moseley_support
+			value = 0
+		}
+		set_variable = {
+			var = AMS.thurmond_support
+			value = 0
+		}
+		hidden_effect = {
+			set_country_flag = lindberg_choice
+		}
+	}
+	option = {
+		name = AMS.2.b
+		ai_chance = { factor = 30}
+		unlock_decision_category_tooltip = AMS_moseley_support
+		set_variable = {
+			var = AMS.lindberg_support
+			value = 0
+		}
+		set_variable = {
+			var = AMS.moseley_support
+			value = 0
+		}
+		set_variable = {
+			var = AMS.thurmond_support
+			value = 0
+		}
+		hidden_effect = {
+			set_country_flag = moseley_choice
+		}
+	}
+	option = {
+		name = AMS.2.c
+		ai_chance = { factor = 30}
+		unlock_decision_category_tooltip = AMS_thurmond_support
+		set_variable = {
+			var = AMS.lindberg_support
+			value = 0
+		}
+		set_variable = {
+			var = AMS.moseley_support
+			value = 0
+		}
+		set_variable = {
+			var = AMS.thurmond_support
+			value = 0
+		}
+		hidden_effect = {
+			set_country_flag = thurmond_choice
+		}
 	}
 }

@@ -1829,5 +1829,222 @@ focus_tree = {
         	}
 		}
 	}
+	#political 
+	#Focus for Governors Represent
+	focus = {
+		id = UAC_governors_represent
+		icon = GFX_focus_generic_self_management
+		x = 14
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_the_communes_and_the_party }
+		mutually_exclusive = { focus = UAC_the_peoples_decisions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Question of Industry
+	focus = {
+		id = UAC_a_question_of_industry
+		icon = GFX_focus_generic_military_academy
+		x = 17
+		y = 17
+		cost = 10
+		prerequisite = {
+			focus = UAC_instate_the_communes
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Communes and the Party
+	focus = {
+		id = UAC_the_communes_and_the_party
+		icon = GFX_goal_generic_propaganda
+		x = 13
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = UAC_instate_the_communes
+		}
+	}
+
+	#Focus for The People's Decisions
+	focus = {
+		id = UAC_the_peoples_decisions
+		icon = GFX_goal_generic_dangerous_deal
+		x = 12
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_the_communes_and_the_party }
+		mutually_exclusive = { focus = UAC_governors_represent }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Even Level
+	focus = {
+		id = UAC_an_even_level
+		icon = GFX_goal_generic_neutrality_focus
+		x = 12
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_the_peoples_decisions 
+			focus = UAC_governors_represent 
+		}
+		mutually_exclusive = { focus = UAC_power_basin }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Power Basin
+	focus = {
+		id = UAC_power_basin
+		icon = GFX_goal_generic_territory_or_war
+		x = 14
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_the_peoples_decisions 
+			focus = UAC_governors_represent 
+		}
+		mutually_exclusive = { focus = UAC_an_even_level }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Political Outreach
+	focus = {
+		id = UAC_political_outreach
+		icon = GFX_focus_spr_class_war
+		x = 13
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_an_even_level 
+			focus = UAC_power_basin 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Communal Control
+	focus = {
+		id = UAC_communal_control
+		icon = GFX_focus_generic_soviet_politics
+		x = 16
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_a_question_of_industry }
+		mutually_exclusive = { focus = UAC_central_planning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Drop Currency
+	focus = {
+		id = UAC_drop_currency
+		icon = GFX_focus_mex_privatisation
+		x = 18
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_communal_control 
+			focus = UAC_central_planning 
+		}
+		mutually_exclusive = { focus = UAC_central_bank }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Central Bank
+	focus = {
+		id = UAC_central_bank
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 16
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_central_planning 
+			focus = UAC_communal_control 
+		}
+		mutually_exclusive = { focus = UAC_drop_currency }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Central Planning
+	focus = {
+		id = UAC_central_planning
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 18
+		y = 18
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = UAC_a_question_of_industry }
+		mutually_exclusive = { focus = UAC_communal_control }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Economic Internationale
+	focus = {
+		id = UAC_the_economic_internationale
+		icon = GFX_goal_generic_scientific_exchange
+		x = 17
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_central_bank 
+			focus = UAC_drop_currency 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The First Congress
+	focus = {
+		id = UAC_the_first_congress
+		icon = GFX_UAC_the_first_congress-52241
+		x = 15
+		y = 21
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = UAC_political_outreach 
+		}
+		prerequisite = { 
+			focus = UAC_the_economic_internationale 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 #End of focuses 
  }

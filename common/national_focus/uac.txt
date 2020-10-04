@@ -1261,6 +1261,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Military Build Up
@@ -1274,6 +1293,25 @@ focus_tree = {
 		prerequisite = { focus = UAC_interstate_integration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1303,6 +1341,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = the_vanguardists_deal
+    			add_idea = naval_administration_act_2
+			}
+		}
 	}
 
 	#Focus for A Ship A Day Bill
@@ -1316,6 +1360,29 @@ focus_tree = {
 		prerequisite = { focus = UAC_the_naval_base_initiative }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = naval_administration_act_1
+    			add_idea = naval_administration_act_2
+			}
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = dockyard
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = dockyard
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1331,6 +1398,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = naval_administration_act
+    			add_idea = naval_administration_act_1
+			}
+		}
 	}
 
 	#Focus for Increase Naval Production
@@ -1344,6 +1417,25 @@ focus_tree = {
 		prerequisite = { focus = UAC_the_naval_administration_act }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = dockyard
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 6
+
+            	add_building_construction = {
+                	type = dockyard
+                	level = 6
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1359,6 +1451,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = naval_administration_act
+		}
 	}
 
 	#Focus for Reform the Industrial Administration
@@ -1371,6 +1466,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
 		}
 	}
 
@@ -1386,6 +1485,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = dockyard
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 10
+
+            	add_building_construction = {
+                	type = dockyard
+                	level = 10
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Economic Reform
@@ -1399,6 +1517,10 @@ focus_tree = {
 		prerequisite = { focus = UAC_reform_the_industrial_administration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
 		}
 	}
 
@@ -1414,6 +1536,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
 	#Focus for Exploit Natural Resources
@@ -1427,6 +1552,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_research_investments }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = synth_resources
+			}
 		}
 	}
 
@@ -1442,6 +1574,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = the_vanguardists_deal
+		}
 	}
 
 	#Focus for Industry Research
@@ -1455,6 +1590,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_reform_the_industrial_administration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = industry
+			}
 		}
 	}
 
@@ -1470,6 +1612,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
 	}
 
 	#Focus for Build more Factories
@@ -1483,6 +1629,25 @@ focus_tree = {
 		prerequisite = { focus = UAC_try_to_pass_the_workers_bill }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1498,6 +1663,59 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = dockyard
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 1
+
+            	add_building_construction = {
+                	type = dockyard
+                	level = 1
+                	instant_build = yes
+            	}
+        	}
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 1
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+                	instant_build = yes
+            	}
+        	}
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 1
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 1
+                	instant_build = yes
+            	}
+        	}
+		}
 	}
 
 	#Focus for Interstate Integration
@@ -1512,6 +1730,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			all_owned_state = {
+				add_building_construction = {
+                	type = infrastructure
+                	level = 2
+                	instant_build = yes
+            	}
+			}
+		}
 	}
 
 	#Focus for The New Military Bill
@@ -1525,6 +1752,25 @@ focus_tree = {
 		prerequisite = { focus = UAC_military_build_up }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 
@@ -1545,6 +1791,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -100
+		}
 	}
 
 	#Focus for Finance new industries
@@ -1558,6 +1808,25 @@ focus_tree = {
 		prerequisite = { focus = UAC_interstate_integration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+                	include_locked = yes
+            	}
+
+            	add_extra_state_shared_building_slots = 3
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 3
+                	instant_build = yes
+            	}
+        	}
 		}
 	}
 #End of focuses 

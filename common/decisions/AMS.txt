@@ -1,5 +1,5 @@
 AMS_lindberg_support = {
-	find_loyalists = {
+	AMS_find_loyalists = {
 
 		complete_effect = {
 			hidden_effect = {
@@ -46,6 +46,7 @@ AMS_lindberg_support = {
 		cost = 50
 		days_remove = 10
         days_re_enable = 30
+		custom_effect_tooltip = AMS_2_influence_lindberg
 		ai_will_do = {
 			factor = 25
 		}
@@ -73,6 +74,8 @@ AMS_lindberg_support = {
 		}
 		cost = 30
 		days_remove = 30
+		custom_effect_tooltip = AMS_2_influence_lindberg
+		custom_effect_tooltip = AMS_1_minus_influence_moseley
         days_re_enable = 40
 		ai_will_do = {
 			factor = 25
@@ -103,6 +106,7 @@ AMS_lindberg_support = {
 		cost = 25
 		days_remove = 50
         days_re_enable = 60
+		custom_effect_tooltip = AMS_2_influence_lindberg
 		ai_will_do = {
 			factor = 25
 		}
@@ -161,6 +165,8 @@ AMS_lindberg_support = {
 
         days_mission_timeout = 15
 
+		custom_effect_tooltip = AMS_2_influence_moseley
+
         timeout_effect = {
 			add_to_variable = { AMS.moseley_support = 2 }
         }
@@ -184,6 +190,8 @@ AMS_lindberg_support = {
         }
 
         is_good = no
+
+		custom_effect_tooltip = AMS_2_influence_thurmond
 
         selectable_mission = no
 

@@ -85,11 +85,14 @@ news_event = {
 			361 = { is_controlled_by = AMS }
 		}
 		361 = { is_owned_by = USA }
+		USA = {
+			OR = {
+				has_war_with = UAC 
+				has_war_with = AMS
+			}
+		}
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
 	
 	option = {
 		name = news.3.a
@@ -135,10 +138,6 @@ news_event = {
 		360 = { is_owned_by = USA }
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {
 		name = news.4.a
 		trigger = {
@@ -183,9 +182,6 @@ news_event = {
 		358 = { is_owned_by = USA }
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
 	
 	option = {
 		name = news.5.a
@@ -231,9 +227,7 @@ news_event = {
 		358 = { is_owned_by = USA }
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
+
 	
 	option = {
 		name = news.6.a
@@ -277,10 +271,6 @@ news_event = {
 			393 = { is_controlled_by = AMS }
 		}
 		393 = { is_owned_by = USA }
-	}
-
-	mean_time_to_happen = {
-		days = 1
 	}
 	
 	option = {
@@ -327,9 +317,6 @@ news_event = {
 		395 = { is_owned_by = UAC }
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
 	
 	option = {
 		name = news.8.a

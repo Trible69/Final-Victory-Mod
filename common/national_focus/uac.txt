@@ -278,6 +278,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = uac_ruined_economy_1
+			add_political_power = -100
+		}
 	}
 
 	#Focus for Address the Economic Situation
@@ -292,6 +296,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = uac_ruined_economy
+    			add_idea = uac_ruined_economy_1
+			}
+		}
 	}
 
 	#Focus for Start the Recovery
@@ -304,6 +314,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -319,6 +332,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			all_owned_state = {
+				add_building_construction = {
+                	type = infrastructure
+                	level = 1
+                	instant_build = yes
+            	}
+			}
+		}
 	}
 
 	#Focus for Salvage broken manufactories
@@ -332,6 +354,9 @@ focus_tree = {
 		prerequisite = { focus = UAC_subsidise_new_factories }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = uac_crippled_industry_1
 		}
 	}
 
@@ -347,6 +372,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower = -50000
+			add_ideas = a_full_economy
+		}
 	}
 
 	#Focus for Complete the Power Grid
@@ -360,6 +389,10 @@ focus_tree = {
 		prerequisite = { focus = UAC_every_man_a_job }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
 		}
 	}
 
@@ -375,6 +408,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = workers_representation
+		}
 	}
 
 	#Focus for The Workers' Rights Bill
@@ -388,6 +424,12 @@ focus_tree = {
 		prerequisite = { focus = UAC_create_permanent_unions }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = workers_representation
+    			add_idea = workers_representation_1
+			}
 		}
 	}
 
@@ -403,6 +445,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower = -100000
+			swap_ideas = {
+    			remove_idea = uac_recover_civil_war
+    			add_idea = uac_recover_civil_war_1
+			}
+		}
 	}
 
 	#Focus for Promises of Stability
@@ -414,9 +463,15 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_reward_the_soldiers }
+		available = {
+			stability > 60
+		}
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = uac_recover_civil_war_1
+		}	
 	}
 
 	#Focus for Normalize Society
@@ -428,8 +483,15 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_promises_of_stability }
+		available = {
+			stability > 80
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_war_support = 0.15
 		}
 	}
 
@@ -445,6 +507,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = uac_shellshocked_populace
+    			add_idea = uac_shellshocked_populace_1
+			}
+		}
 	}
 
 	#Focus for Renegotiate foreign debts
@@ -458,6 +526,9 @@ focus_tree = {
 		prerequisite = { focus = UAC_start_the_recovery }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = { idea = renegotiated_debts  days = 180 }
 		}
 	}
 
@@ -473,6 +544,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			create_intelligence_agency = yes
+			add_ideas = department_of_homeland_security
+		}
 	}
 
 	#Focus for Promote Education Camps
@@ -487,6 +562,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = socialist_education
+		}
 	}
 
 	#Focus for Draw the Commune Lines
@@ -498,8 +576,16 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_the_workers_rights_bill }
+		available = {
+			stability > 60
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_timed_idea = { idea = restructuring_of_states  days = 100 }
 		}
 	}
 
@@ -515,6 +601,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = uac_crippled_industry
+    			add_idea = uac_crippled_industry_1
+			}
+			add_political_power = -100
+		}
 	}
 
 	#Focus for Establish Labor Week
@@ -529,6 +622,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = uac_shellshocked_populace_1
+		}
 	}
 
 	#Focus for Weed-out Dissenters
@@ -542,6 +638,12 @@ focus_tree = {
 		prerequisite = { focus = UAC_department_of_homeland_security }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = department_of_homeland_security
+    			add_idea = department_of_homeland_security_1
+			}
 		}
 	}
 
@@ -565,8 +667,55 @@ focus_tree = {
 		prerequisite = { 
 			focus = UAC_normalize_society 
 		}
+		available = {
+			NOT = {
+				has_ideas = restructuring_of_states
+			}
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = industrial_complex
+                    	size > 0
+                	}
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+			random_owned_controlled_state={
+            	limit = {
+                	free_building_slots = {
+                    	building = arms_factory
+                    	size > 0
+                	}
+            	}
+
+            	add_extra_state_shared_building_slots = 2
+
+            	add_building_construction = {
+                	type = arms_factory
+                	level = 2
+                	instant_build = yes
+            	}
+        	}
+			all_owned_state = {
+				add_building_construction = {
+                	type = infrastructure
+                	level = 1
+                	instant_build = yes
+            	}
+			}
+			add_war_support = 0.20
 		}
 	}
 	###Military 
@@ -1268,7 +1417,6 @@ focus_tree = {
                     	building = industrial_complex
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 3
@@ -1301,7 +1449,6 @@ focus_tree = {
                     	building = arms_factory
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 3
@@ -1344,7 +1491,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
     			remove_idea = the_vanguardists_deal
-    			add_idea = naval_administration_act_2
+    			add_idea = integrated_industry
 			}
 		}
 	}
@@ -1367,13 +1514,10 @@ focus_tree = {
     			add_idea = naval_administration_act_2
 			}
 			random_owned_controlled_state={
-            	limit = {
-                	free_building_slots = {
-                    	building = dockyard
-                    	size > 0
-                	}
-                	include_locked = yes
-            	}
+				free_building_slots = {
+                	building = dockyard
+                	size > 0
+                }
 
             	add_extra_state_shared_building_slots = 3
 
@@ -1420,13 +1564,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_owned_controlled_state={
-            	limit = {
-                	free_building_slots = {
-                    	building = dockyard
-                    	size > 0
-                	}
-                	include_locked = yes
-            	}
+				free_building_slots = {
+                	building = dockyard
+                	size > 0
+                }
 
             	add_extra_state_shared_building_slots = 6
 
@@ -1487,22 +1628,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_owned_controlled_state={
-            	limit = {
-                	free_building_slots = {
-                    	building = dockyard
-                    	size > 0
-                	}
-                	include_locked = yes
-            	}
-
-            	add_extra_state_shared_building_slots = 10
-
-            	add_building_construction = {
-                	type = dockyard
-                	level = 10
-                	instant_build = yes
-            	}
-        	}
+				free_building_slots = {
+                	building = dockyard
+                	size > 0
+                }
+				add_extra_state_shared_building_slots = 10
+ 				add_building_construction = {
+ 					type = dockyard
+ 					level = 10
+ 					instant_build = yes
+		 		}
+ 			}
 		}
 	}
 
@@ -1637,7 +1773,6 @@ focus_tree = {
                     	building = industrial_complex
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 2
@@ -1665,14 +1800,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			random_owned_controlled_state={
-            	limit = {
-                	free_building_slots = {
-                    	building = dockyard
-                    	size > 0
-                	}
-                	include_locked = yes
-            	}
-
+				free_building_slots = {
+                	building = dockyard
+                	size > 0
+                }
             	add_extra_state_shared_building_slots = 1
 
             	add_building_construction = {
@@ -1687,7 +1818,6 @@ focus_tree = {
                     	building = industrial_complex
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 1
@@ -1704,7 +1834,6 @@ focus_tree = {
                     	building = arms_factory
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 1
@@ -1760,7 +1889,6 @@ focus_tree = {
                     	building = arms_factory
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 2
@@ -1816,7 +1944,6 @@ focus_tree = {
                     	building = industrial_complex
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 3

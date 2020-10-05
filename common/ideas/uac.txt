@@ -17,6 +17,29 @@ ideas = {
 				consumer_goods_factor = 0.1
 				conscription_factor = -0.5
 				stability_factor = -0.35
+				ai_get_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
+			}
+		}	
+
+		uac_recover_civil_war_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.25
+				stability_factor = -0.20
+				ai_get_ally_desire_factor = -1000
+				ai_join_ally_desire_factor = -1000
 			}
 		}	
 
@@ -56,6 +79,23 @@ ideas = {
 				stability_factor = -0.5
 				consumer_goods_factor = 0.5
 			}
+		}
+		uac_ruined_economy_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.25
+				consumer_goods_factor = 0.25
+			}
 		}	
 
 		uac_crippled_industry = {
@@ -76,6 +116,43 @@ ideas = {
 				production_speed_dockyard_factor = -0.1
 				industry_repair_factor = -0.5
 			}
+		}
+
+		uac_crippled_industry_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				industry_repair_factor = -0.25
+			}
+		}
+
+		a_full_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
 		}	
 
 		uac_shellshocked_populace = {
@@ -93,6 +170,23 @@ ideas = {
 			modifier = {
 				political_power_cost = 1.0
 				stability_factor = -0.10
+			}
+		}
+		uac_shellshocked_populace_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.05
 			}
 		}
 		naval_administration_act = {
@@ -209,7 +303,121 @@ ideas = {
 				stability_factor = 0.1
 				political_power_gain = 0.1
 			}
+		}
+		renegotiated_debts = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		socialist_education = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		department_of_homeland_security = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 1
+			}
+		}
+		department_of_homeland_security_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 1
+				root_out_resistance_effectiveness_factor = 0.5
+			}
 		}	
+		workers_representation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.10
+			}
+		}
+		workers_representation_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.10
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		restructuring_of_states = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
 	}
 
 

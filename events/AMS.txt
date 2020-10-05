@@ -60,7 +60,7 @@ country_event = {
 			value = 0
 		}
 		hidden_effect = {
-			set_country_flag = lindberg_choice
+			set_country_flag = AMS_lindberg_choice
 		}
 	}
 	option = {
@@ -99,7 +99,7 @@ country_event = {
 			value = 0
 		}
 		hidden_effect = {
-			set_country_flag = moseley_choice
+			set_country_flag = AMS_moseley_choice
 		}
 	}
 	option = {
@@ -119,7 +119,7 @@ country_event = {
 			value = 0
 		}
 		hidden_effect = {
-			set_country_flag = thurmond_choice
+			set_country_flag = AMS_thurmond_choice
 		}
 	}
 }

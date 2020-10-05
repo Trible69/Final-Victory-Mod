@@ -9,7 +9,7 @@ AMS_lindberg_support = {
 	}
     visible = {
         tag = AMS
-        has_country_flag = lindberg_choice
+        has_country_flag = AMS_lindberg_choice
 	}
 }
 AMS_moseley_support = {
@@ -18,7 +18,7 @@ AMS_moseley_support = {
 	}
     visible = {
         tag = AMS
-        has_country_flag = moseley_choice
+        has_country_flag = AMS_moseley_choice
 	}
 }
 AMS_thurmond_support = {
@@ -27,6 +27,6 @@ AMS_thurmond_support = {
 	}
     visible = {
         tag = AMS
-        has_country_flag = thurmond_choice
+        has_country_flag = AMS_thurmond_choice
 	}
 }

@@ -822,7 +822,7 @@ country_event = {
 	id = USA.25
 	title = USA.25.t
 	desc = USA.25.d
-	picture = GFX_event_test
+	picture = GFX_report_event_worker_protests
 
 	fire_only_once = yes
 	trigger = {
@@ -964,6 +964,7 @@ country event= {
     id = USA.26
     title = USA.26.t
     desc = USA.26.d
+	picture = GFX_report_event_election_vote
     trigger = {
         date > 1940.1.11
         orignal_tag = USA
@@ -1006,6 +1007,7 @@ country_event= {
 	id = USA.27
 	title = USA.27.t
 	desc = USA.27.d
+	picture = GFX_report_event_election_vote
 	trigger = {
         has_country_flag = DeweyVictoryin1936
         date > 1940.1.11
@@ -1045,6 +1047,7 @@ country_event= {
 	id = USA.28
 	title = USA.28.t
 	desc = USA.28.d
+	picture = GFX_report_event_election_vote
 	trigger = {
         has_country_flag = MacArthurVictoryin1940
         date > 1940.1.11
@@ -1075,6 +1078,7 @@ country_event = {
 	id = USA.29
 	title = USA.29.t
 	desc = USA.29.d
+	picture = GFX_report_event_election_vote
 	trigger = {
 		has_country_flag = GardnerVictoryin1940
 		date > 1944.1.11
@@ -1105,9 +1109,10 @@ country_event = {
 }
 #####1944 Elections Alfred and Dewey won in 1940
 country_event = {
-	id = USA.29
-	title = USA.29.t
-	desc = USA.29.d
+	id = USA.30
+	title = USA.30.t
+	desc = USA.30.d
+	picture = GFX_report_event_election_vote
 	trigger = {
 		date > 1944.1.11
 		OR = {
@@ -1119,7 +1124,7 @@ country_event = {
 	mean_time_to_happen = {days = 1}
 
 	option = {
-		name = USA.29.a
+		name = USA.30.a
 		ai_chance = { factor = 50 }
 		create_country_leader = {
 			name = "Archie Roosevelt"
@@ -1134,7 +1139,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = USA.29.b
+		name = USA.30.b
 		ai_chance = { factor = 50 }
 		create_country_leader = {
 			name = "Nelson Rockefeller"

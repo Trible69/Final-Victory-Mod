@@ -65,7 +65,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+	name = "Militia"  		# used for island defense (older equipment, lower experience)
 
 	division_names_group = USA_GAR_01		# Brigade level irregular unit, so no default names
 
@@ -133,7 +133,7 @@ units = {
 			name_order = 5
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -144,7 +144,7 @@ units = {
 			name_order = 6
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -155,7 +155,7 @@ units = {
 			name_order = 7
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -166,7 +166,7 @@ units = {
 			name_order = 8
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -177,7 +177,7 @@ units = {
 			name_order = 9
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -188,7 +188,7 @@ units = {
 			name_order = 10
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -199,7 +199,7 @@ units = {
 			name_order = 11
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -210,7 +210,7 @@ units = {
 			name_order = 12
 		}
 		location = 10412
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -222,7 +222,7 @@ units = {
 			name_order = 13
 		}
 		location = 4627
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -233,7 +233,7 @@ units = {
 			name_order = 14
 		}
 		location = 4627
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -244,7 +244,7 @@ units = {
 			name_order = 15
 		}
 		location = 4627
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -256,7 +256,7 @@ units = {
 			name_order = 16
 		}
 		location = 6696
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -267,7 +267,7 @@ units = {
 			name_order = 17
 		}
 		location = 6696
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -278,7 +278,7 @@ units = {
 			name_order = 18
 		}
 		location = 6696
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -290,7 +290,7 @@ units = {
 			name_order = 19
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -301,7 +301,7 @@ units = {
 			name_order = 20
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -312,7 +312,7 @@ units = {
 			name_order = 21
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -323,7 +323,7 @@ units = {
 			name_order = 22
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -334,7 +334,7 @@ units = {
 			name_order = 23
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -345,7 +345,7 @@ units = {
 			name_order = 24
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -356,7 +356,7 @@ units = {
 			name_order = 25
 		}
 		location = 10717
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -368,7 +368,7 @@ units = {
 			name_order = 26
 		}
 		location = 12586
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -379,7 +379,7 @@ units = {
 			name_order = 27
 		}
 		location = 12586
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -391,7 +391,7 @@ units = {
 			name_order = 28
 		}
 		location = 12501
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -402,7 +402,7 @@ units = {
 			name_order = 29
 		}
 		location = 12501
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -413,7 +413,7 @@ units = {
 			name_order = 30
 		}
 		location = 12501
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -425,7 +425,7 @@ units = {
 			name_order = 31
 		}
 		location = 4540
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -436,7 +436,7 @@ units = {
 			name_order = 32
 		}
 		location = 4540
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -448,7 +448,7 @@ units = {
 			name_order = 33
 		}
 		location = 4449
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -459,7 +459,7 @@ units = {
 			name_order = 34
 		}
 		location = 4449
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -471,7 +471,7 @@ units = {
 			name_order = 35
 		}
 		location = 4569
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -482,7 +482,7 @@ units = {
 			name_order = 36
 		}
 		location = 4569
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -494,7 +494,7 @@ units = {
 			name_order = 37
 		}
 		location = 1523
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -505,7 +505,7 @@ units = {
 			name_order = 38
 		}
 		location = 1523
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -516,7 +516,7 @@ units = {
 			name_order = 39
 		}
 		location = 1523
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -528,7 +528,7 @@ units = {
 			name_order = 40
 		}
 		location = 7607
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -539,7 +539,7 @@ units = {
 			name_order = 41
 		}
 		location = 7607
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -550,7 +550,7 @@ units = {
 			name_order = 42
 		}
 		location = 7607
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -562,7 +562,7 @@ units = {
 			name_order = 43
 		}
 		location = 7449
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -573,7 +573,7 @@ units = {
 			name_order = 44
 		}
 		location = 7449
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -585,7 +585,7 @@ units = {
 			name_order = 45
 		}
 		location = 10516
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -596,7 +596,7 @@ units = {
 			name_order = 46
 		}
 		location = 10516
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -608,7 +608,7 @@ units = {
 			name_order = 47
 		}
 		location = 10333
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -619,7 +619,7 @@ units = {
 			name_order = 48
 		}
 		location = 10333
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -630,7 +630,7 @@ units = {
 			name_order = 49
 		}
 		location = 10333
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -642,7 +642,7 @@ units = {
 			name_order = 50
 		}
 		location = 873
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -653,7 +653,7 @@ units = {
 			name_order = 51
 		}
 		location = 873
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -664,7 +664,7 @@ units = {
 			name_order = 52
 		}
 		location = 873
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -676,7 +676,7 @@ units = {
 			name_order = 53
 		}
 		location = 951
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -687,7 +687,7 @@ units = {
 			name_order = 54
 		}
 		location = 951
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -698,7 +698,7 @@ units = {
 			name_order = 55
 		}
 		location = 951
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -710,7 +710,7 @@ units = {
 			name_order = 56
 		}
 		location = 11888
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -721,7 +721,7 @@ units = {
 			name_order = 57
 		}
 		location = 11888
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -732,7 +732,7 @@ units = {
 			name_order = 58
 		}
 		location = 11888
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -744,7 +744,7 @@ units = {
 			name_order = 59
 		}
 		location = 6958
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -755,7 +755,7 @@ units = {
 			name_order = 60
 		}
 		location = 6958
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -767,7 +767,7 @@ units = {
 			name_order = 61
 		}
 		location = 9923
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -778,7 +778,7 @@ units = {
 			name_order = 62
 		}
 		location = 9923
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -789,7 +789,7 @@ units = {
 			name_order = 63
 		}
 		location = 9923
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -801,7 +801,7 @@ units = {
 			name_order = 64
 		}
 		location = 801
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -812,7 +812,7 @@ units = {
 			name_order = 65
 		}
 		location = 801
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -824,7 +824,7 @@ units = {
 			name_order = 66
 		}
 		location = 6850
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -835,7 +835,7 @@ units = {
 			name_order = 67
 		}
 		location = 6850
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -847,7 +847,7 @@ units = {
 			name_order = 68
 		}
 		location = 6850
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -858,7 +858,7 @@ units = {
 			name_order = 69
 		}
 		location = 6850
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -870,7 +870,7 @@ units = {
 			name_order = 70
 		}
 		location = 801
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -881,7 +881,7 @@ units = {
 			name_order = 71
 		}
 		location = 801
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -893,7 +893,7 @@ units = {
 			name_order = 72
 		}
 		location = 3975
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -905,7 +905,7 @@ units = {
 			name_order = 73
 		}
 		location = 10441
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -917,7 +917,7 @@ units = {
 			name_order = 74
 		}
 		location = 6971
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -929,7 +929,7 @@ units = {
 			name_order = 75
 		}
 		location = 7547
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -941,7 +941,7 @@ units = {
 			name_order = 76
 		}
 		location = 4452
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -953,7 +953,7 @@ units = {
 			name_order = 77
 		}
 		location = 1445
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -965,7 +965,7 @@ units = {
 			name_order = 78
 		}
 		location = 6696
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -976,7 +976,7 @@ units = {
 			name_order = 79
 		}
 		location = 6696
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -988,7 +988,7 @@ units = {
 			name_order = 80
 		}
 		location = 10727
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -1000,7 +1000,7 @@ units = {
 			name_order = 81
 		}
 		location = 4402
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -1012,7 +1012,7 @@ units = {
 			name_order = 82
 		}
 		location = 10586
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -1024,7 +1024,7 @@ units = {
 			name_order = 83
 		}
 		location = 10676
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -1036,7 +1036,7 @@ units = {
 			name_order = 84
 		}
 		location = 12586
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 
@@ -1047,7 +1047,7 @@ units = {
 			name_order = 85
 		}
 		location = 12586
-		division_template = "Infantry Division"
+		division_template = "Militia"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 

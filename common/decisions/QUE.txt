@@ -4,23 +4,21 @@ QUE_parliament = {
 		icon = generic_democracy
 
 		available = {
-			has_government = liberal
+			
 		}
 		visible = {
 			
 		}
-		cost = 50
-		days_remove = 45
+		cost = 0
 		fixed_random_seed = yes
 		ai_will_do = {
 			factor = 1
 		}
 		modifier = {
-			political_power_gain = -0.50
-			liberal_drift = 0.05
+			
 		}
 		remove_effect = {
-			
+			please_work = yes
 		}
 	}
 }

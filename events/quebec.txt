@@ -20,7 +20,7 @@ country_event = {
 	id = quebec.2
 	title = quebec.2.t
 	desc = quebec.2.d
-	picture = GFX_event_test
+	picture = GFX_report_event_romania_parliament
 
 	fire_only_once = yes
     is_triggered_only = yes
@@ -35,7 +35,7 @@ country_event = {
 	id = quebec.3
 	title = quebec.3.t
 	desc = quebec.3.d
-	picture = GFX_event_test
+	picture = GFX_report_event_chinese_soldiers_02
 
 	fire_only_once = yes
     is_triggered_only = yes
@@ -50,7 +50,7 @@ country_event = {
 	id = quebec.4
 	title = quebec.4.t
 	desc = quebec.4.d
-	picture = GFX_event_test
+	picture = GFX_report_event_usa_election_generic
 
 	fire_only_once = yes
     is_triggered_only = yes
@@ -81,7 +81,7 @@ country_event = {
 	id = quebec.5
 	title = quebec.5.t
 	desc = quebec.5.d
-	picture = GFX_event_test
+	picture = GFX_report_event_journalists_speech
 
 	fire_only_once = yes
     is_triggered_only = yes

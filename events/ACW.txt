@@ -72,8 +72,9 @@ country_event = {
 		ai_chance = { factor = 100}
 	    362 = {
 			create_unit = {
-				division = "name = \"Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 10343 }
 			}	
 		}
@@ -154,8 +155,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		806 = {
 			create_unit = {
-				division = "name = \"West Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"West Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 7588 }
 			}
 		}
@@ -188,8 +190,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		369 = {
 			create_unit = {
-				division = "name = \"Kentucky Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Kentucky Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 9727 }
 			}
 		}
@@ -246,8 +249,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		368 = {
 			create_unit = {
-				division = "name = \"Tennessee Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Tennessee Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 1758 }
 			}
 		}
@@ -305,8 +309,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		363 = {
 			create_unit = {
-				division = "name = \"North Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"North Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 7045 }
 			}
 		}
@@ -364,8 +369,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		364 = {
 			create_unit = {
-				division = "name = \"South Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"South Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 10029 }
 			}
 		}
@@ -423,8 +429,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		365 = {
 			create_unit = {
-				division = "name = \"Georiga Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Georiga Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 7612 }
 			}
 		}
@@ -481,8 +488,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		366 = {
 			create_unit = {
-				division = "name = \"Florida Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Florida Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 10489 }
 			}
 		}
@@ -540,8 +548,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		370 = {
 			create_unit = {
-				division = "name = \"Mississipi Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Mississipi Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 4565 }
 			}
 		}
@@ -597,8 +606,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		371 = {
 			create_unit = {
-				division = "name = \"Louisiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Louisiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 1528 }
 			}
 		}
@@ -654,8 +664,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		372 = {
 			create_unit = {
-				division = "name = \"Arkansas Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Arkansas Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 7485 }
 			}
 		}
@@ -711,8 +722,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		383 = {
 			create_unit = {
-				division = "name = \"Kansas Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Kansas Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 4814 }
 			}
 		}
@@ -768,8 +780,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		382 = {
 			create_unit = {
-				division = "name = \"Colorado Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Colorado Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 12642 }
 			}
 		}
@@ -825,8 +838,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		384 = {
 			create_unit = {
-				division = "name = \"Nebraska Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Nebraska Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 12516 }
 			}
 		}
@@ -882,8 +896,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		390 = {
 			create_unit = {
-				division = "name = \"South Dakota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"South Dakota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 1875 }
 			}
 		}
@@ -940,8 +955,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		389 = {
 			create_unit = {
-				division = "name = \"North Dakota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"North Dakota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 4759 }
 			}
 		}
@@ -997,8 +1013,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		391 = {
 			create_unit = {
-				division = "name = \"Minnesota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Minnesota Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 12693 }
 			}
 		}
@@ -1054,8 +1071,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		392 = {
 			create_unit = {
-				division = "name = \"Iowa Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Iowa Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 11971 }
 			}
 		}
@@ -1116,8 +1134,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		395 = {
 			create_unit = {
-				division = "name = \"Illinois Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Illinois Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 4590 }
 			}
 		}
@@ -1173,8 +1192,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		394 = {
 			create_unit = {
-				division = "name = \"Wisconsin Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Wisconsin Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 703 }
 			}
 		}
@@ -1230,8 +1250,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		393 = {
 			create_unit = {
-				division = "name = \"Michigan Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Michigan Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 6782 }
 			}
 		}
@@ -1287,8 +1308,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		396 = {
 			create_unit = {
-				division = "name = \"Indiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Indiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 9653 }
 			}
 		}
@@ -1344,8 +1366,9 @@ country_event = {
 		ai_chance = { factor = 100} 
 		261 = {
 			create_unit = {
-				division = "name = \"Ohio Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.01" 
+				division = "name = \"Ohio Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
+				allow_spawning_on_enemy_provs = yes
 				prioritize_location = { 9760 }
 			}
 		}

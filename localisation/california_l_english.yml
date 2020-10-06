@@ -13,6 +13,12 @@
  california.2.t:0 "Our Eastern Territories Revolt!"
  california.2.d:0 "Frantic news from Santa Fe just arrived. Clyde Tingley’s Army and other militias have risen up in rebellion against our righteous liberation and occupation of their lands. A state of emergency has been declared in every county east of the Colorado River as the militiamen have consolidated that swath of our territory. Advisors presume that these pesky rebels started their insurrection in protest of our economic usage of the area and strategic emplacement in the area against our foe Texas. Regardless of the reason, these idiotic “separatists” must be dealt with by force. Our recently demobilized army must be remobilized, even though it may lower popular morale. These rebels should really be dealt with soon if we hope to contend with Texas and defeat them. Failure to bring Tingley’s revolters to their knees may end our position of influence in North America."
  california.2.a:0 "To Arms!"
+ california.3.t:0 "Winners of the Oil Supply!"
+ california.3.d:0 ""
+ california.3.a:0 "The Oil is ours!"
+ california.4.t:0 "Complete influence in the Region"
+ california.4.d:0 ""
+ california.4.a:0 "We have beat the Texans!"
  ###########PARTIES##############
  ############Decisions#########
  CAF_power_struggle_against_texas:0 "Power Struggle Against Texas"

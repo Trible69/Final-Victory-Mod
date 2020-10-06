@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		tex_lose = {
-			picture = spa_recovering_from_the_civil_war
+			picture = SPA_recovering_from_the_civil_war
 			
 			allowed = {
 				always = no

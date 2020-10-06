@@ -176,7 +176,7 @@ ideas = {
 			}
 		}
 		the_northern_revolts = {
-			picture = idea_mex_revolutionary_army
+			picture = MEX_revolutionary_army
 
 			allowed = {
 				always = no
@@ -194,7 +194,7 @@ ideas = {
 			}
 		}
 		the_northern_revolts_1 = {
-			picture = idea_mex_revolutionary_army
+			picture = MEX_revolutionary_army
 
 			allowed = {
 				always = no
@@ -212,7 +212,7 @@ ideas = {
 			}
 		}
 		a_divided_country = {
-			picture = idea_cze_divided_nation
+			picture = CZE_divided_nation
 
 			allowed = {
 				always = no
@@ -230,7 +230,7 @@ ideas = {
 			}
 		}
 		a_divided_country1 = {
-			picture = idea_cze_divided_nation
+			picture = CZE_divided_nation
 
 			allowed = {
 				always = no
@@ -248,7 +248,7 @@ ideas = {
 			}
 		}
 		starving_populace = {
-			picture = idea_prc_low_popular_support2
+			picture = prc_low_popular_support2
 
 			allowed = {
 				always = no
@@ -267,7 +267,7 @@ ideas = {
 			}
 		}
 		starving_populace_1 = {
-			picture = idea_prc_low_popular_support2
+			picture = prc_low_popular_support2
 
 			allowed = {
 				always = no
@@ -286,7 +286,7 @@ ideas = {
 			}
 		}
 		broken_industry = {
-			picture = idea_man_five_year_plan_industry
+			picture = man_five_year_plan_industry
 
 			allowed = {
 				always = no
@@ -306,7 +306,7 @@ ideas = {
 			}
 		}
 		broken_industry_1 = {
-			picture = idea_man_five_year_plan_industry
+			picture = man_five_year_plan_industry
 
 			allowed = {
 				always = no
@@ -326,7 +326,7 @@ ideas = {
 			}
 		}
 		broke_economy = {
-			picture = idea_usa_great_depression_3
+			picture = usa_great_depression_3
 
 			allowed = {
 				always = no
@@ -346,7 +346,7 @@ ideas = {
 			}
 		}
 		broke_economy1 = {
-			picture = idea_usa_great_depression_3
+			picture = usa_great_depression_3
 
 			allowed = {
 				always = no
@@ -366,7 +366,7 @@ ideas = {
 			}
 		}
 		debt_limit_act1 = {
-			picture = idea_usa_great_depression_2
+			picture = usa_great_depression_2
 
 			allowed = {
 				always = no
@@ -383,7 +383,7 @@ ideas = {
 			}
 		}
 		debt_limit_act2 = {
-			picture = idea_usa_great_depression_2
+			picture = usa_great_depression_2
 
 			allowed = {
 				always = no
@@ -401,7 +401,7 @@ ideas = {
 			}
 		}
 		debt_limit_act3 = {
-			picture = idea_usa_great_depression_2
+			picture = usa_great_depression_2
 
 			allowed = {
 				always = no
@@ -420,7 +420,7 @@ ideas = {
 			}
 		}
 		debt_limit_act4 = {
-			picture = idea_usa_great_depression_2
+			picture = usa_great_depression_2
 
 			allowed = {
 				always = no
@@ -463,7 +463,7 @@ ideas = {
 			}
 		}
 		mexican_monarchy_victory = {
-			picture = focus_rom_royal_dictatorship
+			picture = HUN_hungarian_monarchy
 
 			allowed = {
 				always = no
@@ -483,7 +483,7 @@ ideas = {
 			}
 		}
 		direccion_federal_de_seguridad = {
-			picture = goal_generic_dangerous_deal
+			picture = idea_danieli
 
 			allowed = {
 				always = no

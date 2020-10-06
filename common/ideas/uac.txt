@@ -81,6 +81,7 @@ ideas = {
 			}
 		}
 		uac_ruined_economy_1 = {
+			picture = uac_ruined_economy
 			
 			allowed = {
 				always = no
@@ -119,7 +120,7 @@ ideas = {
 		}
 
 		uac_crippled_industry_1 = {
-			
+			picture = uac_crippled_industry
 			allowed = {
 				always = no
 			}
@@ -139,7 +140,7 @@ ideas = {
 		}
 
 		a_full_economy = {
-			
+			picture = idea_civilian_economy
 			allowed = {
 				always = no
 			}
@@ -156,7 +157,7 @@ ideas = {
 		}	
 
 		uac_shellshocked_populace = {
-			
+			picture = uac_shellshocked_populace
 			allowed = {
 				always = no
 			}
@@ -173,7 +174,7 @@ ideas = {
 			}
 		}
 		uac_shellshocked_populace_1 = {
-			
+			picture = uac_shellshocked_populace
 			allowed = {
 				always = no
 			}
@@ -190,7 +191,7 @@ ideas = {
 			}
 		}
 		naval_administration_act = {
-			
+			picture = generic_navy_bonus
 			allowed = {
 				always = no
 			}
@@ -209,7 +210,7 @@ ideas = {
 			}
 		}	
 		naval_administration_act_1 = {
-			
+			picture = generic_navy_bonus
 			allowed = {
 				always = no
 			}
@@ -231,7 +232,7 @@ ideas = {
 			}
 		}
 		naval_administration_act_2 = {
-			
+			picture = generic_navy_bonus
 			allowed = {
 				always = no
 			}
@@ -269,7 +270,7 @@ ideas = {
 			}
 		}
 		the_vanguardists_deal = {
-			
+			picture = new_deal
 			allowed = {
 				always = no
 			}
@@ -286,7 +287,7 @@ ideas = {
 			}
 		}
 		integrated_industry = {
-			
+			picture = new_deal
 			allowed = {
 				always = no
 			}
@@ -305,7 +306,7 @@ ideas = {
 			}
 		}
 		renegotiated_debts = {
-			
+			picture = generic_economic_increase
 			allowed = {
 				always = no
 			}
@@ -321,7 +322,7 @@ ideas = {
 			}
 		}
 		socialist_education = {
-			
+			picture = socialist_science_focus
 			allowed = {
 				always = no
 			}
@@ -338,7 +339,7 @@ ideas = {
 			}
 		}
 		department_of_homeland_security = {
-			
+			picture = HUN_secret_rearmament
 			allowed = {
 				always = no
 			}
@@ -354,7 +355,7 @@ ideas = {
 			}
 		}
 		department_of_homeland_security_1 = {
-			
+			picture = HUN_secret_rearmament 
 			allowed = {
 				always = no
 			}
@@ -371,6 +372,7 @@ ideas = {
 			}
 		}	
 		workers_representation = {
+			picture = por_iberian_workers_united
 			allowed = {
 				always = no
 			}
@@ -386,6 +388,7 @@ ideas = {
 			}
 		}
 		workers_representation_1 = {
+			picture = por_iberian_workers_united
 			allowed = {
 				always = no
 			}
@@ -403,6 +406,7 @@ ideas = {
 			}
 		}
 		restructuring_of_states = {
+			picture = generic_build_infrastructure
 			allowed = {
 				always = no
 			}
@@ -419,6 +423,7 @@ ideas = {
 			}
 		}
 		communes_navy_act = {
+			picture = brooklyn_naval_yard
 			allowed = {
 				always = no
 			}
@@ -434,6 +439,7 @@ ideas = {
 			}
 		}
 		communes_navy_act_1 = {
+			picture = brooklyn_naval_yard
 			allowed = {
 				always = no
 			}
@@ -449,6 +455,7 @@ ideas = {
 			}
 		}
 		brutal_political_control  = {
+			picture = SPR_subvert_soviet_control
 			allowed = {
 				always = no
 			}
@@ -465,6 +472,7 @@ ideas = {
 			}
 		}
 		economic_chaos = {
+			picture = n100_year_debt_1
 			allowed = {
 				always = no
 			}
@@ -480,6 +488,7 @@ ideas = {
 			}
 		}
 		politics_of_the_uac = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -495,6 +504,7 @@ ideas = {
 			}
 		}
 		politics_of_the_uac_1 = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -511,6 +521,7 @@ ideas = {
 			}
 		}
 		politics_of_the_uac_2 = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -528,6 +539,7 @@ ideas = {
 			}
 		}
 		politics_of_the_uac_3 = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -547,6 +559,7 @@ ideas = {
 			}
 		}
 		politics_of_the_uac_4 = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -565,6 +578,7 @@ ideas = {
 			}
 		}
 		the_communal_economy = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -580,6 +594,7 @@ ideas = {
 			}
 		}
 		the_communal_economy_communal_control = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -596,6 +611,7 @@ ideas = {
 			}
 		}
 		the_communal_economy_central_planning = {
+			picture = SPR_political_violence
 			allowed = {
 				always = no
 			}
@@ -612,6 +628,7 @@ ideas = {
 			}
 		}
 		central_bank = {
+			picture = ger_mefo_bills
 			allowed = {
 				always = no
 			}
@@ -627,6 +644,7 @@ ideas = {
 			}
 		}
 		drop_currency = {
+			picture = ger_mefo_bills
 			allowed = {
 				always = no
 			}
@@ -642,6 +660,7 @@ ideas = {
 			}
 		}
 		economic_internationale = {
+			picture = fourth_international
 			allowed = {
 				always = no
 			}

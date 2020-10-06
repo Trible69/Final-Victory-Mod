@@ -464,9 +464,9 @@ on_actions = {
 					is_puppet_of = MEX
 					MEX = {
 						OR = {
-							has_country_leader = { ruling_only = yes name = "Hernán Laborde" }
+							has_country_leader = { ruling_only = yes name = "Hernï¿½n Laborde" }
 							has_country_leader = { ruling_only = yes name = "Leon Trotsky" }
-							has_country_leader = { ruling_only = yes name = "Valentín Campa" }
+							has_country_leader = { ruling_only = yes name = "Valentï¿½n Campa" }
 						}
 					}
 				}
@@ -479,9 +479,9 @@ on_actions = {
 					original_tag = MEX
 					has_government = communism
 					OR = {
-						has_country_leader = { ruling_only = yes name = "Hernán Laborde" }
+						has_country_leader = { ruling_only = yes name = "Hernï¿½n Laborde" }
 						has_country_leader = { ruling_only = yes name = "Leon Trotsky" }
-						has_country_leader = { ruling_only = yes name = "Valentín Campa" }
+						has_country_leader = { ruling_only = yes name = "Valentï¿½n Campa" }
 					}					
 					is_puppet_of = SOV
 					MEX = {
@@ -516,18 +516,6 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			#Mexican oil concessions
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				MEX = {
-					give_resource_rights = { receiver = ENG state = 476 }
-					give_resource_rights = { receiver = ENG state = 477 }
-					give_resource_rights = { receiver = USA state = 479 }
-					give_resource_rights = { receiver = USA state = 480 }
-				}
-			}
 			# Game Rules - Decolonization
 			if = {
 				limit = {

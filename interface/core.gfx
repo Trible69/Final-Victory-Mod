@@ -712,6 +712,8 @@ bitmapfonts = {
 		##Ideologies that dont have a color 
 		P = { 102 2 60 }
 		N = { 79 36 0 }
+		V = { 255 0 0 }
+		S = { 255 47 89 }
 	}
 
 

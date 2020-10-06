@@ -1,0 +1,14 @@
+################
+##### UAC ######
+################
+
+UAC_relations_with_other_nations = {
+	allowed = {
+		original_tag = UAC 
+	}
+
+	visible = {
+		original_tag = UAC
+		has_global_flag = decision_for_relations
+	}
+}

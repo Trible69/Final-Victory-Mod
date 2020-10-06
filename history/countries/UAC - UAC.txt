@@ -119,41 +119,9 @@ set_popularities = {
 add_ideas = {
 	war_economy
 	volunteer_only
-	free_trade
+	limited_exports
 }
 
-create_country_leader = {
-	name = "Franklin Delano Roosevelt"
-	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Franklin_Roosevelt.dds"
-	expire = "1947.1.1"
-	ideology = liberalism
-	traits = {
-		dislikes_germany
-	}
-}
-
-create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_USA_William_Dudley_Pelley.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Earl Browder"
-	desc = "POLITICS_EARL_BROWDER_DESC"
-	picture = "portrait_USA_earl_browder.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
 
 create_country_leader = {
 	name = "William Haywood"
@@ -161,6 +129,26 @@ create_country_leader = {
 	picture = "WilliamHaywoodUAC.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "William Haywood"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "WilliamHaywoodUAC.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Walter Lippmann"
+	desc = ""
+	picture = "WalterLippmannUAC.dds"
+	expire = "1965.1.1"
+	ideology = moderate
 	traits = {
 		
 	}

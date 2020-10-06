@@ -1,4 +1,5 @@
 add_namespace = UAC
+add_namespace = UACDecisions
 
 country_event = {
 	id = UAC.1
@@ -92,6 +93,7 @@ country_event = {
 	    DATE > 1939.9.5
 		has_country_flag = elections_allowed
 		tag = UAC
+		has_government = vanguardism
 	}
 
 	option = {
@@ -131,6 +133,7 @@ country_event = {
 		has_country_flag = elections_allowed
 		tag = UAC
 		has_country_flag = norman_victory1939
+		has_government = vanguardism
 	}
 	mean_time_to_happen = { days = 1 }
 
@@ -170,6 +173,7 @@ country_event = {
 		has_country_flag = elections_allowed
 		tag = UAC
 		has_country_flag = emil_victory1939
+		has_government = vanguardism
 	}
 	mean_time_to_happen = { days = 1 }
 	option = {
@@ -209,6 +213,7 @@ country_event = {
 		has_country_flag = elections_allowed
 		tag = UAC
 		has_country_flag = norman_victory1942
+		has_government = vanguardism
 	}
 	mean_time_to_happen = { days = 1 }
 
@@ -249,6 +254,7 @@ country_event = {
 		has_country_flag = elections_allowed
 		tag = UAC
 		has_country_flag = emil_victory1942 
+		has_government = vanguardism
 	}
 	mean_time_to_happen = { days = 1 }
 
@@ -288,6 +294,7 @@ country_event = {
 		has_country_flag = elections_allowed
 		tag = UAC
 		has_country_flag = jack_victory1942
+		has_government = vanguardism
 	}
 	mean_time_to_happen = { days = 1 }
 
@@ -327,5 +334,234 @@ country_event = {
 	    name = UAC.10.a
 	    ai_chance = { factor = 100 }
 		add_political_power = -50
+	}
+}
+country_event = {
+	id = UAC.11
+	title = UAC.11.t
+	desc = UAC.11.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.11.a
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = vanguardism_increased
+		add_ideas = politics_of_the_uac
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.vanguardist_support
+    			value = 1
+			}
+		}
+	}
+	option = {
+	    name = UAC.11.b
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = socialism_increased
+		add_ideas = politics_of_the_uac
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.socialism_support
+    			value = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = UAC.12
+	title = UAC.12.t
+	desc = UAC.12.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.12.a
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = socialism_increased
+		create_faction = "Revolutionary Front"
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.socialism_support
+    			value = 1
+			}
+		}
+	}
+	option = {
+	    name = UAC.12.b
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = vanguardism_increased
+		set_rule = {
+    		can_create_factions = no
+		}
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.vanguardist_support
+    			value = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = UAC.13
+	title = UAC.13.t
+	desc = UAC.13.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.13.a
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = socialism_increased
+		add_ideas = the_communal_economy
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.socialism_support
+    			value = 1
+			}
+		}
+	}
+	option = {
+	    name = UAC.13.b
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = vanguardism_increased
+		add_ideas = the_communal_economy
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.vanguardist_support
+    			value = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = UAC.14
+	title = UAC.14.t
+	desc = UAC.14.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.14.a
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = socialism_increased
+		add_ideas = export_focus
+		unlock_decision_category_tooltip = UAC_relations_with_other_nations
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.socialism_support
+    			value = 1
+			}
+			set_country_flag = decision_for_relations
+		}
+	}
+	option = {
+	    name = UAC.14.b
+	    ai_chance = { factor = 50 }
+		custom_effect_tooltip = vanguardism_increased
+		add_ideas = closed_economy
+		hidden_effect = {
+			add_to_variable = {
+    			var = UAC.vanguardist_support
+    			value = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = UAC.15
+	title = UAC.15.t
+	desc = UAC.15.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UAC.15.a
+	    ai_chance = { factor = 100 }
+		trigger = {
+			OR = {	
+				check_variable = { UAC.vanguardist_support > UAC.socialism_support }
+				check_variable = { UAC.vanguardist_support = UAC.socialism_support }
+			}
+		}
+		add_popularity = {
+    		ideology = vanguardism
+    		popularity = 0.1
+		}
+	}
+	option = {
+	    name = UAC.15.b
+	    ai_chance = { factor = 100 }
+		trigger = {
+			OR = {
+				check_variable = { UAC.vanguardist_support < UAC.socialism_support }
+				check_variable = { UAC.vanguardist_support = UAC.socialism_support }
+			}	
+		}
+		set_politics = {
+			ruling_party = moderate_socialism
+		}
+		add_popularity = {
+    		ideology = moderate_socialism
+    		popularity = 0.1
+		}
+	}
+}
+###### UACDecisions
+country_event = {
+	id = UACDecisions.1
+	title = UACDecisions.1.t
+	desc = UACDecisions.1.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UACDecisions.1.a
+	    ai_chance = { factor = 75 }
+		UAC = {
+			add_to_faction = YUC
+		}
+	}
+	option = {
+	    name = UACDecisions.1.b
+	    ai_chance = { factor = 25 }
+	}
+}
+country_event = {
+	id = UACDecisions.2
+	title = UACDecisions.2.t
+	desc = UACDecisions.2.d
+	picture = GFX_report
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	    name = UACDecisions.2.a
+	    ai_chance = { factor = 75 }
+		add_ideas = economic_internationale
+	}
+	option = {
+	    name = UACDecisions.1.b
+	    ai_chance = { factor = 25 }
 	}
 }

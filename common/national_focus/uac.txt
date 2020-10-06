@@ -315,6 +315,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_idea = uac_recover_civil_war
+		}
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -464,7 +467,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_reward_the_soldiers }
 		available = {
-			stability > 60
+			has_stability > 0.60
 		}
 		ai_will_do = {
 			factor = 1
@@ -577,7 +580,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_the_workers_rights_bill }
 		available = {
-			stability > 60
+			has_stability > 0.60
 		}
 		ai_will_do = {
 			factor = 1
@@ -716,6 +719,18 @@ focus_tree = {
             	}
 			}
 			add_war_support = 0.20
+			add_ideas = brutal_political_control
+			add_ideas = economic_chaos
+			hidden_effect = {
+				set_variable = {
+ 				  	var = UAC.vanguardist_support
+				    value = 0
+				}
+				set_variable = {
+ 				  	var = UAC.socialism_support
+				    value = 0
+				}
+			}
 		}
 	}
 	###Military 
@@ -795,6 +810,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+
+		}
 	}
 
 	#Focus for Aeronautical Research Institute
@@ -839,6 +857,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = naval_doctrine
+			}
 		}
 	}
 
@@ -892,6 +917,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 100000
+			}
+		}
 	}
 
 	#Focus for Create the Naval Department
@@ -906,6 +937,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = naval_doctrine
+			}
+		}
 	}
 
 	#Focus for Buy Foreign Ships
@@ -919,6 +957,12 @@ focus_tree = {
 		prerequisite = { focus = UAC_create_the_naval_department }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = submarine
+    			amount = 10
+			}
 		}
 	}
 
@@ -935,6 +979,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = naval_equipment
+			}
+		}
 	}
 
 	#Focus for The Workers Military
@@ -947,6 +998,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 
@@ -961,6 +1015,10 @@ focus_tree = {
 		prerequisite = { focus = UAC_the_workers_military }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 
@@ -1005,6 +1063,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			random_owned_controlled_state={
+				free_building_slots = {
+                	building = dockyard
+                	size > 0
+                }
+				add_extra_state_shared_building_slots = 10
+ 				add_building_construction = {
+ 					type = dockyard
+ 					level = 10
+ 					instant_build = yes
+		 		}
+ 			}
+		}
 	}
 
 	#Focus for Develop better Submarines
@@ -1022,6 +1094,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = submarine
+    			amount = 20
+			}
+		}
 	}
 
 	#Focus for Anti-Submarine Warfare
@@ -1035,6 +1113,9 @@ focus_tree = {
 		prerequisite = { focus = UAC_develop_better_submarines }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = communes_navy_act
 		}
 	}
 
@@ -1050,6 +1131,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = naval_equipment
+			}
+		}
 	}
 
 	#Focus for Manpower Quotas
@@ -1063,6 +1151,9 @@ focus_tree = {
 		prerequisite = { focus = UAC_the_new_communal_army }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 100000
 		}
 	}
 
@@ -1089,6 +1180,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = extensive_conscription
 		}
 	}
 
@@ -1287,6 +1381,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = communes_navy_act
+    			add_idea = communes_navy_act_1
+			}
+		}
 	}
 
 	#Focus for National Officer Academy
@@ -1395,6 +1495,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = marine_tech
+			}
 		}
 	}
 	#######Industry
@@ -1968,6 +2075,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = politics_of_the_uac
+    			add_idea = politics_of_the_uac_2
+			}
+			custom_effect_tooltip = socialism_increased
+			hidden_effect = {
+				add_to_variable = {
+    				var = UAC.socialism_support
+    				value = 1
+				}
+			}
+		}
 	}
 
 	#Focus for A Question of Industry
@@ -1983,6 +2103,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = UAC.13}
 		}
 	}
 
@@ -2000,6 +2123,9 @@ focus_tree = {
 		prerequisite = {
 			focus = UAC_instate_the_communes
 		}
+		completion_reward = {
+			country_event = {id = UAC.11}
+		}
 	}
 
 	#Focus for The People's Decisions
@@ -2015,6 +2141,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = politics_of_the_uac
+    			add_idea = politics_of_the_uac_1
+			}
+			custom_effect_tooltip = vanguardism_increased
+			hidden_effect = {
+				add_to_variable = {
+    				var = UAC.vanguardist_support
+    				value = 1
+				}
+			}
+		}
 	}
 
 	#Focus for An Even Level
@@ -2027,11 +2166,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = UAC_the_peoples_decisions 
-			focus = UAC_governors_represent 
 		}
 		mutually_exclusive = { focus = UAC_power_basin }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = politics_of_the_uac_1
+    			add_idea = politics_of_the_uac_3
+			}
+			custom_effect_tooltip = vanguardism_increased
+			hidden_effect = {
+				add_to_variable = {
+    				var = UAC.vanguardist_support
+    				value = 1
+				}
+			}
 		}
 	}
 
@@ -2044,12 +2195,24 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = UAC_the_peoples_decisions 
 			focus = UAC_governors_represent 
 		}
 		mutually_exclusive = { focus = UAC_an_even_level }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = socialism_increased
+			hidden_effect = {
+				add_to_variable = {
+    				var = UAC.socialism_support
+    				value = 1
+				}
+			}
+			swap_ideas = {
+    			remove_idea = politics_of_the_uac_2
+    			add_idea = politics_of_the_uac_4
+			}
 		}
 	}
 
@@ -2068,6 +2231,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = {id = UAC.12}
+		}
 	}
 
 	#Focus for Communal Control
@@ -2082,6 +2248,13 @@ focus_tree = {
 		mutually_exclusive = { focus = UAC_central_planning }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = vanguardism_increased
+			swap_ideas = {
+    			remove_idea = the_communal_economy
+    			add_idea = the_communal_economy_communal_control
+			}
 		}
 	}
 
@@ -2101,6 +2274,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			custom_effect_tooltip = vanguardism_increased
+			add_ideas = drop_currency
+		}
 	}
 
 	#Focus for Central Bank
@@ -2119,6 +2296,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			custom_effect_tooltip = socialism_increased
+			add_ideas = central_bank
+		}
 	}
 
 	#Focus for Central Planning
@@ -2133,6 +2314,13 @@ focus_tree = {
 		mutually_exclusive = { focus = UAC_communal_control }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = socialism_increased
+			swap_ideas = {
+    			remove_idea = the_communal_economy
+    			add_idea = the_communal_economy_central_planning
+			}
 		}
 	}
 
@@ -2150,6 +2338,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = UAC.14}
 		}
 	}
 
@@ -2169,6 +2360,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {id = UAC.15}
 		}
 	}
 #End of focuses 

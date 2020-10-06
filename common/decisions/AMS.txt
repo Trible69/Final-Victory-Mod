@@ -3,12 +3,12 @@ AMS_lindberg_support = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -23,21 +23,21 @@ AMS_lindberg_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 2 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-	incentives_as_bribes = {
+	AMS_incentives_as_bribes = {
 
 		fire_only_once = yes
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -46,27 +46,26 @@ AMS_lindberg_support = {
 		cost = 50
 		days_remove = 10
         days_re_enable = 30
-		custom_effect_tooltip = AMS_2_influence_lindberg
 		ai_will_do = {
 			factor = 25
 		}
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 3 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-    reduce_military_influence = {
+    AMS_reduce_military_influence = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -74,8 +73,6 @@ AMS_lindberg_support = {
 		}
 		cost = 30
 		days_remove = 30
-		custom_effect_tooltip = AMS_2_influence_lindberg
-		custom_effect_tooltip = AMS_1_minus_influence_moseley
         days_re_enable = 40
 		ai_will_do = {
 			factor = 25
@@ -84,20 +81,20 @@ AMS_lindberg_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 2 }
                 subtract_from_variable = { AMS.moseley_support = 1 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-    speeches_for_american_people = {
+    AMS_speeches_for_american_people = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -106,14 +103,13 @@ AMS_lindberg_support = {
 		cost = 25
 		days_remove = 50
         days_re_enable = 60
-		custom_effect_tooltip = AMS_2_influence_lindberg
 		ai_will_do = {
 			factor = 25
 		}
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 2 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
@@ -123,12 +119,12 @@ AMS_lindberg_support = {
 
         available = {
             not = {
-                has_country_flag = lindberg_choice
+                has_country_flag = AMS_lindberg_choice
             }
         }
 
         activation = {
-            has_country_flag = lindberg_choice
+            has_country_flag = AMS_lindberg_choice
         }
 
         is_good = no
@@ -138,34 +134,32 @@ AMS_lindberg_support = {
         days_mission_timeout = 365
 
         timeout_effect = {
-            clr_country_flag = lindberg_choice
+            clr_country_flag = AMS_lindberg_choice
         }
 
         complete_effect = {
-			clr_country_flag = lindberg_choice
+			clr_country_flag = AMS_lindberg_choice
         }
     }
-	moseley_move_lindberg = {
+	AMS_moseley_moves_lindberg = {
 
         allowed = { tag = AMS }
 
         available = {
             not = {
-                has_country_flag = lindberg_choice
+                has_country_flag = AMS_lindberg_choice
             }
         }
 
         activation = {
-            has_country_flag = lindberg_choice
+            has_country_flag = AMS_lindberg_choice
         }
 
         is_good = no
 
         selectable_mission = no
 
-        days_mission_timeout = 15
-
-		custom_effect_tooltip = AMS_2_influence_moseley
+        days_mission_timeout = 20
 
         timeout_effect = {
 			add_to_variable = { AMS.moseley_support = 2 }
@@ -175,27 +169,25 @@ AMS_lindberg_support = {
 			
         }
     }
-	thurmond_moves_lindberg = {
+	AMS_thurmond_moves_lindberg = {
 
         allowed = { tag = AMS }
 
         available = {
             not = {
-                has_country_flag = lindberg_choice
+                has_country_flag = AMS_lindberg_choice
             }
         }
 
         activation = {
-            has_country_flag = lindberg_choice
+            has_country_flag = AMS_lindberg_choice
         }
 
         is_good = no
 
-		custom_effect_tooltip = AMS_2_influence_thurmond
-
         selectable_mission = no
 
-        days_mission_timeout = 15
+        days_mission_timeout = 20
 
         timeout_effect = {
 			add_to_variable = { AMS.thurmond_support = 2 }
@@ -207,16 +199,16 @@ AMS_lindberg_support = {
     }
 }
 AMS_moseley_support = {
-	gather_military_support = {
+	AMS_gather_military_support = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -231,22 +223,22 @@ AMS_moseley_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 2 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-	replace_security_guards = {
+	AMS_replace_security_guards = {
 
 		fire_only_once = yes
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
         fire_only_once = yes
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -261,21 +253,21 @@ AMS_moseley_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 3 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-    race_restrictions_military = {
+    AMS_race_restrictions_military = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
         fire_only_once = yes
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -290,20 +282,20 @@ AMS_moseley_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 3 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-    advocate_for_mil_growth = {
+    AMS_advocate_for_mil_growth = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -318,7 +310,7 @@ AMS_moseley_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 2 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
@@ -328,12 +320,12 @@ AMS_moseley_support = {
 
         available = {
             not = {
-                has_country_flag = moseley_choice
+                has_country_flag = AMS_moseley_choice
             }
         }
 
         activation = {
-            has_country_flag = moseley_choice
+            has_country_flag = AMS_moseley_choice
         }
 
         is_good = no
@@ -343,32 +335,32 @@ AMS_moseley_support = {
         days_mission_timeout = 365
 
         timeout_effect = {
-            clr_country_flag = moseley_choice
+            clr_country_flag = AMS_moseley_choice
         }
 
         complete_effect = {
-			clr_country_flag = moseley_choice
+			clr_country_flag = AMS_moseley_choice
         }
     }
-	lindberg_moves_moseley = {
+	AMS_lindberg_moves_moseley = {
 
         allowed = { tag = AMS }
 
         available = {
             not = {
-                has_country_flag = moseley_choice
+                has_country_flag = AMS_moseley_choice
             }
         }
 
         activation = {
-            has_country_flag = moseley_choice
+            has_country_flag = AMS_moseley_choice
         }
 
         is_good = no
 
         selectable_mission = no
 
-        days_mission_timeout = 15
+        days_mission_timeout = 20
 
         timeout_effect = {
 			add_to_variable = { AMS.lindberg_support = 2 }
@@ -378,25 +370,25 @@ AMS_moseley_support = {
 			
         }
     }
-	thurmond_moves_moseley = {
+	AMS_thurmond_moves_moseley = {
 
         allowed = { tag = AMS }
 
         available = {
             not = {
-                has_country_flag = moseley_choice
+                has_country_flag = AMS_moseley_choice
             }
         }
 
         activation = {
-            has_country_flag = moseley_choice
+            has_country_flag = AMS_moseley_choice
         }
 
         is_good = no
 
         selectable_mission = no
 
-        days_mission_timeout = 15
+        days_mission_timeout = 20
 
         timeout_effect = {
 			add_to_variable = { AMS.thurmond_support = 2 }
@@ -408,16 +400,16 @@ AMS_moseley_support = {
     }
 }
 AMS_thurmond_support = {
-	call_out_opponents = {
+	AMS_call_out_opponents = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -432,21 +424,21 @@ AMS_thurmond_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.thurmond_support = 2 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-	reduce_lindberg_connection = {
+	AMS_reduce_lindberg_connection = {
 
 		fire_only_once = yes
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -462,20 +454,20 @@ AMS_thurmond_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.thurmond_support = 3 }
                 subtract_from_variable = { AMS.lindberg_support = 1}
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-    lead_segregation_law = {
+    AMS_lead_segregation_law = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -490,20 +482,20 @@ AMS_thurmond_support = {
 		remove_effect = {
 			hidden_effect = {
                 add_to_variable = { AMS.thurmond_support = 2 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
-    blame_moseley_defeat = {
+    AMS_blame_moseley_defeat = {
 
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = support_actions
+				set_country_flag = AMS_support_actions
 			}
 		}
 		available = {
 			not = {
-				has_country_flag = support_actions
+				has_country_flag = AMS_support_actions
 			}
 		}
 		visible = {
@@ -519,7 +511,7 @@ AMS_thurmond_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.thurmond_support = 2 }
                 subtract_from_variable = { AMS.moseley_support = 1 }
-				clr_country_flag = support_actions
+				clr_country_flag = AMS_support_actions
             }
         }
 	}
@@ -529,12 +521,12 @@ AMS_thurmond_support = {
 
         available = {
             not = {
-                has_country_flag = thurmond_choice
+                has_country_flag = AMS_thurmond_choice
             }
         }
 
         activation = {
-            has_country_flag = thurmond_choice
+            has_country_flag = AMS_thurmond_choice
         }
 
         is_good = no
@@ -544,32 +536,32 @@ AMS_thurmond_support = {
         days_mission_timeout = 365
 
         timeout_effect = {
-            clr_country_flag = thurmond_choice
+            clr_country_flag = AMS_thurmond_choice
         }
 
         complete_effect = {
-			clr_country_flag = thurmond_choice
+			clr_country_flag = AMS_thurmond_choice
         }
     }
-	lindberg_moves_thurmond = {
+	AMS_lindberg_moves_thurmond = {
 
         allowed = { tag = AMS }
 
         available = {
             not = {
-                has_country_flag = thurmond_choice
+                has_country_flag = AMS_thurmond_choice
             }
         }
 
         activation = {
-            has_country_flag = thurmond_choice
+            has_country_flag = AMS_thurmond_choice
         }
 
         is_good = no
 
         selectable_mission = no
 
-        days_mission_timeout = 15
+        days_mission_timeout = 20
 
         timeout_effect = {
 			add_to_variable = { AMS.lindberg_support = 2 }
@@ -579,25 +571,25 @@ AMS_thurmond_support = {
 			
         }
     }
-	moseley_moves_thurmond = {
+	AMS_moseley_moves_thurmond = {
 
         allowed = { tag = AMS }
 
         available = {
             not = {
-                has_country_flag = thurmond_choice
+                has_country_flag = AMS_thurmond_choice
             }
         }
 
         activation = {
-            has_country_flag = thurmond_choice
+            has_country_flag = AMS_thurmond_choice
         }
 
         is_good = no
 
         selectable_mission = no
 
-        days_mission_timeout = 15
+        days_mission_timeout = 20
 
         timeout_effect = {
 			add_to_variable = { AMS.moseley_support = 2 }

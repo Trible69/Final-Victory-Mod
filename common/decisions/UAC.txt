@@ -1,0 +1,68 @@
+UAC_relations_with_other_nations = {
+	UAC_invite_yucatan_to_faction = {
+
+		complete_effect = {
+			YUC = {
+				country_event = UACDecisions.1
+			}
+		}
+
+		fire_only_once = yes
+
+		available = {
+			country_exists = YUC 
+			YUC = {
+				has_government = vanguardism
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+			YUC = {
+				country_event = UACDecisions.1
+			}
+		}
+	}
+	UAC_invite_yucatan_to_economic_alliance = {
+
+		complete_effect = {
+			YUC = {
+				country_event = UACDecisions.2
+			}
+		}
+
+		fire_only_once = yes
+
+		available = {
+			country_exists = YUC 
+			YUC = {
+				has_government = vanguardism
+			}
+		}
+		visible = {
+			
+		}
+		cost = 25
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+			YUC = {
+				country_event = UACDecisions.2
+			}
+		}
+	}
+}

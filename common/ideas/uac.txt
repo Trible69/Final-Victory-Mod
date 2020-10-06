@@ -418,6 +418,245 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
+		communes_navy_act = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_submarine_detection_factor = 0.1
+			}
+		}
+		communes_navy_act_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_submarine_detection_factor = 0.1
+			}
+		}
+		brutal_political_control  = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				vanguardism_drift = 0.05
+			}
+		}
+		economic_chaos = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_submarine_detection_factor = 0.1
+			}
+		}
+		politics_of_the_uac = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		politics_of_the_uac_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+			}
+		}
+		politics_of_the_uac_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		politics_of_the_uac_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				conscription_factor = 0.01
+				political_power_gain = -0.2
+			}
+		}
+		politics_of_the_uac_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		the_communal_economy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		the_communal_economy_communal_control = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		the_communal_economy_central_planning = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+		central_bank = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		drop_currency = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		economic_internationale = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.10
+				consumer_goods_factor = -0.1
+			}
+		}
 	}
 
 

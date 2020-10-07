@@ -18,7 +18,7 @@ QUE_parliament = {
 			
 		}
 		remove_effect = {
-			please_work = yes
+			conservative_growth_normal = yes
 		}
 	}
 }

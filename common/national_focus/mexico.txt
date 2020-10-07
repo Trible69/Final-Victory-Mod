@@ -19,7 +19,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = MEX
-			has_dlc = "Man the Guns"
 		}
 	}
 	##########Debt removal 
@@ -1221,6 +1220,286 @@ focus_tree = {
 				remove_ideas = broke_economy
 				remove_ideas = broke_economy1
 			}
+		}
+	}
+	#Military 
+	#Focus for Artillery Investments
+	focus = {
+		id = MEX_artillery_investments
+		icon = GFX_goal_generic_army_artillery2
+		x = 19
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_study_the_civil_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Aztec Eagles
+	focus = {
+		id = MEX_the_aztec_eagles
+		icon = GFX_goal_generic_secret_weapon
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_military_of_the_revolution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Military of the Revolution
+	focus = {
+		id = MEX_the_military_of_the_revolution
+		icon = GFX_goal_generic_demand_territory
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Aerial Dominance
+	focus = {
+		id = MEX_aerial_dominance
+		icon = GFX_goal_generic_propaganda
+		x = 15
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_aztec_eagles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Codify Promotion
+	focus = {
+		id = MEX_codify_promotion
+		icon = GFX_goal_rhineland
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_military_of_the_revolution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Study the Civil War
+	focus = {
+		id = MEX_study_the_civil_war
+		icon = GFX_goal_anschluss
+		x = 19
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_codify_promotion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Remove the Great War
+	focus = {
+		id = MEX_remove_the_great_war
+		icon = GFX_goal_generic_small_arms
+		x = 21
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_codify_promotion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Specify Doctrines
+	focus = {
+		id = MEX_specify_doctrines
+		icon = GFX_goal_generic_air_bomber
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_aztec_eagles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebirth of the Navy
+	focus = {
+		id = MEX_rebirth_of_the_navy
+		icon = GFX_goal_generic_amphibious_assault
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_military_of_the_revolution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for National Naval Academy
+	focus = {
+		id = MEX_national_naval_academy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 23
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_rebirth_of_the_navy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Foreign Designs
+	focus = {
+		id = MEX_foreign_designs
+		icon = GFX_goal_generic_navy_battleship
+		x = 25
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_rebirth_of_the_navy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bombing Runs
+	focus = {
+		id = MEX_bombing_runs
+		icon = GFX_goal_poland_goal
+		x = 15
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_aerial_dominance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Artillery from Above
+	focus = {
+		id = MEX_artillery_from_above
+		icon = GFX_focus_usa_escort_fighters
+		x = 17
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_specify_doctrines }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tank Investments
+	focus = {
+		id = MEX_tank_investments
+		icon = GFX_goal_generic_army_tanks
+		x = 21
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_remove_the_great_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for War Games
+	focus = {
+		id = MEX_war_games
+		icon = GFX_goal_generic_military_sphere
+		x = 23
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_national_naval_academy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ships of our own
+	focus = {
+		id = MEX_ships_of_our_own
+		icon = GFX_goal_generic_navy_cruiser
+		x = 25
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_foreign_designs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Total Control
+	focus = {
+		id = MEX_total_control
+		icon = GFX_goal_generic_wolf_pack
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_bombing_runs 
+		}
+		prerequisite = { 
+			focus = MEX_artillery_from_above 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Army of the Future
+	focus = {
+		id = MEX_army_of_the_future
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_tank_investments 
+		}
+		prerequisite = { 
+			focus = MEX_artillery_investments 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for All Hands on Deck!
+	focus = {
+		id = MEX_all_hands_on_deck
+		icon = GFX_focus_generic_support_the_left_right
+		x = 23
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_war_games 
+		}
+		prerequisite = { 
+			focus = MEX_ships_of_our_own 
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

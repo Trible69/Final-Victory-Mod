@@ -533,8 +533,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.1
-				political_power_gain = 0.05
+				political_power_gain = 0.15
 				war_support_factor = 0.05
 			}
 		}
@@ -551,8 +550,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.1
-				political_power_gain = 0.05
+				political_power_gain = 0.15
 				war_support_factor = 0.05
 				conscription_factor = 0.01
 				political_power_gain = -0.2
@@ -606,8 +604,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				line_change_production_efficiency_factor = 0.1
-				line_change_production_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.2
 			}
 		}
 		the_communal_economy_central_planning = {
@@ -623,8 +620,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				line_change_production_efficiency_factor = 0.1
-				line_change_production_efficiency_factor = 0.2
+				line_change_production_efficiency_factor = 0.3
 			}
 		}
 		central_bank = {
@@ -674,6 +670,71 @@ ideas = {
 			modifier = {
 				local_resources_factor = 0.10
 				consumer_goods_factor = -0.1
+			}
+		}
+		maximum_planning = {
+			picture = CZE_planning_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.2
+			}
+		}
+		maximum_planning_1 = {
+			picture = CZE_planning_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.2
+				army_leader_start_logistics_level = 1
+			}
+		}
+		speed_focus = {
+			picture = air_support_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_range_factor = 0.1
+			}
+		}
+		bombing_focus = {
+			picture = eng_special_air_service
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.1
 			}
 		}
 	}

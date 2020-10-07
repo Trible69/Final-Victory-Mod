@@ -746,6 +746,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 3
+    			category = infantry_tech
+			}
+		}
 	}
 
 	#Focus for Anti-air Support
@@ -765,6 +772,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 3
+    			category = artillery
+			}
+		}
 	}
 
 	#Focus for Garrison Vehicles
@@ -783,6 +797,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = motorized_equipment
+			}
 		}
 	}
 
@@ -811,7 +832,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = maximum_planning
 		}
 	}
 
@@ -840,6 +861,12 @@ focus_tree = {
 		prerequisite = { focus = UAC_maxmimum_planning }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = maximum_planning
+    			add_idea = maximum_planning_1
+			}
 		}
 	}
 
@@ -890,6 +917,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -1034,6 +1064,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			air_experience = 50
+		}
 	}
 
 	#Focus for Improve the Fighters
@@ -1047,6 +1080,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_aeronautical_research_institute }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = light_fighter
+			}
 		}
 	}
 
@@ -1198,6 +1238,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_manpower = 100000
+		}
 	}
 
 	#Focus for Develop Artillery
@@ -1211,6 +1254,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_guns_and_butter }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = artillery
+			}
 		}
 	}
 
@@ -1231,6 +1281,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = armor
+			}
+		}
 	}
 
 	#Focus for Produce Better Guns
@@ -1250,6 +1307,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 100000
+			}
+		}
 	}
 
 	#Focus for Expand Strategic Bombers
@@ -1263,6 +1326,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_aeronautical_research_institute }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = cat_strategic_bomber
+			}
 		}
 	}
 
@@ -1278,6 +1348,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = cas_bomber
+			}
+		}
 	}
 
 	#Focus for Expand Hangars
@@ -1291,6 +1368,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_improve_the_fighters }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.25
+    			uses = 1
+    			category = naval_bomber
+			}
 		}
 	}
 
@@ -1306,6 +1390,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = cat_heavy_fighter
+			}
+		}
 	}
 
 	#Focus for Aerial Innovations I
@@ -1319,6 +1410,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_aerial_ground_support }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 3
+    			category = light_fighter
+			}
 		}
 	}
 
@@ -1334,6 +1432,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = cas_bomber
+			}
+		}
 	}
 
 	#Focus for Work with the Navy
@@ -1348,6 +1453,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = naval_bomber
+			}
+		}
 	}
 
 	#Focus for Universal Bombers
@@ -1361,6 +1473,13 @@ focus_tree = {
 		prerequisite = { focus = UAC_work_with_the_navy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = tactical_bomber
+			}
 		}
 	}
 
@@ -1412,6 +1531,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 300
+		}
 	}
 
 	#Focus for Focus on Speed
@@ -1434,6 +1558,9 @@ focus_tree = {
 		mutually_exclusive = { focus = UAC_focus_on_bombing }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = speed_focus
 		}
 	}
 
@@ -1458,6 +1585,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = bombing_focus
+		}
 	}
 
 	#Focus for Paratroopers Academy
@@ -1476,6 +1606,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 2
+    			category = para_tech
+			}
 		}
 	}
 

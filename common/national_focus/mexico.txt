@@ -1235,6 +1235,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
 	}
 
 	#Focus for The Aztec Eagles
@@ -1249,6 +1256,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 
 	#Focus for The Military of the Revolution
@@ -1261,6 +1271,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.05
 		}
 	}
 
@@ -1276,6 +1289,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = light_fighter
+			}
+		}
 	}
 
 	#Focus for Codify Promotion
@@ -1289,6 +1309,9 @@ focus_tree = {
 		prerequisite = { focus = MEX_the_military_of_the_revolution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -1304,6 +1327,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 
 	#Focus for Remove the Great War
@@ -1317,6 +1343,13 @@ focus_tree = {
 		prerequisite = { focus = MEX_codify_promotion }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -1332,6 +1365,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
 	}
 
 	#Focus for Rebirth of the Navy
@@ -1345,6 +1385,9 @@ focus_tree = {
 		prerequisite = { focus = MEX_the_military_of_the_revolution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
 
@@ -1360,6 +1403,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			navy_experience = 50
+		}
 	}
 
 	#Focus for Foreign Designs
@@ -1373,6 +1419,13 @@ focus_tree = {
 		prerequisite = { focus = MEX_rebirth_of_the_navy }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = naval_equipment
+			}
 		}
 	}
 
@@ -1388,6 +1441,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cas_bomber
+			}
+		}
 	}
 
 	#Focus for Artillery from Above
@@ -1401,6 +1461,13 @@ focus_tree = {
 		prerequisite = { focus = MEX_specify_doctrines }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 3
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 
@@ -1416,6 +1483,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
 	}
 
 	#Focus for War Games
@@ -1430,6 +1504,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			navy_experience = 150
+		}
 	}
 
 	#Focus for Ships of our own
@@ -1443,6 +1520,13 @@ focus_tree = {
 		prerequisite = { focus = MEX_foreign_designs }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = naval_equipment
+			}
 		}
 	}
 
@@ -1463,6 +1547,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_heavy_fighter
+			}
+		}
 	}
 
 	#Focus for Army of the Future
@@ -1482,6 +1573,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
 	}
 
 	#Focus for All Hands on Deck!
@@ -1500,6 +1595,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			navy_experience = 200
 		}
 	}
 }

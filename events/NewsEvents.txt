@@ -91,6 +91,11 @@ news_event = {
 				has_war_with = AMS
 			}
 		}
+		NOT = { has_global_flag = fall_of_washington_acw }
+	}
+
+	immediate = {
+		set_global_flag = fall_of_washington_acw
 	}
 
 	
@@ -136,6 +141,10 @@ news_event = {
 			360 = { is_controlled_by = AMS }
 		}
 		360 = { is_owned_by = USA }
+		NOT = { has_global_flag = fall_of_philly_acw }
+	}
+	immediate = {
+		set_global_flag = fall_of_philly_acw
 	}
 
 	option = {
@@ -180,6 +189,10 @@ news_event = {
 			358 = { is_controlled_by = AMS }
 		}
 		358 = { is_owned_by = USA }
+		NOT = { has_global_flag = set_global_flag = fall_of_ny_acw }
+	}
+	immediate = {
+		set_global_flag = fall_of_ny_acw
 	}
 
 	
@@ -216,6 +229,7 @@ news_event = {
 	desc = news.6.d
 	picture = GFX_news_event_057
 	
+	
 	major = yes
 	
 	
@@ -225,6 +239,10 @@ news_event = {
 			358 = { is_controlled_by = AMS }
 		}
 		358 = { is_owned_by = USA }
+		has_global_flag = fall_of_boston_acw
+	}
+	immediate = {
+		set_global_flag = fall_of_boston_acw
 	}
 
 
@@ -271,6 +289,10 @@ news_event = {
 			393 = { is_controlled_by = AMS }
 		}
 		393 = { is_owned_by = USA }
+		NOT = { has_global_flag = fall_of_detriot_acw }
+	}
+	immediate = {
+		set_global_flag = fall_of_detriot_acw
 	}
 	
 	option = {
@@ -315,6 +337,10 @@ news_event = {
 			395 = { is_controlled_by = AMS }
 		}
 		395 = { is_owned_by = UAC }
+		NOT = { has_global_flag = fall_of_chicago_acw }
+	}
+	immediate = {
+		set_global_flag = fall_of_chicago_acw
 	}
 
 	

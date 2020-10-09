@@ -112,6 +112,346 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	##Icon For: Lindbergh's Helm
+	SpriteType = { 
+		name = "GFX_AMS_lindberghs_helm-53474"
+		texturefile = "gfx/interface/goals/GFX_AMS_lindberghs_helm-53474.dds"
+	}
 
+	##Icon Shine For: Lindbergh's Helm
+	SpriteType = { 
+		name = "GFX_AMS_lindberghs_helm-53474_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_lindberghs_helm-53474.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_lindberghs_helm-53474.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_lindberghs_helm-53474.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Moseley's Generalship
+	SpriteType = { 
+		name = "GFX_AMS_moseleys_generalship-53476"
+		texturefile = "gfx/interface/goals/GFX_AMS_moseleys_generalship-53476.dds"
+	}
+
+	##Icon Shine For: Moseley's Generalship
+	SpriteType = { 
+		name = "GFX_AMS_moseleys_generalship-53476_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_moseleys_generalship-53476.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_moseleys_generalship-53476.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_moseleys_generalship-53476.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Thurmond's America
+	SpriteType = { 
+		name = "GFX_AMS_thurmonds_america-53477"
+		texturefile = "gfx/interface/goals/GFX_AMS_thurmonds_america-53477.dds"
+	}
+
+	##Icon Shine For: Thurmond's America
+	SpriteType = { 
+		name = "GFX_AMS_thurmonds_america-53477_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_thurmonds_america-53477.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_thurmonds_america-53477.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_thurmonds_america-53477.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Effinger's Legion
+	SpriteType = { 
+		name = "GFX_AMS_effingers_legion-53478"
+		texturefile = "gfx/interface/goals/GFX_AMS_effingers_legion-53478.dds"
+	}
+
+	##Icon Shine For: Effinger's Legion
+	SpriteType = { 
+		name = "GFX_AMS_effingers_legion-53478_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_effingers_legion-53478.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_effingers_legion-53478.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_effingers_legion-53478.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Lindbergh's the Man!
+	SpriteType = { 
+		name = "GFX_AMS_lindberghs_the_man-53583"
+		texturefile = "gfx/interface/goals/GFX_AMS_lindberghs_the_man-53583.dds"
+	}
+
+	##Icon Shine For: Lindbergh's the Man!
+	SpriteType = { 
+		name = "GFX_AMS_lindberghs_the_man-53583_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_lindberghs_the_man-53583.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_lindberghs_the_man-53583.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_lindberghs_the_man-53583.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: An American Stratocracy
+	SpriteType = { 
+		name = "GFX_AMS_an_american_stratocracy-53585"
+		texturefile = "gfx/interface/goals/GFX_AMS_an_american_stratocracy-53585.dds"
+	}
+
+	##Icon Shine For: An American Stratocracy
+	SpriteType = { 
+		name = "GFX_AMS_an_american_stratocracy-53585_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_an_american_stratocracy-53585.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_an_american_stratocracy-53585.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_an_american_stratocracy-53585.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Replace Moseley
+	SpriteType = { 
+		name = "GFX_AMS_replace_moseley-53560"
+		texturefile = "gfx/interface/goals/GFX_AMS_replace_moseley-53560.dds"
+	}
+
+	##Icon Shine For: Replace Moseley
+	SpriteType = { 
+		name = "GFX_AMS_replace_moseley-53560_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_replace_moseley-53560.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_replace_moseley-53560.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_replace_moseley-53560.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Memory 50 years old
+	SpriteType = { 
+		name = "GFX_AMS_a_memory_50_years_old-53594"
+		texturefile = "gfx/interface/goals/GFX_AMS_a_memory_50_years_old-53594.dds"
+	}
+
+	##Icon Shine For: A Memory 50 years old
+	SpriteType = { 
+		name = "GFX_AMS_a_memory_50_years_old-53594_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_a_memory_50_years_old-53594.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_a_memory_50_years_old-53594.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_a_memory_50_years_old-53594.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Grand Dixie
+	SpriteType = { 
+		name = "GFX_AMS_the_grand_dixie-53591"
+		texturefile = "gfx/interface/goals/GFX_AMS_the_grand_dixie-53591.dds"
+	}
+
+	##Icon Shine For: The Grand Dixie
+	SpriteType = { 
+		name = "GFX_AMS_the_grand_dixie-53591_shine"
+		texturefile = "gfx/interface/goals/GFX_AMS_the_grand_dixie-53591.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_the_grand_dixie-53591.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_AMS_the_grand_dixie-53591.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
  
  }

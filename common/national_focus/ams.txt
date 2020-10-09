@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = AMS_the_new_economy
 		icon = GFX_goal_generic_propaganda
-		x = 5
+		x = 0
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = AMS_external_issues
 		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 14
+		x = 18
 		y = 9
 		cost = 10
 		available_if_capitulated = yes
@@ -796,7 +796,7 @@ focus_tree = {
 	focus = {
 		id = AMS_internal_issues
 		icon = GFX_goal_generic_neutrality_focus
-		x = 5
+		x = 0
 		y = 9
 		cost = 5
 		available_if_capitulated = yes
@@ -836,7 +836,7 @@ focus_tree = {
 	focus = {
 		id = AMS_begin_the_new_economy
 		icon = GFX_goal_generic_construction2
-		x = 5
+		x = 0
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -853,7 +853,7 @@ focus_tree = {
 	focus = {
 		id = AMS_citizens_come_first
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 5
+		x = 0
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
@@ -870,7 +870,7 @@ focus_tree = {
 	focus = {
 		id = AMS_decrease_military_spending
 		icon = GFX_goal_rhineland
-		x = 5
+		x = 0
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
@@ -888,7 +888,7 @@ focus_tree = {
 	focus = {
 		id = AMS_repay_debt_to_japan
 		icon = GFX_focus_mex_privatisation
-		x = 5
+		x = 0
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
@@ -910,7 +910,7 @@ focus_tree = {
 	focus = {
 		id = AMS_hold_recovery_speech_in_atlanta
 		icon = GFX_goal_generic_demand_territory
-		x = 7
+		x = 2
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
@@ -928,7 +928,7 @@ focus_tree = {
 	focus = {
 		id = AMS_start_to_help_the_population
 		icon = GFX_focus_generic_military_academy
-		x = 7
+		x = 2
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -945,7 +945,7 @@ focus_tree = {
 	focus = {
 		id = AMS_assassinate_active_vangaurdist
 		icon = GFX_goal_generic_major_war
-		x = 7
+		x = 2
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
@@ -965,7 +965,7 @@ focus_tree = {
 	focus = {
 		id = AMS_help_exmilitary_find_jobs
 		icon = GFX_focus_generic_military_mission
-		x = 7
+		x = 2
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
@@ -983,7 +983,7 @@ focus_tree = {
 	focus = {
 		id = AMS_recovered_population
 		icon = GFX_focus_generic_support_the_left_right
-		x = 7
+		x = 2
 		y = 14
 		cost = 15
 		available_if_capitulated = yes
@@ -1000,7 +1000,7 @@ focus_tree = {
 	focus = {
 		id = AMS_fix_the_industry
 		icon = GFX_goal_generic_production2
-		x = 3
+		x = -2
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -1017,7 +1017,7 @@ focus_tree = {
 	focus = {
 		id = AMS_better_worker_conditions
 		icon = GFX_goal_generic_small_arms
-		x = 3
+		x = -2
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
@@ -1034,7 +1034,7 @@ focus_tree = {
 	focus = {
 		id = AMS_be_ready_for_the_next_war
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 3
+		x = -2
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
@@ -1051,7 +1051,7 @@ focus_tree = {
 	focus = {
 		id = AMS_rebuild_damaged_factories
 		icon = GFX_focus_generic_license_production
-		x = 3
+		x = -2
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
@@ -1068,7 +1068,7 @@ focus_tree = {
 	focus = {
 		id = AMS_a_new_industry
 		icon = GFX_focus_generic_steel
-		x = 3
+		x = -2
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
@@ -1085,7 +1085,7 @@ focus_tree = {
 	focus = {
 		id = AMS_the_finished_recovery
 		icon = GFX_goal_generic_territory_or_war
-		x = 5
+		x = 0
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
@@ -1110,7 +1110,7 @@ focus_tree = {
 	focus = {
 		id = AMS_take_back_the_spanish_island
 		icon = GFX_goal_anschluss
-		x = 16
+		x = 20
 		y = 11
 		cost = 10
 		available_if_capitulated = yes
@@ -1133,7 +1133,7 @@ focus_tree = {
 	focus = {
 		id = AMS_try_to_convince_the_populace
 		icon = GFX_goal_generic_propaganda
-		x = 14
+		x = 18
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
@@ -1150,7 +1150,7 @@ focus_tree = {
 	focus = {
 		id = AMS_build_relations_with_quebec
 		icon = GFX_goal_generic_political_pressure
-		x = 12
+		x = 16
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
@@ -1169,7 +1169,7 @@ focus_tree = {
 	focus = {
 		id = AMS_build_relations_with_the_british
 		icon = GFX_goal_generic_improve_relations
-		x = 12
+		x = 16
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
@@ -1188,7 +1188,7 @@ focus_tree = {
 	focus = {
 		id = AMS_nagotiate_potential_alliance
 		icon = GFX_goal_generic_major_alliance
-		x = 12
+		x = 16
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
@@ -1205,7 +1205,7 @@ focus_tree = {
 	focus = {
 		id = AMS_befriend_canada
 		icon = GFX_focus_generic_support_the_left_right
-		x = 12
+		x = 16
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
@@ -1224,7 +1224,7 @@ focus_tree = {
 	focus = {
 		id = AMS_join_the_coalition
 		icon = GFX_goal_generic_alliance
-		x = 12
+		x = 16
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
@@ -1250,7 +1250,7 @@ focus_tree = {
 	focus = {
 		id = AMS_make_cuba_a_state
 		icon = GFX_goal_generic_territory_or_war
-		x = 16
+		x = 20
 		y = 12
 		cost = 10
 		available_if_capitulated = yes
@@ -1271,7 +1271,7 @@ focus_tree = {
 	focus = {
 		id = AMS_claim_puerto_rico
 		icon = GFX_goal_generic_major_war
-		x = 16
+		x = 20
 		y = 13
 		cost = 10
 		available_if_capitulated = yes
@@ -1290,7 +1290,7 @@ focus_tree = {
 	focus = {
 		id = AMS_take_back_the_stolen_states
 		icon = GFX_focus_secret_rearmament
-		x = 16
+		x = 20
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
@@ -1312,7 +1312,7 @@ focus_tree = {
 	focus = {
 		id = AMS_take_the_southern_friend
 		icon = GFX_focus_attack_mexico
-		x = 16
+		x = 20
 		y = 15
 		cost = 10
 		available_if_capitulated = yes
@@ -1338,6 +1338,341 @@ focus_tree = {
 			}
 		}
 	}
+	#Political 
+	#Focus for Lindbergh's Helm
+	focus = {
+		id = AMS_lindberghs_helm
+		icon = GFX_AMS_lindberghs_helm-53474
+		prerequisite = { focus = AMS_begin_to_rebuild }
+		x = 6
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
+	#Focus for Moseley's Generalship
+	focus = {
+		id = AMS_moseleys_generalship
+		icon = GFX_AMS_moseleys_generalship-53476
+		prerequisite = { focus = AMS_begin_to_rebuild }
+		x = 8
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Thurmond's America
+	focus = {
+		id = AMS_thurmonds_america
+		icon = GFX_AMS_thurmonds_america-53477
+		prerequisite = { focus = AMS_begin_to_rebuild }
+		x = 10
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Effinger's Legion
+	focus = {
+		id = AMS_effingers_legion
+		icon = GFX_AMS_effingers_legion-53478
+		prerequisite = { focus = AMS_begin_to_rebuild }
+		x = 12
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Move of White Modernism
+	focus = {
+		id = AMS_a_move_of_white_modernism
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 6
+		y = 13
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_remove_thurmond }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dismantle the Presidentship
+	focus = {
+		id = AMS_dismantle_the_presidentship
+		icon = GFX_focus_usa_voter_registration_act
+		x = 8
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_moseleys_generalship }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Military Arm
+	focus = {
+		id = AMS_the_military_arm
+		icon = GFX_focus_generic_manpower
+		x = 8
+		y = 13
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_political_officers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force their Hands
+	focus = {
+		id = AMS_force_their_hands
+		icon = GFX_goal_generic_secret_weapon
+		x = 8
+		y = 14
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_the_military_arm }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lindbergh's the Man!
+	focus = {
+		id = AMS_lindberghs_the_man
+		icon = GFX_AMS_lindberghs_the_man-53583
+		x = 6
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_a_private_circle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An American Stratocracy
+	focus = {
+		id = AMS_an_american_stratocracy
+		icon = GFX_AMS_an_american_stratocracy-53585
+		x = 8
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_force_their_hands }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Remove Thurmond
+	focus = {
+		id = AMS_remove_thurmond
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 6
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_replace_moseley }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Replace Moseley
+	focus = {
+		id = AMS_replace_moseley
+		icon = GFX_AMS_replace_moseley-53560
+		x = 6
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_lindberghs_helm }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for White Christian Fundamentalism
+	focus = {
+		id = AMS_white_christian_fundamentalism
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 14
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_a_memory_50_years_old }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Rise of the Southern Cross
+	focus = {
+		id = AMS_the_rise_of_the_southern_cross
+		icon = GFX_goal_unknown
+		x = 12
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_white_christian_fundamentalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Halt Everything
+	focus = {
+		id = AMS_halt_everything
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 12
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_effingers_legion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-Brand Extremism
+	focus = {
+		id = AMS_rebrand_extremism
+		icon = GFX_goal_generic_neutrality_focus
+		x = 12
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_halt_everything }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Memory 50 years old
+	focus = {
+		id = AMS_a_memory_50_years_old
+		icon = GFX_AMS_a_memory_50_years_old-53594
+		x = 12
+		y = 13
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_rebrand_extremism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Private Circle
+	focus = {
+		id = AMS_a_private_circle
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 6
+		y = 14
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_a_move_of_white_modernism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enforce the Separation
+	focus = {
+		id = AMS_enforce_the_separation
+		icon = GFX_goal_generic_attack_allies
+		x = 10
+		y = 13
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_reverse_the_integration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Political Officers
+	focus = {
+		id = AMS_political_officers
+		icon = GFX_focus_generic_military_mission
+		x = 8
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_dismantle_the_presidentship }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strike Against the Extremists
+	focus = {
+		id = AMS_strike_against_the_extremists
+		icon = GFX_goal_generic_small_arms
+		x = 10
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_thurmonds_america }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reverse the Integration
+	focus = {
+		id = AMS_reverse_the_integration
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_strike_against_the_extremists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Push Jim Crow
+	focus = {
+		id = AMS_push_jim_crow
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 10
+		y = 14
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_enforce_the_separation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Grand Dixie
+	focus = {
+		id = AMS_the_grand_dixie
+		icon = GFX_AMS_the_grand_dixie-53591
+		x = 10
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AMS_push_jim_crow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 #End of focuses 
  }

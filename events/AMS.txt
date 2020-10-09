@@ -123,3 +123,46 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = AMS.4
+	title = AMS.4.t
+	desc = AMS.4.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 30
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 30
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 30
+			}
+		}
+	}
+
+	option = {
+		name = AMS.4.a
+		ai_chance = { factor = 50}
+		{ AMS.moseley_support = 2 }
+		add_equipment_to_stockpile = {
+		type = infantry_equipment_2
+		amount = 10000
+		}
+	}
+	option = {
+		name = AMS.4.b
+		ai_chance = { factor = 50}
+		{ AMS.lindberg_support = 2 }
+		{ AMS.thurmond_support = 2 }
+		add_political_power = 50
+		add_stability = 0.1
+	}
+}

@@ -118,9 +118,7 @@ AMS_lindberg_support = {
         allowed = { tag = AMS }
 
         available = {
-            not = {
-                has_country_flag = AMS_lindberg_choice
-            }
+            has_country_flag = AMS_lindberg_power
         }
 
         activation = {
@@ -135,6 +133,7 @@ AMS_lindberg_support = {
 
         timeout_effect = {
             clr_country_flag = AMS_lindberg_choice
+			set_country_flag = AMS_effinger_time
         }
 
         complete_effect = {
@@ -319,9 +318,7 @@ AMS_moseley_support = {
         allowed = { tag = AMS }
 
         available = {
-            not = {
-                has_country_flag = AMS_moseley_choice
-            }
+            has_country_flag = AMS_moseley_power
         }
 
         activation = {
@@ -336,6 +333,7 @@ AMS_moseley_support = {
 
         timeout_effect = {
             clr_country_flag = AMS_moseley_choice
+			set_country_flag = AMS_effinger_time
         }
 
         complete_effect = {
@@ -520,9 +518,7 @@ AMS_thurmond_support = {
         allowed = { tag = AMS }
 
         available = {
-            not = {
-                has_country_flag = AMS_thurmond_choice
-            }
+            has_country_flag = AMS_thurmond_power
         }
 
         activation = {
@@ -537,6 +533,7 @@ AMS_thurmond_support = {
 
         timeout_effect = {
             clr_country_flag = AMS_thurmond_choice
+			set_country_flag = AMS_effinger_time
         }
 
         complete_effect = {

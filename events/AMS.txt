@@ -151,18 +151,393 @@ country_event = {
 	option = {
 		name = AMS.4.a
 		ai_chance = { factor = 50}
-		{ AMS.moseley_support = 2 }
-		add_equipment_to_stockpile = {
-		type = infantry_equipment_2
-		amount = 10000
-		}
+		add_to_variable = { AMS.moseley_support = 3 }
+		add_war_support = 0.1
+		custom_effect_tooltip = AMS_moseley_3
 	}
 	option = {
 		name = AMS.4.b
 		ai_chance = { factor = 50}
-		{ AMS.lindberg_support = 2 }
-		{ AMS.thurmond_support = 2 }
+		add_to_variable = { AMS.lindberg_support = 2 }
+		add_to_variable = { AMS.thurmond_support = 2 }
 		add_political_power = 50
 		add_stability = 0.1
+		custom_effect_tooltip = AMS_lindberg_2
+		custom_effect_tooltip = AMS_thurmond_2
+	}
+}
+country_event = {
+	id = AMS.5
+	title = AMS.5.t
+	desc = AMS.5.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 60
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 60
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 60
+			}
+		}
+	}
+
+	option = {
+		name = AMS.5.a
+		ai_chance = { factor = 40}
+		add_to_variable = { AMS.moseley_support = 2 }
+		add_manpower = -1000
+		custom_effect_tooltip = AMS_moseley_2
+	}
+	option = {
+		name = AMS.5.b
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.lindberg_support = 2 }
+		add_stability = 0.05
+		custom_effect_tooltip = AMS_lindberg_2
+	}
+	option = {
+		name = AMS.5.c
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.thurmond_support = 2 }
+		add_political_power = 25
+		custom_effect_tooltip = AMS_thurmond_2
+	}
+}
+country_event = {
+	id = AMS.6
+	title = AMS.6.t
+	desc = AMS.6.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 80
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 80
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 80
+			}
+		}
+	}
+
+	option = {
+		name = AMS.6.a
+		ai_chance = { factor = 40}
+		add_to_variable = { AMS.moseley_support = 2 }
+		add_manpower = -1000
+		add_war_support = 0.05
+		custom_effect_tooltip = AMS_moseley_2
+	}
+	option = {
+		name = AMS.6.b
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.thurmond_support = 2 }
+		add_stability = -0.05
+		custom_effect_tooltip = AMS_thurmond_2
+	}
+	option = {
+		name = AMS.6.c
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.lindberg_support = 2 }
+		add_political_power = 50
+		custom_effect_tooltip = AMS_lindberg_2
+	}
+}
+country_event = {
+	id = AMS.7
+	title = AMS.7.t
+	desc = AMS.7.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 100
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 100
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 100
+			}
+		}
+	}
+
+	option = {
+		name = AMS.7.a
+		ai_chance = { factor = 50}
+		add_to_variable = { AMS.lindberg_support = 3 }
+		add_war_support = 0.05
+		custom_effect_tooltip = AMS_lindberg_3
+	}
+	option = {
+		name = AMS.7.b
+		ai_chance = { factor = 50}
+		add_to_variable = { AMS.thurmond_support = 2 }
+		add_to_variable = { AMS.moseley_support = 2 }
+		add_political_power = 100
+		add_stability = -0.05
+		custom_effect_tooltip = AMS_thurmond_2
+		custom_effect_tooltip = AMS_moseley_2
+	}
+}
+country_event = {
+	id = AMS.8
+	title = AMS.8.t
+	desc = AMS.8.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 130
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 130
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 130
+			}
+		}
+	}
+
+	option = {
+		name = AMS.8.a
+		ai_chance = { factor = 50}
+		add_to_variable = { AMS.lindberg_support = 2 }
+		add_to_variable = { AMS.thurmond_support = 2 }
+		add_stability = 0.05
+		custom_effect_tooltip = AMS_lindberg_2
+		custom_effect_tooltip = AMS_thurmond_2
+	}
+	option = {
+		name = AMS.8.b
+		ai_chance = { factor = 50}
+		add_to_variable = { AMS.moseley_support = 3 }
+		add_manpower = 100000
+		custom_effect_tooltip = AMS_moseley_3
+	}
+}
+country_event = {
+	id = AMS.9
+	title = AMS.9.t
+	desc = AMS.9.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 150
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 150
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 150
+			}
+		}
+	}
+
+	option = {
+		name = AMS.9.a
+		ai_chance = { factor = 40}
+		add_to_variable = { AMS.moseley_support = 2 }
+		add_stability = -0.05
+		custom_effect_tooltip = AMS_moseley_2
+	}
+	option = {
+		name = AMS.9.b
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.lindberg_support = 2 }
+		add_command_power = -100
+		custom_effect_tooltip = AMS_lindberg_2
+	}
+	option = {
+		name = AMS.9.c
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.thurmond_support = 2 }
+		add_war_support = -0.05
+		custom_effect_tooltip = AMS_moseley_2
+	}
+}
+country_event = {
+	id = AMS.10
+	title = AMS.10.t
+	desc = AMS.10.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		OR = {
+			has_country_flag = {
+				flag = AMS_lindberg_choice
+				days > 170
+			}
+			has_country_flag = {
+				flag = AMS_moseley_choice
+				days > 170
+			}
+			has_country_flag = {
+				flag = AMS_thurmond_choice
+				days > 170
+			}
+		}
+	}
+
+	option = {
+		name = AMS.10.a
+		ai_chance = { factor = 40}
+		add_to_variable = { AMS.moseley_support = 2 }
+		add_stability = -0.05
+		custom_effect_tooltip = AMS_moseley_2
+	}
+	option = {
+		name = AMS.10.b
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.thurmond_support = 2 }
+		add_war_support = 0.05
+		custom_effect_tooltip = AMS_thurmond_2
+	}
+	option = {
+		name = AMS.10.c
+		ai_chance = { factor = 30}
+		add_to_variable = { AMS.lindberg_support = 2 }
+		add_political_power = -50
+		custom_effect_tooltip = AMS_lindberg_2
+	}
+}
+#Assassination, massacre, and slave events
+#effinger
+country_event = {
+	id = AMS.11
+	title = AMS.11.t
+	desc = AMS.11.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		has_country_flag = effinger_time
+	}
+
+	option = {
+		name = AMS.11.a
+		ai_chance = { factor = 100}
+	}
+}
+#lindberg Assassination
+country_event = {
+	id = AMS.12
+	title = AMS.12.t
+	desc = AMS.12.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	Trigger = {
+		has_country_flag = lindberg_dead
+	}
+
+	option = {
+		name = AMS.12.a
+		ai_chance = { factor = 100}
+	}
+}
+#atlanta massacre
+country_event = {
+	id = AMS.13
+	title = AMS.13.t
+	desc = AMS.13.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = AMS.13.a
+		ai_chance = { factor = 100 }
+	}
+}
+#moseley's death
+country_event = {
+	id = AMS.14
+	title = AMS.14.t
+	desc = AMS.14.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = AMS.14.a
+		ai_chance = { factor = 100}
+	}
+}
+#thurmond's death
+country_event = {
+	id = AMS.15
+	title = AMS.15.t
+	desc = AMS.15.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = AMS.15.a
+		ai_chance = { factor = 100}
+	}
+}
+#slave
+country_event = {
+	id = AMS.16
+	title = AMS.16.t
+	desc = AMS.16.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = AMS.16.a
+		ai_chance = { factor = 100}
 	}
 }

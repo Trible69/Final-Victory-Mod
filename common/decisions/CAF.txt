@@ -9,7 +9,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 20
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {
@@ -28,7 +28,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 10
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {
@@ -47,7 +47,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 5
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {
@@ -66,7 +66,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 5
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {
@@ -84,7 +84,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 20
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {
@@ -102,7 +102,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 20
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {
@@ -120,7 +120,7 @@ CAF_power_struggle_against_texas = {
 		}
 		cost = 35
 		ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		remove_effect = {
 			hidden_effect = {

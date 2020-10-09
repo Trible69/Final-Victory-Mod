@@ -383,7 +383,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = AMS_push_on_the_vanguardist_front }
+		prerequisite = { focus = AMS_secure_the_new_state }
 		ai_will_do = {
 			factor = 1
 		}
@@ -447,7 +447,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = AMS_push_on_the_federal_front }
+		prerequisite = { focus = AMS_secure_the_new_state }
 		ai_will_do = {
 			factor = 1
 		}

@@ -150,7 +150,9 @@ USA_a_broken_nation = {
 }
 USA_appalachian_states_loyalty = {
 	USA_virginia_3 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
 		icon = eng_install_government
 
 		available = {
@@ -177,7 +179,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_4 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
 		icon = eng_propaganda_campaigns
 
 		available = {
@@ -205,7 +209,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_5 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
 		icon = military_operation
 
 		available = {
@@ -234,7 +240,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_6 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
 		icon = hol_attract_foreign_investors
 
 		available = {
@@ -261,7 +269,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_7 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
 		icon = eng_trade_unions_demand
 
 		available = {
@@ -289,7 +299,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_8 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
         icon = ger_mefo_bills
 
 		available = {
@@ -317,7 +329,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_9 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
         icon = ger_mefo_bills
 
 		available = {
@@ -345,7 +359,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_virginia_10 = {
-
+		highlight_state_targets = {
+			state = 362
+		}
         icon = ger_mefo_bills
 
 		available = {
@@ -373,7 +389,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
 	USA_west_virginia_5 = {
-
+		highlight_state_targets = {
+			state = 806
+		}
 		icon = military_operation
 
 		available = {
@@ -400,7 +418,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_west_virginia_6 = {
-
+		highlight_state_targets = {
+			state = 806
+		}
 		icon = hol_attract_foreign_investors
 
 		available = {
@@ -428,6 +448,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_west_virginia_7 = {
+		highlight_state_targets = {
+			state = 806
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -456,6 +479,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_west_virginia_8 = {
+		highlight_state_targets = {
+			state = 806
+		}
 
         icon = ger_mefo_bills
 
@@ -485,7 +511,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_west_virginia_9 = {
-
+		highlight_state_targets = {
+			state = 806
+		}
         icon = ger_mefo_bills
 
 		available = {
@@ -513,6 +541,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_west_virginia_10 = {
+		highlight_state_targets = {
+			state = 806
+		}
 
         icon = ger_mefo_bills
 
@@ -541,6 +572,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
 	USA_north_carolina_3 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
 		icon = eng_install_government
 
@@ -568,6 +602,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_4 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -596,6 +633,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_5 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
 		icon = military_operation
 
@@ -625,6 +665,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_6 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -652,6 +695,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_7 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -680,6 +726,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_8 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
         icon = ger_mefo_bills
 
@@ -708,6 +757,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_9 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
         icon = ger_mefo_bills
 
@@ -736,6 +788,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_north_carolina_10 = {
+		highlight_state_targets = {
+			state = 363
+		}
 
         icon = ger_mefo_bills
 
@@ -764,6 +819,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
 	USA_kentucky_4 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -791,6 +849,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_kentucky_5 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
 		icon = military_operation
 
@@ -820,6 +881,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_kentucky_6 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -847,6 +911,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_kentucky_7 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -875,6 +942,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_kentucky_8 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
         icon = ger_mefo_bills
 
@@ -903,6 +973,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_kentucky_9 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
         icon = ger_mefo_bills
 
@@ -931,6 +1004,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_kentucky_10 = {
+		highlight_state_targets = {
+			state = 369
+		}
 
         icon = ger_mefo_bills
 
@@ -959,6 +1035,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
 	USA_tennessee_3 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
 		icon = eng_install_government
 
@@ -986,6 +1065,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_4 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -1014,6 +1096,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_5 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
 		icon = military_operation
 
@@ -1043,6 +1128,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_6 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -1070,6 +1158,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_7 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -1098,6 +1189,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_8 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
         icon = ger_mefo_bills
 
@@ -1126,6 +1220,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_9 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
         icon = ger_mefo_bills
 
@@ -1154,6 +1251,9 @@ USA_appalachian_states_loyalty = {
 		}
 	}
     USA_tennessee_10 = {
+		highlight_state_targets = {
+			state = 368
+		}
 
         icon = ger_mefo_bills
 
@@ -1184,6 +1284,9 @@ USA_appalachian_states_loyalty = {
 }
 USA_corn_belt_states_loyalty = {
 	USA_ohio_3 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
 		icon = eng_install_government
 
@@ -1211,6 +1314,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_4 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -1239,6 +1345,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_5 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
 		icon = military_operation
 
@@ -1268,6 +1377,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_6 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -1295,6 +1407,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_7 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -1323,6 +1438,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_8 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
         icon = ger_mefo_bills
 
@@ -1351,6 +1469,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_9 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
         icon = ger_mefo_bills
 
@@ -1379,6 +1500,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_ohio_10 = {
+		highlight_state_targets = {
+			state = 261
+		}
 
         icon = ger_mefo_bills
 
@@ -1407,6 +1531,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_indiana_2 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
 		icon = eng_install_government
 
@@ -1434,6 +1561,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_indiana_3 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
 		icon = eng_install_government
 
@@ -1462,6 +1592,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_4 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -1490,6 +1623,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_5 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
 		icon = military_operation
 
@@ -1519,6 +1655,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_6 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -1546,6 +1685,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_7 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -1574,6 +1716,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_8 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
         icon = ger_mefo_bills
 
@@ -1602,6 +1747,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_9 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
         icon = ger_mefo_bills
 
@@ -1630,6 +1778,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_indiana_10 = {
+		highlight_state_targets = {
+			state = 396
+		}
 
         icon = ger_mefo_bills
 
@@ -1658,6 +1809,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_illinois_2 = {
+		highlight_state_targets = {
+			state = 395
+		}
 
 		icon = eng_install_government
 
@@ -1685,6 +1839,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_illinois_3 = {
+		highlight_state_targets = {
+			state = 395
+		}
 
 		icon = eng_install_government
 
@@ -1713,6 +1870,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_4 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
 		icon = eng_propaganda_campaigns
 
@@ -1741,6 +1902,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_5 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
 		icon = military_operation
 
@@ -1770,6 +1935,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_6 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
 		icon = hol_attract_foreign_investors
 
@@ -1797,6 +1966,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_7 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
 		icon = eng_trade_unions_demand
 
@@ -1825,6 +1998,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_8 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
         icon = ger_mefo_bills
 
@@ -1853,6 +2030,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_9 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
         icon = ger_mefo_bills
 
@@ -1881,6 +2062,10 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_illinois_10 = {
+		highlight_state_targets = {
+			state = 395
+		}
+
 
         icon = ger_mefo_bills
 
@@ -1909,6 +2094,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_iowa_2 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
 		icon = eng_install_government
 
@@ -1936,6 +2124,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_iowa_3 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
 		icon = eng_install_government
 
@@ -1964,6 +2155,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_4 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -1992,6 +2186,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_5 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
 		icon = military_operation
 
@@ -2021,6 +2218,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_6 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -2048,6 +2248,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_7 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -2076,6 +2279,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_8 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
         icon = ger_mefo_bills
 
@@ -2104,6 +2310,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_9 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
         icon = ger_mefo_bills
 
@@ -2132,6 +2341,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_iowa_10 = {
+		highlight_state_targets = {
+			state = 392
+		}
 
         icon = ger_mefo_bills
 
@@ -2160,6 +2372,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_missouri_2 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
 		icon = eng_install_government
 
@@ -2187,6 +2402,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
 	USA_missouri_3 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
 		icon = eng_install_government
 
@@ -2215,6 +2433,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_4 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -2243,6 +2464,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_5 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
 		icon = military_operation
 
@@ -2272,6 +2496,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_6 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -2299,6 +2526,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_7 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -2327,6 +2557,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_8 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
         icon = ger_mefo_bills
 
@@ -2355,6 +2588,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_9 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
         icon = ger_mefo_bills
 
@@ -2383,6 +2619,9 @@ USA_corn_belt_states_loyalty = {
 		}
 	}
     USA_missouri_10 = {
+		highlight_state_targets = {
+			state = 373
+		}
 
         icon = ger_mefo_bills
 
@@ -2413,6 +2652,9 @@ USA_corn_belt_states_loyalty = {
 }
 USA_lake_states_loyalty = {
 	USA_michigan_2 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
 		icon = eng_install_government
 
@@ -2440,6 +2682,9 @@ USA_lake_states_loyalty = {
 		}
 	}
 	USA_michigan_3 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
 		icon = eng_install_government
 
@@ -2468,6 +2713,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_4 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -2496,6 +2744,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_5 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
 		icon = military_operation
 
@@ -2525,6 +2776,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_6 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -2552,6 +2806,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_7 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -2580,6 +2837,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_8 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
         icon = ger_mefo_bills
 
@@ -2608,6 +2868,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_9 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
         icon = ger_mefo_bills
 
@@ -2636,6 +2899,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_michigan_10 = {
+		highlight_state_targets = {
+			state = 393
+		}
 
         icon = ger_mefo_bills
 
@@ -2664,6 +2930,9 @@ USA_lake_states_loyalty = {
 		}
 	}
 	USA_wisconsin_2 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
 		icon = eng_install_government
 
@@ -2691,6 +2960,9 @@ USA_lake_states_loyalty = {
 		}
 	}
 	USA_wisconsin_3 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
 		icon = eng_install_government
 
@@ -2719,6 +2991,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_4 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -2747,6 +3022,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_5 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
 		icon = military_operation
 
@@ -2776,6 +3054,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_6 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -2803,6 +3084,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_7 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -2831,6 +3115,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_8 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
         icon = ger_mefo_bills
 
@@ -2859,6 +3146,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_9 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
         icon = ger_mefo_bills
 
@@ -2887,6 +3177,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_wisconsin_10 = {
+		highlight_state_targets = {
+			state = 394
+		}
 
         icon = ger_mefo_bills
 
@@ -2915,6 +3208,9 @@ USA_lake_states_loyalty = {
 		}
 	}
 	USA_minnesota_3 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
 		icon = eng_install_government
 
@@ -2942,6 +3238,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_4 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -2970,6 +3269,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_5 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
 		icon = military_operation
 
@@ -2999,6 +3301,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_6 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -3026,6 +3331,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_7 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -3054,6 +3362,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_8 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
         icon = ger_mefo_bills
 
@@ -3082,6 +3393,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_9 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
         icon = ger_mefo_bills
 
@@ -3110,6 +3424,9 @@ USA_lake_states_loyalty = {
 		}
 	}
     USA_minnesota_10 = {
+		highlight_state_targets = {
+			state = 391
+		}
 
         icon = ger_mefo_bills
 
@@ -3140,6 +3457,9 @@ USA_lake_states_loyalty = {
 }
 USA_southeast_states_loyalty = {
 	USA_south_carolina_2 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
 		icon = eng_install_government
 
@@ -3167,6 +3487,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
 	USA_south_carolina_3 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
 		icon = eng_install_government
 
@@ -3195,6 +3518,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_4 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -3223,6 +3549,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_5 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
 		icon = military_operation
 
@@ -3252,6 +3581,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_6 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -3279,6 +3611,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_7 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -3307,6 +3642,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_8 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
         icon = ger_mefo_bills
 
@@ -3335,6 +3673,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_9 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
         icon = ger_mefo_bills
 
@@ -3363,6 +3704,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_south_carolina_10 = {
+		highlight_state_targets = {
+			state = 364
+		}
 
         icon = ger_mefo_bills
 
@@ -3391,6 +3735,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
 	USA_georgia_2 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
 		icon = eng_install_government
 
@@ -3418,6 +3765,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
 	USA_georgia_3 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
 		icon = eng_install_government
 
@@ -3446,6 +3796,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_4 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -3474,6 +3827,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_5 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
 		icon = military_operation
 
@@ -3503,6 +3859,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_6 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -3530,6 +3889,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_7 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -3558,6 +3920,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_8 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
         icon = ger_mefo_bills
 
@@ -3586,6 +3951,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_9 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
         icon = ger_mefo_bills
 
@@ -3614,6 +3982,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_georgia_10 = {
+		highlight_state_targets = {
+			state = 365
+		}
 
         icon = ger_mefo_bills
 
@@ -3642,6 +4013,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
 	USA_mississippi_2 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
 		icon = eng_install_government
 
@@ -3669,6 +4043,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
 	USA_mississippi_3 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
 		icon = eng_install_government
 
@@ -3697,6 +4074,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_4 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -3725,6 +4105,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_5 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
 		icon = military_operation
 
@@ -3754,6 +4137,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_6 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -3781,6 +4167,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_7 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -3809,6 +4198,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_8 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
         icon = ger_mefo_bills
 
@@ -3837,6 +4229,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_9 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
         icon = ger_mefo_bills
 
@@ -3865,6 +4260,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_mississippi_10 = {
+		highlight_state_targets = {
+			state = 370
+		}
 
         icon = ger_mefo_bills
 
@@ -3893,6 +4291,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
 	USA_florida_3 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
 		icon = eng_install_government
 
@@ -3920,6 +4321,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_4 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -3948,6 +4352,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_5 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
 		icon = military_operation
 
@@ -3977,6 +4384,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_6 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -4004,6 +4414,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_7 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -4032,6 +4445,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_8 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
         icon = ger_mefo_bills
 
@@ -4060,6 +4476,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_9 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
         icon = ger_mefo_bills
 
@@ -4088,6 +4507,9 @@ USA_southeast_states_loyalty = {
 		}
 	}
     USA_florida_10 = {
+		highlight_state_targets = {
+			state = 366
+		}
 
         icon = ger_mefo_bills
 
@@ -4118,6 +4540,9 @@ USA_southeast_states_loyalty = {
 }
 USA_delta_states_loyalty = {
 	USA_alabama_2 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
 		icon = eng_install_government
 
@@ -4145,6 +4570,9 @@ USA_delta_states_loyalty = {
 		}
 	}
 	USA_alabama_3 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
 		icon = eng_install_government
 
@@ -4173,6 +4601,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_4 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -4201,6 +4632,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_5 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
 		icon = military_operation
 
@@ -4230,6 +4664,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_6 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -4257,6 +4694,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_7 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -4285,6 +4725,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_8 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
         icon = ger_mefo_bills
 
@@ -4313,6 +4756,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_9 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
         icon = ger_mefo_bills
 
@@ -4341,6 +4787,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_alabama_10 = {
+		highlight_state_targets = {
+			state = 367
+		}
 
         icon = ger_mefo_bills
 
@@ -4369,6 +4818,9 @@ USA_delta_states_loyalty = {
 		}
 	}
 	USA_louisiana_2 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
 		icon = eng_install_government
 
@@ -4396,6 +4848,9 @@ USA_delta_states_loyalty = {
 		}
 	}
 	USA_louisiana_3 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
 		icon = eng_install_government
 
@@ -4424,6 +4879,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_4 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -4452,6 +4910,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_5 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
 		icon = military_operation
 
@@ -4481,6 +4942,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_6 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -4508,6 +4972,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_7 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -4536,6 +5003,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_8 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
         icon = ger_mefo_bills
 
@@ -4564,6 +5034,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_9 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
         icon = ger_mefo_bills
 
@@ -4592,6 +5065,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_louisiana_10 = {
+		highlight_state_targets = {
+			state = 371
+		}
 
         icon = ger_mefo_bills
 
@@ -4620,6 +5096,9 @@ USA_delta_states_loyalty = {
 		}
 	}
 	USA_arkansas_2 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
 		icon = eng_install_government
 
@@ -4647,6 +5126,9 @@ USA_delta_states_loyalty = {
 		}
 	}
 	USA_arkansas_3 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
 		icon = eng_install_government
 
@@ -4675,6 +5157,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_4 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -4703,6 +5188,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_5 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
 		icon = military_operation
 
@@ -4732,6 +5220,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_6 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -4759,6 +5250,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_7 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -4787,6 +5281,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_8 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
         icon = ger_mefo_bills
 
@@ -4815,6 +5312,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_9 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
         icon = ger_mefo_bills
 
@@ -4843,6 +5343,9 @@ USA_delta_states_loyalty = {
 		}
 	}
     USA_arkansas_10 = {
+		highlight_state_targets = {
+			state = 372
+		}
 
         icon = ger_mefo_bills
 
@@ -4873,6 +5376,9 @@ USA_delta_states_loyalty = {
 }
 USA_north_plains_states_loyalty = {
 	USA_nebraska_2 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
 		icon = eng_install_government
 
@@ -4900,6 +5406,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_nebraska_3 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
 		icon = eng_install_government
 
@@ -4928,6 +5437,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_4 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -4956,6 +5468,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_5 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
 		icon = military_operation
 
@@ -4985,6 +5500,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_6 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -5012,6 +5530,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_7 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -5040,6 +5561,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_8 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
         icon = ger_mefo_bills
 
@@ -5068,6 +5592,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_9 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
         icon = ger_mefo_bills
 
@@ -5096,6 +5623,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_nebraska_10 = {
+		highlight_state_targets = {
+			state = 384
+		}
 
         icon = ger_mefo_bills
 
@@ -5124,6 +5654,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_kansas_2 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
 		icon = eng_install_government
 
@@ -5151,6 +5684,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_kansas_3 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
 		icon = eng_install_government
 
@@ -5179,6 +5715,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_4 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -5207,6 +5746,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_5 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
 		icon = military_operation
 
@@ -5236,6 +5778,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_6 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -5263,6 +5808,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_7 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -5291,6 +5839,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_8 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
         icon = ger_mefo_bills
 
@@ -5319,6 +5870,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_9 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
         icon = ger_mefo_bills
 
@@ -5347,6 +5901,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_kansas_10 = {
+		highlight_state_targets = {
+			state = 383
+		}
 
         icon = ger_mefo_bills
 
@@ -5375,6 +5932,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_colorado_2 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
 		icon = eng_install_government
 
@@ -5402,6 +5962,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_colorado_3 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
 		icon = eng_install_government
 
@@ -5430,6 +5993,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_4 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -5458,6 +6024,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_5 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
 		icon = military_operation
 
@@ -5487,6 +6056,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_6 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -5514,6 +6086,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_7 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -5542,6 +6117,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_8 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
         icon = ger_mefo_bills
 
@@ -5570,6 +6148,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_9 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
         icon = ger_mefo_bills
 
@@ -5598,6 +6179,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_colorado_10 = {
+		highlight_state_targets = {
+			state = 382
+		}
 
         icon = ger_mefo_bills
 
@@ -5626,6 +6210,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_north_dakota_5 = {
+		highlight_state_targets = {
+			state = 389
+		}
 
 		icon = military_operation
 
@@ -5654,6 +6241,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_north_dakota_6 = {
+		highlight_state_targets = {
+			state = 389
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -5681,6 +6271,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_north_dakota_7 = {
+		highlight_state_targets = {
+			state = 389
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -5709,6 +6302,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_north_dakota_8 = {
+		highlight_state_targets = {
+			state = 389
+		}
 
         icon = ger_mefo_bills
 
@@ -5737,6 +6333,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_north_dakota_9 = {
+		highlight_state_targets = {
+			state = 389
+		}
 
         icon = ger_mefo_bills
 
@@ -5765,6 +6364,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_north_dakota_10 = {
+		highlight_state_targets = {
+			state = 389
+		}
 
         icon = ger_mefo_bills
 
@@ -5793,6 +6395,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
 	USA_south_dakota_4 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
 		icon = eng_propaganda_campaigns
 
@@ -5820,6 +6425,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_south_dakota_5 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
 		icon = military_operation
 
@@ -5849,6 +6457,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_south_dakota_6 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
 		icon = hol_attract_foreign_investors
 
@@ -5876,6 +6487,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_south_dakota_7 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
 		icon = eng_trade_unions_demand
 
@@ -5904,6 +6518,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_south_dakota_8 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
         icon = ger_mefo_bills
 
@@ -5932,6 +6549,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_south_dakota_9 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
         icon = ger_mefo_bills
 
@@ -5960,6 +6580,9 @@ USA_north_plains_states_loyalty = {
 		}
 	}
     USA_south_dakota_10 = {
+		highlight_state_targets = {
+			state = 390
+		}
 
         icon = ger_mefo_bills
 

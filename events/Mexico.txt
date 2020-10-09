@@ -481,11 +481,11 @@ country_event = {
 	
 	option = {
 		name = mexico.11.a 
-		#%military guy
+		#military guy
 		create_country_leader = {
-			name = "Saturnino Cedillo"
+			name = "Félix Díaz"
 			desc = "POLITICS_SATURNINO_CEDILLO_DESC"
-			picture = "GFX_portrait_mex_saturnino_cedillo"
+			picture = "FelixDiazMEX.dds"
 			expire = "1965.1.1"
 			ideology = stratocracy
 			traits = {

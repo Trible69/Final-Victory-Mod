@@ -1351,6 +1351,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+
+		}
 	}
 
 	#Focus for Moseley's Generalship
@@ -1378,6 +1381,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 
@@ -1407,6 +1413,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = white_modernism
+		}
 	}
 
 	#Focus for Dismantle the Presidentship
@@ -1420,6 +1429,9 @@ focus_tree = {
 		prerequisite = { focus = AMS_moseleys_generalship }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = general_of_the_american_armies
 		}
 	}
 
@@ -1435,6 +1447,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = general_of_the_american_armies_1
+    			add_idea = general_of_the_american_armies_2
+			}
+		}
 	}
 
 	#Focus for Force their Hands
@@ -1448,6 +1466,13 @@ focus_tree = {
 		prerequisite = { focus = AMS_the_military_arm }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_timed_idea = {
+    			idea = a_purge_of_non_military_elements
+    			days = 180
+			}
 		}
 	}
 
@@ -1477,6 +1502,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = general_of_the_american_armies_2
+    			add_idea = general_of_the_american_armies_3
+			}
+		}
 	}
 
 	#Focus for Remove Thurmond
@@ -1491,6 +1522,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
+		}
 	}
 
 	#Focus for Replace Moseley
@@ -1504,6 +1539,9 @@ focus_tree = {
 		prerequisite = { focus = AMS_lindberghs_helm }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			remove_unit_leader = 996
 		}
 	}
 
@@ -1524,7 +1562,7 @@ focus_tree = {
 	#Focus for The Rise of the Southern Cross
 	focus = {
 		id = AMS_the_rise_of_the_southern_cross
-		icon = GFX_goal_unknown
+		icon = GFX_AMS_legionseagle
 		x = 12
 		y = 15
 		cost = 10
@@ -1589,6 +1627,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = white_modernism
+		}
 	}
 
 	#Focus for Enforce the Separation
@@ -1616,6 +1657,12 @@ focus_tree = {
 		prerequisite = { focus = AMS_dismantle_the_presidentship }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = general_of_the_american_armies
+    			add_idea = general_of_the_american_armies_1
+			}
 		}
 	}
 

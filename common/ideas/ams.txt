@@ -97,5 +97,123 @@ ideas = {
 				stability_factor = -0.10
 			}
 		}	
+		white_modernism = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.01
+				war_support_factor = 0.10
+			}
+		}	
+		general_of_the_american_armies = {
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.02
+				war_support_factor = 0.2
+			}
+		}	
+		general_of_the_american_armies_1 = {
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.02
+				war_support_factor = 0.2
+				high_command_cost_factor = -0.25
+				political_power_cost = 0.1
+			}
+		}
+		general_of_the_american_armies_2 = {
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.02
+				war_support_factor = 0.2
+				high_command_cost_factor = -0.25
+				political_power_cost = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		general_of_the_american_armies_3 = {
+			picture = chi_army_corruption3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.02
+				war_support_factor = 0.2
+				high_command_cost_factor = -0.25
+				political_power_cost = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		a_purge_of_non_military_elements = {
+			picture = idea_generic_purge
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.25
+			}
+		}	
 	}
 }

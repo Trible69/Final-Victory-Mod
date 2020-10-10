@@ -199,7 +199,7 @@ ideas = {
 			}
 		}
 		a_purge_of_non_military_elements = {
-			picture = idea_generic_purge
+			picture = generic_purge
 			
 			allowed = {
 				always = no
@@ -213,6 +213,80 @@ ideas = {
 			
 			modifier = {
 				political_advisor_cost_factor = 0.25
+			}
+		}	
+		enforced_separation = {
+			picture = generic_purge
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.1
+				political_power_gain = -0.05
+			}
+		}
+		jim_crow = {
+			picture = ger_mefo_bills_payment
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.05
+				political_power_gain = 0.15
+				national_populism_drift = 0.1
+			}
+		}
+		slavery_reborn = {
+			picture = generic_deal_with_the_devil
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		confederacy = {
+			picture = generic_deal_with_the_devil
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
 			}
 		}	
 	}

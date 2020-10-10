@@ -1571,6 +1571,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			set_cosmetic_tag = AMS_rise_of_cross
+			swap_ideas = {
+    			remove_idea = slavery_reborn
+    			add_idea = confederacy
+			}
+		}
 	}
 
 	#Focus for Halt Everything
@@ -1584,6 +1591,9 @@ focus_tree = {
 		prerequisite = { focus = AMS_effingers_legion }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -150
 		}
 	}
 
@@ -1612,6 +1622,9 @@ focus_tree = {
 		prerequisite = { focus = AMS_rebrand_extremism }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = slavery_reborn
 		}
 	}
 
@@ -1643,6 +1656,9 @@ focus_tree = {
 		prerequisite = { focus = AMS_reverse_the_integration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = enforced_separation
 		}
 	}
 
@@ -1678,6 +1694,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
 	}
 
 	#Focus for Reverse the Integration
@@ -1692,6 +1713,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			
+		}
 	}
 
 	#Focus for Push Jim Crow
@@ -1705,6 +1729,12 @@ focus_tree = {
 		prerequisite = { focus = AMS_enforce_the_separation }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = enforced_separation
+    			add_idea = jim_crow
+			}
 		}
 	}
 

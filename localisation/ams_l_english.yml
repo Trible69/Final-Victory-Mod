@@ -215,34 +215,34 @@ AMS_the_grand_dixie_desc:0 ""
  AMS.4.d:0 "With the ongoing power struggle raging across the country, Moseley’s hardliners and militarists have been pushing to increase the military budget. However, Thurmond and Lindbergh’s cliques vehemently oppose such a policy, knowing it would serve to further increase Moseley’s already dangerous power. \n\nRepresentatives of all groups gathered today in Charleston to decide on this year’s military budget. For hours on end, the politicians argued to no avail, only achieving minor agreements. During the day’s heated debate, a disappointed Walter Burgwyn Jones could be seen leaving the meeting in frustration. \n\nHearing the news of the convention, rioters and criminals soon gathered outside, looting and fighting in huge huddled masses. Although police were dispatched to the area, they were unable to fight off the large hordes of incoming dissidents. Soon enough the protesters gathered in front of the South Carolina State Capitol, where the proceedings were being held. Screams and scattered gunshots could be heard outside as the atmosphere in the Capitol grew more and more tense. \n\nWith the rioters’ cries and yells breaching the chamber’s marble walls, the representatives had no choice but to make a decision. As the votes were counted, the results became clear..."
  AMS.4.a:0 "The militarists narrowly secured the vote! The budget remains the same."
  AMS.4.b:0 "Thurmond and Lindbergh’s factions won the vote. The military budget shall be reduced."
- AMS.5.t:0
- AMS.5.d:0
- AMS.5.a:0
- AMS.5.b:0
- AMS.5.c:0
- AMS.6.t:0
- AMS.6.d:0
- AMS.6.a:0
- AMS.6.b:0
- AMS.6.c:0
- AMS.7.t:0
- AMS.7.d:0
- AMS.7.a:0
- AMS.7.b:0
- AMS.8.t:0
- AMS.8.d:0
- AMS.8.a:0
- AMS.8.b:0
- AMS.9.t:0
- AMS.9.d:0
- AMS.9.a:0
- AMS.9.b:0
- AMS.9.c:0
- AMS.10.t:0
- AMS.10.d:0
- AMS.10.a:0
- AMS.10.b:0
- AMS.10.c:0
+ AMS.5.t:0 "Riots in Washington D.C."
+ AMS.5.d:0 "Worrying news from the nation’s old capital! Former government workers, Black leaders, and a few deposed Federalist politicians have gathered in DC to protest the new implementation of extreme right-wing policies and Northern segregation. The now abandoned Capitol and White House have been surrounded by rioters who threaten to overwhelm the two buildings and attack their beleaguered guards. \n\nOur frantically assembled militias and military are currently on standby to address the protests and arrest the dissidents. Although they haven’t moved into the city itself yet, Moseley’s faction pushes for the military to intervene as soon as possible to end the chaos. However, Lindbergh can be seen rushing from meeting to meeting and delivering short but impassioned speeches as he tries to negotiate with the white portion of the rioters as part of his platform for “unity through race”. Although only minor inroads have been made with the dissidents, Lindbergh has managed to stop direct military action… for now. Meanwhile, Thurmond, who has police support, has declared a state of lockdown in the affected areas and commenced clashes with the protesters. \n\nIn the next few hours, it becomes increasingly clear which faction wins out and gets their way in dealing with the protest. The winner is..."
+ AMS.5.a:0 "Moseley! His faction manages to send in the military. The dissidents flee in chaos with tens of casualties."
+ AMS.5.b:0 "Lindbergh! He successfully negotiates a deal with the White leaders and the Black rioters are arrested."
+ AMS.5.c:0 "Thurmond! He manages to beat back the protesters and force them to disperse."
+ AMS.6.t:0 "Bread Riots in Chicago"
+ AMS.6.d:0 "Troubling news from the windy city of Chicago! Huge swathes of bloodthirsty, vengeful Vanguardists have stormed the streets, raising red flags and waving pictures of loved ones lost to the late civil war. The crowds have even managed to erect street barricades from common household objects, stopping the authorities from entering into many neighborhoods. Moseley, Lindbergh, and Thurmond could all be seen hurrying towards the burning city today as they brought their cronies and most loyal formations to deal with the protests and further their own personal agendas. \n\nThe developing situation has also drawn some attention to us by international observers, who side with the protesters and encourage their violent actions. As a result, radios and TV’s all around the world spread anti-Populist messages, acting in “solidarity” with the Judeo-Bolshevik bandits. This, combined with a variety of other factors, has forced us to act as soon as possible to end the riots. \n\nIn a rare moment of panicked unity, members of all three prevalent political cliques have been able to formulate a single coherent plan to quell the protest. It is decided that they must..."
+ AMS.6.a:0 "Blame the riot on the Jewish Bolshevik revolutionaries. Send in the militias and shoot at anyone who refuses to stay at home."
+ AMS.6.b:0 "Use the police to beat them back. Communists are the spawn of hell!"
+ AMS.6.c:0 "Arrest their leaders, and negotiate with the starved people. Communists or not, they are white-born Americans!"
+ AMS.7.t:0 "Reinforcement of Jim Crow Laws"
+ AMS.7.d:0 "Since slavery died out, the Jim Crow laws have served the White aristocrats well in suppressing African-Americans in the Deep South. However, now comes the unsavory task of attempting to impose our will on America as a whole, and it is a well-established fact that the predominantly egalitarian North despises these racial separatist policies. How should we proceed?"
+ AMS.7.a:0 "Slowly implement them in the conquered lands."
+ AMS.7.b:0 "Immediately implement them throughout the entire nation."
+ AMS.8.t:0 "Military Recruitment"
+ AMS.8.d:0 "On paper and in propaganda, the Army of the American State is an all-conquering, unstoppable war machine that is devoted to their nation and race. However, the truth is far less appealing. Various ragtag militias far more loyal to their local leaders and generals make up the bulk of our armed forces, which still lies in a state of disrepair after the bloody Civil War. Our generals have suggested that we fill the gaps with more local men up North, but our political leaders have made their case against this, stating that recruiting Northerners into the army will lead to a disloyal armed force."
+ AMS.8.a:0 "Our Military is far too lenient on who it allows to join!"
+ AMS.8.b:0 "Cannon-fodder for impure-Americans is a fine role."
+ AMS.9.t:0 "Federalist Attempt on Lindbergh's Life!"
+ AMS.9.d:0 "It would seem the forces of Washington are not quite finished yet. An attempt has been made on President Lindbergh’s life, but fortunately, Lucky Lindy has prevailed. However, the assassin confessed links to underground Federalist organizations, and we must carefully choose our response to this dastardly act."
+ AMS.9.a:0 "Revoke any autonomy we had granted to the conquered lands! A military government shall be placed in its stead."
+ AMS.9.b:0 "This was clear incompetence by the military that allowed such an attempt to even occur!"
+ AMS.9.c:0 "Too much leniency was shown by our leadership. We must change that."
+ AMS.10.t:0 "Vanguardist Attempt on Lindbergh's Life!"
+ AMS.10.d:0 "How are these attempts being made…?"
+ AMS.10.a:0 "Send in the military to hunt down any communist resistance!"
+ AMS.10.b:0 "Judeo-Bolshevism is rampant within the north. A forced relocation will allow us to keep tabs on those who wish to conspire against us."
+ AMS.10.c:0 "The Vanguardist scum have struck at Lindbergh! Though the forces of Haywood were forcefully put down by our valiant troops in the Civil War, covert groups pledging allegiance to the Crimson Flag have attempted to end the life of our great leader. We must address this threat immediately!"
  AMS.11.t:0 "Effinger’s Putsch"
  AMS.11.d:0 "In the aftermath of the late leader’s assassination, his Vice President, Virgil Effinger, was quick to assume the reins of power and fervently arrest Moseley and Thurmond’s closest and most influential followers for “Judeo-Bolshevik connections” and a variety of other baseless claims. However, Thurmond and Moseley themselves are yet to be seen, with speculative claims placing their whereabouts in Canada, Quebec, and even the Caribbean. For now though, the nation remains firmly under Effinger’s control as his loyal Black Legion purges any and all remaining dissidents. \n\nAlthough Effinger’s policies and core values are still somewhat unclear, most suspect that he belongs to an insanely extremist school of thought advocating for almost complete elimination of all other races and religions from the war-torn country by all means necessary. The daily public executions of Jewish, Catholic, Hispanic, Black, and leftist leaders do seem to confirm this theory as America falls, minute by minute, into its darkest hour. Vast columns of panicked refugees have assembled near the Canadian, Quebecois, and Mexican borders, demanding asylum from what has been deemed 'Virgil’s Personal Nightmare.'"
  AMS.11.a:0 "It is time we finally purify the nation of all its evils, once and for all!"
@@ -277,7 +277,7 @@ AMS_the_grand_dixie_desc:0 ""
  AMS_lindberg_support_desc:0 "Lindbergh's position is slowly strengthening! He has currently [?AMS.lindberg_support|+0] §H influence in the government§! \nMoseley is greatly increasing the influence of the military in America! He has currently [?AMS.moseley_support|+0] §Hinfluence in the government§! \nThurmond's group is breaking down all sides to gain power! He has currently [?AMS.thurmond_support|+0] §H influence in the government§! \n§GTo unlock certain leader's paths, influence requirements have to be met. \nIf the power struggle ends with no clear winner, the vice president will take control!§ \n§REvents and focus descriptions attached with the experience of playing the vice president are incredibly dark and morbid to reflect the true nature of the country. This is a simple warning for those who are uncomfortable in reading such writings.§"
  AMS_moseley_support:0 "Moseley's Support"
  AMS_moseley_support_desc:0 "Lindbergh's position is slowly strengthening! He has currently [?AMS.lindberg_support|+0] §H influence in the government§! \nMoseley is greatly increasing the influence of the military in America! He has currently [?AMS.moseley_support|+0] §Hinfluence in the government§! \nThurmond's group is breaking down all sides to gain power! He has currently [?AMS.thurmond_support|+0] §H influence in the government§! \n§GTo unlock certain leader's paths, influence requirements have to be met. \nIf the power struggle ends with no clear winner, the vice president will take control!§ \n§REvents and focus descriptions attached with the experience of playing the vice president are incredibly dark and morbid to reflect the true nature of the country. This is a simple warning for those who are uncomfortable in reading such writings.§"
- AMS_thurmon_support:0 "Thurmond's Support"
+ AMS_thurmond_support:0 "Thurmond's Support"
  AMS_thurmond_support_desc:0 "Lindbergh's position is slowly strengthening! He has currently [?AMS.lindberg_support|+0] §H influence in the government§! \nMoseley is greatly increasing the influence of the military in America! He has currently [?AMS.moseley_support|+0] §Hinfluence in the government§! \nThurmond's group is breaking down all sides to gain power! He has currently [?AMS.thurmond_support|+0] §H influence in the government§! \n§GTo unlock certain leader's paths, influence requirements have to be met. \nIf the power struggle ends with no clear winner, the vice president will take control!§ \n§REvents and focus descriptions attached with the experience of playing the vice president are incredibly dark and morbid to reflect the true nature of the country. This is a simple warning for those who are uncomfortable in reading such writings.§"
  AMS_find_loyalists:0 "Find Loyalists"
  AMS_find_loyalists_desc:0 "This will add 2 influence points to Lindbergh!"

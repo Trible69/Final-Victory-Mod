@@ -1602,6 +1602,581 @@ focus_tree = {
 			navy_experience = 200
 		}
 	}
+	###political 
+	#Focus for Creating a Constitution
+	focus = {
+		id = MEX_creating_a_constitution
+		icon = GFX_focus_generic_treaty
+		x = -12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_securing_the_republic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Early Elections
+	focus = {
+		id = MEX_early_elections
+		icon = GFX_focus_generic_military_academy
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_our_prime_minister }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fake a Vanguardist Revolution
+	focus = {
+		id = MEX_fake_a_vanguardist_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		x = -1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_burn_the_imperial_palace }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Battle of Chapultepec
+	focus = {
+		id = MEX_the_battle_of_chapultepec
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_pass_the_antivanguardist_act 
+			focus = MEX_fake_a_vanguardist_revolution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for And the Emperor
+	focus = {
+		id = MEX_and_the_emperor
+		icon = GFX_focus_rom_royal_dictatorship
+		x = -6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_empire }
+		mutually_exclusive = { 
+			focus = MEX_and_the_felicistas 
+			focus = MEX_and_the_emperor 
+			focus = MEX_a_vanguardist_government 
+			focus = MEX_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Empire
+	focus = {
+		id = MEX_the_empire
+		icon = GFX_goal_anschluss
+		x = -6
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for And the Felicistas
+	focus = {
+		id = MEX_and_the_felicistas
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_empire }
+		mutually_exclusive = { 
+			focus = MEX_securing_the_republic 
+		}
+		mutually_exclusive = { 
+			focus = MEX_and_the_emperor 
+		}
+		mutually_exclusive = { 
+			focus = MEX_a_vanguardist_government 
+		}
+		mutually_exclusive = { 
+			focus = MEX_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Election Plans
+	focus = {
+		id = MEX_election_plans
+		icon = GFX_goal_tripartite_pact
+		x = -10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_creating_a_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Prime Minister
+	focus = {
+		id = MEX_our_prime_minister
+		icon = GFX_goal_generic_territory_or_war
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_assassinate_prime_minister_madero 
+			focus = MEX_abascalistas_pact 
+			focus = MEX_assign_governorships_to_party_members 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Securing the Republic
+	focus = {
+		id = MEX_securing_the_republic
+		icon = GFX_goal_support_democracy
+		x = -12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_empire }
+		mutually_exclusive = { 
+			focus = MEX_a_vanguardist_government 
+		}
+		mutually_exclusive = { 
+			focus = MEX_and_the_felicistas 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Vanguardist Government
+	focus = {
+		id = MEX_a_vanguardist_government
+		icon = GFX_goal_support_communism
+		x = -18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_empire }
+		mutually_exclusive = { 
+			focus = MEX_securing_the_republic 
+		}
+		mutually_exclusive = { 
+			focus = MEX_and_the_emperor 
+		}
+		mutually_exclusive = { 
+			focus = MEX_and_the_felicistas 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assign Governorships to Party Members
+	focus = {
+		id = MEX_assign_governorships_to_party_members
+		icon = GFX_focus_generic_self_management
+		x = -2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_and_the_felicistas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Abascalistas Pact
+	focus = {
+		id = MEX_abascalistas_pact
+		icon = GFX_goal_anschluss
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_and_the_felicistas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assassinate Prime Minister Madero
+	focus = {
+		id = MEX_assassinate_prime_minister_madero
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_and_the_felicistas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Burn the Imperial Palace
+	focus = {
+		id = MEX_burn_the_imperial_palace
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_early_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pass the Anti-Vanguardist Act
+	focus = {
+		id = MEX_pass_the_antivanguardist_act
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_burn_the_imperial_palace }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Future Worthy of Every Mexican
+	focus = {
+		id = MEX_a_future_worthy_of_every_mexican
+		icon = GFX_focus_mex_privatisation
+		x = -12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_first_election }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Remainders
+	focus = {
+		id = MEX_the_remainders
+		icon = GFX_focus_prc_infiltration
+		x = 0
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_battle_of_chapultepec }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban the Felicistas
+	focus = {
+		id = MEX_ban_the_felicistas
+		icon = GFX_focus_mex_arrest_general_cedillo
+		x = -12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_laws_against_radicalisation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Free Mexican Army
+	focus = {
+		id = MEX_the_free_mexican_army
+		icon = GFX_focus_mex_soldaderas
+		x = -14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_creating_a_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tighten the Noose
+	focus = {
+		id = MEX_tighten_the_noose
+		icon = GFX_focus_CZE_german_puppet
+		x = -6
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_and_the_emperor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Round up the Liberals...
+	focus = {
+		id = MEX_round_up_the_liberals
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = -6
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_tighten_the_noose }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for … and Liquidate the Fascists
+	focus = {
+		id = MEX__and_liquidate_the_fascists
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = -6
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_round_up_the_liberals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Damage Control
+	focus = {
+		id = MEX_damage_control
+		icon = GFX_focus_spr_crush_the_revolution
+		x = -6
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX__and_liquidate_the_fascists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Emergency "Elections"
+	focus = {
+		id = MEX_emergency_elections
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = -7
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_damage_control }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form Reactionary Paramilitaries
+	focus = {
+		id = MEX_form_reactionary_paramilitaries
+		icon = GFX_goal_generic_secret_weapon
+		x = -5
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_damage_control }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mexican Century Preserved?
+	focus = {
+		id = MEX_the_mexican_century_preserved
+		icon = GFX_focus_mex_redeem_aztlan
+		x = -6
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_emergency_elections 
+		}
+		prerequisite = { 
+			focus = MEX_form_reactionary_paramilitaries 
+		}
+	}
+
+	#Focus for No More Suffering!
+	focus = {
+		id = MEX_no_more_suffering
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = -18
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_a_vanguardist_government }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create the Mexican Revolutionary Council
+	focus = {
+		id = MEX_create_the_mexican_revolutionary_council
+		icon = GFX_goal_generic_war_with_comintern
+		x = -20
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_no_more_suffering }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spread the Vanguardist Message
+	focus = {
+		id = MEX_spread_the_vanguardist_message
+		icon = GFX_focus_por_workers_of_iberia
+		x = -18
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_no_more_suffering }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mexican Red Army
+	focus = {
+		id = MEX_the_mexican_red_army
+		icon = GFX_focus_generic_manpower
+		x = -16
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_no_more_suffering }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Fate of the Emperor
+	focus = {
+		id = MEX_the_fate_of_the_emperor
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = -18
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_the_mexican_red_army 
+		}
+		prerequisite = { 
+			focus = MEX_spread_the_vanguardist_message 
+		}
+		prerequisite = { 
+			focus = MEX_create_the_mexican_revolutionary_council 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Distribution of Power
+	focus = {
+		id = MEX_distribution_of_power
+		icon = GFX_goal_generic_neutrality_focus
+		x = -12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEX_ensure_poll_safety 
+		}
+		prerequisite = { 
+			focus = MEX_ban_the_felicistas 
+		}
+		prerequisite = { 
+			focus = MEX_the_spirit_of_independence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Laws against Radicalisation
+	focus = {
+		id = MEX_laws_against_radicalisation
+		icon = GFX_goal_anti_comintern_pact
+		x = -12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_creating_a_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Spirit of Independence
+	focus = {
+		id = MEX_the_spirit_of_independence
+		icon = GFX_goal_generic_military_sphere
+		x = -14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_the_free_mexican_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ensure Poll Safety
+	focus = {
+		id = MEX_ensure_poll_safety
+		icon = GFX_focus_generic_self_management
+		x = -10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_election_plans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The First Election
+	focus = {
+		id = MEX_the_first_election
+		icon = GFX_goal_generic_national_unity
+		x = -12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEX_distribution_of_power }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
 
 	 

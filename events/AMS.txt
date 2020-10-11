@@ -468,9 +468,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	Trigger = {
-		has_country_flag = lindberg_dead
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = AMS.12.a

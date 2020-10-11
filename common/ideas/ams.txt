@@ -97,7 +97,7 @@ ideas = {
 				stability_factor = -0.10
 			}
 		}	
-		white_modernism = {
+		ams_white_modernism = {
 			picture = neutrality_idea
 			
 			allowed = {
@@ -115,7 +115,7 @@ ideas = {
 				war_support_factor = 0.10
 			}
 		}	
-		general_of_the_american_armies = {
+		ams_general_of_the_american_armies = {
 			picture = chi_army_corruption3
 			
 			allowed = {
@@ -133,7 +133,7 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}	
-		general_of_the_american_armies_1 = {
+		ams_general_of_the_american_armies_1 = {
 			picture = chi_army_corruption3
 			
 			allowed = {
@@ -153,7 +153,7 @@ ideas = {
 				political_power_cost = 0.1
 			}
 		}
-		general_of_the_american_armies_2 = {
+		ams_general_of_the_american_armies_2 = {
 			picture = chi_army_corruption3
 			
 			allowed = {
@@ -175,7 +175,7 @@ ideas = {
 				army_defence_factor = 0.1
 			}
 		}
-		general_of_the_american_armies_3 = {
+		ams_general_of_the_american_armies_3 = {
 			picture = chi_army_corruption3
 			
 			allowed = {
@@ -198,7 +198,7 @@ ideas = {
 				stability_factor = 0.1
 			}
 		}
-		a_purge_of_non_military_elements = {
+		ams_a_purge_of_non_military_elements = {
 			picture = idea_generic_purge
 			
 			allowed = {
@@ -215,5 +215,28 @@ ideas = {
 				political_advisor_cost_factor = 0.25
 			}
 		}	
+		ams_the_generalship = {
+			picture = idea_generic_purge
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				military_leader_cost_factor = -0.5
+				army_leader_start_attack_level= 1
+				army_leader_start_planning_level= 1
+				army_leader_start_defense_level= 1
+				army_leader_start_logistics_level= 1
+				army_leader_start_level = 1
+				promote_cost_factor = -0.5
+			}
+		}
 	}
 }

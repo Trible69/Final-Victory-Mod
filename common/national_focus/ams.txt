@@ -1347,12 +1347,38 @@ focus_tree = {
 		x = 6
 		y = 10
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AMS_lindberg_influence
+				check_variable = { 
+					var = AMS.lindberg_support
+					value = 20
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AMS_difference_lindbergh_thurmond
+				check_variable = { 
+					var = ams_temp_influence
+					value = 10
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AMS_difference_lindbergh_moseley
+				check_variable = { 
+					var = ams_temp_influence_1
+					value = 10
+					compare = greater_than_or_equals 
+				}
+			}
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-
+			add_ideas = ams_an_aviators_spirit
 		}
 	}
 
@@ -1365,8 +1391,41 @@ focus_tree = {
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AMS_moseley_influence
+				check_variable = { 
+					var = AMS.moseley_support
+					value = 20
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AMS_difference_moseley_thurmond
+				check_variable = { 
+					var = ams_temp_influence
+					value = 10
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AMS_difference_moseley_lindberg
+				check_variable = { 
+					var = ams_temp_influence_1
+					value = 10
+					compare = greater_than_or_equals 
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ams_the_generalship
+			country_event = {
+				id = AMS.12
+				days = 2
+			}
 		}
 	}
 
@@ -1379,11 +1438,41 @@ focus_tree = {
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AMS_thurmond_influence
+				check_variable = { 
+					var = AMS.thurmond_support
+					value = 20
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AMS_difference_thurmond_moseley
+				check_variable = { 
+					var = ams_temp_influence
+					value = 10
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AMS_difference_thurmond_lindberg
+				check_variable = { 
+					var = ams_temp_influence_1
+					value = 10
+					compare = greater_than_or_equals 
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			add_ideas = ams_state_of_white_americans
+			country_event = {
+				id = AMS.12
+				days = 2
+			}
 		}
 	}
 
@@ -1396,8 +1485,18 @@ focus_tree = {
 		y = 10
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_country_flag = AMS_effinger_time
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ams_the_black_legion
+			country_event = {
+				id = AMS.11
+				days = 3
+			}
 		}
 	}
 
@@ -1414,7 +1513,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = white_modernism
+			add_ideas = ams_white_modernism
 		}
 	}
 
@@ -1431,7 +1530,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = general_of_the_american_armies
+			add_idea = ams_general_of_the_american_armies
 		}
 	}
 
@@ -1449,8 +1548,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = general_of_the_american_armies_1
-    			add_idea = general_of_the_american_armies_2
+    			remove_idea = ams_general_of_the_american_armies_1
+    			add_idea = ams_general_of_the_american_armies_2
 			}
 		}
 	}
@@ -1470,7 +1569,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -100
 			add_timed_idea = {
-    			idea = a_purge_of_non_military_elements
+    			idea = ams_a_purge_of_non_military_elements
     			days = 180
 			}
 		}
@@ -1488,6 +1587,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_an_aviators_spirit_1
+				add_idea = ams_an_aviators_spirit_2
+			}
+		}
 	}
 
 	#Focus for An American Stratocracy
@@ -1504,8 +1609,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = general_of_the_american_armies_2
-    			add_idea = general_of_the_american_armies_3
+    			remove_idea = ams_general_of_the_american_armies_2
+    			add_idea = ams_general_of_the_american_armies_3
 			}
 		}
 	}
@@ -1525,6 +1630,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -100
 			add_stability = 0.1
+			country_event = {
+				id = AMS.15
+				days = 2
+			}
 		}
 	}
 
@@ -1542,6 +1651,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_unit_leader = 996
+			country_event = {
+				id = AMS.14
+				days = 2
+			}
 		}
 	}
 
@@ -1557,9 +1670,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_the_black_legion_2
+				add_idea = ams_the_black_legion_3
+			}
+		}
 	}
 
-	#Focus for The Rise of the Southern Cross
+	#Focus for The Rise of the American Legion
 	focus = {
 		id = AMS_the_rise_of_the_southern_cross
 		icon = GFX_AMS_legionseagle
@@ -1570,6 +1689,16 @@ focus_tree = {
 		prerequisite = { focus = AMS_white_christian_fundamentalism }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_slavery_reborn
+				add_idea = ams_slavery_reborn_2
+			}
+			country_event = {
+				id = AMS.13
+				days = 3
+			}
 		}
 	}
 
@@ -1585,6 +1714,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_the_black_legion
+				add_idea = ams_the_black_legion_1
+			}
+			add_political_power = -150
+		}
 	}
 
 	#Focus for Re-Brand Extremism
@@ -1599,6 +1735,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_the_black_legion_1
+				add_idea = ams_the_black_legion_2
+			}
+		}
 	}
 
 	#Focus for A Memory 50 years old
@@ -1612,6 +1754,13 @@ focus_tree = {
 		prerequisite = { focus = AMS_rebrand_extremism }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_idea = ams_slavery_reborn
+			country_event = {
+				id = AMS.16
+				days = 3
+			}
 		}
 	}
 
@@ -1628,7 +1777,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = white_modernism
+			swap_ideas = {
+				remove_idea = ams_an_aviators_spirit
+				add_idea = ams_an_aviators_spirit_1
+			}
 		}
 	}
 
@@ -1643,6 +1795,9 @@ focus_tree = {
 		prerequisite = { focus = AMS_reverse_the_integration }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ams_enforce_the_separation
 		}
 	}
 
@@ -1660,8 +1815,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = general_of_the_american_armies
-    			add_idea = general_of_the_american_armies_1
+    			remove_idea = ams_general_of_the_american_armies
+    			add_idea = ams_general_of_the_american_armies_1
 			}
 		}
 	}
@@ -1678,6 +1833,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
+			add_war_support = -0.05
+
+		}
 	}
 
 	#Focus for Reverse the Integration
@@ -1691,6 +1852,12 @@ focus_tree = {
 		prerequisite = { focus = AMS_strike_against_the_extremists }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_state_of_white_americans
+				add_idea = ams_state_of_white_americans_1
+			}
 		}
 	}
 
@@ -1706,6 +1873,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_enforce_the_separation
+				add_idea = ams_enforce_the_separation_1
+			}
+		}
 	}
 
 	#Focus for The Grand Dixie
@@ -1719,6 +1892,12 @@ focus_tree = {
 		prerequisite = { focus = AMS_push_jim_crow }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ams_state_of_white_americans_1
+				add_idea = ams_state_of_white_americans_2
+			}
 		}
 	}
 #End of focuses 

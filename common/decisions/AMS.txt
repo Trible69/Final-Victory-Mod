@@ -24,6 +24,22 @@ AMS_lindberg_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 2 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support 
+				}
             }
         }
 	}
@@ -53,6 +69,22 @@ AMS_lindberg_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 3 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support 
+				}
             }
         }
 	}
@@ -82,6 +114,22 @@ AMS_lindberg_support = {
                 add_to_variable = { AMS.lindberg_support = 2 }
                 subtract_from_variable = { AMS.moseley_support = 1 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support 
+				}
             }
         }
 	}
@@ -110,6 +158,22 @@ AMS_lindberg_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.lindberg_support = 2 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support 
+				}
             }
         }
 	}
@@ -134,6 +198,18 @@ AMS_lindberg_support = {
         timeout_effect = {
             clr_country_flag = AMS_lindberg_choice
 			set_country_flag = AMS_effinger_time
+			country_event = {
+				id = AMS.12
+				days = 7
+			}
+			country_event = {
+				id = AMS.14
+				days = 2
+			}
+			country_event = {
+				id = AMS.15
+				days = 4
+			}
         }
 
         complete_effect = {
@@ -223,6 +299,22 @@ AMS_moseley_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 2 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -253,6 +345,22 @@ AMS_moseley_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 3 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -282,6 +390,22 @@ AMS_moseley_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 3 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -310,6 +434,22 @@ AMS_moseley_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.moseley_support = 2 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.moseley_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -334,6 +474,18 @@ AMS_moseley_support = {
         timeout_effect = {
             clr_country_flag = AMS_moseley_choice
 			set_country_flag = AMS_effinger_time
+			country_event = {
+				id = AMS.12
+				days = 7
+			}
+			country_event = {
+				id = AMS.14
+				days = 2
+			}
+			country_event = {
+				id = AMS.15
+				days = 4
+			}
         }
 
         complete_effect = {
@@ -423,6 +575,22 @@ AMS_thurmond_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.thurmond_support = 2 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.thurmond_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -453,6 +621,22 @@ AMS_thurmond_support = {
                 add_to_variable = { AMS.thurmond_support = 3 }
                 subtract_from_variable = { AMS.lindberg_support = 1}
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.thurmond_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -481,6 +665,22 @@ AMS_thurmond_support = {
 			hidden_effect = {
                 add_to_variable = { AMS.thurmond_support = 2 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.thurmond_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -510,6 +710,22 @@ AMS_thurmond_support = {
                 add_to_variable = { AMS.thurmond_support = 2 }
                 subtract_from_variable = { AMS.moseley_support = 1 }
 				clr_country_flag = AMS_support_actions
+				set_variable = { 
+					var = ams_temp_influence
+					value = AMS.thurmond_support 
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence
+					value = AMS.moseley_support 
+				}
+				set_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.thurmond_support
+				}
+				subtract_from_variable = { 
+					var = ams_temp_influence_1
+					value = AMS.lindberg_support
+				}
             }
         }
 	}
@@ -534,6 +750,18 @@ AMS_thurmond_support = {
         timeout_effect = {
             clr_country_flag = AMS_thurmond_choice
 			set_country_flag = AMS_effinger_time
+			country_event = {
+				id = AMS.12
+				days = 7
+			}
+			country_event = {
+				id = AMS.14
+				days = 2
+			}
+			country_event = {
+				id = AMS.15
+				days = 4
+			}
         }
 
         complete_effect = {

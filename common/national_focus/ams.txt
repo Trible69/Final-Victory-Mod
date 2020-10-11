@@ -1691,13 +1691,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			set_cosmetic_tag = AMS_rise_of_cross
 			swap_ideas = {
-				remove_idea = ams_slavery_reborn
-				add_idea = ams_slavery_reborn_2
-			}
-			country_event = {
-				id = AMS.13
-				days = 3
+    			remove_idea = slavery_reborn
+    			add_idea = confederacy
 			}
 		}
 	}
@@ -1756,7 +1753,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_idea = ams_slavery_reborn
+			add_idea = slavery_reborn
 			country_event = {
 				id = AMS.16
 				days = 3
@@ -1797,7 +1794,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = ams_enforce_the_separation
+			add_ideas = enforced_separation
 		}
 	}
 
@@ -1875,8 +1872,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = ams_enforce_the_separation
-				add_idea = ams_enforce_the_separation_1
+    			remove_idea = enforced_separation
+    			add_idea = jim_crow
 			}
 		}
 	}

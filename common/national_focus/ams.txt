@@ -1379,6 +1379,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ams_an_aviators_spirit
+			set_country_flag = AMS_lindberg_power
 		}
 	}
 
@@ -1426,6 +1427,7 @@ focus_tree = {
 				id = AMS.12
 				days = 2
 			}
+			set_country_flag = AMS_moseley_power
 		}
 	}
 
@@ -1473,6 +1475,7 @@ focus_tree = {
 				id = AMS.12
 				days = 2
 			}
+			set_country_flag = AMS_thurmond_power
 		}
 	}
 
@@ -1497,6 +1500,9 @@ focus_tree = {
 				id = AMS.11
 				days = 3
 			}
+			set_country_flag = AMS_lindberg_power
+			set_country_flag = AMS_moseley_power
+			set_country_flag = AMS_thurmond_power
 		}
 	}
 

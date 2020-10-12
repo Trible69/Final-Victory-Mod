@@ -613,3 +613,17 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = mexico.15
+	title = mexico.15.t 
+	desc = mexico.15.d 
+	picture = GFX_report_event_por_president_military_inspection
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mexico.15.a
+	}
+}

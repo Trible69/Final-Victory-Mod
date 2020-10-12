@@ -1615,6 +1615,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = the_mexican_constitution
+		}
 	}
 
 	#Focus for Early Elections
@@ -1629,6 +1632,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
+		}
 	}
 
 	#Focus for Fake a Vanguardist Revolution
@@ -1642,6 +1649,13 @@ focus_tree = {
 		prerequisite = { focus = MEX_burn_the_imperial_palace }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = vanguardism
+				popularity = 0.1
+			}
+			add_war_support = 0.1
 		}
 	}
 
@@ -1660,6 +1674,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_army_marches_2
+				add_idea = the_army_marches_3
+			}
+		}
 	}
 
 	#Focus for And the Emperor
@@ -1671,6 +1691,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MEX_the_empire }
+		available = {
+			has_completed_focus = MEX_the_mexican_monarchy
+		}
 		mutually_exclusive = { 
 			focus = MEX_and_the_felicistas 
 			focus = MEX_and_the_emperor 
@@ -1679,6 +1702,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
 		}
 	}
 
@@ -1693,6 +1719,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 
 	#Focus for And the Felicistas
@@ -1704,6 +1733,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MEX_the_empire }
+		available = {
+			has_completed_focus = MEX_the_grand_junta
+		}
 		mutually_exclusive = { 
 			focus = MEX_securing_the_republic 
 		}
@@ -1719,6 +1751,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = the_army_marches
+		}
 	}
 
 	#Focus for Election Plans
@@ -1732,6 +1768,9 @@ focus_tree = {
 		prerequisite = { focus = MEX_creating_a_constitution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
 		}
 	}
 
@@ -1751,6 +1790,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability = 0.1
+		}
 	}
 
 	#Focus for Securing the Republic
@@ -1762,6 +1804,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MEX_the_empire }
+		available = {
+			has_completed_focus = MEX_new_republic
+		}
 		mutually_exclusive = { 
 			focus = MEX_a_vanguardist_government 
 		}
@@ -1770,6 +1815,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
 		}
 	}
 
@@ -1782,6 +1830,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = MEX_the_empire }
+		available = {
+			has_completed_focus = MEX_the_fiery_communes
+		}
 		mutually_exclusive = { 
 			focus = MEX_securing_the_republic 
 		}
@@ -1793,6 +1844,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
 		}
 	}
 
@@ -1808,6 +1862,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_army_marches
+				add_idea = the_army_marches_1
+			}
+		}
 	}
 
 	#Focus for Abascalistas Pact
@@ -1821,6 +1881,12 @@ focus_tree = {
 		prerequisite = { focus = MEX_and_the_felicistas }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = ultraconservative
+    			popularity = 0.1
+			}
 		}
 	}
 
@@ -1836,6 +1902,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = liberal
+    			popularity = -0.1
+			}
+		}
 	}
 
 	#Focus for Burn the Imperial Palace
@@ -1850,6 +1922,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = the_army_marches_1
+				add_idea = the_army_marches_2
+			}
+		}
 	}
 
 	#Focus for Pass the Anti-Vanguardist Act
@@ -1860,9 +1938,18 @@ focus_tree = {
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_completed_focus = MEX_fake_a_vanguardist_revolution
+		}
 		prerequisite = { focus = MEX_burn_the_imperial_palace }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = vanguardism
+				popularity = -1
+			}
 		}
 	}
 
@@ -1878,6 +1965,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = the_mexican_constitution_1
+    			add_idea = the_mexican_constitution_2
+			}
+		}
 	}
 
 	#Focus for The Remainders
@@ -1891,6 +1984,11 @@ focus_tree = {
 		prerequisite = { focus = MEX_the_battle_of_chapultepec }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = -1000
+			add_war_support = 0.1
+			add_stability = 0.05
 		}
 	}
 
@@ -1906,6 +2004,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = national_populism
+    			popularity = -1
+			}
+		}
 	}
 
 	#Focus for The Free Mexican Army
@@ -1919,6 +2023,11 @@ focus_tree = {
 		prerequisite = { focus = MEX_creating_a_constitution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
+			army_experience = 50
+			navy_experience = 50
 		}
 	}
 
@@ -1934,6 +2043,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+    			ideology = ultraconservative
+    			popularity = 0.15
+			}
+		}
 	}
 
 	#Focus for Round up the Liberals...
@@ -1947,6 +2063,12 @@ focus_tree = {
 		prerequisite = { focus = MEX_tighten_the_noose }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = liberal
+    			popularity = -0.2
+			}
 		}
 	}
 
@@ -1962,6 +2084,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = national_populism 
+    			popularity = -0.2
+			}
+		}
 	}
 
 	#Focus for Damage Control
@@ -1976,6 +2104,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 200
+			add_ideas = dousing_the_flames
+		}
 	}
 
 	#Focus for Emergency "Elections"
@@ -1983,12 +2115,15 @@ focus_tree = {
 		id = MEX_emergency_elections
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = -7
-		y = 7
+		y = 7 
 		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = MEX_damage_control }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.3
 		}
 	}
 
@@ -2003,6 +2138,9 @@ focus_tree = {
 		prerequisite = { focus = MEX_damage_control }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = the_emperors_men
 		}
 	}
 
@@ -2020,6 +2158,10 @@ focus_tree = {
 		prerequisite = { 
 			focus = MEX_form_reactionary_paramilitaries 
 		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
 	}
 
 	#Focus for No More Suffering!
@@ -2033,6 +2175,12 @@ focus_tree = {
 		prerequisite = { focus = MEX_a_vanguardist_government }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = vanguardism
+    			popularity = 0.35
+			}
 		}
 	}
 
@@ -2061,6 +2209,13 @@ focus_tree = {
 		prerequisite = { focus = MEX_no_more_suffering }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+    			ideology = vanguardism
+    			popularity = 0.1
+			}
 		}
 	}
 
@@ -2098,6 +2253,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = {id = mexico.15}
+		}
 	}
 
 	#Focus for Distribution of Power
@@ -2120,6 +2278,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = balance_of_power
+		}
 	}
 
 	#Focus for Laws against Radicalisation
@@ -2133,6 +2294,16 @@ focus_tree = {
 		prerequisite = { focus = MEX_creating_a_constitution }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = vanguardism
+    			popularity = -0.05
+			}
+			add_popularity = {
+    			ideology = national_populism
+    			popularity = -0.05
+			}
 		}
 	}
 
@@ -2148,6 +2319,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = the_mexican_constitution
+    			add_idea = the_mexican_constitution_1
+			}
+		}
 	}
 
 	#Focus for Ensure Poll Safety
@@ -2162,6 +2339,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.05
+		}
 	}
 
 	#Focus for The First Election
@@ -2175,6 +2356,16 @@ focus_tree = {
 		prerequisite = { focus = MEX_distribution_of_power }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+    			ideology = liberal
+    			popularity = 0.1
+			}
+			add_popularity = {
+    			ideology = conservative
+    			popularity = 0.1
+			}
 		}
 	}
 }

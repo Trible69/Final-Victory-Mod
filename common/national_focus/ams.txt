@@ -1519,7 +1519,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = ams_white_modernism
+			add_ideas = white_modernism
 		}
 	}
 
@@ -1536,7 +1536,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_idea = ams_general_of_the_american_armies
+			add_idea = general_of_the_american_armies
 		}
 	}
 
@@ -1554,8 +1554,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = ams_general_of_the_american_armies_1
-    			add_idea = ams_general_of_the_american_armies_2
+    			remove_idea = general_of_the_american_armies_1
+    			add_idea = general_of_the_american_armies_2
 			}
 		}
 	}
@@ -1575,7 +1575,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -100
 			add_timed_idea = {
-    			idea = ams_a_purge_of_non_military_elements
+    			idea = a_purge_of_non_military_elements
     			days = 180
 			}
 		}
@@ -1615,8 +1615,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = ams_general_of_the_american_armies_2
-    			add_idea = ams_general_of_the_american_armies_3
+    			remove_idea = general_of_the_american_armies_2
+    			add_idea = general_of_the_american_armies_3
 			}
 		}
 	}
@@ -1818,8 +1818,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-    			remove_idea = ams_general_of_the_american_armies
-    			add_idea = ams_general_of_the_american_armies_1
+    			remove_idea = general_of_the_american_armies
+    			add_idea = general_of_the_american_armies_1
 			}
 		}
 	}

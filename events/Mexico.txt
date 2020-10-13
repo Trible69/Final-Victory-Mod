@@ -498,11 +498,10 @@ country_event = {
 	}
 	option = {
 		name = mexico.11.b
-		#%liberal guy
 		create_country_leader = {
-			name = "Biilly Jones"
+			name = "Francisco I. Madero"
 			desc = ""
-			picture ".dds"
+			picture "FranciscoIMaderoMEX.dds"
 			expire = "1965.1.1"
 			ideology = stratocracy
 			traits = {
@@ -515,11 +514,10 @@ country_event = {
 	}
 	option = {
 		name = mexico.11.c
-		#%vanguardist sympathizer 
 		create_country_leader = {
-			name = "Mexican Stalin"
+			name = "Úrsulo Galván Reyes"
 			desc = ""
-			picture = ".dds"
+			picture = "UrsuloGalvanReyesMEX.dds"
 			expire = "1965.1.1"
 			ideology = stratocracy
 		}

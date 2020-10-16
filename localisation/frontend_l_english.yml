@@ -204,3 +204,6 @@
  CHAT_ERROR_MUTE_MISSINGARGS:0 "Invalid syntax, expected: /mute <username>"
  CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Invalid syntax, expected: /unmute <username>"
  CHAT_ERROR_MUTEUNMUTE_SELF:0 "You cannot mute or unmute yourself!"
+ #######
+ REDDIT_TEXT:0 "Final Victory's Reddit"
+ DISCORD_TEXT:0 "Final Victory's Discord"

@@ -84,19 +84,11 @@ guiTypes = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
-		containerWindowType = {
-			name = "final_victory_logoo"
-			position = { x=20 y=0 }	
-			size = { width = 300 height = 250 }
-			clipping = no
-			Orientation = UPPER_RIGHT
-		
-			iconType = {
-				name ="fv_game_logo"
-				spriteType = "GFX_fv_logo"
-				position = { x= 0 y = 40 }
-			}	
-		}
+		iconType = {
+            name ="fv_game_logo"
+            spriteType = "GFX_fv_logo"
+            position = { x= 0 y = 40 }
+        }
 		
 		ButtonType = {
 			name = "sp_continue_button"
@@ -196,16 +188,16 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "final_victory_logo"
-			position = { x=20 y=0 }	
+			position = { x=0 y=0 }	
 			size = { width = 300 height = 250 }
 			clipping = no
 			Orientation = UPPER_RIGHT
 		
 			iconType = {
-				name ="fv_game_logo"
-				spriteType = "GFX_fv_logo"
-				position = { x= 0 y = 40 }
-			}	
+                name ="fv_game_logo"
+                spriteType = "GFX_fv_logo" 
+                position = { x= 0 y = 0 }
+            }
 		}
 			
 		ButtonType = {

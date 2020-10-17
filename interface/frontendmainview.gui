@@ -84,11 +84,6 @@ guiTypes = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
-		iconType = {
-            name ="fv_game_logo"
-            spriteType = "GFX_fv_logo"
-            position = { x= 0 y = 40 }
-        }
 		
 		ButtonType = {
 			name = "sp_continue_button"
@@ -186,23 +181,10 @@ guiTypes = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
-		containerWindowType = {
-			name = "final_victory_logo"
-			position = { x=0 y=0 }	
-			size = { width = 300 height = 250 }
-			clipping = no
-			Orientation = UPPER_RIGHT
-		
-			iconType = {
-                name ="fv_game_logo"
-                spriteType = "GFX_fv_logo" 
-                position = { x= 0 y = 0 }
-            }
-		}
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 16 y = 240 }
+			position = { x = 16 y = 340 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
@@ -212,7 +194,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 280}
+			position = { x = 16 y = 380}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -230,7 +212,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 500 }
+			position = { x = 35 y = 725 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -243,7 +225,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 16 y = 320 }
+			position = { x = 16 y = 420 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -254,7 +236,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 360 }
+			position = {  x = 16 y = 460 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -264,7 +246,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 400 }
+			position = { x = 16 y = 500 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Dirty Modders!"
 			buttonFont = "hoi_24header"
@@ -273,7 +255,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 500 }
+			position = { x = 16 y = 600 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -281,6 +263,11 @@ guiTypes = {
 			oversound = ui_menu_over
 			
 		}
+		iconType = {
+            name = "logo"
+            position = { x = 20 y = 125 }
+            spriteType = "GFX_fv_logo"
+        }
 	}
 	
 	containerWindowType = {
@@ -357,7 +344,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "reddit_button"
-			position = { x=700 y=0 }
+			position = { x=700 y=57 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "REDDIT_TEXT"
@@ -365,7 +352,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "discord_button"
-			position = { x=750 y=-6 }
+			position = { x=750 y=50 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "DISCORD_TEXT"

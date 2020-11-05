@@ -271,7 +271,7 @@ music = {
 	
 	chance = {
 		modifier = {
-			factor = 2
+			factor = 3
 
 			original_tag = USA
 			USA = {

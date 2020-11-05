@@ -265,3 +265,21 @@ music = {
 		}		
 	}	
 }
+#America
+music = {
+	song = "dixie"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			original_tag = USA
+			USA = {
+				OR = {
+					has_war_with = AMS
+					has_war_with = UAC
+				}
+			}
+		}		
+	}	
+}

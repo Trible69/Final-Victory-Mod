@@ -28,6 +28,10 @@ country_event = {
 				id = AMS.2
 				days = 2
 			}
+			delete_unit_template_and_units = {
+				division_template = "Militia"
+				disband = yes #will refund equipment and manpower
+			}
 		}
 	}
 }

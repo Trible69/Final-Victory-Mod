@@ -1,0 +1,906 @@
+add_namespace = AMS_effinger_breakup
+add_namespace = AMS_moseley_breakup
+add_namespace = AMS_effinger_buildup
+add_namespace = AMS_moseley_buildup
+add_namespace = AMS_peace
+#Key: No its not copied from TNO Fuck you. Do Crtl F and copy and paste this into that can u can find whatever you want idfk
+# ###Effinger Buildup
+# ###Moseley Buildup
+# ###Effinger Breakup
+# #Slave Revolt, Riots 1
+# #Slave Revolt, Riots 2
+# #Slave Revolt, New Afrika
+# #Florida
+# #Rust Belt Commune
+# #Southern Army
+# #Midwest + Colorado
+# #True states of America and NTC
+# #State of America
+# #New England
+# ###Moseley Breakup
+# ###Peace Treaties
+
+
+###Effinger Buildup
+###Moseley Buildup
+###Effinger Breakup
+#Slave Revolt, Riots 1
+country_event = {
+	id = AMS_effinger_breakup.1
+	title = AMS_effinger_breakup.1.t
+	desc = AMS_effinger_breakup.1.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.9.3
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.1.a
+		367 = {
+			set_demilitarized_zone = yes
+		}
+		370 = {
+			set_demilitarized_zone = yes
+		}
+		365 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+#Slave Revolt, Riots 2
+country_event = {
+	id = AMS_effinger_breakup.2
+	title = AMS_effinger_breakup.2.t
+	desc = AMS_effinger_breakup.2.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.9.19
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.2.a
+		364 = {
+			set_demilitarized_zone = yes
+		}
+		371 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+#Slave Revolt, New Afrika
+country_event = {
+	id = AMS_effinger_breakup.3
+	title = AMS_effinger_breakup.3.t
+	desc = AMS_effinger_breakup.3.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.9.29
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.3.a
+		NEA = {
+			transfer_state = 367
+			add_state_core = 367
+			transfer_state = 370
+			add_state_core = 370
+			transfer_state = 365
+			add_state_core = 365
+			transfer_state = 364
+			add_state_core = 654
+			transfer_state = 371
+			add_state_core = 371
+		}
+		declare_war_on = {
+			target = NEA
+			type = annex_everything
+		}
+		hidden_effect = {
+			NEA = {
+				load_oob = "NEA_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.3.b
+		NEA = {
+			transfer_state = 367
+			add_state_core = 367
+			transfer_state = 370
+			add_state_core = 370
+			transfer_state = 365
+			add_state_core = 365
+			transfer_state = 364
+			add_state_core = 654
+			transfer_state = 371
+			add_state_core = 371
+		}
+		declare_war_on = {
+			target = NEA
+			type = annex_everything
+		}
+		hidden_effect = {
+			NEA = { change_tag_from = ROOT }
+			NEA = {
+				load_oob = "NEA_Revolt"
+			}
+		}
+	}
+}
+#Florida
+country_event = {
+	id = AMS_effinger_breakup.4
+	title = AMS_effinger_breakup.4.t
+	desc = AMS_effinger_breakup.4.d
+	picture = GFX_report_event_worker_protests
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.1
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.4.a
+		FLO = {
+			transfer_state = 366
+			add_state_core = 366
+		}
+		if = {
+			limit = {
+				is_neighbor_of = FLO
+			}
+			declare_war_on = {
+				target = FLO
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			FLO = {
+				load_oob = "FLO_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.4.b
+		FLO = {
+			transfer_state = 366
+			add_state_core = 366
+		}
+		if = {
+			limit = {
+				is_neighbor_of = FLO
+			}
+			declare_war_on = {
+				target = FLO
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			FLO = { change_tag_from = ROOT }
+			FLO = {
+				load_oob = "FLO_Revolt"
+			}
+		}
+	}
+}
+#Rust Belt Commune
+country_event = {
+	id = AMS_effinger_breakup.5
+	title = AMS_effinger_breakup.5.t
+	desc = AMS_effinger_breakup.5.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.3
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.5.a
+		RUB = {
+			transfer_state = 261
+			add_state_core = 261
+			transfer_state = 396
+			add_state_core = 396
+			transfer_state = 395
+			add_state_core = 395
+			transfer_state = 394
+			add_state_core = 394
+			transfer_state = 393
+			add_state_core = 393
+		}
+		declare_war_on = {
+			target = RUB
+			type = annex_everything
+		}
+		hidden_effect = {
+			RUB = {
+				load_oob = "RUB_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.5.b
+		RUB = {
+			transfer_state = 261
+			add_state_core = 261
+			transfer_state = 396
+			add_state_core = 396
+			transfer_state = 395
+			add_state_core = 395
+			transfer_state = 394
+			add_state_core = 394
+			transfer_state = 393
+			add_state_core = 393
+		}
+		declare_war_on = {
+			target = RUB
+			type = annex_everything
+		}
+		hidden_effect = {
+			RUB = { change_tag_from = ROOT }
+			RUB = {
+				load_oob = "RUB_Revolt"
+			}
+		}
+	}
+}
+#Southern Army
+country_event = {
+	id = AMS_effinger_breakup.6
+	title = AMS_effinger_breakup.6.t
+	desc = AMS_effinger_breakup.6.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.6
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.6.a
+		MHC = {
+			transfer_state = 374
+			add_state_core = 374
+			transfer_state = 372
+			add_state_core = 372
+			transfer_state = 373
+			add_state_core = 373
+			transfer_state = 383
+			add_state_core = 383
+		}
+		declare_war_on = {
+			target = MHC
+			type = annex_everything
+		}
+		hidden_effect = {
+			MHC = {
+				load_oob = "MHC_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.6.b
+		MHC = {
+			transfer_state = 374
+			add_state_core = 374
+			transfer_state = 372
+			add_state_core = 372
+			transfer_state = 373
+			add_state_core = 373
+			transfer_state = 383
+			add_state_core = 383
+		}
+		declare_war_on = {
+			target = MHC
+			type = annex_everything
+		}
+		hidden_effect = {
+			MHC = { change_tag_from = ROOT }
+			MHC = {
+				load_oob = "MHC_Revolt"
+			}
+		}
+	}
+}
+#Midwest + Colorado
+country_event = {
+	id = AMS_effinger_breakup.7
+	title = AMS_effinger_breakup.7.t
+	desc = AMS_effinger_breakup.7.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.8
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.7.a
+		MID = {
+			transfer_state = 391
+			add_state_core = 391
+			transfer_state = 392
+			add_state_core = 392
+			transfer_state = 384
+			add_state_core = 384
+			transfer_state = 390
+			add_state_core = 390
+			transfer_state = 389
+			add_state_core = 389
+		}
+		COR = {
+			transfer_state = 382
+			add_state_core = 382
+		}
+		if = {
+			limit = {
+				is_neighbor_of = MID
+			}
+			declare_war_on = {
+				target = MID
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				is_neighbor_of = COR
+			}
+			declare_war_on = {
+				target = COR
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			MID = {
+				load_oob = "MID_Revolt"
+			}
+			COR = {
+				load_oob = "COR_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.7.b
+		MID = {
+			transfer_state = 391
+			add_state_core = 391
+			transfer_state = 392
+			add_state_core = 392
+			transfer_state = 384
+			add_state_core = 384
+			transfer_state = 390
+			add_state_core = 390
+			transfer_state = 389
+			add_state_core = 389
+		}
+		COR = {
+			transfer_state = 382
+			add_state_core = 382
+		}
+		if = {
+			limit = {
+				is_neighbor_of = MID
+			}
+			declare_war_on = {
+				target = MID
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				is_neighbor_of = COR
+			}
+			declare_war_on = {
+				target = COR
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			MID = {
+				load_oob = "MID_Revolt"
+			}
+			COR = {
+				load_oob = "COR_Revolt"
+			}
+			MID = { change_tag_from = ROOT }
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.7.c
+		MID = {
+			transfer_state = 391
+			add_state_core = 391
+			transfer_state = 392
+			add_state_core = 392
+			transfer_state = 384
+			add_state_core = 384
+			transfer_state = 390
+			add_state_core = 390
+			transfer_state = 389
+			add_state_core = 389
+		}
+		COR = {
+			transfer_state = 382
+			add_state_core = 382
+		}
+		if = {
+			limit = {
+				is_neighbor_of = MID
+			}
+			declare_war_on = {
+				target = MID
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				is_neighbor_of = COR
+			}
+			declare_war_on = {
+				target = COR
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			MID = {
+				load_oob = "MID_Revolt"
+			}
+			COR = {
+				load_oob = "COR_Revolt"
+			}
+			COR = { change_tag_from = ROOT }
+		}
+	}
+}
+#True states of America and NTC
+country_event = {
+	id = AMS_effinger_breakup.8
+	title = AMS_effinger_breakup.8.t
+	desc = AMS_effinger_breakup.8.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.6
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.8.a
+		if = {
+			limit = {
+				owns_state = 387
+				owns_state = 385
+				owns_state = 386
+			}
+			NTC = {
+				transfer_state = 387
+				add_state_core = 387
+				transfer_state = 385
+				add_state_core = 385
+				transfer_state = 386
+				add_state_core = 386
+			}
+		}
+		TRA = {
+			transfer_state = 388
+			add_state_core = 388
+			transfer_state = 381
+			add_state_core = 381
+		}
+		hidden_effect = {
+			TRA = {
+				load_oob = "TRA_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.8.b
+		if = {
+			limit = {
+				owns_state = 387
+				owns_state = 385
+				owns_state = 386
+			}
+			NTC = {
+				transfer_state = 387
+				add_state_core = 387
+				transfer_state = 385
+				add_state_core = 385
+				transfer_state = 386
+				add_state_core = 386
+			}
+		}
+		TRA = {
+			transfer_state = 388
+			add_state_core = 388
+			transfer_state = 381
+			add_state_core = 381
+		}
+		hidden_effect = {
+			TRA = { change_tag_from = ROOT }
+			TRA = {
+				load_oob = "TRA_Revolt"
+			}
+		}
+	}
+}
+#State of America
+country_event = {
+	id = AMS_effinger_breakup.9
+	title = AMS_effinger_breakup.9.t
+	desc = AMS_effinger_breakup.9.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.6
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.9.a
+		set_capital = 362
+		361 = {
+			SOA = {
+				set_province_controller = 6845
+			}
+		}
+		SOA = {
+			transfer_state = 359
+			add_state_core = 359
+		}
+		declare_war_on = {
+			target = SOA
+			type = annex_everything
+		}
+		hidden_effect = {
+			SOA = {
+				load_oob = "SOA_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.9.b
+		set_capital = 362
+		361 = {
+			SOA = {
+				set_province_controller = 6845
+			}
+		}
+		SOA = {
+			transfer_state = 359
+			add_state_core = 359
+		}
+		declare_war_on = {
+			target = SOA
+			type = annex_everything
+		}
+		hidden_effect = {
+			SOA = { change_tag_from = ROOT }
+			SOA = {
+				load_oob = "SOA_Revolt"
+			}
+		}
+	}
+}
+#New England
+country_event = {
+	id = AMS_effinger_breakup.10
+	title = AMS_effinger_breakup.10.t
+	desc = AMS_effinger_breakup.10.d
+	picture = GFX_report_event_gre_allied_diplomacy_military
+
+	fire_only_once = yes
+
+	trigger = {
+		DATE > 1941.10.7
+		has_country_flag = effinger_time
+		tag = AMS
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = AMS_effinger_breakup.10.a
+		NEE = {
+			transfer_state = 357
+			add_state_core = 357
+		}
+		declare_war_on = {
+			target = NEE
+			type = annex_everything
+		}
+		357 = {
+			AMS = {
+				set_province_controller = 9675
+				set_province_controller = 3715
+				set_province_controller = 3712
+				set_province_controller = 4445
+				set_province_controller = 13158
+				set_province_controller = 7629
+				set_province_controller = 733
+				set_province_controller = 10481
+				set_province_controller = 3732
+				set_province_controller = 6719
+				set_province_controller = 7462
+				set_province_controller = 12202
+				set_province_controller = 12459
+				set_province_controller = 10318
+				set_province_controller = 12221
+				set_province_controller = 10247
+				set_province_controller = 4287
+				set_province_controller = 1282
+				set_province_controller = 1338
+				set_province_controller = 1619
+			}
+		}
+		hidden_effect = {
+			NEE = {
+				load_oob = "NEE_Revolt"
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.10.b
+		NEE = {
+			transfer_state = 357
+			add_state_core = 357
+		}
+		declare_war_on = {
+			target = NEE
+			type = annex_everything
+		}
+		357 = {
+			AMS = {
+				set_province_controller = 9675
+				set_province_controller = 3715
+				set_province_controller = 3712
+				set_province_controller = 4445
+				set_province_controller = 13158
+				set_province_controller = 7629
+				set_province_controller = 733
+				set_province_controller = 10481
+				set_province_controller = 3732
+				set_province_controller = 6719
+				set_province_controller = 7462
+				set_province_controller = 12202
+				set_province_controller = 12459
+				set_province_controller = 10318
+				set_province_controller = 12221
+				set_province_controller = 10247
+				set_province_controller = 4287
+				set_province_controller = 1282
+				set_province_controller = 1338
+				set_province_controller = 1619
+			}
+		}
+		hidden_effect = {
+			NEE = { change_tag_from = ROOT }
+			NEE = {
+				load_oob = "NEE_Revolt"
+			}
+		}
+	}
+}
+###Moseley Breakup
+###Peace Treaties
+#New Afrika Peace
+country_event = {
+	id = AMS_peace.1
+	title = AMS_peace.1.t
+	desc = AMS_peace.1.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		NEA = {
+			OR = {
+				controls_state = 363
+				controls_state = 368
+				controls_state = 372
+			}
+		}
+		tag = AMS
+		has_war_with = NEA
+	}
+	option = {
+		name = AMS_peace.1.a
+		white_peace = NEA
+	}
+}
+#Rust Belt Peace
+country_event = {
+	id = AMS_peace.2
+	title = AMS_peace.2.t
+	desc = AMS_peace.2.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		RUB = {
+			OR = {
+				controls_state = 391
+				controls_state = 392
+				controls_state = 373
+				controls_state = 369
+				controls_state = 806
+				controls_state = 360
+			}
+		}
+		tag = AMS
+		has_war_with = RUB
+	}
+	option = {
+		name = AMS_peace.2.a
+		white_peace = RUB
+	}
+}
+#Southern Army Peace
+country_event = {
+	id = AMS_peace.3
+	title = AMS_peace.3.t
+	desc = AMS_peace.3.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		MHC = {
+			OR = {
+				controls_state = 369
+				controls_state = 368
+			}
+		}
+		tag = AMS
+		has_war_with = MHC
+	}
+	option = {
+		name = AMS_peace.3.a
+		white_peace = MHC
+	}
+}
+#State of America Peace
+country_event = {
+	id = AMS_peace.4
+	title = AMS_peace.4.t
+	desc = AMS_peace.4.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		SOA = {
+			controls_state = 360
+			controls_state = 359
+			controls_state = 358
+			controls_state = 361
+		}
+		tag = AMS
+		has_war_with = SOA
+	}
+	option = {
+		name = AMS_peace.4.a
+		white_peace = SOA
+		SOA = {
+			transfer_state = 360
+			add_state_core = 360
+			transfer_state = 359
+			add_state_core = 359
+			transfer_state = 358
+			add_state_core = 358
+			transfer_state = 361
+			add_state_core = 361
+		}
+	}
+}
+#New England Peace
+country_event = {
+	id = AMS_peace.5
+	title = AMS_peace.5.t
+	desc = AMS_peace.5.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		NEE = {
+			OR = {
+				controls_state = 358
+				NOT = {
+					is_neighbor_of = AMS
+				}
+			}
+		}
+		tag = AMS
+		has_war_with = NEE
+	}
+	option = {
+		name = AMS_peace.5.a
+		white_peace = NEE
+	}
+}
+#End of America. :salute:
+country_event = {
+	id = AMS_peace.6
+	title = AMS_peace.6.t
+	desc = AMS_peace.6.d
+	picture = GFX_report_event_generic_conference
+	fire_only_once = yes
+	trigger = {
+		tag = AMS
+		NOT = {
+			owns_state = 361
+			owns_state = 261
+			owns_state = 360
+			owns_state = 358
+			owns_state = 359
+			owns_state = 357
+			owns_state = 396
+			owns_state = 393
+			owns_state = 394
+			owns_state = 395
+			owns_state = 391
+			owns_state = 392
+			owns_state = 373
+			owns_state = 372
+			owns_state = 371
+			owns_state = 370
+			owns_state = 367
+			owns_state = 365
+			owns_state = 366
+			owns_state = 364
+			owns_state = 374
+			owns_state = 383
+			owns_state = 384
+			owns_state = 382
+			owns_state = 381
+			owns_state = 388
+			owns_state = 389
+			owns_state = 391
+			owns_state = 392
+		}
+	}
+	option = {
+		name = AMS_peace.5.a
+		every_enemy_country = {
+			limit = {
+				has_war_with = AMS
+			}
+			white_peace = AMS
+		}
+		set_cosmetic_tag = AMS_collapse_effinger
+	}
+}

@@ -271,7 +271,7 @@ music = {
 	
 	chance = {
 		modifier = {
-			factor = 3
+			factor = 7
 
 			original_tag = USA
 			USA = {
@@ -282,4 +282,19 @@ music = {
 			}
 		}		
 	}	
+}
+
+music = {
+	song = "MacArthur's Army"
+
+	chance = {
+		modifier = {
+			factor = 7
+			
+			original_tag = SOA
+			SOA = {
+				has_war_with = AMS
+			}
+		}
+	}
 }

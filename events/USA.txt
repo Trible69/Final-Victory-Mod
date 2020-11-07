@@ -760,6 +760,12 @@ country_event = {
 		add_ideas = ruined_economy
 		add_ideas = crippled_industry
 		add_ideas = shellshocked_populace
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Militia"
+				disband = yes #will refund equipment and manpower
+			}
+		}
 	}
 }
 ##########Bill Haywood getting power in congress#########

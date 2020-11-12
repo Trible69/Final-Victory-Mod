@@ -1,10 +1,10 @@
 ﻿capital = 285
 
 #	BASIC VALUES
-OOB = "generic_1936"
+oob = "AST_1936"
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = 0.7
+set_war_support = 0.3
 set_convoys = 100
 
 
@@ -17,7 +17,9 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-
+	limited_conscription
+	civilian_economy
+	limited_exports
 }
 
 ###	POLITICS
@@ -25,27 +27,112 @@ set_politics = {
 	ruling_party = liberal
 	last_election = "1934.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = { 
-	vanguardism = 5 
-	anarchist = 5 
-	social_democrat = 25 
-	liberal = 30 
-	conservative = 25 
-	ultraconservatism = 5 
-	national_populism = 5
+	vanguardism = 0
+	anarchist = 0 
+	social_democrat = 4 
+	liberal = 78 
+	conservative = 12 
+	ultraconservative = 6
+	national_populism = 0
 }
 
 ###	OPINION & TRADE MODIFIERS
 
 ###	POLITICIANS
-
+create_country_leader = {
+	name = "Joseph Lyons"
+	desc = "POLITICS_JOHN_CURTIN_DESC"
+	picture = "JosephLyonsAST.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {
+		#
+	}
+}
 ###	GENERALS
+create_corps_commander = {
+	name = "Leslie Morshead"
+	gfx = "GFX_AST_leslie_morshead"
+	traits = { }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 2
+}
 
+create_corps_commander = {
+	name = "Thomas Blamey"
+	gfx = "GFX_AST_thomas_blamey"
+	traits = { }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Henry Wynter"
+	gfx = "GFX_AST_henry_wynter"
+	traits = { }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Alan Vasey"
+	gfx = "GFX_AST_alan_vasey"
+	traits = { hill_fighter }
+	skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Horace Robertson"
+	gfx = "GFX_AST_horace_robertson"
+	traits = { desert_fox }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
+}
+create_corps_commander = {
+	name = "John Northcott"
+	gfx = "GFX_AST_john_northcott"
+	traits = { armor_officer}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 ###	ADMIRALS
+create_navy_leader = {
+	name = "Harold Farncomb"
+	gfx = "GFX_AST_harold_farncomb"
+	traits = { aviation_enthusiast naval_lineage }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
 
-### OPERATIVES
-if = {
-	limit = { has_dlc = "La Resistance" }
+create_navy_leader = {
+	name = "Victor Crutchley"
+	gfx = "GFX_AST_victor_crutchley"
+	traits = { bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }

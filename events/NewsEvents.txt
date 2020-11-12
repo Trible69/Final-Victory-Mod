@@ -189,7 +189,7 @@ news_event = {
 			358 = { is_controlled_by = AMS }
 		}
 		358 = { is_owned_by = USA }
-		NOT = { has_global_flag = set_global_flag = fall_of_ny_acw }
+		NOT = { has_global_flag = fall_of_ny_acw }
 	}
 	immediate = {
 		set_global_flag = fall_of_ny_acw

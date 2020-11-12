@@ -35,7 +35,7 @@ country_event = {
 
 	trigger = {
 		DATE > 1941.9.3
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -64,7 +64,7 @@ country_event = {
 
 	trigger = {
 		DATE > 1941.9.19
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -90,7 +90,7 @@ country_event = {
 
 	trigger = {
 		DATE > 1941.9.29
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -116,6 +116,7 @@ country_event = {
 		hidden_effect = {
 			NEA = {
 				load_oob = "NEA_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -141,6 +142,7 @@ country_event = {
 			NEA = { change_tag_from = ROOT }
 			NEA = {
 				load_oob = "NEA_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -156,7 +158,7 @@ country_event = {
 
 	trigger = {
 		DATE > 1941.10.1
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -179,6 +181,7 @@ country_event = {
 		hidden_effect = {
 			FLO = {
 				load_oob = "FLO_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -201,6 +204,7 @@ country_event = {
 			FLO = { change_tag_from = ROOT }
 			FLO = {
 				load_oob = "FLO_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -216,7 +220,7 @@ country_event = {
 
 	trigger = {
 		DATE > 1941.10.3
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -242,6 +246,7 @@ country_event = {
 		hidden_effect = {
 			RUB = {
 				load_oob = "RUB_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -267,6 +272,7 @@ country_event = {
 			RUB = { change_tag_from = ROOT }
 			RUB = {
 				load_oob = "RUB_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -276,19 +282,23 @@ country_event = {
 	id = AMS_effinger_breakup.6
 	title = AMS_effinger_breakup.6.t
 	desc = AMS_effinger_breakup.6.d
-	picture = GFX_report_event_gre_allied_diplomacy_military
+	picture = GFX_report_event_military_planning
 
 	fire_only_once = yes
 
 	trigger = {
 		DATE > 1941.10.6
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = AMS_effinger_breakup.6.a
+		remove_unit_leader = 998
+		remove_unit_leader = 111
+		remove_unit_leader = 124
+		remove_unit_leader = 154
 		MHC = {
 			transfer_state = 374
 			add_state_core = 374
@@ -306,11 +316,16 @@ country_event = {
 		hidden_effect = {
 			MHC = {
 				load_oob = "MHC_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
 	option = {
 		name = AMS_effinger_breakup.6.b
+		remove_unit_leader = 998
+		remove_unit_leader = 111
+		remove_unit_leader = 124
+		remove_unit_leader = 154
 		MHC = {
 			transfer_state = 374
 			add_state_core = 374
@@ -329,6 +344,7 @@ country_event = {
 			MHC = { change_tag_from = ROOT }
 			MHC = {
 				load_oob = "MHC_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -338,19 +354,23 @@ country_event = {
 	id = AMS_effinger_breakup.7
 	title = AMS_effinger_breakup.7.t
 	desc = AMS_effinger_breakup.7.d
-	picture = GFX_report_event_gre_allied_diplomacy_military
+	picture = GFX_report_event_gathering_protest
 
 	fire_only_once = yes
 
 	trigger = {
 		DATE > 1941.10.8
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = AMS_effinger_breakup.7.a
+		remove_unit_leader = 998
+		remove_unit_leader = 111
+		remove_unit_leader = 124
+		remove_unit_leader = 154
 		MID = {
 			transfer_state = 391
 			add_state_core = 391
@@ -388,9 +408,11 @@ country_event = {
 		hidden_effect = {
 			MID = {
 				load_oob = "MID_Revolt"
+				inherit_technology = AMS
 			}
 			COR = {
 				load_oob = "COR_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -433,9 +455,11 @@ country_event = {
 		hidden_effect = {
 			MID = {
 				load_oob = "MID_Revolt"
+				inherit_technology = AMS
 			}
 			COR = {
 				load_oob = "COR_Revolt"
+				inherit_technology = AMS
 			}
 			MID = { change_tag_from = ROOT }
 		}
@@ -479,9 +503,11 @@ country_event = {
 		hidden_effect = {
 			MID = {
 				load_oob = "MID_Revolt"
+				inherit_technology = AMS
 			}
 			COR = {
 				load_oob = "COR_Revolt"
+				inherit_technology = AMS
 			}
 			COR = { change_tag_from = ROOT }
 		}
@@ -492,13 +518,13 @@ country_event = {
 	id = AMS_effinger_breakup.8
 	title = AMS_effinger_breakup.8.t
 	desc = AMS_effinger_breakup.8.d
-	picture = GFX_report_event_gre_allied_diplomacy_military
+	picture = GFX_report_event_soviet_purge_trial
 
 	fire_only_once = yes
 
 	trigger = {
 		DATE > 1941.10.6
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -529,6 +555,7 @@ country_event = {
 		hidden_effect = {
 			TRA = {
 				load_oob = "TRA_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -559,6 +586,7 @@ country_event = {
 			TRA = { change_tag_from = ROOT }
 			TRA = {
 				load_oob = "TRA_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -568,19 +596,21 @@ country_event = {
 	id = AMS_effinger_breakup.9
 	title = AMS_effinger_breakup.9.t
 	desc = AMS_effinger_breakup.9.d
-	picture = GFX_report_event_gre_allied_diplomacy_military
+	picture = GFX_report_event_macarthur_invasion
 
 	fire_only_once = yes
 
 	trigger = {
 		DATE > 1941.10.6
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
 
 	option = {
 		name = AMS_effinger_breakup.9.a
+		remove_unit_leader = 534
+		remove_unit_leader = 999
 		set_capital = 362
 		361 = {
 			SOA = {
@@ -598,11 +628,14 @@ country_event = {
 		hidden_effect = {
 			SOA = {
 				load_oob = "SOA_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
 	option = {
 		name = AMS_effinger_breakup.9.b
+		remove_unit_leader = 534
+		remove_unit_leader = 999
 		set_capital = 362
 		361 = {
 			SOA = {
@@ -621,6 +654,7 @@ country_event = {
 			SOA = { change_tag_from = ROOT }
 			SOA = {
 				load_oob = "SOA_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -630,13 +664,13 @@ country_event = {
 	id = AMS_effinger_breakup.10
 	title = AMS_effinger_breakup.10.t
 	desc = AMS_effinger_breakup.10.d
-	picture = GFX_report_event_gre_allied_diplomacy_military
+	picture = GFX_report_event_czech_soldiers_02
 
 	fire_only_once = yes
 
 	trigger = {
 		DATE > 1941.10.7
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 		tag = AMS
 	}
 	mean_time_to_happen = { days = 1 }
@@ -678,6 +712,7 @@ country_event = {
 		hidden_effect = {
 			NEE = {
 				load_oob = "NEE_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -719,6 +754,7 @@ country_event = {
 			NEE = { change_tag_from = ROOT }
 			NEE = {
 				load_oob = "NEE_Revolt"
+				inherit_technology = AMS
 			}
 		}
 	}
@@ -826,6 +862,9 @@ country_event = {
 			transfer_state = 361
 			add_state_core = 361
 		}
+		hidden_effect = {
+			set_global_flag = end_of_america
+		}
 	}
 }
 #New England Peace
@@ -861,40 +900,10 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = AMS
-		NOT = {
-			owns_state = 361
-			owns_state = 261
-			owns_state = 360
-			owns_state = 358
-			owns_state = 359
-			owns_state = 357
-			owns_state = 396
-			owns_state = 393
-			owns_state = 394
-			owns_state = 395
-			owns_state = 391
-			owns_state = 392
-			owns_state = 373
-			owns_state = 372
-			owns_state = 371
-			owns_state = 370
-			owns_state = 367
-			owns_state = 365
-			owns_state = 366
-			owns_state = 364
-			owns_state = 374
-			owns_state = 383
-			owns_state = 384
-			owns_state = 382
-			owns_state = 381
-			owns_state = 388
-			owns_state = 389
-			owns_state = 391
-			owns_state = 392
-		}
+		has_global_flag = end_of_america
 	}
 	option = {
-		name = AMS_peace.5.a
+		name = AMS_peace.6.a
 		every_enemy_country = {
 			limit = {
 				has_war_with = AMS

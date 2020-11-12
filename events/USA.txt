@@ -287,7 +287,8 @@ country_event = {
 			add_state_core = 806
 		    load_oob = AMS_CivilWar
 		    load_oob = AMS_1936_naval_legacy
-		    add_ideas = ams_fire_of_revolution
+			add_ideas = ams_fire_of_revolution
+			inherit_technology = USA
 		}
 		UAC = {
 		    transfer_state = 261
@@ -309,7 +310,8 @@ country_event = {
 		    transfer_state = 391
 		    add_state_core = 391
 		    load_oob = UAC_CivilWar
-		    add_ideas = fire_of_revolution
+			add_ideas = fire_of_revolution
+			inherit_technology = USA
 		}
 		NTC = {
 		    transfer_state = 381
@@ -319,7 +321,8 @@ country_event = {
 		}
 		country_event= {
             id = USA.5
-        }
+		}
+		inherit_technology = USA
 		set_global_flag = american_civil_war_begun
 	}
 }
@@ -966,7 +969,7 @@ country_event = {
 	}
 }
 ######Election of 1940######
-country event= {
+country_event= {
     id = USA.26
     title = USA.26.t
     desc = USA.26.d

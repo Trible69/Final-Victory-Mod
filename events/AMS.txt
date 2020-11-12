@@ -455,12 +455,21 @@ country_event = {
 	fire_only_once = yes
 
 	Trigger = {
-		has_country_flag = effinger_time
+		has_country_flag = AMS_effinger_time
 	}
 
 	option = {
 		name = AMS.11.a
 		ai_chance = { factor = 100}
+		create_country_leader = {
+			name = "Virgil Effinger"
+			desc = ""
+			picture = "VirgilEffingerAMS.dds"
+			expire = "2222.1.1"
+			ideology = rexism
+			traits = {
+			}
+		}
 	}
 }
 #lindberg Assassination

@@ -1428,6 +1428,15 @@ focus_tree = {
 				days = 2
 			}
 			set_country_flag = AMS_moseley_power
+			create_country_leader = {
+				name = "George Van Horn Moseley"
+				desc = ""
+				picture = "GeorgeVanVornMoseleyAMS.dds"
+				expire = "2222.1.1"
+				ideology = military_junta
+				traits = {
+				}
+			}
 		}
 	}
 
@@ -1476,6 +1485,15 @@ focus_tree = {
 				days = 2
 			}
 			set_country_flag = AMS_thurmond_power
+			create_country_leader = {
+				name = "Strom Thurmond"
+				desc = ""
+				picture = "StromThurmondAMS.dds"
+				expire = "2222.1.1"
+				ideology = military_junta
+				traits = {
+				}
+			}
 		}
 	}
 

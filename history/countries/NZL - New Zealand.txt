@@ -1,10 +1,10 @@
 ﻿capital = 284
 
 #	BASIC VALUES
-OOB = "generic_1936"
+oob = "NZL_1936"
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = 0.7
+set_war_support = 0.8
 set_convoys = 100
 
 
@@ -17,7 +17,9 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-
+	limited_conscription
+	civilian_economy
+	limited_exports
 }
 
 ###	POLITICS
@@ -28,24 +30,83 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = { 
-	vanguardism = 5 
-	anarchist = 5 
-	social_democrat = 25 
-	liberal = 30 
-	conservative = 25 
-	ultraconservatism = 5 
-	national_populism = 5
+	vanguardism = 0 
+	anarchist = 0 
+	social_democrat = 20 
+	liberal = 54
+	conservative = 26
+	ultraconservative = 0
+	national_populism = 0
 }
 
 ###	OPINION & TRADE MODIFIERS
 
 ###	POLITICIANS
-
+create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = market_liberalism
+	traits = {
+		#
+	}
+}
 ###	GENERALS
+create_corps_commander = {
+	name = "Bernard Freyberg"
+	gfx = "GFX_NZL_bernard_freyberg"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
 
+create_corps_commander = {
+	name = "Robert Row"
+	gfx = "GFX_NZL_robert_row"
+	traits = { naval_invader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "William Stevens"
+	gfx = "GFX_NZL_william_stevens"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
 ###	ADMIRALS
 
-### OPERATIVES
-if = {
-	limit = { has_dlc = "La Resistance" }
+create_navy_leader = {
+	name = "Edmund Rupert Drummond"
+	gfx = "GFX_NZL_edmund_drummond"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
+
+create_navy_leader = {
+	name = "Peter Phipps"
+	gfx = "GFX_NZL_peter_phipps"
+	traits = { navy_career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+### OPERATIVES

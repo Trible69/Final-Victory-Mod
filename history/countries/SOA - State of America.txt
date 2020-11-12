@@ -1,0 +1,142 @@
+﻿capital = 361
+
+
+country_event = { id = USA.1 }
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 40
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	superior_firepower = 1
+	base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+}
+
+
+set_convoys = 400
+
+set_popularities = {
+	ultraconservative = 60
+	national_populism = 0
+	vanguardism = 0
+	anarchist = 0
+	liberal = 14
+	conservative = 16
+	social_democrat = 10
+}
+set_politics = {
+	ruling_party = ultraconservative
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	partial_economic_mobilisation
+	extensive_conscription
+	limited_exports
+}
+
+
+
+create_country_leader = {
+	name = "Douglas MacArthur"
+	desc = "POLITICS_MACARTHUR_DESC"
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	expire = "1947.1.1"
+	ideology = stratocracy
+	traits = {
+		war_hero
+		returned_hero
+		a_new_hope
+	}
+}
+
+create_corps_commander = {
+	name = "Lucian Truscott"
+	picture = "Portrait_USA_Lucian_Truscott.dds"
+	traits = { trait_engineer commando cavalry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mark Clark"
+	picture = "Portrait_USA_Mark_W_Clark.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 4
+
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Douglas MacArthur"
+	picture = "Portrait_USA_Douglas_MacArthur.dds"
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 4
+
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Alexander Patch"
+	picture = "Portrait_USA_Alexander_Patch.dds"
+	traits = {  commando infantry_officer }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Ernest King"
+		picture = "Portrait_USA_Earnest_King.dds"
+	traits = { navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
+	skill = 5
+	id = 820
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 6
+}
+
+create_navy_leader = {
+	name = "Chester W. Nimitz"
+		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 5
+}
+

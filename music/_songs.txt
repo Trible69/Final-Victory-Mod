@@ -267,7 +267,7 @@ music = {
 }
 #America
 music = {
-	song = "dixie"
+	song = "Dixie"
 	
 	chance = {
 		modifier = {
@@ -289,12 +289,42 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 7
+			factor = 10
 			
 			original_tag = SOA
 			SOA = {
 				has_war_with = AMS
 			}
+		}
+
+		modifier = {
+			factor = 3
+			
+			original_tag = SOA
+		}
+	}
+}
+
+music = {
+	song = "Over There"
+
+	chance = {
+		modifier = {
+			factor = 7
+
+			original_tag = USA
+			USA = {
+				OR = {
+					has_war_with = AMS
+					has_war_with = UAC
+				}
+			}
+		}	
+
+		modifier = {
+			factor = 3
+			
+			original_tag = USA 
 		}
 	}
 }

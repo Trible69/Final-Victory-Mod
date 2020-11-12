@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "hoi4mainthemeallies.ogg"
+	file = "overturefinalvictory.ogg"
 	volume = 0.65
 }
 
@@ -160,13 +160,19 @@ music = {
 	file = "Under_Veils_Of_Secrets.ogg"
 	volume = 0.65
 }
+#Final Victory 
 music = {
-	name = "dixie"
+	name = "Dixie"
 	file = "american_civil_war.ogg"
 	volume = 0.65
 }
 music = {
 	name = "MacArthur's Army"
 	file = "macarthur_army.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Over There"
+	file = "overthere.ogg"
 	volume = 0.65
 }

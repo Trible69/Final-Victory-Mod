@@ -2149,4 +2149,9 @@ spriteTypes = {
 		name = "GFX_report_event_uac_haywood_assassination"
 		texturefile = "gfx/event_pictures/report_event_uac_haywood_assassination.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_macarthur_invasion"
+		texturefile = "gfx/event_pictures/report_event_macarthur_invasion.dds"
+	}
 }

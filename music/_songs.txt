@@ -280,6 +280,23 @@ music = {
 					has_war_with = UAC
 				}
 			}
+		}	
+		modifier = {
+			factor = 5
+
+			original_tag = SOA
+			SOA = {
+				OR = {
+					has_war_with = NEE
+					has_war_with = NEA
+					has_war_with = RUB
+					has_war_with = MHC 
+					has_war_with = MID
+					has_war_with = COL
+					has_war_with = TRA
+					has_war_with = FLO
+				}
+			}
 		}		
 	}	
 }
@@ -325,6 +342,27 @@ music = {
 			factor = 3
 			
 			original_tag = USA 
+		}
+		modifier = {
+			factor = 2
+			
+			original_tag = SOA 
+		}
+		modifier = {
+			factor = 2
+			
+			original_tag = SOA 
+			SOA = {
+				has_war_with = NEE
+				has_war_with = NEA
+				has_war_with = RUB
+				has_war_with = MHC 
+				has_war_with = MID
+				has_war_with = COL
+				has_war_with = TRA
+				has_war_with = FLO
+				has_war_with = AMS
+			}
 		}
 	}
 }

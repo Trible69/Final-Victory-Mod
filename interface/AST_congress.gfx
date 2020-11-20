@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_AST_australia_parliament_seats_strip"
+		texturefile = "gfx/interface/australia_parliament_seats_strip.dds"
+		noOfFrames = 2
+	}
+}

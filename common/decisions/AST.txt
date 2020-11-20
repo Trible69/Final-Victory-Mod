@@ -1,0 +1,24 @@
+AST_parliament = {
+	AST_test = {
+
+		icon = generic_democracy
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 0
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			
+		}
+		remove_effect = {
+			test_shit = yes
+		}
+	}
+}

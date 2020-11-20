@@ -1,0 +1,23 @@
+# now define a dynamic_lists in the scripted gui file using global.parliament_main_array
+scripted_gui = {
+	AST_parliament_gui = {
+		context_type = decision_category
+        window_name = "AST_parliament_house"
+        visible = {
+            always = yes
+        }
+		dynamic_lists = {
+			AST_parliament_main_grid = {
+				array = global.australia_congress_main_array
+				change_scope = yes
+				entry_container = AST_parliament_main_entry
+			}
+		}
+
+		properties = {
+			member_icon = {
+				frame = v
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+AST_parliament = {
+	allowed = {
+		original_tag = AST 
+	}
+	scripted_gui = AST_parliament_gui	
+	visible = {
+		original_tag = AST
+	}
+}

@@ -1,0 +1,74 @@
+﻿capital = 64
+
+#	BASIC VALUES
+OOB = "PRS_1936"
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 100
+
+
+###	TECHNOLOGY
+set_technology = {
+	infantry_weapons = 1
+}
+
+### VARIABLES
+
+###	IDEAS
+add_ideas = {
+
+}
+
+###	POLITICS
+set_politics = {
+	ruling_party = national_populism
+	elections_allowed = no
+}
+set_popularities = { 
+	vanguardism = 0 
+	anarchist = 0
+	social_democrat = 4 
+	liberal = 4
+	conservative = 2
+	ultraconservative = 16
+	national_populism = 74
+}
+
+###	OPINION & TRADE MODIFIERS
+
+###	POLITICIANS
+create_country_leader = {
+	name = "Erich von Manstein"
+	picture = "Portrait_Germany_Erich_von_Manstein.dds"
+	expire = "1965.1.1"
+	ideology = military_junta
+	traits = {
+		#
+	}
+}
+###	GENERALS
+create_field_marshal = {
+	name = "Erich von Manstein"
+	picture = "Portrait_Germany_Erich_von_Manstein.dds"
+	traits = { trickster armor_officer brilliant_strategist trait_engineer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Heinz Guderian"
+	picture = "Portrait_Germany_Heinz_Guderian.dds"
+	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer }
+	skill = 4
+	id = 6
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+###	ADMIRALS
+
+### OPERATIVES

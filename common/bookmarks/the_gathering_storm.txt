@@ -22,6 +22,17 @@ bookmarks = {
 			}
 		}
 
+		"PRS"={
+			history = "PRS_GATHERING_STORM_DESC"
+			ideology = national_populism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
@@ -34,9 +45,7 @@ bookmarks = {
 				
 			}
 			focuses = {
-				MEX_a_new_idea
-				MEX_take_a_democratic_route
-				MEX_absolute_powe
+				
 			}
 		}
 

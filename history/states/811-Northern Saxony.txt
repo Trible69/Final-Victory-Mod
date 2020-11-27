@@ -1,15 +1,6 @@
-
 state={
-	id=65
-	name="STATE_65"
-	manpower = 5592576
-	resources={
-		steel=53 # was: 90
-	}
-
-	state_category = metropolis
-
-
+	id=811
+	name="STATE_811"
 	history={
 		owner = SAX
 		buildings = {
@@ -25,8 +16,9 @@ state={
 		}
 		add_core_of = SAX
 	}
-
 	provinces={
-		514 573 3514 3535 6441 6559 9441 9471 9535 11481 11545 
+		478 3572 11415 
 	}
+	manpower=0
+	buildings_max_level_factor=1.000
 }

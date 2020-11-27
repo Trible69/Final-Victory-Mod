@@ -636,3 +636,11 @@ EXD = {
 	color = rgb { 203 138 74 }
 	color_ui = rgb { 255 179 96 }
 }
+PRS = {
+	color = rgb { 0 49 83 }
+	color_ui = rgb { 0 49 83 }
+}
+SAX = {
+	color = rgb { 0 155 26 }
+	color_ui = rgb { 0 155 26 }
+}

@@ -94,7 +94,7 @@ country_event = {
 	mean_time_to_happen = {days = 1}
 	
 	immediate = {
-		set_country_flag = uac_leave
+		set_global_flag = uac_leave
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.75
@@ -140,13 +140,13 @@ country_event = {
 
 	trigger = {
 		has_government = conservative
-		has_country_flag = uac_leave
+		has_global_flag = uac_leave
 		DATE > 1937.4.5
 		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
 	immediate = {
-		set_country_flag = ams_leave
+		set_global_flag = ams_leave
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.75
@@ -242,7 +242,7 @@ country_event = {
 
 	trigger = {
 		has_government = liberal
-		has_country_flag = ams_leave
+		has_global_flag = ams_leave
 		DATE > 1937.4.5
 		tag = USA
 	}

@@ -1,0 +1,22 @@
+
+
+ENG_ams_volunteers = {
+	allowed = {
+		tag = ENG
+	}
+	enable = {
+		AMS = {
+			OR = {
+				has_war_with = USA 
+				has_war_with = UAC
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "AMS"			
+		value = 100
+	}
+}

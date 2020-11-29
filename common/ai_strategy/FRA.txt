@@ -1,0 +1,22 @@
+
+
+FRA_usa_volunteers = {
+	allowed = {
+		tag = FRA
+	}
+	enable = {
+		USA = {
+			OR = {
+				has_war_with = AMS
+				has_war_with = UAC
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "USA"			
+		value = 100
+	}
+}

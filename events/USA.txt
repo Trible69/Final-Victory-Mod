@@ -1,4 +1,5 @@
 add_namespace = USA
+add_namespace = USA_civilwarshit
 
 ##Event: Situation of America in 1936
 country_event = {
@@ -73,16 +74,16 @@ country_event = {
 		}
 	}
 }
-####Civil war neutrality###
+####Civil war neutrality uac leave###
 country_event = {
-	id = USA.3
-	title = USA.3.t
-	desc = USA.3.d
+	id = USA_civilwarshit.1
+	title = USA_civilwarshit.1.t
+	desc = USA_civilwarshit.1.d
 	picture = GFX_report_event_ast_paras
 
 	fire_only_once = yes
 
-	Trigger = {
+	trigger = {
 		has_government = conservative
 		conservative < 0.2
 		has_idea = broken_nation
@@ -90,10 +91,8 @@ country_event = {
 		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
-
-	option = {
-		name = USA.3.a
-		ai_chance = { factor = 100}
+	immediate = {
+		set_country_flag = uac_leave
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.75
@@ -102,123 +101,102 @@ country_event = {
 			ideology = liberal
 			popularity = 0.25
 		}
+		#USA Shit uhsdijokenrjkm
 		add_war_support = 0.20
-		remove_ideas = broken_nation
 		load_oob = USA_CivilWar
-		delete_unit_template_and_units = {division_template = "Infantry Division" disband = yes}
+		remove_ideas = broken_nation
 		add_ideas = eyes_seen_glory
-########American State generals 6##############
-		remove_unit_leader = 809
-		remove_unit_leader = 810
-		remove_unit_leader = 811
-		remove_unit_leader = 812
-		remove_unit_leader = 813
-		remove_unit_leader = 814
-		###Naval admrils########
-		remove_unit_leader = 820
-		remove_unit_leader = 821
-		remove_unit_leader = 822
-		remove_unit_leader = 823
-########Union of American Commune 5############
-        remove_unit_leader = 815
-        remove_unit_leader = 816
-        remove_unit_leader = 817
-        remove_unit_leader = 818
-        remove_unit_leader = 819
-		AMS = {
-		    transfer_state = 362
-		    add_state_core = 362
-		    transfer_state = 363
-		    add_state_core = 363
-		    transfer_state = 364
-		    add_state_core = 364
-		    transfer_state = 365
-		    add_state_core = 365
-		    transfer_state = 366
-		    add_state_core = 366
-		    transfer_state = 367
-		    add_state_core = 367
-		    transfer_state = 368
-		    add_state_core = 368
-		    transfer_state = 369
-		    add_state_core = 369
-		    transfer_state = 370
-		    add_state_core = 370
-		    transfer_state = 371
-		    add_state_core = 371
-		    transfer_state = 372
-		    add_state_core = 372
-		    transfer_state = 373
-		    add_state_core = 373
-		    transfer_state = 374
-		    add_state_core = 374
-		    transfer_state = 383
-		    add_state_core = 383
-		    transfer_state = 384
-		    add_state_core = 384
-			transfer_state = 382
-			add_state_core = 382
-			transfer_state = 806
-			add_state_core = 806
-		    load_oob = AMS_CivilWar
-		    load_oob = AMS_1936_naval_legacy
-		    add_ideas = ams_fire_of_revolution
-		}
+		generals_leaving_lol = yes
+		#uac shit
 		UAC = {
-		    transfer_state = 261
-		    add_state_core = 261
-		    transfer_state = 392
-		    add_state_core = 392
-		    transfer_state = 393
-		    add_state_core = 393
-		    transfer_state = 394
-		    add_state_core = 394
-		    transfer_state = 395
-		    add_state_core = 395
-		    transfer_state = 396
-		    add_state_core = 396
-		    transfer_state = 389
-		    add_state_core = 389
-		    transfer_state = 390
-		    add_state_core = 390
-		    transfer_state = 391
-		    add_state_core = 391
-		    load_oob = UAC_CivilWar
-		    add_ideas = fire_of_revolution
+			cores_and_shit = yes
+			uac_stuff = yes
 		}
-		NTC = {
-		    transfer_state = 381
-		    add_state_core = 381
-		    transfer_state = 388
-		    add_state_core = 388
+	}
+
+	option = {
+		name = USA_civilwarshit.1.a
+		ai_chance = { factor = 100}
+	}
+	option = {
+		name = USA_civilwarshit.1.b
+		ai_chance = { factor = 100}
+		UAC = {
+			change_tag_from = ROOT
 		}
-		country_event= {
-            id = USA.5
-        }
-		set_global_flag = american_civil_war_begun
 	}
 }
-###civil war democratic###
+#civil war al smith ams leave
 country_event = {
-	id = USA.4
-	title = USA.4.t
-	desc = USA.4.d
+	id = USA_civilwarshit.2
+	title = USA_civilwarshit.2.t
+	desc = USA_civilwarshit.2.d
 	picture = GFX_report_event_ast_paras
 
 	fire_only_once = yes
 
-	Trigger = {
+	trigger = {
+		has_government = conservative
+		conservative < 0.2
+		has_idea = broken_nation
+		DATE > 1937.4.1
+		tag = USA
+	}
+	mean_time_to_happen = {days = 1}
+	immediate = {
+		set_country_flag = uac_leave
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.75
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.25
+		}
+		#USA Shit uhsdijokenrjkm
+		add_war_support = 0.20
+		load_oob = USA_CivilWar
+		remove_ideas = broken_nation
+		add_ideas = eyes_seen_glory
+		generals_leaving_lol = yes
+		#uac shit
+		AMS = {
+			cores_and_shit = yes
+			ams_stuff = yes
+		}
+	}
+
+	option = {
+		name = USA_civilwarshit.2.a
+		ai_chance = { factor = 100}
+	}
+	option = {
+		name = USA_civilwarshit.2.b
+		ai_chance = { factor = 100}
+		AMS = {
+			change_tag_from = ROOT
+		}
+	}
+}
+###civil war democratic ams leave###
+country_event = {
+	id = USA_civilwarshit.3
+	title = USA_civilwarshit.3.t
+	desc = USA_civilwarshit.3.d
+	picture = GFX_report_event_ast_paras
+
+	fire_only_once = yes
+
+	trigger = {
 		has_government = liberal
 		liberal < 0.2
 		DATE > 1937.4.1
 		has_idea = broken_nation
 		tag = USA
 	}
-	mean_time_to_happen = {days = 1}
-
-	option = {
-		name = USA.4.a
-		ai_chance = { factor = 100}
+	immediate = {
+		set_global_flag = ams_leave
+		###parties
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.25
@@ -227,133 +205,81 @@ country_event = {
 			ideology = liberal
 			popularity = 0.75
 		}
+		#USA Shit uhsdijokenrjkm
 		add_war_support = 0.20
 		load_oob = USA_CivilWar
 		remove_ideas = broken_nation
-		delete_unit_template_and_units = { division_template = "Infantry Division" }
 		add_ideas = eyes_seen_glory
-########American State generals 6##############
-		remove_unit_leader = 809
-		remove_unit_leader = 810
-		remove_unit_leader = 811
-		remove_unit_leader = 812
-		remove_unit_leader = 813
-		remove_unit_leader = 814
-		###Naval admrils########
-		remove_unit_leader = 820
-		remove_unit_leader = 821
-		remove_unit_leader = 822
-		remove_unit_leader = 823
-########Union of American Commune 5############
-        remove_unit_leader = 815
-        remove_unit_leader = 816
-        remove_unit_leader = 817
-        remove_unit_leader = 818
-        remove_unit_leader = 819
+		generals_leaving_lol = yes
+		#ams shit
 		AMS = {
-		    transfer_state = 362
-		    add_state_core = 362
-		    transfer_state = 363
-		    add_state_core = 363
-		    transfer_state = 364
-		    add_state_core = 364
-		    transfer_state = 365
-		    add_state_core = 365
-		    transfer_state = 366
-		    add_state_core = 366
-		    transfer_state = 367
-		    add_state_core = 367
-		    transfer_state = 368
-		    add_state_core = 368
-		    transfer_state = 369
-		    add_state_core = 369
-		    transfer_state = 370
-		    add_state_core = 370
-		    transfer_state = 371
-		    add_state_core = 371
-		    transfer_state = 372
-		    add_state_core = 372
-		    transfer_state = 373
-		    add_state_core = 373
-		    transfer_state = 374
-		    add_state_core = 374
-		    transfer_state = 383
-		    add_state_core = 383
-		    transfer_state = 384
-		    add_state_core = 384
-			transfer_state = 382
-			add_state_core = 382
-			transfer_state = 806
-			add_state_core = 806
-		    load_oob = AMS_CivilWar
-		    load_oob = AMS_1936_naval_legacy
-			add_ideas = ams_fire_of_revolution
-			inherit_technology = USA
+			cores_and_shit = yes
+			ams_stuff = yes
 		}
-		UAC = {
-		    transfer_state = 261
-		    add_state_core = 261
-		    transfer_state = 392
-		    add_state_core = 392
-		    transfer_state = 393
-		    add_state_core = 393
-		    transfer_state = 394
-		    add_state_core = 394
-		    transfer_state = 395
-		    add_state_core = 395
-		    transfer_state = 396
-		    add_state_core = 396
-		    transfer_state = 389
-		    add_state_core = 389
-		    transfer_state = 390
-		    add_state_core = 390
-		    transfer_state = 391
-		    add_state_core = 391
-		    load_oob = UAC_CivilWar
-			add_ideas = fire_of_revolution
-			inherit_technology = USA
-		}
-		NTC = {
-		    transfer_state = 381
-		    add_state_core = 381
-		    transfer_state = 388
-		    add_state_core = 388
-		}
-		country_event= {
-            id = USA.5
-		}
-		inherit_technology = USA
-		set_global_flag = american_civil_war_begun
 	}
-}
-###Change americas###
-country_event = {
-	id = USA.5
-	title = USA.5.t
-	desc = USA.5.d
-	picture = GFX_report_event_chinese_army_training
-
-	fire_only_once = yes
-	is_triggered_only = yes
+	mean_time_to_happen = {days = 1}
 
 	option = {
-		name = USA.5.a
+		name = USA_civilwarshit.3.a
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = USA_civilwarshit.3.b
+		ai_chance = { factor = 0 }
+		AMS = { change_tag_from = ROOT }
+	}
+}
+###civil war democratic uac leave###
+country_event = {
+	id = USA_civilwarshit.4
+	title = USA_civilwarshit.4.t
+	desc = USA_civilwarshit.4.d
+	picture = GFX_report_event_ast_paras
+
+	fire_only_once = yes
+
+	trigger = {
+		has_government = liberal
+		liberal < 0.2
+		DATE > 1937.4.5
+		has_idea = broken_nation
+		tag = USA
+	}
+	immediate = {
+		set_global_flag = uac_leave
+		###parties
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.25
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.75
+		}
+		#USA Shit uhsdijokenrjkm
+		add_war_support = 0.20
+		load_oob = USA_CivilWar
+		remove_ideas = broken_nation
+		add_ideas = eyes_seen_glory
+		generals_leaving_lol = yes
+		#uac shit
+		UAC = {
+			cores_and_shit = yes
+			uac_stuff = yes
+		}
+	}
+
+	option = {
+		name = USA_civilwarshit.4.a
 		ai_chance = { factor = 100}
 	}
 	option = {
-		name = USA.5.b
-		ai_chance = { factor = 0}
-        AMS = {
-            change_tag_from = USA
-        }
-    }
-    option = {
-		name = USA.5.c
-		ai_chance = { factor = 0}
-        UAC = {
-            change_tag_from = USA
-        }
-    }
+		name = USA_civilwarshit.4.b
+		ai_chance = { factor = 100}
+		UAC = {
+			change_tag_from = ROOT
+		}
+	}
 }
 country_event = {
 	id = USA.6

@@ -11,8 +11,9 @@ country_event = {
 
 	trigger = {
 		tag = USA
-        DATE > 1937.4.12
-        has_global_flag = american_civil_war_begun
+        DATE > 1937.4.29
+		has_global_flag = uac_leave
+		has_global_flag = ams_leave
 	}
 	mean_time_to_happen = { days = 1 }
 

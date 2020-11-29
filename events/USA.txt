@@ -90,7 +90,9 @@ country_event = {
 		DATE > 1937.4.1
 		tag = USA
 	}
+	
 	mean_time_to_happen = {days = 1}
+	
 	immediate = {
 		set_country_flag = uac_leave
 		add_popularity = {
@@ -118,6 +120,7 @@ country_event = {
 		name = USA_civilwarshit.1.a
 		ai_chance = { factor = 100}
 	}
+
 	option = {
 		name = USA_civilwarshit.1.b
 		ai_chance = { factor = 100}
@@ -137,14 +140,13 @@ country_event = {
 
 	trigger = {
 		has_government = conservative
-		conservative < 0.2
-		has_idea = broken_nation
-		DATE > 1937.4.1
+		has_country_flag = uac_leave
+		DATE > 1937.4.5
 		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
 	immediate = {
-		set_country_flag = uac_leave
+		set_country_flag = ams_leave
 		add_popularity = {
 			ideology = conservative
 			popularity = 0.75
@@ -240,9 +242,8 @@ country_event = {
 
 	trigger = {
 		has_government = liberal
-		liberal < 0.2
+		has_country_flag = ams_leave
 		DATE > 1937.4.5
-		has_idea = broken_nation
 		tag = USA
 	}
 	immediate = {
@@ -902,7 +903,7 @@ country_event= {
 	picture = GFX_report_event_election_vote
     trigger = {
         date > 1940.1.11
-        orignal_tag = USA
+        tag = USA
 		has_country_flag = AlfredVictoryin1936
     }
 	mean_time_to_happen = { days = 1 }
@@ -1034,7 +1035,7 @@ country_event = {
 			desc = ""
 			picture = "NelsonRockefellerUSA.dds"
 			expire = 1965.1.1
-			idealogy = unionism
+			ideology = unionism
 		}
 		set_politics = {
 			ruling_party = social_democrat 
@@ -1081,7 +1082,7 @@ country_event = {
 			desc = ""
 			picture = "NelsonRockefellerUSA.dds"
 			expire = 1965.1.1
-			idealogy = unionism
+			ideology = unionism
 		}
 		set_politics = {
 			ruling_party = social_democrat 

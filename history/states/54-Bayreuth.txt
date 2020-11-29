@@ -4,7 +4,7 @@ state={
 	name="STATE_54"
 
 	history={
-		owner = GER
+		owner = WUZ
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 2
@@ -13,11 +13,11 @@ state={
 		victory_points = {
 			11544 10 
 		}
-		add_core_of = GER
+		add_core_of = WUZ
 	}
 
 	provinces={
-		6421 6594 11417 13116 
+		6421 11417 13116 482
 	}
 	manpower=2508159
 	buildings_max_level_factor=1.000

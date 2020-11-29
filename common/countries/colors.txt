@@ -692,3 +692,11 @@ MEC = {
 	color = rgb { 255 208 112 }
 	color_ui = rgb { 255 208 112 }
 }
+WUZ = {
+	color = rgb { 255 179 0 }
+	color_ui = rgb { 255 179 0 }
+}
+DAR = {
+	color = rgb { 0 183 239 }
+	color_ui = rgb { 0 183 239 }
+}

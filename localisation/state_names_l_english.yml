@@ -822,3 +822,9 @@
  STATE_821:0 "Weser-Ems Port"
  STATE_822:0 "West Westfalen"
  STATE_823:0 "Northern Westfalen"
+ STATE_824:0 "Frankfurt"
+ STATE_825:0 "Hessen"
+ STATE_826:0 "Waldeck"
+ STATE_827:0 "Neustrelitz"
+ STATE_828:0 "Stralsund"
+ 

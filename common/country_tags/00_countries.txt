@@ -223,3 +223,8 @@ WAL = "countries/Waldeck-Pyrmont.txt"
 NAS = "countries/Nassau.txt"
 HES = "countries/Hessen.txt"
 MEC = "countries/Mecklenburg-Schwerin.txt"
+DAR = "countries/Darmstadt.txt"
+WUZ = "countries/Wurzburg.txt"
+
+
+

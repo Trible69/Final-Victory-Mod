@@ -644,3 +644,51 @@ SAX = {
 	color = rgb { 0 155 26 }
 	color_ui = rgb { 0 155 26 }
 }
+BAY = {
+	color = rgb { 233  231  246 }
+	color_ui = rgb { 233  231  246 }
+}
+WUR = {
+	color = rgb { 255 204 153 }
+	color_ui = rgb { 255 204 153 }
+}
+WET = {
+	color = rgb { 212 212 212 }
+	color_ui = rgb { 212 212 212 }
+}
+BAD = {
+	color = rgb { 255 154 0 }
+	color_ui = rgb { 255 154 0 }
+}
+HOH = {
+	color = rgb { 0 68 255 }
+	color_ui = rgb { 0 68 255 }
+}
+OLD = {
+	color = rgb { 0 131 171 }
+	color_ui = rgb { 0 131 171 }
+}
+BER = {
+	color = rgb { 171 0 0 }
+	color_ui = rgb { 171 0 0 }
+}
+ARN = {
+	color = rgb { 0 0 255 }
+	color_ui = rgb { 0 0 255 }
+}
+WAL = {
+	color = rgb { 255 137 0 }
+	color_ui = rgb { 255 137 0 }
+}
+NAS = {
+	color = rgb { 43 121 3 }
+	color_ui = rgb { 43 121 3 }
+}
+HES = {
+	color = rgb { 202 202 0 }
+	color_ui = rgb { 202 202 0 }
+}
+MEC = {
+	color = rgb { 255 208 112 }
+	color_ui = rgb { 255 208 112 }
+}

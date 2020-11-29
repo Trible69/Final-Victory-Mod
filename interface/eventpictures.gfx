@@ -2154,4 +2154,14 @@ spriteTypes = {
 		name = "GFX_report_event_macarthur_invasion"
 		texturefile = "gfx/event_pictures/report_event_macarthur_invasion.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_charles_lindbergh_speech_leave_union"
+		texturefile = "gfx/event_pictures/report_event_charles_lindbergh_speech_leave_union.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_earl_browder_speech"
+		texturefile = "gfx/event_pictures/report_event_earl_browder_speech.dds"
+	}
 }

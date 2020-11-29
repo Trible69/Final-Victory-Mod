@@ -79,7 +79,7 @@ country_event = {
 	id = USA_civilwarshit.1
 	title = USA_civilwarshit.1.t
 	desc = USA_civilwarshit.1.d
-	picture = GFX_report_event_ast_paras
+	picture = GFX_report_event_earl_browder_speech
 
 	fire_only_once = yes
 
@@ -136,7 +136,7 @@ country_event = {
 	id = USA_civilwarshit.2
 	title = USA_civilwarshit.2.t
 	desc = USA_civilwarshit.2.d
-	picture = GFX_report_event_ast_paras
+	picture = GFX_report_event_charles_lindbergh_speech_leave_union
 
 	fire_only_once = yes
 
@@ -189,7 +189,7 @@ country_event = {
 	id = USA_civilwarshit.3
 	title = USA_civilwarshit.3.t
 	desc = USA_civilwarshit.3.d
-	picture = GFX_report_event_ast_paras
+	picture = GFX_report_event_charles_lindbergh_speech_leave_union
 
 	fire_only_once = yes
 
@@ -242,7 +242,7 @@ country_event = {
 	id = USA_civilwarshit.4
 	title = USA_civilwarshit.4.t
 	desc = USA_civilwarshit.4.d
-	picture = GFX_report_event_ast_paras
+	picture = GFX_report_event_earl_browder_speech
 
 	fire_only_once = yes
 
@@ -290,20 +290,18 @@ country_event = {
 		}
 	}
 }
-###NTC N words xdddd 
+###NTC take land lol
 country_event = {
 	id = USA_civilwarshit.5
 	title = USA_civilwarshit.5.t
 	desc = USA_civilwarshit.5.d
-	picture = GFX_report_event_ast_paras
+	picture = GFX_report_event_soviet_invasion_map
 
 	fire_only_once = yes
 
 	trigger = {
-		has_government = liberal
 		has_global_flag = ams_leave
-		DATE > 1937.4.5
-		tag = USA
+		has_global_flag = uac_leave
 	}
 	immediate = {
 		set_global_flag = ntc_annexation_of_us_land

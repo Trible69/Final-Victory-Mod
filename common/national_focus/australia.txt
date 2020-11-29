@@ -1,15 +1,15 @@
 focus_tree = {
-    id = AUS
+    id = AST
     country = {
         factor = 0
         modifier = {
             add = 10
-            tag = AUS
+            tag = AST
         }
     }
     #Political Tree
     focus = {
-        id = AUS_The_State_of_the_Country
+        id = AST_The_State_of_the_Country
         #icon = 
         x = 5
         y = 1
@@ -24,12 +24,12 @@ focus_tree = {
     }
     #Economic Tree
     focus = {
-        id = AUS_the_great_depression #Me
+        id = AST_the_great_depression #Me
         #icon =
         x = 5
         y = 3
         cost = 7
-        prerequisite = {focus = AUS_The_State_of_the_Country}
+        prerequisite = {focus = AST_The_State_of_the_Country}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -39,12 +39,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_cut_economic_ties_with_britain #Fuck them Brits bruh
+        id = AST_cut_economic_ties_with_britain #Fuck them Brits bruh
         #icon = 
         x = 5
         y = 5
         cost = 7
-        prerequisite = {focus = AUS_the_great_depression}
+        prerequisite = {focus = AST_the_great_depression}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -54,12 +54,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_abandonment_of_the_gold_standard
+        id = AST_abandonment_of_the_gold_standard
         #icon = 
         x = 3
         y = 7
         cost = 7
-        prerequisite = {focus = AUS_cut_economic_ties_with_britain}
+        prerequisite = {focus = AST_cut_economic_ties_with_britain}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -69,12 +69,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_limit_federal_control_over_taxes
+        id = AST_limit_federal_control_over_taxes
         #icon = 
         x = 7
         y = 7
         cost = 7
-        prerequisite = {focus = AUS_cut_economic_ties_with_britain}
+        prerequisite = {focus = AST_cut_economic_ties_with_britain}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -84,13 +84,13 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_full_recovery_of_the_great_depression #That quickly mf?...damn
+        id = AST_full_recovery_of_the_great_depression #That quickly mf?...damn
         #icon = 
         x = 5
         y = 8
         cost = 7
-        prerequisite = {focus = AUS_abandonment_of_the_gold_standard}
-        prerequisite = {focus = AUS_limit_federal_control_over_taxes}
+        prerequisite = {focus = AST_abandonment_of_the_gold_standard}
+        prerequisite = {focus = AST_limit_federal_control_over_taxes}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -101,12 +101,12 @@ focus_tree = {
     }
     #Those damn Kiwis
     focus = {
-        id = AUS_the_new_zealand_situation
+        id = AST_the_new_zealand_situation
         #icon = 
         x = -1
         y = 3
         cost = 7
-        prerequisite = {focus = AUS_The_State_of_the_Country}
+        prerequisite = {focus = AST_The_State_of_the_Country}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -116,12 +116,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_send_australian_diplomats
+        id = AST_send_australian_diplomats
         #icon =
         x = -1
         y = 5 
         cost = 7
-        prerequisite = {focus = AUS_the_new_zealand_situation}
+        prerequisite = {focus = AST_the_new_zealand_situation}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -131,12 +131,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_spread_unification_propaganda_in_new_zealand
+        id = AST_spread_unification_propaganda_in_new_zealand
         #icon =
         x = -1
         y = 7
         cost = 7
-        prerequisite = {focus = AUS_send_australian_diplomats}
+        prerequisite = {focus = AST_send_australian_diplomats}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -146,12 +146,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_unification_propaganda_in_our_own_borders
+        id = AST_unification_propaganda_in_our_own_borders
         #icon = 
         x = -3
         y = 8
         cost = 7
-        prerequisite = {focus = AUS_spread_unification_propaganda_in_new_zealand}
+        prerequisite = {focus = AST_spread_unification_propaganda_in_new_zealand}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -161,12 +161,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_bribe_new_zealand_seats
+        id = AST_bribe_new_zealand_seats
         #icon = 
         x = 1
         y = 8
         cost = 7
-        prerequisite = {focus = AUS_spread_unification_propaganda_in_new_zealand}
+        prerequisite = {focus = AST_spread_unification_propaganda_in_new_zealand}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -177,12 +177,12 @@ focus_tree = {
     }
     #Army ig
     focus = {
-        id = AUS_the_eastern_guard
+        id = AST_the_eastern_guard
         #icon = 
         x = 11
         y = 3
         cost = 7
-        prerequisite = {focus = AUS_The_State_of_the_Country}
+        prerequisite = {focus = AST_The_State_of_the_Country}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -192,12 +192,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_malayan_garrison
+        id = AST_malayan_garrison
         #icon =
         x = 11
         y = 5
         cost = 7
-        prerequisite = {focus = AUS_the_eastern_guard}
+        prerequisite = {focus = AST_the_eastern_guard}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -207,12 +207,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_the_most_loyal
+        id = AST_the_most_loyal
         #icon = 
         x = 11
         y = 7
         cost = 7
-        prerequisite = {focus = AUS_malayan_garrison}
+        prerequisite = {focus = AST_malayan_garrison}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -222,12 +222,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_australasia_national_guard
+        id = AST_australasia_national_guard
         #icon =
         x = 9
         y = 8
         cost = 7
-        prerequisite = {focus = AUS_the_most_loyal}
+        prerequisite = {focus = AST_the_most_loyal}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1
@@ -237,12 +237,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = AUS_protect_new_zealand
+        id = AST_protect_new_zealand
         #icon =
         x = 13
         y = 8
         cost = 7
-        prerequisite = {focus = AUS_the_most_loyal}
+        prerequisite = {focus = AST_the_most_loyal}
         available_if_capitulated = yes
         ai_will_do = {
             factor = 1

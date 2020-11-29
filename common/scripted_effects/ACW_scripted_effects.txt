@@ -88,3 +88,285 @@ uac_stuff = {
 	add_ideas = fire_of_revolution
 	inherit_technology = USA
 }
+ACW_restore_factories_uac = {
+	hidden_effect = {
+		395 = { #Illinois
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 6 }
+				add_building_construction = { type = industrial_complex level = 6 instant_build = yes }
+			}
+		}
+		396 = { #Indiana
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		261 = { #Ohio
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		393 = { #Michigan
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 2 }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+		394 = { #Wisconsin
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 7 }
+				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+			}
+		}
+		394 = { #Iowa
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 7 }
+				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+			}
+		}
+		394 = { #Minnesota
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 7 }
+				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+			}
+		}
+		394 = { #South Dakota
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 7 }
+				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+			}
+		}
+		394 = { #North Dakota
+			if = {
+				limit = { arms_factory < 4 }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 7 }
+				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+			}
+		}
+
+	}
+}
+
+ACW_restore_factories_ams = {
+	hidden_effect = {
+		371 = { #Louisiana
+			if = {
+				limit = { arms_factory < 1 }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 5 }
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+			}
+		}
+		374 = { #Oklahoma
+			if = {
+				limit = { industrial_complex < 1 }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+		372 = { #Arkansas
+			if = {
+				limit = { industrial_complex < 2 }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			if = {
+				limit = { arms_factory < 5 }
+				add_building_construction = { type = arms_factory level = 5 instant_build = yes }
+			}
+		}
+		370 = { #Mississippi
+			if = {
+				limit = { industrial_complex < 3 }
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+			}
+			if = {
+				limit = { arms_factory < 5 }
+				add_building_construction = { type = arms_factory level = 5 instant_build = yes }
+			}
+		}
+		367 = { #Alabama
+			if = {
+				limit = { industrial_complex < 5 }
+				add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+			}
+			if = {
+				limit = { arms_factory < 5 }
+				add_building_construction = { type = arms_factory level = 5 instant_build = yes }
+			}
+		}
+		365 = { #Georgia
+			if = {
+				limit = { dockyard < 4 }
+				add_building_construction = { type = dockyard level = 4 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 3 }
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+			}
+		}
+		364 = { #South Carolina
+			if = {
+				limit = { dockyard < 1 }
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+			if = {
+				limit = { industrial_complex < 1 }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			if = {
+				limit = { arms_factory < 5 }
+				add_building_construction = { type = arms_factory level = 5 instant_build = yes }
+			}
+		}
+		366 = { #Florida
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		368 = { #Tennesse
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		363 = { #North Carolina
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		382 = { #Colorado
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		373 = { #Missouri
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		383 = { #Kansas
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		384 = { #Nebraska
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		369 = { #Kentucky
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		362 = { #Virginia
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+		806 = { #West Virginia
+			if = {
+				limit = { industrial_complex < 4 }
+				add_building_construction = { type = industrial_complex level = 4 instant_build = yes }
+			}
+		}
+	}
+}
+ACW_restore_factories_usa = {
+	361 = { #Louisiana
+		if = {
+			limit = { arms_factory < 1 }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		if = {
+			limit = { industrial_complex < 5 }
+			add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+		}
+	}
+	360 = { #Louisiana
+		if = {
+			limit = { arms_factory < 1 }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		if = {
+			limit = { industrial_complex < 5 }
+			add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+		}
+	}
+	359 = { #Louisiana
+		if = {
+			limit = { arms_factory < 1 }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		if = {
+			limit = { industrial_complex < 5 }
+			add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+		}
+	}
+	358 = { #Louisiana
+		if = {
+			limit = { arms_factory < 1 }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		if = {
+			limit = { industrial_complex < 5 }
+			add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+		}
+	}
+	357 = { #Louisiana
+		if = {
+			limit = { arms_factory < 1 }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		if = {
+			limit = { industrial_complex < 5 }
+			add_building_construction = { type = industrial_complex level = 5 instant_build = yes }
+		}
+	}
+}

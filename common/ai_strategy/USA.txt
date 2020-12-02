@@ -11,6 +11,12 @@ USA_invade_cuba = {
 	
 	ai_strategy = {
 		type = invade
-		id = CUB
+		id = "CUB"			
+		value = 20000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CUB"
+		value = 20000
 	}
 }

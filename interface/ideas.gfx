@@ -4664,4 +4664,8 @@ spriteTypes = {
 		name = "GFX_idea_jack_reed"
 		texturefile = "gfx/interface/ideas/idea_political_advisor_jack_reed.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_huey_long"
+		texturefile = "gfx/interface/ideas/idea_political_advisor_huey_long.dds"
+	}
 }

@@ -116,7 +116,7 @@ country_event = {
         name = california.3.a
         ai_chance = { factor = 100 }
         RIG = {
-            give_resource_rights = { receiver = CAL state = 479 }
+            give_resource_rights = { receiver = CAF state = 479 }
         }
     }
 }

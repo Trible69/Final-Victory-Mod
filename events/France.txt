@@ -24,6 +24,5 @@ country_event = {
 	option = {
 		name = france.2.b
 		ai_chance = { factor = 0 }
-		}
 	}
 }

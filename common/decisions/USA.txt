@@ -1,3 +1,188 @@
+###Break Isolation
+USA_break_isolation_cat = {
+	USA_deadline = {
+
+        allowed = { tag = USA }
+
+        available = {
+            custom_trigger_tooltip = {
+				tooltip = usa_break_isolation_tt		
+				check_variable = {
+					var = USA.against_isolation
+					value = 79
+					compare = greater_than
+				}
+			}
+        }
+
+        activation = {
+			has_completed_focus = USA_american_diplomacy
+        }
+
+        is_good = no
+
+        selectable_mission = no
+
+        days_mission_timeout = 60
+
+        timeout_effect = {
+			custom_effect_tooltip = usa_stays_isolated_tt
+			hidden_effect = {
+				set_global_flag = usa_remains_isolated
+			}
+        }
+
+        complete_effect = {
+			hidden_effect = {
+				set_global_flag = usa_breaks_isolation
+			}
+        }
+    }
+
+	USA_bribe_seats = {
+
+		icon = eng_trade_unions_demand
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 15
+		days_remove = 10
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			hidden_effect = {
+				add_to_variable = { USA.against_isolation = 4 }
+				subtract_from_variable = { USA.for_isolation = 4 }
+			}
+		}
+	}
+	USA_stage_border_clashes_in_mexico = {
+
+		icon = border_war
+
+		available = {
+			NOT = { has_country_flag = usa_staging_border_conflicts }
+		}
+		visible = {
+			
+		}
+		cost = 20
+		days_remove = 10
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			set_country_flag = usa_staging_border_conflicts
+		}
+		remove_effect = {
+			hidden_effect = {
+				add_to_variable = { USA.against_isolation = 6 }
+				subtract_from_variable = { USA.for_isolation = 6 }
+				clr_country_flag = usa_staging_border_conflicts
+			}
+		}
+	}
+	USA_stage_border_clashes_in_quebec = {
+
+		icon = border_war
+
+		available = {
+			NOT = { has_country_flag = usa_staging_border_conflicts }
+		}
+		visible = {
+			
+		}
+		cost = 20
+		days_remove = 10
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			set_country_flag = usa_staging_border_conflicts
+		}
+		remove_effect = {
+			hidden_effect = {
+				add_to_variable = { USA.against_isolation = 6 }
+				subtract_from_variable = { USA.for_isolation = 6 }
+				clr_country_flag = usa_staging_border_conflicts
+			}
+		}
+	}
+	USA_stage_border_clashes_in_canada = {
+
+		icon = border_war
+
+		available = {
+			NOT = { has_country_flag = usa_staging_border_conflicts }
+		}
+		visible = {
+			
+		}
+		cost = 20
+		days_remove = 10
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			set_country_flag = usa_staging_border_conflicts
+		}
+		remove_effect = {
+			hidden_effect = {
+				add_to_variable = { USA.against_isolation = 6 }
+				subtract_from_variable = { USA.for_isolation = 6 }
+				clr_country_flag = usa_staging_border_conflicts
+			}
+		}
+	}
+	USA_secure_american_interests = {
+
+		icon = eng_puppet_usa
+
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 20
+		days_remove = 10
+		fixed_random_seed = yes
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			hidden_effect = {
+				add_to_variable = { USA.against_isolation = 5 }
+				subtract_from_variable = { USA.for_isolation = 5 }
+			}
+		}
+	}
+}
+###Prevent Civil War
 USA_a_broken_nation = {
 	USA_spread_liberalism = {
 
@@ -148,6 +333,7 @@ USA_a_broken_nation = {
 		}
 	}
 }
+####loyalty Decisions
 USA_appalachian_states_loyalty = {
 	USA_virginia_3 = {
 		highlight_state_targets = {

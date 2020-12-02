@@ -197,6 +197,23 @@ USA_not_another_desc:0 "Peace has returned to our great nation. No more instabil
  USA_conservative_party:0 "Federalist Party of America"
  USA_social_democrat_party:0 "Founder's Vision Party Progressive"
  #############Decisions###########
+ ###Break Isolation
+ USA_break_isolation_cat:0 "Question of Congress, Break Isolation?"
+ USA_break_isolation_cat_desc:0 "[?USA.against_isolation|+0] of Congress seats are against isolation\n\n[?USA.for_isolation|+0] of Congress seats are for isolation"
+ USA_deadline:0 "The Deadline"
+ USA_bribe_seats:0 "Bribe Seats"
+ USA_stage_border_clashes_in_mexico:0 "Stage Border Clashes in Mexico"
+ USA_stage_border_clashes_in_quebec:0 "Stage Border Clashes in Quebec"
+ USA_stage_border_clashes_in_canada:0 "Stage Border Clashes in Canada"
+ USA_secure_american_interests:0 "Secure American Interests"
+ #Tooltips
+ usa_break_isolation_tt:0 "80 or more Congress Seats are against Isolation"
+ usa_stays_isolated_tt:0 "§R the United States will remain Isolated§!"
+ #flags
+ usa_remains_isolated:0 "America remained Isolated"
+ usa_breaks_isolation:0 "America Broke Isolation"
+ usa_staging_border_conflicts:0 "Staging Border Conflicts"
+ #######
  USA_a_broken_nation:0 "A Broken Nation"
  USA_spread_liberalism:0 "Spread Liberalism"
  USA_spread_conservatism:0 "Spread Conservatism"

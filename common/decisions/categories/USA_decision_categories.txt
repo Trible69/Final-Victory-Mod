@@ -3,6 +3,23 @@
 ################
 
 
+###Break Isolation Decisions 
+USA_break_isolation_cat = {
+	allowed = {
+		tag = USA
+	}
+	visible = {
+		tag = USA
+		has_completed_focus = USA_american_diplomacy
+		NOT = {
+			OR = {
+				has_global_flag = usa_remains_isolated
+				has_global_flag = usa_breaks_isolation
+			}
+		}
+	}
+}
+##Prevent Civil War Category
 USA_a_broken_nation = {
 	allowed = {
 		original_tag = USA

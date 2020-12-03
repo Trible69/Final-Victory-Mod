@@ -179,30 +179,6 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
-create_field_marshal = {
-	name = "Dwight D. Eisenhower"
-	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 5
-	id = 602
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Geoffrey Keyes"
-	picture = "Portrait_USA_Geoffrey_Keyes.dds"
-	traits = { armor_officer career_officer }
-	skill = 2
-
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
 create_corps_commander = {
 	name = "Lucian Truscott"
 	picture = "Portrait_USA_Lucian_Truscott.dds"

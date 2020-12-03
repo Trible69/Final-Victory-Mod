@@ -43,4 +43,21 @@ ideas = {
 			}
 		}
 	}
+	political_advisor = {
+		huey_long = {
+			
+			allowed = {
+				original_tag = TEX
+				NOT = {
+					OR = {
+						NOT = {
+							has_global_flag = american_civil_war
+						}
+					}
+				}
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
 }

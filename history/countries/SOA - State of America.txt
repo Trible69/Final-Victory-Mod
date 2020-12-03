@@ -95,6 +95,40 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
+create_corps_commander = {
+	name = "Omar Bradley"
+	picture = "Portrait_USA_Omar_Bradley.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Lloyd Fredendall"
+	picture = "Portrait_USA_Lloyd_Fredendall.dds"
+	traits = { old_guard infantry_officer inflexible_strategist }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Jonathan Wainwright"
+	picture = "Portrait_USA_Jonathan_Wainwright.dds"
+	traits = {  }
+	skill = 1
+	id = 816
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
 
 create_navy_leader = {
 	name = "Ernest King"

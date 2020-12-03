@@ -147,11 +147,68 @@ country_event = {
 		}
 	}
 }
-#Florida
+#Huey Long Returns from Exile
 country_event = {
 	id = AMS_effinger_breakup.4
 	title = AMS_effinger_breakup.4.t
-	desc = AMS_effinger_breakup.4.d
+	desc = AMS_effinger_breakup.4.d 
+	picture = GFX_report_event_huey_long_speech
+	trigger = {
+		DATE > 1941.10.1
+		has_country_flag = AMS_effinger_time
+		tag = AMS
+	}
+	option = {
+		name = AMS_effinger_breakup.4.a 
+		LOU = {
+			transfer_state = 830
+			transfer_state = 831
+			add_state_core = 830
+			add_state_core = 831
+		}
+		if = {
+			limit = { is_neighbor_of = LOU }
+			declare_war_on = {
+				target = LOU
+				type = annex_everythingd
+			}
+		}
+		hidden_effect = {
+			LOU = {
+				load_oob = "LOU_revolt"
+				inherit_technology = AMS 
+			}
+		}
+	}
+	option = {
+		name = AMS_effinger_breakup.4.b
+		LOU = {
+			transfer_state = 830
+			transfer_state = 831
+			add_state_core = 830
+			add_state_core = 831
+		}
+		if = {
+			limit = { is_neighbor_of = LOU }
+			declare_war_on = {
+				target = LOU
+				type = annex_everythingd
+			}
+		}
+		hidden_effect = {
+			LOU = { change_tag_from = ROOT }
+			LOU = {
+				load_oob = "LOU_revolt"
+				inherit_technology = AMS 
+			}
+		}
+	}
+}
+#Florida
+country_event = {
+	id = AMS_effinger_breakup.5
+	title = AMS_effinger_breakup.5.t
+	desc = AMS_effinger_breakup.5.d
 	picture = GFX_report_event_worker_protests
 
 	fire_only_once = yes
@@ -164,7 +221,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.4.a
+		name = AMS_effinger_breakup.5.a
 		FLO = {
 			transfer_state = 366
 			add_state_core = 366
@@ -186,7 +243,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.4.b
+		name = AMS_effinger_breakup.5.b
 		FLO = {
 			transfer_state = 366
 			add_state_core = 366
@@ -211,9 +268,9 @@ country_event = {
 }
 #Rust Belt Commune
 country_event = {
-	id = AMS_effinger_breakup.5
-	title = AMS_effinger_breakup.5.t
-	desc = AMS_effinger_breakup.5.d
+	id = AMS_effinger_breakup.6
+	title = AMS_effinger_breakup.6.t
+	desc = AMS_effinger_breakup.6.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
 
 	fire_only_once = yes
@@ -226,7 +283,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.5.a
+		name = AMS_effinger_breakup.6.a
 		RUB = {
 			transfer_state = 261
 			add_state_core = 261
@@ -251,7 +308,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.5.b
+		name = AMS_effinger_breakup.6.b
 		RUB = {
 			transfer_state = 261
 			add_state_core = 261
@@ -279,9 +336,9 @@ country_event = {
 }
 #Southern Army
 country_event = {
-	id = AMS_effinger_breakup.6
-	title = AMS_effinger_breakup.6.t
-	desc = AMS_effinger_breakup.6.d
+	id = AMS_effinger_breakup.7
+	title = AMS_effinger_breakup.7.t
+	desc = AMS_effinger_breakup.7.d
 	picture = GFX_report_event_military_planning
 
 	fire_only_once = yes
@@ -294,7 +351,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.6.a
+		name = AMS_effinger_breakup.7.a
 		remove_unit_leader = 998
 		remove_unit_leader = 111
 		remove_unit_leader = 154
@@ -320,7 +377,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.6.b
+		name = AMS_effinger_breakup.7.b
 		remove_unit_leader = 998
 		remove_unit_leader = 111
 		remove_unit_leader = 154
@@ -349,9 +406,9 @@ country_event = {
 }
 #Midwest + Colorado
 country_event = {
-	id = AMS_effinger_breakup.7
-	title = AMS_effinger_breakup.7.t
-	desc = AMS_effinger_breakup.7.d
+	id = AMS_effinger_breakup.8
+	title = AMS_effinger_breakup.8.t
+	desc = AMS_effinger_breakup.8.d
 	picture = GFX_report_event_gathering_protest
 
 	fire_only_once = yes
@@ -364,7 +421,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.7.a
+		name = AMS_effinger_breakup.8.a
 		remove_unit_leader = 998
 		remove_unit_leader = 111
 		remove_unit_leader = 124
@@ -415,7 +472,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.7.b
+		name = AMS_effinger_breakup.8.b
 		MID = {
 			transfer_state = 391
 			add_state_core = 391
@@ -463,7 +520,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.7.c
+		name = AMS_effinger_breakup.8.c
 		MID = {
 			transfer_state = 391
 			add_state_core = 391
@@ -513,9 +570,9 @@ country_event = {
 }
 #True states of America and NTC
 country_event = {
-	id = AMS_effinger_breakup.8
-	title = AMS_effinger_breakup.8.t
-	desc = AMS_effinger_breakup.8.d
+	id = AMS_effinger_breakup.9
+	title = AMS_effinger_breakup.9.t
+	desc = AMS_effinger_breakup.9.d
 	picture = GFX_report_event_soviet_purge_trial
 
 	fire_only_once = yes
@@ -528,7 +585,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.8.a
+		name = AMS_effinger_breakup.9.a
 		if = {
 			limit = {
 				owns_state = 387
@@ -558,7 +615,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.8.b
+		name = AMS_effinger_breakup.9.b
 		if = {
 			limit = {
 				owns_state = 387
@@ -591,9 +648,9 @@ country_event = {
 }
 #State of America
 country_event = {
-	id = AMS_effinger_breakup.9
-	title = AMS_effinger_breakup.9.t
-	desc = AMS_effinger_breakup.9.d
+	id = AMS_effinger_breakup.10
+	title = AMS_effinger_breakup.10.t
+	desc = AMS_effinger_breakup.10.d
 	picture = GFX_report_event_macarthur_invasion
 
 	fire_only_once = yes
@@ -606,7 +663,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.9.a
+		name = AMS_effinger_breakup.10.a
 		remove_unit_leader = 999
 		set_capital = 362
 		361 = {
@@ -630,7 +687,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.9.b
+		name = AMS_effinger_breakup.10.b
 		remove_unit_leader = 999
 		set_capital = 362
 		361 = {
@@ -657,9 +714,9 @@ country_event = {
 }
 #New England
 country_event = {
-	id = AMS_effinger_breakup.10
-	title = AMS_effinger_breakup.10.t
-	desc = AMS_effinger_breakup.10.d
+	id = AMS_effinger_breakup.11
+	title = AMS_effinger_breakup.11.t
+	desc = AMS_effinger_breakup.11.d
 	picture = GFX_report_event_czech_soldiers_02
 
 	fire_only_once = yes
@@ -672,7 +729,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	option = {
-		name = AMS_effinger_breakup.10.a
+		name = AMS_effinger_breakup.11.a
 		NEE = {
 			transfer_state = 357
 			add_state_core = 357
@@ -713,7 +770,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = AMS_effinger_breakup.10.b
+		name = AMS_effinger_breakup.11.b
 		NEE = {
 			transfer_state = 357
 			add_state_core = 357

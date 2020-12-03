@@ -2164,4 +2164,9 @@ spriteTypes = {
 		name = "GFX_report_event_earl_browder_speech"
 		texturefile = "gfx/event_pictures/report_event_earl_browder_speech.dds"
 	}
+
+	spriteType = {
+		name = "GFX_report_event_huey_long_speech"
+		texturefile = "gfx/event_pictures/report_event_huey_long_speech.dds"
+	}
 }

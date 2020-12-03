@@ -700,3 +700,7 @@ DAR = {
 	color = rgb { 0 183 239 }
 	color_ui = rgb { 0 183 239 }
 }
+LOU = {
+	color = rgb { 60 59 110 }
+	color_ui = rgb { 60 59 110 }
+}

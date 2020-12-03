@@ -605,7 +605,7 @@ country_event = {
 	option = {
 		name = ACW.22.a
 		ai_chance = { factor = 100} 
-		371 = {
+		830 = {
 			create_unit = {
 				division = "name = \"Louisiana Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA

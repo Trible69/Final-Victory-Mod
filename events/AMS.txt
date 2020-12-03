@@ -557,7 +557,7 @@ country_event = {
 	id = AMS.17
 	title = AMS.17.t
 	desc = AMS.17.d
-	#picture = 
+	picture = GFX_report_event_huey_long_speech
 
 	fire_only_once = yes 
 

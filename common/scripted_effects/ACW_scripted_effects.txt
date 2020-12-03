@@ -48,6 +48,8 @@ cores_and_shit = {
 	add_state_core = 384
 	add_state_core = 382
 	add_state_core = 806
+	add_state_core = 830
+	add_state_core = 831
 }
 ams_stuff = {
 	transfer_state = 362

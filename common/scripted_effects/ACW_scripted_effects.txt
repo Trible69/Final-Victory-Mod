@@ -2,8 +2,6 @@ generals_leaving_lol = {
 	########American State generals 6##############
 	remove_unit_leader = 809
 	remove_unit_leader = 810
-	remove_unit_leader = 811
-	remove_unit_leader = 812
 	remove_unit_leader = 813
 	remove_unit_leader = 814
 	###Naval admrils########
@@ -137,7 +135,7 @@ ACW_restore_factories_uac = {
 			}
 			if = {
 				limit = { industrial_complex < 7 }
-				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 7 instant_build = yes }
 			}
 		}
 		394 = { #Iowa
@@ -147,7 +145,7 @@ ACW_restore_factories_uac = {
 			}
 			if = {
 				limit = { industrial_complex < 7 }
-				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 7 instant_build = yes }
 			}
 		}
 		394 = { #Minnesota
@@ -157,7 +155,7 @@ ACW_restore_factories_uac = {
 			}
 			if = {
 				limit = { industrial_complex < 7 }
-				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 7 instant_build = yes }
 			}
 		}
 		394 = { #South Dakota
@@ -167,7 +165,7 @@ ACW_restore_factories_uac = {
 			}
 			if = {
 				limit = { industrial_complex < 7 }
-				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 7 instant_build = yes }
 			}
 		}
 		394 = { #North Dakota
@@ -177,7 +175,7 @@ ACW_restore_factories_uac = {
 			}
 			if = {
 				limit = { industrial_complex < 7 }
-				add_building_construction = { type = industrial_complex level = wisconsin_factories instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 7 instant_build = yes }
 			}
 		}
 

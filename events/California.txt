@@ -75,8 +75,9 @@ country_event = {
     Trigger = {
         DATE = 1939.2.6
         tag = CAF
+        NOT = { has_war_with = MEX }
     }
-    mean_time_to_happen = { days = 1 }
+    mean_time_to_happen = { days = 20 }
 
     option = {
         name = california.2.a

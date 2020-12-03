@@ -70,16 +70,6 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Lucian Truscott"
-	picture = "Portrait_USA_Lucian_Truscott.dds"
-	traits = { trait_engineer commando cavalry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 create_corps_commander = {
 	name = "Mark Clark"
@@ -105,17 +95,6 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Alexander Patch"
-	picture = "Portrait_USA_Alexander_Patch.dds"
-	traits = {  commando infantry_officer }
-	skill = 3
-
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
 
 create_navy_leader = {
 	name = "Ernest King"

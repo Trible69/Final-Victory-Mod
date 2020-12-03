@@ -552,3 +552,23 @@ country_event = {
 		ai_chance = { factor = 100}
 	}
 }
+#Huey long escapes to Texas
+country_event = {
+	id = AMS.17
+	title = AMS.17.t
+	desc = AMS.17.d
+	#picture = 
+
+	fire_only_once = yes 
+
+	trigger = {
+		has_global_flag = american_civil_war
+		tag = AMS 
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = AMS.17.a
+	}
+}

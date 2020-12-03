@@ -334,29 +334,6 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Alexander Patch"
-	picture = "Portrait_USA_Alexander_Patch.dds"
-	traits = {  commando infantry_officer }
-	skill = 3
-
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "William Simpson"
-	picture = "Portrait_USA_William_Hood_Simpson.dds"
-	traits = { infantry_officer }
-	skill = 3
-	id = 811
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 create_corps_commander = {
 	name = "J. Lawton Collins"

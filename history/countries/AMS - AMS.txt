@@ -168,17 +168,6 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "William Simpson"
-	picture = "Portrait_AMS_William_Hood_Simpson.dds"
-	traits = { infantry_officer }
-	skill = 3
-	id = 124
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 create_corps_commander = {
 	name = "Courtney Hodges"

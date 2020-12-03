@@ -35,7 +35,7 @@ country_event = {
 			country_exists = AMS
 		}
 		tag = MEX
-		has_global_flag = american_civil_war_begun
+		has_global_flag = american_civil_war
 	}
 	mean_time_to_happen = { days = 1 }
 		

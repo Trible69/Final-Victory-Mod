@@ -30,7 +30,7 @@ country_event = {
 
 	option = {
 		name = USA.2.a
-		ai_chance = { factor = 10}
+		ai_chance = { factor = 50}
 		set_politics = {
 			ruling_party = conservative
 			elections_allowed = yes
@@ -53,7 +53,7 @@ country_event = {
 	}
 	option = {
 		name = USA.2.b
-		ai_chance = { factor = 90}
+		ai_chance = { factor = 50}
 		create_country_leader = {
 			name = "Thomas E. Dewey"
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
@@ -94,28 +94,30 @@ country_event = {
 	mean_time_to_happen = {days = 1}
 	
 	immediate = {
-		set_global_flag = uac_leave
-		ACW_restore_factories_usa = yes
-		add_popularity = {
-			ideology = conservative
-			popularity = 0.75
+		hidden_effect = {
+			set_global_flag = uac_leave
+			ACW_restore_factories_usa = yes
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.75
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.25
+			}
+			#USA Shit uhsdijokenrjkm
+			add_war_support = 0.20
+			load_oob = USA_CivilWar
+			remove_ideas = broken_nation
+			add_ideas = eyes_seen_glory
+			generals_leaving_lol = yes
+			#uac shit
+			UAC = {
+				cores_and_shit = yes
+				uac_stuff = yes
+			}
+			ACW_restore_factories_uac = yes
 		}
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.25
-		}
-		#USA Shit uhsdijokenrjkm
-		add_war_support = 0.20
-		load_oob = USA_CivilWar
-		remove_ideas = broken_nation
-		add_ideas = eyes_seen_glory
-		generals_leaving_lol = yes
-		#uac shit
-		UAC = {
-			cores_and_shit = yes
-			uac_stuff = yes
-		}
-		ACW_restore_factories_uac = yes
 	}
 
 	option = {
@@ -148,27 +150,23 @@ country_event = {
 	}
 	mean_time_to_happen = {days = 1}
 	immediate = {
-		ACW_restore_factories_usa = yes
-		set_global_flag = ams_leave
-		add_popularity = {
-			ideology = conservative
-			popularity = 0.75
-		}
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.25
-		}
-		#USA Shit uhsdijokenrjkm
-		add_war_support = 0.20
-		load_oob = USA_CivilWar
-		remove_ideas = broken_nation
-		add_ideas = eyes_seen_glory
-		generals_leaving_lol = yes
-		#uac shit
-		AMS = {
-			cores_and_shit = yes
-			ams_stuff = yes
-			ACW_restore_factories_ams = yes
+		hidden_effect = {
+			ACW_restore_factories_usa = yes
+			set_global_flag = ams_leave
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.75
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.25
+			}
+			#ams shit
+			AMS = {
+				cores_and_shit = yes
+				ams_stuff = yes
+				ACW_restore_factories_ams = yes
+			}
 		}
 	}
 
@@ -201,28 +199,30 @@ country_event = {
 		tag = USA
 	}
 	immediate = {
-		ACW_restore_factories_usa = yes
-		set_global_flag = ams_leave
-		###parties
-		add_popularity = {
-			ideology = conservative
-			popularity = 0.25
-		}
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.75
-		}
-		#USA Shit uhsdijokenrjkm
-		add_war_support = 0.20
-		load_oob = USA_CivilWar
-		remove_ideas = broken_nation
-		add_ideas = eyes_seen_glory
-		generals_leaving_lol = yes
-		#ams shit
-		AMS = {
-			cores_and_shit = yes
-			ams_stuff = yes
-			ACW_restore_factories_ams = yes
+		hidden_effect = {
+			ACW_restore_factories_usa = yes
+			set_global_flag = ams_leave
+			###parties
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.75
+			}
+			#USA Shit uhsdijokenrjkm
+			add_war_support = 0.20
+			load_oob = USA_CivilWar
+			remove_ideas = broken_nation
+			add_ideas = eyes_seen_glory
+			generals_leaving_lol = yes
+			#ams shit
+			AMS = {
+				cores_and_shit = yes
+				ams_stuff = yes
+				ACW_restore_factories_ams = yes
+			}
 		}
 	}
 	mean_time_to_happen = {days = 1}
@@ -253,28 +253,24 @@ country_event = {
 		tag = USA
 	}
 	immediate = {
-		ACW_restore_factories_usa = yes
-		set_global_flag = uac_leave
-		###parties
-		add_popularity = {
-			ideology = conservative
-			popularity = 0.25
-		}
-		add_popularity = {
-			ideology = liberal
-			popularity = 0.75
-		}
-		#USA Shit uhsdijokenrjkm
-		add_war_support = 0.20
-		load_oob = USA_CivilWar
-		remove_ideas = broken_nation
-		add_ideas = eyes_seen_glory
-		generals_leaving_lol = yes
-		#uac shit
-		UAC = {
-			cores_and_shit = yes
-			uac_stuff = yes
-			ACW_restore_factories_uac = yes
+		hidden_effect = {
+			ACW_restore_factories_usa = yes
+			set_global_flag = uac_leave
+			###parties
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.75
+			}
+			#uac shit
+			UAC = {
+				cores_and_shit = yes
+				uac_stuff = yes
+				ACW_restore_factories_uac = yes
+			}
 		}
 	}
 
@@ -304,12 +300,14 @@ country_event = {
 		has_global_flag = uac_leave
 	}
 	immediate = {
-		set_global_flag = ntc_annexation_of_us_land
-		NTC = {
-			transfer_state = 381
-			transfer_state = 388
-			add_state_core = 381
-			add_state_core = 388
+		hidden_effect = {
+			set_global_flag = ntc_annexation_of_us_land
+			NTC = {
+				transfer_state = 381
+				transfer_state = 388
+				add_state_core = 381
+				add_state_core = 388
+			}
 		}
 	}
 
@@ -633,10 +631,27 @@ country_event = {
 		name = USA.18.a
 		ai_chance = { factor = 100}
 		add_state_core = 315
+		hidden_effect = {
+			set_global_flag = cuba_became_a_state
+		}
 	}
 	option = {
 		name = USA.18.b
 		ai_chance = { factor = 100}
+		CUB = {
+		    transfer_state = 315
+		}
+		puppet = CUB
+		hidden_effect = {
+			set_global_flag = cuba_was_puppeted
+		}
+	}
+	option = {
+		name = USA.18.a
+		ai_chance = { factor = 100}
+		hidden_effect = {
+			set_global_flag = cuba_stayed_territory 
+		}
 	}
 }
 country_event = {
@@ -648,8 +663,7 @@ country_event = {
 	fire_only_once = yes
 
 	Trigger = {
-		has_full_control_of_state = 315
-		owns_state = 315
+		has_global_flag = cuba_became_a_state
 		DATE > 1937.1.6
 		tag = USA
 	}
@@ -661,17 +675,35 @@ country_event = {
 		CUB = {
 		    transfer_state = 315
 		}
-		puppet = CUB
-	}
-	option = {
-		name = USA.19.b
-		ai_chance = { factor = 50}
-		CUB = {
-		    transfer_state = 315
-		}
 		declare_war_on = {
 		    target = CUB
 		    type = annex_everything
+		}
+		hidden_effect = {
+			set_global_flag = cuba_revolted
+		}
+	}
+}
+country_event = {
+	id = USA.31
+	title = USA.31.t
+	desc = USA.31.d
+	picture = GFX_report_event_chamberlain_announce
+
+	fire_only_once = yes
+
+	Trigger = {
+		has_global_flag = cuba_revolted
+		DATE > 1937.1.6
+		tag = USA
+	}
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = USA.19.a
+		ai_chance = { factor = 50}
+		AMS = {
+		    transfer_state = 315
 		}
 	}
 }
@@ -686,7 +718,7 @@ country_event = {
 	Trigger = {
 		has_war_with = AMS
 		has_war_with = UAC
-		owns_state = 315
+		has_global_flag = cuba_stayed_territory
 		tag = USA
 	}
 	mean_time_to_happen = {days = 1}
@@ -729,7 +761,7 @@ country_event = {
 		hidden_effect = {
 			delete_unit_template_and_units = {
 				division_template = "Militia"
-				disband = yes #will refund equipment and manpower
+				disband = no #will refund equipment and manpower
 			}
 		}
 	}

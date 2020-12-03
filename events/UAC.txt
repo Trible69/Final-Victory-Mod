@@ -28,7 +28,7 @@ country_event = {
 			country_event = {days = 10 id = UAC.3}
 			delete_unit_template_and_units = {
 				division_template = "Militia"
-				disband = yes #will refund equipment and manpower
+				disband = no #will refund equipment and manpower
 			}
 		}
 	}

@@ -518,4 +518,15 @@ ideas = {
 			}
 		}
 	}
+
+	political_advisor = {
+		huey_long = {
+			
+			allowed = {
+				original_tag = AMS
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
 }

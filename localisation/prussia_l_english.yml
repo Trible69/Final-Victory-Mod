@@ -5,5 +5,11 @@
  PRS_liberal:0 "Republic of Prussia"
  PRS_liberal_ADJ:0 "Prussian"
  PRS_liberal_DEF:0 "the Republic of Prussia"
- 
+###National Spirits
+ heydrichs_bureaucratic_influence:0 "Heydrich’s Bureaucratic Influence"
+ heydrichs_bureaucratic_influence_desc:0 "The Prussian bureaucracy is not a simple mechanism: it is a meticulously designed system in the making for hundreds of years. Some seek to subsist within it, others seek to alter it; but what distinguishes Reinhard Heydrich from the rest is his ability to effectively control and manipulate the career politicians that comprise its ranks. Almost all of the bureaucracy is at Heydrich’s behest; it would take a mastermind, a madman, or both to uproot his deep-set power."
+ guderians_influence_among_young_officers:0 "Guderian’s Influence Among Young Officers"
+ guderians_influence_among_young_officers_desc:0 "The new times are upon us. No longer is military engagement a game of cat and mouse between armies of a few thousand. Now frontal warfare is the way of the world, and with it arises a new class of hopeful new officers seeking to implement their strategies on the battlefield. Led by Heinz Guderian, the young officers seek to use their military prowess to end French domination over their rightful land once and for all. And they will stop at nothing to accomplish that goal."
+ an_army_with_a_state:0 "An Army with a State"
+ an_army_with_a_state_desc:0 "Prussia has always been a militaristic power seeking to assert itself in Europe. Although that hasn’t exactly gone as planned, society and government revolve around the military, which is unlikely to ever change."
  

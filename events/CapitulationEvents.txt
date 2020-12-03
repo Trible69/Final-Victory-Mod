@@ -16,20 +16,40 @@ news_event = {
 			NOT = {
 				OR = {
 					AND = {
-						ROOT = { has_government = fascism }
-						FROM.FROM = { has_government = fascism }
+						ROOT = { has_government = national_populism }
+						FROM.FROM = { has_government = national_populism }
 					}
 					AND = {
-						ROOT = { has_government = democratic }
-						FROM.FROM = { has_government = democratic }
+						ROOT = { has_government = despotism }
+						FROM.FROM = { has_government = despotism }
 					}
 					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
+						ROOT = { has_government = ultraconservative }
+						FROM.FROM = { has_government = ultraconservative }
 					}
 					AND = {
-						ROOT = { has_government = neutrality }
-						FROM.FROM = { has_government = neutrality }
+						ROOT = { has_government = liberal }
+						FROM.FROM = { has_government = liberal }
+					}
+					AND = {
+						ROOT = { has_government = conservative }
+						FROM.FROM = { has_government = conservative }
+					}
+					AND = {
+						ROOT = { has_government = social_democrat }
+						FROM.FROM = { has_government = social_democrat }
+					}
+					AND = {
+						ROOT = { has_government = vanguardism }
+						FROM.FROM = { has_government = vanguardism }
+					}
+					AND = {
+						ROOT = { has_government = moderate_socialism }
+						FROM.FROM = { has_government = moderate_socialism }
+					}
+					AND = {
+						ROOT = { has_government = anarchist }
+						FROM.FROM = { has_government = anarchist }
 					}
 				}
 			}
@@ -46,12 +66,12 @@ news_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ROOT = { has_government = fascism }
-					FROM.FROM = { has_government = fascism }
+					ROOT = { has_government = national_populism }
+					FROM.FROM = { has_government = national_populism }
 				}
 				AND = {
-					ROOT = { has_government = communism }
-					FROM.FROM = { has_government = communism }
+					ROOT = { has_government = vanguardism }
+					FROM.FROM = { has_government = vanguardism }
 				}
 			}
 			FROM.FROM = {
@@ -127,20 +147,40 @@ news_event = {
 			NOT = {
 				OR = {
 					AND = {
-						ROOT = { has_government = fascism }
-						FROM.FROM = { has_government = fascism }
+						ROOT = { has_government = national_populism }
+						FROM.FROM = { has_government = national_populism }
 					}
 					AND = {
-						ROOT = { has_government = democratic }
-						FROM.FROM = { has_government = democratic }
+						ROOT = { has_government = despotism }
+						FROM.FROM = { has_government = despotism }
 					}
 					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
+						ROOT = { has_government = ultraconservative }
+						FROM.FROM = { has_government = ultraconservative }
 					}
 					AND = {
-						ROOT = { has_government = neutrality }
-						FROM.FROM = { has_government = neutrality }
+						ROOT = { has_government = liberal }
+						FROM.FROM = { has_government = liberal }
+					}
+					AND = {
+						ROOT = { has_government = conservative }
+						FROM.FROM = { has_government = conservative }
+					}
+					AND = {
+						ROOT = { has_government = social_democrat }
+						FROM.FROM = { has_government = social_democrat }
+					}
+					AND = {
+						ROOT = { has_government = vanguardism }
+						FROM.FROM = { has_government = vanguardism }
+					}
+					AND = {
+						ROOT = { has_government = moderate_socialism }
+						FROM.FROM = { has_government = moderate_socialism }
+					}
+					AND = {
+						ROOT = { has_government = anarchist }
+						FROM.FROM = { has_government = anarchist }
 					}
 				}
 			}

@@ -319,8 +319,6 @@ AMS_moseley_support = {
         }
 	}
 	AMS_replace_security_guards = {
-
-		fire_only_once = yes
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = AMS_support_actions

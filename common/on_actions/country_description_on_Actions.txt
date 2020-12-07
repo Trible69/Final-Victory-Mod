@@ -1,0 +1,45 @@
+on_actions = {
+	on_startup = {
+			effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						is_ai = yes
+					}
+				}
+				set_country_flag = country_window_open_flag
+			}
+			USA = {
+				add_to_array = {
+					array = global.country_flags
+					value = THIS.id
+				}
+			}
+			MEX = {
+				add_to_array = {
+					array = global.country_flags
+					value = THIS.id
+				}
+			}
+			QUE = {
+				add_to_array = {
+					array = global.country_flags
+					value = THIS.id
+				}
+			}
+			CAN = {
+				add_to_array = {
+					array = global.country_flags
+					value = THIS.id
+				}
+			}
+			NTC = {
+				add_to_array = {
+					array = global.country_flags
+					value = THIS.id
+				}
+			}
+		}
+	}
+}
+	

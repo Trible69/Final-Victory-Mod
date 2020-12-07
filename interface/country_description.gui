@@ -1,0 +1,155 @@
+guiTypes = {
+
+		containerWindowType = {
+			name = "country_description_container" 
+			position = { x = 180 y = 90 }
+			size = { width = 1000 height = 650 }
+			
+			moveable = yes
+
+			background = {
+				name = "country_description_window"
+				spriteType = "GFX_country_description_window"
+			}
+			
+			buttonType = {
+					name = "close_button"
+					quadTextureSprite ="GFX_cancel_transfer_button"
+					position = { x= 960 y = 12 }
+				}
+			
+			containerWindowType = {
+				name = "window_container" 
+				position = { x = 20 y = 50 }
+				size = { width = 350 height = 550 }
+				verticalScrollbar = "right_vertical_slider"
+					margin = { top = 10 bottom = 10}
+
+				background = {
+					name = "window"
+					spriteType = "GFX_tiled_window_1b_border"
+				}
+				
+		
+			
+				
+				gridboxtype = {
+						name = "countries_grid"
+						position = { x = -69 y = 140 }
+						size = { width = 500 height = 1000 }
+						slotsize = { width=100 height=150 }
+						add_horizontal = no
+				}
+				
+				
+				
+			}
+			containerWindowType = {
+				name = "country_text_frame" 
+				position = { x = 366 y = 50}
+				size = { width = 630 height = 550 }
+
+				background = {
+					name = "window"
+					spriteType = "GFX_tiled_window_1b_border"
+				}
+				containerWindowType = {
+					name = "country_text_window" 
+					position = { x = 14 y = 15}
+					size = { width = 595 height = 525 }
+
+					background = {
+						name = "window"
+						spriteType = "GFX_tiled_paper_bg"
+					}
+					
+				}
+				
+				instantTextBoxType = {
+					name ="country_name"
+					position = { x= 17 y = 25 }
+					font = "hoi_18mbs"
+					text = "[CountryNameText]" 
+					format = center
+					maxWidth = 590
+					maxHeight = 10
+					fixedsize = yes
+				}
+				
+				instantTextBoxType = {
+					name ="country_description_text"
+					position = { x= 18 y = 60 }
+					font = "hoi_18mbs"
+					text = "[CountryDescriptionText]" 
+					format = center
+					maxWidth = 590
+					maxHeight = 525
+					fixedsize = yes
+				}
+				
+				
+				
+			}
+		}
+	
+		containerWindowType = {
+			name = "country_description_entry" 
+			position = { x = -120 y = -138 }
+			size = { width = 320 height = 150 }
+			background = {
+					name = "window"
+					spriteType = "GFX_tiled_window"
+			}
+					
+			containerWindowType = {
+				name = "paper_frame" 
+				position = { x = 14 y = 15 }
+				size = { width = 295 height = 125 }
+				background = {
+						name = "paper"
+						spriteType = "GFX_tiled_paper_bg"
+					}
+			}
+			
+			
+			buttonType = {
+					name = "country_flag"
+					quadTextureSprite ="GFX_shield_medium"
+					position = { x= 120 y = 25 }
+				}
+
+					
+			
+			iconType ={
+				name ="country_flag_frame"
+				quadTextureSprite ="GFX_large_flag_frame"
+				position = { x = 115 y = 25 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name ="country_text"
+				position = { x= -41 y = 100 }
+				font = "hoi_18mbs"
+				text = "[THIS.GetName]" 
+				format = center
+				maxWidth = 400
+				maxHeight = 24
+				fixedsize = yes
+			}	
+		}
+	
+	containerWindowType = {
+			name = "country_button_container" 
+			position = { x = 1475 y = 60}
+			
+				
+			buttonType = {
+				name = "country_info_button"
+				quadTextureSprite ="GFX_country_info_button"
+				position = { x= 0 y = 0 }
+			}		
+				
+	}
+}

@@ -1,0 +1,173 @@
+scripted_gui = {
+    country_description_scripted_GUI = {
+        window_name = country_description_container
+        context_type = player_context
+         
+        visible = {
+            has_country_flag = country_window_open_flag
+        }
+        
+        effects = {
+			close_button_click = {
+				clr_country_flag = country_window_open_flag 
+			}
+            country_flag_click = {
+				if = {
+					limit = { 
+						ROOT = { 
+							has_country_flag = country_description_flagUSA
+							has_country_flag = country_description_nameUSA
+						} 
+					}
+					ROOT = {
+						clr_country_flag = country_description_flagUSA
+						clr_country_flag = country_description_nameUSA
+					}
+				}
+				else = {
+					ROOT ={
+						set_country_flag = country_description_flag@PREV
+						set_country_flag = country_description_name@PREV
+					}
+				}
+				
+				if = {
+					limit = { 
+						ROOT = { 
+						has_country_flag = country_description_flagMEX
+						has_country_flag = country_description_nameMEX
+						} 
+					}
+					ROOT = {
+						clr_country_flag = country_description_flagMEX
+						clr_country_flag = country_description_nameMEX
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = country_description_flag@PREV
+						set_country_flag = country_description_name@PREV
+					}
+				}
+				
+				if = {
+					limit = { 
+						ROOT = { 
+						has_country_flag = country_description_flagQUE
+						has_country_flag = country_description_nameQUE
+						} 
+					}
+					ROOT = {
+						clr_country_flag = country_description_flagQUE
+						clr_country_flag = country_description_nameQUE
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = country_description_flag@PREV
+						set_country_flag = country_description_name@PREV
+					}
+				}
+				
+				if = {
+					limit = { 
+						ROOT = { 
+						has_country_flag = country_description_flagCAN
+						has_country_flag = country_description_nameCAN
+						} 
+					}
+					ROOT = {
+						clr_country_flag = country_description_flagCAN
+						clr_country_flag = country_description_nameCAN
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = country_description_flag@PREV
+						set_country_flag = country_description_name@PREV
+					}
+				}
+				
+				if = {
+					limit = { 
+						ROOT = { 
+						has_country_flag = country_description_flagNTC
+						has_country_flag = country_description_nameNTC
+						} 
+					}
+					ROOT = {
+						clr_country_flag = country_description_flagNTC
+						clr_country_flag = country_description_nameNTC
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = country_description_flag@PREV
+						set_country_flag = country_description_name@PREV
+					}
+				}
+				
+				if = {
+					limit = { 
+						ROOT = { 
+						has_country_flag = country_description_flagFRA
+						has_country_flag = country_description_nameFRA
+						} 
+					}
+					ROOT = {
+						clr_country_flag = country_description_flagFRA
+						clr_country_flag = country_description_nameFRA
+					}
+				}
+				else = {
+					ROOT = {
+						set_country_flag = country_description_flag@PREV
+						set_country_flag = country_description_name@PREV
+					}
+				}
+			}
+        }
+
+		dynamic_lists = {
+			countries_grid = {
+				array = global.country_flags
+				entry_container = country_description_entry
+				change_scope = yes
+			}
+		}
+		
+		properties = {
+            country_flag = {
+                image = [THIS.GetFlag]
+			}
+        }
+        
+    }
+	
+	country_description_button_scripted_GUI = {
+        window_name = country_button_container
+        context_type = player_context
+		parent_window_token = top_bar
+         
+        visible = {
+            always = yes
+        }
+        
+        effects = {
+		country_info_button_click = {
+				if = {
+					limit = {
+							NOT = {
+								has_country_flag = country_window_open_flag
+							}
+						}
+						set_country_flag = country_window_open_flag 
+					}
+				else = {
+					clr_country_flag = country_window_open_flag 
+				}
+			}
+		}
+        
+    }
+}

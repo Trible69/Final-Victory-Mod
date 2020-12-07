@@ -1,0 +1,76 @@
+defined_text = { # Country
+	name = CountryDescriptionText
+	text = {
+		trigger = {
+			has_country_flag = country_description_flagUSA
+			
+		}
+		localization_key = USA_COUNTRY_DESCRIPTION
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_flagMEX
+			
+		}
+		localization_key = MEX_COUNTRY_DESCRIPTION
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_flagQUE
+			
+		}
+		localization_key = QUE_COUNTRY_DESCRIPTION
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_flagCAN
+			
+		}
+		localization_key = CAN_COUNTRY_DESCRIPTION
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_flagNTC
+			
+		}
+		localization_key = NTC_COUNTRY_DESCRIPTION
+	}
+}
+defined_text = { # Country
+	name = CountryNameText
+	text = {
+		trigger = {
+			has_country_flag = country_description_nameUSA
+			
+		}
+		localization_key = USA_COUNTRY_DESCRIPTION_NAME
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_nameMEX
+			
+		}
+		localization_key = MEX_COUNTRY_DESCRIPTION_NAME
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_nameQUE
+			
+		}
+		localization_key = QUE_COUNTRY_DESCRIPTION_NAME
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_nameCAN
+			
+		}
+		localization_key = CAN_COUNTRY_DESCRIPTION_NAME
+	}
+	text = {
+		trigger = {
+			has_country_flag = country_description_nameNTC
+			
+		}
+		localization_key = NTC_COUNTRY_DESCRIPTION_NAME
+	}
+}

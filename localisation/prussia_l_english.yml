@@ -12,4 +12,29 @@
  guderians_influence_among_young_officers_desc:0 "The new times are upon us. No longer is military engagement a game of cat and mouse between armies of a few thousand. Now frontal warfare is the way of the world, and with it arises a new class of hopeful new officers seeking to implement their strategies on the battlefield. Led by Heinz Guderian, the young officers seek to use their military prowess to end French domination over their rightful land once and for all. And they will stop at nothing to accomplish that goal."
  an_army_with_a_state:0 "An Army with a State"
  an_army_with_a_state_desc:0 "Prussia has always been a militaristic power seeking to assert itself in Europe. Although that hasn’t exactly gone as planned, society and government revolve around the military, which is unlikely to ever change."
+###Decisions
+ PRS_rising_powers_in_prussia:0 "Rising Powers in Prussia"
+ PRS_rising_powers_in_prussia_desc:0 "Heydrich has [?global.heydrichs_influence|+0] influence! \nGuderian has [?global.guderians_influence|+0] influence! \n\n§R if they get too much influence they will revolt!§!"
+ PRS_bribe_the_bureaucracy:0 "Bribe the Bureaucracy"
+ PRS_promote_older_officers:0 "Promote Older Officers"
+ PRS_play_guderian_off_against_heydrich:0 "Play Guderian off against Heydrich"
+ PRS_play_heydrich_off_against_guderian:0 "Play Heydrich off against Guderian"
+ PRS_establish_a_military_informant_network:0 "Establish a Military Informant Network"
+ PRS_establish_a_government_informant_network:0 "Establish a Government Informant Network"
+ PRS_expose_heydrichs_corruption:0 "Expose Heydrich's Corruption"
+ PRS_execute_operation_against_heydrich:0 "Execute Operation against Heydrich"
+ PRS_execute_operation_against_guderian:0 "Execute Operation against Guderian"
+ #tooltip
+ explain_how_it_works_heydrich_prs_tt:0 "§R Heydrichs's Influence has to be 5 or below, when the decision is finished an Operation will be executed against Heydrich, if it succeds he will be removed from political preeminence, if failed he will revolt! The Chances of it failing will be decreased the less influence Heydrich has§!"
+ explain_how_it_works_guderian_prs_tt:0 "§R Guderian's Influence has to be 5 or below, when the decision is finished an Operation will be execited against Guderian, if it succeds he will be removed from political preeminence, if failed he will revolt! The Chances of it failing will be decreased the less influence Guderian has§!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  

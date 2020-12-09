@@ -1,0 +1,295 @@
+PRS_rising_powers_in_prussia = {
+	PRS_bribe_the_bureaucracy = {
+		#icon = 
+		cost = 25
+		days_remove = 20
+		fixed_random_seed = yes
+		ai_will_do = { factor = 10 }
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					50 = { subtract_from_variable = { global.heydrichs_influence = 3 } }
+					50 = { add_to_variable = { global.heydrichs_influence = 1 } }
+				}
+			}
+		}
+	}
+	PRS_promote_older_officers = {
+		#icon = 
+		cost = 25
+		days_remove = 20
+		fixed_random_seed = yes
+		ai_will_do = { factor = 10 }
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				subtract_from_variable = { global.guderians_influence = 2 }
+			}
+		}
+	}
+	PRS_play_guderian_off_against_heydrich = {
+		#icon = 
+		cost = 35 
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					50 = { 
+						subtract_from_variable = { global.heydrichs_influence = 3 } 
+						add_to_variable = { global.guderians_influence = 2 }
+					}
+					50 = { 
+						subtract_from_variable = { global.heydrichs_influence = 2 } 
+						add_to_variable = { global.guderians_influence = 1 } 
+					}
+				}
+			}
+		}
+	}
+	PRS_play_heydrich_off_against_guderian = {
+		#icon = 
+		cost = 35
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					50 = { 
+						add_to_variable = { global.heydrichs_influence = 3 } 
+						subtract_from_variable = { global.guderians_influence = 3 }
+					}
+					50 = { 
+						add_to_variable = { global.heydrichs_influence = 1 } 
+						subtract_from_variable = { global.guderians_influence = 2 } 
+					}
+				}
+			}
+		}
+	}
+	PRS_establish_a_military_informant_network = {
+		#icon = 
+		cost = 50
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		fire_only_once = yes
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					50 = { #network succeds events 
+						
+					}
+					50 = { #net work fails events 
+						
+					}
+				}
+			}
+		}
+	}
+	PRS_establish_a_government_informant_network = {
+		#icon = 
+		cost = 50
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		fire_only_once = yes
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				random_list = {
+					50 = { #network succeds events 
+						
+					}
+					50 = { #net work fails events 
+						
+					}
+				}
+			}
+		}
+	}
+	PRS_expose_heydrichs_corruption = {
+		#icon = 
+		cost = 40
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		fire_only_once = yes
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = { subtract_from_variable = { global.heydrichs_influence = 2 } }
+		}
+	}
+	PRS_execute_operation_against_heydrich = {
+		#icon = 
+		cost = 40
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = explain_how_it_works_heydrich_prs_tt		
+				check_variable = { global.heydrichs_influence < 6 }
+			}
+		}
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		fire_only_once = yes
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = { check_variable = { global.heydrichs_influence = 5 } }
+					random_list = {
+						25 = { #operation works
+							
+						}
+						75 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.heydrichs_influence = 4 } }
+					random_list = {
+						40 = { #operation works
+							
+						}
+						60 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.heydrichs_influence = 3 } }
+					random_list = {
+						50 = { #operation works
+							
+						}
+						50 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.heydrichs_influence = 2 } }
+					random_list = {
+						60 = { #operation works
+							
+						}
+						40 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.heydrichs_influence = 1 } }
+					random_list = {
+						90 = { #operation works
+							
+						}
+						10 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							check_variable = { global.heydrichs_influence = 0 } 
+							check_variable = { global.heydrichs_influence < 0 } 
+						}
+					}
+					#operation success
+				}
+			}
+		}
+	}
+	PRS_execute_operation_against_guderian = {
+		#icon = 
+		cost = 40
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = explain_how_it_works_guderian_prs_tt		
+				check_variable = { global.guderians_influence < 6 } 
+			}
+		}
+		days_remove = 20
+		fixed_random_seed = yes 
+		ai_will_do = { factor = 10 }
+		fire_only_once = yes
+		modifier = { political_power_gain = -0.1 }
+		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = { check_variable = { global.guderians_influence = 5 } }
+					random_list = {
+						25 = { #operation works
+							
+						}
+						75 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.guderians_influence = 4 } }
+					random_list = {
+						40 = { #operation works
+							
+						}
+						60 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.guderians_influence = 3 } }
+					random_list = {
+						50 = { #operation works
+							
+						}
+						50 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.guderians_influence = 2 } }
+					random_list = {
+						60 = { #operation works
+							
+						}
+						40 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { check_variable = { global.guderians_influence = 1 } }
+					random_list = {
+						90 = { #operation works
+							
+						}
+						10 = { #operation fails
+							
+						}
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							check_variable = { global.guderians_influence = 0 } 
+							check_variable = { global.guderians_influence < 0 } 
+						}
+					}
+					#operation success
+				}
+			}
+		}
+	}
+}

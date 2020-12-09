@@ -2,16 +2,7 @@
 ##### PRS ######
 ################
 
-PRS_rising_powers_in_prussia_guderian = {
-	allowed = {
-		tag = PRS
-	}
-    visible = {
-        tag = PRS
-	}
-}
-
-PRS_rising_powers_in_prussia_heydrich = {
+PRS_rising_powers_in_prussia = {
 	allowed = {
 		tag = PRS
 	}

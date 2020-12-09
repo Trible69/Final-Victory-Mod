@@ -637,6 +637,8 @@ country_event = {
 		name = ACW.23.a
 		ai_chance = { factor = 100} 
 		transfer_state = 371
+		transfer_state = 830
+		transfer_state = 831
 	}
 }
 ###Arkansas

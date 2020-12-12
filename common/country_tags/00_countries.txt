@@ -226,5 +226,6 @@ MEC = "countries/Mecklenburg-Schwerin.txt"
 DAR = "countries/Darmstadt.txt"
 WUZ = "countries/Wurzburg.txt"
 LOU = "countries/Louisiana.txt"
-
+SGR = "countries/Prussia.txt" #Second German Reich
+GGR = "countries/Prussia.txt" #Government of German Renewal
 

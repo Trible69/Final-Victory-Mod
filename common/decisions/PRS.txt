@@ -84,10 +84,10 @@ PRS_rising_powers_in_prussia = {
 			hidden_effect = {
 				random_list = {
 					50 = { #network succeds events 
-						
+						country_event = { id = PRS_decision_events.1 days = 1 }
 					}
 					50 = { #net work fails events 
-						
+						country_event = { id = PRS_decision_events.2 days = 1 }
 					}
 				}
 			}

@@ -704,3 +704,11 @@ LOU = {
 	color = rgb { 60 59 110 }
 	color_ui = rgb { 60 59 110 }
 }
+SGR = { #Second German Reich
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+GGR = { #Government of German Renewal
+	color = rgb { 155 155 155 }
+	color_ui = rgb { 155 155 155 }
+}

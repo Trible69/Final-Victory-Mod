@@ -1,0 +1,100 @@
+add_namespace = Prussia 
+add_namespace = PRS_civil_war
+add_namespace = PRS_decision_events
+###################################
+###   General Prussian Events   ###
+###################################
+
+###################################
+###    Prussian Civil Wars      ###
+###################################
+
+#######################################################
+#####   events that go along with the decisions   #####
+#######################################################
+###Military Informant Network Succeeds!
+country_event = { 
+	id = PRS_decision_events.1
+	title = PRS_decision_events.1.t
+	desc = PRS_decision_events.1.d
+	#picture = 
+	fire_only_once = yes
+	is_triggered_only = yes 
+	option = { #Excellent!
+		name = PRS_decision_events.1.a
+		ai_chance = { factor = 100 }
+		hidden_effect = { subtract_from_variable = { global.guderians_influence = 3 } }
+	}
+}
+###Military Informant Network Fails!
+country_event = { 
+	id = PRS_decision_events.2
+	title = PRS_decision_events.2.t
+	desc = PRS_decision_events.2.d
+	#picture = 
+	fire_only_once = yes
+	is_triggered_only = yes 
+	option = { #A Complete Failure...
+		name = PRS_decision_events.2.a
+		ai_chance = { factor = 100 }
+	}
+}
+###Governmental Informant Network Succeeds!
+country_event = {
+	id = PRS_decision_events.3 
+	title = PRS_decision_events.3.t
+	desc = PRS_decision_events.3.d
+	#picture = 
+	fire_only_once = yes
+	is_triggered_only = yes 
+	option = { #A Great Victory!
+		name = PRS_decision_events.3.a
+		ai_chance = { factor = 100 }
+		hidden_effect = { subtract_from_variable = { global.heydrich_influence = 3 } }
+	}
+}
+###Governmental Informant Network Fails!
+country_event = {
+	id = PRS_decision_events.4 
+	title = PRS_decision_events.4.t
+	desc = PRS_decision_events.4.d
+	#picture = 
+	fire_only_once = yes 
+	is_triggered_only = yes 
+	option = { #A Failure!
+		name = PRS_decison_events.4.a
+		ai_chance = { factor = 100 }
+	}
+}
+###Operation Against Guderian Succeeds!
+country_event = {
+	id = PRS_decision_events.5 
+	title = PRS_decision_events.5.t
+	desc = PRS_decision_events.5.d
+	#picture = 
+	fire_only_once = yes 
+	is_triggered_only = yes
+	option = {
+		name = PRS_decision_events.5.a
+		hidden_effect = { clear_variable = global.guderians_influence }
+		set_global_flag = guderian_is_gone_peacefully
+	}
+}
+###Operation Fails, Guderian Revolts!
+country_event = {
+	id = PRS_decision_events.6
+	title = PRS_decision_events.6.t
+	desc = PRS_decision_events.6.d
+	#picture =
+	fire_only_once = yes 
+	is_triggered_only = yes 
+	immediate = {
+		
+	}
+	option = {
+		name = PRS_decision_events.6.a
+	}
+}
+###Operation Against Heydrich Succeeds!
+
+###Operation Fails, Heydrich Revolts!

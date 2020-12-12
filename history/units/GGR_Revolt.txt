@@ -1,0 +1,488 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Panzer-Division"
+
+	division_names_group = GER_Arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Infanterie-Division (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
+
+	division_names_group = GER_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Gebirgs-Brigade"		# Gebirgsbrigade
+	#Note: precursor to Gebirgs-Divisions
+	division_names_group = GER_Mnt_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Kavallerie-Brigade"
+
+	division_names_group = GER_Cav_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Militia"
+	is_locked = yes
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+	}
+}
+
+###### OOB ######
+units = {
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3380
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3380
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3351
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 3351
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 6402
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 6402
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 3324
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 389
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 362
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 362
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 362
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 362
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	division= {			
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 389
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+		
+}
+	
+	
+air_wings = {
+	### 1 USAAF Wing -- Los Angeles
+	378 = {
+		# 7th Bombardment Group 
+		# 19th Bombardment Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 60
+		}
+		# 17th Attack Group 
+		CAS_equipment_1 = {
+			owner = "USA" 
+			amount = 48
+		}
+	}
+
+	### 2 USAAF Wing -- Norfolk
+	362 = { 
+		# 1st Pursuit Group 
+		# 8th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 144
+		}
+		# 2nd Bombardment Group 
+		# 9th Bombardment Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 96
+		}
+	}
+
+	### 3 USAAF Wing -- Louisiana
+	371 = { 
+		# 20th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 96
+		}
+		# 3rd Attack Group 
+		CAS_equipment_1 = {
+			owner = "USA" 
+			amount = 48
+		}
+	}
+
+	### 18th Composite Wing -- Hawaii
+	629 = { 
+		# 18th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 48
+		}
+		# 5th Composite Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 36
+		}
+	}
+
+	### 19th Composite Wing -- Panama Canal
+	685 = { 
+		# 16th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 96
+		}
+		# 6th Composite Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 12
+		}
+	}
+
+	### Philippines Composite Group -- Manilla
+#	327 = { 
+#		# 4th Composite Group 
+#		fighter_equipment_0 =  {
+#			owner = "USA" 
+#			amount = 36
+#		}
+#	}
+
+	### USN Atlantic Naval Patrol Division -- Norfolk
+	362 = { 
+		# Naval Patrol Wing 3 
+		nav_bomber_equipment_1 =  {
+			owner = "USA" 
+			amount = 36
+		}
+	}
+	### USN Pacific Naval Patrol Division -- San Diego
+	378 = { 
+		# Naval Patrol Wing 1 
+		# Naval Patrol Wing 2 
+		nav_bomber_equipment_1 =  {
+			owner = "USA" 
+			amount = 72
+		}
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_0
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+}
+#####################

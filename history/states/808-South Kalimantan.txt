@@ -5,13 +5,13 @@ state={
 		owner = EXD
 		buildings = {
 			infrastructure = 2
-			victory_points = {
-				10237 1 
-			}
 			10237 = {
 				naval_base = 3
 
 			}
+		}
+		victory_points = {
+			10237 1 
 		}
 	}
 	provinces={

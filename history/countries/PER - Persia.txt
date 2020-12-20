@@ -46,9 +46,6 @@ create_country_leader = {
 	picture = "AugustinIVMEX.dds"
 	expire = "1965.1.1"
 	ideology = absolutism 
-	traits = {
-		
-	}
 }
 
 ###	OPINION & TRADE MODIFIERS
@@ -60,6 +57,3 @@ create_country_leader = {
 ###	ADMIRALS
 
 ### OPERATIVES
-if = {
-	limit = { has_dlc = "La Resistance" }
-}

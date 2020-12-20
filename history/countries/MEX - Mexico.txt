@@ -47,17 +47,11 @@ set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		n100_year_debt_1
-		revolt_plot
-		outdated_military
-		autonomy_discontent
-		inefficient_discontent
-	}
+add_ideas = {
+	n100_year_debt_1
+	revolt_plot
+	outdated_military
+	autonomy_discontent
 }
 
 set_politics = {
@@ -82,39 +76,6 @@ create_country_leader = {
 	picture = "AugustinIVMEX.dds"
 	expire = "1965.1.1"
 	ideology = absolutism 
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Saturnino Cedillo"
-	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
-	picture = "GFX_portrait_mex_saturnino_cedillo"
-	expire = "1965.1.1"
-	ideology = military_junta
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Mexican Stalin"
-	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
-	picture = "GFX_portrait_mex_saturnino_cedillo"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Biilly Jones"
-	desc = "POLITICS_SATURNINO_CEDILLO_DESC"
-	picture = "GFX_portrait_mex_saturnino_cedillo"
-	expire = "1965.1.1"
-	ideology = market_liberalism
-	traits = {
-		
-	}
 }
 
 

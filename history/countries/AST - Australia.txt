@@ -44,13 +44,9 @@ set_popularities = {
 ###	POLITICIANS
 create_country_leader = {
 	name = "Joseph Lyons"
-	desc = "POLITICS_JOHN_CURTIN_DESC"
 	picture = "JosephLyonsAST.dds"
 	expire = "1965.1.1"
 	ideology = social_liberalism
-	traits = {
-		#
-	}
 }
 ###	GENERALS
 create_corps_commander = {

@@ -44,13 +44,9 @@ set_popularities = {
 ###	POLITICIANS
 create_country_leader = {
 	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
 	picture = "GFX_NZL_michael_joseph_savage"
 	expire = "1965.1.1"
 	ideology = market_liberalism
-	traits = {
-		#
-	}
 }
 ###	GENERALS
 create_corps_commander = {

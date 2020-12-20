@@ -64,7 +64,4 @@ create_country_leader = {
 	picture = "JosephPKennedySrNEE.dds"
 	expire = "1947.1.1"
 	ideology = market_liberalism
-	traits = {
-		
-	}
 }

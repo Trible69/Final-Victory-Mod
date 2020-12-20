@@ -22,9 +22,7 @@ set_technology = {
 ### VARIABLES
 
 ###	IDEAS
-add_ideas = {
 
-}
 
 ###	POLITICS
 set_politics = {

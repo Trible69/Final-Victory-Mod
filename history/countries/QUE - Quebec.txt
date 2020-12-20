@@ -47,14 +47,6 @@ if = {
 	}
 }
 
-if = { 
-	limit = { NOT = { has_dlc = "Together for Victory" } }
-	set_cosmetic_tag = CAN_ALY
-}
-if = {
-	limit = { has_dlc = "Together for Victory" }
-}
-
 add_ideas = {
 	que_great_depression
 }
@@ -78,35 +70,23 @@ set_politics = {
 
 create_country_leader = {
 	name = "Jacques II"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
 	picture = "QUEJacquesII.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
 	name = "Jacques II"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
 	picture = "QUEJacquesII.dds"
 	expire = "1965.1.1"
 	ideology = national_conservatism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
 	name = "Jacques II"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
 	picture = "QUEJacquesII.dds"
 	expire = "1965.1.1"
 	ideology = liberal_socialism
-	traits = {
-		#
-	}
 }
 
 set_convoys = 100

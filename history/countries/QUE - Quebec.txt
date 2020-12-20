@@ -11,7 +11,8 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.8
-set_war_support = 0.1
+set_war_support = 0.7
+add_manpower = 232432
 
 # Starting tech
 set_technology = {

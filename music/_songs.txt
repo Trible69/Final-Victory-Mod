@@ -10,262 +10,6 @@ music = {
 	}
 }
 
-# PEACE SONGS ##################
-music = {
-	song = "general_peace_1"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "general_peace_2"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "general_peace_3"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-		}		
-	}
-}
-
-music = {
-	song = "allies_peace_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "allies_peace_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "axis_peace_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "axis_peace_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-# WAR SONGS ####################
-
-music = {
-	song = "general_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "general_war_2"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "axis_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "axis_war_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "axis_war_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "axis_war_4"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "allies_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "allies_war_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_peace_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_peace_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_peace_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = no
-		}		
-	}	
-}
-
-
-music = {
-	song = "comintern_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_war_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_war_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-			has_war = yes
-		}		
-	}	
-}
-#America
 music = {
 	song = "Dixie"
 	
@@ -302,7 +46,7 @@ music = {
 }
 
 music = {
-	song = "MacArthur's Army"
+	song = "The Battle Hymn of the Republic"
 
 	chance = {
 		modifier = {
@@ -364,5 +108,134 @@ music = {
 				has_war_with = AMS
 			}
 		}
+	}
+}
+music = {
+	song = "Hot Time in the Town of Berlin"
+
+	chance = {
+		modifier = {
+			factor = 5
+
+			has_war = no 
+		}	
+
+		modifier = {
+			factor = 7
+			
+			OR = {
+				has_war_with = GER
+				has_war_with = PRS
+			}
+		}
+		modifier = {
+			factor = 10
+			
+			tag = USA
+			OR = {
+				has_war_with = GER
+				has_war_with = PRS
+			}
+		}
+	}
+}
+music = {
+	song = "Every Man a King"
+
+	chance = {
+		modifier = {
+			factor = 5
+
+			has_war = no 
+		}	
+
+		modifier = {
+			factor = 7
+			
+			tag = LOU 
+		}
+		modifier = {
+			factor = 10
+			
+			tag = LOU
+			has_war = yes 
+		}
+	}
+}
+##Vanilla
+
+music = {
+	song = "allies_meetingwithcigars"
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "allies_neverlookingbackagain"
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "allies_thenightbefore"
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "allies_thethoughtofyou"
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "allies_verylastofgoodbyes"
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+###Vanilla 2 electric boogaloo
+music = {
+	song = "dance_your_troubles_away"
+	
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "from_glen_to_glen"
+	
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "the_man_on_the_british_countryside"
+	
+	chance = {
+		factor = 5
+		has_war = no 
+	}
+}
+
+music = {
+	song = "winter_came_spring"
+	
+	chance = {
+		factor = 5
+		has_war = no 
 	}
 }

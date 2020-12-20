@@ -5,161 +5,6 @@ music = {
 	file = "overturefinalvictory.ogg"
 	volume = 0.65
 }
-
-# General Peace:
-music = {
-	name = "general_peace_1"
-	file = "general_peace_heartsofmen.ogg"
-	volume = 0.65
-}
-music = {
-	name = "general_peace_2"
-	file = "thewarends.ogg"
-	volume = 0.65
-}
-music = {
-	name = "general_peace_3"
-	file = "asongforthechildrenofww2.ogg"
-	volume = 0.65
-}
-
-# General war:
-music = {
-	name = "general_war_1"
-	file = "general_war_bringforththetanks.ogg"
-	volume = 0.65
-}
-music = {
-	name = "general_war_2"
-	file = "general_war_theattack.ogg"
-	volume = 0.65
-}
-
-
-# Allies Peace:
-music = {
-	name = "allies_peace_1"
-	file = "allies_peace_morningofdday.ogg"
-	volume = 0.65
-}
-music = {
-	name = "allies_peace_2"
-	file = "endofthetour.ogg"
-	volume = 0.65
-}
-
-
-# Allies War:
-music = {
-	name = "allies_war_1"
-	file = "wearesoldiers.ogg"
-	volume = 0.65
-}
-music = {
-	name = "allies_war_2"
-	file = "allies_war_theroyalairforce.ogg"
-	volume = 0.65
-}
-
-
-# Axis Peace:
-music = {
-	name = "axis_peace_1"
-	file = "axis_peace_krakow.ogg"
-	volume = 0.65
-}
-music = {
-	name = "axis_peace_2"
-	file = "luftwaffemarch_reprise.ogg"
-	volume = 0.65
-}
-
-
-# Axis War:
-music = {
-	name = "axis_war_1"
-	file = "axistheme.ogg"
-	volume = 0.65
-}
-music = {
-	name = "axis_war_2"
-	file = "heavywater.ogg"
-	volume = 0.65
-}
-music = {
-	name = "axis_war_3"
-	file = "operationbarbarossa.ogg"
-	volume = 0.65
-}
-music = {
-	name = "axis_war_4"
-	file = "war_axis_1_daysofthunder.ogg"
-	volume = 0.65
-}
-
-
-# Comintern Peace:
-
-music = {
-	name = "comintern_peace_1"
-	file = "motherrussia.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "comintern_peace_2"
-	file = "theredarmy.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "comintern_peace_3"
-	file = "sovietvictory.ogg"
-	volume = 0.65
-}
-
-# Comintern War:
-
-music = {
-	name = "comintern_war_1"
-	file = "themightofsovietunion.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "comintern_war_2"
-	file = "cominterntheme.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "comintern_war_3"
-	file = "thegreatpatrioticwar.ogg"
-	volume = 0.65
-}
-
-# La Resistance:
-
-music = {
-	name = "resistance_spanish"
-	file = "La_Autocracia.ogg"
-	volume = 0.65
-}
-music = {
-	name = "resistance_french"
-	file = "La_Liberté.ogg"
-	volume = 0.65
-}
-music = {
-	name = "resistance_fascist"
-	file = "L'Autoritario.ogg"
-	volume = 0.65
-}
-music = {
-	name = "resistance_spying"
-	file = "Under_Veils_Of_Secrets.ogg"
-	volume = 0.65
-}
 #Final Victory 
 music = {
 	name = "Dixie"
@@ -167,7 +12,7 @@ music = {
 	volume = 0.65
 }
 music = {
-	name = "MacArthur's Army"
+	name = "The Battle Hymn of the Republic"
 	file = "macarthur_army.ogg"
 	volume = 0.65
 }
@@ -175,4 +20,63 @@ music = {
 	name = "Over There"
 	file = "overthere.ogg"
 	volume = 0.65
+}
+music = {
+	name = "Hot Time in the Town of Berlin"
+	file = "HotTimeInTheTownOfBerlin.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Every Man a King"
+	file = "EveryManAKing.ogg"
+	volume = 0.65
+}
+#Vanilla songs that are actually good (and all dlc would you look at that)
+music = {
+	name = "allies_meetingwithcigars"
+	file = "allies/allies_meetingwithcigars.ogg"
+	volume = 0.58
+}
+music = {
+	name = "allies_neverlookingbackagain"
+	file = "allies/allies_neverlookingbackagain.ogg"
+	volume = 0.58
+}
+music = {
+	name = "allies_thenightbefore"
+	file = "allies/allies_thenightbefore.ogg"
+	volume = 0.58
+}
+music = {
+	name = "allies_thethoughtofyou"
+	file = "allies/allies_thethoughtofyou.ogg"
+	volume = 0.58
+}
+music = {
+	name = "allies_verylastofgoodbyes"
+	file = "allies/allies_verylastofgoodbyes.ogg"
+	volume = 0.58
+}
+music = {
+	name = "dance_your_troubles_away"
+	file = "armp_dance_your_troubles_away_main.ogg"
+	volume = 0.58
+}
+
+music = {
+	name = "from_glen_to_glen"
+	file = "armp_from_glen_to_glen_main.ogg"
+	volume = 0.58
+}
+
+music = {
+	name = "the_man_on_the_british_countryside"
+	file = "armp_the_man_on_the_british_countryside_main.ogg"
+	volume = 0.58
+}
+
+music = {
+	name = "winter_came_spring"
+	file = "armp_winter_came_spring_main.ogg"
+	volume = 0.58
 }

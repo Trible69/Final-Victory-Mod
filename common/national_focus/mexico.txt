@@ -21,6 +21,10 @@ focus_tree = {
 			tag = MEX
 		}
 	}
+	continuous_focus_position = {
+		x = 50
+		y = 5000
+	}
 	##########Debt removal 
 	focus = {
 		id = MEX_the_debt_limit_act
@@ -96,7 +100,6 @@ focus_tree = {
                     	building = industrial_complex
                     	size > 0
                 	}
-                	include_locked = yes
             	}
 
             	add_extra_state_shared_building_slots = 6

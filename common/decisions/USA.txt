@@ -443,9 +443,6 @@ USA_appalachian_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.virginia_loyalty = 1 }
@@ -501,9 +498,6 @@ USA_appalachian_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -583,7 +577,6 @@ USA_appalachian_states_loyalty = {
 		available = {
 		}
 		visible = {
-
 		}
 		cost = 40
 		fixed_random_seed = yes
@@ -598,8 +591,8 @@ USA_appalachian_states_loyalty = {
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.WV_loyalty = 1 }
-                set_country_flag = wv_militia	
-				has_country_flag = USA_west_virginia_5
+				set_country_flag = wv_militia	
+				set_country_flag = USA_west_virginia_5
 			}	
 		}
 	}
@@ -869,9 +862,6 @@ USA_appalachian_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.north_carolina_loyalty = 1 }
@@ -929,9 +919,6 @@ USA_appalachian_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -1085,9 +1072,6 @@ USA_appalachian_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.kentucky_loyalty = 1 }
@@ -1145,9 +1129,6 @@ USA_appalachian_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -1332,9 +1313,6 @@ USA_appalachian_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.tennessee_loyalty = 1 }
@@ -1392,9 +1370,6 @@ USA_appalachian_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -1581,9 +1556,6 @@ USA_corn_belt_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.ohio_loyalty = 1 }
@@ -1641,9 +1613,6 @@ USA_corn_belt_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -1859,9 +1828,6 @@ USA_corn_belt_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.indiana_loyalty = 1 }
@@ -1919,9 +1885,6 @@ USA_corn_belt_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -2140,9 +2103,6 @@ USA_corn_belt_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.illinois_loyalty = 1 }
@@ -2202,9 +2162,6 @@ USA_corn_belt_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -2422,9 +2379,6 @@ USA_corn_belt_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.iowa_loyalty = 1 }
@@ -2482,9 +2436,6 @@ USA_corn_belt_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -2700,9 +2651,6 @@ USA_corn_belt_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.missouri_loyalty = 1 }
@@ -2760,9 +2708,6 @@ USA_corn_belt_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -2980,9 +2925,6 @@ USA_lake_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.michigan_loyalty = 1 }
@@ -3040,9 +2982,6 @@ USA_lake_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -3258,9 +3197,6 @@ USA_lake_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.wisconsin_loyalty = 1 }
@@ -3318,9 +3254,6 @@ USA_lake_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -3505,9 +3438,6 @@ USA_lake_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.minnesota_loyalty = 1 }
@@ -3565,9 +3495,6 @@ USA_lake_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -3785,9 +3712,6 @@ USA_southeast_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.south_carolina_loyalty = 1 }
@@ -3845,9 +3769,6 @@ USA_southeast_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -4063,9 +3984,6 @@ USA_southeast_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.georgia_loyalty = 1 }
@@ -4123,9 +4041,6 @@ USA_southeast_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -4341,9 +4256,6 @@ USA_southeast_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.mississippi_loyalty = 1 }
@@ -4401,9 +4313,6 @@ USA_southeast_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -4588,9 +4497,6 @@ USA_southeast_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.florida_loyalty = 1 }
@@ -4648,9 +4554,6 @@ USA_southeast_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -4868,9 +4771,6 @@ USA_delta_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.alabama_loyalty = 1 }
@@ -4928,9 +4828,6 @@ USA_delta_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -5146,9 +5043,6 @@ USA_delta_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.louisiana_loyalty = 1 }
@@ -5206,9 +5100,6 @@ USA_delta_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -5424,9 +5315,6 @@ USA_delta_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.arkansas_loyalty = 1 }
@@ -5484,9 +5372,6 @@ USA_delta_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -5704,9 +5589,6 @@ USA_north_plains_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.nebraska_loyalty = 1 }
@@ -5764,9 +5646,6 @@ USA_north_plains_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -5982,9 +5861,6 @@ USA_north_plains_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.kansas_loyalty = 1 }
@@ -6042,9 +5918,6 @@ USA_north_plains_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -6260,9 +6133,6 @@ USA_north_plains_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.colorado_loyalty = 1 }
@@ -6320,9 +6190,6 @@ USA_north_plains_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -6445,9 +6312,6 @@ USA_north_plains_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.north_dakota_loyalty = 1 }
@@ -6505,9 +6369,6 @@ USA_north_plains_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {
@@ -6661,9 +6522,6 @@ USA_north_plains_states_loyalty = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 		    hidden_effect = {
 				add_to_variable = { USA.south_dakota_loyalty = 1 }
@@ -6721,9 +6579,6 @@ USA_north_plains_states_loyalty = {
         fire_only_once = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 		    hidden_effect = {

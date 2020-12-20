@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "USA"
+		default_country = "FRA"
 		default = yes
 
 		"USA"={
@@ -23,10 +23,57 @@ bookmarks = {
 		}
 
 		"PRS"={
-			history = "PRS_GATHERING_STORM_DESC"
+			history = "GER_GATHERING_STORM_DESC"
 			ideology = national_populism
 			ideas = {
+				heydrichs_bureaucratic_influence
+				guderians_influence_among_young_officers
+				an_army_with_a_state
+			}
+			focuses = {
 				
+			}
+		}
+
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = ultraconservative
+			focuses = {
+				
+			}
+		}
+
+		"FRA"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = ultraconservative
+			focuses = {
+				
+			}
+		}
+
+		"RUS"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = ultraconservative
+			focuses = {
+				
+			}
+		}
+
+		"JAP"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = ultraconservative
+			focuses = {
+				
+			}
+		}
+
+		"QUE"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = ultraconservative
+			ideas = {
+				jacques_ii
+				parlements_restored
+				royal_gendarmerie
 			}
 			focuses = {
 				
@@ -42,19 +89,9 @@ bookmarks = {
 			history = ""
 			ideology = ultraconservative
 			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-
-		"QUE"={
-			minor = yes
-			history = ""
-			ideology = ultraconservative
-			ideas = {
-				
+				n100_year_debt_1
+				revolt_plot
+				outdated_military
 			}
 			focuses = {
 				

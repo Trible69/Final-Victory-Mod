@@ -205,6 +205,7 @@ PRS_rising_powers_in_prussia = {
 						}
 					}
 					#operation success
+					country_event = { id = PRS_decision_events.5 days = 1 }
 				}
 			}
 		}
@@ -229,7 +230,7 @@ PRS_rising_powers_in_prussia = {
 					limit = { check_variable = { global.guderians_influence = 5 } }
 					random_list = {
 						25 = { #operation works
-							
+							country_event = { id = PRS_decision_events.5 days = 1 }
 						}
 						75 = { #operation fails
 							
@@ -240,7 +241,7 @@ PRS_rising_powers_in_prussia = {
 					limit = { check_variable = { global.guderians_influence = 4 } }
 					random_list = {
 						40 = { #operation works
-							
+							country_event = { id = PRS_decision_events.5 days = 1 }
 						}
 						60 = { #operation fails
 							
@@ -251,7 +252,7 @@ PRS_rising_powers_in_prussia = {
 					limit = { check_variable = { global.guderians_influence = 3 } }
 					random_list = {
 						50 = { #operation works
-							
+							country_event = { id = PRS_decision_events.5 days = 1 }
 						}
 						50 = { #operation fails
 							
@@ -262,7 +263,7 @@ PRS_rising_powers_in_prussia = {
 					limit = { check_variable = { global.guderians_influence = 2 } }
 					random_list = {
 						60 = { #operation works
-							
+							country_event = { id = PRS_decision_events.5 days = 1 }
 						}
 						40 = { #operation fails
 							
@@ -273,7 +274,7 @@ PRS_rising_powers_in_prussia = {
 					limit = { check_variable = { global.guderians_influence = 1 } }
 					random_list = {
 						90 = { #operation works
-							
+							country_event = { id = PRS_decision_events.5 days = 1 }
 						}
 						10 = { #operation fails
 							
@@ -288,6 +289,7 @@ PRS_rising_powers_in_prussia = {
 						}
 					}
 					#operation success
+					country_event = { id = PRS_decision_events.5 days = 1 }
 				}
 			}
 		}

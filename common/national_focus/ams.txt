@@ -1,11 +1,15 @@
 focus_tree = {
-	id = AMS
+	id = AMS_national_focus
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = AMS
 		}
+	}
+	continuous_focus_position = {
+		x = 50
+		y = 5000
 	}
 	#Focus for The New Economy
 	focus = {
@@ -145,6 +149,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 1 
                 category = naval_bomber
@@ -166,6 +171,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 1
                 category = cat_strategic_bomber
@@ -187,6 +193,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus= {
+				name = tech_bonus_name
 			    bonus = 0.5 
                 uses = 1 
                 category = cas_bomber 
@@ -388,54 +395,56 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 4540 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 4449 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 4569
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 1523 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 7607 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 7449 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 10516 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 10333 
-            }
+			373 = {
+				add_building_construction = { 
+    	            type = bunker 
+    	            level = 2 
+    	            instant_build = yes
+    	            province = 4540 
+    	        }
+				add_building_construction = { 
+        	        type = bunker 
+    	            level = 2 
+    	            instant_build = yes
+    	            province = 4449 
+    	        }
+				add_building_construction = { 
+    	            type = bunker 
+    	            level = 2 
+    	            instant_build = yes
+    	            province = 4569
+    	        }
+				add_building_construction = { 
+        	        type = bunker 
+        	        level = 2 
+        	        instant_build = yes
+        	        province = 1523 
+        	    }
+				add_building_construction = { 
+       		         type = bunker 
+    	            level = 2 
+    	            instant_build = yes
+    	            province = 7607 
+    	        }
+				add_building_construction = { 
+    	            type = bunker 
+    	            level = 2 
+    	            instant_build = yes
+	                province = 7449 
+        	    }
+				add_building_construction = { 
+        	        type = bunker 
+                	level = 2 
+            	    instant_build = yes
+        	        province = 10516 
+    	        }
+				add_building_construction = { 
+	                type = bunker 
+	                level = 2 
+	                instant_build = yes
+	                province = 10333 
+				}
+			}
 		}
 	}
 
@@ -452,84 +461,20 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 873
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 951 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 4569
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 11888 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 6958 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 9923 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 801 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 6850 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 6850 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 801 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 3975 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 10441 
-            }
-			add_building_construction = { 
-                type = bunker 
-                level = 2 
-                instant_build = yes
-                province = 6971 
-            }
+			362 = {
+				add_building_construction = { 
+	                type = bunker 
+	                level = 2 
+	                instant_build = yes
+	                province = 873
+	            }
+				add_building_construction = { 
+	                type = bunker 
+	                level = 2 
+	                instant_build = yes
+	                province = 951 
+				}
+			}
 		}
 	}
 
@@ -624,6 +569,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 2 
                 category = naval_equipment
@@ -645,6 +591,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 2 
                 category = naval_equipment
@@ -666,6 +613,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 2 
                 category = naval_equipment
@@ -704,6 +652,7 @@ focus_tree = {
 		}
 		completion_reward = {
             add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 3 
                 category = land_doctrine 
@@ -760,6 +709,7 @@ focus_tree = {
 		completion_reward = {
 			add_manpower= 10000
             add_tech_bonus= {
+				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 1 
                 category = land_doctrine 
@@ -1186,7 +1136,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = AMS_nagotiate_potential_alliance
+		id = AMS_negotiate_potential_alliance
 		icon = GFX_goal_generic_major_alliance
 		x = 16
 		y = 13
@@ -1209,7 +1159,7 @@ focus_tree = {
 		y = 14
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = AMS_nagotiate_potential_alliance }
+		prerequisite = { focus = AMS_negotiate_potential_alliance }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1378,7 +1328,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = ams_an_aviators_spirit
+			add_ideas = ams_an_aviators_sprit
 			set_country_flag = AMS_lindberg_power
 		}
 	}
@@ -1434,8 +1384,6 @@ focus_tree = {
 				picture = "GeorgeVanVornMoseleyAMS.dds"
 				expire = "2222.1.1"
 				ideology = military_junta
-				traits = {
-				}
 			}
 		}
 	}
@@ -1490,9 +1438,7 @@ focus_tree = {
 				desc = ""
 				picture = "StromThurmondAMS.dds"
 				expire = "2222.1.1"
-				ideology = military_junta
-				traits = {
-				}
+				ideology = military_junta	
 			}
 		}
 	}
@@ -1554,7 +1500,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_idea = general_of_the_american_armies
+			add_ideas = general_of_the_american_armies
 		}
 	}
 
@@ -1777,7 +1723,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_idea = slavery_reborn
+			add_ideas = slavery_reborn
 			country_event = {
 				id = AMS.16
 				days = 3
@@ -1799,7 +1745,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = ams_an_aviators_spirit
+				remove_idea = ams_an_aviators_sprit
 				add_idea = ams_an_aviators_spirit_1
 			}
 		}

@@ -23,9 +23,6 @@ UAC_relations_with_other_nations = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 			YUC = {
 				country_event = UACDecisions.1
@@ -55,9 +52,6 @@ UAC_relations_with_other_nations = {
 		fixed_random_seed = yes
 		ai_will_do = {
 			factor = 1
-		}
-		modifier = {
-			
 		}
 		remove_effect = {
 			YUC = {

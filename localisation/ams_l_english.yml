@@ -25,6 +25,7 @@
  confederacy:0 "The Confederacy"
  huey_long:0 "Huey Long"
 ########FOCUSES#########
+AMS_national_focus:0 "American State Naional Focus"
 AMS_the_new_economy:0 "The New Economy"
 AMS_the_new_economy_desc:0 "Charles Lindbergh has come up with a brilliant plan to fix the American economy. With one simple fix, all of our financial troubles will wash away. It consists of pulling out some loans, building more military and civilian factories and then we’re all set! Right?"
 AMS_rally_the_volunteers:0 "Rally the Volunteers"
@@ -333,4 +334,5 @@ AMS_the_grand_dixie_desc:0 ""
  AMS_lead_segregation_law_desc:0 "This will add 2 influence points to Thurmond!"
  AMS_blame_moseley_defeat:0 "Blame Moseley for defeats in the civil war"
  AMS_blame_moseley_defeat_desc:0 "This will add 2 influence points to Thurmond! \nThis will reomve 1 influence points from Moseley!"
-
+ #Random
+ tech_bonus_name:0 "Tech Bonus"

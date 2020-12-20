@@ -89,29 +89,6 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.15
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.3
-				}	
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-				}
 			}
 			
 			cost = 150
@@ -140,24 +117,6 @@ ideas = {
 			
 			available = {
 				has_war_support > 0.25
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					OR = {
-						has_completed_focus = HUN_secret_rearmament
-						NOT = { has_idea = HUN_treaty_of_triannon }
-					}
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.5
-				}
 			}
 
 			cost = 150
@@ -171,15 +130,6 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-				}
-			}
 			ai_will_do = {
    				factor = 2
 
@@ -197,8 +147,12 @@ ideas = {
 			available = {
 				has_war_support > 0.5
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = national_populism
+					has_government = ultraconservative
+					has_government = despotism
+					has_government = moderate_socialism
+					has_government = anarchist
+					has_government = vanguardism
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
 						has_war = yes
@@ -209,22 +163,7 @@ ideas = {
 							}
 						}
 					}
-				}
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.75
-				}		
+				}	
 			}
 		
 			cost = 150
@@ -238,15 +177,6 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-				}
-			}
 			ai_will_do = {
    				factor = 5
 
@@ -268,30 +198,6 @@ ideas = {
 					ic_ratio = { 
 						tag = ROOT 
 						ratio > 0.5
-					}
-				}
-
-				if = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					has_war_support > 0.9
-				}
-			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
 					}
 				}
 			}
@@ -412,13 +318,6 @@ ideas = {
 			
 			available = {
 
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
-				}
 			}
 			
 			
@@ -477,22 +376,19 @@ ideas = {
 						}
 					}
 					AND = {
-						NOT = { has_government = democratic }
+						NOT = { 
+							OR = {
+								has_government = liberal
+								has_government = conservative
+								has_government = social_democrat 
+							}
+						}
 						OR = {
 							has_idea = partial_economic_mobilisation
 							has_idea = war_economy
 							has_idea = tot_economic_mobilisation
 						}
 					}
-				}
-
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
 		
@@ -543,17 +439,6 @@ ideas = {
 				OR = {
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
-				}
-				OR = {
-					NOT = {	tag = SOV }
-				}
-
-				if = {
-					limit = {
-						original_tag = CHI
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_idea = CHI_nine_power_treaty }
 				}
 			}
 			

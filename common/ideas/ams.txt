@@ -305,12 +305,6 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.05
 			}
-			equipment_bonus = {
-				cas_bomber = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-			}
 		}
 		ams_an_aviators_spirit_1 = {
 			picture = air_support_focus
@@ -328,12 +322,6 @@ ideas = {
 				political_power_gain = 0.10
 				research_speed_factor = 0.05
 				production_speed_buildings_factor = 0.1
-			}
-			equipment_bonus = {
-				cas_bomber = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
 			}
 		}
 		ams_an_aviators_spirit_2 = {
@@ -356,12 +344,6 @@ ideas = {
 				research_speed_factor = 0.05
 				production_speed_buildings_factor = 0.1
 
-			}
-			equipment_bonus = {
-				cas_bomber = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
 			}
 		}
 		ams_the_generalship = {

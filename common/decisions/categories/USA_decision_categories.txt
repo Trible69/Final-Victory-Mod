@@ -102,7 +102,7 @@ USA_north_plains_states_loyalty = {
 	}
 	visible = {
 		NOT = {
-			has_gloabl_flag = american_civil_war_begun
+			has_global_flag = american_civil_war_begun
 		}
 		tag = USA
 		has_country_flag = civil_unrest

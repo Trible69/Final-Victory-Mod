@@ -14,9 +14,6 @@ QUE_parliament = {
 		ai_will_do = {
 			factor = 1
 		}
-		modifier = {
-			
-		}
 		remove_effect = {
 			conservative_growth_normal = yes
 		}

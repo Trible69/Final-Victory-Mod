@@ -9,6 +9,6 @@ UAC_relations_with_other_nations = {
 
 	visible = {
 		original_tag = UAC
-		has_global_flag = decision_for_relations
+		has_country_flag = decision_for_relations
 	}
 }

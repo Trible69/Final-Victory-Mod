@@ -1,7 +1,7 @@
 ﻿capital = 43
 
 #	BASIC VALUES
-OOB = "generic_1936"
+OOB = "HUN_1936"
 set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
@@ -11,6 +11,14 @@ set_convoys = 100
 ###	TECHNOLOGY
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
 }
 
 ### VARIABLES
@@ -22,19 +30,17 @@ add_ideas = {
 
 ###	POLITICS
 set_politics = {
-	ruling_party = liberal
+	ruling_party = despotism
 	last_election = "1934.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = { 
-	vanguardism = 5 
-	anarchist = 5 
-	social_democrat = 25 
-	liberal = 30 
-	conservative = 25 
-	ultraconservatism = 5 
-	national_populism = 5
+	despotism = 55
+	ultraconservative = 30
+	liberal = 10
+	conservative = 4
+	social_democrat = 1
 }
 
 ###	OPINION & TRADE MODIFIERS
@@ -46,6 +52,3 @@ set_popularities = {
 ###	ADMIRALS
 
 ### OPERATIVES
-if = {
-	limit = { has_dlc = "La Resistance" }
-}

@@ -1,22 +1,24 @@
-﻿capital = 4
+﻿capital = 43
 
 #	BASIC VALUES
-OOB = "AUS_1936"
+OOB = "RHU_1936"
 set_research_slots = 3
-set_stability = 0.55
-set_war_support = 0.20
-set_convoys = 30
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 100
 
 
 ###	TECHNOLOGY
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_engineers = 1
 	tech_support = 1		
-	tech_mountaineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
 	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
 }
 
 ### VARIABLES
@@ -28,15 +30,23 @@ add_ideas = {
 
 ###	POLITICS
 set_politics = {
-	ruling_party = ultraconservative
+	ruling_party = vanguardism
 	last_election = "1934.1.1"
 	election_frequency = 48
-	elections_allowed = no 
+	elections_allowed = no
 }
 set_popularities = { 
-	ultraconservative = 60
-	national_populism = 25
-	social_democrat = 15
+	vanguardism = 64
+	social_democrat = 6
+	moderate_socialism = 30
+}
+declare_war_on = {
+	target = HUN
+	type = civil_war
+}
+declare_war_on = {
+	target = TRN 
+	type = annex_everything
 }
 ###	OPINION & TRADE MODIFIERS
 

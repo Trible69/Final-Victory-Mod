@@ -72,11 +72,11 @@ country_event = {
 		name = ACW.4.a
 		ai_chance = { factor = 100}
 	    362 = {
+			prioritize_location = { 10343 }
 			create_unit = {
 				division = "name = \"Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
 				allow_spawning_on_enemy_provs = yes
-				prioritize_location = { 10343 }
 			}	
 		}
 	}

@@ -45,7 +45,7 @@ bookmarks = {
 
 		"FRA"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = ultraconservative
+			ideology = conservative
 			focuses = {
 				
 			}

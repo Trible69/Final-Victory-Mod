@@ -22,7 +22,13 @@ set_technology = {
 ### VARIABLES
 
 ###	IDEAS
-
+add_ideas = {
+	aus_the_heimwehr
+	aus_the_salzburg_front
+	aus_the_kanzler_and_his_merry_men
+	aus_vernichtungsprinzip
+	aus_the_red_kaiserin
+}
 
 ###	POLITICS
 set_politics = {

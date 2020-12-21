@@ -2,6 +2,7 @@ ideas = {
 	
 	country = {
 	    heydrichs_bureaucratic_influence = {
+			picture = heydrichs_influence_icon
 			
 			allowed = {
 				always = no
@@ -19,6 +20,7 @@ ideas = {
 			}
 		}
 		guderians_influence_among_young_officers = {
+			picture = guderians_influence_icon
 
 			allowed = {
 				always = no 
@@ -38,6 +40,7 @@ ideas = {
 			}
 		} 
 		an_army_with_a_state = {
+			picture = armywithastate_icon
 
 			allowed = {
 				always = no 

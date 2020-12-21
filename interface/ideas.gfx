@@ -4668,4 +4668,16 @@ spriteTypes = {
 		name = "GFX_idea_huey_long"
 		texturefile = "gfx/interface/ideas/idea_political_advisor_huey_long.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_armywithastate_icon"
+		texturefile = "gfx/interface/ideas/armywithastate.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_guderians_influence_icon"
+		texturefile = "gfx/interface/ideas/guderians_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_heydrichs_influence_icon"
+		texturefile = "gfx/interface/ideas/heydrichs_influence.dds"
+	}
 }

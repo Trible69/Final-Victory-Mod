@@ -45,23 +45,10 @@ set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		MEX_callistas
-		MEX_church_power_2
-		MEX_oil_concessions
-		MEX_politicised_army
-		MEX_cedillo_tension_2
-	}
-}
+
 
 set_politics = {
 	ruling_party = vanguardism
-	last_election = ccmcdskmklm
-	election_frequency = kjnkdcmclcdskl
 	elections_allowed = no
 }
 set_popularities = {
@@ -75,9 +62,6 @@ create_country_leader = {
     picture = "FelipeCarrilloPuertoYUC.dds"
     expire = "1965.1.1"
     ideology = marxism
-    traits = {
-        #
-    }
 }
 ### VARIANTS ###
 # 1936 Start #

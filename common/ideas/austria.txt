@@ -1,0 +1,99 @@
+ideas = {
+	
+	country = {
+	    aus_the_heimwehr = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				conscription_factor = -0.1
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		aus_the_salzburg_front = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.05
+				vanguardism_drift = -0.05
+				moderate_socialism_drift = -0.05
+				anarchist_drift = -0.05
+			}
+		}
+
+		aus_the_kanzler_and_his_merry_men = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+		aus_vernichtungsprinzip = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.1 
+			}
+		}
+
+		aus_the_red_kaiserin = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				social_democrat_drift = 0.05
+				stability_factor = 0.20
+				war_support_factor = 0.1
+			}
+		}
+	}
+}

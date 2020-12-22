@@ -167,7 +167,7 @@ music = {
 music = {
 	song = "allies_meetingwithcigars"
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -175,7 +175,7 @@ music = {
 music = {
 	song = "allies_neverlookingbackagain"
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -183,7 +183,7 @@ music = {
 music = {
 	song = "allies_thenightbefore"
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -191,7 +191,7 @@ music = {
 music = {
 	song = "allies_thethoughtofyou"
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -199,7 +199,7 @@ music = {
 music = {
 	song = "allies_verylastofgoodbyes"
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -208,7 +208,7 @@ music = {
 	song = "dance_your_troubles_away"
 	
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -217,7 +217,7 @@ music = {
 	song = "from_glen_to_glen"
 	
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -226,7 +226,7 @@ music = {
 	song = "the_man_on_the_british_countryside"
 	
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }
@@ -235,7 +235,7 @@ music = {
 	song = "winter_came_spring"
 	
 	chance = {
-		factor = 5
+		factor = 1
 		has_war = no 
 	}
 }

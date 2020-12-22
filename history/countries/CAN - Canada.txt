@@ -51,7 +51,6 @@ set_politics = {
 
 create_country_leader = {
 	name = "Mackenzie King"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
 	picture = "Portrait_Canada_Mackenzie_King.dds"
 	expire = "1965.1.1"
 	ideology = social_liberalism

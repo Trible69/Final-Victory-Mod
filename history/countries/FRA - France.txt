@@ -50,7 +50,15 @@ set_popularities = {
 	ultraconservative = 20
 }
 
+#French Empire
+create_faction = "International Entente"
+add_to_faction = HOL
+
+puppet = HOL 
+
 give_guarantee = POL
+give_guarantee = SPR
+######################
 
 create_country_leader = {
 	name = "Louis Napoleon I"

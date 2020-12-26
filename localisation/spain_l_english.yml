@@ -1,0 +1,22 @@
+﻿l_english:
+ SPR_ultraconservative:0 "Kingdom of Spain"
+ SPR_ultraconservative_ADJ:0 "Spanish"
+ SPR_ultraconservative_DEF:0 "the Kingdom of Spain"
+ #Spanish Civil War
+ SPR_civil_war_bonapartists:0 "Bonapartist Spain"
+ spainish_civil_war.1.t:0 "The Bourbons flee!"
+ spainish_civil_war.1.d:0 ""
+ spainish_civil_war.1.a:0 "It has begun"
+ spainish_civil_war.1.b:0 "The Return of the King (Play as Bourbons)"
+ spainish_civil_war.2.t:0 "The Republicans form a Republic!"
+ spainish_civil_war.2.d:0 ""
+ spainish_civil_war.2.a:0 "Democracy is a joke"
+ spainish_civil_war.2.b:0 "Love Live the Republic! (Play as Republicans)"
+ spainish_civil_war.3.t:0 "The Vanguardists call for Revolution!"
+ spainish_civil_war.3.d:0 ""
+ spainish_civil_war.3.a:0 "The Damn Vanguardists!"
+ spainish_civil_war.3.b:0 "The Revolution will live! (Play as Vanguardists)" 
+ spainish_civil_war.4.t:0 "Declaration of War against the rebels"
+ spainish_civil_war.4.d:0 ""
+ spainish_civil_war.4.a:0 "¡Viva el Reino de España!"
+

@@ -531,7 +531,6 @@ country_event = {
 	id = UACDecisions.1
 	title = UACDecisions.1.t
 	desc = UACDecisions.1.d
-	picture = GFX_report
 
 	fire_only_once = yes
 
@@ -553,7 +552,6 @@ country_event = {
 	id = UACDecisions.2
 	title = UACDecisions.2.t
 	desc = UACDecisions.2.d
-	picture = GFX_report
 
 	fire_only_once = yes
 

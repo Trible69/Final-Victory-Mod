@@ -5,7 +5,6 @@ country_event = {
 	id = quebec.1
 	title = quebec.1.t
 	desc = quebec.1.d
-	picture = GFX_event_test
 
 	fire_only_once = yes
     is_triggered_only = yes
@@ -103,7 +102,6 @@ country_event = {
                     building = arms_factory
                     size > 0
                 }
-                include_locked = yes
             }
 
             add_extra_state_shared_building_slots = 10

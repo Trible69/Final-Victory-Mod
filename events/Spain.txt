@@ -1,0 +1,186 @@
+
+add_namespace = spain
+add_namespace = spainish_civil_war
+
+#####Normal Spain Events
+
+#####Spanish Civil War
+country_event = {
+    id = spainish_civil_war.1
+    title = spainish_civil_war.1.t
+    desc = spainish_civil_war.1.d
+    picture = GFX_report_event_spain_civil_war_soldiers
+    fire_only_once = yes 
+    trigger = {
+        tag = SPR 
+        DATE > 1937.11.05
+    }
+    immediate = {
+        hidden_effect = {
+            BSP = {
+                spanish_cores = yes 
+                spanish_bourbons = yes
+            }
+            country_event = { id = spainish_civil_war.2 days = 3 }
+            set_cosmetic_tag = SPR_civil_war_bonapartists
+            set_global_flag = SPR_bourbons_leave
+        }
+    }
+    option = { #It has begun
+        name = spainish_civil_war.1.a
+        ai_chance = { factor = 100 }
+    }
+    option = { #The return of the king! (Play as Bourbons)
+        name = spainish_civil_war.1.b
+        ai_chance = { factor = 0 }
+        hidden_effect = {
+            BSP = { change_tag_from = ROOT }
+        }
+    }
+}
+
+country_event = {
+    id = spainish_civil_war.2
+    title = spainish_civil_war.2.t
+    desc = spainish_civil_war.2.d
+    picture = GFX_report_event_spain_civil_war_soldiers
+    fire_only_once = yes 
+    is_triggered_only = yes 
+    immediate = {
+        hidden_effect = {
+            RSP = {
+                spanish_cores = yes 
+                spanish_republicans = yes
+            }
+            country_event = { id = spainish_civil_war.3 days = 3 }
+            add_popularity = {
+                ideology = liberal
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = social_democrat 
+                popularity = -0.5
+            }
+            set_global_flag = SPR_republicans_leave
+        }
+    }
+    option = { #Democracy is a joke
+        name = spainish_civil_war.2.a
+        ai_chance = { factor = 100 }
+    }
+    option = { #Long Live the Republic! (Play as Republicans)
+        name = spainish_civil_war.2.b
+        ai_chance = { factor = 0 }
+        hidden_effect = {
+            RSP = { change_tag_from = ROOT }
+        }
+    }
+}
+country_event = {
+    id = spainish_civil_war.3
+    title = spainish_civil_war.3.t
+    desc = spainish_civil_war.3.d
+    picture = GFX_report_event_spain_civil_war_soldiers
+    fire_only_once = yes 
+    is_triggered_only = yes 
+    immediate = {
+        hidden_effect = {
+            VSP = {
+                spanish_cores = yes 
+                spanish_vanguardist = yes
+            }
+            add_popularity = {
+                ideology = moderate_socialism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = vanguardism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = anarchist
+                popularity = -0.5
+            }
+            SPR = {
+                country_event = { id = spainish_civil_war.4 days = 30 }
+            }
+            set_global_flag = SPR_vanguardists_leave
+        }
+    }
+    option = { #The Damn Vanguardists!
+        name = spainish_civil_war.3.a
+        ai_chance = { factor = 100 }
+    }
+    option = { #The Revolution will live! (Play as Bourbons)
+        name = spainish_civil_war.3.b
+        ai_chance = { factor = 0 }
+        hidden_effect = {
+            VSP = { change_tag_from = ROOT }
+        }
+    }
+}
+country_event = { #Declaration of War 
+    id = spainish_civil_war.4 
+    title = spainish_civil_war.4.t
+    desc = spainish_civil_war.4.d
+    picture = GFX_report_event_saf_civil_war
+    fire_only_once = yes 
+    is_triggered_only = yes 
+    immediate = {
+        hidden_effect = {
+            declare_war_on = {
+                target = RSP 
+                type = civil_war 
+            }
+            declare_war_on = {
+                target = VSP 
+                type = civil_war 
+            }
+            declare_war_on = {
+                target = BSP 
+                type = civil_war 
+            }
+            BSP = {
+                declare_war_on = {
+                    target = RSP 
+                    type = civil_war 
+                }
+                declare_war_on = {
+                    target = VSP 
+                    type = civil_war 
+                }
+            }
+            VSP = {
+                declare_war_on = {
+                    target = RSP 
+                    type = civil_war 
+                }
+            }
+            country_event = { id = spainish_civil_war.5 days = 5 }
+        }
+    }
+    option = {
+        name = spainish_civil_war.4.a
+    }
+}
+country_event = { #The King Abdicates
+    id = spainish_civil_war.5
+    title = spainish_civil_war.5.t
+    desc = spainish_civil_war.5.d
+    picture = GFX_report_event_king_speech
+    fire_only_once = yes 
+    is_triggered_only = yes 
+    option = {
+        name = spainish_civil_war.5.a
+        create_country_leader = {
+            name = "Enrique V"
+            picture = "EnriqueV.dds"
+            expire = "1965.1.1"
+            ideology = absolutism
+        }
+    }
+}

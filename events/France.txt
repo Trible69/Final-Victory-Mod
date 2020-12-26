@@ -2,19 +2,21 @@
 # French Events
 ###########################
 
-add_namespace = france
+
+add_namespace = france 
+add_namespace = FRA_faction_events
 
 # America wants to join Faction
 country_event = {
-	id = france.2
-	title = france.2.t
-	desc = france.2.d
+	id = FRA_faction_events.1
+	title = FRA_faction_events.1.t
+	desc = FRA_faction_events.1.d
 	picture = GFX_report_event_fascist_gathering
 
 	is_triggered_only = yes
 		
 	option = {
-		name = france.2.a
+		name = FRA_faction_events.1.a
 		ai_chance = { factor = 100 }
 		FRA = { add_to_faction = USA }
 		hidden_effect = {
@@ -22,7 +24,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = france.2.b
+		name = FRA_faction_events.1.b
 		ai_chance = { factor = 0 }
 	}
 }

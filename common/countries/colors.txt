@@ -17,8 +17,8 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 27  82  124 }  
+	color_ui = rgb { 50  111  168 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -58,8 +58,8 @@ SPR = {
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color = rgb { 121 166 255 }
+	color_ui = rgb { 121 166 255 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -804,4 +804,38 @@ DGP = { #Dictatorial Government of the Philippines
 PHR = { #Philippine Republic
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
+}
+######
+VEI = { #Venice
+	color = rgb { 255 100 100 }
+	color_ui = rgb { 255 100 100 }
+}
+TUS = { #Tuscany
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
+}
+ROA = { #Roma 
+	color = rgb { 245 255 151 }
+	color_ui = rgb { 245 255 151 }
+}
+SAR = { #Sardinia
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+KTS = { #Kingdom of Two Sicilies
+	color = rgb { 238 255 78 }
+	color_ui = rgb { 238 255 78 }
+}
+#####
+BSP = { #Bourbon Spain
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 245 123 38 }
+}
+RSP = { #Republican Spain 
+	color = rgb { 245 142 255 }
+	color_ui = rgb { 245 142 255 }
+}
+VSP = { #Vanguardist Spain
+	color = rgb { 193 0 0 }
+	color_ui = rgb { 193 0 0 }
 }

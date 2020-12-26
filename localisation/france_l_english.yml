@@ -5,10 +5,10 @@
  ############IDEAS#############
  ###########FOCUS##############
  ###########EVENTS###############
- france.2.t:0 "America wants an alliance"
- france.2.d:0 "With our two nations improving our diplomatic relations, the United States has decided to ask us if they could join our faction, which could help our country in many ways. However, our advisors fear a hostile response from the old members of the coalition"
- france.2.a:0 "A toast to our new American friends!"
- france.2.b:0 "No, there is no point"
+ FRA_faction_events.1.t:0 "America wants an alliance"
+ FRA_faction_events.1.d:0 "With our two nations improving our diplomatic relations, the United States has decided to ask us if they could join our faction, which could help our country in many ways. However, our advisors fear a hostile response from the old members of the coalition"
+ FRA_faction_events.1.a:0 "A toast to our new American friends!"
+ FRA_faction_events.1.b:0 "No, there is no point"
  ###########PARTIES##############
 
 

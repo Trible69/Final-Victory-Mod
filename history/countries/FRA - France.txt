@@ -1,6 +1,6 @@
 ﻿capital = 16
 
-oob = "FRA_1936"
+OOB = "FRA_1936"
 
 set_research_slots = 5
 set_stability = 0.6
@@ -53,11 +53,19 @@ set_popularities = {
 #French Empire
 create_faction = "International Entente"
 add_to_faction = HOL
+add_to_faction = POR
+add_to_faction = ITA  
 
 puppet = HOL 
+puppet = POR 
+puppet = ITA 
 
 give_guarantee = POL
 give_guarantee = SPR
+give_guarantee = VEI 
+give_guarantee = ROA
+give_guarantee = TUS
+give_guarantee = KTS
 ######################
 
 create_country_leader = {

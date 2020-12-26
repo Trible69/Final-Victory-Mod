@@ -12,8 +12,6 @@ AUS	= "countries/Austria.txt"
 LIT	= "countries/Lithuania.txt"
 EST	= "countries/Estonia.txt"
 LAT	= "countries/Latvia.txt"
-SPR = "countries/Spain.txt"
-ITA = "countries/Italy.txt"
 ROM = "countries/Romania.txt"
 YUG = "countries/Yugoslavia.txt"
 SER = "countries/Serbia.txt"
@@ -264,5 +262,14 @@ CPH = "countries/Philippines.txt" #Revolutionary Government of the Philippines
 DGP = "countries/Philippines.txt" #Dictatorial Government of the Philippines
 PHR = "countries/Philippines.txt" #Philippine Republic
 ####
-
-
+VEI = "countries/Italy.txt" #Venice
+ITA = "countries/Italy.txt" #Kingdom of italy (Napoleon)
+TUS = "countries/Italy.txt" #Tuscany
+ROA = "countries/Italy.txt" #Roma 
+SAR = "countries/Italy.txt" #Sardinia
+KTS = "countries/Italy.txt" #Kingdom of Two Sicilies
+###
+BSP = "countries/Spain.txt" #bourbon Spain
+RSP = "countries/Spain.txt" #Republican Spain
+VSP = "countries/Spain.txt" #Vanguardist Spain
+SPR = "countries/Spain.txt"

@@ -1,0 +1,138 @@
+add_namespace = naval_clashes
+add_namespace = poland_partition
+add_namespace = catalonia_claims
+
+country_event = { #Naval Clashes in the English Channel
+	id = naval_clashes.1
+	title = naval_clashes.1.t
+	desc = naval_clashes.1.d
+	picture = GFX_report_event_ast_navy
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date < 1940.01.01
+		OR = {
+			ships_in_area = {
+				type = submarine
+				area = 18
+				size > 50
+			}
+			ships_in_area = {
+				type = battleship
+				area = 18
+				size = 50
+			}
+			ships_in_area = {
+				type = battle_cruiser
+				area = 18
+				size = 50
+			}
+			ships_in_area = {
+				type = heavy_cruiser
+				area = 18
+				size = 50
+			}
+			ships_in_area = {
+				type = light_cruiser
+				area = 18
+				size = 50
+			}
+			ships_in_area = {
+				type = destroyer
+				area = 18
+				size = 50
+			}
+		}
+		ENG = {
+			OR = {
+				ships_in_area = {
+					type = submarine
+					area = 18
+					size > 50
+				}
+				ships_in_area = {
+					type = battleship
+					area = 18
+					size = 50
+				}
+				ships_in_area = {
+					type = battle_cruiser
+					area = 18
+					size = 50
+				}
+				ships_in_area = {
+					type = heavy_cruiser
+					area = 18
+					size = 50
+				}
+				ships_in_area = {
+					type = light_cruiser
+					area = 18
+					size = 50
+				}
+				ships_in_area = {
+					type = destroyer
+					area = 18
+					size = 50
+				}
+			}
+		}
+		NOT = {
+			ENG = {
+				has_war = yes
+			}
+			has_war = yes
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	option = { #Demand withdraw of naval forces 
+		name = naval_clashes.1.a
+		ai_chance = { factor = 90 }
+		ENG = {
+			country_event = { id = naval_clashes.2 days = 1 }
+		}
+	}
+	option = { #We need to avoid escalation, leave it alone
+		ai_chance = { factor = 10 }
+		name = naval_clashes.1.b
+	}
+}
+
+country_event = { #France demands withdraw of forces in the channel
+	id = naval_clashes.2 
+	title = naval_clashes.2.t
+	desc = naval_clashes.2.d
+	picture = GFX_report_event_oahu_withdraws
+	is_triggered_only = yes 
+	option = { #Refuse 
+		name = naval_clashes.2.a 
+		ai_chance = { factor = 90 }
+		FRA = {
+			country_event = { id = naval_clashes.3 days = 1 }
+		}
+	}
+	option = { #We need to avoid escalation, withdraw our forces
+		name = naval_clashes.2.b
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #Britain Refuses
+	id = naval_clashes.3 
+	title = naval_clashes.3.t
+	desc = naval_clashes.3.d
+	picture = GFX_report_event_korean_war_march
+	is_triggered_only = yes 
+	option = { #This is War.
+		name = naval_clashes.3.a 
+		ai_chance = { factor = 90 }
+		declare_war_on = {
+			target = ENG
+			type = puppet_wargoal_focus
+		}
+	}
+	option = { #We have to let it go for now
+		name = naval_clashes.3.b
+		ai_chance = { factor = 10 }
+	}
+}

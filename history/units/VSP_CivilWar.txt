@@ -2,7 +2,6 @@
 division_template = {
 	name = "División de Infantería" 		# Used for both regular infantry divisions and larger garrison divisions
 	division_names_group = SPR_INF_01
-	is_locked = yes 
 	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -22,7 +21,6 @@ division_template = {
 division_template = {
 	name = "División de Caballería"  		# Only one Cavalry Division (3x bge of 2x2 Rgts)
 	division_names_group = SPR_CAV_01
-	is_locked = yes 
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -45,7 +43,6 @@ division_template = {
 division_template = {
 	name = "Brigada Montaña"  		# Mountain Brigades were 2x2 Rgts + support
 	division_names_group = SPR_MNT_01
-	is_locked = yes 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	
 		mountaineers = { x = 0 y = 1 }
@@ -59,7 +56,6 @@ division_template = {
 division_template = {
 	name = "Brigada de Infantería" 		# Infantry Brigade - Used for smaller garrison units
 	division_names_group = SPR_GAR_01
-	is_locked = yes 
 
 	regiments = {
 		infantry = { x = 0 y = 0 }	
@@ -81,7 +77,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 3873  # Madrid
+		location = 4098  # Madrid
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -92,7 +88,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 899  # Sevilla
+		location = 9889  # Sevilla
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -103,8 +99,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 3938  # Valencia
-		division_template = "División de Infantería"
+		location = 6856  # Valencia
+		division_template = "Brigada de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 
@@ -114,8 +110,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 6734  # Barcelona
-		division_template = "División de Infantería"
+		location = 3799  # Barcelona
+		division_template = "Brigada de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 
@@ -125,8 +121,151 @@ units = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 4135  # Zaragosa
-		division_template = "División de Infantería"
+		location = 871  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 9812  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 7213  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 948  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 813  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 11766  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 3859  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 9870  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
+		location = 885  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 14
+		}
+		location = 11854  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 15
+		}
+		location = 13220  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 16
+		}
+		location = 740  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 17
+		}
+		location = 3859  # Zaragosa
+		division_template = "Brigada de Infantería"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}		
+	division = { # "5a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 18
+		}
+		location = 3799  # Zaragosa
+		division_template = "Brigada de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 

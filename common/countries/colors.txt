@@ -832,8 +832,8 @@ BSP = { #Bourbon Spain
 	color_ui = rgb { 245 123 38 }
 }
 RSP = { #Republican Spain 
-	color = rgb { 245 142 255 }
-	color_ui = rgb { 245 142 255 }
+	color = rgb { 255 128 0 }
+	color_ui = rgb { 255 255 122 }
 }
 VSP = { #Vanguardist Spain
 	color = rgb { 193 0 0 }

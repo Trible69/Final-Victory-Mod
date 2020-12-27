@@ -20,10 +20,35 @@ country_event = {
             BSP = {
                 spanish_cores = yes 
                 spanish_bourbons = yes
+                load_oob = "BSP_CivilWar"
             }
             country_event = { id = spainish_civil_war.2 days = 3 }
             set_cosmetic_tag = SPR_civil_war_bonapartists
             set_global_flag = SPR_bourbons_leave
+            FRA = {
+                diplomatic_relation = {
+                    country = SPR 
+                    relation = guarantee
+                    active = no
+                }
+            }
+            delete_unit_template_and_units = {
+                division_template = "División de Infantería"
+                disband = no #will refund equipment and manpower
+            }
+            delete_unit_template_and_units = {
+                division_template = "División de Caballería"
+                disband = no #will refund equipment and manpower
+            }
+            delete_unit_template_and_units = {
+                division_template = "Brigada Montaña"
+                disband = no #will refund equipment and manpower
+            }
+            delete_unit_template_and_units = {
+                division_template = "Brigada de Infantería"
+                disband = no #will refund equipment and manpower
+            }
+            load_oob = "SPR_CivilWar"
         }
     }
     option = { #It has begun
@@ -51,6 +76,7 @@ country_event = {
             RSP = {
                 spanish_cores = yes 
                 spanish_republicans = yes
+                load_oob = "RSP_CivilWar"
             }
             country_event = { id = spainish_civil_war.3 days = 3 }
             add_popularity = {
@@ -92,6 +118,7 @@ country_event = {
             VSP = {
                 spanish_cores = yes 
                 spanish_vanguardist = yes
+                load_oob = "VSP_CivilWar"
             }
             add_popularity = {
                 ideology = moderate_socialism

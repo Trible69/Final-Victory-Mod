@@ -41,6 +41,14 @@ music = {
 					has_war_with = FLO
 				}
 			}
+		}
+		modifier = {
+			factor = 3
+
+			original_tag = SPR
+			has_war_with = VSP 
+			has_war_with = BSP 
+			has_war_with = RSP
 		}		
 	}	
 }
@@ -86,6 +94,11 @@ music = {
 			factor = 3
 			
 			original_tag = USA 
+		}
+		modifier = {
+			factor = 3
+			
+			has_war = yes 
 		}
 		modifier = {
 			factor = 2
@@ -167,7 +180,7 @@ music = {
 music = {
 	song = "allies_meetingwithcigars"
 	chance = {
-		factor = 1
+		factor = 5
 		has_war = no 
 	}
 }
@@ -175,7 +188,7 @@ music = {
 music = {
 	song = "allies_neverlookingbackagain"
 	chance = {
-		factor = 1
+		factor = 4
 		has_war = no 
 	}
 }
@@ -183,7 +196,7 @@ music = {
 music = {
 	song = "allies_thenightbefore"
 	chance = {
-		factor = 1
+		factor = 4
 		has_war = no 
 	}
 }
@@ -191,7 +204,7 @@ music = {
 music = {
 	song = "allies_thethoughtofyou"
 	chance = {
-		factor = 1
+		factor = 4
 		has_war = no 
 	}
 }
@@ -199,7 +212,7 @@ music = {
 music = {
 	song = "allies_verylastofgoodbyes"
 	chance = {
-		factor = 1
+		factor = 5
 		has_war = no 
 	}
 }
@@ -208,7 +221,7 @@ music = {
 	song = "dance_your_troubles_away"
 	
 	chance = {
-		factor = 1
+		factor = 5
 		has_war = no 
 	}
 }
@@ -217,7 +230,7 @@ music = {
 	song = "from_glen_to_glen"
 	
 	chance = {
-		factor = 1
+		factor = 5
 		has_war = no 
 	}
 }
@@ -226,7 +239,7 @@ music = {
 	song = "the_man_on_the_british_countryside"
 	
 	chance = {
-		factor = 1
+		factor = 5
 		has_war = no 
 	}
 }
@@ -235,7 +248,7 @@ music = {
 	song = "winter_came_spring"
 	
 	chance = {
-		factor = 1
+		factor = 5
 		has_war = no 
 	}
 }

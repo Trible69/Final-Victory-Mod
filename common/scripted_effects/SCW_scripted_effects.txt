@@ -20,6 +20,7 @@ spanish_cores = {
 	add_state_core = 800
 	add_state_core = 173
 	add_state_core = 118
+	add_state_core = 177
 }
 spanish_vanguardist = {
 	transfer_state = 167
@@ -40,7 +41,6 @@ spanish_republicans = {
 }
 spanish_bourbons = {
 	transfer_state = 791
-	transfer_state = 768
 	transfer_state = 174
 	transfer_state = 790
 	transfer_state = 171

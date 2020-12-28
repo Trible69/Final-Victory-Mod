@@ -1,0 +1,216 @@
+focus_tree = {
+	id = PRS_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRS
+		}
+	}
+	#Focus for Satiating their Hunger
+	focus = {
+		id = PRS_satiating_their_hunger
+		icon = GFX_focus_ger_oppose_hitler
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_addressing_the_crisis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-Adjusting the Mouthpiece
+	focus = {
+		id = PRS_readjusting_the_mouthpiece
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_addressing_the_crisis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Calming the Heir Apparent
+	focus = {
+		id = PRS_calming_the_heir_apparent
+		icon = GFX_focus_generic_military_mission
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_addressing_the_crisis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Addressing the Crisis
+	focus = {
+		id = PRS_addressing_the_crisis
+		icon = GFX_goal_generic_forceful_treaty
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+
+	#Focus for The Useful Idiot
+	focus = {
+		id = PRS_the_useful_idiot
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_addressing_the_crisis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sealing the Fissures
+	focus = {
+		id = PRS_sealing_the_fissures
+		icon = GFX_goal_generic_military_deal
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_calming_the_heir_apparent 
+		}
+		prerequisite = { 
+			focus = PRS_satiating_their_hunger 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Wayward Son
+	focus = {
+		id = PRS_the_wayward_son
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_the_useful_idiot 
+		}
+		prerequisite = { 
+			focus = PRS_readjusting_the_mouthpiece 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform the INPO
+	focus = {
+		id = PRS_reform_the_inpo
+		icon = GFX_focus_CZE_german_puppet
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_the_wayward_son 
+		}
+		prerequisite = { 
+			focus = PRS_sealing_the_fissures 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promise Conquest
+	focus = {
+		id = PRS_promise_conquest
+		icon = GFX_goal_poland_goal
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_reform_the_inpo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promise Order
+	focus = {
+		id = PRS_promise_order
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_reform_the_inpo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promise Power
+	focus = {
+		id = PRS_promise_power
+		icon = GFX_focus_rom_handle_king
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_reform_the_inpo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Full Steam Ahead
+	focus = {
+		id = PRS_full_steam_ahead
+		icon = GFX_goal_demand_sudetenland
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_promise_conquest 
+		}
+		prerequisite = { 
+			focus = PRS_promise_order 
+		}
+		prerequisite = { 
+			focus = PRS_promise_power 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Scheiße...
+	focus = {
+		id = PRS_scheie
+		icon = GFX_focus_generic_support_the_left_right
+		x = 11
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_full_steam_ahead }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

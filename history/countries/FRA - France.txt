@@ -67,7 +67,11 @@ give_guarantee = ROA
 give_guarantee = TUS
 give_guarantee = KTS
 ######################
-
+add_ideas = {
+	memories_of_the_long_war
+	le_grande_armee
+	the_imperial_parliament
+}
 create_country_leader = {
 	name = "Louis Napoleon I"
 	picture = "LouisNapoleon.dds"

@@ -6,12 +6,12 @@
  PRS_liberal_ADJ:0 "Prussian"
  PRS_liberal_DEF:0 "the Republic of Prussia"
 ###National Spirits
- heydrichs_bureaucratic_influence:0 "Heydrich’s Bureaucratic Influence"
- heydrichs_bureaucratic_influence_desc:0 "The Prussian bureaucracy is not a simple mechanism: it is a meticulously designed system in the making for hundreds of years. Some seek to subsist within it, others seek to alter it; but what distinguishes Reinhard Heydrich from the rest is his ability to effectively control and manipulate the career politicians that comprise its ranks. Almost all of the bureaucracy is at Heydrich’s behest; it would take a mastermind, a madman, or both to uproot his deep-set power."
- guderians_influence_among_young_officers:0 "Guderian’s Influence Among Young Officers"
- guderians_influence_among_young_officers_desc:0 "The new times are upon us. No longer is military engagement a game of cat and mouse between armies of a few thousand. Now frontal warfare is the way of the world, and with it arises a new class of hopeful new officers seeking to implement their strategies on the battlefield. Led by Heinz Guderian, the young officers seek to use their military prowess to end French domination over their rightful land once and for all. And they will stop at nothing to accomplish that goal."
- an_army_with_a_state:0 "An Army with a State"
- an_army_with_a_state_desc:0 "Prussia has always been a militaristic power seeking to assert itself in Europe. Although that hasn’t exactly gone as planned, society and government revolve around the military, which is unlikely to ever change."
+ ludendorffs_ghost:0 "Ludendorff's Ghost"
+ ludendorffs_ghost_desc:0 "Due to Prussia's shortcomings both industrially and militarily compared to the might of the French Empire, the two generals Paul von Hindenberg and Erich Ludendorff, after worming their way into the close network of advisors kept by King Wilhelm II, managed to not only subvert the little democratic institutions in Prussia, but also make the King himself little more than their personal pawn in controlling the nation. Hindenberg and Ludendorff spent the rest of the war devoting every Prussian institution to the practice of war, both military and civilian. After Hindenberg's mysterious death in 1921 following the end of the War, Ludendorff managed to become the De Facto Ruler of Prussia, as the new King Wilhelm III idly resided in Potsdam palace, until the General's assassination in 1927. Despite Ludendorff's death, many of his loyal compatriots and systems he has constructed still remain in place, keeping Prussia in the same state of misery as it was in 1916."
+ drang_nacht_osten:0 "Drang Nacht Osten"
+ drang_nacht_osten_desc:0 "A popular racial and military theory that has emerged in recent decades is the Drive to the East- the belief that the German Race can and should settle the Eastern Lands of the Baltic, Poland, and Russia, and has been granted such by a Divine Mandate. This has led many of younger ranks of the military and several upcoming generals to agitate for military campaigns into Prussia's eastern neighbors. \n\nThough others advocate for even more extreme measures..."
+ dying_militarism:0 "Dying Militarism"
+ dying_militarism_desc:0 "The Prussian People, after a war that left so many of their people dead and their nation in ruins, have finally abandoned any last shred of the ferocious militarism and ultranationalism instituted by the Hohenzollern Monarchy. Many fear that the Ludendorff's Regime constant ignorance of the growing cries of the people will be its eventual downfall, as the people's cries for change become angry demands for revolution."
 ###Decisions
  PRS_rising_powers_in_prussia:0 "Rising Powers in Prussia"
  PRS_rising_powers_in_prussia_desc:0 "Heydrich has [?global.heydrichs_influence|+0] influence! \nGuderian has [?global.guderians_influence|+0] influence! \n\n§R if they get too much influence they will revolt!§!"
@@ -27,6 +27,34 @@
  #tooltip
  explain_how_it_works_heydrich_prs_tt:0 "§R Heydrichs's Influence has to be 5 or below, when the decision is finished an Operation will be executed against Heydrich, if it succeds he will be removed from political preeminence, if failed he will revolt! The Chances of it failing will be decreased the less influence Heydrich has§!"
  explain_how_it_works_guderian_prs_tt:0 "§R Guderian's Influence has to be 5 or below, when the decision is finished an Operation will be execited against Guderian, if it succeds he will be removed from political preeminence, if failed he will revolt! The Chances of it failing will be decreased the less influence Guderian has§!"
+ #Focus
+ PRS_satiating_their_hunger:0 "Satiating their Hunger"
+ PRS_satiating_their_hunger_desc:0 "While the People are sick of it, the army has never been more ready for another war, and now agitates for Eastern Conquests to bolster Prussia's geopolitical position. While we must certainly tread carefully to avoid French ire, we should follow their lead, both to keep these fanatical officers loyal, and of course, to close off our now open Eastern Flank."
+ PRS_readjusting_the_mouthpiece:0 "Re-Adjusting the Mouthpiece"
+ PRS_readjusting_the_mouthpiece_desc:0 "Both Ludendorff and his successors have been notoriously terrible with winning over the hearts and minds of the Prussian People. In fact, they have done quite the opposite, and now most of Prussia goes irate with the mention of the name "Ludendorff." This has changed however, with the arrival of Alfred Hugenberg. A Reactionary, Monarchist, and a Media Mogul, he has served the nation well as a largely successful propaganda outlet in order to keep the Prussian Spirit alive. However, we must ensure his loyalty, lest he develop any aspirations for power..."
+ PRS_calming_the_heir_apparent:0 "Calming the Heir Apparent"
+ PRS_calming_the_heir_apparent_desc:0 "Field Marshal Erich von Manstein, Ludendorff's protégé, happens to be one of the most influential men in the Prussian Army, especially after the Downfall of Hans von Seeckt in 1930. We should do everything in our power to court his enormous influence over to our side."
+ PRS_addressing_the_crisis:0 "Addressing the Crisis"
+ PRS_addressing_the_crisis_desc:0 "General Erich Ludendorff has been dead for over eight years, and his absence is beginning to show. Various parts of the skewered Prussian political machine were only operating through his cult of personality alone, and with him gone, old cracks that have been left unaddressed since the War have revealed their horrid, deep wounds."
+ PRS_the_useful_idiot:0 "The Useful Idiot"
+ PRS_the_useful_idiot_desc:0 "King Wilhelm III von Hohenzollern is not exactly the most talented ruler. In fact, instead of choosing to even set foot in the Reichstag, he instead spends his days with his mistresses and in his palace. While he is one of the most disgusting men in Prussia, he nevertheless happily provides himself to be a quite useful figurehead and puppet."
+ PRS_sealing_the_fissures:0 "Sealing the Fissures"
+ PRS_sealing_the_fissures_desc:0 "A worrying divide grows in the military as generals jockey for power. Most notable is Manstein's growing unpopularity with the Non-Junker elements of the army, who instead are turning to charismatic figures, such as the impudent Heinz Guderian. In the midst of such social turmoil, we cannot afford such in-fighting. Whatever it takes to keep those two generals happy, whether it be bribes or empty promotions, we need to give it to them now."
+ PRS_the_wayward_son:0 "The Wayward Son"
+ PRS_the_wayward_son_desc:0 "Crown Prince Wilhelm, to our misfortune, isn't as compliant as his father. Instead of simply belting out all the militaristic slogans and things we need to him to state over the radio, he in fact refuses to cooperate with us. In time, he will of course, given that he has no allies nor will he find any, but for now, we need to ensure he cannot build a power base within the nation."
+ PRS_reform_the_inpo:0 "Reform the INPO"
+ PRS_reform_the_inpo_desc:0 "The Innerepolizei was famously the only thing keeping the Prussian State alive during the violent years of 1919-1921. However, since Ludendorff's assassination they have become little more than a gang of thugs, terrorizing the cities and countryside. If we are ever to keep our heads on our shoulders, this mob of unruly bandits must be transformed into a disciplined Secret Police."
+ PRS_promise_conquest:0 "Promise Conquest"
+ PRS_promise_conquest_desc:0 "As we gradually win the army back over, we should continue to soothe their vicious demands for blood with propaganda campaigns, and begin to meet with generals about our upcoming wars with the East."
+ PRS_promise_order:0 "Promise Order"
+ PRS_promise_order_desc:0 "The Reactionary Politicians may fear us, but they fear the people more. If we can divert the fear away from our bayonets and back at the mob, we will scare every Prussian Conservative right back into our arms."
+ PRS_promise_power:0 "Promise Power"
+ PRS_promise_power_desc:0 "If the Hohenzollerns have ever wanted anything, it is more power. More power than the Habsburgs, More power than the French, more power than anyone in the world, and then they are intoxicated by it. Even the oh-so chivalrous prick of a Crown Prince is not immune to this drug, and we shall promise him and his idiotic father His Majesty the King all the power in the world, so long they remember who's keeping their asses on the throne."
+ PRS_full_steam_ahead:0 "Full Steam Ahead"
+ PRS_full_steam_ahead_desc:0 "Finally! We are finally past the hell we have suffered for over a decade, and we can finally reclaim our place in the sun, and avenge our defeats at the hands of the Perfidious French. Everyone will rue the day they wronged the Army with a State!"
+ PRS_scheie:0 "Scheiße..."
+ PRS_scheie_desc:0 "Wait... Slow down... All of Pomerania? How? Wha-... How many? Are you fucking serious?"
+
  
  
  

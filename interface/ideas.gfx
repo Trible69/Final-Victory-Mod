@@ -4680,4 +4680,20 @@ spriteTypes = {
 		name = "GFX_idea_heydrichs_influence_icon"
 		texturefile = "gfx/interface/ideas/heydrichs_influence.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_the_imperial_parliament_icon"
+		texturefile = "gfx/interface/ideas/the_imperial_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_le_grande_armee_icon"
+		texturefile = "gfx/interface/ideas/le_grande_armee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ludendorffs_ghost_icon"
+		texturefile = "gfx/interface/ideas/ludendorffs_ghost.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_drang_nacht_osten_icon"
+		texturefile = "gfx/interface/ideas/drang_nacht_osten.dds"
+	}
 }

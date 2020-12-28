@@ -1,0 +1,53 @@
+﻿capital = 219
+
+#	BASIC VALUES
+OOB = "generic_1936"
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 100
+
+
+###	TECHNOLOGY
+set_technology = {
+	infantry_weapons = 1
+}
+
+### VARIABLES
+
+###	IDEAS
+add_ideas = {
+
+}
+
+###	POLITICS
+set_politics = {
+	ruling_party = despotism
+	last_election = "1934.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = { 
+	despotism = 54
+	ultraconservative = 26
+	national_populism = 10
+	moderate_socialism = 3
+	conservative = 7
+}
+
+###	OPINION & TRADE MODIFIERS
+
+
+###	POLITICIANS
+create_country_leader = {
+	name = "Alexei Nikolaevich"
+	desc = ""
+	picture = "AlexeiRUS.dds"
+	expire = "1965.1.1"
+	ideology = monarchism
+}
+###	GENERALS
+
+###	ADMIRALS
+
+### OPERATIVES

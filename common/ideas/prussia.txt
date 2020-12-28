@@ -1,8 +1,8 @@
 ideas = {
 	
 	country = {
-	    heydrichs_bureaucratic_influence = {
-			picture = heydrichs_influence_icon
+	    ludendorffs_ghost = {
+			picture = ludendorffs_ghost_icon
 			
 			allowed = {
 				always = no
@@ -15,12 +15,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = -0.1
-				stability_factor = -0.05
+				army_org_factor = -0.05
+				stability_factor = -0.10
+				conversion_cost_civ_to_mil_factor = 0.25
+				conversion_cost_mil_to_civ_factor = 0.25
 			}
 		}
-		guderians_influence_among_young_officers = {
-			picture = guderians_influence_icon
+		drang_nacht_osten = {
+			picture = drang_nacht_osten_icon
 
 			allowed = {
 				always = no 
@@ -33,13 +35,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.05
-				army_speed_factor = -0.05
-				army_attack_factor = -0.1
-				stability_factor = -0.05
+				war_support_factor = 0.15
+				army_attack_factor = 0.1
 			}
 		} 
-		an_army_with_a_state = {
+		dying_militarism = {
 			picture = armywithastate_icon
 
 			allowed = {
@@ -53,11 +53,12 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_org_factor = 0.05
-				conscription_factor = 0.01
-				army_core_defence_factor = 0.05
-				stability_factor = -0.1
-				political_power_gain = -0.5
+				political_power_gain = -0.1
+				stability_factor = -0.15
+				social_democrat_drift = 0.01
+				moderate_socialism_drift = 0.01
+				vanguardism_drift = 0.01
+				anarchist_drift = 0.01
 			}
 		}
 	}

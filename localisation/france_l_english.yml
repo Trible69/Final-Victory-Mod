@@ -3,6 +3,12 @@
  FRA_conservative_ADJ:0 "French"
  FRA_conservative_DEF:0 "the French Empire"
  ############IDEAS#############
+ memories_of_the_long_war:0 "Memories of the Long War"
+ memories_of_the_long_war_desc:0 "The Great War, though a victory for the French Empire and her People, was an empty one. Her ancestral enemies still drew breath by the time the War reached its bloody conclusion, and the French had paid an ocean of blood to finally overpower the Seventh Coalition, leaving Western Europe in ruins. Seeing as Fathers, Sons, Brothers, and Cousins never came home after such a brutal conflict, almost no one apart from the Chicken Hawks in Parliament are eager to relieve the experiences of the Long War"
+ le_grande_armee:0 "Le "Grande" Armée"
+ le_grande_armee_desc:0 "The French Army has been the backbone on which Imperial France has been built, and it is arguably Napoleon's finest achievement. Yet the Army that torched its way across Europe has seen better days. The ranks reek of corruption and nepotism, and the war took its toll on the army by killing off the young, bright officers, leaving the embittered old men of the Old Guard to ensure the army keeps on rotting away. If France is to survive the inevitable conflicts that will arise, she must rip out nearly every shred of rot and decay that has infected her army."
+ the_imperial_parliament:0 "The Imperial Parliament"
+ the_imperial_parliament_desc:0 "The Spiritual Successor to the Revolutionary National Assemby, the Imperial Parliament, greatly strengthened by the reforms of Emperor Napoleon III, has granted the French People a much greater say in their government compared to other European Nations. At least, such is the case on paper. In reality, the Parliament serves as nothing more than a staging ground where Parties on the Far-Left and Far-Right can practice their screaming matches. With Frenchmen more concerned at yelling at one another, many speculate it will be internal division and strife that causes the downfall of Napoleon's legacy, rather than yet another coalition."
  ###########FOCUS##############
  ###########EVENTS###############
  FRA_faction_events.1.t:0 "America wants an alliance"

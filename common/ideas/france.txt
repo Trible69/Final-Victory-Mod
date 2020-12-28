@@ -1,3 +1,58 @@
 ideas = {
-	
+	country = {
+		memories_of_the_long_war = {
+			picture = ENG_the_war_to_end_all_wars
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = -0.70
+			}
+		}
+		le_grande_armee = {
+			picture = le_grande_armee_icon
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.1
+				conscription_factor = 0.2
+				army_attack_factor = -0.05
+			}
+		}
+		the_imperial_parliament = {
+			picture = the_imperial_parliament_icon
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+	}
 }

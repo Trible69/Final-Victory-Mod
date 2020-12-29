@@ -1,0 +1,611 @@
+spriteTypes = { 
+	##Icon For: The Second Time of Troubles
+	SpriteType = { 
+		name = "GFX_RUS_the_second_time_of_troubles-74019"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_second_time_of_troubles-74019.dds"
+	}
+
+	##Icon Shine For: The Second Time of Troubles
+	SpriteType = { 
+		name = "GFX_RUS_the_second_time_of_troubles-74019_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_second_time_of_troubles-74019.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_second_time_of_troubles-74019.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_second_time_of_troubles-74019.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Mangled Remnants
+	SpriteType = { 
+		name = "GFX_RUS_the_mangled_remnants-74016"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_mangled_remnants-74016.dds"
+	}
+
+	##Icon Shine For: The Mangled Remnants
+	SpriteType = { 
+		name = "GFX_RUS_the_mangled_remnants-74016_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_mangled_remnants-74016.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_mangled_remnants-74016.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_mangled_remnants-74016.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Broken Admiral
+	SpriteType = { 
+		name = "GFX_RUS_the_broken_admiral-74015"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_broken_admiral-74015.dds"
+	}
+
+	##Icon Shine For: The Broken Admiral
+	SpriteType = { 
+		name = "GFX_RUS_the_broken_admiral-74015_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_broken_admiral-74015.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_broken_admiral-74015.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_broken_admiral-74015.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Young Tsar
+	SpriteType = { 
+		name = "GFX_RUS_the_young_tsar-74018"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_young_tsar-74018.dds"
+	}
+
+	##Icon Shine For: The Young Tsar
+	SpriteType = { 
+		name = "GFX_RUS_the_young_tsar-74018_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_young_tsar-74018.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_young_tsar-74018.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_young_tsar-74018.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Fortune Favors the Bold
+	SpriteType = { 
+		name = "GFX_RUS_fortune_favors_the_bold-74044"
+		texturefile = "gfx/interface/goals/GFX_RUS_fortune_favors_the_bold-74044.dds"
+	}
+
+	##Icon Shine For: Fortune Favors the Bold
+	SpriteType = { 
+		name = "GFX_RUS_fortune_favors_the_bold-74044_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_fortune_favors_the_bold-74044.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_fortune_favors_the_bold-74044.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_fortune_favors_the_bold-74044.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Cold March Morning
+	SpriteType = { 
+		name = "GFX_RUS_a_cold_march_morning-74027"
+		texturefile = "gfx/interface/goals/GFX_RUS_a_cold_march_morning-74027.dds"
+	}
+
+	##Icon Shine For: A Cold March Morning
+	SpriteType = { 
+		name = "GFX_RUS_a_cold_march_morning-74027_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_a_cold_march_morning-74027.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_a_cold_march_morning-74027.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_a_cold_march_morning-74027.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: ...And into the Fire
+	SpriteType = { 
+		name = "GFX_RUS_and_into_the_fire-74022"
+		texturefile = "gfx/interface/goals/GFX_RUS_and_into_the_fire-74022.dds"
+	}
+
+	##Icon Shine For: ...And into the Fire
+	SpriteType = { 
+		name = "GFX_RUS_and_into_the_fire-74022_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_and_into_the_fire-74022.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_and_into_the_fire-74022.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_and_into_the_fire-74022.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Out of the Frying Pan...
+	SpriteType = { 
+		name = "GFX_RUS_out_of_the_frying_pan-74021"
+		texturefile = "gfx/interface/goals/GFX_RUS_out_of_the_frying_pan-74021.dds"
+	}
+
+	##Icon Shine For: Out of the Frying Pan...
+	SpriteType = { 
+		name = "GFX_RUS_out_of_the_frying_pan-74021_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_out_of_the_frying_pan-74021.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_out_of_the_frying_pan-74021.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_out_of_the_frying_pan-74021.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Confine the Tsar
+	SpriteType = { 
+		name = "GFX_RUS_confine_the_tsar-74028"
+		texturefile = "gfx/interface/goals/GFX_RUS_confine_the_tsar-74028.dds"
+	}
+
+	##Icon Shine For: Confine the Tsar
+	SpriteType = { 
+		name = "GFX_RUS_confine_the_tsar-74028_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_confine_the_tsar-74028.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_confine_the_tsar-74028.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_confine_the_tsar-74028.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Rallying the Nobility
+	SpriteType = { 
+		name = "GFX_RUS_rallying_the_nobility-74046"
+		texturefile = "gfx/interface/goals/GFX_RUS_rallying_the_nobility-74046.dds"
+	}
+
+	##Icon Shine For: Rallying the Nobility
+	SpriteType = { 
+		name = "GFX_RUS_rallying_the_nobility-74046_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_rallying_the_nobility-74046.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_rallying_the_nobility-74046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_rallying_the_nobility-74046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Deploy the Okhrana
+	SpriteType = { 
+		name = "GFX_RUS_deploy_the_okhrana-74029"
+		texturefile = "gfx/interface/goals/GFX_RUS_deploy_the_okhrana-74029.dds"
+	}
+
+	##Icon Shine For: Deploy the Okhrana
+	SpriteType = { 
+		name = "GFX_RUS_deploy_the_okhrana-74029_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_deploy_the_okhrana-74029.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_deploy_the_okhrana-74029.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_deploy_the_okhrana-74029.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Crush the Bogatyr
+	SpriteType = { 
+		name = "GFX_RUS_crush_the_bogatyr-74037"
+		texturefile = "gfx/interface/goals/GFX_RUS_crush_the_bogatyr-74037.dds"
+	}
+
+	##Icon Shine For: Crush the Bogatyr
+	SpriteType = { 
+		name = "GFX_RUS_crush_the_bogatyr-74037_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_crush_the_bogatyr-74037.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_crush_the_bogatyr-74037.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_crush_the_bogatyr-74037.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Alea Iacta Est
+	SpriteType = { 
+		name = "GFX_RUS_alea_iacta_est-74043"
+		texturefile = "gfx/interface/goals/GFX_RUS_alea_iacta_est-74043.dds"
+	}
+
+	##Icon Shine For: Alea Iacta Est
+	SpriteType = { 
+		name = "GFX_RUS_alea_iacta_est-74043_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_alea_iacta_est-74043.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_alea_iacta_est-74043.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_alea_iacta_est-74043.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Secure the Army
+	SpriteType = { 
+		name = "GFX_RUS_secure_the_army-74038"
+		texturefile = "gfx/interface/goals/GFX_RUS_secure_the_army-74038.dds"
+	}
+
+	##Icon Shine For: Secure the Army
+	SpriteType = { 
+		name = "GFX_RUS_secure_the_army-74038_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_secure_the_army-74038.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_secure_the_army-74038.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_secure_the_army-74038.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Dissolve the Duma
+	SpriteType = { 
+		name = "GFX_RUS_dissolve_the_duma-74045"
+		texturefile = "gfx/interface/goals/GFX_RUS_dissolve_the_duma-74045.dds"
+	}
+
+	##Icon Shine For: Dissolve the Duma
+	SpriteType = { 
+		name = "GFX_RUS_dissolve_the_duma-74045_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_dissolve_the_duma-74045.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_dissolve_the_duma-74045.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_dissolve_the_duma-74045.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Second Purge
+	SpriteType = { 
+		name = "GFX_RUS_the_second_purge-74030"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_second_purge-74030.dds"
+	}
+
+	##Icon Shine For: The Second Purge
+	SpriteType = { 
+		name = "GFX_RUS_the_second_purge-74030_shine"
+		texturefile = "gfx/interface/goals/GFX_RUS_the_second_purge-74030.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_second_purge-74030.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_RUS_the_second_purge-74030.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

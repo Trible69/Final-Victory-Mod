@@ -4696,4 +4696,16 @@ spriteTypes = {
 		name = "GFX_idea_drang_nacht_osten_icon"
 		texturefile = "gfx/interface/ideas/drang_nacht_osten.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_legacy_of_the_siberian_mutineers_icon"
+		texturefile = "gfx/interface/ideas/legacy_of_the_siberian_mutineers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_supreme_ministers_paranoia_icon"
+		texturefile = "gfx/interface/ideas/the_supreme_ministers_paranoia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_russian_catastrophe_icon"
+		texturefile = "gfx/interface/ideas/the_russian_catastrophe_icon.dds"
+	}
 }

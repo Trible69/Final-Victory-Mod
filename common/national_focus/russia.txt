@@ -1,0 +1,277 @@
+focus_tree = {
+	id = russian_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	#Focus for The Second Time of Troubles
+	focus = {
+		id = RUS_the_second_time_of_troubles
+		icon = GFX_RUS_the_second_time_of_troubles-74019
+		x = 17
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mangled Remnants
+	focus = {
+		id = RUS_the_mangled_remnants
+		icon = GFX_RUS_the_mangled_remnants-74016
+		x = 13
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_second_time_of_troubles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Broken Admiral
+	focus = {
+		id = RUS_the_broken_admiral
+		icon = GFX_RUS_the_broken_admiral-74015
+		x = 17
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_second_time_of_troubles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Young Tsar
+	focus = {
+		id = RUS_the_young_tsar
+		icon = GFX_RUS_the_young_tsar-74018
+		x = 21
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_second_time_of_troubles }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fortune Favors the Bold
+	focus = {
+		id = RUS_fortune_favors_the_bold
+		icon = GFX_RUS_fortune_favors_the_bold-74044
+		x = 27
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_and_into_the_fire }
+		mutually_exclusive = { focus = RUS_a_cold_march_morning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Cold March Morning
+	focus = {
+		id = RUS_a_cold_march_morning
+		icon = GFX_RUS_a_cold_march_morning-74027
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_and_into_the_fire }
+		mutually_exclusive = { focus = RUS_fortune_favors_the_bold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...And into the Fire
+	focus = {
+		id = RUS_and_into_the_fire
+		icon = GFX_RUS_and_into_the_fire-74022
+		x = 17
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_out_of_the_frying_pan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Out of the Frying Pan...
+	focus = {
+		id = RUS_out_of_the_frying_pan
+		icon = GFX_RUS_out_of_the_frying_pan-74021
+		x = 17
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_the_mangled_remnants 
+		}
+		prerequisite = { 
+			focus = RUS_the_broken_admiral 
+		}
+		prerequisite = { 
+			focus = RUS_the_young_tsar 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Confine the Tsar
+	focus = {
+		id = RUS_confine_the_tsar
+		icon = GFX_RUS_confine_the_tsar-74028
+		x = 4
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_cold_march_morning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rallying the Nobility
+	focus = {
+		id = RUS_rallying_the_nobility
+		icon = GFX_RUS_rallying_the_nobility-74046
+		x = 29
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_fortune_favors_the_bold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deploy the Okhrana
+	focus = {
+		id = RUS_deploy_the_okhrana
+		icon = GFX_RUS_deploy_the_okhrana-74029
+		x = 8
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_cold_march_morning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare Martial Law
+	focus = {
+		id = RUS_declare_martial_law
+		icon = GFX_focus_usa_voter_registration_act
+		x = 27
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_rallying_the_nobility 
+		}
+		prerequisite = { 
+			focus = RUS_dissolve_the_duma 
+		}
+		prerequisite = { 
+			focus = RUS_secure_the_army 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crush the Bogatyr
+	focus = {
+		id = RUS_crush_the_bogatyr
+		icon = GFX_RUS_crush_the_bogatyr-74037
+		x = 6
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_deploy_the_okhrana 
+		}
+		prerequisite = { 
+			focus = RUS_the_second_purge 
+		}
+		prerequisite = { 
+			focus = RUS_confine_the_tsar 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Alea Iacta Est
+	focus = {
+		id = RUS_alea_iacta_est
+		icon = GFX_RUS_alea_iacta_est-74043
+		x = 17
+		y = 11
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_crush_the_bogatyr 
+			focus = RUS_declare_martial_law 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secure the Army
+	focus = {
+		id = RUS_secure_the_army
+		icon = GFX_RUS_secure_the_army-74038
+		x = 25
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_fortune_favors_the_bold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dissolve the Duma
+	focus = {
+		id = RUS_dissolve_the_duma
+		icon = GFX_RUS_dissolve_the_duma-74045
+		x = 27
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_fortune_favors_the_bold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Second Purge
+	focus = {
+		id = RUS_the_second_purge
+		icon = GFX_RUS_the_second_purge-74030
+		x = 6
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_cold_march_morning }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

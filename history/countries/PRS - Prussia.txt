@@ -17,9 +17,9 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-	heydrichs_bureaucratic_influence
-	guderians_influence_among_young_officers
-	an_army_with_a_state
+	dying_militarism
+	ludendorffs_ghost
+	drang_nacht_osten
 }
 
 ###	POLITICS

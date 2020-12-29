@@ -17,7 +17,9 @@ set_technology = {
 
 ###	IDEAS
 add_ideas = {
-
+	the_russian_catastrophe
+	the_supreme_ministers_paranoia
+	legacy_of_the_siberian_mutineers
 }
 
 ###	POLITICS

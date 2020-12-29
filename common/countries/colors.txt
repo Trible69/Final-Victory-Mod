@@ -839,3 +839,16 @@ VSP = { #Vanguardist Spain
 	color = rgb { 193 0 0 }
 	color_ui = rgb { 193 0 0 }
 }
+###Japan
+BET = { #British East Tea Company
+	color = rgb { 160 0 0 }
+	color_ui = rgb { 235 0 0 }
+}
+TGA = { #Shogunte
+	color = rgb { 230 230 230 }
+	color_ui = rgb { 230 230 230 }
+}
+SHO = { #Showa
+	color = rgb { 130 19 46 }
+	color_ui = rgb { 130 19 46 }
+}

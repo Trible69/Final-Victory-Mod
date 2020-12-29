@@ -273,3 +273,8 @@ BSP = "countries/Spain.txt" #bourbon Spain
 RSP = "countries/Spain.txt" #Republican Spain
 VSP = "countries/Spain.txt" #Vanguardist Spain
 SPR = "countries/Spain.txt"
+###Japan
+BET = "countries/Asian.txt" #British East Tea Company
+TGA = "countries/Asian.txt" #Shogunte
+SHO = "countries/Asian.txt" #Showa
+

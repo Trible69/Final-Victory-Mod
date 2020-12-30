@@ -24,17 +24,15 @@ add_ideas = {
 
 ###	POLITICS
 set_politics = {
-	ruling_party = national_populism
+	ruling_party = despotism
 	elections_allowed = no
 }
-set_popularities = { 
-	vanguardism = 0 
-	anarchist = 0
-	social_democrat = 4 
+set_popularities = {  
 	liberal = 4
 	conservative = 2
-	ultraconservative = 16
-	national_populism = 74
+	ultraconservative = 10
+	national_populism = 20
+	despotism = 64
 }
 
 ###	OPINION & TRADE MODIFIERS
@@ -48,6 +46,12 @@ create_country_leader = {
 	traits = {
 		dictator
 	}
+}
+create_country_leader = {
+	name = "Kaiser Wilhelm III"
+	picture = "WilhelmIIIPRS.dds"
+	expire = "1965.1.1"
+	ideology = monarchism
 }
 ###	GENERALS
 create_field_marshal = {

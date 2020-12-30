@@ -1,10 +1,37 @@
-﻿l_english: 
+﻿l_english:  
+ #########Actual Country 
  PRS_national_populism:0 "Prussian State"
- PRS_national_populism_ADJ:0 "Prussian"
- PRS_national_populism_DEF:0 "the Prussian State"
+ 
  PRS_liberal:0 "Republic of Prussia"
- PRS_liberal_ADJ:0 "Prussian"
+ PRS_conservative:0 "Republic of Prussia"
+ PRS_social_democrat:0 "Republic of Prussia"
+
+ PRS_vanguardism:0 "Prussian Commune"
+ PRS_moderate_socialism:0 "Socialist State of Prussia"
+ PRS_anarchist:0 "Prussian Anarchy"
+ 
+ PRS_despotism:0 "Kingdom of Prussia"
+ PRS_ultraconservative:0 "Kingdom of Prussia"
+ ###########
+ ########DEF
+ PRS_national_populism_DEF:0 "the Prussian State"
+ 
  PRS_liberal_DEF:0 "the Republic of Prussia"
+ PRS_conservative_DEF:0 "the Republic of Prussia"
+ PRS_social_democrat_DEF:0 "the Republic of Prussia"
+ 
+ PRS_despotism_DEF:0 "the Kingdom of Prussia"
+
+ ########ADJ
+ PRS_national_populism_ADJ:0 "Prussian"
+ PRS_liberal_ADJ:0 "Prussian"
+ PRS_despotism_ADJ:0 "Prussian"
+ PRS_conservative_ADJ:0 "Prussian"
+ PRS_social_democrat_ADJ:0 "Prussian"
+ PRS_vanguardism_ADJ:0 "Prussian"
+ PRS_moderate_socialism_ADJ:0 "Prussian"
+ PRS_anarchist_ADJ:0 "Prussian"
+ PRS_ultraconservative_ADJ:0 "Prussian"
 ###National Spirits
  ludendorffs_ghost:0 "Ludendorff's Ghost"
  ludendorffs_ghost_desc:0 "Due to Prussia's shortcomings both industrially and militarily compared to the might of the French Empire, the two generals Paul von Hindenberg and Erich Ludendorff, after worming their way into the close network of advisors kept by King Wilhelm II, managed to not only subvert the little democratic institutions in Prussia, but also make the King himself little more than their personal pawn in controlling the nation. Hindenberg and Ludendorff spent the rest of the war devoting every Prussian institution to the practice of war, both military and civilian. After Hindenberg's mysterious death in 1921 following the end of the War, Ludendorff managed to become the De Facto Ruler of Prussia, as the new King Wilhelm III idly resided in Potsdam palace, until the General's assassination in 1927. Despite Ludendorff's death, many of his loyal compatriots and systems he has constructed still remain in place, keeping Prussia in the same state of misery as it was in 1916."

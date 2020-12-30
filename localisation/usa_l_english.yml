@@ -1,10 +1,38 @@
 ﻿l_english: 
+ ###Actual Country
+ USA_national_populism:0 "American State"
+ USA_ultraconservative:0 "American State"
+ USA_despotism:0 "American State"
+
+ USA_moderate_socialism:0 "Union of American Communes"
+ USA_vanguardism:0 "Union of American Communes"
+ USA_anarchist:0 "American Anarchy"
+
  USA_liberal:0 "United States of America"
+ USA_conservative:0 "Federalist States of America"
+ USA_social_democrat:0 "United States of America"
+ ###DEF
+ USA_national_populism_DEF:0 "The American State"
+ USA_ultraconservative_DEF:0 "the American State"
+ USA_despotism_DEF:0 "the American State"
+
+ USA_moderate_socialism_DEF:0 "the Union of American Communes"
+ USA_vanguardism_DEF:0 "the Union of American Communes"
+ USA_anarchist_DEF:0 "the American Anarchy"
+
  USA_liberal_DEF:0 "the United States of America"
- USA_liberal_ADJ:0 "American"
- USA_conservative:0 "Federal States of America"
- USA_conservative_DEF:0 "the Federal States of America"
+ USA_conservative_DEF:0 "the Federalist States of America"
+ USA_social_democrat_DEF:0 "the United States of America"
+ ###ADJ
  USA_conservative_ADJ:0 "American"
+ USA_social_democrat_ADJ:0 "American"
+ USA_liberal_ADJ:0 "American"
+ USA_vanguardism_ADJ:0 "American"
+ USA_moderate_socialism_ADJ:0 "American"
+ USA_anarchist_ADJ:0 "American"
+ USA_national_populism_ADJ:0 "American"
+ USA_despotism_ADJ:0 "American"
+ USA_ultraconservative_ADJ:0 "American"
 ##################IDEAS###########
  broken_nation:0 "Broken Nation"
  broken_nation_desc:0 "The country has fallen apart, with vanguardism and national-populism on the rise. Additionally, the country is plagued by economic mismanagement on the part of the federal government, which is led by the Founder's Vision Party."
@@ -23,7 +51,7 @@
  shellshocked_populace:0 "Shellshocked Populace"
  shellshocked_populace_desc:0 "Population tired of war"
  focus_uac:0 "Push the UAC"
- focus_uac_desc:0 ""
+ focus_USA_desc:0 ""
  focus_ams:0 "Push the AMS"
  focus_ams_desc:0 ""
  charles_lindbergh:0 "Charles Lindbergh" 
@@ -141,7 +169,7 @@ USA_building_the_economy_desc:0 "Our economy before the war was fraught with cor
 USA_rebuild_infrastructure:0 "Rebuild Infrastructure"
 USA_rebuild_infrastructure_desc:0 "Especially in the Rust Belt, great damage has been sustained to our infrastructure by enemies attempting to slow our advance. Construction crews should be sent to the countryside to repair key centers of infrastructure."
 USA_rebuild_military_industry:0 "Rebuild Military Industry"
-USA_rebuild_military_industry_desc:0 "Our military-industrial complex has suffered severely from the past war, necessitating a speedy recovery. It is needed to devote the efforts of the entire nation towards its recovery, for such action would facilitate military action abroad.”
+USA_rebuild_military_industry_desc:0 "Our military-industrial complex has suffered severely from the past war, necessitating a speedy recovery. It is needed to devote the efforts of the entire nation towards its recovery, for such action would facilitate military action abroad."
 USA_root_out_the_traitors:0 "Root out the Traitors"
 USA_root_out_the_traitors_desc:0 "Although the war is over, some persistent threats to American national sovereignty remain. They should be rooted out through deep investigation and given a suitable fate."
 USA_claim_the_british_north_american_territory:0 "Claim the British North American Territory"

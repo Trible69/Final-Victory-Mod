@@ -1,6 +1,37 @@
 ﻿l_english:
+ #Actual Country
+ TEX_conservative:0 "Republic of Texas"
+ TEX_social_democrat:0 "Republic of Texas"
+ TEX_liberal:0 "Republic of Texas"
+ 
+ TEX_vanguardism:0 "Peoples Commune of Texas"
+ TEX_moderate_socialism:0 "Socialist State of Texas"
+ TEX_anarchist:0 "Texan Anarchy"
+
+ TEX_national_populism:0 "State of Texas"
+ TEX_despotism:0 "Texan State"
  TEX_ultraconservative:0 "Texas"
- TEX_ultraconservative_DEF:0 "Texas"
+ #DEF
+ TEX_conservative_DEF:0 "the Republic of Texas"
+ TEX_social_democrat_DEF:0 "the Republic of Texas"
+ TEX_liberal_DEF:0 "the Republic of Texas"
+ 
+ TEX_vanguardism_DEF:0 "the Peoples Commune of Texas"
+ TEX_moderate_socialism_DEF:0 "the Socialist State of Texas"
+ TEX_anarchist_DEF:0 "the Texan Anarchy"
+
+ TEX_national_populism:0 "the State of Texas"
+ TEX_despotism:0 "the Texan State"
+ TEX_ultraconservative:0 "the Texas"
+ #ADJ
+ TEX_conservative_ADJ:0 "Texan"
+ TEX_social_democrat_ADJ:0 "Texan"
+ TEX_liberal_ADJ:0 "Texan"
+ TEX_vanguardism_ADJ:0 "Texan"
+ TEX_moderate_socialism_ADJ:0 "Texan"
+ TEX_anarchist_ADJ:0 "Texan"
+ TEX_national_populism_ADJ:0 "Texan"
+ TEX_despotism_ADJ:0 "Texan"
  TEX_ultraconservative_ADJ:0 "Texan"
  ############IDEAS#############
  tex_lose:0 "Texas lost the Power Struggle"

@@ -1,7 +1,39 @@
 ﻿l_english: 
+ ###Actual Country
  AMS_national_populism:0 "American State"
+ AMS_ultraconservative:0 "American State"
+ AMS_despotism:0 "American State"
+
+ AMS_moderate_socialism:0 "Union of American Communes"
+ AMS_vanguardism:0 "Union of American Communes"
+ AMS_anarchist:0 "American Anarchy"
+
+ AMS_liberal:0 "United States of America"
+ AMS_conservative:0 "Federalist States of America"
+ AMS_social_democrat:0 "United States of America"
+ ###DEF
  AMS_national_populism_DEF:0 "The American State"
+ AMS_ultraconservative_DEF:0 "the American State"
+ AMS_despotism_DEF:0 "the American State"
+
+ AMS_moderate_socialism_DEF:0 "the Union of American Communes"
+ AMS_vanguardism_DEF:0 "the Union of American Communes"
+ AMS_anarchist_DEF:0 "the American Anarchy"
+
+ AMS_liberal_DEF:0 "the United States of America"
+ AMS_conservative_DEF:0 "the Federalist States of America"
+ AMS_social_democrat_DEF:0 "the United States of America"
+ ###ADJ
+ AMS_conservative_ADJ:0 "American"
+ AMS_social_democrat_ADJ:0 "American"
+ AMS_liberal_ADJ:0 "American"
+ AMS_vanguardism_ADJ:0 "American"
+ AMS_moderate_socialism_ADJ:0 "American"
+ AMS_anarchist_ADJ:0 "American"
  AMS_national_populism_ADJ:0 "American"
+ AMS_despotism_ADJ:0 "American"
+ AMS_ultraconservative_ADJ:0 "American"
+ ###
  AMS_rise_of_cross:0 "Legionary America"
 ########IDEAS###########
  ams_fire_of_revolution:0 "Embers of Revolution"

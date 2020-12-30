@@ -1,9 +1,39 @@
 ﻿l_english: 
+ #Actual Country
  ENG_ultraconservative:0 "Military State of Britain"
- ENG_ultraconservative_ADJ:0 "British"
- ENG_ultraconservative_DEF:0 "the Military State of Britain"
+ ENG_national_populism:0 "Military State of Britain"
+ ENG_despotism:0 "Great Britain"
+ 
  ENG_liberal:0 "United Kingdom"
  ENG_conservative:0 "United Kingdom"
+ ENG_social_democrat:0 "United Kingdom"
+ 
+ ENG_vanguardism:0 "Union of British Communes"
+ ENG_moderate_socialism:0 "Socialist Republic of Britain"
+ ENG_anarchist:0 "British Anarchy"
+ #ADJ
+ ENG_conservative_ADJ:0 "British"
+ ENG_social_democrat_ADJ:0 "British"
+ ENG_liberal_ADJ:0 "British"
+ ENG_vanguardism_ADJ:0 "British"
+ ENG_moderate_socialism_ADJ:0 "British"
+ ENG_anarchist_ADJ:0 "British"
+ ENG_national_populism_ADJ:0 "British"
+ ENG_despotism_ADJ:0 "British"
+ ENG_ultraconservative_ADJ:0 "British"
+ #DEF
+ ENG_ultraconservative_DEF:0 "the Military State of Britain"
+ ENG_national_populism_DEF:0 "the Military State of Britain"
+ ENG_despotism_DEF:0 "Great Britain"
+ 
+ ENG_liberal_DEF:0 "the United Kingdom"
+ ENG_conservative_DEF:0 "the United Kingdom"
+ ENG_social_democrat_DEF:0 "the United Kingdom"
+ 
+ ENG_vanguardism_DEF:0 "the Union of British Communes"
+ ENG_moderate_socialism_DEF:0 "the Socialist Republic of Britain"
+ ENG_anarchist_DEF:0 "the British Anarchy"
+ 
  
  
  

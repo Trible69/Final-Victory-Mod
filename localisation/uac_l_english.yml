@@ -1,7 +1,38 @@
 ﻿l_english: 
- UAC:0 "Union of American Communes"
- UAC_DEF:0 "The Union of American Communes"
- UAC_ADJ:0 "American"
+ ###Actual Country
+ UAC_national_populism:0 "American State"
+ UAC_ultraconservative:0 "American State"
+ UAC_despotism:0 "American State"
+
+ UAC_moderate_socialism:0 "Union of American Communes"
+ UAC_vanguardism:0 "Union of American Communes"
+ UAC_anarchist:0 "American Anarchy"
+
+ UAC_liberal:0 "United States of America"
+ UAC_conservative:0 "Federalist States of America"
+ UAC_social_democrat:0 "United States of America"
+ ###DEF
+ UAC_national_populism_DEF:0 "The American State"
+ UAC_ultraconservative_DEF:0 "the American State"
+ UAC_despotism_DEF:0 "the American State"
+
+ UAC_moderate_socialism_DEF:0 "the Union of American Communes"
+ UAC_vanguardism_DEF:0 "the Union of American Communes"
+ UAC_anarchist_DEF:0 "the American Anarchy"
+
+ UAC_liberal_DEF:0 "the United States of America"
+ UAC_conservative_DEF:0 "the Federalist States of America"
+ UAC_social_democrat_DEF:0 "the United States of America"
+ ###ADJ
+ UAC_conservative_ADJ:0 "American"
+ UAC_social_democrat_ADJ:0 "American"
+ UAC_liberal_ADJ:0 "American"
+ UAC_vanguardism_ADJ:0 "American"
+ UAC_moderate_socialism_ADJ:0 "American"
+ UAC_anarchist_ADJ:0 "American"
+ UAC_national_populism_ADJ:0 "American"
+ UAC_despotism_ADJ:0 "American"
+ UAC_ultraconservative_ADJ:0 "American"
 #############Focus########
 UAC_fight_for_our_freedom:0 "Fight for our Freedom"
 UAC_fight_for_our_freedom_desc:0 ""
@@ -53,7 +84,7 @@ UAC_promises_of_stability_desc:0 ""
 UAC_normalize_society:0 "Normalize Society"
 UAC_normalize_society_desc:0 ""
 UAC_relief_programs:0 "Relief Programs"
-UAC_relief_programs_desc:0 ""
+UAC_relief_progrUAC_desc:0 ""
 UAC_renegotiate_foreign_debts:0 "Renegotiate foreign debts"
 UAC_renegotiate_foreign_debts_desc:0 ""
 UAC_department_of_homeland_security:0 "Department of Homeland Security"

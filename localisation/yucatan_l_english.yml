@@ -1,6 +1,37 @@
 ﻿l_english:
- YUC_vanguardism:0 "Yucatan"
- YUC_vanguardism_DEF:0 "Yucatan"
+ #Actual Country
+ YUC_liberal:0 "Republic of Yucatan"
+ YUC_conservative:0 "Republic of Yucatan"
+ YUC_social_democrat:0 "Republic of Yucatan"
+
+ YUC_national_populism:0 "Yucatan State"
+ YUC_despotism:0 "Yucatan State"
+ YUC_ultraconservative:0 "Yucatan State" 
+ 
+ YUC_vanguardism:0 "Yucatan Commune"
+ YUC_moderate_socialism:0 "Yucatan Commune"
+ YUC_anarchist:0 "Yucatan Anarchy"
+ #DEF
+ YUC_liberal_DEF:0 "the Republic of Yucatan"
+ YUC_conservative_DEF:0 "the Republic of Yucatan"
+ YUC_social_democrat_DEF:0 "the Republic of Yucatan"
+
+ YUC_national_populism_DEF:0 "the Yucatan State"
+ YUC_despotism_DEF:0 "the Yucatan State"
+ YUC_ultraconservative_DEF:0 "the Yucatan State" 
+ 
+ YUC_vanguardism_DEF:0 "the Yucatan Commune"
+ YUC_moderate_socialism_DEF:0 "the Yucatan Commune"
+ YUC_anarchist_DEF:0 "the Yucatan Anarchy"
+ #ADJ
+ YUC_conservative_ADJ:0 "Yucatan"
+ YUC_social_democrat_ADJ:0 "Yucatan"
+ YUC_liberal_ADJ:0 "Yucatan"
  YUC_vanguardism_ADJ:0 "Yucatan"
+ YUC_moderate_socialism_ADJ:0 "Yucatan"
+ YUC_anarchist_ADJ:0 "Yucatan"
+ YUC_national_populism_ADJ:0 "Yucatan"
+ YUC_despotism_ADJ:0 "Yucatan"
+ YUC_ultraconservative_ADJ:0 "Yucatan"
  ###########FOCUS##############
 

@@ -7,7 +7,6 @@ country_event = {
 	id = USA.1
 	title = USA.1.t
 	desc = USA.1.d
-	picture = GFX_event_test
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -61,9 +60,6 @@ country_event = {
 			picture = "ThomasEDeweyUSA.dds"
 			expire = "1965.1.1"
 			ideology = market_liberalism
-			traits = {
-				
-			}
 		}
 		add_popularity = {
 			ideology = national_populism
@@ -784,7 +780,6 @@ country_event = {
 	id = USA.24
 	title = USA.24.t
 	desc = USA.24.d
-	picture = GFX_event_test
 
 	fire_only_once = yes
 
@@ -863,17 +858,14 @@ country_event= {
     fire_only_once = yes
 
     option = {
-        name = USA.26.a
+		name = USA.26.a
+		ai_chance = { factor = 50 }
         create_country_leader = {
             name = "John Nance Gardner"
-            ai_chance = { factor = 50 }
             desc = ""
             picture = "JohnNanceGarnerUSA.dds"
             expire = 1965.1.1
             ideology = national_conservatism
-            traits = {
-
-			}
 		}
 		set_politics = {
 			ruling_party = liberal

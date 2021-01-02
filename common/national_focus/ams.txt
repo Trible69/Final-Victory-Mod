@@ -41,7 +41,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower= 1000
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"State Militia\" division_template = \"Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
+				create_unit = {
+					division = "name = \"State Militia\" division_template = \"Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
+			}
 		}
 	}
 
@@ -129,8 +138,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile= {
                 type = infantry_equipment_1
-                amount = 20000
-                producer = JAP
+                amount = 5000
             }
 		}
 	}
@@ -289,7 +297,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower = 10000
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"State Divisions\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
+			}
 		}
 	}
 
@@ -345,6 +358,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_manpower= 10000
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Motorized Division\" division_template = \"Motorized Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
+			}
 		}
 	}
 
@@ -492,8 +511,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile= {
-            type = infantry_equipment_1
-            amount = 8000 
+            	type = infantry_equipment_1
+            	amount = 10000 
             }
 		}
 	}
@@ -530,7 +549,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile= {
                 type = infantry_equipment_2 
-                amount = 2000
+                amount = 5000
             }
 		}
 	}
@@ -548,10 +567,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		    add_equipment_to_stockpile= {
-                type = infantry_equipment_1
-                amount = 20000
-            }
+		    random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Hellcat Tank Division\" division_template = \"Tank Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
+			}
 		}
 	}
 

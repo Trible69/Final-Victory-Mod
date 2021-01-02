@@ -1092,3 +1092,17 @@ country_event = {
 		unlock_decision_category_tooltip = USA_break_isolation_cat
 	}
 }
+#Breaking Isolation
+country_event = {
+	id = USA_world_building.4
+	title = USA_world_building.4.t
+	desc = USA_world_building.4.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = USA_world_building.4.a
+		ai_chance = { factor = 100 }
+	}
+}

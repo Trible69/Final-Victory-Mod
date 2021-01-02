@@ -815,13 +815,6 @@ country_event = {
 		}
 		custom_effect_tooltip = effect_for_election_trouble
 		hidden_effect = {
-			##########Decisions
-			unlock_decision_category_tooltip = USA_appalachian_states_loyalty
-			unlock_decision_category_tooltip = USA_corn_belt_states_loyalty
-			unlock_decision_category_tooltip = USA_lake_states_loyalty
-			unlock_decision_category_tooltip = USA_southeast_states_loyalty
-			unlock_decision_category_tooltip = USA_delta_states_loyalty
-			unlock_decision_category_tooltip = USA_north_plains_states_loyalty
 			##########Variables
 			set_variable = {
     			var = USA.virginia_loyalty
@@ -840,88 +833,8 @@ country_event = {
 	    		value = 1
 			}
 			set_variable = {
-    			var = USA.kentucky_loyalty
-	    		value = 3
-			}
-			set_variable = {
-				var = USA.tennesse_loyalty
-				value = 2
-			}
-			set_variable = {
-				var = USA.georgia_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.mississipi_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.florida_loyalty
-				value = 2
-			}
-			set_variable = {
-				var = USA.alabama_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.louisiana_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.arkansas_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.kansas_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.nebraska_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.colorado_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.north_dakota_loyalty
-				value = 4
-			}
-			set_variable = {
-				var = USA.south_dakota_loyalty
-				value = 3
-			}
-			set_variable = {
-				var = USA.minnesota_loyalty
-				value = 2
-			}
-			set_variable = {
-				var = USA.iowa_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.wisconsin_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.illinois_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.michigan_loyalty
-				value = 1
-			}
-			set_variable = {
-				var = USA.Indiana_loyalty
-				value = 1
-			}
-			set_variable = {
 				var = USA.ohio_loyalty
 				value = 2
-			}
-			set_variable = {
-				var = USA.missouri_loyalty
-				value = 1
 			}
 			set_variable = {
 				var = USA.miltia

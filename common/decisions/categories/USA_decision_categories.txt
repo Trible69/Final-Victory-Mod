@@ -30,20 +30,7 @@ USA_a_broken_nation = {
 	}
 }
 ####STATES CATEGORIES FOR LOYALTY
-USA_lake_states_loyalty = {
-	icon = decision_border_war
-	allowed = {
-
-	}
-	visible = {
-		NOT = {
-			has_global_flag = american_civil_war_begun
-		}
-		tag = USA 
-		has_country_flag = civil_unrest
-	}
-}
-USA_corn_belt_states_loyalty = {
+USA_ohio_loyalty = {
 	icon = decision_border_war
 	allowed = {
 
@@ -66,45 +53,6 @@ USA_appalachian_states_loyalty = {
 			has_global_flag = american_civil_war_begun
 		}
 		tag = USA 
-		has_country_flag = civil_unrest
-	}
-}
-USA_southeast_states_loyalty = {
-	icon = decision_border_war
-	allowed = {
-
-	}
-	visible = {
-		NOT = {
-			has_global_flag = american_civil_war_begun
-		}
-		tag = USA 
-		has_country_flag = civil_unrest
-	}
-}
-USA_delta_states_loyalty = {
-	icon = decision_border_war
-	allowed = {
-
-	}
-	visible = {
-		NOT = {
-			has_global_flag = american_civil_war_begun
-		}
-		tag = USA 
-		has_country_flag = civil_unrest
-	}
-}
-USA_north_plains_states_loyalty = {
-	icon = decision_border_war
-	allowed = {
-
-	}
-	visible = {
-		NOT = {
-			has_global_flag = american_civil_war_begun
-		}
-		tag = USA
 		has_country_flag = civil_unrest
 	}
 }

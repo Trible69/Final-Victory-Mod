@@ -1641,7 +1641,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			remove_unit_leader = 996
+			remove_unit_leader = 543943
 			country_event = {
 				id = AMS.14
 				days = 2

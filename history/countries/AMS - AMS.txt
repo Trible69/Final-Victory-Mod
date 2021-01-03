@@ -128,6 +128,30 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
+	name = "Edward Brooks"
+	picture = "Portrait_USA_Edward_Brooks.dds"
+	traits = { armor_officer trait_reckless }
+	skill = 2
+	id = 3478294378290478329
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Clarence Huebner"
+	picture = "Portrait_USA_Clarence_Huebner.dds"
+	traits = { old_guard harsh_leader }
+	skill = 2
+	id = 7438290436278
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
 	name = "Walter Krueger"
 	picture = "Portrait_AMS_Walter_Krueger.dds"
 	traits = { armor_officer career_officer brilliant_strategist }

@@ -127,17 +127,6 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
-create_corps_commander = {
-	name = "Lucian Truscott"
-	picture = "Portrait_USA_Lucian_Truscott.dds"
-	traits = { trait_engineer commando cavalry_officer }
-	skill = 3
-	id = 812
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 create_corps_commander = {
 	name = "Mark Clark"
@@ -240,6 +229,7 @@ create_corps_commander = {
 	picture = "Portrait_USA_Edward_Brooks.dds"
 	traits = { armor_officer trait_reckless }
 	skill = 2
+	id = 4283923
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 2
@@ -250,7 +240,7 @@ create_corps_commander = {
 	name = "Clarence Huebner"
 	picture = "Portrait_USA_Clarence_Huebner.dds"
 	traits = { old_guard harsh_leader }
-	skill = 2
+	skill = 2378923
 	attack_skill = 1
 	defense_skill = 2
 	planning_skill = 2

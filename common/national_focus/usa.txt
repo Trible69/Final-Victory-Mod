@@ -1455,7 +1455,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
                 ideology = liberal
-                popularity = -0.05
+                popularity = 0.05
             }
 		}
 	}
@@ -1555,6 +1555,7 @@ focus_tree = {
 		completion_reward = {
 			add_opinion_modifier = { target = GER modifier = prussia_officer }
 			add_manpower = 10000
+			army_experience = 20
 		}
 	}
 	#Focus for French Officer Reforms
@@ -1572,7 +1573,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = { target = FRA modifier = french_officer }
-			add_manpower = 10000
+			add_manpower = 30000
 		}
 	}
 	######help the population
@@ -1643,6 +1644,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = recover_civil_war
+			add_political_power = 30
+			add_popularity = {
+                ideology = liberal
+                popularity = 0.05
+            }
 		}
 	}
 }

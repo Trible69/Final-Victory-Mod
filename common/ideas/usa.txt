@@ -18,8 +18,8 @@ ideas = {
 				consumer_goods_factor = 0.1
 				conscription_factor = -0.5
 				stability_factor = -0.35
-				vanguardism_drift = 0.15
-				national_populism_drift = 0.15
+				vanguardism_drift = 0.03
+				national_populism_drift = 0.03
 			}
 		}	
 
@@ -114,7 +114,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				stability_factor = -0.5
+				stability_factor = -0.35
 				consumer_goods_factor = 0.5
 			}
 		}	
@@ -152,7 +152,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1.0
+				conscription_factor = -0.3
 				stability_factor = -0.10
 			}
 		}	

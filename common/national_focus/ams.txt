@@ -302,6 +302,10 @@ focus_tree = {
 					division = "name = \"State Divisions\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 					owner = AMS
 				}	
+				create_unit = {
+					division = "name = \"State Divisions\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
 			}
 		}
 	}
@@ -350,7 +354,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		x = 5
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_american_nationalism }
 		ai_will_do = {
@@ -359,6 +363,10 @@ focus_tree = {
 		completion_reward = {
 			add_manpower= 10000
 			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Motorized Division\" division_template = \"Motorized Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}
 				create_unit = {
 					division = "name = \"Motorized Division\" division_template = \"Motorized Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 					owner = AMS
@@ -373,7 +381,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		x = 3
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_rally_the_volunteers }
 		ai_will_do = {
@@ -408,7 +416,7 @@ focus_tree = {
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		x = 13
 		y = 1
-		cost = 3
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_secure_the_new_state }
 		ai_will_do = {
@@ -474,7 +482,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		x = 16
 		y = 1
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_secure_the_new_state }
 		ai_will_do = {
@@ -504,27 +512,27 @@ focus_tree = {
 		icon = GFX_focus_usa_recruit_the_free_corps
 		x = 5
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_address_the_nation }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_equipment_to_stockpile= {
-            	type = infantry_equipment_1
-            	amount = 10000 
+			add_popularity = {
+    		ideology = national_populism
+			popularity = 0.2
             }
 		}
 	}
 
-	#Focus for Push on the Federal Front
+	#Focus for Push on the Federal Front, make sure to add attack bonus here
 	focus = {
 		id = AMS_push_on_the_federal_front
 		icon = GFX_AMS_push_on_the_federal_front-26721
 		x = 16
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_fortify_virginia }
 		ai_will_do = {
@@ -541,7 +549,7 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_maquis
 		x = 10
 		y = 2
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_contact_foreign_powers }
 		ai_will_do = {
@@ -561,7 +569,7 @@ focus_tree = {
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		x = 19
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_the_states_army }
 		ai_will_do = {
@@ -570,7 +578,11 @@ focus_tree = {
 		completion_reward = {
 		    random_owned_controlled_state = {
 				create_unit = {
-					division = "name = \"Hellcat Tank Division\" division_template = \"Tank Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					division = "name = \"1st Hellcat Tank Division\" division_template = \"Tank Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
+					owner = AMS
+				}	
+				create_unit = {
+					division = "name = \"2nd Hellcat Tank Division\" division_template = \"Tank Division\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 					owner = AMS
 				}	
 			}
@@ -583,7 +595,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		x = 25
 		y = 1
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_secure_the_new_state }
 		ai_will_do = {
@@ -594,30 +606,39 @@ focus_tree = {
 				name = tech_bonus_name
                 bonus = 0.5 
                 uses = 2 
-                category = naval_equipment
+                category = naval_doctrine
             }
 		}
 	}
 
-	#Focus for Convert Former U.S. Ships
+	#Focus for Requisition Former U.S. Ships
 	focus = {
 		id = AMS_convert_former_us_ships
 		icon = GFX_goal_generic_navy_anti_submarine
 		x = 25
 		y = 2
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_naval_supremacy }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus= {
-				name = tech_bonus_name
-                bonus = 0.5 
-                uses = 2 
-                category = naval_equipment
-            }
+			transfer_ship = {
+		prefer_name = "SS Lindbergh"
+    	type = light_cruiser
+    	target = AMS
+		}
+		transfer_ship = {
+    	prefer_name = "SS Mallory"
+    	type = light_cruiser
+		target = AMS
+		}
+		transfer_ship = {
+    	prefer_name = "SS Wiley"
+    	type = light_cruiser
+		target = AMS
+		}
 		}
 	}
 
@@ -627,7 +648,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_submarine
 		x = 25
 		y = 3
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_convert_former_us_ships }
 		ai_will_do = {
@@ -649,7 +670,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 16
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_fortify_virginia }
 		ai_will_do = {
@@ -666,29 +687,28 @@ focus_tree = {
 		icon = GFX_goal_continuous_reduce_training_time
 		x = 11
 		y = 6
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_rural_production }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-            add_tech_bonus= {
-				name = tech_bonus_name
-                bonus = 0.5 
-                uses = 3 
-                category = land_doctrine 
+            add_equipment_to_stockpile= {
+                type = infantry_equipment_2 
+                amount = 8000
             }
+			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 
-	#Focus for Every Citizen a Worker
+	#Focus for Every Citizen a Worker, make it add war economy
 	focus = {
 		id = AMS_every_citizen_a_worker
 		icon = GFX_AMS_every_citizen_a_worker-26718
 		x = 7
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_industrialize_the_workforce }
 		ai_will_do = {
@@ -705,7 +725,7 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 11
 		y = 5
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_traditional_lifestyle }
 		ai_will_do = {
@@ -713,16 +733,20 @@ focus_tree = {
 		}
 		completion_reward = {
 		    add_offsite_building= { type = industrial_complex level = 3 }
+			add_equipment_to_stockpile= {
+                type = infantry_equipment_2 
+                amount = 3000
+            }
 		}
 	}
 
-	#Focus for Streamline Weapons Production
+	#Focus for Streamline Weapons Production, maybe have this make guns shittier but easier to produce
 	focus = {
 		id = AMS_streamline_weapons_production
 		icon = GFX_goal_generic_army_artillery2
 		x = 7
 		y = 6
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_every_citizen_a_worker }
 		ai_will_do = {
@@ -760,7 +784,16 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_manpower = 100000
+			army_experience = 20
+			navy_experience = 20
+			air_experience = 20
+			add_ace = {
+    		name = "James"
+			surname = "Lockhart"
+    		callsign = "Purebred"
+    		type = fighter_genius
+    		is_female = no
+		}
 		}
 	}
 
@@ -777,11 +810,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 300
+			add_political_power= 120
+			add_stability = 0.08
 		}
 	}
 
-	#Focus for Begin to Rebuild
+	#Focus for Begin to Rebuild, make this reduce economy to partial mob or make it edit recovery idea(s)
 	focus = {
 		id = AMS_begin_to_rebuild
 		icon = GFX_focus_usa_honor_the_confederacy
@@ -804,30 +838,30 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Begin the New Economy
+	#Focus for A New Economy, make it alter the recovery ideas
 	focus = {
 		id = AMS_begin_the_new_economy
 		icon = GFX_goal_generic_construction2
 		x = 0
 		y = 10
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_internal_issues }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_offsite_building= { type = industrial_complex level = 1 }
+			add_offsite_building= { type = industrial_complex level = 3 }
 		}
 	}
 
-	#Focus for Citizens come first
+	#Focus for Citizens come first, make this slightly reduce motnhly population for a month or two
 	focus = {
 		id = AMS_citizens_come_first
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 0
 		y = 11
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_begin_the_new_economy }
 		ai_will_do = {
@@ -835,6 +869,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_offsite_building= { type = industrial_complex level = 2 }
+			add_stability = -0.02
 		}
 	}
 
@@ -844,25 +879,29 @@ focus_tree = {
 		icon = GFX_goal_rhineland
 		x = 0
 		y = 12
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_citizens_come_first }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_offsite_building= { type = industrial_complex level = 3 }
-            add_manpower= -40000
+			remove_building = {
+    		type = arms_factory
+    		level = 1
+			}
+            add_political_power = 30
+			add_stability = 0.05
 		}
 	}
 
-	#Focus for Repay Debt to Japan
+	#Focus for Repay Debt to Japan, make it increase japan relations maybe
 	focus = {
 		id = AMS_repay_debt_to_japan
 		icon = GFX_focus_mex_privatisation
 		x = 0
 		y = 13
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_decrease_military_spending }
 		ai_will_do = {
@@ -874,6 +913,8 @@ focus_tree = {
                 type = industrial_complex 
                 level = 1
 				}
+				add_political_power = -20
+				add_stability = 0.06
 		    }
         }
 	}
@@ -884,7 +925,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 2
 		y = 11
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_start_to_help_the_population }
 		ai_will_do = {
@@ -893,16 +934,17 @@ focus_tree = {
 		completion_reward = {
 			add_war_support= 0.05
             add_stability= 0.05
+			add_political_power = 10
 		}
 	}
 
-	#Focus for Start to Help the Population
+	#Focus for Emergency Stimulus Bill
 	focus = {
 		id = AMS_start_to_help_the_population
 		icon = GFX_focus_generic_military_academy
 		x = 2
-		y = 10
-		cost = 10
+		y = 5
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_internal_issues }
 		ai_will_do = {
@@ -913,13 +955,13 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Assassinate Active Vangaurdist
+	#Focus for Assassinate Active Vanguardists
 	focus = {
 		id = AMS_assassinate_active_vangaurdist
 		icon = GFX_goal_generic_major_war
 		x = 2
 		y = 13
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_help_exmilitary_find_jobs }
 		ai_will_do = {
@@ -939,15 +981,19 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = 2
 		y = 12
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_hold_recovery_speech_in_atlanta }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_stability= 0.10
-            add_manpower= -10000
+			add_stability= 0.02
+			add_building_construction = {
+    		type = civilian_factory
+    		level = 2
+			instant_build = yes
+			}
 		}
 	}
 
@@ -957,7 +1003,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		x = 2
 		y = 14
-		cost = 15
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_assassinate_active_vangaurdist }
 		ai_will_do = {

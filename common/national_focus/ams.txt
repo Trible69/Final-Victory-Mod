@@ -997,7 +997,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Recovered Population
+	#Focus for Back on our feet
 	focus = {
 		id = AMS_recovered_population
 		icon = GFX_focus_generic_support_the_left_right
@@ -1014,7 +1014,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Fix the Industry
+	#Focus for Repair Key Industry
 	focus = {
 		id = AMS_fix_the_industry
 		icon = GFX_goal_generic_production2
@@ -1031,7 +1031,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Better Worker Conditions
+	#Focus for Better Worker Conditions, make this add a nat spirit to add political power at the cost of production efficiency
 	focus = {
 		id = AMS_better_worker_conditions
 		icon = GFX_goal_generic_small_arms
@@ -1078,7 +1078,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_offsite_building= { type = arms_factory level = 5 }
+			add_offsite_building= { type = arms_factory level = 4 }
 		}
 	}
 
@@ -1099,13 +1099,13 @@ focus_tree = {
 		}
 	}
 
-	#Focus for The Finished Recovery
+	#Focus for A Complete Recovery
 	focus = {
 		id = AMS_the_finished_recovery
 		icon = GFX_goal_generic_territory_or_war
 		x = 0
 		y = 15
-		cost = 10
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = AMS_a_new_industry 
@@ -1124,13 +1124,13 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Take back the Spanish island
+	#Focus for Coerce Cuba
 	focus = {
 		id = AMS_take_back_the_spanish_island
 		icon = GFX_goal_anschluss
 		x = 20
 		y = 11
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_try_to_convince_the_populace }
 		ai_will_do = {
@@ -1147,30 +1147,30 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Try to convince the populace
+	#Focus for Expansionist Propaganda
 	focus = {
 		id = AMS_try_to_convince_the_populace
 		icon = GFX_goal_generic_propaganda
 		x = 18
 		y = 10
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_external_issues }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			add_war_support= 0.10
+			add_war_support= 0.15
 		}
 	}
 
-	#Focus for Build relations with Quebec
+	#Focus for Build relations with Quebec, make this give Quebec a higher opinion of Ams
 	focus = {
 		id = AMS_build_relations_with_quebec
 		icon = GFX_goal_generic_political_pressure
 		x = 16
 		y = 11
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_try_to_convince_the_populace }
 		ai_will_do = {
@@ -1184,12 +1184,13 @@ focus_tree = {
 		}
 	}
 
+	#focus for build relations with the british, make this give britain a higher opinion of AMS
 	focus = {
-		id = AMS_build_relations_with_the_british
+		id = AMS_build_relations_with_the_british,
 		icon = GFX_goal_generic_improve_relations
 		x = 16
 		y = 12
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_build_relations_with_quebec }
 		ai_will_do = {
@@ -1203,12 +1204,13 @@ focus_tree = {
 		}
 	}
 
+	#focus for negotiate potential alliance, make this give higher opinion of AMS among the coalition
 	focus = {
 		id = AMS_negotiate_potential_alliance
 		icon = GFX_goal_generic_major_alliance
 		x = 16
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_build_relations_with_the_british }
 		ai_will_do = {
@@ -1220,12 +1222,13 @@ focus_tree = {
 		}
 	}
 
+	#focus for befriend canada, have it make canada have higher opinion of AMS
 	focus = {
 		id = AMS_befriend_canada
 		icon = GFX_focus_generic_support_the_left_right
 		x = 16
 		y = 14
-		cost = 10
+		cost = 4
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_negotiate_potential_alliance }
 		ai_will_do = {
@@ -1244,7 +1247,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		x = 16
 		y = 15
-		cost = 10
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_befriend_canada }
 		ai_will_do = {

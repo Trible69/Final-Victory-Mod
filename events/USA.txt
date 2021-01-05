@@ -284,6 +284,51 @@ country_event = {
 	}
 }
 country_event = {
+	id = USA_civilwarshit.5
+	title = USA_civilwarshit.5.t
+	desc = USA_civilwarshit.5.d
+	picture = GFX_report_event_earl_browder_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		has_government = liberal
+		has_global_flag = ams_leave
+		DATE > 1937.4.5
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			CAN = {
+				transfer_state = 739
+				transfer_state = 740
+				transfer_state = 473
+				transfer_state = 836
+				transfer_state = 833
+				transfer_state = 832
+				transfer_state = 463
+			}
+			QUE = {
+				transfer_state = 464
+				transfer_state = 465
+				transfer_state = 468
+			}
+		}
+	}
+
+	option = {
+		name = USA_civilwarshit.4.a
+		ai_chance = { factor = 100}
+	}
+	option = {
+		name = USA_civilwarshit.4.b
+		ai_chance = { factor = 100}
+		UAC = {
+			change_tag_from = ROOT
+		}
+	}
+}
+country_event = {
 	id = USA.6
 	title = USA.6.t
 	desc = USA.6.d

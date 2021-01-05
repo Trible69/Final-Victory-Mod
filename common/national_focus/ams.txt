@@ -1268,12 +1268,13 @@ focus_tree = {
 		}
 	}
 
+	#focus for grant cuban statehood
 	focus = {
 		id = AMS_make_cuba_a_state
 		icon = GFX_goal_generic_territory_or_war
 		x = 20
 		y = 12
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_take_back_the_spanish_island }
 		ai_will_do = {
@@ -1294,7 +1295,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		x = 20
 		y = 13
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_make_cuba_a_state }
 		ai_will_do = {
@@ -1313,7 +1314,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		x = 20
 		y = 14
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_claim_puerto_rico }
 		ai_will_do = {
@@ -1330,12 +1331,13 @@ focus_tree = {
 		}
 	}
 
+	#focus for pre-emptive strike against mexico
 	focus = {
 		id = AMS_take_the_southern_friend
 		icon = GFX_focus_attack_mexico
 		x = 20
 		y = 15
-		cost = 10
+		cost = 6
 		available_if_capitulated = yes
 		available = {
 			NOT = {
@@ -1367,7 +1369,7 @@ focus_tree = {
 		prerequisite = { focus = AMS_begin_to_rebuild }
 		x = 6
 		y = 10
-		cost = 10
+		cost = 5
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = AMS_lindberg_influence
@@ -1411,7 +1413,7 @@ focus_tree = {
 		prerequisite = { focus = AMS_begin_to_rebuild }
 		x = 8
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		available = {
 			custom_trigger_tooltip = {
@@ -1466,7 +1468,7 @@ focus_tree = {
 		prerequisite = { focus = AMS_begin_to_rebuild }
 		x = 10
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		available = {
 			custom_trigger_tooltip = {
@@ -1521,7 +1523,7 @@ focus_tree = {
 		prerequisite = { focus = AMS_begin_to_rebuild }
 		x = 12
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		available = {
 			has_country_flag = AMS_effinger_time
@@ -1547,7 +1549,7 @@ focus_tree = {
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 6
 		y = 13
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_remove_thurmond }
 		ai_will_do = {
@@ -1558,13 +1560,13 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Dismantle the Presidentship
+	#Focus for Dismantle the Presidency
 	focus = {
 		id = AMS_dismantle_the_presidentship
 		icon = GFX_focus_usa_voter_registration_act
 		x = 8
 		y = 11
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = AMS_moseleys_generalship }
 		ai_will_do = {

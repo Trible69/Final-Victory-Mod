@@ -48,17 +48,26 @@ focus_tree = {
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 3
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_ask_for_equipment }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Industrial Workers' Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8" 
+					owner = UAC
+				}
+				create_unit = {
+					division = "name = \"Proletarian Farmers' Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8" 
+					owner = UAC
+				}
 		}
 	}
 
+	#make this give Yucatan an event where they accept or deny
 	focus = {
 		id = UAC_ask_yucatan_for_equipment
 		icon = GFX_focus_generic_combined_arms
@@ -73,11 +82,12 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile= {
                 type = infantry_equipment_1
-                amount = 20000
+                amount = 1500
             }
 		}
 	}
 
+	#focus to ask vanguardists worldwide
 	focus = {
 		id = UAC_ask_the_chinese
 		icon = GFX_focus_chi_one_china_policy
@@ -92,7 +102,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile= {
                 type = infantry_equipment_1
-                amount = 20000
+                amount = 2000
             }
 		}
 	}

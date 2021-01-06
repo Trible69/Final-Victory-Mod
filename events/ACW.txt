@@ -72,7 +72,6 @@ country_event = {
 		name = ACW.4.a
 		ai_chance = { factor = 100}
 	    362 = {
-			prioritize_location = { 10343 }
 			create_unit = {
 				division = "name = \"Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
@@ -117,8 +116,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-			check_variable = { USA.WV_loyalty = USA.secede }
-			check_variable = { USA.WV_loyalty > USA.secede }
+			check_variable = { USA.west_virginia_loyalty = USA.secede }
+			check_variable = { USA.west_virginia_loyalty > USA.secede }
 		}
 		has_global_flag = american_civil_war_begun
 	}
@@ -142,8 +141,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-			check_variable = { USA.WV_loyalty = USA.miltia }
-			check_variable = { USA.WV_loyalty > USA.miltia }
+			check_variable = { USA.west_virginia_loyalty = USA.miltia }
+			check_variable = { USA.west_virginia_loyalty > USA.miltia }
 		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
@@ -159,7 +158,6 @@ country_event = {
 				division = "name = \"West Virginia Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
 				allow_spawning_on_enemy_provs = yes
-				prioritize_location = { 7588 }
 			}
 		}
 	}
@@ -176,8 +174,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-			check_variable = { USA.NC_loyalty = USA.miltia }
-			check_variable = { USA.NC_loyalty > USA.miltia }
+			check_variable = { USA.north_carolina_loyalty = USA.miltia }
+			check_variable = { USA.north_carolina_loyalty > USA.miltia }
 		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
@@ -210,8 +208,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-			check_variable = { USA.NC_loyalty = USA.secede }
-			check_variable = { USA.NC_loyalty > USA.secede }
+			check_variable = { USA.north_carolina_loyalty = USA.secede }
+			check_variable = { USA.north_carolina_loyalty > USA.secede }
 		}
 		has_global_flag = american_civil_war_begun
 	}
@@ -236,8 +234,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-			check_variable = { USA.SC_loyalty = USA.miltia }
-			check_variable = { USA.SC_loyalty > USA.miltia }
+			check_variable = { USA.south_carolina_loyalty = USA.miltia }
+			check_variable = { USA.south_carolina_loyalty > USA.miltia }
 		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
@@ -254,7 +252,6 @@ country_event = {
 				division = "name = \"South Carolina Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
 				allow_spawning_on_enemy_provs = yes
-				prioritize_location = { 10029 }
 			}
 		}
 	}
@@ -270,8 +267,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {	
-			check_variable = { USA.SC_loyalty = USA.secede }
-			check_variable = { USA.SC_loyalty > USA.secede }
+			check_variable = { USA.south_carolina_loyalty = USA.secede }
+			check_variable = { USA.south_carolina_loyalty > USA.secede }
 		}
 		has_global_flag = american_civil_war_begun
 	}
@@ -296,8 +293,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-			check_variable = { USA.ND_loyalty = USA.miltia }
-			check_variable = { USA.ND_loyalty > USA.miltia }
+			check_variable = { USA.ohio_loyalty = USA.miltia }
+			check_variable = { USA.ohio_loyalty > USA.miltia }
 		}
 		has_global_flag = american_civil_war_begun
 		has_war_with = AMS
@@ -313,7 +310,6 @@ country_event = {
 				division = "name = \"Ohio Militia\" division_template = \"Garrison Brigade\" start_experience_factor = 0.1 start_equipment_factor = 0.5" 
 				owner = USA
 				allow_spawning_on_enemy_provs = yes
-				prioritize_location = { 9760 }
 			}
 		}
 	}
@@ -329,8 +325,8 @@ country_event = {
 	trigger = {
 		tag = USA
         OR = {
-		check_variable = { USA.ND_loyalty > USA.secede }
-		check_variable = { USA.ND_loyalty = USA.secede }
+		check_variable = { USA.ohio_loyalty > USA.secede }
+		check_variable = { USA.ohio_loyalty = USA.secede }
 		}
 		has_global_flag = american_civil_war_begun
 	}

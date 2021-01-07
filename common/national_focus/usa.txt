@@ -1651,4 +1651,306 @@ focus_tree = {
             }
 		}
 	}
+	######AL Smith ghjeknerhfdjlmk
+	focus = {
+		id = USA_the_smith_presidency
+		#icon = 
+		cost = 0
+		x = 40
+		y = 0
+		available = {
+			always = no 
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_addressing_radicalism
+		#icon = 
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_smith_presidency
+		}
+		relative_position_id = USA_the_smith_presidency
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_vanguardist_threat
+		#icon = 
+		cost = 1
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = USA_addressing_radicalism
+		}
+		relative_position_id = USA_addressing_radicalism
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_finding_their_weakness
+		#icon = 
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_vanguardist_threat
+		}
+		relative_position_id = USA_the_vanguardist_threat
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_moderates
+		#icon = 
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = USA_finding_their_weakness
+		}
+		mutually_exclusive = {
+			focus = USA_the_workers
+		}
+		relative_position_id = USA_finding_their_weakness
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_promise_concessions
+		#icon = 
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_moderates
+		}
+		relative_position_id = USA_the_moderates
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_workers
+		#icon = 
+		cost = 1
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = USA_the_moderates
+		}
+		prerequisite = {
+			focus = USA_finding_their_weakness
+		}
+		relative_position_id = USA_finding_their_weakness
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_negotiate_with_strikers
+		#icon = 
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_workers
+		}
+		relative_position_id = USA_the_workers
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_too_little_too_late
+		#icon = 
+		cost = 1
+		x = -2 
+		y = 1
+		prerequisite = {
+			focus = USA_negotiate_with_strikers
+		}
+		prerequisite = {
+			focus = USA_promise_concessions
+		}
+		relative_position_id = USA_negotiate_with_strikers
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_populist_menace
+		#icon = 
+		cost = 1
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = USA_addressing_radicalism
+		}
+		relative_position_id = USA_addressing_radicalism
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_countering_their_violence
+		#icon = 
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = USA_the_populist_menace
+		}
+		relative_position_id = USA_the_populist_menace
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_a_bulwalk_against_anti_catholicism
+		#icon = 
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = USA_the_populist_menace
+		}
+		relative_position_id = USA_the_populist_menace
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_bolster_police_forces
+		#icon = 
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_countering_their_violence
+		}
+		prerequisite = {
+			focus = USA_a_bulwalk_against_anti_catholicism
+		}
+		relative_position_id = USA_countering_their_violence
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_federallist_propaganda
+		#icon = 
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = USA_countering_their_violence
+		}
+		prerequisite = {
+			focus = USA_a_bulwalk_against_anti_catholicism
+		}
+		relative_position_id = USA_countering_their_violence
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_protect_places_of_gathering
+		#icon = 
+		cost = 1
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = USA_countering_their_violence
+		}
+		prerequisite = {
+			focus = USA_a_bulwalk_against_anti_catholicism
+		}
+		relative_position_id = USA_countering_their_violence
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_the_carolinian_gambit
+		#icon = 
+		cost = 1
+		x = -1 
+		y = 1
+		prerequisite = {
+			focus = USA_protect_places_of_gathering
+		}
+		prerequisite = {
+			focus = USA_bolster_police_forces
+		}
+		prerequisite = {
+			focus = USA_federallist_propaganda
+		}
+		relative_position_id = USA_federallist_propaganda
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_secure_virginia
+		#icon = 
+		cost = 1
+		x = 1 
+		y = 1
+		prerequisite = {
+			focus = USA_protect_places_of_gathering
+		}
+		prerequisite = {
+			focus = USA_bolster_police_forces
+		}
+		prerequisite = {
+			focus = USA_federallist_propaganda
+		}
+		relative_position_id = USA_federallist_propaganda
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_its_not_enough
+		#icon = 
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = USA_the_carolinian_gambit
+		}
+		prerequisite = {
+			focus = USA_secure_virginia
+		}
+		relative_position_id = USA_secure_virginia
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = USA_deeper_into_the_abyss
+		#icon = 
+		cost = 1
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = USA_too_little_too_late
+		}
+		prerequisite = {
+			focus = USA_its_not_enough
+		}
+		relative_position_id = USA_its_not_enough
+		completion_reward = {
+			
+		}
+	}
 }

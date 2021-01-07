@@ -73,7 +73,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		x = 5
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_ask_for_equipment }
 		ai_will_do = {
@@ -93,7 +93,7 @@ focus_tree = {
 		icon = GFX_focus_chi_one_china_policy
 		x = 7
 		y = 3
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_ask_for_equipment }
 		ai_will_do = {
@@ -112,7 +112,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 8
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_fight_for_our_freedom }
 		ai_will_do = {
@@ -128,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = UAC_fight_for_our_freedom}
 		ai_will_do = {

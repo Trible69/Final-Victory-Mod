@@ -306,7 +306,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = USA_embrace_isolationism }
 		ai_will_do = {
@@ -807,7 +807,7 @@ focus_tree = {
             add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
-	#Focus for Focus on the NEP
+	#Focus for Focus on the NEP, make this give national spirit that lasts for 90 days
 	focus = {
 		id = USA_focus_on_the_nep
 		icon = GFX_USA_focus_on_the_nep-26210
@@ -843,7 +843,7 @@ focus_tree = {
 		    add_political_power = 100
 		}
 	}
-	#Focus for Focus on the VPA
+	#Focus for Focus on the VPA, make this give national spirit that lasts for 90 days
 	focus = {
 		id = USA_focus_on_the_vpa
 		icon = GFX_USA_focus_on_the_vpa-26207
@@ -896,7 +896,7 @@ focus_tree = {
 			add_war_support = 0.2
 		} 
 	}
-	#Focus for Push the Populist Front
+	#Focus for Push the Populist Front, make this give national spirit that lasts for 90 days
 	focus = {
 		id = USA_push_the_populist_front
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -912,7 +912,7 @@ focus_tree = {
 		    add_war_support = 0.05
 		}
 	}
-	#Focus for Rally Around the Flag
+	#Focus for Rally Around the Flag, make this give national spirit
 	focus = {
 		id = USA_rally_around_the_flag
 		icon = GFX_focus_usa_guarantee_the_american_dream
@@ -932,7 +932,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
-	#Focus for Push the Vanguardist Front
+	#Focus for Push the Vanguardist Front, make this give national spirit that lasts for 90 days
 	focus = {
 		id = USA_push_the_vanguardist_front
 		icon = GFX_goal_generic_position_armies
@@ -1825,6 +1825,7 @@ focus_tree = {
 			
 		}
 	}
+	#make this give a national spirit called countering the violence which gives stability, war support. also make this trigger an event
 	focus = {
 		id = USA_countering_their_violence
 		#icon = 
@@ -1839,6 +1840,7 @@ focus_tree = {
 			
 		}
 	}
+	#make this fire an event
 	focus = {
 		id = USA_a_bulwalk_against_anti_catholicism
 		#icon = 
@@ -1850,7 +1852,10 @@ focus_tree = {
 		}
 		relative_position_id = USA_the_populist_menace
 		completion_reward = {
-			
+			add_popularity = {
+    		ideology = national_populism
+    		popularity = -0.05
+			}
 		}
 	}
 	focus = {
@@ -1867,9 +1872,11 @@ focus_tree = {
 		}
 		relative_position_id = USA_countering_their_violence
 		completion_reward = {
-			
+			add_manpower = 50000
+			add_stability = 0.05
 		}
 	}
+	#make this create a national spirit that adds conservative and liberal ideology drift
 	focus = {
 		id = USA_federallist_propaganda
 		#icon = 
@@ -1887,6 +1894,7 @@ focus_tree = {
 			
 		}
 	}
+	#make this fire an event
 	focus = {
 		id = USA_protect_places_of_gathering
 		#icon = 
@@ -1901,9 +1909,10 @@ focus_tree = {
 		}
 		relative_position_id = USA_countering_their_violence
 		completion_reward = {
-			
+			add_stability = 0.03
 		}
 	}
+	#make this activate a mission to put troops in carolinas
 	focus = {
 		id = USA_the_carolinian_gambit
 		#icon = 
@@ -1924,6 +1933,7 @@ focus_tree = {
 			
 		}
 	}
+	#make this activate a mission to place troops in virginia
 	focus = {
 		id = USA_secure_virginia
 		#icon = 
@@ -1958,13 +1968,15 @@ focus_tree = {
 		}
 		relative_position_id = USA_secure_virginia
 		completion_reward = {
-			
+			add_stability = -0.08
+			add_political_power = 30
 		}
 	}
+	#make this be bypassed when civil war begins, and give a nat spirit
 	focus = {
 		id = USA_deeper_into_the_abyss
 		#icon = 
-		cost = 1
+		cost = 5
 		x = -3
 		y = 1
 		prerequisite = {

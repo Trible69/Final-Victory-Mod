@@ -64,6 +64,7 @@ focus_tree = {
 					division = "name = \"Proletarian Farmers' Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 0.8" 
 					owner = UAC
 				}
+			}
 		}
 	}
 
@@ -2507,8 +2508,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			country_event = {id = UAC.15}
+			country_event = { id = UAC.15 }
 		}
 	}
-#End of focuses 
- }
+}

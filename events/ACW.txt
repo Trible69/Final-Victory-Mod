@@ -1,5 +1,5 @@
 add_namespace = ACW
-
+#
 ###start america
 country_event = {
 	id = ACW.1

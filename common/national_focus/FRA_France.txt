@@ -1,0 +1,248 @@
+focus_tree = {
+	id = France
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	#Focus for The Parliament Convenes
+	focus = {
+		id = FRA_the_parliament_convenes
+		icon = GFX_FRA_the_parliament_convenes-78385
+		x = 50
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_big_shoes_to_fill }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = finland.1 
+}
+		}
+	}
+
+	#Focus for A Firm Declaration
+	focus = {
+		id = FRA_a_firm_declaration
+		icon = GFX_FRA_a_firm_declaration-78384
+		x = 50
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FRA_les_tudiants_de_france 
+		}
+		prerequisite = { 
+			focus = FRA_lglise_et_letat 
+		}
+		prerequisite = { 
+			focus = FRA_le_pitoyable_marine 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ENG_king_edward  complete_national_focus= focus_id  country_event= {
+days = 1 
+id = finland.1 
+}
+		}
+	}
+
+	#Focus for Les Étudiants de France
+	focus = {
+		id = FRA_les_tudiants_de_france
+		icon = GFX_FRA_les_tudiants_de_france-78239
+		x = 52
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_les_gens_fatigus }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ENG_king_edward  set_country_flag= anschluss
+		}
+	}
+
+	#Focus for L'Église et L'Etat
+	focus = {
+		id = FRA_lglise_et_letat
+		icon = GFX_FRA_lglise_et_letat-77788
+		x = 48
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_le_parlement_bris }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ENG_king_edward  set_country_flag= anschluss
+		}
+	}
+
+	#Focus for Le Pitoyable Marine
+	focus = {
+		id = FRA_le_pitoyable_marine
+		icon = GFX_FRA_le_pitoyable_marine-78031
+		x = 50
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_le_grande_arme }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ENG_king_edward  set_country_flag= anschluss
+		}
+	}
+
+	#Focus for Le Grande Armée
+	focus = {
+		id = FRA_le_grande_arme
+		icon = GFX_FRA_le_grande_arme-78179
+		x = 50
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_a_new_dawn }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag= anschluss  add_ideas= ENG_king_edward
+		}
+	}
+
+	#Focus for Les Gens Fatigués
+	focus = {
+		id = FRA_les_gens_fatigus
+		icon = GFX_FRA_les_gens_fatigus-78046
+		x = 52
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_a_new_dawn }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ENG_king_edward  set_country_flag= anschluss
+		}
+	}
+
+	#Focus for A New Dawn
+	focus = {
+		id = FRA_a_new_dawn
+		icon = GFX_FRA_a_new_dawn-78210
+		x = 50
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_shut_it_down }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shut it Down!
+	focus = {
+		id = FRA_shut_it_down
+		icon = GFX_FRA_shut_it_down-77786
+		x = 50
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_the_parliament_convenes }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = finland.1 
+}
+		}
+	}
+
+	#Focus for Le Parlement Brisé
+	focus = {
+		id = FRA_le_parlement_bris
+		icon = GFX_FRA_le_parlement_bris-78383
+		x = 48
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_a_new_dawn }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ENG_king_edward
+set_country_flag= anschluss
+		}
+	}
+
+	#Focus for Big Shoes to Fill
+	focus = {
+		id = FRA_big_shoes_to_fill
+		icon = GFX_FRA_big_shoes_to_fill-77785
+		x = 50
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FRA_his_final_words }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05  country_event= {
+days = 1 
+id = finland.1 
+}
+		}
+	}
+
+	#Focus for His Final Words...
+	focus = {
+		id = FRA_his_final_words
+		icon = GFX_FRA_his_final_words-77746
+		x = 50
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = finland.1 
+}
+  add_political_power= -25  news_event= news_event.251
+		}
+	}
+
+#End of focuses 
+ }

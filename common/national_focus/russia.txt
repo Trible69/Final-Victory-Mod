@@ -7,6 +7,282 @@ focus_tree = {
 			tag = RUS
 		}
 	}
+	#Focus for The Catastrophe
+	focus = {
+		id = RUS_the_catastrophe
+		icon = GFX_RUS_the_catastrophe-77483
+		x = 66
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Motherland's Finest
+	focus = {
+		id = RUS_the_motherlands_finest
+		icon = GFX_goal_unknown
+		x = 85
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Speak Softly, and Carry a Big Gun
+	focus = {
+		id = RUS_speak_softly_and_carry_a_big_gun
+		icon = GFX_goal_unknown
+		x = 80
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_studying_the_civil_war 
+		}
+		prerequisite = { 
+			focus = RUS_studying_the_great_war 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Agreements with Ukraine
+	focus = {
+		id = RUS_new_agreements_with_ukraine
+		icon = GFX_goal_unknown
+		x = 70
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_saving_whats_left }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Armor and Speed
+	focus = {
+		id = RUS_armor_and_speed
+		icon = GFX_goal_unknown
+		x = 77
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_studying_the_civil_war 
+		}
+		prerequisite = { 
+			focus = RUS_studying_the_great_war 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The West Russian Development Scheme
+	focus = {
+		id = RUS_the_west_russian_development_scheme
+		icon = GFX_goal_unknown
+		x = 72
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_relief_for_the_farmers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arise, you mighty Motherland!
+	focus = {
+		id = RUS_arise_you_mighty_motherland
+		icon = GFX_goal_unknown
+		x = 63
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_guarantee_agricultural_lands 
+		}
+		prerequisite = { 
+			focus = RUS_siberian_military_complex 
+		}
+		prerequisite = { 
+			focus = RUS_create_more_jobs 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The End of the Catastrophe
+	focus = {
+		id = RUS_the_end_of_the_catastrophe
+		icon = GFX_goal_unknown
+		x = 70
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_new_agreements_with_ukraine 
+		}
+		prerequisite = { 
+			focus = RUS_the_west_russian_development_scheme 
+		}
+		prerequisite = { 
+			focus = RUS_soft_industrialization 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Welfare Programs
+	focus = {
+		id = RUS_new_welfare_programs
+		icon = GFX_goal_unknown
+		x = 68
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Saving What's Left
+	focus = {
+		id = RUS_saving_whats_left
+		icon = GFX_goal_unknown
+		x = 70
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Relief for the Farmers
+	focus = {
+		id = RUS_relief_for_the_farmers
+		icon = GFX_goal_unknown
+		x = 72
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Urbanizing the Far East
+	focus = {
+		id = RUS_urbanizing_the_far_east
+		icon = GFX_goal_unknown
+		x = 65
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_zhLbqNBW }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create more Jobs
+	focus = {
+		id = RUS_create_more_jobs
+		icon = GFX_goal_unknown
+		x = 61
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_industrializing_the_urals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Triumphant Admiral
+	focus = {
+		id = RUS_the_triumphant_admiral
+		icon = GFX_goal_unknown
+		x = 30
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A True Stratocracy
+	focus = {
+		id = RUS_a_true_stratocracy
+		icon = GFX_RUS_a_true_stratocracy-77692
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_circumvent_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revise the Constitution
+	focus = {
+		id = RUS_revise_the_constitution
+		icon = GFX_goal_unknown
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_promise_fair_trials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Bureaucracy
+	focus = {
+		id = RUS_the_new_bureaucracy
+		icon = GFX_goal_unknown
+		x = 50
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_tsar_is_back_in_town }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Third Purge
+	focus = {
+		id = RUS_the_third_purge
+		icon = GFX_RUS_the_third_purge-77688
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_triumphant_admiral }
+		mutually_exclusive = { focus = RUS_a_softer_hand }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#Focus for The Second Time of Troubles
 	focus = {
 		id = RUS_the_second_time_of_troubles
@@ -18,26 +294,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_stability = -0.1
-			add_war_support = -0.05
-		}
 	}
 
-	#Focus for The Mangled Remnants, make this fire event
+	#Focus for The Mangled Remnants
 	focus = {
 		id = RUS_the_mangled_remnants
 		icon = GFX_RUS_the_mangled_remnants-74016
-		x = 13
+		x = 14
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_the_second_time_of_troubles }
 		ai_will_do = {
 			factor = 1
-		}
-		completion_reward = {
-			add_stability = -0.01
 		}
 	}
 
@@ -59,7 +328,7 @@ focus_tree = {
 	focus = {
 		id = RUS_the_young_tsar
 		icon = GFX_RUS_the_young_tsar-74018
-		x = 21
+		x = 20
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -73,8 +342,8 @@ focus_tree = {
 	focus = {
 		id = RUS_fortune_favors_the_bold
 		icon = GFX_RUS_fortune_favors_the_bold-74044
-		x = 22
-		y = 5
+		x = 21
+		y = 4
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_and_into_the_fire }
@@ -87,9 +356,9 @@ focus_tree = {
 	#Focus for A Cold March Morning
 	focus = {
 		id = RUS_a_cold_march_morning
-		icon = GFX_RUS_a_cold_march_morning-74027
-		x = 12
-		y = 5
+		icon = GFX_RUS_a_cold_march_morning-77485
+		x = 13
+		y = 4
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_and_into_the_fire }
@@ -102,9 +371,9 @@ focus_tree = {
 	#Focus for ...And into the Fire
 	focus = {
 		id = RUS_and_into_the_fire
-		icon = GFX_RUS_and_into_the_fire-74022
+		icon = GFX_RUS_and_into_the_fire-77480
 		x = 17
-		y = 4
+		y = 3
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_out_of_the_frying_pan }
@@ -118,7 +387,7 @@ focus_tree = {
 		id = RUS_out_of_the_frying_pan
 		icon = GFX_RUS_out_of_the_frying_pan-74021
 		x = 17
-		y = 3
+		y = 2
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -139,8 +408,8 @@ focus_tree = {
 	focus = {
 		id = RUS_confine_the_tsar
 		icon = GFX_RUS_confine_the_tsar-74028
-		x = 10
-		y = 6
+		x = 13
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_a_cold_march_morning }
@@ -152,9 +421,9 @@ focus_tree = {
 	#Focus for Rallying the Nobility
 	focus = {
 		id = RUS_rallying_the_nobility
-		icon = GFX_RUS_rallying_the_nobility-74046
-		x = 24
-		y = 6
+		icon = GFX_RUS_rallying_the_nobility-77479
+		x = 23
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_fortune_favors_the_bold }
@@ -167,8 +436,8 @@ focus_tree = {
 	focus = {
 		id = RUS_deploy_the_okhrana
 		icon = GFX_RUS_deploy_the_okhrana-74029
-		x = 14
-		y = 6
+		x = 15
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_a_cold_march_morning }
@@ -181,8 +450,8 @@ focus_tree = {
 	focus = {
 		id = RUS_declare_martial_law
 		icon = GFX_focus_usa_voter_registration_act
-		x = 22
-		y = 7
+		x = 21
+		y = 6
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -203,8 +472,8 @@ focus_tree = {
 	focus = {
 		id = RUS_crush_the_bogatyr
 		icon = GFX_RUS_crush_the_bogatyr-74037
-		x = 12
-		y = 7
+		x = 13
+		y = 6
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -224,9 +493,9 @@ focus_tree = {
 	#Focus for Alea Iacta Est
 	focus = {
 		id = RUS_alea_iacta_est
-		icon = GFX_RUS_alea_iacta_est-74043
+		icon = GFX_RUS_alea_iacta_est-77484
 		x = 17
-		y = 9
+		y = 7
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -241,9 +510,9 @@ focus_tree = {
 	#Focus for Secure the Army
 	focus = {
 		id = RUS_secure_the_army
-		icon = GFX_RUS_secure_the_army-74038
-		x = 20
-		y = 6
+		icon = GFX_RUS_secure_the_army-77488
+		x = 19
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_fortune_favors_the_bold }
@@ -255,9 +524,9 @@ focus_tree = {
 	#Focus for Dissolve the Duma
 	focus = {
 		id = RUS_dissolve_the_duma
-		icon = GFX_RUS_dissolve_the_duma-74045
-		x = 22
-		y = 6
+		icon = GFX_RUS_dissolve_the_duma-77482
+		x = 21
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_fortune_favors_the_bold }
@@ -269,9 +538,9 @@ focus_tree = {
 	#Focus for The Second Purge
 	focus = {
 		id = RUS_the_second_purge
-		icon = GFX_RUS_the_second_purge-74030
-		x = 12
-		y = 6
+		icon = GFX_goal_generic_secret_weapon
+		x = 11
+		y = 5
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = { focus = RUS_a_cold_march_morning }
@@ -280,5 +549,677 @@ focus_tree = {
 		}
 	}
 
-#End of focuses 
+	#Focus for A Softer Hand
+	focus = {
+		id = RUS_a_softer_hand
+		icon = GFX_goal_unknown
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_triumphant_admiral }
+		mutually_exclusive = { focus = RUS_the_third_purge }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reward the Loyal
+	focus = {
+		id = RUS_reward_the_loyal
+		icon = GFX_RUS_reward_the_loyal-77690
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_third_purge }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strangle the Duma
+	focus = {
+		id = RUS_strangle_the_duma
+		icon = GFX_RUS_strangle_the_duma-77689
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_third_purge }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Circumvent the Constitution
+	focus = {
+		id = RUS_circumvent_the_constitution
+		icon = GFX_RUS_circumvent_the_constitution-77691
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_reward_the_loyal 
+		}
+		prerequisite = { 
+			focus = RUS_strangle_the_duma 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promise Fair Trials
+	focus = {
+		id = RUS_promise_fair_trials
+		icon = GFX_goal_unknown
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_softer_hand }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Surrender more power to the Duma
+	focus = {
+		id = RUS_surrender_more_power_to_the_duma
+		icon = GFX_goal_unknown
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_promise_fair_trials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reopen Russian Universities
+	focus = {
+		id = RUS_reopen_russian_universities
+		icon = GFX_goal_unknown
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_promise_fair_trials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Admiral sails off into the Sunset
+	focus = {
+		id = RUS_the_admiral_sails_off_into_the_sunset
+		icon = GFX_goal_unknown
+		x = 34
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_surrender_more_power_to_the_duma 
+		}
+		prerequisite = { 
+			focus = RUS_reopen_russian_universities 
+		}
+		prerequisite = { 
+			focus = RUS_revise_the_constitution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our First Elections
+	focus = {
+		id = RUS_our_first_elections
+		icon = GFX_goal_unknown
+		x = 34
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_admiral_sails_off_into_the_sunset }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Tsar is back in Town
+	focus = {
+		id = RUS_the_tsar_is_back_in_town
+		icon = GFX_RUS_the_tsar_is_back_in_town-77471
+		x = 47
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Survey the Situation
+	focus = {
+		id = RUS_survey_the_situation
+		icon = GFX_goal_unknown
+		x = 63
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_catastrophe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Please Remain Calm
+	focus = {
+		id = RUS_please_remain_calm
+		icon = GFX_goal_unknown
+		x = 46
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_tsar_is_back_in_town }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Utilizing the Army
+	focus = {
+		id = RUS_utilizing_the_army
+		icon = GFX_goal_unknown
+		x = 44
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_tsar_is_back_in_town }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Famine Relief Programs
+	focus = {
+		id = RUS_famine_relief_programs
+		icon = GFX_RUS_famine_relief_programs-77472
+		x = 48
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_tsar_is_back_in_town }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Elephant in the Room
+	focus = {
+		id = RUS_the_elephant_in_the_room
+		icon = GFX_RUS_the_elephant_in_the_room-77473
+		x = 47
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_the_new_bureaucracy 
+		}
+		prerequisite = { 
+			focus = RUS_famine_relief_programs 
+		}
+		prerequisite = { 
+			focus = RUS_utilizing_the_army 
+		}
+		prerequisite = { 
+			focus = RUS_please_remain_calm 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restore the Duma
+	focus = {
+		id = RUS_restore_the_duma
+		icon = GFX_RUS_restore_the_duma-77425
+		x = 43
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_elephant_in_the_room }
+		mutually_exclusive = { focus = RUS_autocracy_is_back_in_fashion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Autocracy is back in Fashion
+	focus = {
+		id = RUS_autocracy_is_back_in_fashion
+		icon = GFX_RUS_autocracy_is_back_in_fashion-77475
+		x = 51
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_elephant_in_the_room }
+		mutually_exclusive = { focus = RUS_restore_the_duma }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Constitutional Guarantees
+	focus = {
+		id = RUS_constitutional_guarantees
+		icon = GFX_RUS_constitutional_guarantees-77428
+		x = 46
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_restore_the_duma }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Tsar's Powers
+	focus = {
+		id = RUS_the_tsars_powers
+		icon = GFX_RUS_the_tsars_powers-77427
+		x = 43
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_restore_the_duma }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reaching across the Aisle
+	focus = {
+		id = RUS_reaching_across_the_aisle
+		icon = GFX_RUS_reaching_across_the_aisle-77430
+		x = 40
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_restore_the_duma }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ending the Brain Drain
+	focus = {
+		id = RUS_ending_the_brain_drain
+		icon = GFX_RUS_ending_the_brain_drain-77498
+		x = 43
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_reaching_across_the_aisle 
+		}
+		prerequisite = { 
+			focus = RUS_the_tsars_powers 
+		}
+		prerequisite = { 
+			focus = RUS_constitutional_guarantees 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Russian Golden Age
+	focus = {
+		id = RUS_the_russian_golden_age
+		icon = GFX_RUS_the_russian_golden_age-77478
+		x = 43
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_ending_the_brain_drain }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Benevolent Okhrana
+	focus = {
+		id = RUS_a_benevolent_okhrana
+		icon = GFX_goal_unknown
+		x = 51
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_autocracy_is_back_in_fashion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Scraping away Feudalism
+	focus = {
+		id = RUS_scraping_away_feudalism
+		icon = GFX_goal_unknown
+		x = 49
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_benevolent_okhrana }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ensuring a Loyal Army
+	focus = {
+		id = RUS_ensuring_a_loyal_army
+		icon = GFX_goal_unknown
+		x = 51
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_benevolent_okhrana }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Allow Small Representation
+	focus = {
+		id = RUS_allow_small_representation
+		icon = GFX_goal_unknown
+		x = 53
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_a_benevolent_okhrana }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sideline the Nobility
+	focus = {
+		id = RUS_sideline_the_nobility
+		icon = GFX_goal_unknown
+		x = 50
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_scraping_away_feudalism 
+		}
+		prerequisite = { 
+			focus = RUS_ensuring_a_loyal_army 
+		}
+		prerequisite = { 
+			focus = RUS_allow_small_representation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Relegate the Generals
+	focus = {
+		id = RUS_relegate_the_generals
+		icon = GFX_goal_unknown
+		x = 52
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_allow_small_representation 
+		}
+		prerequisite = { 
+			focus = RUS_ensuring_a_loyal_army 
+		}
+		prerequisite = { 
+			focus = RUS_scraping_away_feudalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for For Mother Russia and the Russian Tsar!
+	focus = {
+		id = RUS_for_mother_russia_and_the_russian_tsar
+		icon = GFX_RUS_for_mother_russia_and_the_russian_tsar-77476
+		x = 51
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_relegate_the_generals 
+		}
+		prerequisite = { 
+			focus = RUS_sideline_the_nobility 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Getting the People back to Work
+	focus = {
+		id = RUS_getting_the_people_back_to_work
+		icon = GFX_goal_unknown
+		x = 69
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_catastrophe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Negotiate with Ukraine
+	focus = {
+		id = RUS_negotiate_with_ukraine
+		icon = GFX_goal_unknown
+		x = 66
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_catastrophe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Siberian Military Complex
+	focus = {
+		id = RUS_siberian_military_complex
+		icon = GFX_goal_unknown
+		x = 65
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_urbanizing_the_far_east }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialization
+	focus = {
+		id = RUS_industrialization
+		icon = GFX_goal_unknown
+		x = 63
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_long_road_to_recovery }
+		mutually_exclusive = { focus = RUS_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Long Road to Recovery
+	focus = {
+		id = RUS_the_long_road_to_recovery
+		icon = GFX_goal_unknown
+		x = 66
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_survey_the_situation 
+		}
+		prerequisite = { 
+			focus = RUS_negotiate_with_ukraine 
+		}
+		prerequisite = { 
+			focus = RUS_getting_the_people_back_to_work 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recovery
+	focus = {
+		id = RUS_recovery
+		icon = GFX_goal_unknown
+		x = 70
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_long_road_to_recovery }
+		mutually_exclusive = { focus = RUS_industrialization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Developing the Russian Heartland
+	focus = {
+		id = RUS_developing_the_russian_heartland
+		icon = GFX_goal_unknown
+		x = 63
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_industrialization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrializing the Urals
+	focus = {
+		id = RUS_industrializing_the_urals
+		icon = GFX_goal_unknown
+		x = 61
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_industrialization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guarantee Agricultural Lands
+	focus = {
+		id = RUS_guarantee_agricultural_lands
+		icon = GFX_goal_unknown
+		x = 63
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_developing_the_russian_heartland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Imperial Army
+	focus = {
+		id = RUS_the_imperial_army
+		icon = GFX_goal_unknown
+		x = 80
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_motherlands_finest }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Soft Industrialization
+	focus = {
+		id = RUS_soft_industrialization
+		icon = GFX_goal_unknown
+		x = 68
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_new_welfare_programs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Studying the Great War
+	focus = {
+		id = RUS_studying_the_great_war
+		icon = GFX_goal_unknown
+		x = 79
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_imperial_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Studying the Civil War
+	focus = {
+		id = RUS_studying_the_civil_war
+		icon = GFX_goal_unknown
+		x = 81
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = RUS_the_imperial_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Centralized Planning
+	focus = {
+		id = RUS_centralized_planning
+		icon = GFX_goal_unknown
+		x = 83
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = RUS_studying_the_civil_war 
+		}
+		prerequisite = { 
+			focus = RUS_studying_the_great_war 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses
  }

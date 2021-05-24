@@ -1,0 +1,459 @@
+spriteTypes = { 
+	##Icon For: The Parliament Convenes
+	SpriteType = { 
+		name = "GFX_FRA_the_parliament_convenes-78385"
+		texturefile = "gfx/interface/goals/GFX_FRA_the_parliament_convenes-78385.dds"
+	}
+
+	##Icon Shine For: The Parliament Convenes
+	SpriteType = { 
+		name = "GFX_FRA_the_parliament_convenes-78385_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_the_parliament_convenes-78385.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_the_parliament_convenes-78385.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_the_parliament_convenes-78385.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Firm Declaration
+	SpriteType = { 
+		name = "GFX_FRA_a_firm_declaration-78384"
+		texturefile = "gfx/interface/goals/GFX_FRA_a_firm_declaration-78384.dds"
+	}
+
+	##Icon Shine For: A Firm Declaration
+	SpriteType = { 
+		name = "GFX_FRA_a_firm_declaration-78384_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_a_firm_declaration-78384.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_a_firm_declaration-78384.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_a_firm_declaration-78384.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Les Étudiants de France
+	SpriteType = { 
+		name = "GFX_FRA_les_tudiants_de_france-78239"
+		texturefile = "gfx/interface/goals/GFX_FRA_les_tudiants_de_france-78239.dds"
+	}
+
+	##Icon Shine For: Les Étudiants de France
+	SpriteType = { 
+		name = "GFX_FRA_les_tudiants_de_france-78239_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_les_tudiants_de_france-78239.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_les_tudiants_de_france-78239.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_les_tudiants_de_france-78239.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: L'Église et L'Etat
+	SpriteType = { 
+		name = "GFX_FRA_lglise_et_letat-77788"
+		texturefile = "gfx/interface/goals/GFX_FRA_lglise_et_letat-77788.dds"
+	}
+
+	##Icon Shine For: L'Église et L'Etat
+	SpriteType = { 
+		name = "GFX_FRA_lglise_et_letat-77788_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_lglise_et_letat-77788.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_lglise_et_letat-77788.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_lglise_et_letat-77788.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Le Pitoyable Marine
+	SpriteType = { 
+		name = "GFX_FRA_le_pitoyable_marine-78031"
+		texturefile = "gfx/interface/goals/GFX_FRA_le_pitoyable_marine-78031.dds"
+	}
+
+	##Icon Shine For: Le Pitoyable Marine
+	SpriteType = { 
+		name = "GFX_FRA_le_pitoyable_marine-78031_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_le_pitoyable_marine-78031.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_le_pitoyable_marine-78031.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_le_pitoyable_marine-78031.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Le Grande Armée
+	SpriteType = { 
+		name = "GFX_FRA_le_grande_arme-78179"
+		texturefile = "gfx/interface/goals/GFX_FRA_le_grande_arme-78179.dds"
+	}
+
+	##Icon Shine For: Le Grande Armée
+	SpriteType = { 
+		name = "GFX_FRA_le_grande_arme-78179_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_le_grande_arme-78179.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_le_grande_arme-78179.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_le_grande_arme-78179.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Les Gens Fatigués
+	SpriteType = { 
+		name = "GFX_FRA_les_gens_fatigus-78046"
+		texturefile = "gfx/interface/goals/GFX_FRA_les_gens_fatigus-78046.dds"
+	}
+
+	##Icon Shine For: Les Gens Fatigués
+	SpriteType = { 
+		name = "GFX_FRA_les_gens_fatigus-78046_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_les_gens_fatigus-78046.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_les_gens_fatigus-78046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_les_gens_fatigus-78046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A New Dawn
+	SpriteType = { 
+		name = "GFX_FRA_a_new_dawn-78210"
+		texturefile = "gfx/interface/goals/GFX_FRA_a_new_dawn-78210.dds"
+	}
+
+	##Icon Shine For: A New Dawn
+	SpriteType = { 
+		name = "GFX_FRA_a_new_dawn-78210_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_a_new_dawn-78210.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_a_new_dawn-78210.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_a_new_dawn-78210.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Shut it Down!
+	SpriteType = { 
+		name = "GFX_FRA_shut_it_down-77786"
+		texturefile = "gfx/interface/goals/GFX_FRA_shut_it_down-77786.dds"
+	}
+
+	##Icon Shine For: Shut it Down!
+	SpriteType = { 
+		name = "GFX_FRA_shut_it_down-77786_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_shut_it_down-77786.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_shut_it_down-77786.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_shut_it_down-77786.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Le Parlement Brisé
+	SpriteType = { 
+		name = "GFX_FRA_le_parlement_bris-78383"
+		texturefile = "gfx/interface/goals/GFX_FRA_le_parlement_bris-78383.dds"
+	}
+
+	##Icon Shine For: Le Parlement Brisé
+	SpriteType = { 
+		name = "GFX_FRA_le_parlement_bris-78383_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_le_parlement_bris-78383.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_le_parlement_bris-78383.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_le_parlement_bris-78383.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Big Shoes to Fill
+	SpriteType = { 
+		name = "GFX_FRA_big_shoes_to_fill-77785"
+		texturefile = "gfx/interface/goals/GFX_FRA_big_shoes_to_fill-77785.dds"
+	}
+
+	##Icon Shine For: Big Shoes to Fill
+	SpriteType = { 
+		name = "GFX_FRA_big_shoes_to_fill-77785_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_big_shoes_to_fill-77785.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_big_shoes_to_fill-77785.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_big_shoes_to_fill-77785.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: His Final Words...
+	SpriteType = { 
+		name = "GFX_FRA_his_final_words-77746"
+		texturefile = "gfx/interface/goals/GFX_FRA_his_final_words-77746.dds"
+	}
+
+	##Icon Shine For: His Final Words...
+	SpriteType = { 
+		name = "GFX_FRA_his_final_words-77746_shine"
+		texturefile = "gfx/interface/goals/GFX_FRA_his_final_words-77746.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_his_final_words-77746.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_FRA_his_final_words-77746.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }
